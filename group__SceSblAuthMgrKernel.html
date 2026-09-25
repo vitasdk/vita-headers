@@ -83,10 +83,39 @@ $(document).ready(function(){initNavTree('group__SceSblAuthMgrKernel.html',''); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gadd78aa9dd946c1c868a354a3d78c9a56" id="r_gadd78aa9dd946c1c868a354a3d78c9a56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gadd78aa9dd946c1c868a354a3d78c9a56">ksceSblAuthMgrClearDmac5Key</a> (int slot_id, int val)</td></tr>
-<tr class="separator:gadd78aa9dd946c1c868a354a3d78c9a56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabbac98104d12441b31b7b82c95913423" id="r_gabbac98104d12441b31b7b82c95913423"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gabbac98104d12441b31b7b82c95913423">ksceSblAuthMgrSetDmac5Key</a> (const void *key, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> keylen, int slot_id, int key_id)</td></tr>
+<tr class="memitem:ga3f0816eee061e11c1eb82d3c2c6413c5" id="r_ga3f0816eee061e11c1eb82d3c2c6413c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#ga3f0816eee061e11c1eb82d3c2c6413c5">ksceSblAuthMgrClearDmac5Key</a> (int slot_id, int zero)</td></tr>
+<tr class="memdesc:ga3f0816eee061e11c1eb82d3c2c6413c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a DMAC5 key slot.  <br /></td></tr>
+<tr class="separator:ga3f0816eee061e11c1eb82d3c2c6413c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbac98104d12441b31b7b82c95913423" id="r_gabbac98104d12441b31b7b82c95913423"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gabbac98104d12441b31b7b82c95913423">ksceSblAuthMgrSetDmac5Key</a> (const void *<a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> keylen, int slot_id, int key_id)</td></tr>
+<tr class="memdesc:gabbac98104d12441b31b7b82c95913423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a DMAC5 key slot.  <br /></td></tr>
 <tr class="separator:gabbac98104d12441b31b7b82c95913423"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadd1cbb9f195ac589b6fa52820c804751" id="r_gadd1cbb9f195ac589b6fa52820c804751"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gadd1cbb9f195ac589b6fa52820c804751">ksceSblAuthMgrAuthHeader</a> (int handle, const void *self_header_addr, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> self_header_size, <a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a> *auth_info)</td></tr>
+<tr class="memdesc:gadd1cbb9f195ac589b6fa52820c804751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate a SELF header.  <br /></td></tr>
+<tr class="separator:gadd1cbb9f195ac589b6fa52820c804751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34a555bef9234b28fc01d37a2e9e9ffd" id="r_ga34a555bef9234b28fc01d37a2e9e9ffd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#ga34a555bef9234b28fc01d37a2e9e9ffd">ksceSblAuthMgrClose</a> (int handle)</td></tr>
+<tr class="memdesc:ga34a555bef9234b28fc01d37a2e9e9ffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a SELF authentication session.  <br /></td></tr>
+<tr class="separator:ga34a555bef9234b28fc01d37a2e9e9ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4efb2554e8911a9e663ba7079bbd5c39" id="r_ga4efb2554e8911a9e663ba7079bbd5c39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#ga4efb2554e8911a9e663ba7079bbd5c39">ksceSblAuthMgrCompareSwVersion</a> (int <a class="el" href="group__SceKblKernel.html#gab6d7b6f8c2ceaba7acda80aaf05f4899">version</a>)</td></tr>
+<tr class="memdesc:ga4efb2554e8911a9e663ba7079bbd5c39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a software version is supported.  <br /></td></tr>
+<tr class="separator:ga4efb2554e8911a9e663ba7079bbd5c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadccece1c724a3f7ad55da0cd70815eb0" id="r_gadccece1c724a3f7ad55da0cd70815eb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gadccece1c724a3f7ad55da0cd70815eb0">ksceSblAuthMgrDecBindData</a> (void *klicensee, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> klicensee_len, const void *request, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> request_len, int zero)</td></tr>
+<tr class="memdesc:gadccece1c724a3f7ad55da0cd70815eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decrypt NPDRM bind data in place using a read-only request.  <br /></td></tr>
+<tr class="separator:gadccece1c724a3f7ad55da0cd70815eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e8a91f63c537273ff1908b650aa3815" id="r_ga6e8a91f63c537273ff1908b650aa3815"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#ga6e8a91f63c537273ff1908b650aa3815">ksceSblAuthMgrGetEKc</a> (void *data, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>, int key_id)</td></tr>
+<tr class="memdesc:ga6e8a91f63c537273ff1908b650aa3815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process NPDRM EKc key material in place.  <br /></td></tr>
+<tr class="separator:ga6e8a91f63c537273ff1908b650aa3815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab645827da10e9b380351411f6e8aa9ed" id="r_gab645827da10e9b380351411f6e8aa9ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gab645827da10e9b380351411f6e8aa9ed">ksceSblAuthMgrLoadBlock</a> (int handle, void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buffer_size)</td></tr>
+<tr class="memdesc:gab645827da10e9b380351411f6e8aa9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authenticate and decrypt a SELF segment block in place.  <br /></td></tr>
+<tr class="separator:gab645827da10e9b380351411f6e8aa9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8b1e1cc6e2db8720f5c686dbc295ca4" id="r_gae8b1e1cc6e2db8720f5c686dbc295ca4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gae8b1e1cc6e2db8720f5c686dbc295ca4">ksceSblAuthMgrOpen</a> (int *handle)</td></tr>
+<tr class="memdesc:gae8b1e1cc6e2db8720f5c686dbc295ca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a SELF authentication session.  <br /></td></tr>
+<tr class="separator:gae8b1e1cc6e2db8720f5c686dbc295ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2f5b2d051488f10139d67d3f66728c2" id="r_gad2f5b2d051488f10139d67d3f66728c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gad2f5b2d051488f10139d67d3f66728c2">ksceSblAuthMgrSetupAuthSegment</a> (int handle, int segment_index)</td></tr>
+<tr class="memdesc:gad2f5b2d051488f10139d67d3f66728c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select and initialize a SELF segment for authentication.  <br /></td></tr>
+<tr class="separator:gad2f5b2d051488f10139d67d3f66728c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5d20e6f622ae8d2bd81d1929db0c4ad" id="r_gaa5d20e6f622ae8d2bd81d1929db0c4ad"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblAuthMgrKernel.html#gaa5d20e6f622ae8d2bd81d1929db0c4ad">ksceSblAuthMgrVerifySpfsoCtx</a> (<a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblSpsfoContext">SceSblSpsfoContext</a> *ctx)</td></tr>
+<tr class="memdesc:gaa5d20e6f622ae8d2bd81d1929db0c4ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a signed SPSFO context.  <br /></td></tr>
+<tr class="separator:gaa5d20e6f622ae8d2bd81d1929db0c4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -97,12 +126,12 @@ Functions</h2></td></tr>
 <div class="ttc" id="aauthmgr_8h_html"><div class="ttname"><a href="authmgr_8h.html">authmgr.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSblAuthMgrForKernel_stub </div>
+</p><div class="fragment"><div class="line">SceSblAuthMgrForKernel_stub SceSblAuthMgrForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <h2 class="groupheader">Function Documentation</h2>
-<a id="gadd78aa9dd946c1c868a354a3d78c9a56" name="gadd78aa9dd946c1c868a354a3d78c9a56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadd78aa9dd946c1c868a354a3d78c9a56">&#9670;&#160;</a></span>ksceSblAuthMgrClearDmac5Key()</h2>
+<a id="ga3f0816eee061e11c1eb82d3c2c6413c5" name="ga3f0816eee061e11c1eb82d3c2c6413c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f0816eee061e11c1eb82d3c2c6413c5">&#9670;&#160;</a></span>ksceSblAuthMgrClearDmac5Key()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -117,7 +146,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
+          <td class="paramname"><em>zero</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -126,6 +155,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear a DMAC5 key slot. </p>
+<p>AuthMgr does not validate <em>slot_id</em> before forwarding it to secure command</p><ol type="1">
+<li>SceSblSsMgr manages slots 12 through 23, but no FW 3.60 module that imports this function calls it directly.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">slot_id</td><td>DMAC5 key slot identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zero</td><td>Must be 0; forwarded in the secure command.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0516 when <em>zero</em> is not 0, or a negative synchronization or secure-module error. </dd></dl>
 
 </div>
 </div>
@@ -166,6 +208,379 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set a DMAC5 key slot. </p>
+<p>FW 3.60 does not validate <em>slot_id</em> before forwarding it to secure command</p><ol type="1">
+<li>SceSblSsMgr allocates slots 12 through 23.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">key</td><td>Non-NULL pointer to the key data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">keylen</td><td>Key size, either 0x10 or 0x20 bytes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">slot_id</td><td>DMAC5 key slot identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_id</td><td>Key identifier: 0, 0x10000, 0x10001, 0x20000, or 0x20001.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0516 for an invalid pointer, key size, or key identifier, or a negative synchronization or secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="gadd1cbb9f195ac589b6fa52820c804751" name="gadd1cbb9f195ac589b6fa52820c804751"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadd1cbb9f195ac589b6fa52820c804751">&#9670;&#160;</a></span>ksceSblAuthMgrAuthHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrAuthHeader </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>self_header_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>self_header_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a> *&#160;</td>
+          <td class="paramname"><em>auth_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Authenticate a SELF header. </p>
+<p>Call this function after <a class="el" href="group__SceSblAuthMgrKernel.html#gae8b1e1cc6e2db8720f5c686dbc295ca4" title="Open a SELF authentication session.">ksceSblAuthMgrOpen</a>. The complete <a class="el" href="group__SceTypesKernel.html#structSceAuthInfo">SceAuthInfo</a> context is sent to secure command 1. On success, only <a class="el" href="group__SceTypesKernel.html#ga809125fb8912bbde560583327428bb26">SceAuthInfo::response</a> is copied back from the secure-module response.</p>
+<p>When the system license state is uninitialized, expired, or reports a backup-battery failure, FW 3.60 sets the four-bit field at bits 8 through 11 of <a class="el" href="group__SceTypesKernel.html#gab6f67cb3af039c78b2ad3132eee9488c">SceAuthInfo::self_type</a> to 1 before authentication. For media types 13 and 14, the verified SPSFO system version is written to ::SceSelfAuthInfo::program_sceversion in the response SELF authorization information; other media types receive zero in that field.</p>
+<p>When the upper 12 bits of the authenticated program-authority ID equal 0x2F0, a registered Utoken override can replace the response program-authority ID, capability, attribute, and first 0x10 bytes of the shared secret. The no-override error 0x800F1A02 is ignored; other negative Utoken errors are returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Authentication session handle. Must be 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">self_header_addr</td><td>Non-NULL address of the mapped SELF header. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">self_header_size</td><td>Size of the mapped SELF header in bytes. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">auth_info</td><td>Non-NULL pointer to the SELF authentication context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0509 for an invalid handle, 0x800F0516 for an invalid pointer, or a negative address-translation, Utoken, or secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="ga34a555bef9234b28fc01d37a2e9e9ffd" name="ga34a555bef9234b28fc01d37a2e9e9ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34a555bef9234b28fc01d37a2e9e9ffd">&#9670;&#160;</a></span>ksceSblAuthMgrClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrClose </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close a SELF authentication session. </p>
+<p>This releases the single session acquired by <a class="el" href="group__SceSblAuthMgrKernel.html#gae8b1e1cc6e2db8720f5c686dbc295ca4" title="Open a SELF authentication session.">ksceSblAuthMgrOpen</a> and the suspend lock held while the session is open. FW 3.60 clears the internal session only when stopping the secure module succeeds, but it does not return a secure module stop error to the caller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Authentication session handle. Must be 1.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0509 for an invalid handle, or a negative mutex or semaphore error. </dd></dl>
+
+</div>
+</div>
+<a id="ga4efb2554e8911a9e663ba7079bbd5c39" name="ga4efb2554e8911a9e663ba7079bbd5c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4efb2554e8911a9e663ba7079bbd5c39">&#9670;&#160;</a></span>ksceSblAuthMgrCompareSwVersion()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrCompareSwVersion </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether a software version is supported. </p>
+<p>SceKernelModulemgr applies this check to the authenticated software version of a game process image after loading it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">version</td><td>Software-version bit pattern. The value -1 is always accepted. Otherwise, the low 12 bits are cleared and the unsigned result must not exceed 0x03600000 on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 when accepted, otherwise 0x800F0537. </dd></dl>
+
+</div>
+</div>
+<a id="gadccece1c724a3f7ad55da0cd70815eb0" name="gadccece1c724a3f7ad55da0cd70815eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadccece1c724a3f7ad55da0cd70815eb0">&#9670;&#160;</a></span>ksceSblAuthMgrDecBindData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrDecBindData </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>klicensee</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>klicensee_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>request</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>request_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>zero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Decrypt NPDRM bind data in place using a read-only request. </p>
+<p>Both buffers must be physically contiguous and 0x40-byte aligned. NpDrm calls this with a 0x10-byte output and a 0x90-byte request assembled from a 0x20-byte bind seed followed by a 0x70-byte RIF header.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">klicensee</td><td>Non-NULL output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">klicensee_len</td><td>Output size, from 0 through 0x1000 bytes and a multiple of 0x10. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">request</td><td>Non-NULL read-only request buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">request_len</td><td>Request size, from 0x10 through 0x1000 bytes and a multiple of 0x10. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zero</td><td>Must be 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0516 for invalid pointers, alignment, sizes, or <em>zero</em>, or a negative address-translation, synchronization, or secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6e8a91f63c537273ff1908b650aa3815" name="ga6e8a91f63c537273ff1908b650aa3815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e8a91f63c537273ff1908b650aa3815">&#9670;&#160;</a></span>ksceSblAuthMgrGetEKc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrGetEKc </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process NPDRM EKc key material in place. </p>
+<p>The secure module may return a different number of bytes than supplied. AuthMgr rejects counts above 0x100; otherwise, it copies the reported number of bytes back to <em>data</em>. NpDrm uses key identifier 0 to process its 0xC0-byte encrypted key-material table.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">data</td><td>Non-NULL input/output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Input size, from 0x10 through 0x100 bytes and a multiple of 0x10. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">key_id</td><td>Key identifier, from 0 through 2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0516 for an invalid pointer, size, key identifier, or secure-module output size, or a negative synchronization or secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="gab645827da10e9b380351411f6e8aa9ed" name="gab645827da10e9b380351411f6e8aa9ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab645827da10e9b380351411f6e8aa9ed">&#9670;&#160;</a></span>ksceSblAuthMgrLoadBlock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrLoadBlock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>buffer_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Authenticate and decrypt a SELF segment block in place. </p>
+<p>The input and output use the same list of physical address ranges. Cache maintenance is rounded up to 0x40 bytes. SceKernelModulemgr submits stream chunks of up to 0x10000 bytes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Authentication session handle. Must be 1. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>Non-NULL, 0x20-byte-aligned block buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>Nonzero block size in bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0509 for an invalid handle, 0x800F0516 for an invalid buffer, size, or alignment, or a negative address-translation or secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="gae8b1e1cc6e2db8720f5c686dbc295ca4" name="gae8b1e1cc6e2db8720f5c686dbc295ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8b1e1cc6e2db8720f5c686dbc295ca4">&#9670;&#160;</a></span>ksceSblAuthMgrOpen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrOpen </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a SELF authentication session. </p>
+<p>FW 3.60 supports one session for the whole system. A successful call starts the Auth secure module, writes handle 1 to <em>handle</em>, and holds a suspend lock until the matching <a class="el" href="group__SceSblAuthMgrKernel.html#ga34a555bef9234b28fc01d37a2e9e9ffd" title="Close a SELF authentication session.">ksceSblAuthMgrClose</a> call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">handle</td><td>Non-NULL pointer that receives handle 1.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0501 when a session is already open, 0x800F0516 for an invalid pointer or internal session state, or a negative synchronization or secure-module scheduler error. </dd></dl>
+
+</div>
+</div>
+<a id="gad2f5b2d051488f10139d67d3f66728c2" name="gad2f5b2d051488f10139d67d3f66728c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2f5b2d051488f10139d67d3f66728c2">&#9670;&#160;</a></span>ksceSblAuthMgrSetupAuthSegment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrSetupAuthSegment </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>segment_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select and initialize a SELF segment for authentication. </p>
+<p>The segment index is forwarded unchanged to secure command 2. SceKernelModulemgr treats return value 1 as an uncompressed segment and every other nonnegative value as a deflate-compressed segment.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Authentication session handle. Must be 1. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">segment_index</td><td>SELF segment index.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The secure-module segment mode, 0x800F0509 for an invalid handle, or another negative secure-module error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa5d20e6f622ae8d2bd81d1929db0c4ad" name="gaa5d20e6f622ae8d2bd81d1929db0c4ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5d20e6f622ae8d2bd81d1929db0c4ad">&#9670;&#160;</a></span>ksceSblAuthMgrVerifySpfsoCtx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblAuthMgrVerifySpfsoCtx </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceSblPostSsMgrKernel.html#structSceSblSpsfoContext">SceSblSpsfoContext</a> *&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify a signed SPSFO context. </p>
+<p>The mapped file is passed to secure command 8. After successful secure verification, FW 3.60 checks the embedded signed-header offset and saves a copy of the 0x200-byte header in AuthMgr for later SELF authentication.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ctx</td><td>Non-NULL pointer to the SPSFO mapping. Its memory-block base must be non-NULL and 0x20-byte aligned, and its exact file size must not exceed 0x8000 bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, 0x800F0516 for an invalid context, base, or size, 0x800F0524 for an invalid signed-header range after verification, or a negative address-translation, synchronization, or secure-module error. </dd></dl>
 
 </div>
 </div>

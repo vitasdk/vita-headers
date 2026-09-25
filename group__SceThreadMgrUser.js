@@ -1,5 +1,31 @@
 var group__SceThreadMgrUser =
 [
+    [ "_sceKernelGetThreadInfo_opt", "group__SceThreadMgrUser.html#struct__sceKernelGetThreadInfo__opt", [
+      [ "info_size", "group__SceThreadMgrUser.html#ga48ce2150330cebf945415ea25d50c566", null ],
+      [ "unused", "group__SceThreadMgrUser.html#gac5c8f74743952461ca0a7a2c5ddd561b", null ]
+    ] ],
+    [ "_sceKernelGetMutexInfo_opt", "group__SceThreadMgrUser.html#struct__sceKernelGetMutexInfo__opt", [
+      [ "info_size", "group__SceThreadMgrUser.html#ga1c5ba8477d1cd45cc2d218d360c0cab5", null ],
+      [ "unused", "group__SceThreadMgrUser.html#gac4b33c2ec1080f297be7569bd69b4406", null ]
+    ] ],
+    [ "sceKernelCreateLwMutex_opt", "group__SceThreadMgrUser.html#structsceKernelCreateLwMutex__opt", [
+      [ "init_count", "group__SceThreadMgrUser.html#ga611f3f5edb61c912e34119df242c58c7", null ],
+      [ "opt_param", "group__SceThreadMgrUser.html#ga41b8b19d35171db10782f0fb7a6b8a70", null ],
+      [ "unused", "group__SceThreadMgrUser.html#ga20d9f4f66ac06a1b9bdbf94021e10cda", null ]
+    ] ],
+    [ "sceKernelRegisterThreadEventHandlerOpt", "group__SceThreadMgrUser.html#structsceKernelRegisterThreadEventHandlerOpt", [
+      [ "handler", "group__SceThreadMgrUser.html#ga31fa20ba83a4d661d80c62fe717e73e6", null ],
+      [ "common", "group__SceThreadMgrUser.html#ga4ae6846085d9e20cb3ba5f5f881c51dc", null ],
+      [ "unused", "group__SceThreadMgrUser.html#ga754ff1345fce57485910e9fbf85592e9", null ]
+    ] ],
+    [ "sceKernelCreateThreadForUser_opt", "group__SceThreadMgrUser.html#structsceKernelCreateThreadForUser__opt", [
+      [ "size", "group__SceThreadMgrUser.html#gaefe94768b2c54f3e494fd069a0c53f95", null ],
+      [ "stack_size", "group__SceThreadMgrUser.html#ga8eef495339c0dd061ff646dddac252f9", null ],
+      [ "attr", "group__SceThreadMgrUser.html#ga8e894134ca22b379284d6895eb360e4b", null ],
+      [ "cpu_affinity_mask", "group__SceThreadMgrUser.html#ga45e500290b2a0bfc9a774a7fbed086ca", null ],
+      [ "opt_param", "group__SceThreadMgrUser.html#ga668f923568102288d77e83708fb38ae7", null ],
+      [ "caller_address", "group__SceThreadMgrUser.html#ga958cb9d697b25818dcf6a8f9a4af2929", null ]
+    ] ],
     [ "SceKernelMppInfo", "group__SceThreadMgrUser.html#structSceKernelMppInfo", [
       [ "size", "group__SceThreadMgrUser.html#ga199606da4067987da2d544fedad1bf82", null ],
       [ "mppId", "group__SceThreadMgrUser.html#ga8a6e2dfe6bdd8e1c5e7e9173be5f0f08", null ],
@@ -28,9 +54,24 @@ var group__SceThreadMgrUser =
       [ "activeCpuMask", "group__SceThreadMgrUser.html#gad21516ffbe7f1acccb0834e7c6eeeed9", null ],
       [ "cpuInfo", "group__SceThreadMgrUser.html#ga4b8250c49b115afa647787311504e2c9", null ]
     ] ],
+    [ "SceKernelTimerInfo", "group__SceThreadMgrUser.html#structSceKernelTimerInfo", [
+      [ "size", "group__SceThreadMgrUser.html#gad92cc3b174764da25d14786de84c2d1d", null ],
+      [ "timer_id", "group__SceThreadMgrUser.html#ga6569779f62a5b7c61d950a8d61831a56", null ],
+      [ "name", "group__SceThreadMgrUser.html#gaf5bcd4d754b86eb6e57b5b0bad29f441", null ],
+      [ "attr", "group__SceThreadMgrUser.html#ga1290b671a7149ac30fc9fb32e7ae6035", null ],
+      [ "active", "group__SceThreadMgrUser.html#ga5a6c4445845e369ba43e9eced5512226", null ],
+      [ "base_time", "group__SceThreadMgrUser.html#gaa72dec54e11964ccb09f4bb0e23d5627", null ],
+      [ "current_time", "group__SceThreadMgrUser.html#ga26db7c7d86fe79ac298af9ca4baa7a91", null ],
+      [ "schedule", "group__SceThreadMgrUser.html#ga0ff2da387f07ca67dfc3b585fa4a6456", null ],
+      [ "interval", "group__SceThreadMgrUser.html#ga77d0c443acb0123863b35f94090a8b9f", null ],
+      [ "type", "group__SceThreadMgrUser.html#gac1df77652ee323aba2059d7fc5f5bc3a", null ],
+      [ "repeat", "group__SceThreadMgrUser.html#gad2a64450dc553de8ddb029654ecc5c59", null ],
+      [ "num_wait_threads", "group__SceThreadMgrUser.html#ga955b4fe4291b6cde33b8a7a4406daab7", null ],
+      [ "reserved", "group__SceThreadMgrUser.html#ga85ba559d8dd0e41f4f9f4451b2d5c664", null ]
+    ] ],
     [ "SceKernelThreadRunStatus", "group__SceThreadMgrUser.html#structSceKernelThreadRunStatus", [
       [ "size", "group__SceThreadMgrUser.html#gae5877005b3d0698e3d3ca53064b243b4", null ],
-      [ "cpuInfo", "group__SceThreadMgrUser.html#ga4025ceea737e10fc219af4467abe4d7b", null ]
+      [ "cpuInfo", "group__SceThreadMgrUser.html#ga7452204b0d4fbc7499e7757a31836925", null ]
     ] ],
     [ "SceKernelThreadOptParam", "group__SceThreadMgrUser.html#structSceKernelThreadOptParam", [
       [ "size", "group__SceThreadMgrUser.html#gaee8d2288f7603805b4013c6524371aaf", null ],
@@ -196,6 +237,10 @@ var group__SceThreadMgrUser =
       [ "SCE_KERNEL_THREAD_EVENT_TYPE_START", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf", null ],
       [ "SCE_KERNEL_THREAD_EVENT_TYPE_EXIT", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6", null ]
     ] ],
+    [ "SceKernelTimerType", "group__SceThreadMgrUser.html#gabca26d3e9e2a87daa84296b5ddf15c6a", [
+      [ "SCE_KERNEL_TIMER_TYPE_SET_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa041aeae16de531a90110807f338873f8", null ],
+      [ "SCE_KERNEL_TIMER_TYPE_PULSE_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa545bf7d116988a1644115209668b677f", null ]
+    ] ],
     [ "SceKernelWaitableAttribute", "group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca", [
       [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
       [ "SCE_KERNEL_ATTR_THREAD_PRIO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b", null ],
@@ -247,6 +292,8 @@ var group__SceThreadMgrUser =
     [ "SCE_THREAD_SUSPENDED", "group__SceThreadMgrUser.html#gga552cbf506e81e208e4bf3e75badc1c40a33f91543502e0a519b3013a3379ad093", null ],
     [ "SCE_KERNEL_THREAD_EVENT_TYPE_START", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf", null ],
     [ "SCE_KERNEL_THREAD_EVENT_TYPE_EXIT", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6", null ],
+    [ "SCE_KERNEL_TIMER_TYPE_SET_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa041aeae16de531a90110807f338873f8", null ],
+    [ "SCE_KERNEL_TIMER_TYPE_PULSE_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa545bf7d116988a1644115209668b677f", null ],
     [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
     [ "SCE_KERNEL_ATTR_THREAD_PRIO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b", null ],
     [ "SCE_KERNEL_ATTR_OPENABLE", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caab491605571ed7395fc5921291bc83075", null ],
@@ -261,6 +308,16 @@ var group__SceThreadMgrUser =
     [ "SCE_EVENT_WAITCLEAR_PAT", "group__SceThreadMgrUser.html#gga705f51eec6069fac8fdd74d430472843a5dfa2b194dc90429eb3e1f97da2bbd23", null ],
     [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
     [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gaf54b78ee86398167e38ad2b0f87aa553", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga058154a282fdf749c946d04fdeb5aca2", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gaf92187309ab8e5bb6ef6391097147290", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gae8130113765575e1d97d06250a15e915", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga36e116729ae6f18a3edc7a55ba49028e", null ],
+    [ "__sceKernelCreateLwMutex", "group__SceThreadMgrUser.html#ga1bd3b2427fd804014c89e155964a687b", null ],
+    [ "_sceKernelGetMutexInfo", "group__SceThreadMgrUser.html#gae57cd842b41d2aecdd9702c4d4f15cca", null ],
+    [ "_sceKernelGetThreadInfo", "group__SceThreadMgrUser.html#gaf3c64b5a169816d97859410363666572", null ],
+    [ "_sceKernelRegisterThreadEventHandler", "group__SceThreadMgrUser.html#gafb309efa35c6a1994096446c89d8a543", null ],
+    [ "sceKernelCreateThreadForUser", "group__SceThreadMgrUser.html#gaafb4d83f5c472e34faa3414d79f57ab1", null ],
     [ "sceKernelCreateCallback", "group__SceThreadMgrUser.html#ga0d9ab619595e80459f2bffdca0fa888b", null ],
     [ "sceKernelGetCallbackInfo", "group__SceThreadMgrUser.html#ga21f09cf87b713739db45043ffca7f43f", null ],
     [ "sceKernelDeleteCallback", "group__SceThreadMgrUser.html#ga08fcc15c1357518a5b910066c9cb1666", null ],
@@ -373,6 +430,7 @@ var group__SceThreadMgrUser =
     [ "sceKernelGetThreadTLSAddr", "group__SceThreadMgrUser.html#gae2d8dbd8fb8bae2d6ca510f6b0b073fa", null ],
     [ "sceKernelGetTLSAddr", "group__SceThreadMgrUser.html#gace3edd187384e8d0958e2095511577f1", null ],
     [ "sceKernelGetSystemTimeWide", "group__SceThreadMgrUser.html#ga667b282cd3c9da73c237d39f8d7c11b3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gae481a63937a557a210d377290e3a2f75", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga97149af01bfb79f07b3a5d794a59199f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863", null ],
@@ -389,6 +447,22 @@ var group__SceThreadMgrUser =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga9b724b7deeb54bb1dbc2e058a7bf41b4", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga0c0bbdad70d3dcb7b0f6311fe2d33dbb", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga86d682831acecf54dbe2da4f28117d59", null ],
+    [ "_sceKernelGetThreadInfo_opt::info_size", "group__SceThreadMgrUser.html#ga48ce2150330cebf945415ea25d50c566", null ],
+    [ "_sceKernelGetThreadInfo_opt::unused", "group__SceThreadMgrUser.html#gac5c8f74743952461ca0a7a2c5ddd561b", null ],
+    [ "_sceKernelGetMutexInfo_opt::info_size", "group__SceThreadMgrUser.html#ga1c5ba8477d1cd45cc2d218d360c0cab5", null ],
+    [ "_sceKernelGetMutexInfo_opt::unused", "group__SceThreadMgrUser.html#gac4b33c2ec1080f297be7569bd69b4406", null ],
+    [ "sceKernelCreateLwMutex_opt::init_count", "group__SceThreadMgrUser.html#ga611f3f5edb61c912e34119df242c58c7", null ],
+    [ "sceKernelCreateLwMutex_opt::opt_param", "group__SceThreadMgrUser.html#ga41b8b19d35171db10782f0fb7a6b8a70", null ],
+    [ "sceKernelCreateLwMutex_opt::unused", "group__SceThreadMgrUser.html#ga20d9f4f66ac06a1b9bdbf94021e10cda", null ],
+    [ "sceKernelRegisterThreadEventHandlerOpt::handler", "group__SceThreadMgrUser.html#ga31fa20ba83a4d661d80c62fe717e73e6", null ],
+    [ "sceKernelRegisterThreadEventHandlerOpt::common", "group__SceThreadMgrUser.html#ga4ae6846085d9e20cb3ba5f5f881c51dc", null ],
+    [ "sceKernelRegisterThreadEventHandlerOpt::unused", "group__SceThreadMgrUser.html#ga754ff1345fce57485910e9fbf85592e9", null ],
+    [ "sceKernelCreateThreadForUser_opt::size", "group__SceThreadMgrUser.html#gaefe94768b2c54f3e494fd069a0c53f95", null ],
+    [ "sceKernelCreateThreadForUser_opt::stack_size", "group__SceThreadMgrUser.html#ga8eef495339c0dd061ff646dddac252f9", null ],
+    [ "sceKernelCreateThreadForUser_opt::attr", "group__SceThreadMgrUser.html#ga8e894134ca22b379284d6895eb360e4b", null ],
+    [ "sceKernelCreateThreadForUser_opt::cpu_affinity_mask", "group__SceThreadMgrUser.html#ga45e500290b2a0bfc9a774a7fbed086ca", null ],
+    [ "sceKernelCreateThreadForUser_opt::opt_param", "group__SceThreadMgrUser.html#ga668f923568102288d77e83708fb38ae7", null ],
+    [ "sceKernelCreateThreadForUser_opt::caller_address", "group__SceThreadMgrUser.html#ga958cb9d697b25818dcf6a8f9a4af2929", null ],
     [ "SceKernelMppInfo::size", "group__SceThreadMgrUser.html#ga199606da4067987da2d544fedad1bf82", null ],
     [ "SceKernelMppInfo::mppId", "group__SceThreadMgrUser.html#ga8a6e2dfe6bdd8e1c5e7e9173be5f0f08", null ],
     [ "SceKernelMppInfo::name", "group__SceThreadMgrUser.html#gaae628f64e5271d3da870390b6a24ad60", null ],
@@ -412,11 +486,24 @@ var group__SceThreadMgrUser =
     [ "SceKernelSystemInfo::@9::comesOutOfIdleCount", "group__SceThreadMgrUser.html#ga683250ec755eb174f34edb66dc0a24c7", null ],
     [ "SceKernelSystemInfo::@9::threadSwitchCount", "group__SceThreadMgrUser.html#ga669d7997f1d798a83acf62ed6f75f160", null ],
     [ "SceKernelSystemInfo::cpuInfo", "group__SceThreadMgrUser.html#ga4b8250c49b115afa647787311504e2c9", null ],
+    [ "SceKernelTimerInfo::size", "group__SceThreadMgrUser.html#gad92cc3b174764da25d14786de84c2d1d", null ],
+    [ "SceKernelTimerInfo::timer_id", "group__SceThreadMgrUser.html#ga6569779f62a5b7c61d950a8d61831a56", null ],
+    [ "SceKernelTimerInfo::name", "group__SceThreadMgrUser.html#gaf5bcd4d754b86eb6e57b5b0bad29f441", null ],
+    [ "SceKernelTimerInfo::attr", "group__SceThreadMgrUser.html#ga1290b671a7149ac30fc9fb32e7ae6035", null ],
+    [ "SceKernelTimerInfo::active", "group__SceThreadMgrUser.html#ga5a6c4445845e369ba43e9eced5512226", null ],
+    [ "SceKernelTimerInfo::base_time", "group__SceThreadMgrUser.html#gaa72dec54e11964ccb09f4bb0e23d5627", null ],
+    [ "SceKernelTimerInfo::current_time", "group__SceThreadMgrUser.html#ga26db7c7d86fe79ac298af9ca4baa7a91", null ],
+    [ "SceKernelTimerInfo::schedule", "group__SceThreadMgrUser.html#ga0ff2da387f07ca67dfc3b585fa4a6456", null ],
+    [ "SceKernelTimerInfo::interval", "group__SceThreadMgrUser.html#ga77d0c443acb0123863b35f94090a8b9f", null ],
+    [ "SceKernelTimerInfo::type", "group__SceThreadMgrUser.html#gac1df77652ee323aba2059d7fc5f5bc3a", null ],
+    [ "SceKernelTimerInfo::repeat", "group__SceThreadMgrUser.html#gad2a64450dc553de8ddb029654ecc5c59", null ],
+    [ "SceKernelTimerInfo::num_wait_threads", "group__SceThreadMgrUser.html#ga955b4fe4291b6cde33b8a7a4406daab7", null ],
+    [ "SceKernelTimerInfo::reserved", "group__SceThreadMgrUser.html#ga85ba559d8dd0e41f4f9f4451b2d5c664", null ],
     [ "SceKernelThreadRunStatus::size", "group__SceThreadMgrUser.html#gae5877005b3d0698e3d3ca53064b243b4", null ],
-    [ "SceKernelThreadRunStatus::@10::processId", "group__SceThreadMgrUser.html#gab4d7d1cdd65f4e4f512074129334dca7", null ],
-    [ "SceKernelThreadRunStatus::@10::threadId", "group__SceThreadMgrUser.html#ga5dcf05671b81ab984534198ddd8b6250", null ],
-    [ "SceKernelThreadRunStatus::@10::priority", "group__SceThreadMgrUser.html#ga311d11d3b1a2a414cfb09392f4e401a1", null ],
-    [ "SceKernelThreadRunStatus::cpuInfo", "group__SceThreadMgrUser.html#ga4025ceea737e10fc219af4467abe4d7b", null ],
+    [ "SceKernelThreadRunStatus::@17::processId", "group__SceThreadMgrUser.html#gaee6d1191cc8e5a2e1b88b9f4da6929c9", null ],
+    [ "SceKernelThreadRunStatus::@17::threadId", "group__SceThreadMgrUser.html#ga4e5079e8e67481b57e0498611fa39c12", null ],
+    [ "SceKernelThreadRunStatus::@17::priority", "group__SceThreadMgrUser.html#ga7864e15bdaa9199f4d22741a3b60f2cb", null ],
+    [ "SceKernelThreadRunStatus::cpuInfo", "group__SceThreadMgrUser.html#ga7452204b0d4fbc7499e7757a31836925", null ],
     [ "SceKernelThreadOptParam::size", "group__SceThreadMgrUser.html#gaee8d2288f7603805b4013c6524371aaf", null ],
     [ "SceKernelThreadOptParam::attr", "group__SceThreadMgrUser.html#gad6109acea2165b5e33b0d06897e210ee", null ],
     [ "SceKernelThreadOptParam::kStackMemType", "group__SceThreadMgrUser.html#ga2b0d9b687743352065ac00325c59c8c2", null ],

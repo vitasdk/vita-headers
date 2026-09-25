@@ -7,6 +7,7 @@ var group__kernel =
     [ "System Module Library", "group__SceSysmodule.html", "group__SceSysmodule" ],
     [ "Kernel Errors", "group__SceKernelError.html", "group__SceKernelError" ],
     [ "Module Manager Library", "group__SceModulemgr.html", "group__SceModulemgr" ],
+    [ "Backtrace Library", "group__SceBacktrace.html", "group__SceBacktrace" ],
     [ "Process Manager Library", "group__SceProcessmgr.html", "group__SceProcessmgr" ],
     [ "Thread Manager Library", "group__SceThreadMgr.html", "group__SceThreadMgr" ],
     [ "System Memory Library", "group__SceSysmem.html", "group__SceSysmem" ],
@@ -24,6 +25,8 @@ var group__kernel =
     [ "Kernel Ss Library", "group__SceSblSsMgr.html", "group__SceSblSsMgr" ],
     [ "dip switch Library", "group__SceDipsw.html", "group__SceDipsw" ],
     [ "Hardware Timer Library", "group__SceSystimer.html", "group__SceSystimer" ],
-    [ "SM Loader", "group__SceSblSsComm.html", "group__SceSblSsComm" ],
-    [ "game cart Authentication Manager", "group__SceSblGcAuthMgr.html", "group__SceSblGcAuthMgr" ]
+    [ "SM Loader", "group__SceSblSmComm.html", "group__SceSblSmComm" ],
+    [ "game cart Authentication Manager", "group__SceSblGcAuthMgr.html", "group__SceSblGcAuthMgr" ],
+    [ "MLNPSNL Authentication", "group__SceSblGcAuthMgrMlnpsnl.html", "group__SceSblGcAuthMgrMlnpsnl" ],
+    [ "Package Authentication", "group__SceSblGcAuthMgrPkg.html", "group__SceSblGcAuthMgrPkg" ]
 ];

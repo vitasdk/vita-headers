@@ -87,6 +87,11 @@ $(document).ready(function(){initNavTree('group__SceSharedFbUser.html',''); init
 Data Structures</h2></td></tr>
 <tr class="memitem:structSceSharedFbInfo" id="r_structSceSharedFbInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#structSceSharedFbInfo">SceSharedFbInfo</a></td></tr>
 <tr class="separator:structSceSharedFbInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSharedFbCreate" id="r_structSceSharedFbCreate"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a></td></tr>
+<tr class="separator:structSceSharedFbCreate"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceSharedFbRenderInfo" id="r_structSceSharedFbRenderInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">SceSharedFbRenderInfo</a></td></tr>
+<tr class="memdesc:structSceSharedFbRenderInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rendering information supplied by PAF during a shared-framebuffer handoff.  <a href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceSharedFbRenderInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -102,6 +107,25 @@ Functions</h2></td></tr>
 <tr class="separator:gad681d37e4e424f377a6c109541965a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2c1e78743d32446a68355208dc75d503" id="r_ga2c1e78743d32446a68355208dc75d503"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga2c1e78743d32446a68355208dc75d503">sceSharedFbGetInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> fb_id, <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbInfo">SceSharedFbInfo</a> *info)</td></tr>
 <tr class="separator:ga2c1e78743d32446a68355208dc75d503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20e145f6d5a7ee5f4aaeb1b7fe872c6e" id="r_ga20e145f6d5a7ee5f4aaeb1b7fe872c6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga20e145f6d5a7ee5f4aaeb1b7fe872c6e">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a>)</td></tr>
+<tr class="separator:ga20e145f6d5a7ee5f4aaeb1b7fe872c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac84876a468babee3e5775b5dbfa73283" id="r_gac84876a468babee3e5775b5dbfa73283"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gac84876a468babee3e5775b5dbfa73283">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">SceSharedFbRenderInfo</a>)</td></tr>
+<tr class="separator:gac84876a468babee3e5775b5dbfa73283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd943a793e9b0153b19c42362a89821e" id="r_gacd943a793e9b0153b19c42362a89821e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gacd943a793e9b0153b19c42362a89821e">sceSharedFbCreate</a> (int index, const <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a> *create_param)</td></tr>
+<tr class="memdesc:gacd943a793e9b0153b19c42362a89821e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a shared-framebuffer object.  <br /></td></tr>
+<tr class="separator:gacd943a793e9b0153b19c42362a89821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddf98700ad4b7fd16a67aed1c18ec5b0" id="r_gaddf98700ad4b7fd16a67aed1c18ec5b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gaddf98700ad4b7fd16a67aed1c18ec5b0">sceSharedFbGetShellRenderPort</a> (void)</td></tr>
+<tr class="memdesc:gaddf98700ad4b7fd16a67aed1c18ec5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current shell render port.  <br /></td></tr>
+<tr class="separator:gaddf98700ad4b7fd16a67aed1c18ec5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga915a07d39a848a03fa40fb52d65a0c3b" id="r_ga915a07d39a848a03fa40fb52d65a0c3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga915a07d39a848a03fa40fb52d65a0c3b">sceSharedFbUpdateProcess</a> (void)</td></tr>
+<tr class="memdesc:ga915a07d39a848a03fa40fb52d65a0c3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform one process handoff after <a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0" title="Begin a shared-framebuffer update.">sceSharedFbUpdateProcessBegin</a>.  <br /></td></tr>
+<tr class="separator:ga915a07d39a848a03fa40fb52d65a0c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7709aaee65eb77cfd77e82b7052235b0" id="r_ga7709aaee65eb77cfd77e82b7052235b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0">sceSharedFbUpdateProcessBegin</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> shared_fb_id, const <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">SceSharedFbRenderInfo</a> *render_info, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *update_count)</td></tr>
+<tr class="memdesc:ga7709aaee65eb77cfd77e82b7052235b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin a shared-framebuffer update.  <br /></td></tr>
+<tr class="separator:ga7709aaee65eb77cfd77e82b7052235b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa7888f14deceefa8ed735066cf99786c" id="r_gaa7888f14deceefa8ed735066cf99786c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gaa7888f14deceefa8ed735066cf99786c">sceSharedFbUpdateProcessEnd</a> (void)</td></tr>
+<tr class="memdesc:gaa7888f14deceefa8ed735066cf99786c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete a process handoff sequence begun by <a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0" title="Begin a shared-framebuffer update.">sceSharedFbUpdateProcessBegin</a>.  <br /></td></tr>
+<tr class="separator:gaa7888f14deceefa8ed735066cf99786c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -129,6 +153,43 @@ Variables</h2></td></tr>
 <tr class="separator:gac0157bcb54fc0642f2e50683ae40d585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga27fa3c8b18280560f5fed5e0129b14d4" id="r_ga27fa3c8b18280560f5fed5e0129b14d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga27fa3c8b18280560f5fed5e0129b14d4">SceSharedFbInfo::unk3</a> [3]</td></tr>
 <tr class="separator:ga27fa3c8b18280560f5fed5e0129b14d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d6aab7e690b3baf6be50d28bf21ffd5" id="r_ga4d6aab7e690b3baf6be50d28bf21ffd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga4d6aab7e690b3baf6be50d28bf21ffd5">SceSharedFbCreate::alloc_mem_size</a></td></tr>
+<tr class="memdesc:ga4d6aab7e690b3baf6be50d28bf21ffd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size in bytes of the CDRAM allocation.  <br /></td></tr>
+<tr class="separator:ga4d6aab7e690b3baf6be50d28bf21ffd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaadb0c6306727af112df044f7a23199f9" id="r_gaadb0c6306727af112df044f7a23199f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gaadb0c6306727af112df044f7a23199f9">SceSharedFbCreate::reserved0</a></td></tr>
+<tr class="memdesc:gaadb0c6306727af112df044f7a23199f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stored in the object but otherwise ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:gaadb0c6306727af112df044f7a23199f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab10470adcfdf1afd72ebf6907563356c" id="r_gab10470adcfdf1afd72ebf6907563356c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gab10470adcfdf1afd72ebf6907563356c">SceSharedFbCreate::reserved</a> [4]</td></tr>
+<tr class="memdesc:gab10470adcfdf1afd72ebf6907563356c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:gab10470adcfdf1afd72ebf6907563356c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0b6d96d913fe80a9374d2952d5176a7" id="r_gac0b6d96d913fe80a9374d2952d5176a7"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gac0b6d96d913fe80a9374d2952d5176a7">SceSharedFbRenderInfo::frame_buffer_base</a></td></tr>
+<tr class="memdesc:gac0b6d96d913fe80a9374d2952d5176a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base address of the selected color buffer.  <br /></td></tr>
+<tr class="separator:gac0b6d96d913fe80a9374d2952d5176a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69aa0f35850681c6c0c0f783bc83139f" id="r_ga69aa0f35850681c6c0c0f783bc83139f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga69aa0f35850681c6c0c0f783bc83139f">SceSharedFbRenderInfo::reserved04</a></td></tr>
+<tr class="memdesc:ga69aa0f35850681c6c0c0f783bc83139f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to 0 by PAF on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga69aa0f35850681c6c0c0f783bc83139f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac44ba991828a2021c792c5b951ee428c" id="r_gac44ba991828a2021c792c5b951ee428c"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gac44ba991828a2021c792c5b951ee428c">SceSharedFbRenderInfo::depth_stencil_buffer</a></td></tr>
+<tr class="memdesc:gac44ba991828a2021c792c5b951ee428c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opaque PAF depth/stencil buffer; NULL disables the depth/stencil surface.  <br /></td></tr>
+<tr class="separator:gac44ba991828a2021c792c5b951ee428c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ad6815487acce03cdcea0fa0c04f186" id="r_ga7ad6815487acce03cdcea0fa0c04f186"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga7ad6815487acce03cdcea0fa0c04f186">SceSharedFbRenderInfo::reserved_0C</a> [4]</td></tr>
+<tr class="memdesc:ga7ad6815487acce03cdcea0fa0c04f186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to 0 by PAF on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga7ad6815487acce03cdcea0fa0c04f186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b4e28ca8f7114661d3f0b638dcd1265" id="r_ga7b4e28ca8f7114661d3f0b638dcd1265"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga7b4e28ca8f7114661d3f0b638dcd1265">SceSharedFbRenderInfo::stride</a></td></tr>
+<tr class="memdesc:ga7b4e28ca8f7114661d3f0b638dcd1265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Color-buffer stride in pixels.  <br /></td></tr>
+<tr class="separator:ga7b4e28ca8f7114661d3f0b638dcd1265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e7066b7d54f1119605841a66028b3ad" id="r_ga7e7066b7d54f1119605841a66028b3ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga7e7066b7d54f1119605841a66028b3ad">SceSharedFbRenderInfo::width</a></td></tr>
+<tr class="separator:ga7e7066b7d54f1119605841a66028b3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a1528311eb97702e67ad745e08b2733" id="r_ga4a1528311eb97702e67ad745e08b2733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga4a1528311eb97702e67ad745e08b2733">SceSharedFbRenderInfo::height</a></td></tr>
+<tr class="separator:ga4a1528311eb97702e67ad745e08b2733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb429417ed0958121fba67a2a0bc3d45" id="r_gacb429417ed0958121fba67a2a0bc3d45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gacb429417ed0958121fba67a2a0bc3d45">SceSharedFbRenderInfo::pixel_format</a></td></tr>
+<tr class="memdesc:gacb429417ed0958121fba67a2a0bc3d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of <a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3" title="Color surfaces formats.">SceGxmColorFormat</a>.  <br /></td></tr>
+<tr class="separator:gacb429417ed0958121fba67a2a0bc3d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad32a769ce2ddc4a78cede5f67b1f846d" id="r_gad32a769ce2ddc4a78cede5f67b1f846d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#gad32a769ce2ddc4a78cede5f67b1f846d">SceSharedFbRenderInfo::buffer_index</a></td></tr>
+<tr class="memdesc:gad32a769ce2ddc4a78cede5f67b1f846d"><td class="mdescLeft">&#160;</td><td class="mdescRight">One-based render-buffer index used by PAF.  <br /></td></tr>
+<tr class="separator:gad32a769ce2ddc4a78cede5f67b1f846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga116f9aa3321d0d4cc12af9eb31848a77" id="r_ga116f9aa3321d0d4cc12af9eb31848a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSharedFbUser.html#ga116f9aa3321d0d4cc12af9eb31848a77">SceSharedFbRenderInfo::reserved30</a> [4]</td></tr>
+<tr class="memdesc:ga116f9aa3321d0d4cc12af9eb31848a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to 0 by PAF on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga116f9aa3321d0d4cc12af9eb31848a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
@@ -232,9 +293,122 @@ unk3[3]</td>
 
 </div>
 </div>
+<a name="structSceSharedFbCreate" id="structSceSharedFbCreate"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSharedFbCreate">&#9670;&#160;</a></span>SceSharedFbCreate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSharedFbCreate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga4d6aab7e690b3baf6be50d28bf21ffd5" name="ga4d6aab7e690b3baf6be50d28bf21ffd5"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+alloc_mem_size</td>
+<td class="fielddoc">
+Size in bytes of the CDRAM allocation. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaadb0c6306727af112df044f7a23199f9" name="gaadb0c6306727af112df044f7a23199f9"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved0</td>
+<td class="fielddoc">
+Stored in the object but otherwise ignored on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="gab10470adcfdf1afd72ebf6907563356c" name="gab10470adcfdf1afd72ebf6907563356c"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved[4]</td>
+<td class="fielddoc">
+Ignored on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceSharedFbRenderInfo" id="structSceSharedFbRenderInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSharedFbRenderInfo">&#9670;&#160;</a></span>SceSharedFbRenderInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSharedFbRenderInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Rendering information supplied by PAF during a shared-framebuffer handoff. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac0b6d96d913fe80a9374d2952d5176a7" name="gac0b6d96d913fe80a9374d2952d5176a7"></a>void *</td>
+<td class="fieldname">
+frame_buffer_base</td>
+<td class="fielddoc">
+Base address of the selected color buffer. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga69aa0f35850681c6c0c0f783bc83139f" name="ga69aa0f35850681c6c0c0f783bc83139f"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved04</td>
+<td class="fielddoc">
+Set to 0 by PAF on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac44ba991828a2021c792c5b951ee428c" name="gac44ba991828a2021c792c5b951ee428c"></a>void *</td>
+<td class="fieldname">
+depth_stencil_buffer</td>
+<td class="fielddoc">
+Opaque PAF depth/stencil buffer; NULL disables the depth/stencil surface. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7ad6815487acce03cdcea0fa0c04f186" name="ga7ad6815487acce03cdcea0fa0c04f186"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved_0C[4]</td>
+<td class="fielddoc">
+Set to 0 by PAF on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7b4e28ca8f7114661d3f0b638dcd1265" name="ga7b4e28ca8f7114661d3f0b638dcd1265"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+stride</td>
+<td class="fielddoc">
+Color-buffer stride in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7e7066b7d54f1119605841a66028b3ad" name="ga7e7066b7d54f1119605841a66028b3ad"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga4a1528311eb97702e67ad745e08b2733" name="ga4a1528311eb97702e67ad745e08b2733"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gacb429417ed0958121fba67a2a0bc3d45" name="gacb429417ed0958121fba67a2a0bc3d45"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+pixel_format</td>
+<td class="fielddoc">
+One of <a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3" title="Color surfaces formats.">SceGxmColorFormat</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad32a769ce2ddc4a78cede5f67b1f846d" name="gad32a769ce2ddc4a78cede5f67b1f846d"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+buffer_index</td>
+<td class="fielddoc">
+One-based render-buffer index used by PAF. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga116f9aa3321d0d4cc12af9eb31848a77" name="ga116f9aa3321d0d4cc12af9eb31848a77"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved30[4]</td>
+<td class="fielddoc">
+Set to 0 by PAF on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga60d7c23ce824c57014c52a944c4d4dc6" name="ga60d7c23ce824c57014c52a944c4d4dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga60d7c23ce824c57014c52a944c4d4dc6">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60d7c23ce824c57014c52a944c4d4dc6">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,6 +555,212 @@ unk3[3]</td>
 
 </div>
 </div>
+<a id="ga20e145f6d5a7ee5f4aaeb1b7fe872c6e" name="ga20e145f6d5a7ee5f4aaeb1b7fe872c6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20e145f6d5a7ee5f4aaeb1b7fe872c6e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x18&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac84876a468babee3e5775b5dbfa73283" name="gac84876a468babee3e5775b5dbfa73283"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac84876a468babee3e5775b5dbfa73283">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x40&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">SceSharedFbRenderInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacd943a793e9b0153b19c42362a89821e" name="gacd943a793e9b0153b19c42362a89821e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd943a793e9b0153b19c42362a89821e">&#9670;&#160;</a></span>sceSharedFbCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> sceSharedFbCreate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a> *&#160;</td>
+          <td class="paramname"><em>create_param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a shared-framebuffer object. </p>
+<p>FW 3.60 supports two objects at a time. PAF creates index 1. The calling process must be a system program.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>Non-negative shared-framebuffer index. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">create_param</td><td>Required 0x18-byte <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbCreate">SceSharedFbCreate</a> structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The shared-framebuffer ID on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaddf98700ad4b7fd16a67aed1c18ec5b0" name="gaddf98700ad4b7fd16a67aed1c18ec5b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddf98700ad4b7fd16a67aed1c18ec5b0">&#9670;&#160;</a></span>sceSharedFbGetShellRenderPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSharedFbGetShellRenderPort </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current shell render port. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 or 1 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga915a07d39a848a03fa40fb52d65a0c3b" name="ga915a07d39a848a03fa40fb52d65a0c3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga915a07d39a848a03fa40fb52d65a0c3b">&#9670;&#160;</a></span>sceSharedFbUpdateProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSharedFbUpdateProcess </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform one process handoff after <a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0" title="Begin a shared-framebuffer update.">sceSharedFbUpdateProcessBegin</a>. </p>
+<p>Call this function exactly the number of times specified by the <code>update_count</code> output of <a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0" title="Begin a shared-framebuffer update.">sceSharedFbUpdateProcessBegin</a>, then call <a class="el" href="group__SceSharedFbUser.html#gaa7888f14deceefa8ed735066cf99786c" title="Complete a process handoff sequence begun by sceSharedFbUpdateProcessBegin.">sceSharedFbUpdateProcessEnd</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>1 when the selected process is marked for rendering, 0 otherwise, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga7709aaee65eb77cfd77e82b7052235b0" name="ga7709aaee65eb77cfd77e82b7052235b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7709aaee65eb77cfd77e82b7052235b0">&#9670;&#160;</a></span>sceSharedFbUpdateProcessBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSharedFbUpdateProcessBegin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>shared_fb_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceSharedFbUser.html#structSceSharedFbRenderInfo">SceSharedFbRenderInfo</a> *&#160;</td>
+          <td class="paramname"><em>render_info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>update_count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Begin a shared-framebuffer update. </p>
+<p>Both pointers must be non-NULL on FW 3.60. The calling process must be a system program and <em>shared_fb_id</em> must identify one of the two created shared framebuffers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">shared_fb_id</td><td>Shared-framebuffer ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">render_info</td><td>Rendering information copied into the shared framebuffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">update_count</td><td>Receives the 32-bit number of required <a class="el" href="group__SceSharedFbUser.html#ga915a07d39a848a03fa40fb52d65a0c3b" title="Perform one process handoff after sceSharedFbUpdateProcessBegin.">sceSharedFbUpdateProcess</a> calls.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaa7888f14deceefa8ed735066cf99786c" name="gaa7888f14deceefa8ed735066cf99786c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa7888f14deceefa8ed735066cf99786c">&#9670;&#160;</a></span>sceSharedFbUpdateProcessEnd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSharedFbUpdateProcessEnd </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete a process handoff sequence begun by <a class="el" href="group__SceSharedFbUser.html#ga7709aaee65eb77cfd77e82b7052235b0" title="Begin a shared-framebuffer update.">sceSharedFbUpdateProcessBegin</a>. </p>
+<p>This function takes no arguments and must be called after the corresponding update-process loop.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga58f17242536cc4d7e472e0d67a26fbc7" name="ga58f17242536cc4d7e472e0d67a26fbc7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga58f17242536cc4d7e472e0d67a26fbc7">&#9670;&#160;</a></span>fb_base</h2>
@@ -439,7 +819,7 @@ unk3[3]</td>
 </div>
 </div>
 <a id="ga8aefbfeb75ae0277e86e5d29d409009c" name="ga8aefbfeb75ae0277e86e5d29d409009c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8aefbfeb75ae0277e86e5d29d409009c">&#9670;&#160;</a></span>stride</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aefbfeb75ae0277e86e5d29d409009c">&#9670;&#160;</a></span>stride <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -453,7 +833,7 @@ unk3[3]</td>
 </div>
 </div>
 <a id="ga5c554b38da4d8bcf6ebca9f36cf5b343" name="ga5c554b38da4d8bcf6ebca9f36cf5b343"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5c554b38da4d8bcf6ebca9f36cf5b343">&#9670;&#160;</a></span>width</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c554b38da4d8bcf6ebca9f36cf5b343">&#9670;&#160;</a></span>width <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -467,7 +847,7 @@ unk3[3]</td>
 </div>
 </div>
 <a id="gac5c2180bb26e2a0d2aa96d6fae376483" name="gac5c2180bb26e2a0d2aa96d6fae376483"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac5c2180bb26e2a0d2aa96d6fae376483">&#9670;&#160;</a></span>height</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5c2180bb26e2a0d2aa96d6fae376483">&#9670;&#160;</a></span>height <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -547,6 +927,210 @@ unk3[3]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4d6aab7e690b3baf6be50d28bf21ffd5" name="ga4d6aab7e690b3baf6be50d28bf21ffd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d6aab7e690b3baf6be50d28bf21ffd5">&#9670;&#160;</a></span>alloc_mem_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceSharedFbCreate::alloc_mem_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Size in bytes of the CDRAM allocation. </p>
+
+</div>
+</div>
+<a id="gaadb0c6306727af112df044f7a23199f9" name="gaadb0c6306727af112df044f7a23199f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaadb0c6306727af112df044f7a23199f9">&#9670;&#160;</a></span>reserved0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbCreate::reserved0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stored in the object but otherwise ignored on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gab10470adcfdf1afd72ebf6907563356c" name="gab10470adcfdf1afd72ebf6907563356c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab10470adcfdf1afd72ebf6907563356c">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbCreate::reserved[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ignored on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gac0b6d96d913fe80a9374d2952d5176a7" name="gac0b6d96d913fe80a9374d2952d5176a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0b6d96d913fe80a9374d2952d5176a7">&#9670;&#160;</a></span>frame_buffer_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSharedFbRenderInfo::frame_buffer_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Base address of the selected color buffer. </p>
+
+</div>
+</div>
+<a id="ga69aa0f35850681c6c0c0f783bc83139f" name="ga69aa0f35850681c6c0c0f783bc83139f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69aa0f35850681c6c0c0f783bc83139f">&#9670;&#160;</a></span>reserved04</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::reserved04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to 0 by PAF on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gac44ba991828a2021c792c5b951ee428c" name="gac44ba991828a2021c792c5b951ee428c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac44ba991828a2021c792c5b951ee428c">&#9670;&#160;</a></span>depth_stencil_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSharedFbRenderInfo::depth_stencil_buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opaque PAF depth/stencil buffer; NULL disables the depth/stencil surface. </p>
+
+</div>
+</div>
+<a id="ga7ad6815487acce03cdcea0fa0c04f186" name="ga7ad6815487acce03cdcea0fa0c04f186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ad6815487acce03cdcea0fa0c04f186">&#9670;&#160;</a></span>reserved_0C</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::reserved_0C[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to 0 by PAF on FW 3.60. </p>
+
+</div>
+</div>
+<a id="ga7b4e28ca8f7114661d3f0b638dcd1265" name="ga7b4e28ca8f7114661d3f0b638dcd1265"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b4e28ca8f7114661d3f0b638dcd1265">&#9670;&#160;</a></span>stride <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::stride</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Color-buffer stride in pixels. </p>
+
+</div>
+</div>
+<a id="ga7e7066b7d54f1119605841a66028b3ad" name="ga7e7066b7d54f1119605841a66028b3ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e7066b7d54f1119605841a66028b3ad">&#9670;&#160;</a></span>width <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4a1528311eb97702e67ad745e08b2733" name="ga4a1528311eb97702e67ad745e08b2733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a1528311eb97702e67ad745e08b2733">&#9670;&#160;</a></span>height <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacb429417ed0958121fba67a2a0bc3d45" name="gacb429417ed0958121fba67a2a0bc3d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb429417ed0958121fba67a2a0bc3d45">&#9670;&#160;</a></span>pixel_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::pixel_format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One of <a class="el" href="group__SceGxmUser.html#ga86183627eb1a24e059748cb95d618cc3" title="Color surfaces formats.">SceGxmColorFormat</a>. </p>
+
+</div>
+</div>
+<a id="gad32a769ce2ddc4a78cede5f67b1f846d" name="gad32a769ce2ddc4a78cede5f67b1f846d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad32a769ce2ddc4a78cede5f67b1f846d">&#9670;&#160;</a></span>buffer_index</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceSharedFbRenderInfo::buffer_index</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One-based render-buffer index used by PAF. </p>
+
+</div>
+</div>
+<a id="ga116f9aa3321d0d4cc12af9eb31848a77" name="ga116f9aa3321d0d4cc12af9eb31848a77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga116f9aa3321d0d4cc12af9eb31848a77">&#9670;&#160;</a></span>reserved30</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceSharedFbRenderInfo::reserved30[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to 0 by PAF on FW 3.60. </p>
 
 </div>
 </div>

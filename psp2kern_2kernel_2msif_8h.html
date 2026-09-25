@@ -73,6 +73,8 @@ $(document).ready(function(){initNavTree('psp2kern_2kernel_2msif_8h.html',''); i
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">msif.h File Reference</div></div>
 </div><!--header-->
@@ -81,10 +83,42 @@ $(document).ready(function(){initNavTree('psp2kern_2kernel_2msif_8h.html',''); i
 </div>
 <p><a href="psp2kern_2kernel_2msif_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga708636250749b446f1a41c2b44e05b03" id="r_ga708636250749b446f1a41c2b44e05b03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga708636250749b446f1a41c2b44e05b03">SCE_MSIF_SECTOR_SIZE</a>&#160;&#160;&#160;(0x200)</td></tr>
+<tr class="separator:ga708636250749b446f1a41c2b44e05b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga467ba54228872f52454e4825338ac474" id="r_ga467ba54228872f52454e4825338ac474"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga467ba54228872f52454e4825338ac474">SceMsifErrorCode</a> { <a class="el" href="group__SceMsifKernel.html#gga467ba54228872f52454e4825338ac474a12c95248505989cd59667bd003b1101b">SCE_MSIF_ERROR_INTERNAL</a> = 0x803D0000
+, <a class="el" href="group__SceMsifKernel.html#gga467ba54228872f52454e4825338ac474a63b9c3504fc084e021753b4163a743d1">SCE_MSIF_ERROR_INVALID_ARGUMENT</a> = 0x803D0001
+, <a class="el" href="group__SceMsifKernel.html#gga467ba54228872f52454e4825338ac474a351a022b7d975f6a96926c9c65ba5a54">SCE_MSIF_ERROR_UNALIGNED_BUFFER</a> = 0x803D0002
+, <a class="el" href="group__SceMsifKernel.html#gga467ba54228872f52454e4825338ac474aa2d5294cfce4407e49c7641ba8321999">SCE_MSIF_ERROR_WRITE_PROTECTED</a> = 0x803D0003
+ }</td></tr>
+<tr class="memdesc:ga467ba54228872f52454e4825338ac474"><td class="mdescLeft">&#160;</td><td class="mdescRight">MSIF errors returned directly by the FW 3.60 sector APIs.  <a href="group__SceMsifKernel.html#ga467ba54228872f52454e4825338ac474">More...</a><br /></td></tr>
+<tr class="separator:ga467ba54228872f52454e4825338ac474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga07a0e47ad505f265dfceb6b99fba40a7" id="r_ga07a0e47ad505f265dfceb6b99fba40a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga07a0e47ad505f265dfceb6b99fba40a7">ksceMsifGetMsInfo</a> (<a class="el" href="group__SceMsifKernel.html#structSceMsInfo">SceMsInfo</a> *info)</td></tr>
 <tr class="separator:ga07a0e47ad505f265dfceb6b99fba40a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2179c094a31d05f40d55fade408275e" id="r_gae2179c094a31d05f40d55fade408275e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#gae2179c094a31d05f40d55fade408275e">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceMsifKernel.html#ga467ba54228872f52454e4825338ac474">SceMsifErrorCode</a>)</td></tr>
+<tr class="separator:gae2179c094a31d05f40d55fade408275e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ef22174c645880d283fc5e8d1f9a7c8" id="r_ga3ef22174c645880d283fc5e8d1f9a7c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga3ef22174c645880d283fc5e8d1f9a7c8">ksceMsifDisableSlowCardMode</a> (void)</td></tr>
+<tr class="memdesc:ga3ef22174c645880d283fc5e8d1f9a7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable slow-card mode.  <br /></td></tr>
+<tr class="separator:ga3ef22174c645880d283fc5e8d1f9a7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ebfee92b4b1880e6b383ac80b42fd27" id="r_ga7ebfee92b4b1880e6b383ac80b42fd27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga7ebfee92b4b1880e6b383ac80b42fd27">ksceMsifEnableSlowCardMode</a> (void)</td></tr>
+<tr class="memdesc:ga7ebfee92b4b1880e6b383ac80b42fd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable slow-card mode.  <br /></td></tr>
+<tr class="separator:ga7ebfee92b4b1880e6b383ac80b42fd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ac56faffce5110f37b2d625cb225445" id="r_ga0ac56faffce5110f37b2d625cb225445"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga0ac56faffce5110f37b2d625cb225445">ksceMsifGetSlowCardModeState</a> (void)</td></tr>
+<tr class="memdesc:ga0ac56faffce5110f37b2d625cb225445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether slow-card mode is enabled.  <br /></td></tr>
+<tr class="separator:ga0ac56faffce5110f37b2d625cb225445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81aa9afb29fc0d558a9991d2c87c8781" id="r_ga81aa9afb29fc0d558a9991d2c87c8781"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#ga81aa9afb29fc0d558a9991d2c87c8781">ksceMsifReadSector</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> sector, void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> sector_count)</td></tr>
+<tr class="memdesc:ga81aa9afb29fc0d558a9991d2c87c8781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read sectors from the Memory Stick medium.  <br /></td></tr>
+<tr class="separator:ga81aa9afb29fc0d558a9991d2c87c8781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfdbd1b75f578a016b40b493d7b399c9" id="r_gabfdbd1b75f578a016b40b493d7b399c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceMsifKernel.html#gabfdbd1b75f578a016b40b493d7b399c9">ksceMsifWriteSector</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> sector, const void *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> sector_count)</td></tr>
+<tr class="memdesc:gabfdbd1b75f578a016b40b493d7b399c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write sectors to the Memory Stick medium.  <br /></td></tr>
+<tr class="separator:gabfdbd1b75f578a016b40b493d7b399c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

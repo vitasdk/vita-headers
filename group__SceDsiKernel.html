@@ -114,12 +114,15 @@ Functions</h2></td></tr>
 <tr class="separator:gae1ce464269ce9cf89147f78b655e98d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca40aa28cbcee8b0db7d25f43b947944" id="r_gaca40aa28cbcee8b0db7d25f43b947944"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gaca40aa28cbcee8b0db7d25f43b947944">ksceDsiGenericShortWrite</a> (int head, int param0, int param1, int param2)</td></tr>
 <tr class="separator:gaca40aa28cbcee8b0db7d25f43b947944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9eb8a4c69851163c9df138a711ce4bd" id="r_gad9eb8a4c69851163c9df138a711ce4bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gad9eb8a4c69851163c9df138a711ce4bd">ksceDsiGenericReadRequest</a> (int head, int param, void *buff, unsigned int <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memitem:gad9eb8a4c69851163c9df138a711ce4bd" id="r_gad9eb8a4c69851163c9df138a711ce4bd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gad9eb8a4c69851163c9df138a711ce4bd">ksceDsiGenericReadRequest</a> (int head, int param, void *buff, unsigned int <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
 <tr class="separator:gad9eb8a4c69851163c9df138a711ce4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60d2da12a2b6c0be8466bb085107090d" id="r_ga60d2da12a2b6c0be8466bb085107090d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#ga60d2da12a2b6c0be8466bb085107090d">ksceDsiDcsShortWrite</a> (int head, unsigned short param0, int param1)</td></tr>
 <tr class="separator:ga60d2da12a2b6c0be8466bb085107090d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabca434b2eb2c6e5f9d05c19a513d7535" id="r_gabca434b2eb2c6e5f9d05c19a513d7535"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535">ksceDsiDcsRead</a> (int head, unsigned short param, void *buff, unsigned int <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memitem:gabca434b2eb2c6e5f9d05c19a513d7535" id="r_gabca434b2eb2c6e5f9d05c19a513d7535"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535">ksceDsiDcsRead</a> (int head, unsigned short param, void *buff, unsigned int <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
 <tr class="separator:gabca434b2eb2c6e5f9d05c19a513d7535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a8248a4150843166f28be39befec74d" id="r_ga8a8248a4150843166f28be39befec74d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDsiKernel.html#ga8a8248a4150843166f28be39befec74d">ksceDsiStartDisplay</a> (<a class="el" href="group__SceDsiKernel.html#gad209bc384800f1dd50bcdac847a5e84c">SceDsiHead</a> head, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> start_control)</td></tr>
+<tr class="memdesc:ga8a8248a4150843166f28be39befec74d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start scanout on a configured DSI head.  <br /></td></tr>
+<tr class="separator:ga8a8248a4150843166f28be39befec74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -492,6 +495,52 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a8248a4150843166f28be39befec74d" name="ga8a8248a4150843166f28be39befec74d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a8248a4150843166f28be39befec74d">&#9670;&#160;</a></span>ksceDsiStartDisplay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDsiStartDisplay </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDsiKernel.html#gad209bc384800f1dd50bcdac847a5e84c">SceDsiHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>start_control</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start scanout on a configured DSI head. </p>
+<p>FW 3.60 accepts start-control values 0 through 4 and writes the following hardware start values:</p>
+<ul>
+<li>0: writes 1 for either head.</li>
+<li>1: writes 1 for head 0 and 2 for head 1.</li>
+<li>2: writes 2 for head 0 and 1 for head 1.</li>
+<li>3 or 4: writes the given value.</li>
+</ul>
+<p>SceDisplay uses values 0 through 3; no loaded FW 3.60 caller uses value 4.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- One of <a class="el" href="group__SceDsiKernel.html#gad209bc384800f1dd50bcdac847a5e84c">SceDsiHead</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_control</td><td>- DSI start-control value from 0 through 4.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010deac117e16fa4851fdc2d3a3e4e83e53b23">SCE_DSI_ERROR_INVALID_HEAD</a> for an invalid head, <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010dea6ba8e3d159e4c427833b06c89d4756a0">SCE_DSI_ERROR_INVALID_PARAM</a> for an invalid start control, or <a class="el" href="group__SceDsiKernel.html#gga299cbdb990d6cf2d48f5d11b4f3010dea58327f6284c54a21ddf8b0052a62c401">SCE_DSI_ERROR_INVALID_STATE</a> if the head has not been configured. </dd></dl>
 
 </div>
 </div>

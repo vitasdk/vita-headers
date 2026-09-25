@@ -4,7 +4,6 @@ var group__SceModulemgrKernel_structSceKernelModuleListInfo =
     [ "modid", "group__SceModulemgrKernel.html#ga78c30cde99866a3a100cc7f15fcd284c", null ],
     [ "version", "group__SceModulemgrKernel.html#ga4edaa4795fc664ed59ba76154801dbb7", null ],
     [ "module_version", "group__SceModulemgrKernel.html#ga796edd94411b64ed79f569f6dc61ac20", null ],
-    [ "unk10", "group__SceModulemgrKernel.html#ga587fa65391d4e58ca8238a6293c7989c", null ],
     [ "unk14", "group__SceModulemgrKernel.html#ga3423361e50052ab0fcce0069f5b3f0e8", null ],
     [ "unk18", "group__SceModulemgrKernel.html#gaa26fe67710ecc4185074760a6c1dd32e", null ],
     [ "unk1C", "group__SceModulemgrKernel.html#gab71201334ba57524fb09346f0591168f", null ],

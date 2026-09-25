@@ -75,6 +75,8 @@ $(document).ready(function(){initNavTree('group__SceCoredumpKernel.html',''); in
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__debug.html">Debug</a> &raquo; <a class="el" href="group__SceCoredump.html">coredump module</a></div></div></div>
@@ -91,19 +93,81 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gad252716c7e87a79af3b307bc0a31729a" id="r_gad252716c7e87a79af3b307bc0a31729a"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gad252716c7e87a79af3b307bc0a31729a">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
-<tr class="separator:gad252716c7e87a79af3b307bc0a31729a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b500348d7c447fba2054cfb237d440b" id="r_ga8b500348d7c447fba2054cfb237d440b"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b500348d7c447fba2054cfb237d440b">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td></tr>
-<tr class="separator:ga8b500348d7c447fba2054cfb237d440b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1224890a593324f5952abb9e228d3da6" id="r_ga1224890a593324f5952abb9e228d3da6"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga1224890a593324f5952abb9e228d3da6">SceKernelCoredumpStateUpdateCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td></tr>
+<tr class="memdesc:ga1224890a593324f5952abb9e228d3da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coredump progress callback.  <br /></td></tr>
+<tr class="separator:ga1224890a593324f5952abb9e228d3da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d7e4adcd26f5c2759754dca12e4cb39" id="r_ga6d7e4adcd26f5c2759754dca12e4cb39"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga6d7e4adcd26f5c2759754dca12e4cb39">SceKernelCoredumpStateFinishCallback</a>) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int is_caf)</td></tr>
+<tr class="memdesc:ga6d7e4adcd26f5c2759754dca12e4cb39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coredump completion callback.  <br /></td></tr>
+<tr class="separator:ga6d7e4adcd26f5c2759754dca12e4cb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga606feacd8c5b31b4b7448a3c99370ece" id="r_ga606feacd8c5b31b4b7448a3c99370ece"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga606feacd8c5b31b4b7448a3c99370ece">SceCoredumpDumpLevel</a> { <a class="el" href="group__SceCoredumpKernel.html#gga606feacd8c5b31b4b7448a3c99370ecea4a2083d4883b29a8eca73dc3f715be97">SCE_COREDUMP_DUMP_LEVEL_CONFIGURED</a> = 0
+, <a class="el" href="group__SceCoredumpKernel.html#gga606feacd8c5b31b4b7448a3c99370ecea3819ada92a4112a151efe4f51e2c8f95">SCE_COREDUMP_DUMP_LEVEL_MINIMAL</a> = 0xF
+, <a class="el" href="group__SceCoredumpKernel.html#gga606feacd8c5b31b4b7448a3c99370eceaef19bbf78084cc28cfdf31efb72afe9f">SCE_COREDUMP_DUMP_LEVEL_FULL</a> = 0x1EF0
+ }</td></tr>
+<tr class="memdesc:ga606feacd8c5b31b4b7448a3c99370ece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dump-level presets, including use of the registry configuration.  <a href="group__SceCoredumpKernel.html#ga606feacd8c5b31b4b7448a3c99370ece">More...</a><br /></td></tr>
+<tr class="separator:ga606feacd8c5b31b4b7448a3c99370ece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c064291636a06be1c48e938dab7ce38" id="r_ga2c064291636a06be1c48e938dab7ce38"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga2c064291636a06be1c48e938dab7ce38">SceCoredumpOutputMode</a> { <a class="el" href="group__SceCoredumpKernel.html#gga2c064291636a06be1c48e938dab7ce38a32976df1d7d8deb0122a5a5cd5b290e7">SCE_COREDUMP_OUTPUT_MODE_AUTO</a> = 0
+, <a class="el" href="group__SceCoredumpKernel.html#gga2c064291636a06be1c48e938dab7ce38aca2b574569a66d36e560986a50cb21ed">SCE_COREDUMP_OUTPUT_MODE_HOST0</a> = 1
+, <a class="el" href="group__SceCoredumpKernel.html#gga2c064291636a06be1c48e938dab7ce38abc5a3d1000c62a09ccd041eebba475be">SCE_COREDUMP_OUTPUT_MODE_UX0_DATA</a> = 2
+, <a class="el" href="group__SceCoredumpKernel.html#gga2c064291636a06be1c48e938dab7ce38a1bc2423d5c4c17ece9eb7b043276fc83">SCE_COREDUMP_OUTPUT_MODE_HOST0_CUSTOM_PATH</a> = 10
+ }</td></tr>
+<tr class="separator:ga2c064291636a06be1c48e938dab7ce38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b377dda5a0ec290077a6859ab86fdbc" id="r_ga9b377dda5a0ec290077a6859ab86fdbc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga9b377dda5a0ec290077a6859ab86fdbc">SceCoredumpCafSegmentMode</a> { <a class="el" href="group__SceCoredumpKernel.html#gga9b377dda5a0ec290077a6859ab86fdbca6f7e35e8bed51117d3391023748ed30b">SCE_COREDUMP_CAF_SEGMENT_MODE_HMAC_SHA256</a> = 0
+, <a class="el" href="group__SceCoredumpKernel.html#gga9b377dda5a0ec290077a6859ab86fdbca8ee8a77db6d0309c9d549a9332ffb243">SCE_COREDUMP_CAF_SEGMENT_MODE_AES_CBC_ENCRYPT</a> = 1
+, <a class="el" href="group__SceCoredumpKernel.html#gga9b377dda5a0ec290077a6859ab86fdbcaa9bc455df566f100af1cc513dc529d8c">SCE_COREDUMP_CAF_SEGMENT_MODE_AES_CBC_DECRYPT</a> = 2
+ }</td></tr>
+<tr class="separator:ga9b377dda5a0ec290077a6859ab86fdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga3d2107d2724d74ba548421380f4e1b08" id="r_ga3d2107d2724d74ba548421380f4e1b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga3d2107d2724d74ba548421380f4e1b08">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceCoredumpKernel.html#structSceCoredumpTriggerParam">SceCoredumpTriggerParam</a>)</td></tr>
 <tr class="separator:ga3d2107d2724d74ba548421380f4e1b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78b48bec9e1617be1aa3dcb9da152cb7" id="r_ga78b48bec9e1617be1aa3dcb9da152cb7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga78b48bec9e1617be1aa3dcb9da152cb7">ksceCoredumpCafInit</a> (void)</td></tr>
+<tr class="memdesc:ga78b48bec9e1617be1aa3dcb9da152cb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes CAF cryptographic support.  <br /></td></tr>
+<tr class="separator:ga78b48bec9e1617be1aa3dcb9da152cb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga841069fedc8929851f08defa26fd2483" id="r_ga841069fedc8929851f08defa26fd2483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga841069fedc8929851f08defa26fd2483">ksceCoredumpCafContextCreate</a> (void)</td></tr>
+<tr class="memdesc:ga841069fedc8929851f08defa26fd2483"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a CAF cryptographic context.  <br /></td></tr>
+<tr class="separator:ga841069fedc8929851f08defa26fd2483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe08e3c8467a4366dd0f2c176f2630b0" id="r_gabe08e3c8467a4366dd0f2c176f2630b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gabe08e3c8467a4366dd0f2c176f2630b0">ksceCoredumpCafContextDestroy</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx)</td></tr>
+<tr class="memdesc:gabe08e3c8467a4366dd0f2c176f2630b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a CAF cryptographic context.  <br /></td></tr>
+<tr class="separator:gabe08e3c8467a4366dd0f2c176f2630b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6101ef4509047512e9a94e68f254f30" id="r_gae6101ef4509047512e9a94e68f254f30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gae6101ef4509047512e9a94e68f254f30">ksceCoredumpCafCreateIv</a> (void *iv, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> iv_size)</td></tr>
+<tr class="memdesc:gae6101ef4509047512e9a94e68f254f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a CAF initialization vector.  <br /></td></tr>
+<tr class="separator:gae6101ef4509047512e9a94e68f254f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f2b30fd2a6ab1b9f7ff15ec07088191" id="r_ga1f2b30fd2a6ab1b9f7ff15ec07088191"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga1f2b30fd2a6ab1b9f7ff15ec07088191">ksceCoredumpCafHeaderInit</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> hmac_key_id)</td></tr>
+<tr class="memdesc:ga1f2b30fd2a6ab1b9f7ff15ec07088191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the HMAC-SHA256 state for a CAF header.  <br /></td></tr>
+<tr class="separator:ga1f2b30fd2a6ab1b9f7ff15ec07088191"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae8ba1bfbcfa3c2a732db6252c462f010" id="r_gae8ba1bfbcfa3c2a732db6252c462f010"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gae8ba1bfbcfa3c2a732db6252c462f010">ksceCoredumpCafHeaderTransform</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, const void *data, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memdesc:gae8ba1bfbcfa3c2a732db6252c462f010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds data to the CAF header's HMAC-SHA256 calculation.  <br /></td></tr>
+<tr class="separator:gae8ba1bfbcfa3c2a732db6252c462f010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78679a63cfd3e24d92c019b6e7b105d8" id="r_ga78679a63cfd3e24d92c019b6e7b105d8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga78679a63cfd3e24d92c019b6e7b105d8">ksceCoredumpCafHeaderFinal</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, void *digest, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> digest_size)</td></tr>
+<tr class="memdesc:ga78679a63cfd3e24d92c019b6e7b105d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the CAF header and writes its HMAC-SHA256 digest.  <br /></td></tr>
+<tr class="separator:ga78679a63cfd3e24d92c019b6e7b105d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadffed43c834d66eff4d7e128ae95b7a5" id="r_gadffed43c834d66eff4d7e128ae95b7a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gadffed43c834d66eff4d7e128ae95b7a5">ksceCoredumpCafSegmentFinal</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, void *digest, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> digest_size)</td></tr>
+<tr class="memdesc:gadffed43c834d66eff4d7e128ae95b7a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes the current CAF segment and writes its HMAC-SHA256 digest.  <br /></td></tr>
+<tr class="separator:gadffed43c834d66eff4d7e128ae95b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b14e3afb4997eb704af3d3552640e29" id="r_ga1b14e3afb4997eb704af3d3552640e29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga1b14e3afb4997eb704af3d3552640e29">ksceCoredumpCafSegmentInit</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> hmac_key_id, <a class="el" href="group__SceCoredumpKernel.html#ga9b377dda5a0ec290077a6859ab86fdbc">SceCoredumpCafSegmentMode</a> mode, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> aes_key_id, const void *iv, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> iv_size)</td></tr>
+<tr class="memdesc:ga1b14e3afb4997eb704af3d3552640e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the cryptographic state for a CAF segment.  <br /></td></tr>
+<tr class="separator:ga1b14e3afb4997eb704af3d3552640e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac544a92a2389668f13dc702caa5606d0" id="r_gac544a92a2389668f13dc702caa5606d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gac544a92a2389668f13dc702caa5606d0">ksceCoredumpCafSegmentTransform</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ctx, const void *src, void *dst, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memdesc:gac544a92a2389668f13dc702caa5606d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms and authenticates CAF segment data.  <br /></td></tr>
+<tr class="separator:gac544a92a2389668f13dc702caa5606d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b161d9b3bfe0ef01562b08952ee0460" id="r_ga0b161d9b3bfe0ef01562b08952ee0460"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga0b161d9b3bfe0ef01562b08952ee0460">ksceCoredumpCreateDump</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const char *<a class="el" href="group__SceKernelDebugKernel.html#ga69e2871216a6de98af47c4c4a9d41134">titleid</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> titleid_len, const char *app_name, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> app_name_len, int app_version, char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_size)</td></tr>
+<tr class="memdesc:ga0b161d9b3bfe0ef01562b08952ee0460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a coredump for a process and waits for completion.  <br /></td></tr>
+<tr class="separator:ga0b161d9b3bfe0ef01562b08952ee0460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga45635727f926bc96689c94ed430b0585" id="r_ga45635727f926bc96689c94ed430b0585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga45635727f926bc96689c94ed430b0585">ksceCoredumpDeleteCrashReportCaf</a> (void)</td></tr>
+<tr class="memdesc:ga45635727f926bc96689c94ed430b0585"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the CAF crash-report file at ux0:data/crash_report.caf.  <br /></td></tr>
+<tr class="separator:ga45635727f926bc96689c94ed430b0585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94e1b2a537f2b52bec80dd8967198c21" id="r_ga94e1b2a537f2b52bec80dd8967198c21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga94e1b2a537f2b52bec80dd8967198c21">ksceCoredumpCafFinal</a> (void)</td></tr>
+<tr class="memdesc:ga94e1b2a537f2b52bec80dd8967198c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes CAF cryptographic support.  <br /></td></tr>
+<tr class="separator:ga94e1b2a537f2b52bec80dd8967198c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga2cd49dc8342df9165288fd9b91ae8683" id="r_ga2cd49dc8342df9165288fd9b91ae8683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga2cd49dc8342df9165288fd9b91ae8683">SceCoredumpTriggerParam::size</a></td></tr>
+<tr class="memdesc:ga2cd49dc8342df9165288fd9b91ae8683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size supplied from the start of this structure; normally <code>sizeof(SceCoredumpTriggerParam)</code>.  <br /></td></tr>
 <tr class="separator:ga2cd49dc8342df9165288fd9b91ae8683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5642b818a7b89e97a3307bfb46f927c4" id="r_ga5642b818a7b89e97a3307bfb46f927c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga5642b818a7b89e97a3307bfb46f927c4">SceCoredumpTriggerParam::data_0x04</a></td></tr>
 <tr class="separator:ga5642b818a7b89e97a3307bfb46f927c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,18 +178,23 @@ Variables</h2></td></tr>
 <tr class="memitem:gac2dbe661669f56b61d5ff146cdfcb630" id="r_gac2dbe661669f56b61d5ff146cdfcb630"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#gac2dbe661669f56b61d5ff146cdfcb630">SceCoredumpTriggerParam::data_0x10</a></td></tr>
 <tr class="separator:gac2dbe661669f56b61d5ff146cdfcb630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4bca484b11622ff0fd5d63c6e596f813" id="r_ga4bca484b11622ff0fd5d63c6e596f813"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga4bca484b11622ff0fd5d63c6e596f813">SceCoredumpTriggerParam::titleid_len</a></td></tr>
+<tr class="memdesc:ga4bca484b11622ff0fd5d63c6e596f813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes to copy from <code>titleid</code>; maximum 10.  <br /></td></tr>
 <tr class="separator:ga4bca484b11622ff0fd5d63c6e596f813"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6e02a1cf8a66b35f8ddc0845258b1834" id="r_ga6e02a1cf8a66b35f8ddc0845258b1834"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga6e02a1cf8a66b35f8ddc0845258b1834">SceCoredumpTriggerParam::titleid</a></td></tr>
+<tr class="memdesc:ga6e02a1cf8a66b35f8ddc0845258b1834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Title ID; required when <code>titleid_len</code> is nonzero.  <br /></td></tr>
 <tr class="separator:ga6e02a1cf8a66b35f8ddc0845258b1834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga54e7792b14fc7be45de332668e7af289" id="r_ga54e7792b14fc7be45de332668e7af289"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga54e7792b14fc7be45de332668e7af289">SceCoredumpTriggerParam::app_name_len</a></td></tr>
+<tr class="memdesc:ga54e7792b14fc7be45de332668e7af289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of bytes to copy from <code>app_name</code>; maximum 0x80.  <br /></td></tr>
 <tr class="separator:ga54e7792b14fc7be45de332668e7af289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5ce4e8bfb595af8f1dc76106c07601ba" id="r_ga5ce4e8bfb595af8f1dc76106c07601ba"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga5ce4e8bfb595af8f1dc76106c07601ba">SceCoredumpTriggerParam::app_name</a></td></tr>
+<tr class="memdesc:ga5ce4e8bfb595af8f1dc76106c07601ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application name; required when <code>app_name_len</code> is nonzero.  <br /></td></tr>
 <tr class="separator:ga5ce4e8bfb595af8f1dc76106c07601ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2feecc9d76ab956eb985c6b9dee40901" id="r_ga2feecc9d76ab956eb985c6b9dee40901"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga2feecc9d76ab956eb985c6b9dee40901">SceCoredumpTriggerParam::data_0x24</a></td></tr>
 <tr class="separator:ga2feecc9d76ab956eb985c6b9dee40901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08423d3a53f9a08c8a7d3979bb9403c8" id="r_ga08423d3a53f9a08c8a7d3979bb9403c8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga08423d3a53f9a08c8a7d3979bb9403c8">SceCoredumpTriggerParam::data_0x28</a></td></tr>
 <tr class="separator:ga08423d3a53f9a08c8a7d3979bb9403c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36c6361c14ff0f7749a02d70d20a489a" id="r_ga36c6361c14ff0f7749a02d70d20a489a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga36c6361c14ff0f7749a02d70d20a489a">SceCoredumpTriggerParam::crash_thid</a></td></tr>
+<tr class="memdesc:ga36c6361c14ff0f7749a02d70d20a489a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread whose stop reason is inspected when <code>crash_cause</code> does not force a stop reason.  <br /></td></tr>
 <tr class="separator:ga36c6361c14ff0f7749a02d70d20a489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8b8eabeb17ca4837c87756c47ac02ba6" id="r_ga8b8eabeb17ca4837c87756c47ac02ba6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceCoredumpKernel.html#ga8b8eabeb17ca4837c87756c47ac02ba6">SceCoredumpTriggerParam::data_0x30</a></td></tr>
 <tr class="separator:ga8b8eabeb17ca4837c87756c47ac02ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,8 +204,8 @@ Variables</h2></td></tr>
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="coredump_8h.html">psp2kern/coredump.h</a>&gt;</span> </div>
-<div class="ttc" id="acoredump_8h_html"><div class="ttname"><a href="coredump_8h.html">coredump.h</a></div></div>
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2coredump_8h.html">psp2kern/coredump.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2coredump_8h_html"><div class="ttname"><a href="psp2kern_2coredump_8h.html">coredump.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">SceCoredumpForDriver_stub </div>
@@ -161,7 +230,7 @@ Variables</h2></td></tr>
 <td class="fieldname">
 size</td>
 <td class="fielddoc">
-</td></tr>
+Size supplied from the start of this structure; normally <code>sizeof(SceCoredumpTriggerParam)</code>. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5642b818a7b89e97a3307bfb46f927c4" name="ga5642b818a7b89e97a3307bfb46f927c4"></a>int</td>
 <td class="fieldname">
@@ -191,25 +260,25 @@ data_0x10</td>
 <td class="fieldname">
 titleid_len</td>
 <td class="fielddoc">
-</td></tr>
+Number of bytes to copy from <code>titleid</code>; maximum 10. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga6e02a1cf8a66b35f8ddc0845258b1834" name="ga6e02a1cf8a66b35f8ddc0845258b1834"></a>const char *</td>
 <td class="fieldname">
 titleid</td>
 <td class="fielddoc">
-</td></tr>
+Title ID; required when <code>titleid_len</code> is nonzero. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga54e7792b14fc7be45de332668e7af289" name="ga54e7792b14fc7be45de332668e7af289"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
 <td class="fieldname">
 app_name_len</td>
 <td class="fielddoc">
-</td></tr>
+Number of bytes to copy from <code>app_name</code>; maximum 0x80. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5ce4e8bfb595af8f1dc76106c07601ba" name="ga5ce4e8bfb595af8f1dc76106c07601ba"></a>const char *</td>
 <td class="fieldname">
 app_name</td>
 <td class="fielddoc">
-</td></tr>
+Application name; required when <code>app_name_len</code> is nonzero. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga2feecc9d76ab956eb985c6b9dee40901" name="ga2feecc9d76ab956eb985c6b9dee40901"></a>int</td>
 <td class="fieldname">
@@ -227,7 +296,7 @@ data_0x28</td>
 <td class="fieldname">
 crash_thid</td>
 <td class="fielddoc">
-</td></tr>
+Thread whose stop reason is inspected when <code>crash_cause</code> does not force a stop reason. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga8b8eabeb17ca4837c87756c47ac02ba6" name="ga8b8eabeb17ca4837c87756c47ac02ba6"></a>int</td>
 <td class="fieldname">
@@ -239,31 +308,127 @@ data_0x30</td>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gad252716c7e87a79af3b307bc0a31729a" name="gad252716c7e87a79af3b307bc0a31729a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad252716c7e87a79af3b307bc0a31729a">&#9670;&#160;</a></span>SceKernelCoredumpStateUpdateCallback</h2>
+<a id="ga1224890a593324f5952abb9e228d3da6" name="ga1224890a593324f5952abb9e228d3da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1224890a593324f5952abb9e228d3da6">&#9670;&#160;</a></span>SceKernelCoredumpStateUpdateCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* SceKernelCoredumpStateUpdateCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td>
+          <td class="memname">typedef int(* SceKernelCoredumpStateUpdateCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int progress)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Coredump progress callback. </p>
+<p>FW 3.60 reports percentages from 0 through 100, with intermediate updates at multiples of five percentage points. The callback return value is ignored.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_id</td><td>Coredump task identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">progress</td><td>Current coredump progress. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ga8b500348d7c447fba2054cfb237d440b" name="ga8b500348d7c447fba2054cfb237d440b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b500348d7c447fba2054cfb237d440b">&#9670;&#160;</a></span>SceKernelCoredumpStateFinishCallback</h2>
+<a id="ga6d7e4adcd26f5c2759754dca12e4cb39" name="ga6d7e4adcd26f5c2759754dca12e4cb39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d7e4adcd26f5c2759754dca12e4cb39">&#9670;&#160;</a></span>SceKernelCoredumpStateFinishCallback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* SceKernelCoredumpStateFinishCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int unk)</td>
+          <td class="memname">typedef int(* SceKernelCoredumpStateFinishCallback) (int task_id, <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int result, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> path_len, int is_caf)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Coredump completion callback. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">task_id</td><td>Coredump task identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">result</td><td>Coredump operation result. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Path of the generated coredump. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path_len</td><td>Length of <code>path</code> including its terminating NUL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_caf</td><td>Nonzero if <code>path</code> identifies a CAF crash report; zero if it identifies a plain PSP2 coredump.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The path is owned by SceCoredump and must be copied before this callback returns. The callback return value is ignored. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga606feacd8c5b31b4b7448a3c99370ece" name="ga606feacd8c5b31b4b7448a3c99370ece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga606feacd8c5b31b4b7448a3c99370ece">&#9670;&#160;</a></span>SceCoredumpDumpLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceCoredumpKernel.html#ga606feacd8c5b31b4b7448a3c99370ece">SceCoredumpDumpLevel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dump-level presets, including use of the registry configuration. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga606feacd8c5b31b4b7448a3c99370ecea4a2083d4883b29a8eca73dc3f715be97" name="gga606feacd8c5b31b4b7448a3c99370ecea4a2083d4883b29a8eca73dc3f715be97"></a>SCE_COREDUMP_DUMP_LEVEL_CONFIGURED&#160;</td><td class="fielddoc"><p>Use the FW 3.60 registry configuration. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga606feacd8c5b31b4b7448a3c99370ecea3819ada92a4112a151efe4f51e2c8f95" name="gga606feacd8c5b31b4b7448a3c99370ecea3819ada92a4112a151efe4f51e2c8f95"></a>SCE_COREDUMP_DUMP_LEVEL_MINIMAL&#160;</td><td class="fielddoc"><p>Select the minimal set of dump sections. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga606feacd8c5b31b4b7448a3c99370eceaef19bbf78084cc28cfdf31efb72afe9f" name="gga606feacd8c5b31b4b7448a3c99370eceaef19bbf78084cc28cfdf31efb72afe9f"></a>SCE_COREDUMP_DUMP_LEVEL_FULL&#160;</td><td class="fielddoc"><p>Select the full set of dump sections. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga2c064291636a06be1c48e938dab7ce38" name="ga2c064291636a06be1c48e938dab7ce38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c064291636a06be1c48e938dab7ce38">&#9670;&#160;</a></span>SceCoredumpOutputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceCoredumpKernel.html#ga2c064291636a06be1c48e938dab7ce38">SceCoredumpOutputMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2c064291636a06be1c48e938dab7ce38a32976df1d7d8deb0122a5a5cd5b290e7" name="gga2c064291636a06be1c48e938dab7ce38a32976df1d7d8deb0122a5a5cd5b290e7"></a>SCE_COREDUMP_OUTPUT_MODE_AUTO&#160;</td><td class="fielddoc"><p>Try the configured host0 path, then sd0, then ux0:data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c064291636a06be1c48e938dab7ce38aca2b574569a66d36e560986a50cb21ed" name="gga2c064291636a06be1c48e938dab7ce38aca2b574569a66d36e560986a50cb21ed"></a>SCE_COREDUMP_OUTPUT_MODE_HOST0&#160;</td><td class="fielddoc"><p>Write to the host0 root. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c064291636a06be1c48e938dab7ce38abc5a3d1000c62a09ccd041eebba475be" name="gga2c064291636a06be1c48e938dab7ce38abc5a3d1000c62a09ccd041eebba475be"></a>SCE_COREDUMP_OUTPUT_MODE_UX0_DATA&#160;</td><td class="fielddoc"><p>Write to ux0:data. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga2c064291636a06be1c48e938dab7ce38a1bc2423d5c4c17ece9eb7b043276fc83" name="gga2c064291636a06be1c48e938dab7ce38a1bc2423d5c4c17ece9eb7b043276fc83"></a>SCE_COREDUMP_OUTPUT_MODE_HOST0_CUSTOM_PATH&#160;</td><td class="fielddoc"><p>Write below a caller-supplied host0 path. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga9b377dda5a0ec290077a6859ab86fdbc" name="ga9b377dda5a0ec290077a6859ab86fdbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b377dda5a0ec290077a6859ab86fdbc">&#9670;&#160;</a></span>SceCoredumpCafSegmentMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceCoredumpKernel.html#ga9b377dda5a0ec290077a6859ab86fdbc">SceCoredumpCafSegmentMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9b377dda5a0ec290077a6859ab86fdbca6f7e35e8bed51117d3391023748ed30b" name="gga9b377dda5a0ec290077a6859ab86fdbca6f7e35e8bed51117d3391023748ed30b"></a>SCE_COREDUMP_CAF_SEGMENT_MODE_HMAC_SHA256&#160;</td><td class="fielddoc"><p>Authenticate the source without encryption. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b377dda5a0ec290077a6859ab86fdbca8ee8a77db6d0309c9d549a9332ffb243" name="gga9b377dda5a0ec290077a6859ab86fdbca8ee8a77db6d0309c9d549a9332ffb243"></a>SCE_COREDUMP_CAF_SEGMENT_MODE_AES_CBC_ENCRYPT&#160;</td><td class="fielddoc"><p>Encrypt, then authenticate the ciphertext. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b377dda5a0ec290077a6859ab86fdbcaa9bc455df566f100af1cc513dc529d8c" name="gga9b377dda5a0ec290077a6859ab86fdbcaa9bc455df566f100af1cc513dc529d8c"></a>SCE_COREDUMP_CAF_SEGMENT_MODE_AES_CBC_DECRYPT&#160;</td><td class="fielddoc"><p>Authenticate the ciphertext, then decrypt it. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -296,6 +461,533 @@ data_0x30</td>
 
 </div>
 </div>
+<a id="ga78b48bec9e1617be1aa3dcb9da152cb7" name="ga78b48bec9e1617be1aa3dcb9da152cb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78b48bec9e1617be1aa3dcb9da152cb7">&#9670;&#160;</a></span>ksceCoredumpCafInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafInit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes CAF cryptographic support. </p>
+<p>This validates and makes the coredump key stores available. A repeated call succeeds when they are already available.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga841069fedc8929851f08defa26fd2483" name="ga841069fedc8929851f08defa26fd2483"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga841069fedc8929851f08defa26fd2483">&#9670;&#160;</a></span>ksceCoredumpCafContextCreate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceCoredumpCafContextCreate </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a CAF cryptographic context. </p>
+<p>A context keeps the state for one HMAC/AES operation. Initializing a header or segment replaces that state, and its matching final function clears it. Do not use the same context concurrently.</p>
+<dl class="section return"><dt>Returns</dt><dd>The context UID on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gabe08e3c8467a4366dd0f2c176f2630b0" name="gabe08e3c8467a4366dd0f2c176f2630b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabe08e3c8467a4366dd0f2c176f2630b0">&#9670;&#160;</a></span>ksceCoredumpCafContextDestroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafContextDestroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destroys a CAF cryptographic context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae6101ef4509047512e9a94e68f254f30" name="gae6101ef4509047512e9a94e68f254f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6101ef4509047512e9a94e68f254f30">&#9670;&#160;</a></span>ksceCoredumpCafCreateIv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafCreateIv </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>iv_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates a CAF initialization vector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">iv</td><td>Buffer that receives the 16-byte initialization vector. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_size</td><td>Size of <code>iv</code>. Must be 16 bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1f2b30fd2a6ab1b9f7ff15ec07088191" name="ga1f2b30fd2a6ab1b9f7ff15ec07088191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f2b30fd2a6ab1b9f7ff15ec07088191">&#9670;&#160;</a></span>ksceCoredumpCafHeaderInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafHeaderInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>hmac_key_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the HMAC-SHA256 state for a CAF header. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hmac_key_id</td><td>ID of the 32-byte HMAC key; 1 through 3.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae8ba1bfbcfa3c2a732db6252c462f010" name="gae8ba1bfbcfa3c2a732db6252c462f010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8ba1bfbcfa3c2a732db6252c462f010">&#9670;&#160;</a></span>ksceCoredumpCafHeaderTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafHeaderTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds data to the CAF header's HMAC-SHA256 calculation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>Header data. May be NULL only when <code>size</code> is zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of bytes to authenticate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga78679a63cfd3e24d92c019b6e7b105d8" name="ga78679a63cfd3e24d92c019b6e7b105d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78679a63cfd3e24d92c019b6e7b105d8">&#9670;&#160;</a></span>ksceCoredumpCafHeaderFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafHeaderFinal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>digest_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalizes the CAF header and writes its HMAC-SHA256 digest. </p>
+<p>The header's cryptographic state is cleared after a successful call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td>Buffer that receives the 32-byte digest. May be NULL only when <code>digest_size</code> is zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digest_size</td><td>Size of <code>digest</code>. Must be at least 32 bytes when <code>digest</code> is non-NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gadffed43c834d66eff4d7e128ae95b7a5" name="gadffed43c834d66eff4d7e128ae95b7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadffed43c834d66eff4d7e128ae95b7a5">&#9670;&#160;</a></span>ksceCoredumpCafSegmentFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafSegmentFinal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>digest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>digest_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalizes the current CAF segment and writes its HMAC-SHA256 digest. </p>
+<p>The segment's cryptographic state is cleared after a successful call.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">digest</td><td>Buffer that receives the 32-byte digest, or NULL to discard it. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digest_size</td><td>Size of <code>digest</code>. Must be at least 32 bytes when <code>digest</code> is non-NULL, and zero when <code>digest</code> is NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1b14e3afb4997eb704af3d3552640e29" name="ga1b14e3afb4997eb704af3d3552640e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b14e3afb4997eb704af3d3552640e29">&#9670;&#160;</a></span>ksceCoredumpCafSegmentInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafSegmentInit </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>hmac_key_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceCoredumpKernel.html#ga9b377dda5a0ec290077a6859ab86fdbc">SceCoredumpCafSegmentMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>aes_key_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>iv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>iv_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializes the cryptographic state for a CAF segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">hmac_key_id</td><td>ID of the 32-byte HMAC key; 1 through 3. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>One of <a class="el" href="group__SceCoredumpKernel.html#ga9b377dda5a0ec290077a6859ab86fdbc">SceCoredumpCafSegmentMode</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aes_key_id</td><td>ID of the 16-byte AES key; 1 through 4 or 0x10000001. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv</td><td>Initialization vector. Exactly 16 bytes are read, including in HMAC-only mode. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">iv_size</td><td>Size of <code>iv</code>. Must be 16 bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac544a92a2389668f13dc702caa5606d0" name="gac544a92a2389668f13dc702caa5606d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac544a92a2389668f13dc702caa5606d0">&#9670;&#160;</a></span>ksceCoredumpCafSegmentTransform()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafSegmentTransform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transforms and authenticates CAF segment data. </p>
+<p>HMAC-only mode authenticates <code>src</code> without writing <code>dst</code>. Encryption mode AES-CBC encrypts <code>src</code> to <code>dst</code> and authenticates the ciphertext. Decryption mode authenticates the ciphertext in <code>src</code> before decrypting it to <code>dst</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">ctx</td><td>CAF context UID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Source buffer. Must be non-NULL when <code>size</code> is nonzero. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>Destination buffer. Must be non-NULL when <code>size</code> is nonzero, including in HMAC-only mode where it is not written. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Number of bytes to process. Must be a multiple of 16 in the AES-CBC modes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga0b161d9b3bfe0ef01562b08952ee0460" name="ga0b161d9b3bfe0ef01562b08952ee0460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b161d9b3bfe0ef01562b08952ee0460">&#9670;&#160;</a></span>ksceCoredumpCreateDump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCreateDump </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>titleid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>titleid_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>app_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>app_name_len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>app_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>path_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a coredump for a process and waits for completion. </p>
+<p>FW 3.60 selects plaintext PSP2DMP or encrypted CAF output from the coredump configuration and target process. All calls share the same wait and path state, so do not call this function concurrently. Its internal completion callback ignores the worker's coredump result, so a return of 0 means the request completed but does not mean dump generation succeeded.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">titleid</td><td>Title ID. Must be non-NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">titleid_len</td><td>Number of bytes to copy from <code>titleid</code>; maximum 10. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">app_name</td><td>Application name. Must be non-NULL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">app_name_len</td><td>Number of bytes to copy from <code>app_name</code>; maximum 0x80. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">app_version</td><td>Decimal application version; for example, 100 is 01.00. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">path</td><td>Optional buffer that receives the generated coredump path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path_size</td><td>Size of <code>path</code>. Must be nonzero when <code>path</code> is non-NULL.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 after the request completes, or &lt; 0 on a request, wait, or cleanup error. The worker's dump-generation result is not returned. </dd></dl>
+
+</div>
+</div>
+<a id="ga45635727f926bc96689c94ed430b0585" name="ga45635727f926bc96689c94ed430b0585"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga45635727f926bc96689c94ed430b0585">&#9670;&#160;</a></span>ksceCoredumpDeleteCrashReportCaf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpDeleteCrashReportCaf </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes the CAF crash-report file at ux0:data/crash_report.caf. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga94e1b2a537f2b52bec80dd8967198c21" name="ga94e1b2a537f2b52bec80dd8967198c21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94e1b2a537f2b52bec80dd8967198c21">&#9670;&#160;</a></span>ksceCoredumpCafFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceCoredumpCafFinal </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finalizes CAF cryptographic support. </p>
+<p>The coredump key stores are securely cleared. Existing context objects are not destroyed; the needed keys are loaded again at the next header or segment initialization.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga2cd49dc8342df9165288fd9b91ae8683" name="ga2cd49dc8342df9165288fd9b91ae8683"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2cd49dc8342df9165288fd9b91ae8683">&#9670;&#160;</a></span>size</h2>
@@ -308,6 +1000,8 @@ data_0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Size supplied from the start of this structure; normally <code>sizeof(SceCoredumpTriggerParam)</code>. </p>
 
 </div>
 </div>
@@ -379,6 +1073,8 @@ data_0x30</td>
       </table>
 </div><div class="memdoc">
 
+<p>Number of bytes to copy from <code>titleid</code>; maximum 10. </p>
+
 </div>
 </div>
 <a id="ga6e02a1cf8a66b35f8ddc0845258b1834" name="ga6e02a1cf8a66b35f8ddc0845258b1834"></a>
@@ -392,6 +1088,8 @@ data_0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Title ID; required when <code>titleid_len</code> is nonzero. </p>
 
 </div>
 </div>
@@ -407,6 +1105,8 @@ data_0x30</td>
       </table>
 </div><div class="memdoc">
 
+<p>Number of bytes to copy from <code>app_name</code>; maximum 0x80. </p>
+
 </div>
 </div>
 <a id="ga5ce4e8bfb595af8f1dc76106c07601ba" name="ga5ce4e8bfb595af8f1dc76106c07601ba"></a>
@@ -420,6 +1120,8 @@ data_0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Application name; required when <code>app_name_len</code> is nonzero. </p>
 
 </div>
 </div>
@@ -462,6 +1164,8 @@ data_0x30</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Thread whose stop reason is inspected when <code>crash_cause</code> does not force a stop reason. </p>
 
 </div>
 </div>

@@ -105,10 +105,20 @@ Functions</h2></td></tr>
 <tr class="separator:ga4b5162b18e450bf7784dd07431f1cd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5279c0b31a7bb0f7ab74a3e546269bef" id="r_ga5279c0b31a7bb0f7ab74a3e546269bef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePfsMgrKernel.html#ga5279c0b31a7bb0f7ab74a3e546269bef">kscePfsDisapprove</a> (const <a class="el" href="group__ScePfsMgrKernel.html#structScePfsRndDriveId">ScePfsRndDriveId</a> *rnd_drive_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> program_authority_id)</td></tr>
 <tr class="separator:ga5279c0b31a7bb0f7ab74a3e546269bef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22f575efb5a9b7a4eac33a846b4dadab" id="r_ga22f575efb5a9b7a4eac33a846b4dadab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePfsMgrKernel.html#ga22f575efb5a9b7a4eac33a846b4dadab">kscePfsAcidDirApprove</a> (const char *mount_point_prefix, const char *dlc_folder)</td></tr>
+<tr class="memdesc:ga22f575efb5a9b7a4eac33a846b4dadab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approve an ACID-protected add-on-content directory.  <br /></td></tr>
+<tr class="separator:ga22f575efb5a9b7a4eac33a846b4dadab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d2ed5eae384d5bc28e799b23981c657" id="r_ga8d2ed5eae384d5bc28e799b23981c657"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePfsMgrKernel.html#ga8d2ed5eae384d5bc28e799b23981c657">kscePfsAcidDirMount</a> (const char *mount_point_prefix, const char *dlc_folder, const void *klicensee)</td></tr>
+<tr class="memdesc:ga8d2ed5eae384d5bc28e799b23981c657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount an ACID-protected add-on-content directory.  <br /></td></tr>
+<tr class="separator:ga8d2ed5eae384d5bc28e799b23981c657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga883c3dc3680ee67fc25431b95181ad86" id="r_ga883c3dc3680ee67fc25431b95181ad86"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePfsMgrKernel.html#ga883c3dc3680ee67fc25431b95181ad86">kscePfsAcidDirUnmount</a> (const char *mount_point_prefix, const char *dlc_folder)</td></tr>
+<tr class="memdesc:ga883c3dc3680ee67fc25431b95181ad86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount an ACID-protected add-on-content directory.  <br /></td></tr>
+<tr class="separator:ga883c3dc3680ee67fc25431b95181ad86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga8e6e810f60d7631fda8cd2f0a120f85b" id="r_ga8e6e810f60d7631fda8cd2f0a120f85b"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ScePfsMgrKernel.html#ga8e6e810f60d7631fda8cd2f0a120f85b">ScePfsRndDriveId::drive_id</a> [0x10]</td></tr>
+<tr class="memdesc:ga8e6e810f60d7631fda8cd2f0a120f85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">NUL-terminated pseudo-drive identifier, such as <code>PD001122334455d</code>.  <br /></td></tr>
 <tr class="separator:ga8e6e810f60d7631fda8cd2f0a120f85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -116,8 +126,15 @@ Variables</h2></td></tr>
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="pfsmgr_8h.html">psp2kern/pfsmgr.h</a>&gt;</span> </div>
-<div class="ttc" id="apfsmgr_8h_html"><div class="ttname"><a href="pfsmgr_8h.html">pfsmgr.h</a></div></div>
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2pfsmgr_8h.html">psp2common/pfsmgr.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2pfsmgr_8h_html"><div class="ttname"><a href="psp2common_2pfsmgr_8h.html">pfsmgr.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2pfsmgr_8h.html">psp2kern/pfsmgr.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2pfsmgr_8h_html"><div class="ttname"><a href="psp2kern_2pfsmgr_8h.html">pfsmgr.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">ScePfsMgrForKernel_stub </div>
@@ -142,7 +159,7 @@ Variables</h2></td></tr>
 <td class="fieldname">
 drive_id[0x10]</td>
 <td class="fielddoc">
-</td></tr>
+NUL-terminated pseudo-drive identifier, such as <code>PD001122334455d</code>. </td></tr>
 </table>
 
 </div>
@@ -225,7 +242,7 @@ drive_id[0x10]</td>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- The pfs encrypted directory path </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rnd_drive_id</td><td>- The pfs mount target Pseudo Drive strings </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">authid</td><td>- The authid </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">program_authority_id</td><td>- The program authority ID </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">klicensee</td><td>- The klicensee </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">mode_index</td><td>- The mode_index</td></tr>
   </table>
@@ -370,6 +387,130 @@ drive_id[0x10]</td>
 
 </div>
 </div>
+<a id="ga22f575efb5a9b7a4eac33a846b4dadab" name="ga22f575efb5a9b7a4eac33a846b4dadab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22f575efb5a9b7a4eac33a846b4dadab">&#9670;&#160;</a></span>kscePfsAcidDirApprove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePfsAcidDirApprove </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mount_point_prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dlc_folder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Approve an ACID-protected add-on-content directory. </p>
+<p>FW 3.60 opens <code>&lt;mount_point_prefix&gt;0:&lt;dlc_folder&gt;</code>, issues ioctl 0x4403, and closes the directory. Both strings must remain valid until this function returns; they are not used afterwards. The maximum lengths are 31 bytes for <em>mount_point_prefix</em> and 62 bytes for <em>dlc_folder</em>, excluding NUL terminators. NULL, empty, or overlong strings return 0x80010016.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point_prefix</td><td>- Prefix used to build the directory path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dlc_folder</td><td>- Add-on-content directory component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ioctl result, an error from closing the directory if the ioctl succeeded, or another negative I/O error. </dd></dl>
+
+</div>
+</div>
+<a id="ga8d2ed5eae384d5bc28e799b23981c657" name="ga8d2ed5eae384d5bc28e799b23981c657"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d2ed5eae384d5bc28e799b23981c657">&#9670;&#160;</a></span>kscePfsAcidDirMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePfsAcidDirMount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mount_point_prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dlc_folder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>klicensee</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mount an ACID-protected add-on-content directory. </p>
+<p>FW 3.60 opens <code>&lt;mount_point_prefix&gt;0:&lt;dlc_folder&gt;</code>, then issues ioctl 0x4402 with exactly 16 input bytes from <em>klicensee</em> and no output buffer. The klicensee may be NULL. After validating the add-on-content license metadata, AppMgr passes NULL when its 16-byte key is all zero and otherwise passes the key. The strings and optional key buffer must remain valid until this function returns; they are not used afterwards. AppMgr invokes this operation with thread-access permission 0x40; the PFS VFS implementation checks whether the caller is authorized. NULL, empty, or overlong strings return 0x80010016.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point_prefix</td><td>- Prefix used to build the directory path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dlc_folder</td><td>- Add-on-content directory component. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">klicensee</td><td>- Optional 16-byte content key.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ioctl result, an error from closing the directory if the ioctl succeeded, or another negative I/O error. </dd></dl>
+
+</div>
+</div>
+<a id="ga883c3dc3680ee67fc25431b95181ad86" name="ga883c3dc3680ee67fc25431b95181ad86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga883c3dc3680ee67fc25431b95181ad86">&#9670;&#160;</a></span>kscePfsAcidDirUnmount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kscePfsAcidDirUnmount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>mount_point_prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>dlc_folder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unmount an ACID-protected add-on-content directory. </p>
+<p>FW 3.60 opens <code>&lt;mount_point_prefix&gt;0:&lt;dlc_folder&gt;</code>, issues ioctl 0x4404, and closes the directory. Both strings must remain valid until this function returns; they are not used afterwards. The maximum lengths are 31 bytes for <em>mount_point_prefix</em> and 62 bytes for <em>dlc_folder</em>, excluding NUL terminators. NULL, empty, or overlong strings return 0x80010016.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mount_point_prefix</td><td>- Prefix used to build the directory path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dlc_folder</td><td>- Add-on-content directory component.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The ioctl result, an error from closing the directory if the ioctl succeeded, or another negative I/O error. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga8e6e810f60d7631fda8cd2f0a120f85b" name="ga8e6e810f60d7631fda8cd2f0a120f85b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8e6e810f60d7631fda8cd2f0a120f85b">&#9670;&#160;</a></span>drive_id</h2>
@@ -382,6 +523,8 @@ drive_id[0x10]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>NUL-terminated pseudo-drive identifier, such as <code>PD001122334455d</code>. </p>
 
 </div>
 </div>

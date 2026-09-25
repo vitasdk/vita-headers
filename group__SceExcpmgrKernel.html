@@ -88,14 +88,23 @@ $(document).ready(function(){initNavTree('group__SceExcpmgrKernel.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structSceExcpmgrBreakpointState" id="r_structSceExcpmgrBreakpointState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrBreakpointState">SceExcpmgrBreakpointState</a></td></tr>
+<tr class="separator:structSceExcpmgrBreakpointState"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceExcpmgrWatchpointState" id="r_structSceExcpmgrWatchpointState"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrWatchpointState">SceExcpmgrWatchpointState</a></td></tr>
+<tr class="separator:structSceExcpmgrWatchpointState"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceExcpmgrData" id="r_structSceExcpmgrData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a></td></tr>
 <tr class="separator:structSceExcpmgrData"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceArmWaypoint" id="r_structSceArmWaypoint"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceArmWaypoint">SceArmWaypoint</a></td></tr>
+<tr class="separator:structSceArmWaypoint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceExcpmgrExceptionContext" id="r_structSceExcpmgrExceptionContext"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a></td></tr>
 <tr class="separator:structSceExcpmgrExceptionContext"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceExcpmgrExceptionHandlerContext" id="r_structSceExcpmgrExceptionHandlerContext"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a></td></tr>
+<tr class="separator:structSceExcpmgrExceptionHandlerContext"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga10137c58f1bf80f35e9cec90612e7164" id="r_ga10137c58f1bf80f35e9cec90612e7164"><td class="memItemLeft" align="right" valign="top">typedef void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga10137c58f1bf80f35e9cec90612e7164">SceExcpmgrExceptionHandler</a>(<a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a> *context, <a class="el" href="group__SceExcpmgrKernel.html#ga66b2162c277738d17f6463c875dbaa5c">SceExcpHandlingCode</a> code)</td></tr>
+<tr class="memdesc:ga10137c58f1bf80f35e9cec90612e7164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exception handler used at priorities 1-7.  <br /></td></tr>
 <tr class="separator:ga10137c58f1bf80f35e9cec90612e7164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -123,13 +132,35 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga66b2162c277738d17f6463c875dbaa5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa57bf46e4e54de2c9453f0245eb3fc50" id="r_gaa57bf46e4e54de2c9453f0245eb3fc50"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50">SceArmWaypointEventType</a> { <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4cb79d2b1582f0f12d5e0fed40f29e84">SCE_ARM_WAYPOINT_EVENT_DIRECT_BRANCH</a> = 0
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ae93462b2eaee9d82d5474ccee4608ace">SCE_ARM_WAYPOINT_EVENT_INDIRECT_BRANCH</a> = 1
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a9397c58dd50c760c05f723295f701903">SCE_ARM_WAYPOINT_EVENT_EXCEPTION</a> = 2
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ab022a148b77381900864109d7241825a">SCE_ARM_WAYPOINT_EVENT_MEMORY_BARRIER</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a1475b079d44da76d657df9b5f748d76b">SCE_ARM_WAYPOINT_EVENT_DEBUG_ENTRY</a> = 4
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4aa224d6b7e3d144f7e76e3800faf009">SCE_ARM_WAYPOINT_EVENT_DEBUG_EXIT</a> = 5
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a0aeab9ec99d2c4cd95d2e7c6e98e0e5c">SCE_ARM_WAYPOINT_EVENT_UNKNOWN_6</a> = 6
+, <a class="el" href="group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50add4f40f994e8bc840ebf6e1663195eb0">SCE_ARM_WAYPOINT_EVENT_UNKNOWN_7</a> = 7
+<br />
+ }</td></tr>
+<tr class="memdesc:gaa57bf46e4e54de2c9453f0245eb3fc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values stored in bits 0-2 of <a class="el" href="group__SceExcpmgrKernel.html#gac608f15a5234019ffec489d2b2593173" title="Bit 31 marks a valid entry; bits 0-2 are one of SceArmWaypointEventType; for exception events,...">SceArmWaypoint::event</a>.  <a href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50">More...</a><br /></td></tr>
+<tr class="separator:gaa57bf46e4e54de2c9453f0245eb3fc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gaa849ec461d111b471f8ac5e0ceee0f1e" id="r_gaa849ec461d111b471f8ac5e0ceee0f1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa849ec461d111b471f8ac5e0ceee0f1e">VITASDK_BUILD_ASSERT_EQ</a> (0x30, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrBreakpointState">SceExcpmgrBreakpointState</a>)</td></tr>
+<tr class="separator:gaa849ec461d111b471f8ac5e0ceee0f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97b293b99b3eaafc1098d5e9305cc33a" id="r_ga97b293b99b3eaafc1098d5e9305cc33a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga97b293b99b3eaafc1098d5e9305cc33a">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrWatchpointState">SceExcpmgrWatchpointState</a>)</td></tr>
+<tr class="separator:ga97b293b99b3eaafc1098d5e9305cc33a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaab0d8411d117829b670fdf68320d6be0" id="r_gaab0d8411d117829b670fdf68320d6be0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaab0d8411d117829b670fdf68320d6be0">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a>)</td></tr>
 <tr class="separator:gaab0d8411d117829b670fdf68320d6be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43c2da6690a63d0a02da486822088a2e" id="r_ga43c2da6690a63d0a02da486822088a2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga43c2da6690a63d0a02da486822088a2e">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceExcpmgrKernel.html#structSceArmWaypoint">SceArmWaypoint</a>)</td></tr>
+<tr class="separator:ga43c2da6690a63d0a02da486822088a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d451515efa9dcf65702ac8e98eb9398" id="r_ga0d451515efa9dcf65702ac8e98eb9398"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga0d451515efa9dcf65702ac8e98eb9398">VITASDK_BUILD_ASSERT_EQ</a> (0x400, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a>)</td></tr>
 <tr class="separator:ga0d451515efa9dcf65702ac8e98eb9398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae54d481d205841bbc3ac6cb6045827a7" id="r_gae54d481d205841bbc3ac6cb6045827a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gae54d481d205841bbc3ac6cb6045827a7">VITASDK_BUILD_ASSERT_EQ</a> (0x8, <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a>)</td></tr>
+<tr class="separator:gae54d481d205841bbc3ac6cb6045827a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab3be0c3fbf4a2deb42fdf83773dad596" id="r_gab3be0c3fbf4a2deb42fdf83773dad596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab3be0c3fbf4a2deb42fdf83773dad596">ksceExcpmgrGetData</a> (void)</td></tr>
 <tr class="memdesc:gab3be0c3fbf4a2deb42fdf83773dad596"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to SceExcpmgr's internal data.  <br /></td></tr>
 <tr class="separator:gab3be0c3fbf4a2deb42fdf83773dad596"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,20 +170,77 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:gac93452063294539d59964ab61f2846c3" id="r_gac93452063294539d59964ab61f2846c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac93452063294539d59964ab61f2846c3">SceExcpmgrBreakpointState::lock</a></td></tr>
+<tr class="separator:gac93452063294539d59964ab61f2846c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c9e011dc566b91ed032a801fe9c6197" id="r_ga6c9e011dc566b91ed032a801fe9c6197"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6c9e011dc566b91ed032a801fe9c6197">SceExcpmgrBreakpointState::reserved</a></td></tr>
+<tr class="memdesc:ga6c9e011dc566b91ed032a801fe9c6197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS.  <br /></td></tr>
+<tr class="separator:ga6c9e011dc566b91ed032a801fe9c6197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga578041c6299ebb89549ac53fc8dce904" id="r_ga578041c6299ebb89549ac53fc8dce904"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga578041c6299ebb89549ac53fc8dce904">SceExcpmgrBreakpointState::DBGBVR0</a></td></tr>
+<tr class="separator:ga578041c6299ebb89549ac53fc8dce904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga86bf308292e058351d1f1320c56d6230" id="r_ga86bf308292e058351d1f1320c56d6230"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga86bf308292e058351d1f1320c56d6230">SceExcpmgrBreakpointState::DBGBCR0</a></td></tr>
+<tr class="separator:ga86bf308292e058351d1f1320c56d6230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98ce84d9f9ce677345d4d6ba33ebdd83" id="r_ga98ce84d9f9ce677345d4d6ba33ebdd83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga98ce84d9f9ce677345d4d6ba33ebdd83">SceExcpmgrBreakpointState::DBGBVR1</a></td></tr>
+<tr class="separator:ga98ce84d9f9ce677345d4d6ba33ebdd83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f2498a384f6f5c0ae1f7a44973f3dc7" id="r_ga0f2498a384f6f5c0ae1f7a44973f3dc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga0f2498a384f6f5c0ae1f7a44973f3dc7">SceExcpmgrBreakpointState::DBGBCR1</a></td></tr>
+<tr class="separator:ga0f2498a384f6f5c0ae1f7a44973f3dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga547250fc5fdaf2ad7b0268201771a737" id="r_ga547250fc5fdaf2ad7b0268201771a737"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga547250fc5fdaf2ad7b0268201771a737">SceExcpmgrBreakpointState::DBGBVR2</a></td></tr>
+<tr class="separator:ga547250fc5fdaf2ad7b0268201771a737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa83d74661247c2d96bd550d2816bb886" id="r_gaa83d74661247c2d96bd550d2816bb886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa83d74661247c2d96bd550d2816bb886">SceExcpmgrBreakpointState::DBGBCR2</a></td></tr>
+<tr class="separator:gaa83d74661247c2d96bd550d2816bb886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf34b02fbd0c4758c976d5031397a8711" id="r_gaf34b02fbd0c4758c976d5031397a8711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaf34b02fbd0c4758c976d5031397a8711">SceExcpmgrBreakpointState::DBGBVR3</a></td></tr>
+<tr class="separator:gaf34b02fbd0c4758c976d5031397a8711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa0224e4a65cdbe8786be48eff82522a8" id="r_gaa0224e4a65cdbe8786be48eff82522a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa0224e4a65cdbe8786be48eff82522a8">SceExcpmgrBreakpointState::DBGBCR3</a></td></tr>
+<tr class="separator:gaa0224e4a65cdbe8786be48eff82522a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ed90e51f44029d0b057dd688355774b" id="r_ga1ed90e51f44029d0b057dd688355774b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga1ed90e51f44029d0b057dd688355774b">SceExcpmgrBreakpointState::DBGBVR4</a></td></tr>
+<tr class="separator:ga1ed90e51f44029d0b057dd688355774b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga644c62633e63ea217e5181681316add9" id="r_ga644c62633e63ea217e5181681316add9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga644c62633e63ea217e5181681316add9">SceExcpmgrBreakpointState::DBGBCR4</a></td></tr>
+<tr class="separator:ga644c62633e63ea217e5181681316add9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2cda074a9d6d1d576384b17daf806dc" id="r_gac2cda074a9d6d1d576384b17daf806dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac2cda074a9d6d1d576384b17daf806dc">SceExcpmgrWatchpointState::lock</a></td></tr>
+<tr class="separator:gac2cda074a9d6d1d576384b17daf806dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga624383e815ae6f1839dbecc1315ea40f" id="r_ga624383e815ae6f1839dbecc1315ea40f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga624383e815ae6f1839dbecc1315ea40f">SceExcpmgrWatchpointState::reserved</a></td></tr>
+<tr class="memdesc:ga624383e815ae6f1839dbecc1315ea40f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS.  <br /></td></tr>
+<tr class="separator:ga624383e815ae6f1839dbecc1315ea40f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9838ae3f81a8bd3c2c75daaa571876fe" id="r_ga9838ae3f81a8bd3c2c75daaa571876fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga9838ae3f81a8bd3c2c75daaa571876fe">SceExcpmgrWatchpointState::DBGWVR0</a></td></tr>
+<tr class="separator:ga9838ae3f81a8bd3c2c75daaa571876fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5599a5154d2ac38519d39f502757d825" id="r_ga5599a5154d2ac38519d39f502757d825"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5599a5154d2ac38519d39f502757d825">SceExcpmgrWatchpointState::DBGWCR0</a></td></tr>
+<tr class="separator:ga5599a5154d2ac38519d39f502757d825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga69948b8892885488476bc1e9eceabf87" id="r_ga69948b8892885488476bc1e9eceabf87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga69948b8892885488476bc1e9eceabf87">SceExcpmgrWatchpointState::DBGWVR1</a></td></tr>
+<tr class="separator:ga69948b8892885488476bc1e9eceabf87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab98ec36752bb68273778d8bc85f162cc" id="r_gab98ec36752bb68273778d8bc85f162cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab98ec36752bb68273778d8bc85f162cc">SceExcpmgrWatchpointState::DBGWCR1</a></td></tr>
+<tr class="separator:gab98ec36752bb68273778d8bc85f162cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga103282120f9f8a3f4f23a0b471c02bfe" id="r_ga103282120f9f8a3f4f23a0b471c02bfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga103282120f9f8a3f4f23a0b471c02bfe">SceExcpmgrWatchpointState::DBGWVR2</a></td></tr>
+<tr class="separator:ga103282120f9f8a3f4f23a0b471c02bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3ac6a0452af5baa476c0648231a85f12" id="r_ga3ac6a0452af5baa476c0648231a85f12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga3ac6a0452af5baa476c0648231a85f12">SceExcpmgrWatchpointState::DBGWCR2</a></td></tr>
+<tr class="separator:ga3ac6a0452af5baa476c0648231a85f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10aca2f97607b3cf0b2c87d356d2a0ab" id="r_ga10aca2f97607b3cf0b2c87d356d2a0ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga10aca2f97607b3cf0b2c87d356d2a0ab">SceExcpmgrWatchpointState::DBGWVR3</a></td></tr>
+<tr class="separator:ga10aca2f97607b3cf0b2c87d356d2a0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97b17042da1a7bc0bae9720566d3d428" id="r_ga97b17042da1a7bc0bae9720566d3d428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga97b17042da1a7bc0bae9720566d3d428">SceExcpmgrWatchpointState::DBGWCR3</a></td></tr>
+<tr class="separator:ga97b17042da1a7bc0bae9720566d3d428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9baa3541cbab960021e07640e2c05ede" id="r_ga9baa3541cbab960021e07640e2c05ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga9baa3541cbab960021e07640e2c05ede">SceExcpmgrData::nestedExceptionCount</a> [4]</td></tr>
-<tr class="memdesc:ga9baa3541cbab960021e07640e2c05ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of times an exception handler has been entered on core - panic if &gt; 1 on exception return.  <br /></td></tr>
+<tr class="memdesc:ga9baa3541cbab960021e07640e2c05ede"><td class="mdescLeft">&#160;</td><td class="mdescRight">Active UNDEF, PABT, or DABT exception depth on each CPU core.  <br /></td></tr>
 <tr class="separator:ga9baa3541cbab960021e07640e2c05ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga996a7817fc7ba169bf42d1aa8520921b" id="r_ga996a7817fc7ba169bf42d1aa8520921b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga996a7817fc7ba169bf42d1aa8520921b">SceExcpmgrData::unused</a> [4]</td></tr>
 <tr class="memdesc:ga996a7817fc7ba169bf42d1aa8520921b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seemingly unused.  <br /></td></tr>
 <tr class="separator:ga996a7817fc7ba169bf42d1aa8520921b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa82903a3d5b13e977b94a6b77598e90a" id="r_gaa82903a3d5b13e977b94a6b77598e90a"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaa82903a3d5b13e977b94a6b77598e90a">SceExcpmgrData::ExcpStackTop</a> [4]</td></tr>
-<tr class="memdesc:gaa82903a3d5b13e977b94a6b77598e90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Top of the exception stack (size is 0x1000)  <br /></td></tr>
+<tr class="memdesc:gaa82903a3d5b13e977b94a6b77598e90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base address of each CPU core's 0x1000-byte exception stack.  <br /></td></tr>
 <tr class="separator:gaa82903a3d5b13e977b94a6b77598e90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae3c61dbb8fe66949038b6e68cc74c1c1" id="r_gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gae3c61dbb8fe66949038b6e68cc74c1c1">SceExcpmgrData::ExcpStackBottom</a> [4]</td></tr>
-<tr class="memdesc:gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bottom of the exception stack.  <br /></td></tr>
+<tr class="memdesc:gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address immediately after each CPU core's exception stack, used as its initial stack pointer.  <br /></td></tr>
 <tr class="separator:gae3c61dbb8fe66949038b6e68cc74c1c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5c64e05197ab87f4fa4e7116aababd8" id="r_gab5c64e05197ab87f4fa4e7116aababd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gab5c64e05197ab87f4fa4e7116aababd8">SceArmWaypoint::raw_data</a></td></tr>
+<tr class="memdesc:gab5c64e05197ab87f4fa4e7116aababd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Printed and forwarded without interpretation on FW 3.60.  <br /></td></tr>
+<tr class="separator:gab5c64e05197ab87f4fa4e7116aababd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14b8a81636706cbf5ea984d006f17239" id="r_ga14b8a81636706cbf5ea984d006f17239"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga14b8a81636706cbf5ea984d006f17239">SceArmWaypoint::pc</a></td></tr>
+<tr class="memdesc:ga14b8a81636706cbf5ea984d006f17239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorded source PC.  <br /></td></tr>
+<tr class="separator:ga14b8a81636706cbf5ea984d006f17239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga795c96a50eafc0e9a1804120ceef7c22" id="r_ga795c96a50eafc0e9a1804120ceef7c22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga795c96a50eafc0e9a1804120ceef7c22">SceArmWaypoint::target_pc</a></td></tr>
+<tr class="memdesc:ga795c96a50eafc0e9a1804120ceef7c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recorded target PC.  <br /></td></tr>
+<tr class="separator:ga795c96a50eafc0e9a1804120ceef7c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac608f15a5234019ffec489d2b2593173" id="r_gac608f15a5234019ffec489d2b2593173"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac608f15a5234019ffec489d2b2593173">SceArmWaypoint::event</a></td></tr>
+<tr class="memdesc:gac608f15a5234019ffec489d2b2593173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit 31 marks a valid entry; bits 0-2 are one of <a class="el" href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50" title="Values stored in bits 0-2 of SceArmWaypoint::event.">SceArmWaypointEventType</a>; for exception events, bits 4-7 select the subtype; bit 8 marks a link, bit 9 selects a 32-bit instruction, bit 10 marks a taken branch, and bits 11-12 select the instruction-set state.  <br /></td></tr>
+<tr class="separator:gac608f15a5234019ffec489d2b2593173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6730d5ef253853be606221bf9063d48e" id="r_ga6730d5ef253853be606221bf9063d48e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga6730d5ef253853be606221bf9063d48e">SceExcpmgrExceptionContext::r0</a></td></tr>
-<tr class="memdesc:ga6730d5ef253853be606221bf9063d48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Size is 0x400 on FW 3.60  <br /></td></tr>
 <tr class="separator:ga6730d5ef253853be606221bf9063d48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84149d1ad1aa2ef5b59ff161b7732794" id="r_ga84149d1ad1aa2ef5b59ff161b7732794"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga84149d1ad1aa2ef5b59ff161b7732794">SceExcpmgrExceptionContext::r1</a></td></tr>
 <tr class="separator:ga84149d1ad1aa2ef5b59ff161b7732794"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -183,8 +271,10 @@ Variables</h2></td></tr>
 <tr class="memitem:ga05506e0d603c8dd4fc3506e129954c13" id="r_ga05506e0d603c8dd4fc3506e129954c13"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga05506e0d603c8dd4fc3506e129954c13">SceExcpmgrExceptionContext::lr</a></td></tr>
 <tr class="separator:ga05506e0d603c8dd4fc3506e129954c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac6641e7b322c1f7077c54277108a635d" id="r_gac6641e7b322c1f7077c54277108a635d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gac6641e7b322c1f7077c54277108a635d">SceExcpmgrExceptionContext::address_of_faulting_instruction</a></td></tr>
+<tr class="memdesc:gac6641e7b322c1f7077c54277108a635d"><td class="mdescLeft">&#160;</td><td class="mdescRight">LR-8 for DABT, LR-4 for PABT or ARM UNDEF, and LR-2 for Thumb UNDEF.  <br /></td></tr>
 <tr class="separator:gac6641e7b322c1f7077c54277108a635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacfcedf6243dbc408af617f5396370fb4" id="r_gacfcedf6243dbc408af617f5396370fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gacfcedf6243dbc408af617f5396370fb4">SceExcpmgrExceptionContext::ExceptionKind</a></td></tr>
+<tr class="memdesc:gacfcedf6243dbc408af617f5396370fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The kind of exception the CPU encountered.  <br /></td></tr>
 <tr class="separator:gacfcedf6243dbc408af617f5396370fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeda2f1d792faf8dccc41f177901d7091" id="r_gaeda2f1d792faf8dccc41f177901d7091"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaeda2f1d792faf8dccc41f177901d7091">SceExcpmgrExceptionContext::SPSR</a></td></tr>
 <tr class="separator:gaeda2f1d792faf8dccc41f177901d7091"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +315,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ga23f2d5c03d9486076c0741ecc1232e5b" id="r_ga23f2d5c03d9486076c0741ecc1232e5b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga23f2d5c03d9486076c0741ecc1232e5b">SceExcpmgrExceptionContext::PMCNTENSET</a></td></tr>
 <tr class="separator:ga23f2d5c03d9486076c0741ecc1232e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5287d8c47ecb64d29b3932399fad1716" id="r_ga5287d8c47ecb64d29b3932399fad1716"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga5287d8c47ecb64d29b3932399fad1716">SceExcpmgrExceptionContext::PMCNTENSET_2</a></td></tr>
+<tr class="memdesc:ga5287d8c47ecb64d29b3932399fad1716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Second copy of PMCNTENSET.  <br /></td></tr>
 <tr class="separator:ga5287d8c47ecb64d29b3932399fad1716"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2dadd4312cdd26cf86000b30a11ec459" id="r_ga2dadd4312cdd26cf86000b30a11ec459"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga2dadd4312cdd26cf86000b30a11ec459">SceExcpmgrExceptionContext::PMSELR</a></td></tr>
 <tr class="separator:ga2dadd4312cdd26cf86000b30a11ec459"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -265,9 +356,16 @@ Variables</h2></td></tr>
 <tr class="memitem:gadef335f8dc54376e3c55150ee199ea35" id="r_gadef335f8dc54376e3c55150ee199ea35"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gadef335f8dc54376e3c55150ee199ea35">SceExcpmgrExceptionContext::unusedDC</a> [9]</td></tr>
 <tr class="separator:gadef335f8dc54376e3c55150ee199ea35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga952df59c9d3a9fc78f0d6102aca46f4f" id="r_ga952df59c9d3a9fc78f0d6102aca46f4f"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga952df59c9d3a9fc78f0d6102aca46f4f">SceExcpmgrExceptionContext::VFP_registers</a> [32]</td></tr>
+<tr class="memdesc:ga952df59c9d3a9fc78f0d6102aca46f4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Content of floating-point registers D0-D31.  <br /></td></tr>
 <tr class="separator:ga952df59c9d3a9fc78f0d6102aca46f4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1cca85f0cbf05f2885f949e1fb0e0242" id="r_ga1cca85f0cbf05f2885f949e1fb0e0242"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga1cca85f0cbf05f2885f949e1fb0e0242">SceExcpmgrExceptionContext::unk200</a> [128]</td></tr>
 <tr class="separator:ga1cca85f0cbf05f2885f949e1fb0e0242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8e605463cd07c3cf01f94957b77cef40" id="r_ga8e605463cd07c3cf01f94957b77cef40"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#ga8e605463cd07c3cf01f94957b77cef40">SceExcpmgrExceptionHandlerContext::next</a></td></tr>
+<tr class="memdesc:ga8e605463cd07c3cf01f94957b77cef40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the next handler record; bit 0 preserves Thumb state.  <br /></td></tr>
+<tr class="separator:ga8e605463cd07c3cf01f94957b77cef40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf485f14f2db9a774654cb8684f4c636e" id="r_gaf485f14f2db9a774654cb8684f4c636e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceExcpmgrKernel.html#gaf485f14f2db9a774654cb8684f4c636e">SceExcpmgrExceptionHandlerContext::must_be_zero</a></td></tr>
+<tr class="memdesc:gaf485f14f2db9a774654cb8684f4c636e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be zero when registering during cold boot; otherwise unused on FW 3.60.  <br /></td></tr>
+<tr class="separator:gaf485f14f2db9a774654cb8684f4c636e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -282,6 +380,172 @@ Variables</h2></td></tr>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceExcpmgrBreakpointState" id="structSceExcpmgrBreakpointState"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceExcpmgrBreakpointState">&#9670;&#160;</a></span>SceExcpmgrBreakpointState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceExcpmgrBreakpointState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac93452063294539d59964ab61f2846c3" name="gac93452063294539d59964ab61f2846c3"></a><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a></td>
+<td class="fieldname">
+lock</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga6c9e011dc566b91ed032a801fe9c6197" name="ga6c9e011dc566b91ed032a801fe9c6197"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga578041c6299ebb89549ac53fc8dce904" name="ga578041c6299ebb89549ac53fc8dce904"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBVR0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga86bf308292e058351d1f1320c56d6230" name="ga86bf308292e058351d1f1320c56d6230"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBCR0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga98ce84d9f9ce677345d4d6ba33ebdd83" name="ga98ce84d9f9ce677345d4d6ba33ebdd83"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBVR1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga0f2498a384f6f5c0ae1f7a44973f3dc7" name="ga0f2498a384f6f5c0ae1f7a44973f3dc7"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBCR1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga547250fc5fdaf2ad7b0268201771a737" name="ga547250fc5fdaf2ad7b0268201771a737"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBVR2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa83d74661247c2d96bd550d2816bb886" name="gaa83d74661247c2d96bd550d2816bb886"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBCR2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaf34b02fbd0c4758c976d5031397a8711" name="gaf34b02fbd0c4758c976d5031397a8711"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBVR3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gaa0224e4a65cdbe8786be48eff82522a8" name="gaa0224e4a65cdbe8786be48eff82522a8"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBCR3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga1ed90e51f44029d0b057dd688355774b" name="ga1ed90e51f44029d0b057dd688355774b"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBVR4</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga644c62633e63ea217e5181681316add9" name="ga644c62633e63ea217e5181681316add9"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGBCR4</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceExcpmgrWatchpointState" id="structSceExcpmgrWatchpointState"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceExcpmgrWatchpointState">&#9670;&#160;</a></span>SceExcpmgrWatchpointState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceExcpmgrWatchpointState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac2cda074a9d6d1d576384b17daf806dc" name="gac2cda074a9d6d1d576384b17daf806dc"></a><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a></td>
+<td class="fieldname">
+lock</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga624383e815ae6f1839dbecc1315ea40f" name="ga624383e815ae6f1839dbecc1315ea40f"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9838ae3f81a8bd3c2c75daaa571876fe" name="ga9838ae3f81a8bd3c2c75daaa571876fe"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWVR0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga5599a5154d2ac38519d39f502757d825" name="ga5599a5154d2ac38519d39f502757d825"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWCR0</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga69948b8892885488476bc1e9eceabf87" name="ga69948b8892885488476bc1e9eceabf87"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWVR1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="gab98ec36752bb68273778d8bc85f162cc" name="gab98ec36752bb68273778d8bc85f162cc"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWCR1</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga103282120f9f8a3f4f23a0b471c02bfe" name="ga103282120f9f8a3f4f23a0b471c02bfe"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWVR2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga3ac6a0452af5baa476c0648231a85f12" name="ga3ac6a0452af5baa476c0648231a85f12"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWCR2</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga10aca2f97607b3cf0b2c87d356d2a0ab" name="ga10aca2f97607b3cf0b2c87d356d2a0ab"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWVR3</td>
+<td class="fielddoc">
+</td></tr>
+<tr><td class="fieldtype">
+<a id="ga97b17042da1a7bc0bae9720566d3d428" name="ga97b17042da1a7bc0bae9720566d3d428"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+DBGWCR3</td>
+<td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceExcpmgrData" id="structSceExcpmgrData"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceExcpmgrData">&#9670;&#160;</a></span>SceExcpmgrData</h2>
 
@@ -300,7 +564,7 @@ Variables</h2></td></tr>
 <td class="fieldname">
 nestedExceptionCount[4]</td>
 <td class="fielddoc">
-Number of times an exception handler has been entered on core - panic if &gt; 1 on exception return. </td></tr>
+Active UNDEF, PABT, or DABT exception depth on each CPU core. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga996a7817fc7ba169bf42d1aa8520921b" name="ga996a7817fc7ba169bf42d1aa8520921b"></a>int</td>
 <td class="fieldname">
@@ -312,13 +576,54 @@ Seemingly unused. </td></tr>
 <td class="fieldname">
 ExcpStackTop[4]</td>
 <td class="fielddoc">
-Top of the exception stack (size is 0x1000) </td></tr>
+Base address of each CPU core's 0x1000-byte exception stack. </td></tr>
 <tr><td class="fieldtype">
 <a id="gae3c61dbb8fe66949038b6e68cc74c1c1" name="gae3c61dbb8fe66949038b6e68cc74c1c1"></a>void *</td>
 <td class="fieldname">
 ExcpStackBottom[4]</td>
 <td class="fielddoc">
-Bottom of the exception stack. </td></tr>
+Address immediately after each CPU core's exception stack, used as its initial stack pointer. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceArmWaypoint" id="structSceArmWaypoint"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceArmWaypoint">&#9670;&#160;</a></span>SceArmWaypoint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceArmWaypoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gab5c64e05197ab87f4fa4e7116aababd8" name="gab5c64e05197ab87f4fa4e7116aababd8"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+raw_data</td>
+<td class="fielddoc">
+Printed and forwarded without interpretation on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga14b8a81636706cbf5ea984d006f17239" name="ga14b8a81636706cbf5ea984d006f17239"></a><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a></td>
+<td class="fieldname">
+pc</td>
+<td class="fielddoc">
+Recorded source PC. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga795c96a50eafc0e9a1804120ceef7c22" name="ga795c96a50eafc0e9a1804120ceef7c22"></a><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a></td>
+<td class="fieldname">
+target_pc</td>
+<td class="fielddoc">
+Recorded target PC. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac608f15a5234019ffec489d2b2593173" name="gac608f15a5234019ffec489d2b2593173"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+event</td>
+<td class="fielddoc">
+Bit 31 marks a valid entry; bits 0-2 are one of <a class="el" href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50" title="Values stored in bits 0-2 of SceArmWaypoint::event.">SceArmWaypointEventType</a>; for exception events, bits 4-7 select the subtype; bit 8 marks a link, bit 9 selects a 32-bit instruction, bit 10 marks a taken branch, and bits 11-12 select the instruction-set state. </td></tr>
 </table>
 
 </div>
@@ -341,7 +646,7 @@ Bottom of the exception stack. </td></tr>
 <td class="fieldname">
 r0</td>
 <td class="fielddoc">
-&lt; Size is 0x400 on FW 3.60 </td></tr>
+</td></tr>
 <tr><td class="fieldtype">
 <a id="ga84149d1ad1aa2ef5b59ff161b7732794" name="ga84149d1ad1aa2ef5b59ff161b7732794"></a>uint32_t</td>
 <td class="fieldname">
@@ -431,13 +736,13 @@ lr</td>
 <td class="fieldname">
 address_of_faulting_instruction</td>
 <td class="fielddoc">
-</td></tr>
+LR-8 for DABT, LR-4 for PABT or ARM UNDEF, and LR-2 for Thumb UNDEF. </td></tr>
 <tr><td class="fieldtype">
 <a id="gacfcedf6243dbc408af617f5396370fb4" name="gacfcedf6243dbc408af617f5396370fb4"></a><a class="el" href="group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972">SceExcpKind</a></td>
 <td class="fieldname">
 ExceptionKind</td>
 <td class="fielddoc">
-</td></tr>
+The kind of exception the CPU encountered. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaeda2f1d792faf8dccc41f177901d7091" name="gaeda2f1d792faf8dccc41f177901d7091"></a>uint32_t</td>
 <td class="fieldname">
@@ -557,7 +862,7 @@ PMCNTENSET</td>
 <td class="fieldname">
 PMCNTENSET_2</td>
 <td class="fielddoc">
-</td></tr>
+Second copy of PMCNTENSET. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga2dadd4312cdd26cf86000b30a11ec459" name="ga2dadd4312cdd26cf86000b30a11ec459"></a>uint32_t</td>
 <td class="fieldname">
@@ -677,13 +982,42 @@ unusedDC[9]</td>
 <td class="fieldname">
 VFP_registers[32]</td>
 <td class="fielddoc">
-</td></tr>
+Content of floating-point registers D0-D31. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga1cca85f0cbf05f2885f949e1fb0e0242" name="ga1cca85f0cbf05f2885f949e1fb0e0242"></a>uint32_t</td>
 <td class="fieldname">
 unk200[128]</td>
 <td class="fielddoc">
 </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceExcpmgrExceptionHandlerContext" id="structSceExcpmgrExceptionHandlerContext"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceExcpmgrExceptionHandlerContext">&#9670;&#160;</a></span>SceExcpmgrExceptionHandlerContext</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceExcpmgrExceptionHandlerContext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga8e605463cd07c3cf01f94957b77cef40" name="ga8e605463cd07c3cf01f94957b77cef40"></a>struct <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a> *</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+Pointer to the next handler record; bit 0 preserves Thumb state. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaf485f14f2db9a774654cb8684f4c636e" name="gaf485f14f2db9a774654cb8684f4c636e"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+must_be_zero</td>
+<td class="fielddoc">
+Must be zero when registering during cold boot; otherwise unused on FW 3.60. </td></tr>
 </table>
 
 </div>
@@ -700,6 +1034,9 @@ unk200[128]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Exception handler used at priorities 1-7. </p>
+<p>Handlers are entered with <code>context</code> in R0 and <code>code</code> in R1. They transfer control to the next handler or the exception-return path and do not return to a caller. </p>
 
 </div>
 </div>
@@ -740,21 +1077,105 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cad514d7b5dd73e7cd776a5550ea7394c0" name="gga66b2162c277738d17f6463c875dbaa5cad514d7b5dd73e7cd776a5550ea7394c0"></a>SCE_EXCPMGR_EXCEPTION_HANDLED&#160;</td><td class="fielddoc"><p>Exception handled. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cad514d7b5dd73e7cd776a5550ea7394c0" name="gga66b2162c277738d17f6463c875dbaa5cad514d7b5dd73e7cd776a5550ea7394c0"></a>SCE_EXCPMGR_EXCEPTION_HANDLED&#160;</td><td class="fielddoc"><p>Resume from the supplied exception context. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5ca0b8f828278ab3804297e5f874d6920c3" name="gga66b2162c277738d17f6463c875dbaa5ca0b8f828278ab3804297e5f874d6920c3"></a>SCE_EXCPMGR_EXCEPTION_NOT_HANDLED&#160;</td><td class="fielddoc"><p>Exception not handled - kills app with C2-12828-1. </p>
+<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5ca0b8f828278ab3804297e5f874d6920c3" name="gga66b2162c277738d17f6463c875dbaa5ca0b8f828278ab3804297e5f874d6920c3"></a>SCE_EXCPMGR_EXCEPTION_NOT_HANDLED&#160;</td><td class="fielddoc"><p>Process an unhandled thread exception, then continue the handler chain. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86" name="gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86"></a>SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_2&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec" name="gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec"></a>SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL&#160;</td><td class="fielddoc"><p>Fatal exception - panics the kernel. </p>
+<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86" name="gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86"></a>SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_2&#160;</td><td class="fielddoc"><p>Passed on unchanged; no code that produces this value was found in the available FW 3.60 modules. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422" name="gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422"></a>SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec" name="gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec"></a>SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL&#160;</td><td class="fielddoc"><p>Fatal exception; panics the kernel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422" name="gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422"></a>SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4&#160;</td><td class="fielddoc"><p>ThreadMgr queued the exception for later debug processing; the final handler follows the normal exception-return path. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaa57bf46e4e54de2c9453f0245eb3fc50" name="gaa57bf46e4e54de2c9453f0245eb3fc50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa57bf46e4e54de2c9453f0245eb3fc50">&#9670;&#160;</a></span>SceArmWaypointEventType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50">SceArmWaypointEventType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Values stored in bits 0-2 of <a class="el" href="group__SceExcpmgrKernel.html#gac608f15a5234019ffec489d2b2593173" title="Bit 31 marks a valid entry; bits 0-2 are one of SceArmWaypointEventType; for exception events,...">SceArmWaypoint::event</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50a4cb79d2b1582f0f12d5e0fed40f29e84" name="ggaa57bf46e4e54de2c9453f0245eb3fc50a4cb79d2b1582f0f12d5e0fed40f29e84"></a>SCE_ARM_WAYPOINT_EVENT_DIRECT_BRANCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50ae93462b2eaee9d82d5474ccee4608ace" name="ggaa57bf46e4e54de2c9453f0245eb3fc50ae93462b2eaee9d82d5474ccee4608ace"></a>SCE_ARM_WAYPOINT_EVENT_INDIRECT_BRANCH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50a9397c58dd50c760c05f723295f701903" name="ggaa57bf46e4e54de2c9453f0245eb3fc50a9397c58dd50c760c05f723295f701903"></a>SCE_ARM_WAYPOINT_EVENT_EXCEPTION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50ab022a148b77381900864109d7241825a" name="ggaa57bf46e4e54de2c9453f0245eb3fc50ab022a148b77381900864109d7241825a"></a>SCE_ARM_WAYPOINT_EVENT_MEMORY_BARRIER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50a1475b079d44da76d657df9b5f748d76b" name="ggaa57bf46e4e54de2c9453f0245eb3fc50a1475b079d44da76d657df9b5f748d76b"></a>SCE_ARM_WAYPOINT_EVENT_DEBUG_ENTRY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50a4aa224d6b7e3d144f7e76e3800faf009" name="ggaa57bf46e4e54de2c9453f0245eb3fc50a4aa224d6b7e3d144f7e76e3800faf009"></a>SCE_ARM_WAYPOINT_EVENT_DEBUG_EXIT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50a0aeab9ec99d2c4cd95d2e7c6e98e0e5c" name="ggaa57bf46e4e54de2c9453f0245eb3fc50a0aeab9ec99d2c4cd95d2e7c6e98e0e5c"></a>SCE_ARM_WAYPOINT_EVENT_UNKNOWN_6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggaa57bf46e4e54de2c9453f0245eb3fc50add4f40f994e8bc840ebf6e1663195eb0" name="ggaa57bf46e4e54de2c9453f0245eb3fc50add4f40f994e8bc840ebf6e1663195eb0"></a>SCE_ARM_WAYPOINT_EVENT_UNKNOWN_7&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaa849ec461d111b471f8ac5e0ceee0f1e" name="gaa849ec461d111b471f8ac5e0ceee0f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa849ec461d111b471f8ac5e0ceee0f1e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x30&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrBreakpointState">SceExcpmgrBreakpointState</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97b293b99b3eaafc1098d5e9305cc33a" name="ga97b293b99b3eaafc1098d5e9305cc33a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97b293b99b3eaafc1098d5e9305cc33a">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x28&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrWatchpointState">SceExcpmgrWatchpointState</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaab0d8411d117829b670fdf68320d6be0" name="gaab0d8411d117829b670fdf68320d6be0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaab0d8411d117829b670fdf68320d6be0">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab0d8411d117829b670fdf68320d6be0">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -781,8 +1202,36 @@ unk200[128]</td>
 
 </div>
 </div>
+<a id="ga43c2da6690a63d0a02da486822088a2e" name="ga43c2da6690a63d0a02da486822088a2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43c2da6690a63d0a02da486822088a2e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x10&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#structSceArmWaypoint">SceArmWaypoint</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga0d451515efa9dcf65702ac8e98eb9398" name="ga0d451515efa9dcf65702ac8e98eb9398"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d451515efa9dcf65702ac8e98eb9398">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0d451515efa9dcf65702ac8e98eb9398">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,6 +1246,34 @@ unk200[128]</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext">SceExcpmgrExceptionContext</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae54d481d205841bbc3ac6cb6045827a7" name="gae54d481d205841bbc3ac6cb6045827a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae54d481d205841bbc3ac6cb6045827a7">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a>&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -826,8 +1303,7 @@ unk200[128]</td>
 </div><div class="memdoc">
 
 <p>Get a pointer to SceExcpmgr's internal data. </p>
-<p>This is only used by exception handlers.</p>
-<dl class="section return"><dt>Returns</dt><dd>pointer to <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a> structure </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrData">SceExcpmgrData</a> structure. </dd></dl>
 
 </div>
 </div>
@@ -864,20 +1340,332 @@ unk200[128]</td>
 </div><div class="memdoc">
 
 <p>Register an exception handler. </p>
-<p><code>handler</code> must point to eight bytes of space followed by the handler code. The space will be used in the internal linked list structure.</p>
+<p>The address obtained by clearing bits 0-1 of <code>handler</code> must point to a <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a> immediately followed by the handler code. In <code>handler</code>, bit 0 selects Thumb state and bit 1 must be clear. Priorities 1-7 use the <a class="el" href="group__SceExcpmgrKernel.html#ga10137c58f1bf80f35e9cec90612e7164" title="Exception handler used at priorities 1-7.">SceExcpmgrExceptionHandler</a> prototype; priority 0 uses a raw, exception-specific vector-entry ABI.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">kind</td><td>The kind of exception </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>The priority (must be 0 &lt;= priority &lt; 8), 0 highest </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">handler</td><td>The handler</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">kind</td><td>The kind of exception. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">priority</td><td>The priority (must be 0 &lt;= priority &lt; 8), 0 highest. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">handler</td><td>A pointer to a <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a> followed by the handler code.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Error code or zero on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Error code or zero on success. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="gac93452063294539d59964ab61f2846c3" name="gac93452063294539d59964ab61f2846c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac93452063294539d59964ab61f2846c3">&#9670;&#160;</a></span>lock <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> SceExcpmgrBreakpointState::lock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6c9e011dc566b91ed032a801fe9c6197" name="ga6c9e011dc566b91ed032a801fe9c6197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c9e011dc566b91ed032a801fe9c6197">&#9670;&#160;</a></span>reserved <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS. </p>
+
+</div>
+</div>
+<a id="ga578041c6299ebb89549ac53fc8dce904" name="ga578041c6299ebb89549ac53fc8dce904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga578041c6299ebb89549ac53fc8dce904">&#9670;&#160;</a></span>DBGBVR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBVR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga86bf308292e058351d1f1320c56d6230" name="ga86bf308292e058351d1f1320c56d6230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga86bf308292e058351d1f1320c56d6230">&#9670;&#160;</a></span>DBGBCR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBCR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga98ce84d9f9ce677345d4d6ba33ebdd83" name="ga98ce84d9f9ce677345d4d6ba33ebdd83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga98ce84d9f9ce677345d4d6ba33ebdd83">&#9670;&#160;</a></span>DBGBVR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBVR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0f2498a384f6f5c0ae1f7a44973f3dc7" name="ga0f2498a384f6f5c0ae1f7a44973f3dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f2498a384f6f5c0ae1f7a44973f3dc7">&#9670;&#160;</a></span>DBGBCR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBCR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga547250fc5fdaf2ad7b0268201771a737" name="ga547250fc5fdaf2ad7b0268201771a737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga547250fc5fdaf2ad7b0268201771a737">&#9670;&#160;</a></span>DBGBVR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBVR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa83d74661247c2d96bd550d2816bb886" name="gaa83d74661247c2d96bd550d2816bb886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa83d74661247c2d96bd550d2816bb886">&#9670;&#160;</a></span>DBGBCR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBCR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf34b02fbd0c4758c976d5031397a8711" name="gaf34b02fbd0c4758c976d5031397a8711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf34b02fbd0c4758c976d5031397a8711">&#9670;&#160;</a></span>DBGBVR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBVR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa0224e4a65cdbe8786be48eff82522a8" name="gaa0224e4a65cdbe8786be48eff82522a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa0224e4a65cdbe8786be48eff82522a8">&#9670;&#160;</a></span>DBGBCR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBCR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1ed90e51f44029d0b057dd688355774b" name="ga1ed90e51f44029d0b057dd688355774b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ed90e51f44029d0b057dd688355774b">&#9670;&#160;</a></span>DBGBVR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBVR4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga644c62633e63ea217e5181681316add9" name="ga644c62633e63ea217e5181681316add9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga644c62633e63ea217e5181681316add9">&#9670;&#160;</a></span>DBGBCR4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrBreakpointState::DBGBCR4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac2cda074a9d6d1d576384b17daf806dc" name="gac2cda074a9d6d1d576384b17daf806dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac2cda074a9d6d1d576384b17daf806dc">&#9670;&#160;</a></span>lock <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga4f1880b9d4572300ac06d53e9434af0f">SceKernelSpinlock</a> SceExcpmgrWatchpointState::lock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga624383e815ae6f1839dbecc1315ea40f" name="ga624383e815ae6f1839dbecc1315ea40f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga624383e815ae6f1839dbecc1315ea40f">&#9670;&#160;</a></span>reserved <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ignored on FW 3.60 by Excpmgr and Intrmgr; zero in the known default state stored in BSS. </p>
+
+</div>
+</div>
+<a id="ga9838ae3f81a8bd3c2c75daaa571876fe" name="ga9838ae3f81a8bd3c2c75daaa571876fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9838ae3f81a8bd3c2c75daaa571876fe">&#9670;&#160;</a></span>DBGWVR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWVR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5599a5154d2ac38519d39f502757d825" name="ga5599a5154d2ac38519d39f502757d825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5599a5154d2ac38519d39f502757d825">&#9670;&#160;</a></span>DBGWCR0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWCR0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga69948b8892885488476bc1e9eceabf87" name="ga69948b8892885488476bc1e9eceabf87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga69948b8892885488476bc1e9eceabf87">&#9670;&#160;</a></span>DBGWVR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWVR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab98ec36752bb68273778d8bc85f162cc" name="gab98ec36752bb68273778d8bc85f162cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab98ec36752bb68273778d8bc85f162cc">&#9670;&#160;</a></span>DBGWCR1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWCR1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga103282120f9f8a3f4f23a0b471c02bfe" name="ga103282120f9f8a3f4f23a0b471c02bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga103282120f9f8a3f4f23a0b471c02bfe">&#9670;&#160;</a></span>DBGWVR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWVR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3ac6a0452af5baa476c0648231a85f12" name="ga3ac6a0452af5baa476c0648231a85f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ac6a0452af5baa476c0648231a85f12">&#9670;&#160;</a></span>DBGWCR2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWCR2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga10aca2f97607b3cf0b2c87d356d2a0ab" name="ga10aca2f97607b3cf0b2c87d356d2a0ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10aca2f97607b3cf0b2c87d356d2a0ab">&#9670;&#160;</a></span>DBGWVR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWVR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga97b17042da1a7bc0bae9720566d3d428" name="ga97b17042da1a7bc0bae9720566d3d428"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97b17042da1a7bc0bae9720566d3d428">&#9670;&#160;</a></span>DBGWCR3</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrWatchpointState::DBGWCR3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga9baa3541cbab960021e07640e2c05ede" name="ga9baa3541cbab960021e07640e2c05ede"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga9baa3541cbab960021e07640e2c05ede">&#9670;&#160;</a></span>nestedExceptionCount</h2>
 
@@ -890,7 +1678,7 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Number of times an exception handler has been entered on core - panic if &gt; 1 on exception return. </p>
+<p>Active UNDEF, PABT, or DABT exception depth on each CPU core. </p>
 
 </div>
 </div>
@@ -922,7 +1710,7 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Top of the exception stack (size is 0x1000) </p>
+<p>Base address of each CPU core's 0x1000-byte exception stack. </p>
 
 </div>
 </div>
@@ -938,7 +1726,71 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
-<p>Bottom of the exception stack. </p>
+<p>Address immediately after each CPU core's exception stack, used as its initial stack pointer. </p>
+
+</div>
+</div>
+<a id="gab5c64e05197ab87f4fa4e7116aababd8" name="gab5c64e05197ab87f4fa4e7116aababd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab5c64e05197ab87f4fa4e7116aababd8">&#9670;&#160;</a></span>raw_data</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceArmWaypoint::raw_data</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Printed and forwarded without interpretation on FW 3.60. </p>
+
+</div>
+</div>
+<a id="ga14b8a81636706cbf5ea984d006f17239" name="ga14b8a81636706cbf5ea984d006f17239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14b8a81636706cbf5ea984d006f17239">&#9670;&#160;</a></span>pc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a> SceArmWaypoint::pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recorded source PC. </p>
+
+</div>
+</div>
+<a id="ga795c96a50eafc0e9a1804120ceef7c22" name="ga795c96a50eafc0e9a1804120ceef7c22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga795c96a50eafc0e9a1804120ceef7c22">&#9670;&#160;</a></span>target_pc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga55ef54d0e9fa4b1238e2d795a2765e5a">SceUIntPtr</a> SceArmWaypoint::target_pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Recorded target PC. </p>
+
+</div>
+</div>
+<a id="gac608f15a5234019ffec489d2b2593173" name="gac608f15a5234019ffec489d2b2593173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac608f15a5234019ffec489d2b2593173">&#9670;&#160;</a></span>event</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceArmWaypoint::event</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bit 31 marks a valid entry; bits 0-2 are one of <a class="el" href="group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50" title="Values stored in bits 0-2 of SceArmWaypoint::event.">SceArmWaypointEventType</a>; for exception events, bits 4-7 select the subtype; bit 8 marks a link, bit 9 selects a 32-bit instruction, bit 10 marks a taken branch, and bits 11-12 select the instruction-set state. </p>
 
 </div>
 </div>
@@ -953,8 +1805,6 @@ unk200[128]</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>&lt; Size is 0x400 on FW 3.60 </p>
 
 </div>
 </div>
@@ -1166,6 +2016,8 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
+<p>LR-8 for DABT, LR-4 for PABT or ARM UNDEF, and LR-2 for Thumb UNDEF. </p>
+
 </div>
 </div>
 <a id="gacfcedf6243dbc408af617f5396370fb4" name="gacfcedf6243dbc408af617f5396370fb4"></a>
@@ -1179,6 +2031,8 @@ unk200[128]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>The kind of exception the CPU encountered. </p>
 
 </div>
 </div>
@@ -1460,6 +2314,8 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
+<p>Second copy of PMCNTENSET. </p>
+
 </div>
 </div>
 <a id="ga2dadd4312cdd26cf86000b30a11ec459" name="ga2dadd4312cdd26cf86000b30a11ec459"></a>
@@ -1740,6 +2596,8 @@ unk200[128]</td>
       </table>
 </div><div class="memdoc">
 
+<p>Content of floating-point registers D0-D31. </p>
+
 </div>
 </div>
 <a id="ga1cca85f0cbf05f2885f949e1fb0e0242" name="ga1cca85f0cbf05f2885f949e1fb0e0242"></a>
@@ -1753,6 +2611,38 @@ unk200[128]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8e605463cd07c3cf01f94957b77cef40" name="ga8e605463cd07c3cf01f94957b77cef40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8e605463cd07c3cf01f94957b77cef40">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext">SceExcpmgrExceptionHandlerContext</a>* SceExcpmgrExceptionHandlerContext::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the next handler record; bit 0 preserves Thumb state. </p>
+
+</div>
+</div>
+<a id="gaf485f14f2db9a774654cb8684f4c636e" name="gaf485f14f2db9a774654cb8684f4c636e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf485f14f2db9a774654cb8684f4c636e">&#9670;&#160;</a></span>must_be_zero</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceExcpmgrExceptionHandlerContext::must_be_zero</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be zero when registering during cold boot; otherwise unused on FW 3.60. </p>
 
 </div>
 </div>

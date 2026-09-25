@@ -73,6 +73,7 @@ $(document).ready(function(){initNavTree('ommon_2kernel_2sysmem_8h.html',''); in
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
@@ -85,6 +86,11 @@ $(document).ready(function(){initNavTree('ommon_2kernel_2sysmem_8h.html',''); in
 </div>
 <p><a href="ommon_2kernel_2sysmem_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceKernelMemBlockInfo" id="r_structSceKernelMemBlockInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#structSceKernelMemBlockInfo">SceKernelMemBlockInfo</a></td></tr>
+<tr class="separator:structSceKernelMemBlockInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga9352829effdc513cbfbcd9b90779a2cf" id="r_ga9352829effdc513cbfbcd9b90779a2cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga9352829effdc513cbfbcd9b90779a2cf">SCE_KERNEL_MEMBLOCK_TYPE_USER_CDRAM_L1WBWA_RW</a>&#160;&#160;&#160;(0x09404060)</td></tr>
@@ -137,15 +143,42 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
+<tr class="memitem:gad5653766a0ced763eb2301a5d698697d" id="r_gad5653766a0ced763eb2301a5d698697d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#gad5653766a0ced763eb2301a5d698697d">SceKernelMemoryType</a> { <a class="el" href="group__SceSysmemKernel.html#ggad5653766a0ced763eb2301a5d698697da467a3b95bff3406789e5c5a01b0a2e48">SCE_KERNEL_MEMORY_TYPE_NORMAL_NC</a> = 0x80
+, <a class="el" href="group__SceSysmemKernel.html#ggad5653766a0ced763eb2301a5d698697da298498bb570db5602f7d4217807adade">SCE_KERNEL_MEMORY_TYPE_NORMAL</a> = 0xD0
+ }</td></tr>
+<tr class="separator:gad5653766a0ced763eb2301a5d698697d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3e4b4287824bdc72a51b05c7ef583076" id="r_ga3e4b4287824bdc72a51b05c7ef583076"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076">SceKernelAllocMemBlockAttr</a> { <br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR</a> = 0x00000002U
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6bb39e8e3834e4a9eda33737da3cd335">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_VBASE</a> = 0x00000001U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a693b01e35e9695df7979991a24b4cf2e">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PBASE</a> = 0x00000002U
 , <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT</a> = 0x00000004U
-, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID</a> = 0x00000040U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a44e4a75020e04f5e0b6d89e58cb5cd30">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_EXTRA_LOW</a> = 0x00000008U
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a7fd5fddbb735a96aed6b109ef360b11e">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_EXTRA_HIGH</a> = 0x00000010U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076af05b985526e70b9a36351b0b16abdcd0">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_OPEN_RESTRICTIONS</a> = 0x00000020U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a11fa1903ad7261cae129b8059ffdfb64">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASE</a> = 0x00000040U
 , <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a3cdf51026d8268f0d3ba4cb21aae1208">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID</a> = 0x00000080U
 , <br />
-&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST</a> = 0x00001000U
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a1cc4ed5b5510fd1cc49b102ea2b4e871">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASENAME</a> = 0x00000200U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a743df39ce33c3a5f5fce25e6c4a26f71">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PPAV</a> = 0x00001000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a873f4f840bd2cf0e4ae9d2153ed101b3">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ROUNDUP</a> = 0x00002000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ae26626678637719012b82de99612f212">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ENABLE_OPEN</a> = 0x00004000U
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a00d25a08b20c5912596111572dd5ef06">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_DOMAIN</a> = 0x00010000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a08dfd74161a6745db7b4baed7705bae4">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_DONT_MAP</a> = 0x00040000U
 , <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT</a> = 0x00200000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a32695b009dfdc30fe38f5c082f06612c">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SKIP_ZERO_FILL</a> = 0x00400000U
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ab8180809a1e66c1e99e906321d13524e">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SHARE_VBASE</a> = 0x00800000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a2a93a6b13b531bdffd9689720141f22c">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SHARE_PHYPAGE</a> = 0x01000000U
 , <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP</a> = 0x04000000U
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076adb1585735c75fcdc3f36f2e5cfc3af16">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_0x20</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_OPEN_RESTRICTIONS
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6ca6fadc6caad2b6529a243e902f4d64">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_0x4000</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ENABLE_OPEN
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PBASE
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASE
+, <a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PPAV
+, <br />
+&#160;&#160;<a class="el" href="group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a2a2102fd53b4835955580e470e639591">SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_UNK</a> = SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SKIP_ZERO_FILL
 <br />
  }</td></tr>
 <tr class="separator:ga3e4b4287824bdc72a51b05c7ef583076"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +191,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga90111a4cc51bf80d0b13b30440591546" id="r_ga90111a4cc51bf80d0b13b30440591546"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga90111a4cc51bf80d0b13b30440591546">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571">SceKernelMemBlockType</a>)</td></tr>
 <tr class="separator:ga90111a4cc51bf80d0b13b30440591546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga87c97be9b21bbe2838c2b1a71d75c493" id="r_ga87c97be9b21bbe2838c2b1a71d75c493"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSysmemKernel.html#ga87c97be9b21bbe2838c2b1a71d75c493">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceSysmemKernel.html#structSceKernelMemBlockInfo">SceKernelMemBlockInfo</a>)</td></tr>
+<tr class="separator:ga87c97be9b21bbe2838c2b1a71d75c493"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

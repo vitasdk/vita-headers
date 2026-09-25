@@ -1,5 +1,13 @@
 var group__SceModulemgrKernel =
 [
+    [ "SceKernelStartModuleOpt", "group__SceModulemgrKernel.html#structSceKernelStartModuleOpt", [
+      [ "size", "group__SceModulemgrKernel.html#ga90e2a1ea141e8a62a05972921e2819e8", null ],
+      [ "reserved", "group__SceModulemgrKernel.html#gaf986155135839921f2ea35374b0d08e0", null ]
+    ] ],
+    [ "SceKernelStopModuleOpt", "group__SceModulemgrKernel.html#structSceKernelStopModuleOpt", [
+      [ "size", "group__SceModulemgrKernel.html#ga17a73bb3fbbac36892968e875eb1f1d9", null ],
+      [ "reserved", "group__SceModulemgrKernel.html#ga62344b99a1e0c1a043f368e64fe3b876", null ]
+    ] ],
     [ "SceKernelSegmentInfo", "group__SceModulemgrKernel.html#structSceKernelSegmentInfo", [
       [ "size", "group__SceModulemgrKernel.html#ga5af643ff8ea59434d58e67fa503eae00", null ],
       [ "perms", "group__SceModulemgrKernel.html#gabc6834d76118d38b49191bd37c5cc05a", null ],
@@ -51,9 +59,7 @@ var group__SceModulemgrKernel =
       [ "entry_num_variable", "group__SceModulemgrKernel.html#ga3f7397d89096ac313b08780fa5c80388", null ],
       [ "unk_0x14", "group__SceModulemgrKernel.html#ga9a2b4e85cf89aa23c5a312a28743707e", null ],
       [ "unk_0x16", "group__SceModulemgrKernel.html#ga82af56a55224c2c02ff8a311dd58e73a", null ],
-      [ "library_name", "group__SceModulemgrKernel.html#ga2b96226199ff8e269453e03e9ca2a1ad", null ],
-      [ "number_of_imported", "group__SceModulemgrKernel.html#ga3a2ac22a493853fc64b0cb48d44d0e44", null ],
-      [ "modid2", "group__SceModulemgrKernel.html#gac045485a7d7fa73e591256d9273b3b67", null ]
+      [ "library_name", "group__SceModulemgrKernel.html#ga2b96226199ff8e269453e03e9ca2a1ad", null ]
     ] ],
     [ "SceKernelModuleName", "group__SceModulemgrKernel.html#structSceKernelModuleName", [
       [ "s", "group__SceModulemgrKernel.html#ga7d2a26aa2446ce4ef585130a33319abb", null ]
@@ -62,15 +68,13 @@ var group__SceModulemgrKernel =
       [ "size", "group__SceModulemgrKernel.html#ga10dcc8d019fe1d1066a466a2413f8924", null ],
       [ "perm", "group__SceModulemgrKernel.html#ga38608326581f2260e3524b62908ea37e", null ],
       [ "vaddr", "group__SceModulemgrKernel.html#ga6b68bfaa815bf73f6093528149ade5e8", null ],
-      [ "memsz", "group__SceModulemgrKernel.html#gaca5e4ed2901bb46dee58a48710fe77f2", null ],
-      [ "unk_10", "group__SceModulemgrKernel.html#ga450a4f0d8077f5059926c0759f495b35", null ]
+      [ "memsz", "group__SceModulemgrKernel.html#gaca5e4ed2901bb46dee58a48710fe77f2", null ]
     ] ],
     [ "SceKernelModuleListInfo", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo", [
       [ "size", "group__SceModulemgrKernel.html#ga4ba57c05735e9d60007a3d4c500d38be", null ],
       [ "modid", "group__SceModulemgrKernel.html#ga78c30cde99866a3a100cc7f15fcd284c", null ],
       [ "version", "group__SceModulemgrKernel.html#ga4edaa4795fc664ed59ba76154801dbb7", null ],
       [ "module_version", "group__SceModulemgrKernel.html#ga796edd94411b64ed79f569f6dc61ac20", null ],
-      [ "unk10", "group__SceModulemgrKernel.html#ga587fa65391d4e58ca8238a6293c7989c", null ],
       [ "unk14", "group__SceModulemgrKernel.html#ga3423361e50052ab0fcce0069f5b3f0e8", null ],
       [ "unk18", "group__SceModulemgrKernel.html#gaa26fe67710ecc4185074760a6c1dd32e", null ],
       [ "unk1C", "group__SceModulemgrKernel.html#gab71201334ba57524fb09346f0591168f", null ],
@@ -130,25 +134,45 @@ var group__SceModulemgrKernel =
       [ "library_shims_count", "group__SceModulemgrKernel.html#gaae663c51cfdb51ce06c169a2a9f399b7", null ],
       [ "library_shims", "group__SceModulemgrKernel.html#gad2c165bcbf4ad70a17ae64f698fc35b2", null ]
     ] ],
-    [ "SceKernelModuleListInfo.__unnamed26__", "group__SceModulemgrKernel.html#unionSceKernelModuleListInfo_8____unnamed26____", [
+    [ "SceKernelModuleLibraryInfo.__unnamed14__", "group__SceModulemgrKernel.html#unionSceKernelModuleLibraryInfo_8____unnamed14____", [
+      [ "client_count", "group__SceModulemgrKernel.html#a043e7fc0da2d669b44a9ded5e39ff4f9", null ],
+      [ "number_of_imported", "group__SceModulemgrKernel.html#a3af90c17dda7f3bffb328792969b58de", null ]
+    ] ],
+    [ "SceKernelModuleLibraryInfo.__unnamed16__", "group__SceModulemgrKernel.html#unionSceKernelModuleLibraryInfo_8____unnamed16____", [
+      [ "owner_module_id", "group__SceModulemgrKernel.html#a78e9b8850335ef9f1ddeca203e4db14d", null ],
+      [ "modid2", "group__SceModulemgrKernel.html#aabb7f3ba0868573ce18b3d31ace88da2", null ]
+    ] ],
+    [ "SceKernelSegmentInfo2.__unnamed37__", "group__SceModulemgrKernel.html#unionSceKernelSegmentInfo2_8____unnamed37____", [
+      [ "alignment", "group__SceModulemgrKernel.html#a5a159214b169da90d96590d47fff379e", null ],
+      [ "unk_10", "group__SceModulemgrKernel.html#a4390f9ec68826db1d065a6dbce903b0a", null ]
+    ] ],
+    [ "SceKernelModuleListInfo.__unnamed39__", "group__SceModulemgrKernel.html#unionSceKernelModuleListInfo_8____unnamed39____", [
+      [ "unk10", "group__SceModulemgrKernel.html#a617fd78133fa199c7be17236b188a6ef", null ]
+    ] ],
+    [ "SceKernelModuleListInfo.__unnamed39__.__unnamed43__", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed39_____8____unnamed43____", [
+      [ "module_type", "group__SceModulemgrKernel.html#a82bd5515db7cf110e739c56930246fe4", null ],
+      [ "reserved_0x11", "group__SceModulemgrKernel.html#adef56a28592f877a22f9ccb2be285277", null ],
+      [ "module_flags", "group__SceModulemgrKernel.html#a64a510b49ba668208661e4d31bf97584", null ]
+    ] ],
+    [ "SceKernelModuleListInfo.__unnamed41__", "group__SceModulemgrKernel.html#unionSceKernelModuleListInfo_8____unnamed41____", [
       [ "seg1", "group__SceModulemgrKernel.html#a67585038e06bfda21c80b2e1436b03ba", null ],
       [ "seg2", "group__SceModulemgrKernel.html#a3645a8abc4d23808538a8adab64b1e69", null ],
       [ "seg3", "group__SceModulemgrKernel.html#aaa34765b856598693c922657ae722e96", null ],
       [ "seg4", "group__SceModulemgrKernel.html#af60d4997e1f8dd33e4d84d32633dc51a", null ]
     ] ],
-    [ "SceKernelModuleListInfo.__unnamed26__.seg1", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed26_____8seg1", [
+    [ "SceKernelModuleListInfo.__unnamed41__.seg1", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed41_____8seg1", [
       [ "SegmentInfo", "group__SceModulemgrKernel.html#ab2ea517deee80a659239ed2180e71b31", null ],
       [ "addr", "group__SceModulemgrKernel.html#a1d39d251c1e02379010c231d4ed0d060", null ]
     ] ],
-    [ "SceKernelModuleListInfo.__unnamed26__.seg2", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed26_____8seg2", [
+    [ "SceKernelModuleListInfo.__unnamed41__.seg2", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed41_____8seg2", [
       [ "SegmentInfo", "group__SceModulemgrKernel.html#a32e7af6b2887291ddc6cc86fd4c15d06", null ],
       [ "addr", "group__SceModulemgrKernel.html#a1d39d251c1e02379010c231d4ed0d060", null ]
     ] ],
-    [ "SceKernelModuleListInfo.__unnamed26__.seg3", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed26_____8seg3", [
+    [ "SceKernelModuleListInfo.__unnamed41__.seg3", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed41_____8seg3", [
       [ "SegmentInfo", "group__SceModulemgrKernel.html#a5c311bf4bbf864b9e5221f8bb7ad7b1c", null ],
       [ "addr", "group__SceModulemgrKernel.html#a1d39d251c1e02379010c231d4ed0d060", null ]
     ] ],
-    [ "SceKernelModuleListInfo.__unnamed26__.seg4", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed26_____8seg4", [
+    [ "SceKernelModuleListInfo.__unnamed41__.seg4", "group__SceModulemgrKernel.html#structSceKernelModuleListInfo_8____unnamed41_____8seg4", [
       [ "SegmentInfo", "group__SceModulemgrKernel.html#a1941c80dffe70ba6617e2f8bf5319da3", null ],
       [ "addr", "group__SceModulemgrKernel.html#a1d39d251c1e02379010c231d4ed0d060", null ]
     ] ],
@@ -159,6 +183,8 @@ var group__SceModulemgrKernel =
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrKernel.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrKernel.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_CANCEL", "group__SceModulemgrKernel.html#gae09ae07a8901f7f75ed837e3bca6e968", null ],
+    [ "SCE_MODULE_ATTR_NONE", "group__SceModulemgrKernel.html#gac709f707b5e42a4e3642be490d2cfd74", null ],
+    [ "SCE_KERNEL_MODULE_ATTR_NONE", "group__SceModulemgrKernel.html#ga9f1a7c2b85307ea9bbb1d88bae929b81", null ],
     [ "ksceKernelGetModuleInternal", "group__SceModulemgrKernel.html#gacaef49442f9f565549ab33e111afa7b8", null ],
     [ "ksceKernelGetProcessMainModule", "group__SceModulemgrKernel.html#ga4423abbccdcbe86ecbd321124ccc0ead", null ],
     [ "SceKernelFwInfo", "group__SceModulemgrKernel.html#ga10d23e88723f3b2776f3e928dd4f348d", null ],
@@ -193,6 +219,8 @@ var group__SceModulemgrKernel =
     [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPVF", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3dabfb1160f83af68e46c1b9b7268cd0890", null ],
     [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da16133dc47733579d2bb86f1a115f4744", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga8b04aaef9772687afa9efb3d8379999f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#gade852f9f3fe1ca7a2515b793f8f998a1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#gac7138dbc6c0465ddcdc5b310785002e2", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga576fee6ecde265285fce2964eab63f69", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga818023fa50b9f7a82169e23fa5c3a509", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga220bd1b331b95501c305a0cdfec7a3bd", null ],
@@ -264,6 +292,13 @@ var group__SceModulemgrKernel =
     [ "ksceKernelModuleUnloadMySelf", "group__SceModulemgrKernel.html#gae1c37efc51510830df02b8e24b75c64a", null ],
     [ "ksceKernelStartPreloadingModules", "group__SceModulemgrKernel.html#gacd9e244dccdb00f915865cfc85e625d4", null ],
     [ "ksceKernelUnloadProcessModules", "group__SceModulemgrKernel.html#gad98ddcdcec6cad762f86a9022d0e3dd7", null ],
+    [ "ksceKernelGetModuleInfoByAddr", "group__SceModulemgrKernel.html#gabc20b363077fab0fb529627562de9d65", null ],
+    [ "ksceKernelRegisterLibary", "group__SceModulemgrKernel.html#ga69e0d842050f3e156066e6b64dc11cbc", null ],
+    [ "ksceKernelReleaseLibary", "group__SceModulemgrKernel.html#ga58ecc45c9f483a8b4d4fb5db9c9eceb2", null ],
+    [ "SceKernelStartModuleOpt::size", "group__SceModulemgrKernel.html#ga90e2a1ea141e8a62a05972921e2819e8", null ],
+    [ "SceKernelStartModuleOpt::reserved", "group__SceModulemgrKernel.html#gaf986155135839921f2ea35374b0d08e0", null ],
+    [ "SceKernelStopModuleOpt::size", "group__SceModulemgrKernel.html#ga17a73bb3fbbac36892968e875eb1f1d9", null ],
+    [ "SceKernelStopModuleOpt::reserved", "group__SceModulemgrKernel.html#ga62344b99a1e0c1a043f368e64fe3b876", null ],
     [ "SceKernelSegmentInfo::size", "group__SceModulemgrKernel.html#ga5af643ff8ea59434d58e67fa503eae00", null ],
     [ "SceKernelSegmentInfo::perms", "group__SceModulemgrKernel.html#gabc6834d76118d38b49191bd37c5cc05a", null ],
     [ "SceKernelSegmentInfo::vaddr", "group__SceModulemgrKernel.html#gaca75b3a667e4174ad7f4eda23722fd75", null ],
@@ -305,19 +340,25 @@ var group__SceModulemgrKernel =
     [ "SceKernelModuleLibraryInfo::unk_0x14", "group__SceModulemgrKernel.html#ga9a2b4e85cf89aa23c5a312a28743707e", null ],
     [ "SceKernelModuleLibraryInfo::unk_0x16", "group__SceModulemgrKernel.html#ga82af56a55224c2c02ff8a311dd58e73a", null ],
     [ "SceKernelModuleLibraryInfo::library_name", "group__SceModulemgrKernel.html#ga2b96226199ff8e269453e03e9ca2a1ad", null ],
-    [ "SceKernelModuleLibraryInfo::number_of_imported", "group__SceModulemgrKernel.html#ga3a2ac22a493853fc64b0cb48d44d0e44", null ],
-    [ "SceKernelModuleLibraryInfo::modid2", "group__SceModulemgrKernel.html#gac045485a7d7fa73e591256d9273b3b67", null ],
+    [ "SceKernelModuleLibraryInfo::@13::client_count", "group__SceModulemgrKernel.html#gad97184b09a3b8f57309e0c9926ded99a", null ],
+    [ "SceKernelModuleLibraryInfo::@13::number_of_imported", "group__SceModulemgrKernel.html#ga07657a62756265db70db0c3916b39c90", null ],
+    [ "SceKernelModuleLibraryInfo::@15::owner_module_id", "group__SceModulemgrKernel.html#gaf1400d0ec1149a82bbc4f65e75796f17", null ],
+    [ "SceKernelModuleLibraryInfo::@15::modid2", "group__SceModulemgrKernel.html#ga2d08b7700eabef27265d197fd4c7c435", null ],
     [ "SceKernelModuleName::s", "group__SceModulemgrKernel.html#ga7d2a26aa2446ce4ef585130a33319abb", null ],
     [ "SceKernelSegmentInfo2::size", "group__SceModulemgrKernel.html#ga10dcc8d019fe1d1066a466a2413f8924", null ],
     [ "SceKernelSegmentInfo2::perm", "group__SceModulemgrKernel.html#ga38608326581f2260e3524b62908ea37e", null ],
     [ "SceKernelSegmentInfo2::vaddr", "group__SceModulemgrKernel.html#ga6b68bfaa815bf73f6093528149ade5e8", null ],
     [ "SceKernelSegmentInfo2::memsz", "group__SceModulemgrKernel.html#gaca5e4ed2901bb46dee58a48710fe77f2", null ],
-    [ "SceKernelSegmentInfo2::unk_10", "group__SceModulemgrKernel.html#ga450a4f0d8077f5059926c0759f495b35", null ],
+    [ "SceKernelSegmentInfo2::@36::alignment", "group__SceModulemgrKernel.html#ga6f86a6720e17d5551d791c6ac76876ac", null ],
+    [ "SceKernelSegmentInfo2::@36::unk_10", "group__SceModulemgrKernel.html#gaa2628aed7ff01f9e57ec9856cb6b2472", null ],
     [ "SceKernelModuleListInfo::size", "group__SceModulemgrKernel.html#ga4ba57c05735e9d60007a3d4c500d38be", null ],
     [ "SceKernelModuleListInfo::modid", "group__SceModulemgrKernel.html#ga78c30cde99866a3a100cc7f15fcd284c", null ],
     [ "SceKernelModuleListInfo::version", "group__SceModulemgrKernel.html#ga4edaa4795fc664ed59ba76154801dbb7", null ],
     [ "SceKernelModuleListInfo::module_version", "group__SceModulemgrKernel.html#ga796edd94411b64ed79f569f6dc61ac20", null ],
-    [ "SceKernelModuleListInfo::unk10", "group__SceModulemgrKernel.html#ga587fa65391d4e58ca8238a6293c7989c", null ],
+    [ "SceKernelModuleListInfo::@38::unk10", "group__SceModulemgrKernel.html#gac3c076d4ee405bda1df3d24fbbeb7165", null ],
+    [ "SceKernelModuleListInfo::@38::@42::module_type", "group__SceModulemgrKernel.html#ga3b55af7d4b0ecd06f12a6035fc3dba23", null ],
+    [ "SceKernelModuleListInfo::@38::@42::reserved_0x11", "group__SceModulemgrKernel.html#ga6258fa83ef789fe66cd8e9225bedd6cf", null ],
+    [ "SceKernelModuleListInfo::@38::@42::module_flags", "group__SceModulemgrKernel.html#ga6769eec8ba7ee11c963a74379cd86001", null ],
     [ "SceKernelModuleListInfo::unk14", "group__SceModulemgrKernel.html#ga3423361e50052ab0fcce0069f5b3f0e8", null ],
     [ "SceKernelModuleListInfo::unk18", "group__SceModulemgrKernel.html#gaa26fe67710ecc4185074760a6c1dd32e", null ],
     [ "SceKernelModuleListInfo::unk1C", "group__SceModulemgrKernel.html#gab71201334ba57524fb09346f0591168f", null ],
@@ -327,18 +368,18 @@ var group__SceModulemgrKernel =
     [ "SceKernelModuleListInfo::unk44", "group__SceModulemgrKernel.html#ga5e86911af69172a33bb2ba42a50bb977", null ],
     [ "SceKernelModuleListInfo::nid", "group__SceModulemgrKernel.html#ga333f8e0a47b5b17690d3863c4aaafded", null ],
     [ "SceKernelModuleListInfo::segments_num", "group__SceModulemgrKernel.html#gaf96012dbd791f42a2cf0bfba78af7927", null ],
-    [ "SceKernelModuleListInfo::@25::@27::SegmentInfo", "group__SceModulemgrKernel.html#ga6cd11c6e2c3c79b5cd1776f54777eaf9", null ],
-    [ "SceKernelModuleListInfo::@25::@27::addr", "group__SceModulemgrKernel.html#gafdc6dc44c79165d3b7cc6be7c9a4ef89", null ],
-    [ "SceKernelModuleListInfo::@25::seg1", "group__SceModulemgrKernel.html#ga47d718b5b5e5dbcb6cac23761926a25d", null ],
-    [ "SceKernelModuleListInfo::@25::@28::SegmentInfo", "group__SceModulemgrKernel.html#ga26504da5b07f0d8bbc14e4681c13dc9a", null ],
-    [ "SceKernelModuleListInfo::@25::@28::addr", "group__SceModulemgrKernel.html#ga53189cf8f981860db76b325cb95718ce", null ],
-    [ "SceKernelModuleListInfo::@25::seg2", "group__SceModulemgrKernel.html#gadf675044850e3190818ff4e2beb29e0d", null ],
-    [ "SceKernelModuleListInfo::@25::@29::SegmentInfo", "group__SceModulemgrKernel.html#ga31dea02469345d6bf37b3d6949201d75", null ],
-    [ "SceKernelModuleListInfo::@25::@29::addr", "group__SceModulemgrKernel.html#gab9d58747c61dbaf1df42a4225a6d887a", null ],
-    [ "SceKernelModuleListInfo::@25::seg3", "group__SceModulemgrKernel.html#ga088fbf10b7324220a13568c5e540ead8", null ],
-    [ "SceKernelModuleListInfo::@25::@30::SegmentInfo", "group__SceModulemgrKernel.html#ga27bdee3dfa0bc18e0ae5cb143dd8ca10", null ],
-    [ "SceKernelModuleListInfo::@25::@30::addr", "group__SceModulemgrKernel.html#ga85bdd8366ce33809ced0ab5fe453fb99", null ],
-    [ "SceKernelModuleListInfo::@25::seg4", "group__SceModulemgrKernel.html#gab34edc1884772254364953f825b33de0", null ],
+    [ "SceKernelModuleListInfo::@40::@44::SegmentInfo", "group__SceModulemgrKernel.html#ga0b688b5ce66beeebe67a795f69b5de9c", null ],
+    [ "SceKernelModuleListInfo::@40::@44::addr", "group__SceModulemgrKernel.html#ga005bd360ca45938ce12ca94f8157d207", null ],
+    [ "SceKernelModuleListInfo::@40::seg1", "group__SceModulemgrKernel.html#ga9148f2a24e104618718f7f1122241ebb", null ],
+    [ "SceKernelModuleListInfo::@40::@45::SegmentInfo", "group__SceModulemgrKernel.html#ga3c0797d368883488c63998453ba8979c", null ],
+    [ "SceKernelModuleListInfo::@40::@45::addr", "group__SceModulemgrKernel.html#ga4a2b522600ea9f55c782c8ab3a6b6d0f", null ],
+    [ "SceKernelModuleListInfo::@40::seg2", "group__SceModulemgrKernel.html#ga4f8e53d7a12e8bfb30c86655f0211440", null ],
+    [ "SceKernelModuleListInfo::@40::@46::SegmentInfo", "group__SceModulemgrKernel.html#gab5b263e0ab87496408d504b19115e05e", null ],
+    [ "SceKernelModuleListInfo::@40::@46::addr", "group__SceModulemgrKernel.html#ga53a9c7ddc35ff8c00087a9538d9ed950", null ],
+    [ "SceKernelModuleListInfo::@40::seg3", "group__SceModulemgrKernel.html#gac42fb8c71330185a1da597e21883b2a9", null ],
+    [ "SceKernelModuleListInfo::@40::@47::SegmentInfo", "group__SceModulemgrKernel.html#gacfe07ea50416b26c0e51f129d1eee7f8", null ],
+    [ "SceKernelModuleListInfo::@40::@47::addr", "group__SceModulemgrKernel.html#ga88574aeb7757f4f28fcae62a8827652b", null ],
+    [ "SceKernelModuleListInfo::@40::seg4", "group__SceModulemgrKernel.html#gaf80065b099a7ff6ac3d3510d143cabda", null ],
     [ "SceKernelModuleExportEntry::libnid", "group__SceModulemgrKernel.html#ga645b714273c28b65917de8c4428b8750", null ],
     [ "SceKernelModuleExportEntry::entry", "group__SceModulemgrKernel.html#ga007dcd95be972c08bdce5d884bf5e4b3", null ],
     [ "SceKernelModuleImportNonlinkedInfo::size", "group__SceModulemgrKernel.html#ga78a6bfa0123a1034e3704099432d06cd", null ],

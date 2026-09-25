@@ -21,7 +21,7 @@ var group__SceThreadMgrKernel =
       [ "fpscr", "group__SceThreadMgrKernel.html#ga11e6355ee088edba32febd8443e2f06e", null ]
     ] ],
     [ "SceThreadCpuRegisters", "group__SceThreadMgrKernel.html#structSceThreadCpuRegisters", [
-      [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga35f7c7f0a3da70046cf2578f8e9a41d7", null ]
+      [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga0d3cdede63c31d8c5141dcb87387187d", null ]
     ] ],
     [ "SceKernelThreadContextInfo", "group__SceThreadMgrKernel.html#structSceKernelThreadContextInfo", [
       [ "process_id", "group__SceThreadMgrKernel.html#gafccf2adbdb8dacbcada606259dd1601c", null ],
@@ -75,16 +75,25 @@ var group__SceThreadMgrKernel =
     [ "SceThreadCpuRegisters.SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#unionSceThreadCpuRegisters_8SCE__DEPRECATED__EX", [
       [ "entry", "group__SceThreadMgrKernel.html#a994cce08021646607d9a688b2be55f88", null ]
     ] ],
-    [ "SceThreadCpuRegisters.SCE_DEPRECATED_EX.__unnamed46__", "group__SceThreadMgrKernel.html#structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed46____", [
+    [ "SceThreadCpuRegisters.SCE_DEPRECATED_EX.__unnamed65__", "group__SceThreadMgrKernel.html#structSceThreadCpuRegisters_8SCE__DEPRECATED__EX_8____unnamed65____", [
       [ "user", "group__SceThreadMgrKernel.html#aee11cbb19052e40b07aac0ca060c23ee", null ],
       [ "kernel", "group__SceThreadMgrKernel.html#a50484c19f1afdaf3841a0d821ed393d2", null ]
     ] ],
     [ "ksceKernelGetFaultingProcessInfo", "group__SceThreadMgrKernel.html#ga7850183f206dd0db1c222cc745af5f36", null ],
     [ "ksceKernelDeleteFastMutex", "group__SceThreadMgrKernel.html#gadeb83085041b336eb2017478774f49da", null ],
+    [ "SceKernelTimerFunction", "group__SceThreadMgrKernel.html#ga299f6925b43404d451c0861ddab288ce", null ],
     [ "ArmCpuRegisters", "group__SceThreadMgrKernel.html#ga075dfeb7c0e77ac6e15c051ca52bbc53", null ],
     [ "ThreadCpuRegisters", "group__SceThreadMgrKernel.html#gad5b161408ba064c20157367b7be98e6e", null ],
     [ "SceKernelWorkQueueWorkFunction", "group__SceThreadMgrKernel.html#ga98f4e3c95a076580a1af53c612b1dfc1", null ],
     [ "sceKernelChangeThreadVfpException", "group__SceThreadMgrKernel.html#gae32be56b9202ee90fab2ef3c65cb4c82", null ],
+    [ "ksceKernelChangeThreadCpuAffinityMask", "group__SceThreadMgrKernel.html#gac9e195c1a7ce43a22f74a8ffacfd9bbe", null ],
+    [ "ksceKernelClearEvent", "group__SceThreadMgrKernel.html#ga4be8456e059d8ada2eca4eafc6b91efe", null ],
+    [ "ksceKernelGetTimerBaseWide", "group__SceThreadMgrKernel.html#gacfc7a05631ec81a6a19e5c63c1d75c9f", null ],
+    [ "ksceKernelGetTimerTimeWide", "group__SceThreadMgrKernel.html#ga400a79b9a7ac89cce412d11eaf569af6", null ],
+    [ "ksceKernelRegisterTimer", "group__SceThreadMgrKernel.html#ga979681ca078f31b14d76e1b6ac41b577", null ],
+    [ "ksceKernelStartTimer", "group__SceThreadMgrKernel.html#ga0757102ad1d844a4c81fb7fc65146b1f", null ],
+    [ "ksceKernelStopTimer", "group__SceThreadMgrKernel.html#gaddeb3cc78c70aa3726f7f149939758e1", null ],
+    [ "ksceKernelWaitEvent", "group__SceThreadMgrKernel.html#ga4f1b26725d72db340ae88eb3f77b451a", null ],
     [ "ksceKernelCreateCallback", "group__SceThreadMgrKernel.html#ga1a18a5f6673003272934c42bd3353aae", null ],
     [ "ksceKernelDeleteCallback", "group__SceThreadMgrKernel.html#gab63ccf38a1d074967222e7e7f7395348", null ],
     [ "ksceKernelNotifyCallback", "group__SceThreadMgrKernel.html#ga1ca0938fd9e73a469f994d5761de0dc1", null ],
@@ -196,10 +205,10 @@ var group__SceThreadMgrKernel =
     [ "SceArmCpuRegisters::pc", "group__SceThreadMgrKernel.html#ga5c3649cc65611b0a6c51396730417b1b", null ],
     [ "SceArmCpuRegisters::cpsr", "group__SceThreadMgrKernel.html#ga4beae3639dec473ac3f411b6c5341757", null ],
     [ "SceArmCpuRegisters::fpscr", "group__SceThreadMgrKernel.html#ga11e6355ee088edba32febd8443e2f06e", null ],
-    [ "SceThreadCpuRegisters::@44::@45::user", "group__SceThreadMgrKernel.html#gab9a4ddcc43596aaa3c7e9bab72966935", null ],
-    [ "SceThreadCpuRegisters::@44::@45::kernel", "group__SceThreadMgrKernel.html#ga54d442ddea8238b1e4d16f7362ca1a72", null ],
-    [ "SceThreadCpuRegisters::@44::entry", "group__SceThreadMgrKernel.html#ga16dfd2658947b1eafdd67e1148785ccb", null ],
-    [ "SceThreadCpuRegisters::SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga35f7c7f0a3da70046cf2578f8e9a41d7", null ],
+    [ "SceThreadCpuRegisters::@63::@64::user", "group__SceThreadMgrKernel.html#ga101b5cf7d783e1f29f51f26d2eb40cda", null ],
+    [ "SceThreadCpuRegisters::@63::@64::kernel", "group__SceThreadMgrKernel.html#ga3986f6c728698a5e27ac7098b62da3df", null ],
+    [ "SceThreadCpuRegisters::@63::entry", "group__SceThreadMgrKernel.html#gaa33acf58d904325481d03e2da1574f04", null ],
+    [ "SceThreadCpuRegisters::SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga0d3cdede63c31d8c5141dcb87387187d", null ],
     [ "SceKernelThreadContextInfo::process_id", "group__SceThreadMgrKernel.html#gafccf2adbdb8dacbcada606259dd1601c", null ],
     [ "SceKernelThreadContextInfo::thread_id", "group__SceThreadMgrKernel.html#gaf178ee5c990b003cb91a912270f840ac", null ],
     [ "SceKernelFaultingProcessInfo::pid", "group__SceThreadMgrKernel.html#ga89e64d6ac24543f31f7645081269ed42", null ],

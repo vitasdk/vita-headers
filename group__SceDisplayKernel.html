@@ -74,6 +74,7 @@ $(document).ready(function(){initNavTree('group__SceDisplayKernel.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#enumval-members">Enumerator</a> &#124;
 <a href="#func-members">Functions</a> &#124;
@@ -90,9 +91,25 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structSceDisplayFrameBuf" id="r_structSceDisplayFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a></td></tr>
 <tr class="memdesc:structSceDisplayFrameBuf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used with <a class="el" href="group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8" title="Set/Update framebuffer parameters.">ksceDisplaySetFrameBuf</a> to set/update framebuffer.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">More...</a><br /></td></tr>
 <tr class="separator:structSceDisplayFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayFrameBufExt" id="r_structSceDisplayFrameBufExt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a></td></tr>
+<tr class="memdesc:structSceDisplayFrameBufExt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended framebuffer descriptor accepted by FW 3.60.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayFrameBufExt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayCaptureFrameBuf" id="r_structSceDisplayCaptureFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a></td></tr>
+<tr class="memdesc:structSceDisplayCaptureFrameBuf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer capture destination.  <a href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayCaptureFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayResolutionInfo" id="r_structSceDisplayResolutionInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a></td></tr>
+<tr class="separator:structSceDisplayResolutionInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceDisplayFrameBufInfo" id="r_structSceDisplayFrameBufInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">SceDisplayFrameBufInfo</a></td></tr>
 <tr class="memdesc:structSceDisplayFrameBufInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended framebuffer information.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">More...</a><br /></td></tr>
 <tr class="separator:structSceDisplayFrameBufInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayViewportConf" id="r_structSceDisplayViewportConf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a></td></tr>
+<tr class="separator:structSceDisplayViewportConf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga1cb3ba1f04b954b20022777b6f7b9444" id="r_ga1cb3ba1f04b954b20022777b6f7b9444"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a></td></tr>
+<tr class="memdesc:ga1cb3ba1f04b954b20022777b6f7b9444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage type for one of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>.  <br /></td></tr>
+<tr class="separator:ga1cb3ba1f04b954b20022777b6f7b9444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -122,6 +139,60 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a0933dc4d6c641d5d8df41b92dc0be658">__SCE_DISPLAY_SETBUF</a> = 0xFFFFFFFF
  }</td></tr>
 <tr class="separator:ga1cccbd19bead1c902688ec8409ff0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92951e53ee58da50cedb09a337ae1420" id="r_ga92951e53ee58da50cedb09a337ae1420"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a> { <a class="el" href="group__SceDisplayKernel.html#gga92951e53ee58da50cedb09a337ae1420a90f3be7158dfae614476e265ac33f4dd">SCE_DISPLAY_FRAMEBUF_FLAG_SHARED</a> = 0x00040000
+, <a class="el" href="group__SceDisplayKernel.html#gga92951e53ee58da50cedb09a337ae1420ab54f11ba4d143df85ee0a4408e79c7dc">SCE_DISPLAY_FRAMEBUF_FLAG_BILINEAR</a> = 0x00100000
+ }</td></tr>
+<tr class="memdesc:ga92951e53ee58da50cedb09a337ae1420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags stored in <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>.  <a href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">More...</a><br /></td></tr>
+<tr class="separator:ga92951e53ee58da50cedb09a337ae1420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab50ca792050497d4b8f8c1ab7956f02b" id="r_gab50ca792050497d4b8f8c1ab7956f02b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> { <a class="el" href="group__SceDisplayKernel.html#ggab50ca792050497d4b8f8c1ab7956f02baf198894e75c035435df39083e1496d8d">SCE_DISPLAY_FRAMEBUF_GAME_APP</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#ggab50ca792050497d4b8f8c1ab7956f02ba30893a629004926fcdeb7d884c4970d4">SCE_DISPLAY_FRAMEBUF_LIVEAREA</a> = 1
+ }</td></tr>
+<tr class="separator:gab50ca792050497d4b8f8c1ab7956f02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82c14f2afc9da714ea569de19f0ea118" id="r_ga82c14f2afc9da714ea569de19f0ea118"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> { <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118af64b1573863371d27ddc58653781c526">SCE_DISPLAY_HEAD_MAIN_LCD_OLED</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118a5481a0301e3fec965ae0b530eabdd6be">SCE_DISPLAY_HEAD_HDMI</a> = 1
+, <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118aed0adebec629a8eb1cd258fb7d26e57e">SCE_DISPLAY_HEAD_SUB_LCD</a> = 2
+ }</td></tr>
+<tr class="separator:ga82c14f2afc9da714ea569de19f0ea118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1543e4e73601e4e58f9cf26c7627b4dc" id="r_ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a> { <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad9790ce2c7ec0949d1b5e6b2590b255e">SCE_DISPLAY_SCREENMODE_INTERNAL_960X544</a> = 0x0000
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad36f9be75af13cb1285298527ccdff5c">SCE_DISPLAY_SCREENMODE_INTERNAL_960X544_1375X567</a> = 0x0020
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad4ca50e57464b72945b846edce0c6a3c">SCE_DISPLAY_SCREENMODE_INTERNAL_960X540</a> = 0x0080
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca89d99ed23e045111f4cdcae5d5971fce">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X525</a> = 0x8300
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcab729715dd8309221c7ea48d82e851d9a">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X526</a> = 0x8370
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcae06feb1e4fd859bae1fd90677a4e0be1">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X576_864X625</a> = 0x8480
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca3419cbfa274cb48de5ccbbc9cf1be8b1">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X575_864X626</a> = 0x84F0
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca059fff3acd5ff7296341549ecb2e96a1">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_60HZ</a> = 0x8500
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca86ce750750ce4888eec978ed2852e1c5">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_50HZ</a> = 0x8580
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcab5b21ef7c95f3007cf230907c0f1f0d5">SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_60HZ</a> = 0x8600
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca11be8fac9e52871baa8d7f68b23a4fee">SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_50HZ</a> = 0x8680
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca45a04860bf547b0c6bc1da3f76069e9e">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_60HZ</a> = 0x8710
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcaa78d18547140e4c989c45aa15b3bc5e5">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_24HZ</a> = 0x8730
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca1a388abc80e9ec2c0723160328dece66">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_50HZ</a> = 0x8790
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcae9f6cefff5464e015aa16893f5c22aec">SCE_DISPLAY_SCREENMODE_1280X720_1428X775</a> = 0x8900
+<br />
+ }</td></tr>
+<tr class="memdesc:ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.  <a href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">More...</a><br /></td></tr>
+<tr class="separator:ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4cf61f6213d27134bc2537323f50a58" id="r_gaf4cf61f6213d27134bc2537323f50a58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a> { <a class="el" href="group__SceDisplayKernel.html#ggaf4cf61f6213d27134bc2537323f50a58a2f9e61915449954211681af4d4e796f5">SCE_DISPLAY_SCANMODE_PROGRESSIVE</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#ggaf4cf61f6213d27134bc2537323f50a58a131eef4d583945fda91c6981c2067348">SCE_DISPLAY_SCANMODE_INTERLACED</a> = 1
+ }</td></tr>
+<tr class="separator:gaf4cf61f6213d27134bc2537323f50a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81198f08536bab262390241bc4de99fe" id="r_ga81198f08536bab262390241bc4de99fe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe">SceDisplayDeviceType</a> { <a class="el" href="group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea8645d74dab06ba23d36f4b3cfde07583">SCE_DISPLAY_DEVICE_TYPE_NONE</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea86c5e52011a5fddcf05bdf7df1539315">SCE_DISPLAY_DEVICE_TYPE_OLED</a> = 1
+, <a class="el" href="group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea1286d1c4f924ee409135f91fac9293b6">SCE_DISPLAY_DEVICE_TYPE_LCD</a> = 2
+, <a class="el" href="group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea33719ef81fe02300f6e0abd10ace17d1">SCE_DISPLAY_DEVICE_TYPE_HDMI</a> = 3
+ }</td></tr>
+<tr class="memdesc:ga81198f08536bab262390241bc4de99fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-negative device types returned by <a class="el" href="group__SceDisplayKernel.html#gaf26cc0829b020405cec73f2c06ea3b9f" title="Get the hardware type for a display head.">ksceDisplayGetDeviceType</a>.  <a href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe">More...</a><br /></td></tr>
+<tr class="separator:ga81198f08536bab262390241bc4de99fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0597fa0cf3000064b5cb0f8ee4ea7d60" id="r_ga0597fa0cf3000064b5cb0f8ee4ea7d60"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60">SceDisplayColorSpaceMode</a> { <a class="el" href="group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60aebf7ce3f00021ed24e093727d04e11b5">SCE_DISPLAY_COLOR_SPACE_MODE_0</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60acf7a495e4f6b784bdd42e85a7b304852">SCE_DISPLAY_COLOR_SPACE_MODE_1</a> = 1
+, <a class="el" href="group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60a41f513b6e695be5ce991bfec150a5212">SCE_DISPLAY_COLOR_SPACE_MODE_2</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga0597fa0cf3000064b5cb0f8ee4ea7d60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Device-dependent values accepted by <a class="el" href="group__SceDisplayKernel.html#ga9fb7af02d6861106e35cd5c18f6d50b3" title="Set the main panel&#39;s device-dependent color-space mode.">ksceDisplaySetColorSpaceMode</a>.  <a href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60">More...</a><br /></td></tr>
+<tr class="separator:ga0597fa0cf3000064b5cb0f8ee4ea7d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -133,6 +204,24 @@ Functions</h2></td></tr>
 <tr class="separator:gad3dc61b743f3e02b789a2c7761c4f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga746511d8227c31c611becb919a907707" id="r_ga746511d8227c31c611becb919a907707"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga746511d8227c31c611becb919a907707">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>)</td></tr>
 <tr class="separator:ga746511d8227c31c611becb919a907707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99b62ca44f2a3a57f16677a55c4d7dd" id="r_gae99b62ca44f2a3a57f16677a55c4d7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae99b62ca44f2a3a57f16677a55c4d7dd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a>)</td></tr>
+<tr class="separator:gae99b62ca44f2a3a57f16677a55c4d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga250879168163107e7874fe98024c24cb" id="r_ga250879168163107e7874fe98024c24cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga250879168163107e7874fe98024c24cb">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a>)</td></tr>
+<tr class="separator:ga250879168163107e7874fe98024c24cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0282184183224108af7e10321db90849" id="r_ga0282184183224108af7e10321db90849"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0282184183224108af7e10321db90849">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>)</td></tr>
+<tr class="separator:ga0282184183224108af7e10321db90849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e322c63d61b145683a49b98140efeeb" id="r_ga1e322c63d61b145683a49b98140efeeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1e322c63d61b145683a49b98140efeeb">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>)</td></tr>
+<tr class="separator:ga1e322c63d61b145683a49b98140efeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ce7a6031140e7cff4222bc364707c67" id="r_ga0ce7a6031140e7cff4222bc364707c67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0ce7a6031140e7cff4222bc364707c67">VITASDK_BUILD_ASSERT_EQ</a> (2, <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a>)</td></tr>
+<tr class="separator:ga0ce7a6031140e7cff4222bc364707c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5103b2af2a6efc561a0d325fd2e28cd5" id="r_ga5103b2af2a6efc561a0d325fd2e28cd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga5103b2af2a6efc561a0d325fd2e28cd5">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a>)</td></tr>
+<tr class="separator:ga5103b2af2a6efc561a0d325fd2e28cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac857ea9888aff0a41d91b66f86cb350b" id="r_gac857ea9888aff0a41d91b66f86cb350b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gac857ea9888aff0a41d91b66f86cb350b">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>)</td></tr>
+<tr class="separator:gac857ea9888aff0a41d91b66f86cb350b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab27827460309b17623cd2b0110663bc2" id="r_gab27827460309b17623cd2b0110663bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab27827460309b17623cd2b0110663bc2">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a>)</td></tr>
+<tr class="separator:gab27827460309b17623cd2b0110663bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga335ea14172fc3c5c6dca21cbddb0fe61" id="r_ga335ea14172fc3c5c6dca21cbddb0fe61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga335ea14172fc3c5c6dca21cbddb0fe61">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a>)</td></tr>
+<tr class="separator:ga335ea14172fc3c5c6dca21cbddb0fe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf3fe7dec70b834a468a84ef02c25ba2e" id="r_gaf3fe7dec70b834a468a84ef02c25ba2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf3fe7dec70b834a468a84ef02c25ba2e">VITASDK_BUILD_ASSERT_EQ</a> (0x2C, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufInfo">SceDisplayFrameBufInfo</a>)</td></tr>
 <tr class="separator:gaf3fe7dec70b834a468a84ef02c25ba2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadcd65e70dc1ca74899fef49010f7c5a8" id="r_gadcd65e70dc1ca74899fef49010f7c5a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8">ksceDisplaySetFrameBuf</a> (const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a> *pParam, int sync)</td></tr>
@@ -216,6 +305,78 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8b2cb118d615ec679b40f8d7367790c1" id="r_ga8b2cb118d615ec679b40f8d7367790c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1">ksceDisplaySetOwner</a> (int head, int index, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:ga8b2cb118d615ec679b40f8d7367790c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display plane owner.  <br /></td></tr>
 <tr class="separator:ga8b2cb118d615ec679b40f8d7367790c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad795370f7eaefb074647ee77565e1fa6" id="r_gad795370f7eaefb074647ee77565e1fa6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad795370f7eaefb074647ee77565e1fa6">VITASDK_BUILD_ASSERT_EQ</a> (0x14, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a>)</td></tr>
+<tr class="separator:gad795370f7eaefb074647ee77565e1fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga754aa5467b658c0c0ea3d5e52c9d09cd" id="r_ga754aa5467b658c0c0ea3d5e52c9d09cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga754aa5467b658c0c0ea3d5e52c9d09cd">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe">SceDisplayDeviceType</a>)</td></tr>
+<tr class="separator:ga754aa5467b658c0c0ea3d5e52c9d09cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga247dad2e91c3fc6ddf2349be0e78ec61" id="r_ga247dad2e91c3fc6ddf2349be0e78ec61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga247dad2e91c3fc6ddf2349be0e78ec61">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60">SceDisplayColorSpaceMode</a>)</td></tr>
+<tr class="separator:ga247dad2e91c3fc6ddf2349be0e78ec61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga70ee433a84fdd1d0452d87594c7fafb4" id="r_ga70ee433a84fdd1d0452d87594c7fafb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga70ee433a84fdd1d0452d87594c7fafb4">ksceDisplayCaptureFrameBufDMAC</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *capture_frame_buf)</td></tr>
+<tr class="memdesc:ga70ee433a84fdd1d0452d87594c7fafb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the current process's primary GAME_APP framebuffer through DMAC.  <br /></td></tr>
+<tr class="separator:ga70ee433a84fdd1d0452d87594c7fafb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9cd5d33ed9219fba1eb3b354c62232a1" id="r_ga9cd5d33ed9219fba1eb3b354c62232a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga9cd5d33ed9219fba1eb3b354c62232a1">ksceDisplayCaptureFrameBufDMACInternal</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *capture_frame_buf)</td></tr>
+<tr class="memdesc:ga9cd5d33ed9219fba1eb3b354c62232a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture a selected process framebuffer through DMAC.  <br /></td></tr>
+<tr class="separator:ga9cd5d33ed9219fba1eb3b354c62232a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade2843db9e68c4056347f92753dcb9bb" id="r_gade2843db9e68c4056347f92753dcb9bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gade2843db9e68c4056347f92753dcb9bb">ksceDisplayCaptureFrameBufIFTU</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *capture_frame_buf)</td></tr>
+<tr class="memdesc:gade2843db9e68c4056347f92753dcb9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert and capture the current process's primary GAME_APP framebuffer through IFTU.  <br /></td></tr>
+<tr class="separator:gade2843db9e68c4056347f92753dcb9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8eda526a3e6da55ce10624426dd0f6f" id="r_gaf8eda526a3e6da55ce10624426dd0f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf8eda526a3e6da55ce10624426dd0f6f">ksceDisplayCaptureFrameBufIFTUInternal</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *capture_frame_buf)</td></tr>
+<tr class="memdesc:gaf8eda526a3e6da55ce10624426dd0f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert and capture a selected process framebuffer through IFTU.  <br /></td></tr>
+<tr class="separator:gaf8eda526a3e6da55ce10624426dd0f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d6a53649a16b12b337eaa4fc22a4e0" id="r_gad9d6a53649a16b12b337eaa4fc22a4e0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad9d6a53649a16b12b337eaa4fc22a4e0">ksceDisplayDisableHead</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head)</td></tr>
+<tr class="memdesc:gad9d6a53649a16b12b337eaa4fc22a4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable a display head.  <br /></td></tr>
+<tr class="separator:gad9d6a53649a16b12b337eaa4fc22a4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81877131c1ee017cce3f7154e229e0a3" id="r_ga81877131c1ee017cce3f7154e229e0a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga81877131c1ee017cce3f7154e229e0a3">ksceDisplayEnableHead</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head)</td></tr>
+<tr class="memdesc:ga81877131c1ee017cce3f7154e229e0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable a display head.  <br /></td></tr>
+<tr class="separator:ga81877131c1ee017cce3f7154e229e0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad055eda01fb8cf93215d9d776db9753e" id="r_gad055eda01fb8cf93215d9d776db9753e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad055eda01fb8cf93215d9d776db9753e">ksceDisplayGetActualViewportConf</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a> *viewport_conf)</td></tr>
+<tr class="memdesc:gad055eda01fb8cf93215d9d776db9753e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the effective viewport for a framebuffer slot.  <br /></td></tr>
+<tr class="separator:gad055eda01fb8cf93215d9d776db9753e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf26cc0829b020405cec73f2c06ea3b9f" id="r_gaf26cc0829b020405cec73f2c06ea3b9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf26cc0829b020405cec73f2c06ea3b9f">ksceDisplayGetDeviceType</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *device_info)</td></tr>
+<tr class="memdesc:gaf26cc0829b020405cec73f2c06ea3b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the hardware type for a display head.  <br /></td></tr>
+<tr class="separator:gaf26cc0829b020405cec73f2c06ea3b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26b4f27313c89b97de21cb53f6de5a4e" id="r_ga26b4f27313c89b97de21cb53f6de5a4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga26b4f27313c89b97de21cb53f6de5a4e">ksceDisplayGetFrameBufInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a> *frame_buf, <a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a> update_timing_mode)</td></tr>
+<tr class="memdesc:ga26b4f27313c89b97de21cb53f6de5a4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one current process framebuffer slot.  <br /></td></tr>
+<tr class="separator:ga26b4f27313c89b97de21cb53f6de5a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf542c2bed8add2989c43d58bada85af5" id="r_gaf542c2bed8add2989c43d58bada85af5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf542c2bed8add2989c43d58bada85af5">ksceDisplayGetOutputMode</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a> *screen_mode, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *output_format)</td></tr>
+<tr class="memdesc:gaf542c2bed8add2989c43d58bada85af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the configured screen-mode ID and output-format value for a head.  <br /></td></tr>
+<tr class="separator:gaf542c2bed8add2989c43d58bada85af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb13e15259886dba2198d3da8585b270" id="r_gabb13e15259886dba2198d3da8585b270"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gabb13e15259886dba2198d3da8585b270">ksceDisplayGetRefreshRateInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, float *fps, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *scan_mode)</td></tr>
+<tr class="memdesc:gabb13e15259886dba2198d3da8585b270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a head's theoretical refresh rate and scan mode.  <br /></td></tr>
+<tr class="separator:gabb13e15259886dba2198d3da8585b270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad712738ff933c90d4ac3bb99474043c4" id="r_gad712738ff933c90d4ac3bb99474043c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad712738ff933c90d4ac3bb99474043c4">ksceDisplayGetResolutionInfoInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a> *info)</td></tr>
+<tr class="memdesc:gad712738ff933c90d4ac3bb99474043c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get complete resolution and output-mode information for a head.  <br /></td></tr>
+<tr class="separator:gad712738ff933c90d4ac3bb99474043c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga487c411e7044f29fe3d7f1259bdd5f21" id="r_ga487c411e7044f29fe3d7f1259bdd5f21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga487c411e7044f29fe3d7f1259bdd5f21">ksceDisplaySetBrightness</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> brightness)</td></tr>
+<tr class="memdesc:ga487c411e7044f29fe3d7f1259bdd5f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set display brightness.  <br /></td></tr>
+<tr class="separator:ga487c411e7044f29fe3d7f1259bdd5f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fb7af02d6861106e35cd5c18f6d50b3" id="r_ga9fb7af02d6861106e35cd5c18f6d50b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga9fb7af02d6861106e35cd5c18f6d50b3">ksceDisplaySetColorSpaceMode</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> mode)</td></tr>
+<tr class="memdesc:ga9fb7af02d6861106e35cd5c18f6d50b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the main panel's device-dependent color-space mode.  <br /></td></tr>
+<tr class="separator:ga9fb7af02d6861106e35cd5c18f6d50b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf16bc668d8550811e9312ff8aa7c3c7" id="r_gabf16bc668d8550811e9312ff8aa7c3c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gabf16bc668d8550811e9312ff8aa7c3c7">ksceDisplaySetMergeConf</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, int control, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> alpha)</td></tr>
+<tr class="memdesc:gabf16bc668d8550811e9312ff8aa7c3c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure overlay-plane blending for a head.  <br /></td></tr>
+<tr class="separator:gabf16bc668d8550811e9312ff8aa7c3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad88713b5161811a0d98c8285d17ec97a" id="r_gad88713b5161811a0d98c8285d17ec97a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad88713b5161811a0d98c8285d17ec97a">ksceDisplaySetOutputMode</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a> screen_mode, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> output_format)</td></tr>
+<tr class="memdesc:gad88713b5161811a0d98c8285d17ec97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a head's complete screen-mode ID and output-format value.  <br /></td></tr>
+<tr class="separator:gad88713b5161811a0d98c8285d17ec97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbda04f3e59b48b49e6078bd1a970137" id="r_gadbda04f3e59b48b49e6078bd1a970137"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gadbda04f3e59b48b49e6078bd1a970137">ksceDisplaySetScaleConf</a> (float scale, <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, int scaling)</td></tr>
+<tr class="memdesc:gadbda04f3e59b48b49e6078bd1a970137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set scaling for a display head's framebuffer slot.  <br /></td></tr>
+<tr class="separator:gadbda04f3e59b48b49e6078bd1a970137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43321765bec493530f1f547e9b14aa38" id="r_ga43321765bec493530f1f547e9b14aa38"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga43321765bec493530f1f547e9b14aa38">ksceDisplaySetViewportConf</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a> *viewport_conf)</td></tr>
+<tr class="memdesc:ga43321765bec493530f1f547e9b14aa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set viewport scaling for a framebuffer slot.  <br /></td></tr>
+<tr class="separator:ga43321765bec493530f1f547e9b14aa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf8c8173eb28eab85d46b65b61370db89" id="r_gaf8c8173eb28eab85d46b65b61370db89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf8c8173eb28eab85d46b65b61370db89">ksceDisplayWaitSetFrameBufCBInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx)</td></tr>
+<tr class="memdesc:gaf8c8173eb28eab85d46b65b61370db89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the next vertical blank start since the last update of the selected framebuffer, processing callbacks while waiting.  <br /></td></tr>
+<tr class="separator:gaf8c8173eb28eab85d46b65b61370db89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6af2da2c7606212b3565cee2d2dd528d" id="r_ga6af2da2c7606212b3565cee2d2dd528d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga6af2da2c7606212b3565cee2d2dd528d">ksceDisplayWaitSetFrameBufInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx)</td></tr>
+<tr class="memdesc:ga6af2da2c7606212b3565cee2d2dd528d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the next vertical blank start since the last update of the selected framebuffer.  <br /></td></tr>
+<tr class="separator:ga6af2da2c7606212b3565cee2d2dd528d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46d8c280917cf21b542331f047484457" id="r_ga46d8c280917cf21b542331f047484457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga46d8c280917cf21b542331f047484457">ksceDisplayWaitSetFrameBufMultiCBInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> vcount)</td></tr>
+<tr class="memdesc:ga46d8c280917cf21b542331f047484457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start after the specified number of vertical periods since the last update of the selected framebuffer, processing callbacks while waiting.  <br /></td></tr>
+<tr class="separator:ga46d8c280917cf21b542331f047484457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4095ddf5dca262eccf8897c743cf699b" id="r_ga4095ddf5dca262eccf8897c743cf699b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga4095ddf5dca262eccf8897c743cf699b">ksceDisplayWaitSetFrameBufMultiInternal</a> (<a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> head, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> fb_idx, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> vcount)</td></tr>
+<tr class="memdesc:ga4095ddf5dca262eccf8897c743cf699b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for vertical blank start after the specified number of vertical periods since the last update of the selected framebuffer.  <br /></td></tr>
+<tr class="separator:ga4095ddf5dca262eccf8897c743cf699b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -229,7 +390,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:ga44160853361a441b8e43578d0a2941b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">pitch pixels  <br /></td></tr>
 <tr class="separator:ga44160853361a441b8e43578d0a2941b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00b8ff65e24a20a98cbced5ea7925089" id="r_ga00b8ff65e24a20a98cbced5ea7925089"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga00b8ff65e24a20a98cbced5ea7925089">SceDisplayFrameBuf::pixelformat</a></td></tr>
-<tr class="memdesc:ga00b8ff65e24a20a98cbced5ea7925089"><td class="mdescLeft">&#160;</td><td class="mdescRight">pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>)  <br /></td></tr>
+<tr class="memdesc:ga00b8ff65e24a20a98cbced5ea7925089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combined pixel-format and RGB-range encoding.  <br /></td></tr>
 <tr class="separator:ga00b8ff65e24a20a98cbced5ea7925089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4443600a76935ec481ca282d48e9268c" id="r_ga4443600a76935ec481ca282d48e9268c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga4443600a76935ec481ca282d48e9268c">SceDisplayFrameBuf::width</a></td></tr>
 <tr class="memdesc:ga4443600a76935ec481ca282d48e9268c"><td class="mdescLeft">&#160;</td><td class="mdescRight">framebuffer width  <br /></td></tr>
@@ -237,6 +398,66 @@ Variables</h2></td></tr>
 <tr class="memitem:gacf6c5759f48d231bd31415cbe552ca3d" id="r_gacf6c5759f48d231bd31415cbe552ca3d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gacf6c5759f48d231bd31415cbe552ca3d">SceDisplayFrameBuf::height</a></td></tr>
 <tr class="memdesc:gacf6c5759f48d231bd31415cbe552ca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">framebuffer height  <br /></td></tr>
 <tr class="separator:gacf6c5759f48d231bd31415cbe552ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6b4ebc6a43700acaef77752a9632214" id="r_gaf6b4ebc6a43700acaef77752a9632214"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf6b4ebc6a43700acaef77752a9632214">SceDisplayFrameBufExt::size</a></td></tr>
+<tr class="memdesc:gaf6b4ebc6a43700acaef77752a9632214"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be set to sizeof(SceDisplayFrameBufExt).  <br /></td></tr>
+<tr class="separator:gaf6b4ebc6a43700acaef77752a9632214"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga740fa5cc74cede09850faf305c71327b" id="r_ga740fa5cc74cede09850faf305c71327b"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga740fa5cc74cede09850faf305c71327b">SceDisplayFrameBufExt::base</a></td></tr>
+<tr class="memdesc:ga740fa5cc74cede09850faf305c71327b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer base address.  <br /></td></tr>
+<tr class="separator:ga740fa5cc74cede09850faf305c71327b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b9152cca5c04436990c94cdeef51cba" id="r_ga9b9152cca5c04436990c94cdeef51cba"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga9b9152cca5c04436990c94cdeef51cba">SceDisplayFrameBufExt::pitch</a></td></tr>
+<tr class="memdesc:ga9b9152cca5c04436990c94cdeef51cba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pitch in pixels.  <br /></td></tr>
+<tr class="separator:ga9b9152cca5c04436990c94cdeef51cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab923bec6db417c74069e8b5167aa5e8" id="r_gaab923bec6db417c74069e8b5167aa5e8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaab923bec6db417c74069e8b5167aa5e8">SceDisplayFrameBufExt::pixelformat</a></td></tr>
+<tr class="memdesc:gaab923bec6db417c74069e8b5167aa5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combined pixel-format and RGB-range encoding.  <br /></td></tr>
+<tr class="separator:gaab923bec6db417c74069e8b5167aa5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga488084ff3fbdf78d0c3f418b0ddc3190" id="r_ga488084ff3fbdf78d0c3f418b0ddc3190"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga488084ff3fbdf78d0c3f418b0ddc3190">SceDisplayFrameBufExt::width</a></td></tr>
+<tr class="memdesc:ga488084ff3fbdf78d0c3f418b0ddc3190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer width in pixels.  <br /></td></tr>
+<tr class="separator:ga488084ff3fbdf78d0c3f418b0ddc3190"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1da78b15ce5302efe9ca4e8cd5f99bfd" id="r_ga1da78b15ce5302efe9ca4e8cd5f99bfd"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1da78b15ce5302efe9ca4e8cd5f99bfd">SceDisplayFrameBufExt::height</a></td></tr>
+<tr class="memdesc:ga1da78b15ce5302efe9ca4e8cd5f99bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer height in pixels.  <br /></td></tr>
+<tr class="separator:ga1da78b15ce5302efe9ca4e8cd5f99bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad2afaee8cb943d88177f96a7c55ea7b6" id="r_gad2afaee8cb943d88177f96a7c55ea7b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6">SceDisplayFrameBufExt::flags</a></td></tr>
+<tr class="memdesc:gad2afaee8cb943d88177f96a7c55ea7b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise OR of <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420" title="Flags stored in SceDisplayFrameBufExt::flags.">SceDisplayFrameBufFlag</a> values and other firmware-defined bits.  <br /></td></tr>
+<tr class="separator:gad2afaee8cb943d88177f96a7c55ea7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae1419b5f7e4d1208eb50f789e897318c" id="r_gae1419b5f7e4d1208eb50f789e897318c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae1419b5f7e4d1208eb50f789e897318c">SceDisplayCaptureFrameBuf::size</a></td></tr>
+<tr class="memdesc:gae1419b5f7e4d1208eb50f789e897318c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be set to sizeof(SceDisplayCaptureFrameBuf).  <br /></td></tr>
+<tr class="separator:gae1419b5f7e4d1208eb50f789e897318c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga85e232e657ddd13b45d24cd83b323a90" id="r_ga85e232e657ddd13b45d24cd83b323a90"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga85e232e657ddd13b45d24cd83b323a90">SceDisplayCaptureFrameBuf::base</a></td></tr>
+<tr class="memdesc:ga85e232e657ddd13b45d24cd83b323a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture destination; must be aligned to 0x100 bytes on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga85e232e657ddd13b45d24cd83b323a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab676cc8186e61f6579845039a773143b" id="r_gab676cc8186e61f6579845039a773143b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab676cc8186e61f6579845039a773143b">SceDisplayCaptureFrameBuf::pitch</a></td></tr>
+<tr class="memdesc:gab676cc8186e61f6579845039a773143b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination pitch in pixels.  <br /></td></tr>
+<tr class="separator:gab676cc8186e61f6579845039a773143b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga565517d7df230c7bab25f0487bf173a5" id="r_ga565517d7df230c7bab25f0487bf173a5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga565517d7df230c7bab25f0487bf173a5">SceDisplayCaptureFrameBuf::pixelformat</a></td></tr>
+<tr class="memdesc:ga565517d7df230c7bab25f0487bf173a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format value; see the capture function being used.  <br /></td></tr>
+<tr class="separator:ga565517d7df230c7bab25f0487bf173a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaff48a20274a30a26752e9563f3947328" id="r_gaff48a20274a30a26752e9563f3947328"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaff48a20274a30a26752e9563f3947328">SceDisplayCaptureFrameBuf::width</a></td></tr>
+<tr class="memdesc:gaff48a20274a30a26752e9563f3947328"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested or resulting width in pixels.  <br /></td></tr>
+<tr class="separator:gaff48a20274a30a26752e9563f3947328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadaaebed4f8a126867effb36e9620d04a" id="r_gadaaebed4f8a126867effb36e9620d04a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gadaaebed4f8a126867effb36e9620d04a">SceDisplayCaptureFrameBuf::height</a></td></tr>
+<tr class="memdesc:gadaaebed4f8a126867effb36e9620d04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requested or resulting height in pixels.  <br /></td></tr>
+<tr class="separator:gadaaebed4f8a126867effb36e9620d04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72f2a0e098a5fd3550e721cb4690b597" id="r_ga72f2a0e098a5fd3550e721cb4690b597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga72f2a0e098a5fd3550e721cb4690b597">SceDisplayResolutionInfo::size</a></td></tr>
+<tr class="memdesc:ga72f2a0e098a5fd3550e721cb4690b597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be set to sizeof(SceDisplayResolutionInfo).  <br /></td></tr>
+<tr class="separator:ga72f2a0e098a5fd3550e721cb4690b597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5dd29d334a96f34ec7c5a3a72073e2b" id="r_gaa5dd29d334a96f34ec7c5a3a72073e2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaa5dd29d334a96f34ec7c5a3a72073e2b">SceDisplayResolutionInfo::screen_mode</a></td></tr>
+<tr class="memdesc:gaa5dd29d334a96f34ec7c5a3a72073e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>.  <br /></td></tr>
+<tr class="separator:gaa5dd29d334a96f34ec7c5a3a72073e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga97231a3a9ff22d3e6d5d5b05ee2f00c6" id="r_ga97231a3a9ff22d3e6d5d5b05ee2f00c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga97231a3a9ff22d3e6d5d5b05ee2f00c6">SceDisplayResolutionInfo::width</a></td></tr>
+<tr class="memdesc:ga97231a3a9ff22d3e6d5d5b05ee2f00c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output width in pixels.  <br /></td></tr>
+<tr class="separator:ga97231a3a9ff22d3e6d5d5b05ee2f00c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab89931766526cfb872f0856fe82daaf8" id="r_gab89931766526cfb872f0856fe82daaf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab89931766526cfb872f0856fe82daaf8">SceDisplayResolutionInfo::height</a></td></tr>
+<tr class="memdesc:gab89931766526cfb872f0856fe82daaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output height in pixels.  <br /></td></tr>
+<tr class="separator:gab89931766526cfb872f0856fe82daaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f949dc3b362b5e7a863bea1c84d802d" id="r_ga2f949dc3b362b5e7a863bea1c84d802d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga2f949dc3b362b5e7a863bea1c84d802d">SceDisplayResolutionInfo::output_format</a></td></tr>
+<tr class="memdesc:ga2f949dc3b362b5e7a863bea1c84d802d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combined pixel-format and RGB-range encoding.  <br /></td></tr>
+<tr class="separator:ga2f949dc3b362b5e7a863bea1c84d802d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf69c56410fc5750209c3aabd1739aaaa" id="r_gaf69c56410fc5750209c3aabd1739aaaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf69c56410fc5750209c3aabd1739aaaa">SceDisplayResolutionInfo::scan_mode</a></td></tr>
+<tr class="memdesc:gaf69c56410fc5750209c3aabd1739aaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>; stored as a 32-bit value.  <br /></td></tr>
+<tr class="separator:gaf69c56410fc5750209c3aabd1739aaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad047c93160cebaee6d9a3a930eedb3f0" id="r_gad047c93160cebaee6d9a3a930eedb3f0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad047c93160cebaee6d9a3a930eedb3f0">SceDisplayResolutionInfo::fps</a></td></tr>
+<tr class="memdesc:gad047c93160cebaee6d9a3a930eedb3f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Driver refresh-rate value; approximately 59.940056 on FW 3.60.  <br /></td></tr>
+<tr class="separator:gad047c93160cebaee6d9a3a930eedb3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae73edbc4a45330dcf1c1e8505380d2a0" id="r_gae73edbc4a45330dcf1c1e8505380d2a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae73edbc4a45330dcf1c1e8505380d2a0">SceDisplayFrameBufInfo::size</a></td></tr>
 <tr class="memdesc:gae73edbc4a45330dcf1c1e8505380d2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">sizeof(SceDisplayFrameBufInfo)  <br /></td></tr>
 <tr class="separator:gae73edbc4a45330dcf1c1e8505380d2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,11 +471,26 @@ Variables</h2></td></tr>
 <tr class="memdesc:ga60165f518513b69febbba1ff2c80d8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical address.  <br /></td></tr>
 <tr class="separator:ga60165f518513b69febbba1ff2c80d8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabc3c8c036f63af068b848b0d039e08dc" id="r_gabc3c8c036f63af068b848b0d039e08dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gabc3c8c036f63af068b848b0d039e08dc">SceDisplayFrameBufInfo::framebuf</a></td></tr>
-<tr class="memdesc:gabc3c8c036f63af068b848b0d039e08dc"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> information.  <br /></td></tr>
+<tr class="memdesc:gabc3c8c036f63af068b848b0d039e08dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">First 0x18 bytes of the framebuffer descriptor.  <br /></td></tr>
 <tr class="separator:gabc3c8c036f63af068b848b0d039e08dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66105322c2fa987559ee4625f427e3c0" id="r_ga66105322c2fa987559ee4625f427e3c0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga66105322c2fa987559ee4625f427e3c0">SceDisplayFrameBufInfo::resolution</a></td></tr>
-<tr class="memdesc:ga66105322c2fa987559ee4625f427e3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution.  <br /></td></tr>
+<tr class="memdesc:ga66105322c2fa987559ee4625f427e3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended framebuffer flags; same value as <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>.  <br /></td></tr>
 <tr class="separator:ga66105322c2fa987559ee4625f427e3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7623887908d83f171f53e3ebddcb61ef" id="r_ga7623887908d83f171f53e3ebddcb61ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga7623887908d83f171f53e3ebddcb61ef">SceDisplayViewportConf::size</a></td></tr>
+<tr class="memdesc:ga7623887908d83f171f53e3ebddcb61ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be set to 0x14.  <br /></td></tr>
+<tr class="separator:ga7623887908d83f171f53e3ebddcb61ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad3254451f5d82f1f5a2f35e32494c197" id="r_gad3254451f5d82f1f5a2f35e32494c197"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gad3254451f5d82f1f5a2f35e32494c197">SceDisplayViewportConf::x</a></td></tr>
+<tr class="memdesc:gad3254451f5d82f1f5a2f35e32494c197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Horizontal viewport offset in pixels.  <br /></td></tr>
+<tr class="separator:gad3254451f5d82f1f5a2f35e32494c197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga41466fec513266654b3693b65cba3ad4" id="r_ga41466fec513266654b3693b65cba3ad4"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga41466fec513266654b3693b65cba3ad4">SceDisplayViewportConf::y</a></td></tr>
+<tr class="memdesc:ga41466fec513266654b3693b65cba3ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertical viewport offset in pixels.  <br /></td></tr>
+<tr class="separator:ga41466fec513266654b3693b65cba3ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga051f33b395994ba896d8426f1397462d" id="r_ga051f33b395994ba896d8426f1397462d"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga051f33b395994ba896d8426f1397462d">SceDisplayViewportConf::width</a></td></tr>
+<tr class="memdesc:ga051f33b395994ba896d8426f1397462d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport width in pixels.  <br /></td></tr>
+<tr class="separator:ga051f33b395994ba896d8426f1397462d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ed059fd8fad87a01125f3da8e086dfa" id="r_ga0ed059fd8fad87a01125f3da8e086dfa"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0ed059fd8fad87a01125f3da8e086dfa">SceDisplayViewportConf::height</a></td></tr>
+<tr class="memdesc:ga0ed059fd8fad87a01125f3da8e086dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewport height in pixels.  <br /></td></tr>
+<tr class="separator:ga0ed059fd8fad87a01125f3da8e086dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -315,7 +551,7 @@ pitch pixels </td></tr>
 <td class="fieldname">
 pixelformat</td>
 <td class="fielddoc">
-pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </td></tr>
+Combined pixel-format and RGB-range encoding. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga4443600a76935ec481ca282d48e9268c" name="ga4443600a76935ec481ca282d48e9268c"></a>unsigned int</td>
 <td class="fieldname">
@@ -328,6 +564,181 @@ framebuffer width </td></tr>
 height</td>
 <td class="fielddoc">
 framebuffer height </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceDisplayFrameBufExt" id="structSceDisplayFrameBufExt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayFrameBufExt">&#9670;&#160;</a></span>SceDisplayFrameBufExt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceDisplayFrameBufExt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Extended framebuffer descriptor accepted by FW 3.60. </p>
+<p><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> remains 0x18 bytes for backwards compatibility. The raw and internal framebuffer APIs also accept this 0x1C-byte structure. To use it, set <em>size</em> to <code>sizeof(SceDisplayFrameBufExt)</code>. FW 3.60 permits only bits in the mask 0x001F0000 in <em>flags</em>. The purposes of bits 0x00020000 and 0x00080000 are unknown. For a 0x18-byte structure, the driver sets <a class="el" href="group__SceDisplayKernel.html#gga92951e53ee58da50cedb09a337ae1420ab54f11ba4d143df85ee0a4408e79c7dc" title="Enable bilinear filtering.">SCE_DISPLAY_FRAMEBUF_FLAG_BILINEAR</a> internally. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaf6b4ebc6a43700acaef77752a9632214" name="gaf6b4ebc6a43700acaef77752a9632214"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be set to sizeof(SceDisplayFrameBufExt). </td></tr>
+<tr><td class="fieldtype">
+<a id="ga740fa5cc74cede09850faf305c71327b" name="ga740fa5cc74cede09850faf305c71327b"></a>void *</td>
+<td class="fieldname">
+base</td>
+<td class="fielddoc">
+Framebuffer base address. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga9b9152cca5c04436990c94cdeef51cba" name="ga9b9152cca5c04436990c94cdeef51cba"></a>unsigned int</td>
+<td class="fieldname">
+pitch</td>
+<td class="fielddoc">
+Pitch in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaab923bec6db417c74069e8b5167aa5e8" name="gaab923bec6db417c74069e8b5167aa5e8"></a>unsigned int</td>
+<td class="fieldname">
+pixelformat</td>
+<td class="fielddoc">
+Combined pixel-format and RGB-range encoding. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga488084ff3fbdf78d0c3f418b0ddc3190" name="ga488084ff3fbdf78d0c3f418b0ddc3190"></a>unsigned int</td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+Framebuffer width in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1da78b15ce5302efe9ca4e8cd5f99bfd" name="ga1da78b15ce5302efe9ca4e8cd5f99bfd"></a>unsigned int</td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+Framebuffer height in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad2afaee8cb943d88177f96a7c55ea7b6" name="gad2afaee8cb943d88177f96a7c55ea7b6"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+flags</td>
+<td class="fielddoc">
+Bitwise OR of <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420" title="Flags stored in SceDisplayFrameBufExt::flags.">SceDisplayFrameBufFlag</a> values and other firmware-defined bits. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceDisplayCaptureFrameBuf" id="structSceDisplayCaptureFrameBuf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayCaptureFrameBuf">&#9670;&#160;</a></span>SceDisplayCaptureFrameBuf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceDisplayCaptureFrameBuf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Framebuffer capture destination. </p>
+<p>The DMAC capture functions use <em>width</em> and <em>height</em> as maximum dimensions, ignore the input <em>pixelformat</em>, and replace all three fields with the copied source values. The IFTU capture functions instead use all three fields as destination parameters and leave the structure unchanged. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gae1419b5f7e4d1208eb50f789e897318c" name="gae1419b5f7e4d1208eb50f789e897318c"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be set to sizeof(SceDisplayCaptureFrameBuf). </td></tr>
+<tr><td class="fieldtype">
+<a id="ga85e232e657ddd13b45d24cd83b323a90" name="ga85e232e657ddd13b45d24cd83b323a90"></a>void *</td>
+<td class="fieldname">
+base</td>
+<td class="fielddoc">
+Capture destination; must be aligned to 0x100 bytes on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="gab676cc8186e61f6579845039a773143b" name="gab676cc8186e61f6579845039a773143b"></a>unsigned int</td>
+<td class="fieldname">
+pitch</td>
+<td class="fielddoc">
+Destination pitch in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga565517d7df230c7bab25f0487bf173a5" name="ga565517d7df230c7bab25f0487bf173a5"></a>unsigned int</td>
+<td class="fieldname">
+pixelformat</td>
+<td class="fielddoc">
+Format value; see the capture function being used. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaff48a20274a30a26752e9563f3947328" name="gaff48a20274a30a26752e9563f3947328"></a>unsigned int</td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+Requested or resulting width in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadaaebed4f8a126867effb36e9620d04a" name="gadaaebed4f8a126867effb36e9620d04a"></a>unsigned int</td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+Requested or resulting height in pixels. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceDisplayResolutionInfo" id="structSceDisplayResolutionInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayResolutionInfo">&#9670;&#160;</a></span>SceDisplayResolutionInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceDisplayResolutionInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga72f2a0e098a5fd3550e721cb4690b597" name="ga72f2a0e098a5fd3550e721cb4690b597"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be set to sizeof(SceDisplayResolutionInfo). </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa5dd29d334a96f34ec7c5a3a72073e2b" name="gaa5dd29d334a96f34ec7c5a3a72073e2b"></a><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a></td>
+<td class="fieldname">
+screen_mode</td>
+<td class="fielddoc">
+One of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga97231a3a9ff22d3e6d5d5b05ee2f00c6" name="ga97231a3a9ff22d3e6d5d5b05ee2f00c6"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+Output width in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="gab89931766526cfb872f0856fe82daaf8" name="gab89931766526cfb872f0856fe82daaf8"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+Output height in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2f949dc3b362b5e7a863bea1c84d802d" name="ga2f949dc3b362b5e7a863bea1c84d802d"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+output_format</td>
+<td class="fielddoc">
+Combined pixel-format and RGB-range encoding. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaf69c56410fc5750209c3aabd1739aaaa" name="gaf69c56410fc5750209c3aabd1739aaaa"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+scan_mode</td>
+<td class="fielddoc">
+One of <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>; stored as a 32-bit value. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad047c93160cebaee6d9a3a930eedb3f0" name="gad047c93160cebaee6d9a3a930eedb3f0"></a>float</td>
+<td class="fieldname">
+fps</td>
+<td class="fielddoc">
+Driver refresh-rate value; approximately 59.940056 on FW 3.60. </td></tr>
 </table>
 
 </div>
@@ -375,14 +786,78 @@ Physical address. </td></tr>
 <td class="fieldname">
 framebuf</td>
 <td class="fielddoc">
-<a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> information. </td></tr>
+First 0x18 bytes of the framebuffer descriptor. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga66105322c2fa987559ee4625f427e3c0" name="ga66105322c2fa987559ee4625f427e3c0"></a>unsigned int</td>
 <td class="fieldname">
 resolution</td>
 <td class="fielddoc">
-Resolution. </td></tr>
+Extended framebuffer flags; same value as <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>. </td></tr>
 </table>
+
+</div>
+</div>
+<a name="structSceDisplayViewportConf" id="structSceDisplayViewportConf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceDisplayViewportConf">&#9670;&#160;</a></span>SceDisplayViewportConf</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceDisplayViewportConf</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga7623887908d83f171f53e3ebddcb61ef" name="ga7623887908d83f171f53e3ebddcb61ef"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be set to 0x14. </td></tr>
+<tr><td class="fieldtype">
+<a id="gad3254451f5d82f1f5a2f35e32494c197" name="gad3254451f5d82f1f5a2f35e32494c197"></a>unsigned int</td>
+<td class="fieldname">
+x</td>
+<td class="fielddoc">
+Horizontal viewport offset in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga41466fec513266654b3693b65cba3ad4" name="ga41466fec513266654b3693b65cba3ad4"></a>unsigned int</td>
+<td class="fieldname">
+y</td>
+<td class="fielddoc">
+Vertical viewport offset in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga051f33b395994ba896d8426f1397462d" name="ga051f33b395994ba896d8426f1397462d"></a>unsigned int</td>
+<td class="fieldname">
+width</td>
+<td class="fielddoc">
+Viewport width in pixels. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga0ed059fd8fad87a01125f3da8e086dfa" name="ga0ed059fd8fad87a01125f3da8e086dfa"></a>unsigned int</td>
+<td class="fieldname">
+height</td>
+<td class="fielddoc">
+Viewport height in pixels. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga1cb3ba1f04b954b20022777b6f7b9444" name="ga1cb3ba1f04b954b20022777b6f7b9444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cb3ba1f04b954b20022777b6f7b9444">&#9670;&#160;</a></span>SceDisplayScreenMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Storage type for one of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>. </p>
 
 </div>
 </div>
@@ -453,9 +928,188 @@ Resolution. </td></tr>
 
 </div>
 </div>
+<a id="ga92951e53ee58da50cedb09a337ae1420" name="ga92951e53ee58da50cedb09a337ae1420"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92951e53ee58da50cedb09a337ae1420">&#9670;&#160;</a></span>SceDisplayFrameBufFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Flags stored in <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga92951e53ee58da50cedb09a337ae1420a90f3be7158dfae614476e265ac33f4dd" name="gga92951e53ee58da50cedb09a337ae1420a90f3be7158dfae614476e265ac33f4dd"></a>SCE_DISPLAY_FRAMEBUF_FLAG_SHARED&#160;</td><td class="fielddoc"><p>Identifies a shared framebuffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga92951e53ee58da50cedb09a337ae1420ab54f11ba4d143df85ee0a4408e79c7dc" name="gga92951e53ee58da50cedb09a337ae1420ab54f11ba4d143df85ee0a4408e79c7dc"></a>SCE_DISPLAY_FRAMEBUF_FLAG_BILINEAR&#160;</td><td class="fielddoc"><p>Enable bilinear filtering. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gab50ca792050497d4b8f8c1ab7956f02b" name="gab50ca792050497d4b8f8c1ab7956f02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab50ca792050497d4b8f8c1ab7956f02b">&#9670;&#160;</a></span>SceDisplayFrameBufType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggab50ca792050497d4b8f8c1ab7956f02baf198894e75c035435df39083e1496d8d" name="ggab50ca792050497d4b8f8c1ab7956f02baf198894e75c035435df39083e1496d8d"></a>SCE_DISPLAY_FRAMEBUF_GAME_APP&#160;</td><td class="fielddoc"><p>Game or application framebuffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggab50ca792050497d4b8f8c1ab7956f02ba30893a629004926fcdeb7d884c4970d4" name="ggab50ca792050497d4b8f8c1ab7956f02ba30893a629004926fcdeb7d884c4970d4"></a>SCE_DISPLAY_FRAMEBUF_LIVEAREA&#160;</td><td class="fielddoc"><p>LiveArea, HOME, and system-overlay framebuffer. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga82c14f2afc9da714ea569de19f0ea118" name="ga82c14f2afc9da714ea569de19f0ea118"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga82c14f2afc9da714ea569de19f0ea118">&#9670;&#160;</a></span>SceDisplayHead</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga82c14f2afc9da714ea569de19f0ea118af64b1573863371d27ddc58653781c526" name="gga82c14f2afc9da714ea569de19f0ea118af64b1573863371d27ddc58653781c526"></a>SCE_DISPLAY_HEAD_MAIN_LCD_OLED&#160;</td><td class="fielddoc"><p>Built-in OLED or LCD panel. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga82c14f2afc9da714ea569de19f0ea118a5481a0301e3fec965ae0b530eabdd6be" name="gga82c14f2afc9da714ea569de19f0ea118a5481a0301e3fec965ae0b530eabdd6be"></a>SCE_DISPLAY_HEAD_HDMI&#160;</td><td class="fielddoc"><p>HDMI output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga82c14f2afc9da714ea569de19f0ea118aed0adebec629a8eb1cd258fb7d26e57e" name="gga82c14f2afc9da714ea569de19f0ea118aed0adebec629a8eb1cd258fb7d26e57e"></a>SCE_DISPLAY_HEAD_SUB_LCD&#160;</td><td class="fielddoc"><p>Secondary LCD state reserved by the display driver. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga1543e4e73601e4e58f9cf26c7627b4dc" name="ga1543e4e73601e4e58f9cf26c7627b4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1543e4e73601e4e58f9cf26c7627b4dc">&#9670;&#160;</a></span>SceDisplayScreenModeId</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Complete screen-mode identifiers accepted by the FW 3.60 DSI driver. </p>
+<p>Use these IDs as listed; do not combine them as flags. For example, 1080p at 24 Hz is 0x8730; ORing 0x0700 with 0x0020 produces 0x0720, which FW 3.60 rejects. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcad9790ce2c7ec0949d1b5e6b2590b255e" name="gga1543e4e73601e4e58f9cf26c7627b4dcad9790ce2c7ec0949d1b5e6b2590b255e"></a>SCE_DISPLAY_SCREENMODE_INTERNAL_960X544&#160;</td><td class="fielddoc"><p>Progressive; 1050x594 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcad36f9be75af13cb1285298527ccdff5c" name="gga1543e4e73601e4e58f9cf26c7627b4dcad36f9be75af13cb1285298527ccdff5c"></a>SCE_DISPLAY_SCREENMODE_INTERNAL_960X544_1375X567&#160;</td><td class="fielddoc"><p>Progressive; 1375x567 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcad4ca50e57464b72945b846edce0c6a3c" name="gga1543e4e73601e4e58f9cf26c7627b4dcad4ca50e57464b72945b846edce0c6a3c"></a>SCE_DISPLAY_SCREENMODE_INTERNAL_960X540&#160;</td><td class="fielddoc"><p>Progressive; 1250x594 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca89d99ed23e045111f4cdcae5d5971fce" name="gga1543e4e73601e4e58f9cf26c7627b4dca89d99ed23e045111f4cdcae5d5971fce"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X525&#160;</td><td class="fielddoc"><p>Progressive; 858x525 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcab729715dd8309221c7ea48d82e851d9a" name="gga1543e4e73601e4e58f9cf26c7627b4dcab729715dd8309221c7ea48d82e851d9a"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X526&#160;</td><td class="fielddoc"><p>Progressive; 858x526 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcae06feb1e4fd859bae1fd90677a4e0be1" name="gga1543e4e73601e4e58f9cf26c7627b4dcae06feb1e4fd859bae1fd90677a4e0be1"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720X576_864X625&#160;</td><td class="fielddoc"><p>Progressive; 864x625 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca3419cbfa274cb48de5ccbbc9cf1be8b1" name="gga1543e4e73601e4e58f9cf26c7627b4dca3419cbfa274cb48de5ccbbc9cf1be8b1"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720X575_864X626&#160;</td><td class="fielddoc"><p>Progressive; 864x626 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca059fff3acd5ff7296341549ecb2e96a1" name="gga1543e4e73601e4e58f9cf26c7627b4dca059fff3acd5ff7296341549ecb2e96a1"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_60HZ&#160;</td><td class="fielddoc"><p>Interlaced; 2200x1125 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca86ce750750ce4888eec978ed2852e1c5" name="gga1543e4e73601e4e58f9cf26c7627b4dca86ce750750ce4888eec978ed2852e1c5"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_50HZ&#160;</td><td class="fielddoc"><p>Interlaced; 2640x1125 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcab5b21ef7c95f3007cf230907c0f1f0d5" name="gga1543e4e73601e4e58f9cf26c7627b4dcab5b21ef7c95f3007cf230907c0f1f0d5"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_60HZ&#160;</td><td class="fielddoc"><p>Progressive; 1650x750 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca11be8fac9e52871baa8d7f68b23a4fee" name="gga1543e4e73601e4e58f9cf26c7627b4dca11be8fac9e52871baa8d7f68b23a4fee"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_50HZ&#160;</td><td class="fielddoc"><p>Progressive; 1980x750 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca45a04860bf547b0c6bc1da3f76069e9e" name="gga1543e4e73601e4e58f9cf26c7627b4dca45a04860bf547b0c6bc1da3f76069e9e"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_60HZ&#160;</td><td class="fielddoc"><p>Progressive; 2200x1125 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcaa78d18547140e4c989c45aa15b3bc5e5" name="gga1543e4e73601e4e58f9cf26c7627b4dcaa78d18547140e4c989c45aa15b3bc5e5"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_24HZ&#160;</td><td class="fielddoc"><p>Progressive; 2750x1125 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dca1a388abc80e9ec2c0723160328dece66" name="gga1543e4e73601e4e58f9cf26c7627b4dca1a388abc80e9ec2c0723160328dece66"></a>SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_50HZ&#160;</td><td class="fielddoc"><p>Progressive; 2640x1125 total timing. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1543e4e73601e4e58f9cf26c7627b4dcae9f6cefff5464e015aa16893f5c22aec" name="gga1543e4e73601e4e58f9cf26c7627b4dcae9f6cefff5464e015aa16893f5c22aec"></a>SCE_DISPLAY_SCREENMODE_1280X720_1428X775&#160;</td><td class="fielddoc"><p>Progressive; 1428x775 total timing. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf4cf61f6213d27134bc2537323f50a58" name="gaf4cf61f6213d27134bc2537323f50a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4cf61f6213d27134bc2537323f50a58">&#9670;&#160;</a></span>SceDisplayScanMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf4cf61f6213d27134bc2537323f50a58a2f9e61915449954211681af4d4e796f5" name="ggaf4cf61f6213d27134bc2537323f50a58a2f9e61915449954211681af4d4e796f5"></a>SCE_DISPLAY_SCANMODE_PROGRESSIVE&#160;</td><td class="fielddoc"><p>Progressive scan. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf4cf61f6213d27134bc2537323f50a58a131eef4d583945fda91c6981c2067348" name="ggaf4cf61f6213d27134bc2537323f50a58a131eef4d583945fda91c6981c2067348"></a>SCE_DISPLAY_SCANMODE_INTERLACED&#160;</td><td class="fielddoc"><p>Interlaced scan. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga81198f08536bab262390241bc4de99fe" name="ga81198f08536bab262390241bc4de99fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81198f08536bab262390241bc4de99fe">&#9670;&#160;</a></span>SceDisplayDeviceType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe">SceDisplayDeviceType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Non-negative device types returned by <a class="el" href="group__SceDisplayKernel.html#gaf26cc0829b020405cec73f2c06ea3b9f" title="Get the hardware type for a display head.">ksceDisplayGetDeviceType</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga81198f08536bab262390241bc4de99fea8645d74dab06ba23d36f4b3cfde07583" name="gga81198f08536bab262390241bc4de99fea8645d74dab06ba23d36f4b3cfde07583"></a>SCE_DISPLAY_DEVICE_TYPE_NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga81198f08536bab262390241bc4de99fea86c5e52011a5fddcf05bdf7df1539315" name="gga81198f08536bab262390241bc4de99fea86c5e52011a5fddcf05bdf7df1539315"></a>SCE_DISPLAY_DEVICE_TYPE_OLED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga81198f08536bab262390241bc4de99fea1286d1c4f924ee409135f91fac9293b6" name="gga81198f08536bab262390241bc4de99fea1286d1c4f924ee409135f91fac9293b6"></a>SCE_DISPLAY_DEVICE_TYPE_LCD&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga81198f08536bab262390241bc4de99fea33719ef81fe02300f6e0abd10ace17d1" name="gga81198f08536bab262390241bc4de99fea33719ef81fe02300f6e0abd10ace17d1"></a>SCE_DISPLAY_DEVICE_TYPE_HDMI&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0597fa0cf3000064b5cb0f8ee4ea7d60" name="ga0597fa0cf3000064b5cb0f8ee4ea7d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0597fa0cf3000064b5cb0f8ee4ea7d60">&#9670;&#160;</a></span>SceDisplayColorSpaceMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60">SceDisplayColorSpaceMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Device-dependent values accepted by <a class="el" href="group__SceDisplayKernel.html#ga9fb7af02d6861106e35cd5c18f6d50b3" title="Set the main panel&#39;s device-dependent color-space mode.">ksceDisplaySetColorSpaceMode</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0597fa0cf3000064b5cb0f8ee4ea7d60aebf7ce3f00021ed24e093727d04e11b5" name="gga0597fa0cf3000064b5cb0f8ee4ea7d60aebf7ce3f00021ed24e093727d04e11b5"></a>SCE_DISPLAY_COLOR_SPACE_MODE_0&#160;</td><td class="fielddoc"><p>Selects panel-driver mode 0 on OLED and LCD. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0597fa0cf3000064b5cb0f8ee4ea7d60acf7a495e4f6b784bdd42e85a7b304852" name="gga0597fa0cf3000064b5cb0f8ee4ea7d60acf7a495e4f6b784bdd42e85a7b304852"></a>SCE_DISPLAY_COLOR_SPACE_MODE_1&#160;</td><td class="fielddoc"><p>Selects panel-driver mode 1 on OLED and mode 0 on LCD. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0597fa0cf3000064b5cb0f8ee4ea7d60a41f513b6e695be5ce991bfec150a5212" name="gga0597fa0cf3000064b5cb0f8ee4ea7d60a41f513b6e695be5ce991bfec150a5212"></a>SCE_DISPLAY_COLOR_SPACE_MODE_2&#160;</td><td class="fielddoc"><p>Selects panel-driver mode 1 on LCD; rejected by OLED. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaa68503c400ba70914076691205b2bf3b" name="gaa68503c400ba70914076691205b2bf3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa68503c400ba70914076691205b2bf3b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa68503c400ba70914076691205b2bf3b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -483,7 +1137,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="ga1f7fde71e28e64cf92cc4ab8674d4e1d" name="ga1f7fde71e28e64cf92cc4ab8674d4e1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1f7fde71e28e64cf92cc4ab8674d4e1d">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f7fde71e28e64cf92cc4ab8674d4e1d">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -511,7 +1165,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="gad3dc61b743f3e02b789a2c7761c4f2cd" name="gad3dc61b743f3e02b789a2c7761c4f2cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad3dc61b743f3e02b789a2c7761c4f2cd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3dc61b743f3e02b789a2c7761c4f2cd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -539,7 +1193,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="ga746511d8227c31c611becb919a907707" name="ga746511d8227c31c611becb919a907707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga746511d8227c31c611becb919a907707">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga746511d8227c31c611becb919a907707">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -566,8 +1220,260 @@ Resolution. </td></tr>
 
 </div>
 </div>
+<a id="gae99b62ca44f2a3a57f16677a55c4d7dd" name="gae99b62ca44f2a3a57f16677a55c4d7dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae99b62ca44f2a3a57f16677a55c4d7dd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga250879168163107e7874fe98024c24cb" name="ga250879168163107e7874fe98024c24cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga250879168163107e7874fe98024c24cb">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x1C&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0282184183224108af7e10321db90849" name="ga0282184183224108af7e10321db90849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0282184183224108af7e10321db90849">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1e322c63d61b145683a49b98140efeeb" name="ga1e322c63d61b145683a49b98140efeeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e322c63d61b145683a49b98140efeeb">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0ce7a6031140e7cff4222bc364707c67" name="ga0ce7a6031140e7cff4222bc364707c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ce7a6031140e7cff4222bc364707c67">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[9/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">2&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga5103b2af2a6efc561a0d325fd2e28cd5" name="ga5103b2af2a6efc561a0d325fd2e28cd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5103b2af2a6efc561a0d325fd2e28cd5">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[10/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">4&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac857ea9888aff0a41d91b66f86cb350b" name="gac857ea9888aff0a41d91b66f86cb350b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac857ea9888aff0a41d91b66f86cb350b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[11/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab27827460309b17623cd2b0110663bc2" name="gab27827460309b17623cd2b0110663bc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab27827460309b17623cd2b0110663bc2">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[12/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x18&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga335ea14172fc3c5c6dca21cbddb0fe61" name="ga335ea14172fc3c5c6dca21cbddb0fe61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga335ea14172fc3c5c6dca21cbddb0fe61">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[13/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x1C&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaf3fe7dec70b834a468a84ef02c25ba2e" name="gaf3fe7dec70b834a468a84ef02c25ba2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf3fe7dec70b834a468a84ef02c25ba2e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3fe7dec70b834a468a84ef02c25ba2e">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[14/17]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -624,7 +1530,7 @@ Resolution. </td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -677,7 +1583,7 @@ Resolution. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Use 0 for OLED/LCD and 1 for HDMI </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Can be 0 or 1 </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -715,8 +1621,14 @@ Resolution. </td></tr>
 <p>Get current framebuffer parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters.</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of ::DisplaySetBufSync</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pParam</td><td>- Pointer to a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> structure which will receive framebuffer parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>FW 3.60 writes 0x1C bytes even when the size member is 0x18. Allocate a <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt" title="Extended framebuffer descriptor accepted by FW 3.60.">SceDisplayFrameBufExt</a> object and cast its address to <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> * when calling this backwards-compatible prototype.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sync</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a></td></tr>
   </table>
   </dd>
 </dl>
@@ -1441,9 +2353,1031 @@ Resolution. </td></tr>
 
 </div>
 </div>
+<a id="gad795370f7eaefb074647ee77565e1fa6" name="gad795370f7eaefb074647ee77565e1fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad795370f7eaefb074647ee77565e1fa6">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[15/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x14&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga754aa5467b658c0c0ea3d5e52c9d09cd" name="ga754aa5467b658c0c0ea3d5e52c9d09cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga754aa5467b658c0c0ea3d5e52c9d09cd">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[16/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe">SceDisplayDeviceType</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga247dad2e91c3fc6ddf2349be0e78ec61" name="ga247dad2e91c3fc6ddf2349be0e78ec61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga247dad2e91c3fc6ddf2349be0e78ec61">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[17/17]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">1&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60">SceDisplayColorSpaceMode</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga70ee433a84fdd1d0452d87594c7fafb4" name="ga70ee433a84fdd1d0452d87594c7fafb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga70ee433a84fdd1d0452d87594c7fafb4">&#9670;&#160;</a></span>ksceDisplayCaptureFrameBufDMAC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayCaptureFrameBufDMAC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>capture_frame_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capture the current process's primary GAME_APP framebuffer through DMAC. </p>
+<p>The destination address must be aligned to 0x100 bytes. Pitch must be a multiple of 64 pixels and at least the requested width. On success, FW 3.60 replaces the structure's width, height, and pixel format with the actual copied source values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Source process ID, or 0 for the calling process. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">capture_frame_buf</td><td>- Capture destination and resulting format.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga9cd5d33ed9219fba1eb3b354c62232a1" name="ga9cd5d33ed9219fba1eb3b354c62232a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9cd5d33ed9219fba1eb3b354c62232a1">&#9670;&#160;</a></span>ksceDisplayCaptureFrameBufDMACInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayCaptureFrameBufDMACInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>capture_frame_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capture a selected process framebuffer through DMAC. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Source process ID, or 0 for the calling process. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">capture_frame_buf</td><td>- Capture destination and resulting format. The same rules apply as for <a class="el" href="group__SceDisplayKernel.html#ga70ee433a84fdd1d0452d87594c7fafb4" title="Capture the current process&#39;s primary GAME_APP framebuffer through DMAC.">ksceDisplayCaptureFrameBufDMAC</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gade2843db9e68c4056347f92753dcb9bb" name="gade2843db9e68c4056347f92753dcb9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade2843db9e68c4056347f92753dcb9bb">&#9670;&#160;</a></span>ksceDisplayCaptureFrameBufIFTU()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayCaptureFrameBufIFTU </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>capture_frame_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert and capture the current process's primary GAME_APP framebuffer through IFTU. </p>
+<p>The destination address must be aligned to 0x100 bytes. FW 3.60 accepts pixel format values 0x00000000, 0x00008000, 0x00100000, 0x00108000, 0x60800000, 0x60808000, 0x60900000, and 0x60908000. The destination buffer must contain at least pitch * height * 4 bytes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Source process ID, or 0 for the calling process. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capture_frame_buf</td><td>- Capture destination description.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaf8eda526a3e6da55ce10624426dd0f6f" name="gaf8eda526a3e6da55ce10624426dd0f6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8eda526a3e6da55ce10624426dd0f6f">&#9670;&#160;</a></span>ksceDisplayCaptureFrameBufIFTUInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayCaptureFrameBufIFTUInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a> *&#160;</td>
+          <td class="paramname"><em>capture_frame_buf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert and capture a selected process framebuffer through IFTU. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Source process ID, or 0 for the calling process. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capture_frame_buf</td><td>- Capture destination description. The same rules apply as for <a class="el" href="group__SceDisplayKernel.html#gade2843db9e68c4056347f92753dcb9bb" title="Convert and capture the current process&#39;s primary GAME_APP framebuffer through IFTU.">ksceDisplayCaptureFrameBufIFTU</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gad9d6a53649a16b12b337eaa4fc22a4e0" name="gad9d6a53649a16b12b337eaa4fc22a4e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9d6a53649a16b12b337eaa4fc22a4e0">&#9670;&#160;</a></span>ksceDisplayDisableHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayDisableHead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Disable a display head. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga81877131c1ee017cce3f7154e229e0a3" name="ga81877131c1ee017cce3f7154e229e0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga81877131c1ee017cce3f7154e229e0a3">&#9670;&#160;</a></span>ksceDisplayEnableHead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayEnableHead </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable a display head. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gad055eda01fb8cf93215d9d776db9753e" name="gad055eda01fb8cf93215d9d776db9753e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad055eda01fb8cf93215d9d776db9753e">&#9670;&#160;</a></span>ksceDisplayGetActualViewportConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetActualViewportConf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a> *&#160;</td>
+          <td class="paramname"><em>viewport_conf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the effective viewport for a framebuffer slot. </p>
+<p>The output must be non-NULL with its size member set to 0x14. FW 3.60 returns zero for x, y, width, and height when the slot has no owner or active framebuffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">viewport_conf</td><td>- Receives the viewport; set its size member first.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaf26cc0829b020405cec73f2c06ea3b9f" name="gaf26cc0829b020405cec73f2c06ea3b9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf26cc0829b020405cec73f2c06ea3b9f">&#9670;&#160;</a></span>ksceDisplayGetDeviceType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetDeviceType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>device_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the hardware type for a display head. </p>
+<p>On FW 3.60, OLED returns 1 and writes 0x103, LCD returns 2 and writes 0x101, HDMI returns 3 and writes 0x101, and an absent device returns 0 and writes 0. The output pointer is optional.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">device_info</td><td>- Optional device-information output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>One of <a class="el" href="group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe" title="Non-negative device types returned by ksceDisplayGetDeviceType.">SceDisplayDeviceType</a>, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga26b4f27313c89b97de21cb53f6de5a4e" name="ga26b4f27313c89b97de21cb53f6de5a4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga26b4f27313c89b97de21cb53f6de5a4e">&#9670;&#160;</a></span>ksceDisplayGetFrameBufInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetFrameBufInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a> *&#160;</td>
+          <td class="paramname"><em>frame_buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>&#160;</td>
+          <td class="paramname"><em>update_timing_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get one current process framebuffer slot. </p>
+<p>FW 3.60 always writes 0x1C bytes. Although the size member may be 0x18 or 0x1C, callers must provide storage for the complete extended framebuffer structure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">frame_buf</td><td>- Receives the extended framebuffer information; set its size member first. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">update_timing_mode</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga1cccbd19bead1c902688ec8409ff0c55">SceDisplaySetBufSync</a>. FW 3.60 validates but otherwise ignores this value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaf542c2bed8add2989c43d58bada85af5" name="gaf542c2bed8add2989c43d58bada85af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf542c2bed8add2989c43d58bada85af5">&#9670;&#160;</a></span>ksceDisplayGetOutputMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetOutputMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a> *&#160;</td>
+          <td class="paramname"><em>screen_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>output_format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the configured screen-mode ID and output-format value for a head. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">screen_mode</td><td>- Optional complete screen-mode ID output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">output_format</td><td>- Optional pixel-format/RGB-range output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gabb13e15259886dba2198d3da8585b270" name="gabb13e15259886dba2198d3da8585b270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb13e15259886dba2198d3da8585b270">&#9670;&#160;</a></span>ksceDisplayGetRefreshRateInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayGetRefreshRateInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>fps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>scan_mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a head's theoretical refresh rate and scan mode. </p>
+<p>Either output pointer may be NULL. The scan-mode output is a 32-bit value containing one of <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>. FW 3.60 reports approximately 59.940056 through <em>fps</em> for every configured screen mode; this value is not calculated from the selected DSI timing.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">fps</td><td>- Optional stored refresh-rate output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">scan_mode</td><td>- Optional 32-bit scan-mode output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gad712738ff933c90d4ac3bb99474043c4" name="gad712738ff933c90d4ac3bb99474043c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad712738ff933c90d4ac3bb99474043c4">&#9670;&#160;</a></span>ksceDisplayGetResolutionInfoInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplayGetResolutionInfoInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get complete resolution and output-mode information for a head. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">info</td><td>- Receives the information; set its size member to 0x1C.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga487c411e7044f29fe3d7f1259bdd5f21" name="ga487c411e7044f29fe3d7f1259bdd5f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga487c411e7044f29fe3d7f1259bdd5f21">&#9670;&#160;</a></span>ksceDisplaySetBrightness()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetBrightness </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>brightness</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set display brightness. </p>
+<p>For the main panel, values from 0 through 0x10000 are passed to the active OLED or LCD driver. For HDMI, zero remains zero, one becomes 0x8000, and values from two through 0x10000 become <code>0x8000 + (brightness &gt;&gt; 1)</code> before being applied to the IFTU color-conversion matrices.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">brightness</td><td>- Brightness value from zero through 0x10000.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga9fb7af02d6861106e35cd5c18f6d50b3" name="ga9fb7af02d6861106e35cd5c18f6d50b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fb7af02d6861106e35cd5c18f6d50b3">&#9670;&#160;</a></span>ksceDisplaySetColorSpaceMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetColorSpaceMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the main panel's device-dependent color-space mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Must be <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118af64b1573863371d27ddc58653781c526" title="Built-in OLED or LCD panel.">SCE_DISPLAY_HEAD_MAIN_LCD_OLED</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60" title="Device-dependent values accepted by ksceDisplaySetColorSpaceMode.">SceDisplayColorSpaceMode</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gabf16bc668d8550811e9312ff8aa7c3c7" name="gabf16bc668d8550811e9312ff8aa7c3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf16bc668d8550811e9312ff8aa7c3c7">&#9670;&#160;</a></span>ksceDisplaySetMergeConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetMergeConf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>control</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>alpha</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure overlay-plane blending for a head. </p>
+<p>The control value is passed unchanged to IFTU. Value 0x80 disables blending; every other value enables blending. FW 3.60 performs no other validation of this value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">control</td><td>- Raw IFTU merge-control value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alpha</td><td>- Overlay alpha from 0 through 0x100.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gad88713b5161811a0d98c8285d17ec97a" name="gad88713b5161811a0d98c8285d17ec97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad88713b5161811a0d98c8285d17ec97a">&#9670;&#160;</a></span>ksceDisplaySetOutputMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetOutputMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a>&#160;</td>
+          <td class="paramname"><em>screen_mode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>output_format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a head's complete screen-mode ID and output-format value. </p>
+<p>The output-format value combines a pixel-format encoding with RGB-range bit 0 where supported. For the main head, FW 3.60 accepts values 0x00000000, 0x00100000, 0x60800000, and 0x60900000. For HDMI it additionally accepts values 0x00000001, 0x00008000, 0x00100001, 0x00108000, 0x60800001, 0x60808000, 0x60900001, and 0x60908000.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">screen_mode</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>. Use these IDs as listed; do not combine them as flags. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">output_format</td><td>- Combined pixel-format and RGB-range encoding.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gadbda04f3e59b48b49e6078bd1a970137" name="gadbda04f3e59b48b49e6078bd1a970137"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadbda04f3e59b48b49e6078bd1a970137">&#9670;&#160;</a></span>ksceDisplaySetScaleConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetScaleConf </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scaling</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set scaling for a display head's framebuffer slot. </p>
+<p>On FW 3.60, <em>scale</em> must be 0 when bit 0 of <em>scaling</em> is clear. When bit 0 is set, bits 6 and 7 must be clear and <em>scale</em> must be between 0.8 and 1.2, inclusive. Observed callers also use <em>scaling</em> values 0x40 and 0x80 with a zero scale.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scale</td><td>- Per-slot scale factor. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scaling</td><td>- Scaling-control bits described above.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>Under the ARM hard-float ABI, <em>scale</em> is passed in S0 while the remaining arguments are passed in R0 through R2.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga43321765bec493530f1f547e9b14aa38" name="ga43321765bec493530f1f547e9b14aa38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43321765bec493530f1f547e9b14aa38">&#9670;&#160;</a></span>ksceDisplaySetViewportConf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceDisplaySetViewportConf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceDisplayKernel.html#structSceDisplayViewportConf">SceDisplayViewportConf</a> *&#160;</td>
+          <td class="paramname"><em>viewport_conf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set viewport scaling for a framebuffer slot. </p>
+<p>NULL, or x = 0, y = 0, width = 960, and height = 544, selects the default full viewport. A non-NULL structure must have its size member set to 0x14; FW 3.60 rejects x values above 640 and y values above 364.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Main or HDMI display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- One of <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">viewport_conf</td><td>- Viewport configuration, or NULL for the default.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaf8c8173eb28eab85d46b65b61370db89" name="gaf8c8173eb28eab85d46b65b61370db89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf8c8173eb28eab85d46b65b61370db89">&#9670;&#160;</a></span>ksceDisplayWaitSetFrameBufCBInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayWaitSetFrameBufCBInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for the next vertical blank start since the last update of the selected framebuffer, processing callbacks while waiting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- Framebuffer slot. FW 3.60 uses only the low bit.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6af2da2c7606212b3565cee2d2dd528d" name="ga6af2da2c7606212b3565cee2d2dd528d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6af2da2c7606212b3565cee2d2dd528d">&#9670;&#160;</a></span>ksceDisplayWaitSetFrameBufInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayWaitSetFrameBufInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for the next vertical blank start since the last update of the selected framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- Framebuffer slot. FW 3.60 uses only the low bit.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga46d8c280917cf21b542331f047484457" name="ga46d8c280917cf21b542331f047484457"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46d8c280917cf21b542331f047484457">&#9670;&#160;</a></span>ksceDisplayWaitSetFrameBufMultiCBInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayWaitSetFrameBufMultiCBInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>vcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start after the specified number of vertical periods since the last update of the selected framebuffer, processing callbacks while waiting. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- Framebuffer slot. FW 3.60 uses only the low bit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods to wait, from 1 through 0xFFFF.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga4095ddf5dca262eccf8897c743cf699b" name="ga4095ddf5dca262eccf8897c743cf699b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4095ddf5dca262eccf8897c743cf699b">&#9670;&#160;</a></span>ksceDisplayWaitSetFrameBufMultiInternal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> ksceDisplayWaitSetFrameBufMultiInternal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>&#160;</td>
+          <td class="paramname"><em>fb_idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>vcount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for vertical blank start after the specified number of vertical periods since the last update of the selected framebuffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">head</td><td>- Display head. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fb_idx</td><td>- Framebuffer slot. FW 3.60 uses only the low bit. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vcount</td><td>- Number of vertical periods to wait, from 1 through 0xFFFF.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga4818747e9c93ab650824cd4c484506df" name="ga4818747e9c93ab650824cd4c484506df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4818747e9c93ab650824cd4c484506df">&#9670;&#160;</a></span>size <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4818747e9c93ab650824cd4c484506df">&#9670;&#160;</a></span>size <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1459,7 +3393,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="gaf65ac368b8054a7d77fbbaafe307b945" name="gaf65ac368b8054a7d77fbbaafe307b945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf65ac368b8054a7d77fbbaafe307b945">&#9670;&#160;</a></span>base</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf65ac368b8054a7d77fbbaafe307b945">&#9670;&#160;</a></span>base <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1475,7 +3409,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="ga44160853361a441b8e43578d0a2941b9" name="ga44160853361a441b8e43578d0a2941b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga44160853361a441b8e43578d0a2941b9">&#9670;&#160;</a></span>pitch</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44160853361a441b8e43578d0a2941b9">&#9670;&#160;</a></span>pitch <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1491,7 +3425,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="ga00b8ff65e24a20a98cbced5ea7925089" name="ga00b8ff65e24a20a98cbced5ea7925089"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga00b8ff65e24a20a98cbced5ea7925089">&#9670;&#160;</a></span>pixelformat</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga00b8ff65e24a20a98cbced5ea7925089">&#9670;&#160;</a></span>pixelformat <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1502,12 +3436,12 @@ Resolution. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>pixel format (one of <a class="el" href="group__SceDisplayKernel.html#gac6176811ed0355e537d44c825ab1931c">SceDisplayPixelFormat</a>) </p>
+<p>Combined pixel-format and RGB-range encoding. </p>
 
 </div>
 </div>
 <a id="ga4443600a76935ec481ca282d48e9268c" name="ga4443600a76935ec481ca282d48e9268c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4443600a76935ec481ca282d48e9268c">&#9670;&#160;</a></span>width</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4443600a76935ec481ca282d48e9268c">&#9670;&#160;</a></span>width <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1523,7 +3457,7 @@ Resolution. </td></tr>
 </div>
 </div>
 <a id="gacf6c5759f48d231bd31415cbe552ca3d" name="gacf6c5759f48d231bd31415cbe552ca3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf6c5759f48d231bd31415cbe552ca3d">&#9670;&#160;</a></span>height</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf6c5759f48d231bd31415cbe552ca3d">&#9670;&#160;</a></span>height <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1538,8 +3472,328 @@ Resolution. </td></tr>
 
 </div>
 </div>
+<a id="gaf6b4ebc6a43700acaef77752a9632214" name="gaf6b4ebc6a43700acaef77752a9632214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6b4ebc6a43700acaef77752a9632214">&#9670;&#160;</a></span>size <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayFrameBufExt::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be set to sizeof(SceDisplayFrameBufExt). </p>
+
+</div>
+</div>
+<a id="ga740fa5cc74cede09850faf305c71327b" name="ga740fa5cc74cede09850faf305c71327b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga740fa5cc74cede09850faf305c71327b">&#9670;&#160;</a></span>base <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceDisplayFrameBufExt::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Framebuffer base address. </p>
+
+</div>
+</div>
+<a id="ga9b9152cca5c04436990c94cdeef51cba" name="ga9b9152cca5c04436990c94cdeef51cba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b9152cca5c04436990c94cdeef51cba">&#9670;&#160;</a></span>pitch <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufExt::pitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pitch in pixels. </p>
+
+</div>
+</div>
+<a id="gaab923bec6db417c74069e8b5167aa5e8" name="gaab923bec6db417c74069e8b5167aa5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab923bec6db417c74069e8b5167aa5e8">&#9670;&#160;</a></span>pixelformat <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufExt::pixelformat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Combined pixel-format and RGB-range encoding. </p>
+
+</div>
+</div>
+<a id="ga488084ff3fbdf78d0c3f418b0ddc3190" name="ga488084ff3fbdf78d0c3f418b0ddc3190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga488084ff3fbdf78d0c3f418b0ddc3190">&#9670;&#160;</a></span>width <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufExt::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Framebuffer width in pixels. </p>
+
+</div>
+</div>
+<a id="ga1da78b15ce5302efe9ca4e8cd5f99bfd" name="ga1da78b15ce5302efe9ca4e8cd5f99bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1da78b15ce5302efe9ca4e8cd5f99bfd">&#9670;&#160;</a></span>height <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayFrameBufExt::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Framebuffer height in pixels. </p>
+
+</div>
+</div>
+<a id="gad2afaee8cb943d88177f96a7c55ea7b6" name="gad2afaee8cb943d88177f96a7c55ea7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad2afaee8cb943d88177f96a7c55ea7b6">&#9670;&#160;</a></span>flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceDisplayFrameBufExt::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bitwise OR of <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420" title="Flags stored in SceDisplayFrameBufExt::flags.">SceDisplayFrameBufFlag</a> values and other firmware-defined bits. </p>
+
+</div>
+</div>
+<a id="gae1419b5f7e4d1208eb50f789e897318c" name="gae1419b5f7e4d1208eb50f789e897318c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae1419b5f7e4d1208eb50f789e897318c">&#9670;&#160;</a></span>size <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayCaptureFrameBuf::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be set to sizeof(SceDisplayCaptureFrameBuf). </p>
+
+</div>
+</div>
+<a id="ga85e232e657ddd13b45d24cd83b323a90" name="ga85e232e657ddd13b45d24cd83b323a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga85e232e657ddd13b45d24cd83b323a90">&#9670;&#160;</a></span>base <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceDisplayCaptureFrameBuf::base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capture destination; must be aligned to 0x100 bytes on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gab676cc8186e61f6579845039a773143b" name="gab676cc8186e61f6579845039a773143b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab676cc8186e61f6579845039a773143b">&#9670;&#160;</a></span>pitch <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayCaptureFrameBuf::pitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destination pitch in pixels. </p>
+
+</div>
+</div>
+<a id="ga565517d7df230c7bab25f0487bf173a5" name="ga565517d7df230c7bab25f0487bf173a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga565517d7df230c7bab25f0487bf173a5">&#9670;&#160;</a></span>pixelformat <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayCaptureFrameBuf::pixelformat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Format value; see the capture function being used. </p>
+
+</div>
+</div>
+<a id="gaff48a20274a30a26752e9563f3947328" name="gaff48a20274a30a26752e9563f3947328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaff48a20274a30a26752e9563f3947328">&#9670;&#160;</a></span>width <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayCaptureFrameBuf::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requested or resulting width in pixels. </p>
+
+</div>
+</div>
+<a id="gadaaebed4f8a126867effb36e9620d04a" name="gadaaebed4f8a126867effb36e9620d04a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadaaebed4f8a126867effb36e9620d04a">&#9670;&#160;</a></span>height <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayCaptureFrameBuf::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requested or resulting height in pixels. </p>
+
+</div>
+</div>
+<a id="ga72f2a0e098a5fd3550e721cb4690b597" name="ga72f2a0e098a5fd3550e721cb4690b597"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72f2a0e098a5fd3550e721cb4690b597">&#9670;&#160;</a></span>size <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayResolutionInfo::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be set to sizeof(SceDisplayResolutionInfo). </p>
+
+</div>
+</div>
+<a id="gaa5dd29d334a96f34ec7c5a3a72073e2b" name="gaa5dd29d334a96f34ec7c5a3a72073e2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5dd29d334a96f34ec7c5a3a72073e2b">&#9670;&#160;</a></span>screen_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a> SceDisplayResolutionInfo::screen_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>. </p>
+
+</div>
+</div>
+<a id="ga97231a3a9ff22d3e6d5d5b05ee2f00c6" name="ga97231a3a9ff22d3e6d5d5b05ee2f00c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga97231a3a9ff22d3e6d5d5b05ee2f00c6">&#9670;&#160;</a></span>width <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceDisplayResolutionInfo::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output width in pixels. </p>
+
+</div>
+</div>
+<a id="gab89931766526cfb872f0856fe82daaf8" name="gab89931766526cfb872f0856fe82daaf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab89931766526cfb872f0856fe82daaf8">&#9670;&#160;</a></span>height <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceDisplayResolutionInfo::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Output height in pixels. </p>
+
+</div>
+</div>
+<a id="ga2f949dc3b362b5e7a863bea1c84d802d" name="ga2f949dc3b362b5e7a863bea1c84d802d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f949dc3b362b5e7a863bea1c84d802d">&#9670;&#160;</a></span>output_format</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceDisplayResolutionInfo::output_format</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Combined pixel-format and RGB-range encoding. </p>
+
+</div>
+</div>
+<a id="gaf69c56410fc5750209c3aabd1739aaaa" name="gaf69c56410fc5750209c3aabd1739aaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf69c56410fc5750209c3aabd1739aaaa">&#9670;&#160;</a></span>scan_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceDisplayResolutionInfo::scan_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>One of <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>; stored as a 32-bit value. </p>
+
+</div>
+</div>
+<a id="gad047c93160cebaee6d9a3a930eedb3f0" name="gad047c93160cebaee6d9a3a930eedb3f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad047c93160cebaee6d9a3a930eedb3f0">&#9670;&#160;</a></span>fps</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SceDisplayResolutionInfo::fps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Driver refresh-rate value; approximately 59.940056 on FW 3.60. </p>
+
+</div>
+</div>
 <a id="gae73edbc4a45330dcf1c1e8505380d2a0" name="gae73edbc4a45330dcf1c1e8505380d2a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae73edbc4a45330dcf1c1e8505380d2a0">&#9670;&#160;</a></span>size <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae73edbc4a45330dcf1c1e8505380d2a0">&#9670;&#160;</a></span>size <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1614,7 +3868,7 @@ Resolution. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf" title="Structure used with ksceDisplaySetFrameBuf to set/update framebuffer.">SceDisplayFrameBuf</a> information. </p>
+<p>First 0x18 bytes of the framebuffer descriptor. </p>
 
 </div>
 </div>
@@ -1630,7 +3884,87 @@ Resolution. </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Resolution. </p>
+<p>Extended framebuffer flags; same value as <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>. </p>
+
+</div>
+</div>
+<a id="ga7623887908d83f171f53e3ebddcb61ef" name="ga7623887908d83f171f53e3ebddcb61ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7623887908d83f171f53e3ebddcb61ef">&#9670;&#160;</a></span>size <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceDisplayViewportConf::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be set to 0x14. </p>
+
+</div>
+</div>
+<a id="gad3254451f5d82f1f5a2f35e32494c197" name="gad3254451f5d82f1f5a2f35e32494c197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad3254451f5d82f1f5a2f35e32494c197">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayViewportConf::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Horizontal viewport offset in pixels. </p>
+
+</div>
+</div>
+<a id="ga41466fec513266654b3693b65cba3ad4" name="ga41466fec513266654b3693b65cba3ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga41466fec513266654b3693b65cba3ad4">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayViewportConf::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vertical viewport offset in pixels. </p>
+
+</div>
+</div>
+<a id="ga051f33b395994ba896d8426f1397462d" name="ga051f33b395994ba896d8426f1397462d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga051f33b395994ba896d8426f1397462d">&#9670;&#160;</a></span>width <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayViewportConf::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Viewport width in pixels. </p>
+
+</div>
+</div>
+<a id="ga0ed059fd8fad87a01125f3da8e086dfa" name="ga0ed059fd8fad87a01125f3da8e086dfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ed059fd8fad87a01125f3da8e086dfa">&#9670;&#160;</a></span>height <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int SceDisplayViewportConf::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Viewport height in pixels. </p>
 
 </div>
 </div>

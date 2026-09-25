@@ -27,5 +27,6 @@ var psp2_2touch_8h =
     [ "sceTouchSetSamplingState", "group__SceTouchUser.html#ga7b9cf4356d96e9b3f7468306f4a0d178", null ],
     [ "sceTouchGetSamplingState", "group__SceTouchUser.html#ga63b1bd23da13370f532ef610d5d33148", null ],
     [ "sceTouchEnableTouchForce", "group__SceTouchUser.html#ga9955c144eae8c285fd26f3e1e61ae969", null ],
-    [ "sceTouchDisableTouchForce", "group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be", null ]
+    [ "sceTouchDisableTouchForce", "group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be", null ],
+    [ "sceTouchGetDeviceInfo", "group__SceTouchUser.html#gaf9eda3c968d0b604c87e1fdfa9eec81c", null ]
 ];

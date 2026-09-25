@@ -14,7 +14,7 @@ var group__SceBtKernel =
       [ "unk5", "group__SceBtKernel.html#ga800d20b001143429e5c578a1585d1acd", null ]
     ] ],
     [ "SceBtEvent", "group__SceBtKernel.html#structSceBtEvent", [
-      [ "__attribute__", "group__SceBtKernel.html#ga5a3e860524f47297e75052043a78297a", null ]
+      [ "__attribute__", "group__SceBtKernel.html#gacd10b75f66b42c56986eed58d6e00e63", null ]
     ] ],
     [ "_SceBtHidRequest", "group__SceBtKernel.html#struct__SceBtHidRequest", [
       [ "unk00", "group__SceBtKernel.html#ga10f43cfac57386a75147234ea03a30b1", null ],
@@ -30,7 +30,7 @@ var group__SceBtKernel =
     [ "SceBtEvent.__attribute__", "group__SceBtKernel.html#unionSceBtEvent_8____attribute____", [
       [ "data", "group__SceBtKernel.html#a72149f316fe252b6b095a334193bd4f6", null ]
     ] ],
-    [ "SceBtEvent.__attribute__.__unnamed14__", "group__SceBtKernel.html#structSceBtEvent_8____attribute_____8____unnamed14____", [
+    [ "SceBtEvent.__attribute__.__unnamed25__", "group__SceBtKernel.html#structSceBtEvent_8____attribute_____8____unnamed25____", [
       [ "id", "group__SceBtKernel.html#ab80bb7740288fda1f201890375a60c8f", null ],
       [ "unk1", "group__SceBtKernel.html#aba77cebee9570b56187931adf86ebf03", null ],
       [ "unk2", "group__SceBtKernel.html#a4e8a43f83c5d21f5b23ea91624d1f81b", null ],
@@ -571,14 +571,14 @@ var group__SceBtKernel =
     [ "SceBtRegisteredInfo::unk4", "group__SceBtKernel.html#ga6160f587f79c55e33ad8651100ee73c3", null ],
     [ "SceBtRegisteredInfo::name", "group__SceBtKernel.html#gad9b0d521d7a13fa50cadf5903ab484a7", null ],
     [ "SceBtRegisteredInfo::unk5", "group__SceBtKernel.html#ga800d20b001143429e5c578a1585d1acd", null ],
-    [ "SceBtEvent::@12::data", "group__SceBtKernel.html#ga4619c6660c0c925222cdbf682262df74", null ],
-    [ "SceBtEvent::@12::@13::id", "group__SceBtKernel.html#ga6f589a5b8b956c4dda5b034b61d19cd8", null ],
-    [ "SceBtEvent::@12::@13::unk1", "group__SceBtKernel.html#ga96261c9e7d6b66fc7b84eff4deb88569", null ],
-    [ "SceBtEvent::@12::@13::unk2", "group__SceBtKernel.html#gad790d4ed450e1b953d383d958e27b3f7", null ],
-    [ "SceBtEvent::@12::@13::unk3", "group__SceBtKernel.html#ga3a7d52bd561a52a4a61637a0597bea67", null ],
-    [ "SceBtEvent::@12::@13::mac0", "group__SceBtKernel.html#ga0de40583b30ef2d223126362f31eedd0", null ],
-    [ "SceBtEvent::@12::@13::mac1", "group__SceBtKernel.html#ga8299909cef640c41b27253ed9b72a79d", null ],
-    [ "SceBtEvent::__attribute__", "group__SceBtKernel.html#ga5a3e860524f47297e75052043a78297a", null ],
+    [ "SceBtEvent::@23::data", "group__SceBtKernel.html#ga1517de63d42c2187576ae5c2401197cf", null ],
+    [ "SceBtEvent::@23::@24::id", "group__SceBtKernel.html#ga6eed73a08bb49bb94e6748b11c18a179", null ],
+    [ "SceBtEvent::@23::@24::unk1", "group__SceBtKernel.html#ga0d6dbc82357f242f6935ccc87dd43764", null ],
+    [ "SceBtEvent::@23::@24::unk2", "group__SceBtKernel.html#ga1cea7b6965c4d4d3888cf00936a573a8", null ],
+    [ "SceBtEvent::@23::@24::unk3", "group__SceBtKernel.html#ga630113cb440b113f656824266b4371d8", null ],
+    [ "SceBtEvent::@23::@24::mac0", "group__SceBtKernel.html#ga463e00b37da68b2dc4219a48639faf1c", null ],
+    [ "SceBtEvent::@23::@24::mac1", "group__SceBtKernel.html#ga41265444517467d93ef100f06eeac08e", null ],
+    [ "SceBtEvent::__attribute__", "group__SceBtKernel.html#gacd10b75f66b42c56986eed58d6e00e63", null ],
     [ "_SceBtHidRequest::unk00", "group__SceBtKernel.html#ga10f43cfac57386a75147234ea03a30b1", null ],
     [ "_SceBtHidRequest::unk04", "group__SceBtKernel.html#gacbfa9c8d05bbe123c312785b75551bb3", null ],
     [ "_SceBtHidRequest::type", "group__SceBtKernel.html#gaac98df1c4494b9609211063aa25ebd3c", null ],

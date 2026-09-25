@@ -66,5 +66,8 @@ var ern_2kernel_2modulemgr_8h =
     [ "ksceKernelLoadPtLoadSegForFwloader", "group__SceModulemgrKernel.html#ga3adc3b4df84cd8a0d02e8d3a6a8e8935", null ],
     [ "ksceKernelModuleUnloadMySelf", "group__SceModulemgrKernel.html#gae1c37efc51510830df02b8e24b75c64a", null ],
     [ "ksceKernelStartPreloadingModules", "group__SceModulemgrKernel.html#gacd9e244dccdb00f915865cfc85e625d4", null ],
-    [ "ksceKernelUnloadProcessModules", "group__SceModulemgrKernel.html#gad98ddcdcec6cad762f86a9022d0e3dd7", null ]
+    [ "ksceKernelUnloadProcessModules", "group__SceModulemgrKernel.html#gad98ddcdcec6cad762f86a9022d0e3dd7", null ],
+    [ "ksceKernelGetModuleInfoByAddr", "group__SceModulemgrKernel.html#gabc20b363077fab0fb529627562de9d65", null ],
+    [ "ksceKernelRegisterLibary", "group__SceModulemgrKernel.html#ga69e0d842050f3e156066e6b64dc11cbc", null ],
+    [ "ksceKernelReleaseLibary", "group__SceModulemgrKernel.html#ga58ecc45c9f483a8b4d4fb5db9c9eceb2", null ]
 ];

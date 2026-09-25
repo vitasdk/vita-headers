@@ -12,6 +12,9 @@ var group__SceFios2KernelUser =
       [ "data_0x10", "group__SceFios2KernelUser.html#ga359ce4b612640f3bbe04b70d3f356006", null ],
       [ "data_0x14", "group__SceFios2KernelUser.html#ga73a4e400b06e4ffc3134f411c60a0c35", null ]
     ] ],
+    [ "SceFiosGetRecommendedSchedulerSyscallArgs", "group__SceFios2KernelUser.html#structSceFiosGetRecommendedSchedulerSyscallArgs", [
+      [ "reserved", "group__SceFios2KernelUser.html#gae409fcf598f2300d14fe495a910ab415", null ]
+    ] ],
     [ "SceFiosResolveSyncSyscallArgs", "group__SceFios2KernelUser.html#structSceFiosResolveSyncSyscallArgs", [
       [ "out_path", "group__SceFios2KernelUser.html#gabe46ccddbc383c4f2efe72171ffd875a", null ],
       [ "data_0x04", "group__SceFios2KernelUser.html#ga004d52aa6a80feffe60f1dc2f21217dc", null ],
@@ -48,15 +51,16 @@ var group__SceFios2KernelUser =
     [ "_sceFiosKernelOverlayGetInfoForProcess", "group__SceFios2KernelUser.html#gac46361d8f02f71eea5302bc1b7028cc5", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelUser.html#ga02c651f539444142fddf31fd5bca2301", null ],
     [ "_sceFiosKernelOverlayGetList", "group__SceFios2KernelUser.html#gad07b783ec26851b12365f5160ce9d20d", null ],
-    [ "_sceFiosKernelOverlayGetRecommendedScheduler", "group__SceFios2KernelUser.html#ga54d8744895445cd535049dab1d09666f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelUser.html#ga11308c679c619569a75ea51b52f05f8f", null ],
+    [ "_sceFiosKernelOverlayGetRecommendedScheduler", "group__SceFios2KernelUser.html#gab82d5b357ccaf5a4b36ff4801c6c3dfd", null ],
     [ "_sceFiosKernelOverlayModify", "group__SceFios2KernelUser.html#ga98c85bd22e25a0f1194672100d60e254", null ],
     [ "_sceFiosKernelOverlayModifyForProcess", "group__SceFios2KernelUser.html#ga88875a2eab6f5ba6942a20815eb02254", null ],
     [ "_sceFiosKernelOverlayRemove", "group__SceFios2KernelUser.html#ga22a0648fb3cb6f7727f85d31ca84669d", null ],
     [ "_sceFiosKernelOverlayRemoveForProcess", "group__SceFios2KernelUser.html#ga23cbab0311f42047643c978b4c9147a4", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelUser.html#ga062a7f4e0f6a0974164f2fb1f7244052", null ],
-    [ "_sceFiosKernelOverlayResolveSync", "group__SceFios2KernelUser.html#gaa74350d01b70eba23df20c79fe7465a8", null ],
+    [ "_sceFiosKernelOverlayResolveSync", "group__SceFios2KernelUser.html#gaac03998aa94b1b4fd4e469b8b0a779de", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceFios2KernelUser.html#gab57e002c3103ad75b5a865c5164f4d99", null ],
-    [ "_sceFiosKernelOverlayResolveWithRangeSync", "group__SceFios2KernelUser.html#ga1d2e14ce988aba3001a3d777212c6250", null ],
+    [ "_sceFiosKernelOverlayResolveWithRangeSync", "group__SceFios2KernelUser.html#ga368f3c8fb584e0db37810167c5fedac5", null ],
     [ "_sceFiosKernelOverlayThreadIsDisabled", "group__SceFios2KernelUser.html#gaf7217e6321569f409366ef10f06c4a85", null ],
     [ "_sceFiosKernelOverlayThreadSetDisabled", "group__SceFios2KernelUser.html#gac2d799f76bded0b3cb4e6d5f71dc5064", null ],
     [ "SceFiosDHOpenSyncSyscallArgs::to_order", "group__SceFios2KernelUser.html#ga6ab248de615111c64565f51eefdd6709", null ],
@@ -67,6 +71,7 @@ var group__SceFios2KernelUser =
     [ "SceFiosGetListSyscallArgs::data_0x0C", "group__SceFios2KernelUser.html#ga419d96e505c828f975ee83a13cff4911", null ],
     [ "SceFiosGetListSyscallArgs::data_0x10", "group__SceFios2KernelUser.html#ga359ce4b612640f3bbe04b70d3f356006", null ],
     [ "SceFiosGetListSyscallArgs::data_0x14", "group__SceFios2KernelUser.html#ga73a4e400b06e4ffc3134f411c60a0c35", null ],
+    [ "SceFiosGetRecommendedSchedulerSyscallArgs::reserved", "group__SceFios2KernelUser.html#gae409fcf598f2300d14fe495a910ab415", null ],
     [ "SceFiosResolveSyncSyscallArgs::out_path", "group__SceFios2KernelUser.html#gabe46ccddbc383c4f2efe72171ffd875a", null ],
     [ "SceFiosResolveSyncSyscallArgs::data_0x04", "group__SceFios2KernelUser.html#ga004d52aa6a80feffe60f1dc2f21217dc", null ],
     [ "SceFiosResolveSyncSyscallArgs::data_0x08", "group__SceFios2KernelUser.html#gab5505af56a097404ba3f64a11c223898", null ],

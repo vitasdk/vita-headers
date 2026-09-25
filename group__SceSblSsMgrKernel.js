@@ -1,36 +1,86 @@
 var group__SceSblSsMgrKernel =
 [
-    [ "SceConsoleId", "group__SceSblSsMgrKernel.html#structSceConsoleId", [
-      [ "unk", "group__SceSblSsMgrKernel.html#gabe621c87b9411f102251c714ac86cb14", null ],
-      [ "company_code", "group__SceSblSsMgrKernel.html#gabc1753d9499c963b1b0b9f7649d6ee52", null ],
-      [ "product_code", "group__SceSblSsMgrKernel.html#ga108946ce9b8bb69f8bb84da61e2f5e58", null ],
-      [ "product_sub_code", "group__SceSblSsMgrKernel.html#gac7000665681554c5fd4175c80694f25a", null ],
-      [ "unk3", "group__SceSblSsMgrKernel.html#ga1a71079f9ef4f905489d5cb12f5bfc1a", null ]
+    [ "SceVisibleId", "group__SceSblSsMgrKernel.html#structSceVisibleId", [
+      [ "visible_id", "group__SceSblSsMgrKernel.html#gad1f7b36367ed4f91bd46def9fcd984a8", null ]
     ] ],
     [ "SceOpenPsId", "group__SceSblSsMgrKernel.html#structSceOpenPsId", [
-      [ "open_psid", "group__SceSblSsMgrKernel.html#ga3211fa3710d57bdcff80e727b75f3ede", null ]
+      [ "open_psid", "group__SceSblSsMgrKernel.html#ga84a00fc64e574f5cff0e96f5c20c82ed", null ]
+    ] ],
+    [ "SceConsoleId", "group__SceSblSsMgrKernel.html#structSceConsoleId", [
+      [ "unk", "group__SceSblSsMgrKernel.html#gaa354410ac723b16c3325680c72c6c424", null ],
+      [ "company_code", "group__SceSblSsMgrKernel.html#ga63c28890ce8009cc1b7a88989046f4f1", null ],
+      [ "product_code", "group__SceSblSsMgrKernel.html#gace41719ef5b2885bf73a0d8b2fa28b83", null ],
+      [ "product_sub_code", "group__SceSblSsMgrKernel.html#gac787bc12015f3e126fb96056e1764e27", null ],
+      [ "unk3", "group__SceSblSsMgrKernel.html#gacde80f237c93b5d59dda83924c7d8146", null ]
     ] ],
     [ "ScePsCode", "group__SceSblSsMgrKernel.html#structScePsCode", [
-      [ "company_code", "group__SceSblSsMgrKernel.html#gafbb69e7c23f9736431feee21782a314a", null ],
-      [ "product_code", "group__SceSblSsMgrKernel.html#gab7ba1d742332e714547e10b2d428428f", null ],
-      [ "product_sub_code", "group__SceSblSsMgrKernel.html#gad2bd1b6972e6ccc086c196418fb85bf8", null ],
-      [ "factory_code", "group__SceSblSsMgrKernel.html#ga8b3956469a413809fbca81a2242c36a9", null ]
+      [ "company_code", "group__SceSblSsMgrKernel.html#gaa94a2bdaff8d33b772b83df2487561c2", null ],
+      [ "product_code", "group__SceSblSsMgrKernel.html#ga36d2717bcff65be34b54ec519c19a4f2", null ],
+      [ "product_sub_code", "group__SceSblSsMgrKernel.html#ga07fdd31704698fa83b1dc3bce62ba9e4", null ],
+      [ "factory_code", "group__SceSblSsMgrKernel.html#gac7006993baf05b3231eeade7a9aa8d8b", null ]
     ] ],
     [ "ScePortabilityData", "group__SceSblSsMgrKernel.html#structScePortabilityData", [
       [ "msg_size", "group__SceSblSsMgrKernel.html#ga7e928ab995241c46364c833736376339", null ],
-      [ "msg", "group__SceSblSsMgrKernel.html#ga258406c4ee83d54a7d85443536da05d9", null ]
+      [ "msg", "group__SceSblSsMgrKernel.html#ga40a37dbbe4412c9a3276ba8a461c5aae", null ]
     ] ],
-    [ "SceConsoleId.__unnamed32__", "group__SceSblSsMgrKernel.html#unionSceConsoleId_8____unnamed32____", [
+    [ "SceSblSsCreatePassPhraseParam", "group__SceSblSsMgrKernel.html#structSceSblSsCreatePassPhraseParam", [
+      [ "secure_module_arg", "group__SceSblSsMgrKernel.html#gad671229919e2eb6100e64cea3e43808d", null ],
+      [ "size", "group__SceSblSsMgrKernel.html#gabf7de1cd2eac04ce64a1d4df190fb64b", null ],
+      [ "account_id_text", "group__SceSblSsMgrKernel.html#gae296cae84db716d499142498d6b33e3b", null ]
+    ] ],
+    [ "SceSblDmac5AesCmacContext", "group__SceSblSsMgrKernel.html#structSceSblDmac5AesCmacContext", [
+      [ "state", "group__SceSblSsMgrKernel.html#gaa256e2ff9db5dd8bce226b88138e9697", null ]
+    ] ],
+    [ "SceSblDmac5HashTransformContext", "group__SceSblSsMgrKernel.html#structSceSblDmac5HashTransformContext", [
+      [ "state", "group__SceSblSsMgrKernel.html#ga3e89a6e2de997e8d0065120dce4b76ae", null ],
+      [ "length", "group__SceSblSsMgrKernel.html#ga2b1958105c141f61a87b7da7b2f15d1e", null ]
+    ] ],
+    [ "SceConsoleId.__unnamed19__", "group__SceSblSsMgrKernel.html#unionSceConsoleId_8____unnamed19____", [
       [ "chassis_check", "group__SceSblSsMgrKernel.html#a2c394724eaf57f33e78e696122299397", null ]
     ] ],
-    [ "SceConsoleId.__unnamed32__.__unnamed34__", "group__SceSblSsMgrKernel.html#structSceConsoleId_8____unnamed32_____8____unnamed34____", [
+    [ "SceConsoleId.__unnamed19__.__unnamed21__", "group__SceSblSsMgrKernel.html#structSceConsoleId_8____unnamed19_____8____unnamed21____", [
       [ "unk2", "group__SceSblSsMgrKernel.html#a4e8a43f83c5d21f5b23ea91624d1f81b", null ],
       [ "factory_code", "group__SceSblSsMgrKernel.html#a27bbce9d78058b092995cd55f3c8792b", null ]
     ] ],
     [ "ksceSblSsMgrAesCtrDecrypt", "group__SceSblSsMgrKernel.html#gaeb92295a2110cff9a529b85aad00bb5a", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga18a0f98dc19c4a4b6e5a3af75aa2665d", null ],
+    [ "SceSblSsNvsDataType", "group__SceSblSsMgrKernel.html#ga917d4b36ff17e6252893f1223863aabf", [
+      [ "SCE_SBL_SS_NVS_DATA_SYSTEM_LANGUAGE", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa1f45bcf1262a9801f4d0e84966494550", null ],
+      [ "SCE_SBL_SS_NVS_DATA_WLAN_BT_AVAILABILITY", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfaf0e4e47cad3a1b278d20a4fda38bc4a8", null ],
+      [ "SCE_SBL_SS_NVS_DATA_UNK_482", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa27ef055cf1b578d43a551cdf307cd7db", null ],
+      [ "SCE_SBL_SS_NVS_DATA_UNK_4E0", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa0fa1db6d5b91486bbd2bf28a66128e6b", null ],
+      [ "SCE_SBL_SS_NVS_DATA_UNK_483", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa7541d702e19409fc92aef12cfec0ab57", null ],
+      [ "SCE_SBL_SS_NVS_DATA_UNK_486", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa226738ae5dcf35d54da53ec96fa70ce7", null ]
+    ] ],
+    [ "SceSblDmac5HashFlag", "group__SceSblSsMgrKernel.html#ga736a98eda208986d1702e9029ec6463e", [
+      [ "SCE_SBL_DMAC5_HASH_FLAG_OUTPUT_CONTEXT", "group__SceSblSsMgrKernel.html#gga736a98eda208986d1702e9029ec6463ea1cd8db4de76dc9930eaad34a94725290", null ],
+      [ "SCE_SBL_DMAC5_HASH_FLAG_INPUT_CONTEXT", "group__SceSblSsMgrKernel.html#gga736a98eda208986d1702e9029ec6463ea9add387d9cf419d637d65482089eb89e", null ]
+    ] ],
+    [ "SceSblDmac5Keyslot", "group__SceSblSsMgrKernel.html#ga19e5c366d69998f54b71002276d3ef9c", [
+      [ "SCE_SBL_DMAC5_KEYSLOT_1C", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca8dec7965902deae0bfa7ad61025b2fe6", null ],
+      [ "SCE_SBL_DMAC5_KEYSLOT_1D", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca874f85c0a80870b0b02379f67fd839c6", null ],
+      [ "SCE_SBL_DMAC5_KEYSLOT_1E", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca82c36f787222bd7347dda8dfd9a0db86", null ],
+      [ "SCE_SBL_DMAC5_KEYSLOT_1F", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca0c5f2fa898b136c11a71012652c9543a", null ]
+    ] ],
+    [ "SCE_SBL_SS_NVS_DATA_SYSTEM_LANGUAGE", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa1f45bcf1262a9801f4d0e84966494550", null ],
+    [ "SCE_SBL_SS_NVS_DATA_WLAN_BT_AVAILABILITY", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfaf0e4e47cad3a1b278d20a4fda38bc4a8", null ],
+    [ "SCE_SBL_SS_NVS_DATA_UNK_482", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa27ef055cf1b578d43a551cdf307cd7db", null ],
+    [ "SCE_SBL_SS_NVS_DATA_UNK_4E0", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa0fa1db6d5b91486bbd2bf28a66128e6b", null ],
+    [ "SCE_SBL_SS_NVS_DATA_UNK_483", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa7541d702e19409fc92aef12cfec0ab57", null ],
+    [ "SCE_SBL_SS_NVS_DATA_UNK_486", "group__SceSblSsMgrKernel.html#gga917d4b36ff17e6252893f1223863aabfa226738ae5dcf35d54da53ec96fa70ce7", null ],
+    [ "SCE_SBL_DMAC5_HASH_FLAG_OUTPUT_CONTEXT", "group__SceSblSsMgrKernel.html#gga736a98eda208986d1702e9029ec6463ea1cd8db4de76dc9930eaad34a94725290", null ],
+    [ "SCE_SBL_DMAC5_HASH_FLAG_INPUT_CONTEXT", "group__SceSblSsMgrKernel.html#gga736a98eda208986d1702e9029ec6463ea9add387d9cf419d637d65482089eb89e", null ],
+    [ "SCE_SBL_DMAC5_KEYSLOT_1C", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca8dec7965902deae0bfa7ad61025b2fe6", null ],
+    [ "SCE_SBL_DMAC5_KEYSLOT_1D", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca874f85c0a80870b0b02379f67fd839c6", null ],
+    [ "SCE_SBL_DMAC5_KEYSLOT_1E", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca82c36f787222bd7347dda8dfd9a0db86", null ],
+    [ "SCE_SBL_DMAC5_KEYSLOT_1F", "group__SceSblSsMgrKernel.html#gga19e5c366d69998f54b71002276d3ef9ca0c5f2fa898b136c11a71012652c9543a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga1e1ca128ab30cce07cf8a3ae8f712490", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga4b02ef312dfb5193775b17ea9f910b2a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga18a0f98dc19c4a4b6e5a3af75aa2665d", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga237d90bf09f49edf9460d5d908b2319d", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#gad3cfb2dd3a1a66e32e598cf07ac4240a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga77697308f4691561cae4f3421cf1f10e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga5042c7de3d8bcd024c37ea3c6b5d0c54", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#ga4237a81c6b3b3b8fada18e773bc3e573", null ],
     [ "ksceSblAimgrGetConsoleId", "group__SceSblSsMgrKernel.html#gad76256d8aaaabc3e5205e04a1ac7404a", null ],
     [ "ksceSblAimgrGetOpenPsId", "group__SceSblSsMgrKernel.html#ga1e79ed3edb21c329326f56d0de2cb617", null ],
     [ "ksceSblAimgrGetPscode", "group__SceSblSsMgrKernel.html#gaf0c86acda6cc60bc4ac84004b1ff4e97", null ],
@@ -38,21 +88,71 @@ var group__SceSblSsMgrKernel =
     [ "ksceSblDmac5AesCbcDec", "group__SceSblSsMgrKernel.html#ga1490d1f310793b0141ef76383d020afe", null ],
     [ "ksceSblDmac5AesCbcEnc", "group__SceSblSsMgrKernel.html#ga9988f526689bb2be529cdc7db6509fdf", null ],
     [ "ksceSblDmac5AesCtrDec", "group__SceSblSsMgrKernel.html#ga1c441b14fb2094a4b51c765ea6cfc000", null ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSblSsMgrKernel.html#gad3cfb2dd3a1a66e32e598cf07ac4240a", null ],
     [ "ksceSblSsDecryptWithPortability", "group__SceSblSsMgrKernel.html#ga0f0254795d0880d5b7778375b6975551", null ],
-    [ "SceConsoleId::unk", "group__SceSblSsMgrKernel.html#gabe621c87b9411f102251c714ac86cb14", null ],
-    [ "SceConsoleId::company_code", "group__SceSblSsMgrKernel.html#gabc1753d9499c963b1b0b9f7649d6ee52", null ],
-    [ "SceConsoleId::product_code", "group__SceSblSsMgrKernel.html#ga108946ce9b8bb69f8bb84da61e2f5e58", null ],
-    [ "SceConsoleId::product_sub_code", "group__SceSblSsMgrKernel.html#gac7000665681554c5fd4175c80694f25a", null ],
-    [ "SceConsoleId::@31::@33::unk2", "group__SceSblSsMgrKernel.html#gae4d4ad28a2170eed992c7bb654161abb", null ],
-    [ "SceConsoleId::@31::@33::factory_code", "group__SceSblSsMgrKernel.html#ga61983541ac7a3674977d99845f55e1a0", null ],
-    [ "SceConsoleId::@31::chassis_check", "group__SceSblSsMgrKernel.html#ga8c8c8e4940960f4dec13353f686693b9", null ],
-    [ "SceConsoleId::unk3", "group__SceSblSsMgrKernel.html#ga1a71079f9ef4f905489d5cb12f5bfc1a", null ],
-    [ "SceOpenPsId::open_psid", "group__SceSblSsMgrKernel.html#ga3211fa3710d57bdcff80e727b75f3ede", null ],
-    [ "ScePsCode::company_code", "group__SceSblSsMgrKernel.html#gafbb69e7c23f9736431feee21782a314a", null ],
-    [ "ScePsCode::product_code", "group__SceSblSsMgrKernel.html#gab7ba1d742332e714547e10b2d428428f", null ],
-    [ "ScePsCode::product_sub_code", "group__SceSblSsMgrKernel.html#gad2bd1b6972e6ccc086c196418fb85bf8", null ],
-    [ "ScePsCode::factory_code", "group__SceSblSsMgrKernel.html#ga8b3956469a413809fbca81a2242c36a9", null ],
+    [ "ksceSblAimgrGetPscode2", "group__SceSblSsMgrKernel.html#gab27df0a282a5a3e6ec3cba81f78cdc6f", null ],
+    [ "ksceSblAimgrGetVisibleId", "group__SceSblSsMgrKernel.html#ga6d3705c96dda3707f884d076774660ea", null ],
+    [ "ksceSblDmac5AesCbcDecNP", "group__SceSblSsMgrKernel.html#ga73ee726e74e688c373a49dcc2582b8fd", null ],
+    [ "ksceSblDmac5AesCbcEncNP", "group__SceSblSsMgrKernel.html#gad2563acc2641a06f279b7317b925a3d7", null ],
+    [ "ksceSblDmac5AesCmacNP", "group__SceSblSsMgrKernel.html#gac8aaf3d9ad00bf2d2819b49497ddac19", null ],
+    [ "ksceSblDmac5AesCmacWithKeyslot", "group__SceSblSsMgrKernel.html#ga45d11bb039d9c36a23c9df59642d0b3b", null ],
+    [ "ksceSblDmac5AesCtrEnc", "group__SceSblSsMgrKernel.html#ga516b10f33bc123408dfc4b4d067f3036", null ],
+    [ "ksceSblDmac5AesEcbDec", "group__SceSblSsMgrKernel.html#ga71229bf9a39b81e1542becebe5623a9a", null ],
+    [ "ksceSblDmac5AesEcbDecNP", "group__SceSblSsMgrKernel.html#gad10856e30ce42c3a9981fb2e8ae751f5", null ],
+    [ "ksceSblDmac5AesEcbDecWithKeyslot", "group__SceSblSsMgrKernel.html#ga3d88a72ebd0d12a105d4e2b84e5d64b1", null ],
+    [ "ksceSblDmac5AesEcbEnc", "group__SceSblSsMgrKernel.html#ga87cc5dbddcccddbdd255f1d07392c8b7", null ],
+    [ "ksceSblDmac5AesEcbEncNP", "group__SceSblSsMgrKernel.html#gaf019ec2db1b5d0a560ce502d20324a0a", null ],
+    [ "ksceSblDmac5AesEcbEncWithKeyslot", "group__SceSblSsMgrKernel.html#gaf3243036261b550375395a7aafec9c16", null ],
+    [ "ksceSblDmac5DesCbcDecWithKeyslot", "group__SceSblSsMgrKernel.html#gaf5f1fb6b2716da4b513afe0178dc0636", null ],
+    [ "ksceSblDmac5DesCbcEncWithKeyslot", "group__SceSblSsMgrKernel.html#ga7b1bd059ced3fe4039934729aee279d5", null ],
+    [ "ksceSblDmac5DesEcbDecWithKeyslot", "group__SceSblSsMgrKernel.html#ga4186c2a8604ee5a39901d8862a3828f9", null ],
+    [ "ksceSblDmac5DesEcbEncWithKeyslot", "group__SceSblSsMgrKernel.html#ga84f38b816230bab89319761d2b22b336", null ],
+    [ "ksceSblDmac5Rnd", "group__SceSblSsMgrKernel.html#ga6ab0ce51180260a0cd2983dff6bfe0a7", null ],
+    [ "ksceSblDmac5Sha1", "group__SceSblSsMgrKernel.html#gab874a915e675a821a709cee7c05377db", null ],
+    [ "ksceSblDmac5Sha1HmacNP", "group__SceSblSsMgrKernel.html#ga2a172954c5ef916b5508eef768ed321e", null ],
+    [ "ksceSblDmac5Sha1HmacTransform", "group__SceSblSsMgrKernel.html#gaa67bca0c59a29cc8b8a73dd8a28c90ff", null ],
+    [ "ksceSblDmac5Sha256Hmac", "group__SceSblSsMgrKernel.html#ga2662be73f62fd939b098698e780be966", null ],
+    [ "ksceSblNvsReadData", "group__SceSblSsMgrKernel.html#ga3d13c9081663afc41749b24344dff420", null ],
+    [ "ksceSblNvsWriteData", "group__SceSblSsMgrKernel.html#ga4a1c0d17efd52af4b3fa98cb30e2b802", null ],
+    [ "ksceSblQafManagerGetQAFlags", "group__SceSblSsMgrKernel.html#gab9febc0b798c6cacb063b2e69644f1b3", null ],
+    [ "ksceSblQafManagerGetQafName", "group__SceSblSsMgrKernel.html#gabe5d27d055620337b4c37310cb11e77d", null ],
+    [ "ksceSblQafMgrIsAllowControlIduAutoUpdate", "group__SceSblSsMgrKernel.html#ga0cc54e1aadad417981bf101727a86b77", null ],
+    [ "ksceSblQafMgrIsAllowDecryptedBootConfigLoad", "group__SceSblSsMgrKernel.html#gad53f06e5f1ae3cad10a269b804f482f6", null ],
+    [ "ksceSblQafMgrIsAllowDtcpIpReset", "group__SceSblSsMgrKernel.html#gaffaeb5006b261101d24f6c45d732c005", null ],
+    [ "ksceSblQafMgrIsAllowHost0Access", "group__SceSblSsMgrKernel.html#ga7f746018002206d4d9bd983ae2e85409", null ],
+    [ "ksceSblQafMgrIsAllowKeepCoreFile", "group__SceSblSsMgrKernel.html#gad7d601d078b4820df425b888603f09bf", null ],
+    [ "ksceSblQafMgrIsAllowLoadMagicGate", "group__SceSblSsMgrKernel.html#gad9d3d9b5a856ee048f6b627d45165bde", null ],
+    [ "ksceSblQafMgrIsAllowMarlinTest", "group__SceSblSsMgrKernel.html#ga9954ab3be5bfbbfdfe8ae1012e63af9f", null ],
+    [ "ksceSblQafMgrIsAllowNearTest", "group__SceSblSsMgrKernel.html#gaaa13db1183667805b3e8b63878495046", null ],
+    [ "ksceSblQafMgrIsAllowPSPEmuShowQAInfo", "group__SceSblSsMgrKernel.html#gac92b03a8411f132b0a5ec9c433e7908a", null ],
+    [ "ksceSblQafMgrIsAllowRemotePlayDebug", "group__SceSblSsMgrKernel.html#ga0a272fcf612d2be4980526b5501cc2cf", null ],
+    [ "ksceSblQafMgrIsAllowSystemAppDebug", "group__SceSblSsMgrKernel.html#ga8396c23710647f4d11a74be053901aa2", null ],
+    [ "ksceSblRngGenuineRandomNumber", "group__SceSblSsMgrKernel.html#ga58d20ad5ae72d727d6de4a5b7b96b7f5", null ],
+    [ "ksceSblSsCreatePassPhrase", "group__SceSblSsMgrKernel.html#ga652c82a4023d44b582ee09aaf8aa42ee", null ],
+    [ "ksceSblSsEncryptWithPortability", "group__SceSblSsMgrKernel.html#ga91560628ed0e338af8942b43830d4abd", null ],
+    [ "ksceSblSsGetNvsData", "group__SceSblSsMgrKernel.html#ga04d1f27ef1fba08bb0b2bad5ff58cf54", null ],
+    [ "ksceSblSsMemset", "group__SceSblSsMgrKernel.html#ga22f220ec8e27a89f14402c15ab2101ed", null ],
+    [ "ksceSblSsMgrExecuteDmac5HashCommand", "group__SceSblSsMgrKernel.html#ga7bb6c704a1c25ad7741e740921a4c9ed", null ],
+    [ "ksceSblSsSetNvsData", "group__SceSblSsMgrKernel.html#gad20dabdc282082147de3876a1cd7d6d5", null ],
+    [ "SceVisibleId::visible_id", "group__SceSblSsMgrKernel.html#gad1f7b36367ed4f91bd46def9fcd984a8", null ],
+    [ "SceOpenPsId::open_psid", "group__SceSblSsMgrKernel.html#ga84a00fc64e574f5cff0e96f5c20c82ed", null ],
+    [ "SceConsoleId::unk", "group__SceSblSsMgrKernel.html#gaa354410ac723b16c3325680c72c6c424", null ],
+    [ "SceConsoleId::company_code", "group__SceSblSsMgrKernel.html#ga63c28890ce8009cc1b7a88989046f4f1", null ],
+    [ "SceConsoleId::product_code", "group__SceSblSsMgrKernel.html#gace41719ef5b2885bf73a0d8b2fa28b83", null ],
+    [ "SceConsoleId::product_sub_code", "group__SceSblSsMgrKernel.html#gac787bc12015f3e126fb96056e1764e27", null ],
+    [ "SceConsoleId::@18::@20::unk2", "group__SceSblSsMgrKernel.html#ga70df24fb46f18c379979ceba78a50a2c", null ],
+    [ "SceConsoleId::@18::@20::factory_code", "group__SceSblSsMgrKernel.html#gacd4df5505149bace1fcdab67491984f6", null ],
+    [ "SceConsoleId::@18::chassis_check", "group__SceSblSsMgrKernel.html#ga39cd3d57082a712304575b7e2637997e", null ],
+    [ "SceConsoleId::unk3", "group__SceSblSsMgrKernel.html#gacde80f237c93b5d59dda83924c7d8146", null ],
+    [ "ScePsCode::company_code", "group__SceSblSsMgrKernel.html#gaa94a2bdaff8d33b772b83df2487561c2", null ],
+    [ "ScePsCode::product_code", "group__SceSblSsMgrKernel.html#ga36d2717bcff65be34b54ec519c19a4f2", null ],
+    [ "ScePsCode::product_sub_code", "group__SceSblSsMgrKernel.html#ga07fdd31704698fa83b1dc3bce62ba9e4", null ],
+    [ "ScePsCode::factory_code", "group__SceSblSsMgrKernel.html#gac7006993baf05b3231eeade7a9aa8d8b", null ],
     [ "ScePortabilityData::msg_size", "group__SceSblSsMgrKernel.html#ga7e928ab995241c46364c833736376339", null ],
-    [ "ScePortabilityData::msg", "group__SceSblSsMgrKernel.html#ga258406c4ee83d54a7d85443536da05d9", null ]
+    [ "ScePortabilityData::msg", "group__SceSblSsMgrKernel.html#ga40a37dbbe4412c9a3276ba8a461c5aae", null ],
+    [ "SceSblSsCreatePassPhraseParam::secure_module_arg", "group__SceSblSsMgrKernel.html#gad671229919e2eb6100e64cea3e43808d", null ],
+    [ "SceSblSsCreatePassPhraseParam::size", "group__SceSblSsMgrKernel.html#gabf7de1cd2eac04ce64a1d4df190fb64b", null ],
+    [ "SceSblSsCreatePassPhraseParam::account_id_text", "group__SceSblSsMgrKernel.html#gae296cae84db716d499142498d6b33e3b", null ],
+    [ "SceSblDmac5AesCmacContext::state", "group__SceSblSsMgrKernel.html#gaa256e2ff9db5dd8bce226b88138e9697", null ],
+    [ "SceSblDmac5HashTransformContext::state", "group__SceSblSsMgrKernel.html#ga3e89a6e2de997e8d0065120dce4b76ae", null ],
+    [ "SceSblDmac5HashTransformContext::length", "group__SceSblSsMgrKernel.html#ga2b1958105c141f61a87b7da7b2f15d1e", null ]
 ];

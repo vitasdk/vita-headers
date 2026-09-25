@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('group__SceLibSslUser.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structSceSslCertificateAuthorityEntry" id="r_structSceSslCertificateAuthorityEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a></td></tr>
+<tr class="memdesc:structSceSslCertificateAuthorityEntry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Certificate list node stored inside the caller's output buffer.  <a href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">More...</a><br /></td></tr>
+<tr class="separator:structSceSslCertificateAuthorityEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceSslMemoryPoolStats" id="r_structSceSslMemoryPoolStats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#structSceSslMemoryPoolStats">SceSslMemoryPoolStats</a></td></tr>
 <tr class="separator:structSceSslMemoryPoolStats"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -118,9 +121,35 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:gaa87d604f7d09c5bf42fe99ac57ac81fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91e1f3ed158b551d44c11d24725388e8" id="r_ga91e1f3ed158b551d44c11d24725388e8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c">SCE_SSLCERT_ISSUER_ALL</a> = 0
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a34e710c520924bed9475876ec578e690">SCE_SSLCERT_ISSUER_SCE</a> = 1
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a15d71abeda3f826e0430ec5a35c89a7d">SCE_SSLCERT_ISSUER_VERISIGN</a> = 2
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a03e861a545e99d4d9d636f87ea732513">SCE_SSLCERT_ISSUER_GEOTRUST</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9ee8d8f9b2c2c89244d8b6f9ec1fab0c">SCE_SSLCERT_ISSUER_THAWTE</a> = 4
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3d761279d863f4253984cbd902b32c5d">SCE_SSLCERT_ISSUER_COMODO</a> = 5
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a5b537e9505c3be07d18f25a26d99bf87">SCE_SSLCERT_ISSUER_GLOBALSIGN</a> = 6
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a061cbc1bcbd07ab7ff1d41c1f57277d7">SCE_SSLCERT_ISSUER_CYBERTRUST</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aa5f7b6964882beeedd931b9b36cb82de">SCE_SSLCERT_ISSUER_ENTRUST</a> = 8
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3a0bebbfe97d6bf310dcf4bbb1bd76da">SCE_SSLCERT_ISSUER_DIGICERT</a> = 9
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3c20518fcc1ea30b6506b243bdc9da26">SCE_SSLCERT_ISSUER_GODADDY</a> = 10
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ac53a39a15e6d3119e22d51d143b0dfbd">SCE_SSLCERT_ISSUER_RSA</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aec206658756d511e4a6f19e2c139f020">SCE_SSLCERT_ISSUER_STARTCOM</a> = 12
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ae2dc082bf0cdf2516ca3dea4f8f6579c">SCE_SSLCERT_ISSUER_SECOM</a> = 13
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a264878a14b4a738927f28e52298a0293">SCE_SSLCERT_ISSUER_TRUSTWAVE</a> = 14
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9a8d0461cc1218da2f4c6d732839dbd9">SCE_SSLCERT_ISSUER_AFFIRMTRUST</a> = 15
+<br />
+ }</td></tr>
+<tr class="memdesc:ga91e1f3ed158b551d44c11d24725388e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Built-in certificate-authority issuer groups.  <a href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">More...</a><br /></td></tr>
+<tr class="separator:ga91e1f3ed158b551d44c11d24725388e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga394be5880b7f2a98b08ce543fc712a0d" id="r_ga394be5880b7f2a98b08ce543fc712a0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga394be5880b7f2a98b08ce543fc712a0d">VITASDK_BUILD_ASSERT_EQ</a> (0x8, <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a>)</td></tr>
+<tr class="separator:ga394be5880b7f2a98b08ce543fc712a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac2da5d3ede9857a64763911f270d2b7" id="r_gaac2da5d3ede9857a64763911f270d2b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#gaac2da5d3ede9857a64763911f270d2b7">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceLibSslUser.html#structSceSslMemoryPoolStats">SceSslMemoryPoolStats</a>)</td></tr>
 <tr class="separator:gaac2da5d3ede9857a64763911f270d2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13926687f23c60d45340f013b1382f75" id="r_ga13926687f23c60d45340f013b1382f75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga13926687f23c60d45340f013b1382f75">sceSslInit</a> (unsigned poolSize)</td></tr>
@@ -145,9 +174,18 @@ Functions</h2></td></tr>
 <tr class="separator:gab11f8d374a759e2e582db418dbbab95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52861a9bb6eee66901b8393dc50b152b" id="r_ga52861a9bb6eee66901b8393dc50b152b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga52861a9bb6eee66901b8393dc50b152b">sceSslFreeSslCertName</a> (<a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a> *certName)</td></tr>
 <tr class="separator:ga52861a9bb6eee66901b8393dc50b152b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga248c82261a899afa8a637675c50738b5" id="r_ga248c82261a899afa8a637675c50738b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga248c82261a899afa8a637675c50738b5">sceSslInternalGetCertificateAuthority</a> (<a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a> issuer_id, int certificate_mask, <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a> **certificate_list, char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buffer_size, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *result_size)</td></tr>
+<tr class="memdesc:ga248c82261a899afa8a637675c50738b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get built-in certificate-authority certificates.  <br /></td></tr>
+<tr class="separator:ga248c82261a899afa8a637675c50738b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:gac70ee9ec8c0329b6517b05487fa99d36" id="r_gac70ee9ec8c0329b6517b05487fa99d36"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#gac70ee9ec8c0329b6517b05487fa99d36">SceSslCertificateAuthorityEntry::pem_certificate</a></td></tr>
+<tr class="memdesc:gac70ee9ec8c0329b6517b05487fa99d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">NUL-terminated PEM certificate stored in the caller's buffer.  <br /></td></tr>
+<tr class="separator:gac70ee9ec8c0329b6517b05487fa99d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f6a22074cc7259eb5829383e50275d5" id="r_ga1f6a22074cc7259eb5829383e50275d5"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga1f6a22074cc7259eb5829383e50275d5">SceSslCertificateAuthorityEntry::next</a></td></tr>
+<tr class="memdesc:ga1f6a22074cc7259eb5829383e50275d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next selected certificate, or NULL.  <br /></td></tr>
+<tr class="separator:ga1f6a22074cc7259eb5829383e50275d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad99c700cf0c35d1be72105e96a78c0fc" id="r_gad99c700cf0c35d1be72105e96a78c0fc"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#gad99c700cf0c35d1be72105e96a78c0fc">SceSslMemoryPoolStats::poolSize</a></td></tr>
 <tr class="separator:gad99c700cf0c35d1be72105e96a78c0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21fd7ae1cf252310b3e29944a6be7b0d" id="r_ga21fd7ae1cf252310b3e29944a6be7b0d"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga21fd7ae1cf252310b3e29944a6be7b0d">SceSslMemoryPoolStats::maxInuseSize</a></td></tr>
@@ -170,6 +208,37 @@ Variables</h2></td></tr>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceSslCertificateAuthorityEntry" id="structSceSslCertificateAuthorityEntry"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSslCertificateAuthorityEntry">&#9670;&#160;</a></span>SceSslCertificateAuthorityEntry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSslCertificateAuthorityEntry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Certificate list node stored inside the caller's output buffer. </p>
+<p>The caller owns both this node and the string referenced by <a class="el" href="group__SceLibSslUser.html#gac70ee9ec8c0329b6517b05487fa99d36" title="NUL-terminated PEM certificate stored in the caller&#39;s buffer.">SceSslCertificateAuthorityEntry::pem_certificate</a>. They remain valid for as long as the output buffer remains valid. No separate list cleanup is needed. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gac70ee9ec8c0329b6517b05487fa99d36" name="gac70ee9ec8c0329b6517b05487fa99d36"></a>char *</td>
+<td class="fieldname">
+pem_certificate</td>
+<td class="fielddoc">
+NUL-terminated PEM certificate stored in the caller's buffer. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1f6a22074cc7259eb5829383e50275d5" name="ga1f6a22074cc7259eb5829383e50275d5"></a>struct <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a> *</td>
+<td class="fieldname">
+next</td>
+<td class="fielddoc">
+Next selected certificate, or NULL. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceSslMemoryPoolStats" id="structSceSslMemoryPoolStats"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceSslMemoryPoolStats">&#9670;&#160;</a></span>SceSslMemoryPoolStats</h2>
 
@@ -282,9 +351,87 @@ reserved</td>
 
 </div>
 </div>
+<a id="ga91e1f3ed158b551d44c11d24725388e8" name="ga91e1f3ed158b551d44c11d24725388e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga91e1f3ed158b551d44c11d24725388e8">&#9670;&#160;</a></span>SceSslCertIssuer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Built-in certificate-authority issuer groups. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c" name="gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c"></a>SCE_SSLCERT_ISSUER_ALL&#160;</td><td class="fielddoc"><p>Select every issuer group. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a34e710c520924bed9475876ec578e690" name="gga91e1f3ed158b551d44c11d24725388e8a34e710c520924bed9475876ec578e690"></a>SCE_SSLCERT_ISSUER_SCE&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x1F. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a15d71abeda3f826e0430ec5a35c89a7d" name="gga91e1f3ed158b551d44c11d24725388e8a15d71abeda3f826e0430ec5a35c89a7d"></a>SCE_SSLCERT_ISSUER_VERISIGN&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x1F. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a03e861a545e99d4d9d636f87ea732513" name="gga91e1f3ed158b551d44c11d24725388e8a03e861a545e99d4d9d636f87ea732513"></a>SCE_SSLCERT_ISSUER_GEOTRUST&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x0F. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a9ee8d8f9b2c2c89244d8b6f9ec1fab0c" name="gga91e1f3ed158b551d44c11d24725388e8a9ee8d8f9b2c2c89244d8b6f9ec1fab0c"></a>SCE_SSLCERT_ISSUER_THAWTE&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a3d761279d863f4253984cbd902b32c5d" name="gga91e1f3ed158b551d44c11d24725388e8a3d761279d863f4253984cbd902b32c5d"></a>SCE_SSLCERT_ISSUER_COMODO&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a5b537e9505c3be07d18f25a26d99bf87" name="gga91e1f3ed158b551d44c11d24725388e8a5b537e9505c3be07d18f25a26d99bf87"></a>SCE_SSLCERT_ISSUER_GLOBALSIGN&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x03. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a061cbc1bcbd07ab7ff1d41c1f57277d7" name="gga91e1f3ed158b551d44c11d24725388e8a061cbc1bcbd07ab7ff1d41c1f57277d7"></a>SCE_SSLCERT_ISSUER_CYBERTRUST&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8aa5f7b6964882beeedd931b9b36cb82de" name="gga91e1f3ed158b551d44c11d24725388e8aa5f7b6964882beeedd931b9b36cb82de"></a>SCE_SSLCERT_ISSUER_ENTRUST&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x0F. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a3a0bebbfe97d6bf310dcf4bbb1bd76da" name="gga91e1f3ed158b551d44c11d24725388e8a3a0bebbfe97d6bf310dcf4bbb1bd76da"></a>SCE_SSLCERT_ISSUER_DIGICERT&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a3c20518fcc1ea30b6506b243bdc9da26" name="gga91e1f3ed158b551d44c11d24725388e8a3c20518fcc1ea30b6506b243bdc9da26"></a>SCE_SSLCERT_ISSUER_GODADDY&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x7F. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8ac53a39a15e6d3119e22d51d143b0dfbd" name="gga91e1f3ed158b551d44c11d24725388e8ac53a39a15e6d3119e22d51d143b0dfbd"></a>SCE_SSLCERT_ISSUER_RSA&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x03. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8aec206658756d511e4a6f19e2c139f020" name="gga91e1f3ed158b551d44c11d24725388e8aec206658756d511e4a6f19e2c139f020"></a>SCE_SSLCERT_ISSUER_STARTCOM&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x03. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8ae2dc082bf0cdf2516ca3dea4f8f6579c" name="gga91e1f3ed158b551d44c11d24725388e8ae2dc082bf0cdf2516ca3dea4f8f6579c"></a>SCE_SSLCERT_ISSUER_SECOM&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a264878a14b4a738927f28e52298a0293" name="gga91e1f3ed158b551d44c11d24725388e8a264878a14b4a738927f28e52298a0293"></a>SCE_SSLCERT_ISSUER_TRUSTWAVE&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x01. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga91e1f3ed158b551d44c11d24725388e8a9a8d0461cc1218da2f4c6d732839dbd9" name="gga91e1f3ed158b551d44c11d24725388e8a9a8d0461cc1218da2f4c6d732839dbd9"></a>SCE_SSLCERT_ISSUER_AFFIRMTRUST&#160;</td><td class="fielddoc"><p>FW 3.60 supports certificate mask 0x07. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga394be5880b7f2a98b08ce543fc712a0d" name="ga394be5880b7f2a98b08ce543fc712a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga394be5880b7f2a98b08ce543fc712a0d">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaac2da5d3ede9857a64763911f270d2b7" name="gaac2da5d3ede9857a64763911f270d2b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaac2da5d3ede9857a64763911f270d2b7">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac2da5d3ede9857a64763911f270d2b7">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -585,7 +732,108 @@ reserved</td>
 
 </div>
 </div>
+<a id="ga248c82261a899afa8a637675c50738b5" name="ga248c82261a899afa8a637675c50738b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga248c82261a899afa8a637675c50738b5">&#9670;&#160;</a></span>sceSslInternalGetCertificateAuthority()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceSslInternalGetCertificateAuthority </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a>&#160;</td>
+          <td class="paramname"><em>issuer_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>certificate_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a> **&#160;</td>
+          <td class="paramname"><em>certificate_list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>buffer_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
+          <td class="paramname"><em>result_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get built-in certificate-authority certificates. </p>
+<p>The certificates are loaded from <code>vs0:/data/external/cert/CA_LIST.cer</code>. In output mode, every loaded certificate is checked against a built-in SHA-1 digest before it is returned.</p>
+<p>If either <code>certificate_list</code> or <code>buffer</code> is NULL, the function only calculates the required storage size and ignores <code>buffer_size</code>. Output mode requires both pointers to be non-NULL. The required size includes every NUL-terminated PEM string, alignment padding, and one embedded <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry" title="Certificate list node stored inside the caller&#39;s output buffer.">SceSslCertificateAuthorityEntry</a> per certificate.</p>
+<p>In output mode, <code>certificate_list</code> receives a linked list whose nodes and PEM strings point into <code>buffer</code>. The function does not allocate output memory. Callers should first query the size, allocate one buffer of that size, and then call the function again to fill it. If output mode fails after processing begins, the buffer and list may contain partial data and should be discarded.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">issuer_id</td><td>- One of <a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8" title="Built-in certificate-authority issuer groups.">SceSslCertIssuer</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">certificate_mask</td><td>- Issuer-specific certificate-selection bitmask. For a nonzero <code>issuer_id</code>, -1 selects that issuer's firmware default mask. On FW 3.60 the default is the full supported mask only for SCE, GeoTrust, Thawte, and GoDaddy; it is zero for the other issuer groups. With <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c" title="Select every issuer group.">SCE_SSLCERT_ISSUER_ALL</a>, -1 selects every known certificate. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">certificate_list</td><td>- Receives the first list node in output mode. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>- Caller-owned buffer receiving PEM strings and list nodes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buffer_size</td><td>- Size of <em>buffer</em> in bytes. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result_size</td><td>- Optional pointer receiving the total storage required or used on success. If non-NULL, the function sets the output to zero before validation and leaves it zero on error.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of selected certificates on success, including zero when the mask selects none. Returns <code>0x80010086</code> for an invalid issuer or unsupported mask, <code>0x8001000C</code> when the output buffer is too small, <a class="el" href="group__SceLibSslUser.html#ggaa87d604f7d09c5bf42fe99ac57ac81fda5ffdb9331b83ef32fa50565050d23ac1">SCE_SSL_ERROR_INVALID_VALUE</a> when a certificate digest differs, or another negative file/path error. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="gac70ee9ec8c0329b6517b05487fa99d36" name="gac70ee9ec8c0329b6517b05487fa99d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac70ee9ec8c0329b6517b05487fa99d36">&#9670;&#160;</a></span>pem_certificate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* SceSslCertificateAuthorityEntry::pem_certificate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>NUL-terminated PEM certificate stored in the caller's buffer. </p>
+
+</div>
+</div>
+<a id="ga1f6a22074cc7259eb5829383e50275d5" name="ga1f6a22074cc7259eb5829383e50275d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f6a22074cc7259eb5829383e50275d5">&#9670;&#160;</a></span>next</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a>* SceSslCertificateAuthorityEntry::next</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next selected certificate, or NULL. </p>
+
+</div>
+</div>
 <a id="gad99c700cf0c35d1be72105e96a78c0fc" name="gad99c700cf0c35d1be72105e96a78c0fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad99c700cf0c35d1be72105e96a78c0fc">&#9670;&#160;</a></span>poolSize</h2>
 

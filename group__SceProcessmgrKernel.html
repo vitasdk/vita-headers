@@ -74,6 +74,7 @@ $(document).ready(function(){initNavTree('group__SceProcessmgrKernel.html',''); 
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#enumval-members">Enumerator</a> &#124;
@@ -94,6 +95,33 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceKernelTimezone"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceKernelProcessInfo" id="r_structSceKernelProcessInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessInfo">SceKernelProcessInfo</a></td></tr>
 <tr class="separator:structSceKernelProcessInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceKernelProcessOpt2" id="r_structSceKernelProcessOpt2"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a></td></tr>
+<tr class="memdesc:structSceKernelProcessOpt2"><td class="mdescLeft">&#160;</td><td class="mdescRight">FW 3.60 process-creation options.  <a href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">More...</a><br /></td></tr>
+<tr class="separator:structSceKernelProcessOpt2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:gaa2e2679c3fcfa02669cdd7d5c2b41d2f" id="r_gaa2e2679c3fcfa02669cdd7d5c2b41d2f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaa2e2679c3fcfa02669cdd7d5c2b41d2f">SCE_KERNEL_PROCESS_TYPE_GAME</a>&#160;&#160;&#160;(0x01000000U)</td></tr>
+<tr class="separator:gaa2e2679c3fcfa02669cdd7d5c2b41d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a0828e320f8756577ea28d0759700fe" id="r_ga8a0828e320f8756577ea28d0759700fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga8a0828e320f8756577ea28d0759700fe">SCE_KERNEL_PROCESS_TYPE_MINI_APPLICATION</a>&#160;&#160;&#160;(0x02000000U)</td></tr>
+<tr class="separator:ga8a0828e320f8756577ea28d0759700fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga95a69549f9315a081a0bf6610539ce86" id="r_ga95a69549f9315a081a0bf6610539ce86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga95a69549f9315a081a0bf6610539ce86">SCE_KERNEL_PROCESS_TYPE_SYSTEM_APPLICATION</a>&#160;&#160;&#160;(0x04000000U)</td></tr>
+<tr class="separator:ga95a69549f9315a081a0bf6610539ce86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac13dfe30f85cdb18cbf1442882428c93" id="r_gac13dfe30f85cdb18cbf1442882428c93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gac13dfe30f85cdb18cbf1442882428c93">SCE_KERNEL_PROCESS_TYPE_KERNEL</a>&#160;&#160;&#160;(0x05000000U)</td></tr>
+<tr class="memdesc:gac13dfe30f85cdb18cbf1442882428c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used by the kernel process object; rejected by the FW 3.60 create/spawn APIs.  <br /></td></tr>
+<tr class="separator:gac13dfe30f85cdb18cbf1442882428c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bcccaef1d0eacdbad74aebf76f19704" id="r_ga9bcccaef1d0eacdbad74aebf76f19704"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga9bcccaef1d0eacdbad74aebf76f19704">SCE_KERNEL_PROCESS_START_FLAG_DEBUG</a>&#160;&#160;&#160;(0x80000000U)</td></tr>
+<tr class="memdesc:ga9bcccaef1d0eacdbad74aebf76f19704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests a debug-suspended start; OR into the type passed to a spawn function.  <br /></td></tr>
+<tr class="separator:ga9bcccaef1d0eacdbad74aebf76f19704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8783df5109c6d5b788e9e472ed247178" id="r_ga8783df5109c6d5b788e9e472ed247178"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga8783df5109c6d5b788e9e472ed247178">SCE_KERNEL_PROCESS_CURRENT_PROCESS_BUDGET</a>&#160;&#160;&#160;(0)</td></tr>
+<tr class="memdesc:ga8783df5109c6d5b788e9e472ed247178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the calling process's built-in game or system-application budget.  <br /></td></tr>
+<tr class="separator:ga8783df5109c6d5b788e9e472ed247178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad53259cf5147111e67ca8ee86d74df29" id="r_gad53259cf5147111e67ca8ee86d74df29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gad53259cf5147111e67ca8ee86d74df29">SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET</a>&#160;&#160;&#160;(2)</td></tr>
+<tr class="memdesc:gad53259cf5147111e67ca8ee86d74df29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the built-in full-game process budget.  <br /></td></tr>
+<tr class="separator:gad53259cf5147111e67ca8ee86d74df29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad16f13574f41e185ee7ff863c7cb2332" id="r_gad16f13574f41e185ee7ff863c7cb2332"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gad16f13574f41e185ee7ff863c7cb2332">SCE_KERNEL_PROCESS_SYSTEM_APPLICATION_PROCESS_BUDGET</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="memdesc:gad16f13574f41e185ee7ff863c7cb2332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the built-in system-application process budget.  <br /></td></tr>
+<tr class="separator:gad16f13574f41e185ee7ff863c7cb2332"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -103,6 +131,8 @@ Typedefs</h2></td></tr>
 <tr class="separator:gaa7c492e33c3601c8e7897247a5b4830a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fd5556a01c9d9cc7b987a4172c1d28a" id="r_ga5fd5556a01c9d9cc7b987a4172c1d28a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5fd5556a01c9d9cc7b987a4172c1d28a">SceKernelTime</a></td></tr>
 <tr class="separator:ga5fd5556a01c9d9cc7b987a4172c1d28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6fad43c50151a4bb8ac1e2b4ea52e146" id="r_ga6fad43c50151a4bb8ac1e2b4ea52e146"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a></td></tr>
+<tr class="separator:ga6fad43c50151a4bb8ac1e2b4ea52e146"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga337851539a6ec21c154d8fbdadc63eaf" id="r_ga337851539a6ec21c154d8fbdadc63eaf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a></td></tr>
 <tr class="separator:ga337851539a6ec21c154d8fbdadc63eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -130,6 +160,33 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ga1b448620c7525b730a2b94164e34d77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e68bf0e0b461322806220c963abba82" id="r_ga1e68bf0e0b461322806220c963abba82"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82">SceKernelProcessOptAttribute</a> { <br />
+&#160;&#160;<a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a76d495885a332a38ffa7f48486c26062">SCE_KERNEL_PROCESS_OPT_ATTR_CPU_AFFINITY_MASK</a> = 0x00001000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a33336ed2f9bc59db134b7085930a910a">SCE_KERNEL_PROCESS_OPT_ATTR_BUDGET_ID</a> = 0x00004000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82ae741c018a293ca546a6cb1790a5e5332">SCE_KERNEL_PROCESS_OPT_ATTR_PARENT_PROCESS_ID</a> = 0x00010000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82abb15ef3eb2c6a22a4f6d33dc1bdaba57">SCE_KERNEL_PROCESS_OPT_ATTR_PROCESS_EXIT_SPAWN</a> = 0x00020000
+, <br />
+&#160;&#160;<a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a53d6347631bf955589f7976a2d833b5a">SCE_KERNEL_PROCESS_OPT_ATTR_KLICENSEE</a> = 0x00040000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a06c75c514c8fb387acb9d0a6d0e60ed3">SCE_KERNEL_PROCESS_OPT_ATTR_MAX_OPEN_FILES</a> = 0x00080000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82aea3faca77ddcf2b68ae9c44bfaf72990">SCE_KERNEL_PROCESS_OPT_ATTR_MAX_DIRECTORY_OPEN_LEVEL</a> = 0x00100000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82ad92d4d0d881ead40a714c93e966b8e4f">SCE_KERNEL_PROCESS_OPT_ATTR_UNIQUE_HEAP_SIZE</a> = 0x00200000
+, <br />
+&#160;&#160;<a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82ad233e6eb4c524c861f94b3eabf781f41">SCE_KERNEL_PROCESS_OPT_ATTR_DISPLAY_RESOLUTION_FLAGS</a> = 0x00800000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a06055cb6558856e9ee9cc13ed43658bf">SCE_KERNEL_PROCESS_OPT_ATTR_POWER_CONFIGURATION_FLAGS</a> = 0x01000000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a2200f127a66c852dd2c44e416caef624">SCE_KERNEL_PROCESS_OPT_ATTR_INITIAL_PRIORITY</a> = 0x10000000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82ad7dd20496ac61c0cfc7faf760f8f8db4">SCE_KERNEL_PROCESS_OPT_ATTR_STACK_SIZE</a> = 0x20000000
+, <br />
+&#160;&#160;<a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82a7759933f2c4f82dc14eb8b6b251cda8d">SCE_KERNEL_PROCESS_OPT_ATTR_REPORT_LOAD_PROGRESS</a> = 0x40000000
+, <a class="el" href="group__SceProcessmgrKernel.html#gga1e68bf0e0b461322806220c963abba82aab81479635c06d6facd7cc944c226f8f">SCE_KERNEL_PROCESS_OPT_ATTR_SUPPRESS_START_NOTIFICATIONS</a> = 0x80000000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga1e68bf0e0b461322806220c963abba82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Known option bits used in <a class="el" href="group__SceProcessmgrKernel.html#gaf83b131b0e0cd7523ccc472f836987c7" title="Bitwise OR of SceKernelProcessOptAttribute values. FW 3.60 does not reject unlisted bits,...">SceKernelProcessOpt2::attr</a> on FW 3.60.  <a href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82">More...</a><br /></td></tr>
+<tr class="separator:ga1e68bf0e0b461322806220c963abba82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6b1f122ef574c124e6e253dc7d58182" id="r_gae6b1f122ef574c124e6e253dc7d58182"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">SceKernelProcessExitSpawnMode</a> { <a class="el" href="group__SceProcessmgrKernel.html#ggae6b1f122ef574c124e6e253dc7d58182ad4843a0cd49d6d632e6ec255e6a7e9b3">SCE_KERNEL_PROCESS_EXIT_SPAWN_MODE_NORMAL</a> = 0
+, <a class="el" href="group__SceProcessmgrKernel.html#ggae6b1f122ef574c124e6e253dc7d58182a82c82ffc87a288d78ceb1146457df3f7">SCE_KERNEL_PROCESS_EXIT_SPAWN_MODE_ENABLED</a> = 1
+ }</td></tr>
+<tr class="memdesc:gae6b1f122ef574c124e6e253dc7d58182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process-object handling mode selected during process creation.  <a href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">More...</a><br /></td></tr>
+<tr class="separator:gae6b1f122ef574c124e6e253dc7d58182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -146,20 +203,26 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5e00129f26659eb5cda7c5fdda38c917" id="r_ga5e00129f26659eb5cda7c5fdda38c917"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5e00129f26659eb5cda7c5fdda38c917">VITASDK_BUILD_ASSERT_EQ</a> (0xE8, <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessInfo">SceKernelProcessInfo</a>)</td></tr>
 <tr class="separator:ga5e00129f26659eb5cda7c5fdda38c917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga476c0469443aba2d568b72580b85da72" id="r_ga476c0469443aba2d568b72580b85da72"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga476c0469443aba2d568b72580b85da72">ksceKernelGetProcessKernelBuf</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga476c0469443aba2d568b72580b85da72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Previous VitaSDK name and prototype for <a class="el" href="group__SceProcessmgrKernel.html#gaa701f3c3fa47ebf09e4e9e0ba3aa02a2" title="Resolves a process ID to its internal process object without acquiring a reference.">ksceKernelUIDtoProcess</a>.  <br /></td></tr>
 <tr class="separator:ga476c0469443aba2d568b72580b85da72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa701f3c3fa47ebf09e4e9e0ba3aa02a2" id="r_gaa701f3c3fa47ebf09e4e9e0ba3aa02a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaa701f3c3fa47ebf09e4e9e0ba3aa02a2">ksceKernelUIDtoProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gaa701f3c3fa47ebf09e4e9e0ba3aa02a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a process ID to its internal process object without acquiring a reference.  <br /></td></tr>
+<tr class="separator:gaa701f3c3fa47ebf09e4e9e0ba3aa02a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0900825db6367507b27169093cf58227" id="r_ga0900825db6367507b27169093cf58227"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga0900825db6367507b27169093cf58227">ksceKernelGetProcessInfo</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessInfo">SceKernelProcessInfo</a> *info)</td></tr>
 <tr class="separator:ga0900825db6367507b27169093cf58227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3845b5bbcdb0cbb823dab8a5ec669971" id="r_ga3845b5bbcdb0cbb823dab8a5ec669971"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga3845b5bbcdb0cbb823dab8a5ec669971">ksceKernelCreateProcessLocalStorage</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memitem:ga3845b5bbcdb0cbb823dab8a5ec669971" id="r_ga3845b5bbcdb0cbb823dab8a5ec669971"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga3845b5bbcdb0cbb823dab8a5ec669971">ksceKernelCreateProcessLocalStorage</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
 <tr class="separator:ga3845b5bbcdb0cbb823dab8a5ec669971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2c6b26f5886c61763fbef1e47d2dc27e" id="r_ga2c6b26f5886c61763fbef1e47d2dc27e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga2c6b26f5886c61763fbef1e47d2dc27e">ksceKernelGetProcessLocalStorageAddr</a> (int key)</td></tr>
+<tr class="memitem:ga2c6b26f5886c61763fbef1e47d2dc27e" id="r_ga2c6b26f5886c61763fbef1e47d2dc27e"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga2c6b26f5886c61763fbef1e47d2dc27e">ksceKernelGetProcessLocalStorageAddr</a> (int <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>)</td></tr>
 <tr class="separator:ga2c6b26f5886c61763fbef1e47d2dc27e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb60dbc5ecd5c2b590d048930a1b6922" id="r_gabb60dbc5ecd5c2b590d048930a1b6922"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gabb60dbc5ecd5c2b590d048930a1b6922">ksceKernelGetProcessLocalStorageAddrForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int key, void **out_addr, int create_if_doesnt_exist)</td></tr>
+<tr class="memitem:gabb60dbc5ecd5c2b590d048930a1b6922" id="r_gabb60dbc5ecd5c2b590d048930a1b6922"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gabb60dbc5ecd5c2b590d048930a1b6922">ksceKernelGetProcessLocalStorageAddrForPid</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, void **out_addr, int create_if_doesnt_exist)</td></tr>
 <tr class="separator:gabb60dbc5ecd5c2b590d048930a1b6922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3640c887535f8196c39fda4cb274ad22" id="r_ga3640c887535f8196c39fda4cb274ad22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga3640c887535f8196c39fda4cb274ad22">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a>)</td></tr>
 <tr class="separator:ga3640c887535f8196c39fda4cb274ad22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf13c87d065bae35665bc4a5906871adc" id="r_gaf13c87d065bae35665bc4a5906871adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaf13c87d065bae35665bc4a5906871adc">ksceKernelCreateProcess</a> (const char *<a class="el" href="group__SceKernelDebugKernel.html#ga69e2871216a6de98af47c4c4a9d41134">titleid</a>, <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, const char *path, void *opt)</td></tr>
-<tr class="memdesc:gaf13c87d065bae35665bc4a5906871adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create process.  <br /></td></tr>
-<tr class="separator:gaf13c87d065bae35665bc4a5906871adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ed9f6b1d73a5a446cc0d8176d37e193" id="r_ga6ed9f6b1d73a5a446cc0d8176d37e193"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga6ed9f6b1d73a5a446cc0d8176d37e193">VITASDK_BUILD_ASSERT_EQ</a> (0x40, <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a>)</td></tr>
+<tr class="separator:ga6ed9f6b1d73a5a446cc0d8176d37e193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef772435f481c53d3374606d8140dfb3" id="r_gaef772435f481c53d3374606d8140dfb3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaef772435f481c53d3374606d8140dfb3">ksceKernelCreateProcess</a> (const char *name, <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, const char *path, void *opt)</td></tr>
+<tr class="memdesc:gaef772435f481c53d3374606d8140dfb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a dormant process.  <br /></td></tr>
+<tr class="separator:gaef772435f481c53d3374606d8140dfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3d6212e760ed87b8dff0560329c1ddc6" id="r_ga3d6212e760ed87b8dff0560329c1ddc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga3d6212e760ed87b8dff0560329c1ddc6">ksceKernelResumeProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="memdesc:ga3d6212e760ed87b8dff0560329c1ddc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume a suspended process.  <br /></td></tr>
 <tr class="separator:ga3d6212e760ed87b8dff0560329c1ddc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +249,33 @@ Functions</h2></td></tr>
 <tr class="separator:gafd393ed0dd74ea461c5c6bb6042294a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeeeeb1de6287ad2a97979c1197ddcf42" id="r_gaeeeeb1de6287ad2a97979c1197ddcf42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceSysmemKernel.html#structSceClass">SceClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaeeeeb1de6287ad2a97979c1197ddcf42">ksceKernelGetUIDProcessClass</a> (void)</td></tr>
 <tr class="separator:gaeeeeb1de6287ad2a97979c1197ddcf42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6f19e2500e1cbb44c73204c73fca47f" id="r_gad6f19e2500e1cbb44c73204c73fca47f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gad6f19e2500e1cbb44c73204c73fca47f">ksceKernelGetProcessTimeCore</a> (<a class="el" href="group__SceTypesKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8">SceKernelSysClock</a> *<a class="el" href="group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a">time</a>)</td></tr>
+<tr class="memdesc:gad6f19e2500e1cbb44c73204c73fca47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current process's elapsed time in microseconds.  <br /></td></tr>
+<tr class="separator:gad6f19e2500e1cbb44c73204c73fca47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab53b2518c98a3e0a87862863673de70e" id="r_gab53b2518c98a3e0a87862863673de70e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gab53b2518c98a3e0a87862863673de70e">ksceKernelGetProcessTimeLowCore</a> (void)</td></tr>
+<tr class="memdesc:gab53b2518c98a3e0a87862863673de70e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the wrapping low 32 bits of the current process's elapsed time in microseconds.  <br /></td></tr>
+<tr class="separator:gab53b2518c98a3e0a87862863673de70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc5d4491bc1ab8ea9132587d8f0bb2e2" id="r_gabc5d4491bc1ab8ea9132587d8f0bb2e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gabc5d4491bc1ab8ea9132587d8f0bb2e2">ksceKernelGetRemoteProcessTime</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8">SceKernelSysClock</a> *<a class="el" href="group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a">time</a>)</td></tr>
+<tr class="memdesc:gabc5d4491bc1ab8ea9132587d8f0bb2e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a process's running elapsed time or stored final time in microseconds.  <br /></td></tr>
+<tr class="separator:gabc5d4491bc1ab8ea9132587d8f0bb2e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf6916e3679536efee4fb7caacc447d52" id="r_gaf6916e3679536efee4fb7caacc447d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaf6916e3679536efee4fb7caacc447d52">ksceKernelIsCDialogAvailable</a> (void)</td></tr>
+<tr class="memdesc:gaf6916e3679536efee4fb7caacc447d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tests whether the current process budget reserves common-dialog memory.  <br /></td></tr>
+<tr class="separator:gaf6916e3679536efee4fb7caacc447d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5dcd500330ee13e99f2e0e97d012957c" id="r_ga5dcd500330ee13e99f2e0e97d012957c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5dcd500330ee13e99f2e0e97d012957c">ksceKernelKillProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> option)</td></tr>
+<tr class="memdesc:ga5dcd500330ee13e99f2e0e97d012957c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests process termination.  <br /></td></tr>
+<tr class="separator:ga5dcd500330ee13e99f2e0e97d012957c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88b9e23b4cd675e8a239bf60eac7e8a0" id="r_ga88b9e23b4cd675e8a239bf60eac7e8a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga88b9e23b4cd675e8a239bf60eac7e8a0">ksceKernelSpawnProcess</a> (const char *name, <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, const void *arg_block, const <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a> *opt)</td></tr>
+<tr class="memdesc:ga88b9e23b4cd675e8a239bf60eac7e8a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and starts a process.  <br /></td></tr>
+<tr class="separator:ga88b9e23b4cd675e8a239bf60eac7e8a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5a8aa34743d3f7ea34e2c82d5869dcc" id="r_gae5a8aa34743d3f7ea34e2c82d5869dcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gae5a8aa34743d3f7ea34e2c82d5869dcc">ksceKernelSpawnProcessExt</a> (const char *name, <a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, const char *path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, const void *arg_block, const <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a> *opt, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> preload_flags)</td></tr>
+<tr class="memdesc:gae5a8aa34743d3f7ea34e2c82d5869dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended form of <a class="el" href="group__SceProcessmgrKernel.html#ga88b9e23b4cd675e8a239bf60eac7e8a0" title="Creates and starts a process.">ksceKernelSpawnProcess</a>.  <br /></td></tr>
+<tr class="separator:gae5a8aa34743d3f7ea34e2c82d5869dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f22a5776f1dd16596fc7d1e2a181322" id="r_ga7f22a5776f1dd16596fc7d1e2a181322"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga7f22a5776f1dd16596fc7d1e2a181322">ksceKernelStartProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> start_flags, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, const void *arg_block)</td></tr>
+<tr class="memdesc:ga7f22a5776f1dd16596fc7d1e2a181322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a dormant process.  <br /></td></tr>
+<tr class="separator:ga7f22a5776f1dd16596fc7d1e2a181322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga257ed1198598d6810d63abb038f86995" id="r_ga257ed1198598d6810d63abb038f86995"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga257ed1198598d6810d63abb038f86995">ksceKernelStartProcessExt</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> start_flags, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, const void *arg_block, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> preload_flags)</td></tr>
+<tr class="memdesc:ga257ed1198598d6810d63abb038f86995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended form of <a class="el" href="group__SceProcessmgrKernel.html#ga7f22a5776f1dd16596fc7d1e2a181322" title="Starts a dormant process.">ksceKernelStartProcess</a>.  <br /></td></tr>
+<tr class="separator:ga257ed1198598d6810d63abb038f86995"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -213,6 +303,54 @@ Variables</h2></td></tr>
 <tr class="memitem:ga75ac116aaf50eafb66d76e8708dae4e4" id="r_ga75ac116aaf50eafb66d76e8708dae4e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga75ac116aaf50eafb66d76e8708dae4e4">SceKernelProcessInfo::unk</a> [0xE8/4 - 6]</td></tr>
 <tr class="memdesc:ga75ac116aaf50eafb66d76e8708dae4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the rest is unknown  <br /></td></tr>
 <tr class="separator:ga75ac116aaf50eafb66d76e8708dae4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga082f34706099228bae6455f060c53f63" id="r_ga082f34706099228bae6455f060c53f63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga082f34706099228bae6455f060c53f63">SceKernelProcessOpt2::size</a></td></tr>
+<tr class="memdesc:ga082f34706099228bae6455f060c53f63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Must be 0x40 on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga082f34706099228bae6455f060c53f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf83b131b0e0cd7523ccc472f836987c7" id="r_gaf83b131b0e0cd7523ccc472f836987c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaf83b131b0e0cd7523ccc472f836987c7">SceKernelProcessOpt2::attr</a></td></tr>
+<tr class="memdesc:gaf83b131b0e0cd7523ccc472f836987c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bitwise OR of <a class="el" href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82" title="Known option bits used in SceKernelProcessOpt2::attr on FW 3.60.">SceKernelProcessOptAttribute</a> values. FW 3.60 does not reject unlisted bits, whose purpose is unknown.  <br /></td></tr>
+<tr class="separator:gaf83b131b0e0cd7523ccc472f836987c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae5fe5ecb76334ffca86b202366f522a" id="r_gaae5fe5ecb76334ffca86b202366f522a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaae5fe5ecb76334ffca86b202366f522a">SceKernelProcessOpt2::cpu_affinity_mask</a></td></tr>
+<tr class="memdesc:gaae5fe5ecb76334ffca86b202366f522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Four-bit mask in bits 0-3 or bits 16-19; 0 selects the default. Do not combine the two encodings.  <br /></td></tr>
+<tr class="separator:gaae5fe5ecb76334ffca86b202366f522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7512d00c0ecdeab466c42d4116d91e40" id="r_ga7512d00c0ecdeab466c42d4116d91e40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga7512d00c0ecdeab466c42d4116d91e40">SceKernelProcessOpt2::init_priority</a></td></tr>
+<tr class="memdesc:ga7512d00c0ecdeab466c42d4116d91e40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initial main-thread priority when selected; otherwise the process-image value or 0x10000100 is used.  <br /></td></tr>
+<tr class="separator:ga7512d00c0ecdeab466c42d4116d91e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a0dd46506770e8e63c81bbd3db2aa0f" id="r_ga5a0dd46506770e8e63c81bbd3db2aa0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5a0dd46506770e8e63c81bbd3db2aa0f">SceKernelProcessOpt2::stack_size</a></td></tr>
+<tr class="memdesc:ga5a0dd46506770e8e63c81bbd3db2aa0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main-thread stack size when selected; otherwise the process-image value or 0x40000 is used.  <br /></td></tr>
+<tr class="separator:ga5a0dd46506770e8e63c81bbd3db2aa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga34de4b2bac29979db7a43b7f7298e39f" id="r_ga34de4b2bac29979db7a43b7f7298e39f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga34de4b2bac29979db7a43b7f7298e39f">SceKernelProcessOpt2::reserved</a></td></tr>
+<tr class="memdesc:ga34de4b2bac29979db7a43b7f7298e39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga34de4b2bac29979db7a43b7f7298e39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2b56179b188633e7445ddeeacf9dabf4" id="r_ga2b56179b188633e7445ddeeacf9dabf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga2b56179b188633e7445ddeeacf9dabf4">SceKernelProcessOpt2::budget_id</a></td></tr>
+<tr class="memdesc:ga2b56179b188633e7445ddeeacf9dabf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Budget selector or process-budget UID; the default selector is <a class="el" href="group__SceProcessmgrKernel.html#gad53259cf5147111e67ca8ee86d74df29" title="Select the built-in full-game process budget.">SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET</a>.  <br /></td></tr>
+<tr class="separator:ga2b56179b188633e7445ddeeacf9dabf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17615e1fefc3500655f6b10bb5ceb4b8" id="r_ga17615e1fefc3500655f6b10bb5ceb4b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga17615e1fefc3500655f6b10bb5ceb4b8">SceKernelProcessOpt2::parent_pid</a></td></tr>
+<tr class="memdesc:ga17615e1fefc3500655f6b10bb5ceb4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parent process ID; the calling process's ID is used when this field is not selected.  <br /></td></tr>
+<tr class="separator:ga17615e1fefc3500655f6b10bb5ceb4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b5699afb0de5271614f3e46b175bc4a" id="r_ga5b5699afb0de5271614f3e46b175bc4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">SceKernelProcessExitSpawnMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga5b5699afb0de5271614f3e46b175bc4a">SceKernelProcessOpt2::process_exit_spawn_mode</a></td></tr>
+<tr class="memdesc:ga5b5699afb0de5271614f3e46b175bc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit-spawn handling mode when selected.  <br /></td></tr>
+<tr class="separator:ga5b5699afb0de5271614f3e46b175bc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabca79efc7842e7f31e488146ef9be7b" id="r_gaabca79efc7842e7f31e488146ef9be7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaabca79efc7842e7f31e488146ef9be7b">SceKernelProcessOpt2::process_exit_spawn_pid</a></td></tr>
+<tr class="memdesc:gaabca79efc7842e7f31e488146ef9be7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pending exit-spawn PID to reuse in enabled mode; zero allocates a new object.  <br /></td></tr>
+<tr class="separator:gaabca79efc7842e7f31e488146ef9be7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga388fd0cef62490d11974b348c254a9c3" id="r_ga388fd0cef62490d11974b348c254a9c3"><td class="memItemLeft" align="right" valign="top">const void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga388fd0cef62490d11974b348c254a9c3">SceKernelProcessOpt2::klicensee</a></td></tr>
+<tr class="memdesc:ga388fd0cef62490d11974b348c254a9c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a 16-byte klicensee when selected.  <br /></td></tr>
+<tr class="separator:ga388fd0cef62490d11974b348c254a9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4e6ab37877728daf84b6465d442b334" id="r_gab4e6ab37877728daf84b6465d442b334"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gab4e6ab37877728daf84b6465d442b334">SceKernelProcessOpt2::max_open_files</a></td></tr>
+<tr class="memdesc:gab4e6ab37877728daf84b6465d442b334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum open-file count when selected; default is 64.  <br /></td></tr>
+<tr class="separator:gab4e6ab37877728daf84b6465d442b334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafb42c2a03c7ab0e26a5f18318e050157" id="r_gafb42c2a03c7ab0e26a5f18318e050157"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gafb42c2a03c7ab0e26a5f18318e050157">SceKernelProcessOpt2::max_directory_open_level</a></td></tr>
+<tr class="memdesc:gafb42c2a03c7ab0e26a5f18318e050157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum directory-open nesting level when selected; default is 10.  <br /></td></tr>
+<tr class="separator:gafb42c2a03c7ab0e26a5f18318e050157"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ce8258baf35463bf46f3133a665d60d" id="r_ga1ce8258baf35463bf46f3133a665d60d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#ga1ce8258baf35463bf46f3133a665d60d">SceKernelProcessOpt2::unique_heap_size</a></td></tr>
+<tr class="memdesc:ga1ce8258baf35463bf46f3133a665d60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Required and nonzero when selected by attr.  <br /></td></tr>
+<tr class="separator:ga1ce8258baf35463bf46f3133a665d60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed9d2f46984725122074d59c18e5be88" id="r_gaed9d2f46984725122074d59c18e5be88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaed9d2f46984725122074d59c18e5be88">SceKernelProcessOpt2::display_resolution_flags</a></td></tr>
+<tr class="memdesc:gaed9d2f46984725122074d59c18e5be88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected value must use only bit 0 for 1280-wide modes and bit 1 for 1440/1920-wide modes.  <br /></td></tr>
+<tr class="separator:gaed9d2f46984725122074d59c18e5be88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecb492a43b5befe932b7f9e2b9e75501" id="r_gaecb492a43b5befe932b7f9e2b9e75501"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceProcessmgrKernel.html#gaecb492a43b5befe932b7f9e2b9e75501">SceKernelProcessOpt2::power_configuration_flags</a></td></tr>
+<tr class="memdesc:gaecb492a43b5befe932b7f9e2b9e75501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selected value must fit in two bits; the default queried by ScePower is 3.  <br /></td></tr>
+<tr class="separator:gaecb492a43b5befe932b7f9e2b9e75501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -230,7 +368,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aern_2kernel_2processmgr_8h_html"><div class="ttname"><a href="ern_2kernel_2processmgr_8h.html">processmgr.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceProcessmgrForKernel_stub </div>
+</p><div class="fragment"><div class="line">SceProcessmgrForKernel_stub SceProcessmgrForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -345,6 +483,243 @@ the rest is unknown </td></tr>
 
 </div>
 </div>
+<a name="structSceKernelProcessOpt2" id="structSceKernelProcessOpt2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceKernelProcessOpt2">&#9670;&#160;</a></span>SceKernelProcessOpt2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceKernelProcessOpt2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>FW 3.60 process-creation options. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga082f34706099228bae6455f060c53f63" name="ga082f34706099228bae6455f060c53f63"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+size</td>
+<td class="fielddoc">
+Must be 0x40 on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaf83b131b0e0cd7523ccc472f836987c7" name="gaf83b131b0e0cd7523ccc472f836987c7"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+attr</td>
+<td class="fielddoc">
+Bitwise OR of <a class="el" href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82" title="Known option bits used in SceKernelProcessOpt2::attr on FW 3.60.">SceKernelProcessOptAttribute</a> values. FW 3.60 does not reject unlisted bits, whose purpose is unknown. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaae5fe5ecb76334ffca86b202366f522a" name="gaae5fe5ecb76334ffca86b202366f522a"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+cpu_affinity_mask</td>
+<td class="fielddoc">
+Four-bit mask in bits 0-3 or bits 16-19; 0 selects the default. Do not combine the two encodings. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7512d00c0ecdeab466c42d4116d91e40" name="ga7512d00c0ecdeab466c42d4116d91e40"></a><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a></td>
+<td class="fieldname">
+init_priority</td>
+<td class="fielddoc">
+Initial main-thread priority when selected; otherwise the process-image value or 0x10000100 is used. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga5a0dd46506770e8e63c81bbd3db2aa0f" name="ga5a0dd46506770e8e63c81bbd3db2aa0f"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+stack_size</td>
+<td class="fielddoc">
+Main-thread stack size when selected; otherwise the process-image value or 0x40000 is used. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga34de4b2bac29979db7a43b7f7298e39f" name="ga34de4b2bac29979db7a43b7f7298e39f"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+Ignored on FW 3.60. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga2b56179b188633e7445ddeeacf9dabf4" name="ga2b56179b188633e7445ddeeacf9dabf4"></a><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a></td>
+<td class="fieldname">
+budget_id</td>
+<td class="fielddoc">
+Budget selector or process-budget UID; the default selector is <a class="el" href="group__SceProcessmgrKernel.html#gad53259cf5147111e67ca8ee86d74df29" title="Select the built-in full-game process budget.">SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga17615e1fefc3500655f6b10bb5ceb4b8" name="ga17615e1fefc3500655f6b10bb5ceb4b8"></a><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a></td>
+<td class="fieldname">
+parent_pid</td>
+<td class="fielddoc">
+Parent process ID; the calling process's ID is used when this field is not selected. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga5b5699afb0de5271614f3e46b175bc4a" name="ga5b5699afb0de5271614f3e46b175bc4a"></a><a class="el" href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">SceKernelProcessExitSpawnMode</a></td>
+<td class="fieldname">
+process_exit_spawn_mode</td>
+<td class="fielddoc">
+Exit-spawn handling mode when selected. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaabca79efc7842e7f31e488146ef9be7b" name="gaabca79efc7842e7f31e488146ef9be7b"></a><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a></td>
+<td class="fieldname">
+process_exit_spawn_pid</td>
+<td class="fielddoc">
+Pending exit-spawn PID to reuse in enabled mode; zero allocates a new object. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga388fd0cef62490d11974b348c254a9c3" name="ga388fd0cef62490d11974b348c254a9c3"></a>const void *</td>
+<td class="fieldname">
+klicensee</td>
+<td class="fielddoc">
+Pointer to a 16-byte klicensee when selected. </td></tr>
+<tr><td class="fieldtype">
+<a id="gab4e6ab37877728daf84b6465d442b334" name="gab4e6ab37877728daf84b6465d442b334"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+max_open_files</td>
+<td class="fielddoc">
+Maximum open-file count when selected; default is 64. </td></tr>
+<tr><td class="fieldtype">
+<a id="gafb42c2a03c7ab0e26a5f18318e050157" name="gafb42c2a03c7ab0e26a5f18318e050157"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+max_directory_open_level</td>
+<td class="fielddoc">
+Maximum directory-open nesting level when selected; default is 10. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1ce8258baf35463bf46f3133a665d60d" name="ga1ce8258baf35463bf46f3133a665d60d"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+unique_heap_size</td>
+<td class="fielddoc">
+Required and nonzero when selected by attr. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaed9d2f46984725122074d59c18e5be88" name="gaed9d2f46984725122074d59c18e5be88"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+display_resolution_flags</td>
+<td class="fielddoc">
+Selected value must use only bit 0 for 1280-wide modes and bit 1 for 1440/1920-wide modes. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaecb492a43b5befe932b7f9e2b9e75501" name="gaecb492a43b5befe932b7f9e2b9e75501"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+power_configuration_flags</td>
+<td class="fielddoc">
+Selected value must fit in two bits; the default queried by ScePower is 3. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="gaa2e2679c3fcfa02669cdd7d5c2b41d2f" name="gaa2e2679c3fcfa02669cdd7d5c2b41d2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa2e2679c3fcfa02669cdd7d5c2b41d2f">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_TYPE_GAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_TYPE_GAME&#160;&#160;&#160;(0x01000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a0828e320f8756577ea28d0759700fe" name="ga8a0828e320f8756577ea28d0759700fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a0828e320f8756577ea28d0759700fe">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_TYPE_MINI_APPLICATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_TYPE_MINI_APPLICATION&#160;&#160;&#160;(0x02000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga95a69549f9315a081a0bf6610539ce86" name="ga95a69549f9315a081a0bf6610539ce86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga95a69549f9315a081a0bf6610539ce86">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_TYPE_SYSTEM_APPLICATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_TYPE_SYSTEM_APPLICATION&#160;&#160;&#160;(0x04000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac13dfe30f85cdb18cbf1442882428c93" name="gac13dfe30f85cdb18cbf1442882428c93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac13dfe30f85cdb18cbf1442882428c93">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_TYPE_KERNEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_TYPE_KERNEL&#160;&#160;&#160;(0x05000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used by the kernel process object; rejected by the FW 3.60 create/spawn APIs. </p>
+
+</div>
+</div>
+<a id="ga9bcccaef1d0eacdbad74aebf76f19704" name="ga9bcccaef1d0eacdbad74aebf76f19704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9bcccaef1d0eacdbad74aebf76f19704">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_START_FLAG_DEBUG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_START_FLAG_DEBUG&#160;&#160;&#160;(0x80000000U)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests a debug-suspended start; OR into the type passed to a spawn function. </p>
+
+</div>
+</div>
+<a id="ga8783df5109c6d5b788e9e472ed247178" name="ga8783df5109c6d5b788e9e472ed247178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8783df5109c6d5b788e9e472ed247178">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_CURRENT_PROCESS_BUDGET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_CURRENT_PROCESS_BUDGET&#160;&#160;&#160;(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select the calling process's built-in game or system-application budget. </p>
+
+</div>
+</div>
+<a id="gad53259cf5147111e67ca8ee86d74df29" name="gad53259cf5147111e67ca8ee86d74df29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad53259cf5147111e67ca8ee86d74df29">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET&#160;&#160;&#160;(2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select the built-in full-game process budget. </p>
+
+</div>
+</div>
+<a id="gad16f13574f41e185ee7ff863c7cb2332" name="gad16f13574f41e185ee7ff863c7cb2332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad16f13574f41e185ee7ff863c7cb2332">&#9670;&#160;</a></span>SCE_KERNEL_PROCESS_SYSTEM_APPLICATION_PROCESS_BUDGET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SCE_KERNEL_PROCESS_SYSTEM_APPLICATION_PROCESS_BUDGET&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select the built-in system-application process budget. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga337851539a6ec21c154d8fbdadc63eaf" name="ga337851539a6ec21c154d8fbdadc63eaf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga337851539a6ec21c154d8fbdadc63eaf">&#9670;&#160;</a></span>SceKernelProcessType <span class="overload">[1/2]</span></h2>
@@ -382,6 +757,20 @@ the rest is unknown </td></tr>
       <table class="memname">
         <tr>
           <td class="memname">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceProcessmgrKernel.html#ga5fd5556a01c9d9cc7b987a4172c1d28a">SceKernelTime</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6fad43c50151a4bb8ac1e2b4ea52e146" name="ga6fad43c50151a4bb8ac1e2b4ea52e146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6fad43c50151a4bb8ac1e2b4ea52e146">&#9670;&#160;</a></span>SceUIDProcessObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a> <a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -468,9 +857,77 @@ the rest is unknown </td></tr>
 
 </div>
 </div>
+<a id="ga1e68bf0e0b461322806220c963abba82" name="ga1e68bf0e0b461322806220c963abba82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1e68bf0e0b461322806220c963abba82">&#9670;&#160;</a></span>SceKernelProcessOptAttribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82">SceKernelProcessOptAttribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Known option bits used in <a class="el" href="group__SceProcessmgrKernel.html#gaf83b131b0e0cd7523ccc472f836987c7" title="Bitwise OR of SceKernelProcessOptAttribute values. FW 3.60 does not reject unlisted bits,...">SceKernelProcessOpt2::attr</a> on FW 3.60. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a76d495885a332a38ffa7f48486c26062" name="gga1e68bf0e0b461322806220c963abba82a76d495885a332a38ffa7f48486c26062"></a>SCE_KERNEL_PROCESS_OPT_ATTR_CPU_AFFINITY_MASK&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#gaae5fe5ecb76334ffca86b202366f522a" title="Four-bit mask in bits 0-3 or bits 16-19; 0 selects the default. Do not combine the two encodings.">SceKernelProcessOpt2::cpu_affinity_mask</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a33336ed2f9bc59db134b7085930a910a" name="gga1e68bf0e0b461322806220c963abba82a33336ed2f9bc59db134b7085930a910a"></a>SCE_KERNEL_PROCESS_OPT_ATTR_BUDGET_ID&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#ga2b56179b188633e7445ddeeacf9dabf4" title="Budget selector or process-budget UID; the default selector is SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_B...">SceKernelProcessOpt2::budget_id</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82ae741c018a293ca546a6cb1790a5e5332" name="gga1e68bf0e0b461322806220c963abba82ae741c018a293ca546a6cb1790a5e5332"></a>SCE_KERNEL_PROCESS_OPT_ATTR_PARENT_PROCESS_ID&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#ga17615e1fefc3500655f6b10bb5ceb4b8" title="Parent process ID; the calling process&#39;s ID is used when this field is not selected.">SceKernelProcessOpt2::parent_pid</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82abb15ef3eb2c6a22a4f6d33dc1bdaba57" name="gga1e68bf0e0b461322806220c963abba82abb15ef3eb2c6a22a4f6d33dc1bdaba57"></a>SCE_KERNEL_PROCESS_OPT_ATTR_PROCESS_EXIT_SPAWN&#160;</td><td class="fielddoc"><p>Use the exit-spawn mode and PID. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a53d6347631bf955589f7976a2d833b5a" name="gga1e68bf0e0b461322806220c963abba82a53d6347631bf955589f7976a2d833b5a"></a>SCE_KERNEL_PROCESS_OPT_ATTR_KLICENSEE&#160;</td><td class="fielddoc"><p>Copy the 16-byte klicensee. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a06c75c514c8fb387acb9d0a6d0e60ed3" name="gga1e68bf0e0b461322806220c963abba82a06c75c514c8fb387acb9d0a6d0e60ed3"></a>SCE_KERNEL_PROCESS_OPT_ATTR_MAX_OPEN_FILES&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#gab4e6ab37877728daf84b6465d442b334" title="Maximum open-file count when selected; default is 64.">SceKernelProcessOpt2::max_open_files</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82aea3faca77ddcf2b68ae9c44bfaf72990" name="gga1e68bf0e0b461322806220c963abba82aea3faca77ddcf2b68ae9c44bfaf72990"></a>SCE_KERNEL_PROCESS_OPT_ATTR_MAX_DIRECTORY_OPEN_LEVEL&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#gafb42c2a03c7ab0e26a5f18318e050157" title="Maximum directory-open nesting level when selected; default is 10.">SceKernelProcessOpt2::max_directory_open_level</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82ad92d4d0d881ead40a714c93e966b8e4f" name="gga1e68bf0e0b461322806220c963abba82ad92d4d0d881ead40a714c93e966b8e4f"></a>SCE_KERNEL_PROCESS_OPT_ATTR_UNIQUE_HEAP_SIZE&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#ga1ce8258baf35463bf46f3133a665d60d" title="Required and nonzero when selected by attr.">SceKernelProcessOpt2::unique_heap_size</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82ad233e6eb4c524c861f94b3eabf781f41" name="gga1e68bf0e0b461322806220c963abba82ad233e6eb4c524c861f94b3eabf781f41"></a>SCE_KERNEL_PROCESS_OPT_ATTR_DISPLAY_RESOLUTION_FLAGS&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#gaed9d2f46984725122074d59c18e5be88" title="Selected value must use only bit 0 for 1280-wide modes and bit 1 for 1440/1920-wide modes.">SceKernelProcessOpt2::display_resolution_flags</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a06055cb6558856e9ee9cc13ed43658bf" name="gga1e68bf0e0b461322806220c963abba82a06055cb6558856e9ee9cc13ed43658bf"></a>SCE_KERNEL_PROCESS_OPT_ATTR_POWER_CONFIGURATION_FLAGS&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#gaecb492a43b5befe932b7f9e2b9e75501" title="Selected value must fit in two bits; the default queried by ScePower is 3.">SceKernelProcessOpt2::power_configuration_flags</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a2200f127a66c852dd2c44e416caef624" name="gga1e68bf0e0b461322806220c963abba82a2200f127a66c852dd2c44e416caef624"></a>SCE_KERNEL_PROCESS_OPT_ATTR_INITIAL_PRIORITY&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#ga7512d00c0ecdeab466c42d4116d91e40" title="Initial main-thread priority when selected; otherwise the process-image value or 0x10000100 is used.">SceKernelProcessOpt2::init_priority</a> instead of the process-image value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82ad7dd20496ac61c0cfc7faf760f8f8db4" name="gga1e68bf0e0b461322806220c963abba82ad7dd20496ac61c0cfc7faf760f8f8db4"></a>SCE_KERNEL_PROCESS_OPT_ATTR_STACK_SIZE&#160;</td><td class="fielddoc"><p>Use <a class="el" href="group__SceProcessmgrKernel.html#ga5a0dd46506770e8e63c81bbd3db2aa0f" title="Main-thread stack size when selected; otherwise the process-image value or 0x40000 is used.">SceKernelProcessOpt2::stack_size</a> instead of the process-image value. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82a7759933f2c4f82dc14eb8b6b251cda8d" name="gga1e68bf0e0b461322806220c963abba82a7759933f2c4f82dc14eb8b6b251cda8d"></a>SCE_KERNEL_PROCESS_OPT_ATTR_REPORT_LOAD_PROGRESS&#160;</td><td class="fielddoc"><p>Request process-image load-progress reports. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga1e68bf0e0b461322806220c963abba82aab81479635c06d6facd7cc944c226f8f" name="gga1e68bf0e0b461322806220c963abba82aab81479635c06d6facd7cc944c226f8f"></a>SCE_KERNEL_PROCESS_OPT_ATTR_SUPPRESS_START_NOTIFICATIONS&#160;</td><td class="fielddoc"><p>Suppress the normal Sysroot process-start notifications. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gae6b1f122ef574c124e6e253dc7d58182" name="gae6b1f122ef574c124e6e253dc7d58182"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6b1f122ef574c124e6e253dc7d58182">&#9670;&#160;</a></span>SceKernelProcessExitSpawnMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">SceKernelProcessExitSpawnMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process-object handling mode selected during process creation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae6b1f122ef574c124e6e253dc7d58182ad4843a0cd49d6d632e6ec255e6a7e9b3" name="ggae6b1f122ef574c124e6e253dc7d58182ad4843a0cd49d6d632e6ec255e6a7e9b3"></a>SCE_KERNEL_PROCESS_EXIT_SPAWN_MODE_NORMAL&#160;</td><td class="fielddoc"><p>Allocate an ordinary new process object. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggae6b1f122ef574c124e6e253dc7d58182a82c82ffc87a288d78ceb1146457df3f7" name="ggae6b1f122ef574c124e6e253dc7d58182a82c82ffc87a288d78ceb1146457df3f7"></a>SCE_KERNEL_PROCESS_EXIT_SPAWN_MODE_ENABLED&#160;</td><td class="fielddoc"><p>Enable exit-spawn handling and reuse a matching prepared object when requested. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga9096b15aff065259faae93c7ce23f577" name="ga9096b15aff065259faae93c7ce23f577"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9096b15aff065259faae93c7ce23f577">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9096b15aff065259faae93c7ce23f577">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -498,7 +955,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="ga34870f1e1be9758fbad54254ab5aee26" name="ga34870f1e1be9758fbad54254ab5aee26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34870f1e1be9758fbad54254ab5aee26">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34870f1e1be9758fbad54254ab5aee26">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,7 +983,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="gae49572e6f71ee3efca6804195100a742" name="gae49572e6f71ee3efca6804195100a742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae49572e6f71ee3efca6804195100a742">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae49572e6f71ee3efca6804195100a742">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -554,7 +1011,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="gae8866e954e641aa111f4a94b6d7b69b8" name="gae8866e954e641aa111f4a94b6d7b69b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae8866e954e641aa111f4a94b6d7b69b8">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8866e954e641aa111f4a94b6d7b69b8">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -582,7 +1039,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="gac396217ca06fc5f539a8e1ed3b470689" name="gac396217ca06fc5f539a8e1ed3b470689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac396217ca06fc5f539a8e1ed3b470689">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gac396217ca06fc5f539a8e1ed3b470689">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -610,7 +1067,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="ga5e00129f26659eb5cda7c5fdda38c917" name="ga5e00129f26659eb5cda7c5fdda38c917"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e00129f26659eb5cda7c5fdda38c917">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e00129f26659eb5cda7c5fdda38c917">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -652,6 +1109,44 @@ the rest is unknown </td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Previous VitaSDK name and prototype for <a class="el" href="group__SceProcessmgrKernel.html#gaa701f3c3fa47ebf09e4e9e0ba3aa02a2" title="Resolves a process ID to its internal process object without acquiring a reference.">ksceKernelUIDtoProcess</a>. </p>
+<p>This spelling remains a separately generated stub for backwards compatibility. Its return value is the same borrowed internal process object pointer; new code should use <a class="el" href="group__SceProcessmgrKernel.html#gaa701f3c3fa47ebf09e4e9e0ba3aa02a2" title="Resolves a process ID to its internal process object without acquiring a reference.">ksceKernelUIDtoProcess</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process ID, or 0 for the calling process.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Process object pointer, or NULL when the process cannot be resolved. </dd></dl>
+
+</div>
+</div>
+<a id="gaa701f3c3fa47ebf09e4e9e0ba3aa02a2" name="gaa701f3c3fa47ebf09e4e9e0ba3aa02a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa701f3c3fa47ebf09e4e9e0ba3aa02a2">&#9670;&#160;</a></span>ksceKernelUIDtoProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceProcessmgrKernel.html#ga6fad43c50151a4bb8ac1e2b4ea52e146">SceUIDProcessObject</a> * ksceKernelUIDtoProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolves a process ID to its internal process object without acquiring a reference. </p>
+<p>The returned pointer is borrowed and remains valid only while the process object exists. PID 0 selects the calling process.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process ID, or 0 for the calling process.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Process object pointer, or NULL when the process cannot be resolved. </dd></dl>
 
 </div>
 </div>
@@ -770,7 +1265,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="ga3640c887535f8196c39fda4cb274ad22" name="ga3640c887535f8196c39fda4cb274ad22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3640c887535f8196c39fda4cb274ad22">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3640c887535f8196c39fda4cb274ad22">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[7/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,17 +1292,45 @@ the rest is unknown </td></tr>
 
 </div>
 </div>
-<a id="gaf13c87d065bae35665bc4a5906871adc" name="gaf13c87d065bae35665bc4a5906871adc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf13c87d065bae35665bc4a5906871adc">&#9670;&#160;</a></span>ksceKernelCreateProcess()</h2>
+<a id="ga6ed9f6b1d73a5a446cc0d8176d37e193" name="ga6ed9f6b1d73a5a446cc0d8176d37e193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ed9f6b1d73a5a446cc0d8176d37e193">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> ksceKernelCreateProcess </td>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x40&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaef772435f481c53d3374606d8140dfb3" name="gaef772435f481c53d3374606d8140dfb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef772435f481c53d3374606d8140dfb3">&#9670;&#160;</a></span>ksceKernelCreateProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> ksceKernelCreateProcess </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>titleid</em>, </td>
+          <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -835,17 +1358,18 @@ the rest is unknown </td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Create process. </p>
+<p>Create a dormant process. </p>
+<p>FW 3.60 accepts game, mini-application, and system-application process types. A non-NULL option must have a size of exactly 0x40. Passing NULL selects the built-in full-game budget and the documented field defaults. Creation is rejected in interrupt context and when either the global or selected-budget process count has already reached 16. The option block and its klicensee bytes must remain valid until this function returns; they are not used afterwards.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">titleid</td><td>- The TitleId of the app to open. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- The process type. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- Path of the process image. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- The create process option. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Non-NULL process name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Process type. Bit 31 is discarded by this function; use a spawn or start function to request debug suspension. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Non-NULL process-image path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>Optional FW 3.60 process options. NULL uses defaults.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>PID of the created process on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Process ID on success, or &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -998,11 +1522,11 @@ the rest is unknown </td></tr>
 <p>Get the process module control block. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">-</td><td>The target process id.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The target process ID.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The process module cb pointer </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The process module control-block pointer. </dd></dl>
 
 </div>
 </div>
@@ -1126,6 +1650,404 @@ the rest is unknown </td></tr>
 
 </div>
 </div>
+<a id="gad6f19e2500e1cbb44c73204c73fca47f" name="gad6f19e2500e1cbb44c73204c73fca47f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6f19e2500e1cbb44c73204c73fca47f">&#9670;&#160;</a></span>ksceKernelGetProcessTimeCore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetProcessTimeCore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8">SceKernelSysClock</a> *&#160;</td>
+          <td class="paramname"><em>time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the current process's elapsed time in microseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">time</td><td>Non-NULL output for the elapsed time.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gab53b2518c98a3e0a87862863673de70e" name="gab53b2518c98a3e0a87862863673de70e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab53b2518c98a3e0a87862863673de70e">&#9670;&#160;</a></span>ksceKernelGetProcessTimeLowCore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> ksceKernelGetProcessTimeLowCore </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the wrapping low 32 bits of the current process's elapsed time in microseconds. </p>
+
+</div>
+</div>
+<a id="gabc5d4491bc1ab8ea9132587d8f0bb2e2" name="gabc5d4491bc1ab8ea9132587d8f0bb2e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabc5d4491bc1ab8ea9132587d8f0bb2e2">&#9670;&#160;</a></span>ksceKernelGetRemoteProcessTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelGetRemoteProcessTime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaf51ef41af830ba6422cc9c5106fb68b8">SceKernelSysClock</a> *&#160;</td>
+          <td class="paramname"><em>time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a process's running elapsed time or stored final time in microseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Process ID, or 0 for the current process. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">time</td><td>Non-NULL output for the elapsed time.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf6916e3679536efee4fb7caacc447d52" name="gaf6916e3679536efee4fb7caacc447d52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6916e3679536efee4fb7caacc447d52">&#9670;&#160;</a></span>ksceKernelIsCDialogAvailable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceKernelIsCDialogAvailable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tests whether the current process budget reserves common-dialog memory. </p>
+<dl class="section return"><dt>Returns</dt><dd>1 when available, 0 when unavailable, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga5dcd500330ee13e99f2e0e97d012957c" name="ga5dcd500330ee13e99f2e0e97d012957c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dcd500330ee13e99f2e0e97d012957c">&#9670;&#160;</a></span>ksceKernelKillProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelKillProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td>
+          <td class="paramname"><em>option</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Requests process termination. </p>
+<p>Option 0 requests normal termination, option 1 selects the alternate 0x20 process-event path, and option 2 prepares the process for exit-spawn reuse. Other option values are rejected on FW 3.60. This function cannot be called from interrupt or nested-exception context.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Target process ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">option</td><td>Termination option described above.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga88b9e23b4cd675e8a239bf60eac7e8a0" name="ga88b9e23b4cd675e8a239bf60eac7e8a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88b9e23b4cd675e8a239bf60eac7e8a0">&#9670;&#160;</a></span>ksceKernelSpawnProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> ksceKernelSpawnProcess </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>arg_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>arg_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates and starts a process. </p>
+<p>A failure while starting automatically kills the newly created process.</p>
+<p>For a normal start, the argument block must remain valid until this function returns; it is not used afterwards. For a debug-suspended start, the preload thread keeps the pointer, so the argument block must remain valid until the process is resumed and the main thread is started.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Non-NULL process name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Process type, optionally ORed with <a class="el" href="group__SceProcessmgrKernel.html#ga9bcccaef1d0eacdbad74aebf76f19704" title="Requests a debug-suspended start; OR into the type passed to a spawn function.">SCE_KERNEL_PROCESS_START_FLAG_DEBUG</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Non-NULL process-image path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_size</td><td>Argument-block size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_block</td><td>Optional argument block; may be NULL when arg_size is 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>Optional FW 3.60 process options. NULL uses defaults.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Process ID on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gae5a8aa34743d3f7ea34e2c82d5869dcc" name="gae5a8aa34743d3f7ea34e2c82d5869dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae5a8aa34743d3f7ea34e2c82d5869dcc">&#9670;&#160;</a></span>ksceKernelSpawnProcessExt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> ksceKernelSpawnProcessExt </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceProcessmgrKernel.html#ga337851539a6ec21c154d8fbdadc63eaf">SceKernelProcessType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>arg_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>arg_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceProcessmgrKernel.html#structSceKernelProcessOpt2">SceKernelProcessOpt2</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>preload_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extended form of <a class="el" href="group__SceProcessmgrKernel.html#ga88b9e23b4cd675e8a239bf60eac7e8a0" title="Creates and starts a process.">ksceKernelSpawnProcess</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>Non-NULL process name. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Process type, optionally ORed with <a class="el" href="group__SceProcessmgrKernel.html#ga9bcccaef1d0eacdbad74aebf76f19704" title="Requests a debug-suspended start; OR into the type passed to a spawn function.">SCE_KERNEL_PROCESS_START_FLAG_DEBUG</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>Non-NULL process-image path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_size</td><td>Argument-block size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_block</td><td>Optional argument block; may be NULL when arg_size is 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>Optional FW 3.60 process options. NULL uses defaults. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">preload_flags</td><td>Flags forwarded to the preloading-module loader. AppMgr uses bit 0 when its GXM-debug setting is enabled. A debug-suspended start additionally sets bit 0x00020000 internally.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Process ID on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga7f22a5776f1dd16596fc7d1e2a181322" name="ga7f22a5776f1dd16596fc7d1e2a181322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f22a5776f1dd16596fc7d1e2a181322">&#9670;&#160;</a></span>ksceKernelStartProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelStartProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>start_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>arg_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>arg_block</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts a dormant process. </p>
+<p>On FW 3.60, only bit 31 of start_flags has an effect: it requests a start suspended for debugging. This form passes zero preloading flags. For a normal start, the argument block must remain valid until this function returns; it is not used afterwards. For a debug-suspended start, the pointer is kept, so the argument block must remain valid until the process is resumed and the main thread is started.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Dormant process ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_flags</td><td>Start flags. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_size</td><td>Argument-block size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_block</td><td>Optional argument block; may be NULL when arg_size is 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga257ed1198598d6810d63abb038f86995" name="ga257ed1198598d6810d63abb038f86995"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga257ed1198598d6810d63abb038f86995">&#9670;&#160;</a></span>ksceKernelStartProcessExt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelStartProcessExt </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>start_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>arg_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>arg_block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>preload_flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extended form of <a class="el" href="group__SceProcessmgrKernel.html#ga7f22a5776f1dd16596fc7d1e2a181322" title="Starts a dormant process.">ksceKernelStartProcess</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>Dormant process ID. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">start_flags</td><td>Start flags; only bit 31 affects FW 3.60. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_size</td><td>Argument-block size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">arg_block</td><td>Optional argument block; may be NULL when arg_size is 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">preload_flags</td><td>Flags forwarded to the preloading-module loader.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga14fed8ba7456c1d683c4959280358518" name="ga14fed8ba7456c1d683c4959280358518"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga14fed8ba7456c1d683c4959280358518">&#9670;&#160;</a></span>sec</h2>
@@ -1170,7 +2092,7 @@ the rest is unknown </td></tr>
 </div>
 </div>
 <a id="ga047c8b9d7085d156a18657b1b63b1e4e" name="ga047c8b9d7085d156a18657b1b63b1e4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga047c8b9d7085d156a18657b1b63b1e4e">&#9670;&#160;</a></span>size</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga047c8b9d7085d156a18657b1b63b1e4e">&#9670;&#160;</a></span>size <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1272,6 +2194,262 @@ the rest is unknown </td></tr>
 </div><div class="memdoc">
 
 <p>the rest is unknown </p>
+
+</div>
+</div>
+<a id="ga082f34706099228bae6455f060c53f63" name="ga082f34706099228bae6455f060c53f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga082f34706099228bae6455f060c53f63">&#9670;&#160;</a></span>size <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelProcessOpt2::size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Must be 0x40 on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gaf83b131b0e0cd7523ccc472f836987c7" name="gaf83b131b0e0cd7523ccc472f836987c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf83b131b0e0cd7523ccc472f836987c7">&#9670;&#160;</a></span>attr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelProcessOpt2::attr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Bitwise OR of <a class="el" href="group__SceProcessmgrKernel.html#ga1e68bf0e0b461322806220c963abba82" title="Known option bits used in SceKernelProcessOpt2::attr on FW 3.60.">SceKernelProcessOptAttribute</a> values. FW 3.60 does not reject unlisted bits, whose purpose is unknown. </p>
+
+</div>
+</div>
+<a id="gaae5fe5ecb76334ffca86b202366f522a" name="gaae5fe5ecb76334ffca86b202366f522a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae5fe5ecb76334ffca86b202366f522a">&#9670;&#160;</a></span>cpu_affinity_mask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelProcessOpt2::cpu_affinity_mask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Four-bit mask in bits 0-3 or bits 16-19; 0 selects the default. Do not combine the two encodings. </p>
+
+</div>
+</div>
+<a id="ga7512d00c0ecdeab466c42d4116d91e40" name="ga7512d00c0ecdeab466c42d4116d91e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7512d00c0ecdeab466c42d4116d91e40">&#9670;&#160;</a></span>init_priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> SceKernelProcessOpt2::init_priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initial main-thread priority when selected; otherwise the process-image value or 0x10000100 is used. </p>
+
+</div>
+</div>
+<a id="ga5a0dd46506770e8e63c81bbd3db2aa0f" name="ga5a0dd46506770e8e63c81bbd3db2aa0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5a0dd46506770e8e63c81bbd3db2aa0f">&#9670;&#160;</a></span>stack_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelProcessOpt2::stack_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main-thread stack size when selected; otherwise the process-image value or 0x40000 is used. </p>
+
+</div>
+</div>
+<a id="ga34de4b2bac29979db7a43b7f7298e39f" name="ga34de4b2bac29979db7a43b7f7298e39f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34de4b2bac29979db7a43b7f7298e39f">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelProcessOpt2::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ignored on FW 3.60. </p>
+
+</div>
+</div>
+<a id="ga2b56179b188633e7445ddeeacf9dabf4" name="ga2b56179b188633e7445ddeeacf9dabf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b56179b188633e7445ddeeacf9dabf4">&#9670;&#160;</a></span>budget_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> SceKernelProcessOpt2::budget_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Budget selector or process-budget UID; the default selector is <a class="el" href="group__SceProcessmgrKernel.html#gad53259cf5147111e67ca8ee86d74df29" title="Select the built-in full-game process budget.">SCE_KERNEL_PROCESS_FULL_GAME_PROCESS_BUDGET</a>. </p>
+
+</div>
+</div>
+<a id="ga17615e1fefc3500655f6b10bb5ceb4b8" name="ga17615e1fefc3500655f6b10bb5ceb4b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17615e1fefc3500655f6b10bb5ceb4b8">&#9670;&#160;</a></span>parent_pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> SceKernelProcessOpt2::parent_pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parent process ID; the calling process's ID is used when this field is not selected. </p>
+
+</div>
+</div>
+<a id="ga5b5699afb0de5271614f3e46b175bc4a" name="ga5b5699afb0de5271614f3e46b175bc4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b5699afb0de5271614f3e46b175bc4a">&#9670;&#160;</a></span>process_exit_spawn_mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceProcessmgrKernel.html#gae6b1f122ef574c124e6e253dc7d58182">SceKernelProcessExitSpawnMode</a> SceKernelProcessOpt2::process_exit_spawn_mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Exit-spawn handling mode when selected. </p>
+
+</div>
+</div>
+<a id="gaabca79efc7842e7f31e488146ef9be7b" name="gaabca79efc7842e7f31e488146ef9be7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabca79efc7842e7f31e488146ef9be7b">&#9670;&#160;</a></span>process_exit_spawn_pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> SceKernelProcessOpt2::process_exit_spawn_pid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pending exit-spawn PID to reuse in enabled mode; zero allocates a new object. </p>
+
+</div>
+</div>
+<a id="ga388fd0cef62490d11974b348c254a9c3" name="ga388fd0cef62490d11974b348c254a9c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga388fd0cef62490d11974b348c254a9c3">&#9670;&#160;</a></span>klicensee</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const void* SceKernelProcessOpt2::klicensee</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to a 16-byte klicensee when selected. </p>
+
+</div>
+</div>
+<a id="gab4e6ab37877728daf84b6465d442b334" name="gab4e6ab37877728daf84b6465d442b334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4e6ab37877728daf84b6465d442b334">&#9670;&#160;</a></span>max_open_files</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelProcessOpt2::max_open_files</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum open-file count when selected; default is 64. </p>
+
+</div>
+</div>
+<a id="gafb42c2a03c7ab0e26a5f18318e050157" name="gafb42c2a03c7ab0e26a5f18318e050157"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafb42c2a03c7ab0e26a5f18318e050157">&#9670;&#160;</a></span>max_directory_open_level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelProcessOpt2::max_directory_open_level</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum directory-open nesting level when selected; default is 10. </p>
+
+</div>
+</div>
+<a id="ga1ce8258baf35463bf46f3133a665d60d" name="ga1ce8258baf35463bf46f3133a665d60d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ce8258baf35463bf46f3133a665d60d">&#9670;&#160;</a></span>unique_heap_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceKernelProcessOpt2::unique_heap_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Required and nonzero when selected by attr. </p>
+
+</div>
+</div>
+<a id="gaed9d2f46984725122074d59c18e5be88" name="gaed9d2f46984725122074d59c18e5be88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed9d2f46984725122074d59c18e5be88">&#9670;&#160;</a></span>display_resolution_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelProcessOpt2::display_resolution_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selected value must use only bit 0 for 1280-wide modes and bit 1 for 1440/1920-wide modes. </p>
+
+</div>
+</div>
+<a id="gaecb492a43b5befe932b7f9e2b9e75501" name="gaecb492a43b5befe932b7f9e2b9e75501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecb492a43b5befe932b7f9e2b9e75501">&#9670;&#160;</a></span>power_configuration_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceKernelProcessOpt2::power_configuration_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selected value must fit in two bits; the default queried by ScePower is 3. </p>
 
 </div>
 </div>

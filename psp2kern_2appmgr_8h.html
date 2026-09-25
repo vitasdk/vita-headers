@@ -74,12 +74,14 @@ $(document).ready(function(){initNavTree('psp2kern_2appmgr_8h.html',''); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">appmgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2kern_2types_8h_source.html">psp2kern/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2common_2appmgr_8h_source.html">psp2common/appmgr.h</a>&gt;</code><br />
 </div>
 <p><a href="psp2kern_2appmgr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,6 +89,52 @@ $(document).ready(function(){initNavTree('psp2kern_2appmgr_8h.html',''); initRes
 Data Structures</h2></td></tr>
 <tr class="memitem:structSceAppMgrLaunchParam" id="r_structSceAppMgrLaunchParam"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a></td></tr>
 <tr class="separator:structSceAppMgrLaunchParam"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppMgrLaunchAppByPathOpt" id="r_structSceAppMgrLaunchAppByPathOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchAppByPathOpt">SceAppMgrLaunchAppByPathOpt</a></td></tr>
+<tr class="memdesc:structSceAppMgrLaunchAppByPathOpt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Path-mapping options for <a class="el" href="group__SceAppMgrKernel.html#gabffda1e0039eee002e9d3c5d9fdd9a00" title="Launch an application from an executable path.">ksceAppMgrLaunchAppByPath</a>.  <a href="group__SceAppMgrKernel.html#structSceAppMgrLaunchAppByPathOpt">More...</a><br /></td></tr>
+<tr class="separator:structSceAppMgrLaunchAppByPathOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceAppMgrDrmOpt" id="r_structSceAppMgrDrmOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrDrmOpt">SceAppMgrDrmOpt</a></td></tr>
+<tr class="separator:structSceAppMgrDrmOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga31835e11770deabc74bac89f6d6c3410" id="r_ga31835e11770deabc74bac89f6d6c3410"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga31835e11770deabc74bac89f6d6c3410">SceAppMgrLaunchParamAttr</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410a5c82bca819e81c19900b258fa845920d">SCE_APPMGR_LAUNCH_PARAM_ATTR_CPU_AFFINITY_MASK</a> = 0x00001000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410aa9cf287d60980b684b5f7de8eeec0b56">SCE_APPMGR_LAUNCH_PARAM_ATTR_BUDGET_ID</a> = 0x00004000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410ae9974d69578dcf809490693607fbcbee">SCE_APPMGR_LAUNCH_PARAM_ATTR_PARENT_PROCESS_ID</a> = 0x00010000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410adf3b8a3b879cb355b1645b58e134288d">SCE_APPMGR_LAUNCH_PARAM_ATTR_PROCESS_EXIT_SPAWN</a> = 0x00020000
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410af1a3ceaa3750c524bde29337af87aebe">SCE_APPMGR_LAUNCH_PARAM_ATTR_KLICENSEE</a> = 0x00040000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410afbc62923b838c361dafdf95812cf4f52">SCE_APPMGR_LAUNCH_PARAM_ATTR_MAX_FILE_HANDLES</a> = 0x00080000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410a27af49dd5569002d25e8ca7e27a5cef3">SCE_APPMGR_LAUNCH_PARAM_ATTR_UNIQUE_HEAP_SIZE</a> = 0x00200000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410aa9fd12b6b53bb7dac3b9af112d9c48ef">SCE_APPMGR_LAUNCH_PARAM_ATTR_INIT_PRIORITY</a> = 0x10000000
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410ae5adbe62ae10b18995ae823adfe41f27">SCE_APPMGR_LAUNCH_PARAM_ATTR_STACK_SIZE</a> = 0x20000000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410ac2357262642775080808be925f9fc61f">SCE_APPMGR_LAUNCH_PARAM_ATTR_REPORT_LOAD_PROGRESS</a> = 0x40000000
+, <a class="el" href="group__SceAppMgrKernel.html#gga31835e11770deabc74bac89f6d6c3410a45a0856db4d377fc263563a2487eb8dc">SCE_APPMGR_LAUNCH_PARAM_ATTR_SKIP_START_CALLBACKS</a> = 0x80000000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga31835e11770deabc74bac89f6d6c3410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute bits accepted in ::SceAppMgrLaunchParam::attr.  <a href="group__SceAppMgrKernel.html#ga31835e11770deabc74bac89f6d6c3410">More...</a><br /></td></tr>
+<tr class="separator:ga31835e11770deabc74bac89f6d6c3410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabdc1b43a741854d6724eda55f40c9f2b" id="r_gabdc1b43a741854d6724eda55f40c9f2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gabdc1b43a741854d6724eda55f40c9f2b">SceAppMgrProcessExitSpawnMode</a> { <a class="el" href="group__SceAppMgrKernel.html#ggabdc1b43a741854d6724eda55f40c9f2ba2495aa316b93047cb9c50b8e5236a731">SCE_APPMGR_PROCESS_EXIT_SPAWN_MODE_NORMAL</a> = 0
+, <a class="el" href="group__SceAppMgrKernel.html#ggabdc1b43a741854d6724eda55f40c9f2ba29102ebdc1f4a397481f589c448f7cfa">SCE_APPMGR_PROCESS_EXIT_SPAWN_MODE_ENABLED</a> = 1
+ }</td></tr>
+<tr class="memdesc:gabdc1b43a741854d6724eda55f40c9f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process-replacement modes for Processmgr's exit-spawn mechanism.  <a href="group__SceAppMgrKernel.html#gabdc1b43a741854d6724eda55f40c9f2b">More...</a><br /></td></tr>
+<tr class="separator:gabdc1b43a741854d6724eda55f40c9f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga320862413aea6277bdd69a02229e2045" id="r_ga320862413aea6277bdd69a02229e2045"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga320862413aea6277bdd69a02229e2045">SceAppMgrCloudDataMcIdLocation</a> { <a class="el" href="group__SceAppMgrKernel.html#gga320862413aea6277bdd69a02229e2045a8687011015231f5f0169071fd3be7851">SCE_APPMGR_CLOUD_DATA_MC_ID_LOCATION_AUTO</a> = 0
+, <a class="el" href="group__SceAppMgrKernel.html#gga320862413aea6277bdd69a02229e2045a4280c92ee4b1388a205838196d5bfa6b">SCE_APPMGR_CLOUD_DATA_MC_ID_LOCATION_EXTERNAL</a> = 1
+, <a class="el" href="group__SceAppMgrKernel.html#gga320862413aea6277bdd69a02229e2045a39d11fdc8a8767726ba5c7e0153ebb66">SCE_APPMGR_CLOUD_DATA_MC_ID_LOCATION_INTERNAL</a> = 2
+ }</td></tr>
+<tr class="separator:ga320862413aea6277bdd69a02229e2045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga132782997b8cbe48ed58f41c069d73ba" id="r_ga132782997b8cbe48ed58f41c069d73ba"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga132782997b8cbe48ed58f41c069d73ba">SceAppMgrDebugSetting</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAppMgrKernel.html#gga132782997b8cbe48ed58f41c069d73baa16eb6840993a3b361ac7de84b9642b30">SCE_APPMGR_DEBUG_SETTING_FAKE_NO_MEMORY_CARD</a> = 0
+, <a class="el" href="group__SceAppMgrKernel.html#gga132782997b8cbe48ed58f41c069d73baa69661daa6e5f6c72da5dde7631c0ce0e">SCE_APPMGR_DEBUG_SETTING_UPGRADABLE</a> = 1
+, <a class="el" href="group__SceAppMgrKernel.html#gga132782997b8cbe48ed58f41c069d73baa1c735da2d85461aa7949de9b5faff61e">SCE_APPMGR_DEBUG_SETTING_BUTTON_ASSIGN</a> = 2
+, <a class="el" href="group__SceAppMgrKernel.html#gga132782997b8cbe48ed58f41c069d73baa10a3eeaae5fe629939dea87c86bcf5a2">SCE_APPMGR_DEBUG_SETTING_TRC_CHECK_NOTIFY</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceAppMgrKernel.html#gga132782997b8cbe48ed58f41c069d73baacb9d06957522134e233d87033ab128b1">SCE_APPMGR_DEBUG_SETTING_SHOW_DEBUG_INFO</a> = 4
+<br />
+ }</td></tr>
+<tr class="separator:ga132782997b8cbe48ed58f41c069d73ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -95,9 +143,52 @@ Functions</h2></td></tr>
 <tr class="separator:ga391e603061dc444eb22e848dc8a73692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2e2f14a9e306f112700b9860d8a3c0e" id="r_gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gac2e2f14a9e306f112700b9860d8a3c0e">VITASDK_BUILD_ASSERT_EQ</a> (0x34, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a>)</td></tr>
 <tr class="separator:gac2e2f14a9e306f112700b9860d8a3c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a9997389809ff54ec080640230c78cd" id="r_ga6a9997389809ff54ec080640230c78cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga6a9997389809ff54ec080640230c78cd">ksceAppMgrLaunchAppByPath</a> (const char *path, const char *args, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, unsigned int <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a> *param, void *unk)</td></tr>
-<tr class="memdesc:ga6a9997389809ff54ec080640230c78cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch an application for debugging.  <br /></td></tr>
-<tr class="separator:ga6a9997389809ff54ec080640230c78cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a9d39837caadf5b588180b6e606ce23" id="r_ga8a9d39837caadf5b588180b6e606ce23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga8a9d39837caadf5b588180b6e606ce23">VITASDK_BUILD_ASSERT_EQ</a> (0x814, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchAppByPathOpt">SceAppMgrLaunchAppByPathOpt</a>)</td></tr>
+<tr class="separator:ga8a9d39837caadf5b588180b6e606ce23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabffda1e0039eee002e9d3c5d9fdd9a00" id="r_gabffda1e0039eee002e9d3c5d9fdd9a00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gabffda1e0039eee002e9d3c5d9fdd9a00">ksceAppMgrLaunchAppByPath</a> (const char *path, const char *args, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> arg_size, unsigned int <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrLaunchParam">SceAppMgrLaunchParam</a> *launch_param, void *path_mapping_opt)</td></tr>
+<tr class="memdesc:gabffda1e0039eee002e9d3c5d9fdd9a00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Launch an application from an executable path.  <br /></td></tr>
+<tr class="separator:gabffda1e0039eee002e9d3c5d9fdd9a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga078ee7a14c7f23d1b8b4bc275104487f" id="r_ga078ee7a14c7f23d1b8b4bc275104487f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga078ee7a14c7f23d1b8b4bc275104487f">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrDrmOpt">SceAppMgrDrmOpt</a>)</td></tr>
+<tr class="separator:ga078ee7a14c7f23d1b8b4bc275104487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga729566ab80955fdb29657d3130e71e84" id="r_ga729566ab80955fdb29657d3130e71e84"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga729566ab80955fdb29657d3130e71e84">ksceAppMgrAcInstGetAcdirParam</a> (const char *title_id, const char *addcont_id, <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrAcInstResult">SceAppMgrAcInstResult</a> *output_data)</td></tr>
+<tr class="separator:ga729566ab80955fdb29657d3130e71e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga307f92c404a0c4b2316e45f3d9438e34" id="r_ga307f92c404a0c4b2316e45f3d9438e34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga307f92c404a0c4b2316e45f3d9438e34">ksceAppMgrAppDataMount</a> (int mount_id, char mount_point[16])</td></tr>
+<tr class="memdesc:ga307f92c404a0c4b2316e45f3d9438e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount application data for the calling process.  <br /></td></tr>
+<tr class="separator:ga307f92c404a0c4b2316e45f3d9438e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga127de34422665c5d42b287c7dc7d0d6f" id="r_ga127de34422665c5d42b287c7dc7d0d6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga127de34422665c5d42b287c7dc7d0d6f">ksceAppMgrAppDataMountById</a> (int mount_id, const char *title_id, char mount_point[16])</td></tr>
+<tr class="memdesc:ga127de34422665c5d42b287c7dc7d0d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">FW 3.60 accepts mount IDs 104, 106, 107, and 110.  <br /></td></tr>
+<tr class="separator:ga127de34422665c5d42b287c7dc7d0d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbe34f51d9b74fbd57a2a7b3da4fb613" id="r_gadbe34f51d9b74fbd57a2a7b3da4fb613"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gadbe34f51d9b74fbd57a2a7b3da4fb613">ksceAppMgrCheckContentInstallPeriod</a> (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> process_id)</td></tr>
+<tr class="separator:gadbe34f51d9b74fbd57a2a7b3da4fb613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fd25ae5197cf76a65550e16ffd55b3b" id="r_ga1fd25ae5197cf76a65550e16ffd55b3b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga1fd25ae5197cf76a65550e16ffd55b3b">ksceAppMgrCheckPfsMounted</a> (const char *path)</td></tr>
+<tr class="separator:ga1fd25ae5197cf76a65550e16ffd55b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga220b7671130c6b997adf06746182ebef" id="r_ga220b7671130c6b997adf06746182ebef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga220b7671130c6b997adf06746182ebef">ksceAppMgrCloudDataClearMcId</a> (int location)</td></tr>
+<tr class="separator:ga220b7671130c6b997adf06746182ebef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1290faffb5819941d9699c9c5a7225be" id="r_ga1290faffb5819941d9699c9c5a7225be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga1290faffb5819941d9699c9c5a7225be">ksceAppMgrCloudDataDstCreateMount</a> (const char *title_id, char mount_point[16])</td></tr>
+<tr class="separator:ga1290faffb5819941d9699c9c5a7225be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4f7de24b9fbb55052fd2d182a777d60" id="r_gad4f7de24b9fbb55052fd2d182a777d60"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gad4f7de24b9fbb55052fd2d182a777d60">ksceAppMgrCloudDataSrcMount</a> (int mode, const char *title_id, char mount_point[16])</td></tr>
+<tr class="separator:gad4f7de24b9fbb55052fd2d182a777d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga170f5b2755838071cced17557767838b" id="r_ga170f5b2755838071cced17557767838b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga170f5b2755838071cced17557767838b">ksceAppMgrDebugSettingNotifyUpdate</a> (int setting)</td></tr>
+<tr class="separator:ga170f5b2755838071cced17557767838b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0924236caa3e14f35995a6e59a514bd8" id="r_ga0924236caa3e14f35995a6e59a514bd8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga0924236caa3e14f35995a6e59a514bd8">ksceAppMgrDrmOpen</a> (const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrDrmOpt">SceAppMgrDrmOpt</a> *drm_opt)</td></tr>
+<tr class="separator:ga0924236caa3e14f35995a6e59a514bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga295cef59793ed0b18d2d4bb5e79f6129" id="r_ga295cef59793ed0b18d2d4bb5e79f6129"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga295cef59793ed0b18d2d4bb5e79f6129">ksceAppMgrFakeSaveDataCreateMount</a> (const char *path, char mount_point[16])</td></tr>
+<tr class="separator:ga295cef59793ed0b18d2d4bb5e79f6129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ed13f4bda2bc3271418e479de6162f2" id="r_ga0ed13f4bda2bc3271418e479de6162f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga0ed13f4bda2bc3271418e479de6162f2">ksceAppMgrGameDataMount</a> (const char *app_path, const char *patch_path, const char *rif_path, char mount_point[16])</td></tr>
+<tr class="separator:ga0ed13f4bda2bc3271418e479de6162f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa2078460cd9a92bf604d924219ca4aca" id="r_gaa2078460cd9a92bf604d924219ca4aca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gaa2078460cd9a92bf604d924219ca4aca">ksceAppMgrIsExclusiveProcessRunning</a> (const char *title_id)</td></tr>
+<tr class="memdesc:gaa2078460cd9a92bf604d924219ca4aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether an exclusive process is running.  <br /></td></tr>
+<tr class="separator:gaa2078460cd9a92bf604d924219ca4aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb910d7a4df60886fa95244cd9d277da" id="r_gacb910d7a4df60886fa95244cd9d277da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#gacb910d7a4df60886fa95244cd9d277da">ksceAppMgrMmsMount</a> (int mount_id, char mount_point[16])</td></tr>
+<tr class="separator:gacb910d7a4df60886fa95244cd9d277da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77a66511cab51271966994e1d1d7119f" id="r_ga77a66511cab51271966994e1d1d7119f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga77a66511cab51271966994e1d1d7119f">ksceAppMgrPhotoMount</a> (const <a class="el" href="group__SceAppMgrKernel.html#structSceAppMgrPhotoMountParam">SceAppMgrPhotoMountParam</a> *param)</td></tr>
+<tr class="separator:ga77a66511cab51271966994e1d1d7119f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7bfcd4050407bd569992a47bd0f1a492" id="r_ga7bfcd4050407bd569992a47bd0f1a492"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga7bfcd4050407bd569992a47bd0f1a492">ksceAppMgrTrophyMount</a> (int mount_id, <a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91">ScePID</a> process_id, char mount_point[16])</td></tr>
+<tr class="separator:ga7bfcd4050407bd569992a47bd0f1a492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a136ba818f66b02b346591797e74270" id="r_ga1a136ba818f66b02b346591797e74270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga1a136ba818f66b02b346591797e74270">ksceAppMgrUmount</a> (const char *mount_point)</td></tr>
+<tr class="separator:ga1a136ba818f66b02b346591797e74270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga35c2cbe74b9562cbf57f44fd70d77950" id="r_ga35c2cbe74b9562cbf57f44fd70d77950"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAppMgrKernel.html#ga35c2cbe74b9562cbf57f44fd70d77950">ksceAppMgrWorkDirMount</a> (int mount_id, char mount_point[16])</td></tr>
+<tr class="separator:ga35c2cbe74b9562cbf57f44fd70d77950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -3,7 +3,7 @@ var group__SceExfatfsKernel_structSceExfatfsFnode =
     [ "FilePath", "group__SceExfatfsKernel.html#ga5169d90926bb6e0793f6f36a90393827", null ],
     [ "FileName", "group__SceExfatfsKernel.html#ga9587aa95cf8d063ddc62946bbb42a9a9", null ],
     [ "fileSystem", "group__SceExfatfsKernel.html#gaaaf69772ec92b92119789b91c7b28858", null ],
-    [ "Stat", "group__SceExfatfsKernel.html#ga5412c057c1ad16034ac7df5bd74ae7b5", null ],
+    [ "Stat", "group__SceExfatfsKernel.html#ga3cbde4b2f51773c4f9e27642fa6d50af", null ],
     [ "DirCluster", "group__SceExfatfsKernel.html#ga18f6484438fd2e4e068dbb5ca1950e63", null ],
     [ "data_0x254", "group__SceExfatfsKernel.html#ga33bc67c35229e8c07328c5fecf345d53", null ],
     [ "DirOffset", "group__SceExfatfsKernel.html#gae9b9adb32dae7c4dbea1cebf4a09dac3", null ],

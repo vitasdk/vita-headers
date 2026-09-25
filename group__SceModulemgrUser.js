@@ -1,5 +1,11 @@
 var group__SceModulemgrUser =
 [
+    [ "SceKernelModuleStartParam", "group__SceModulemgrUser.html#structSceKernelModuleStartParam", [
+      [ "flags", "group__SceModulemgrUser.html#gae1062f76e801df0753f0cdee57f72a62", null ],
+      [ "opt", "group__SceModulemgrUser.html#ga098b661ea09f5c4668cfce74d2dd5376", null ],
+      [ "result", "group__SceModulemgrUser.html#ga1b73f4d06715e76d30063ddc8ed1a7b6", null ],
+      [ "reserved", "group__SceModulemgrUser.html#ga7e718a90248472556677dccf9fbf3f12", null ]
+    ] ],
     [ "SceKernelLoadModuleOption", "group__SceModulemgrUser.html#ga97a18d16512f8913758e8aef9b03b3bc", null ],
     [ "SceKernelUnloadModuleOption", "group__SceModulemgrUser.html#gab843a891d5b2a006460df77c14ee0106", null ],
     [ "SceKernelLibraryInfo", "group__SceModulemgrUser.html#ga93d8258487e3ef56274b53d220a35edc", null ],
@@ -22,5 +28,11 @@ var group__SceModulemgrUser =
     [ "sceKernelGetLibraryInfoByNID", "group__SceModulemgrUser.html#ga6d577c676901faf794ed58ff30f8653f", null ],
     [ "sceKernelIsCalledFromSysModule", "group__SceModulemgrUser.html#gaa4024c08068b04c9532df0e05e926d54", null ],
     [ "sceKernelGetModuleIdByAddr", "group__SceModulemgrUser.html#ga5644c788f510843d370e26aff8e4ac37", null ],
-    [ "sceKernelGetAllowedSdkVersionOnSystem", "group__SceModulemgrUser.html#ga4ee7eb221c7acd4805f77c7d6ec28682", null ]
+    [ "sceKernelGetAllowedSdkVersionOnSystem", "group__SceModulemgrUser.html#ga4ee7eb221c7acd4805f77c7d6ec28682", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga4c19c516b653f585457e2b8ac214bbdd", null ],
+    [ "_sceKernelStartModule", "group__SceModulemgrUser.html#ga3e5b72a3a950ce453a7206ef51929eb3", null ],
+    [ "SceKernelModuleStartParam::flags", "group__SceModulemgrUser.html#gae1062f76e801df0753f0cdee57f72a62", null ],
+    [ "SceKernelModuleStartParam::opt", "group__SceModulemgrUser.html#ga098b661ea09f5c4668cfce74d2dd5376", null ],
+    [ "SceKernelModuleStartParam::result", "group__SceModulemgrUser.html#ga1b73f4d06715e76d30063ddc8ed1a7b6", null ],
+    [ "SceKernelModuleStartParam::reserved", "group__SceModulemgrUser.html#ga7e718a90248472556677dccf9fbf3f12", null ]
 ];

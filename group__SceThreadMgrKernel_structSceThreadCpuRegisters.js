@@ -1,4 +1,4 @@
 var group__SceThreadMgrKernel_structSceThreadCpuRegisters =
 [
-    [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga35f7c7f0a3da70046cf2578f8e9a41d7", null ]
+    [ "SCE_DEPRECATED_EX", "group__SceThreadMgrKernel.html#ga0d3cdede63c31d8c5141dcb87387187d", null ]
 ];

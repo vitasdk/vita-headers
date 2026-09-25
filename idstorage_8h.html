@@ -73,6 +73,8 @@ $(document).ready(function(){initNavTree('idstorage_8h.html',''); initResizable(
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">idstorage.h File Reference</div></div>
 </div><!--header-->
@@ -81,12 +83,84 @@ $(document).ready(function(){initNavTree('idstorage_8h.html',''); initResizable(
 </div>
 <p><a href="idstorage_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga1e46187a7b7d44f238c082084c75bddf" id="r_ga1e46187a7b7d44f238c082084c75bddf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga1e46187a7b7d44f238c082084c75bddf">SCE_ID_STORAGE_LEAF_SIZE</a>&#160;&#160;&#160;0x200</td></tr>
+<tr class="separator:ga1e46187a7b7d44f238c082084c75bddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5594e1d4758b3b8acdd83b475e58077" id="r_gad5594e1d4758b3b8acdd83b475e58077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gad5594e1d4758b3b8acdd83b475e58077">SCE_ID_STORAGE_KEY_MAX</a>&#160;&#160;&#160;0xFFEF</td></tr>
+<tr class="separator:gad5594e1d4758b3b8acdd83b475e58077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e0df377e52563a16ac269ee5de43cd1" id="r_ga9e0df377e52563a16ac269ee5de43cd1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga9e0df377e52563a16ac269ee5de43cd1">SCE_ID_STORAGE_ATOMIC_LEAVES_MAX</a>&#160;&#160;&#160;32</td></tr>
+<tr class="separator:ga9e0df377e52563a16ac269ee5de43cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga102b990154576c9a57300415f77aac74" id="r_ga102b990154576c9a57300415f77aac74"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga102b990154576c9a57300415f77aac74">SceIdStorageErrorCode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74ae8e9df270029b2c2039b3591dd3ee400">SCE_ID_STORAGE_ERROR_INVALID_ARGUMENT</a> = 0x80230000
+, <a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74a336519fd3ef8c19d0485d09e09f08258">SCE_ID_STORAGE_ERROR_INVALID_KEY</a> = 0x80230001
+, <a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74af63baeb796ea02f6bc8123bceedefc2c">SCE_ID_STORAGE_ERROR_INVALID_LEAF_COUNT</a> = 0x80230002
+, <a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74a9dab75aefe1dcd1b31c5425ba182e83b">SCE_ID_STORAGE_ERROR_NOT_FORMATTED</a> = 0x80230003
+, <br />
+&#160;&#160;<a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74aaf0f0040a8dacec5c4e5f52e9650549d">SCE_ID_STORAGE_ERROR_NO_SPACE</a> = 0x80230004
+, <a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74ad5f71da7100f0257e0b53d08bcaa31f8">SCE_ID_STORAGE_ERROR_LEAF_NOT_FOUND</a> = 0x80230005
+, <a class="el" href="group__SceIdStorageKernel.html#gga102b990154576c9a57300415f77aac74a94b1e18c54038edd96ff0789a6fbb923">SCE_ID_STORAGE_ERROR_LEAF_ALREADY_EXISTS</a> = 0x80230006
+<br />
+ }</td></tr>
+<tr class="memdesc:ga102b990154576c9a57300415f77aac74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module-specific errors returned by SceIdStorage on FW 3.60.  <a href="group__SceIdStorageKernel.html#ga102b990154576c9a57300415f77aac74">More...</a><br /></td></tr>
+<tr class="separator:ga102b990154576c9a57300415f77aac74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac64758ebf2b791db3a472a8203043163" id="r_gac64758ebf2b791db3a472a8203043163"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gac64758ebf2b791db3a472a8203043163">ksceIdStorageReadLeaf</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> leafnum, void *buf)</td></tr>
-<tr class="separator:gac64758ebf2b791db3a472a8203043163"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c547935ed887dcafa67c16c2769926f" id="r_ga8c547935ed887dcafa67c16c2769926f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga8c547935ed887dcafa67c16c2769926f">ksceIdStorageWriteLeaf</a> (<a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> leafnum, const void *buf)</td></tr>
-<tr class="separator:ga8c547935ed887dcafa67c16c2769926f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c30bf18e8e7793a5290ed3e0ff3d960" id="r_ga3c30bf18e8e7793a5290ed3e0ff3d960"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga3c30bf18e8e7793a5290ed3e0ff3d960">ksceIdStorageReadLeaf</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, void *buf)</td></tr>
+<tr class="memdesc:ga3c30bf18e8e7793a5290ed3e0ff3d960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read one complete IdStorage leaf.  <br /></td></tr>
+<tr class="separator:ga3c30bf18e8e7793a5290ed3e0ff3d960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac18e44607018b7ae5f2d7b20c3776e87" id="r_gac18e44607018b7ae5f2d7b20c3776e87"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gac18e44607018b7ae5f2d7b20c3776e87">ksceIdStorageWriteLeaf</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, const void *buf)</td></tr>
+<tr class="memdesc:gac18e44607018b7ae5f2d7b20c3776e87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace one complete IdStorage leaf in the write-back cache.  <br /></td></tr>
+<tr class="separator:gac18e44607018b7ae5f2d7b20c3776e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9f2ab4b96ade8bdf75a0c44ed128e29" id="r_gac9f2ab4b96ade8bdf75a0c44ed128e29"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gac9f2ab4b96ade8bdf75a0c44ed128e29">ksceIdStorageCreateAtomicLeaves</a> (const <a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> *keys, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> num_leaves)</td></tr>
+<tr class="memdesc:gac9f2ab4b96ade8bdf75a0c44ed128e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create several leaf mappings as one in-memory operation.  <br /></td></tr>
+<tr class="separator:gac9f2ab4b96ade8bdf75a0c44ed128e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe8eac5690e6174e9d5bcb46e88cad18" id="r_gabe8eac5690e6174e9d5bcb46e88cad18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gabe8eac5690e6174e9d5bcb46e88cad18">ksceIdStorageCreateLeaf</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>)</td></tr>
+<tr class="memdesc:gabe8eac5690e6174e9d5bcb46e88cad18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create one leaf mapping.  <br /></td></tr>
+<tr class="separator:gabe8eac5690e6174e9d5bcb46e88cad18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99dcbe1df7114b7161338a43c859138c" id="r_ga99dcbe1df7114b7161338a43c859138c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga99dcbe1df7114b7161338a43c859138c">ksceIdStorageDeleteLeaf</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>)</td></tr>
+<tr class="memdesc:ga99dcbe1df7114b7161338a43c859138c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete one leaf mapping.  <br /></td></tr>
+<tr class="separator:ga99dcbe1df7114b7161338a43c859138c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadf39d31d846fbc63dc73b36cef0647b1" id="r_gadf39d31d846fbc63dc73b36cef0647b1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gadf39d31d846fbc63dc73b36cef0647b1">ksceIdStorageEnumId</a> (void)</td></tr>
+<tr class="memdesc:gadf39d31d846fbc63dc73b36cef0647b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire and release the IdStorage mutex.  <br /></td></tr>
+<tr class="separator:gadf39d31d846fbc63dc73b36cef0647b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab245317578688fe9676916a4a177a01d" id="r_gab245317578688fe9676916a4a177a01d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gab245317578688fe9676916a4a177a01d">ksceIdStorageFlush</a> (void)</td></tr>
+<tr class="memdesc:gab245317578688fe9676916a4a177a01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write modified cached leaves and mapping-table changes to storage.  <br /></td></tr>
+<tr class="separator:gab245317578688fe9676916a4a177a01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c6333752656beac2d6c8efaf56d5ac3" id="r_ga8c6333752656beac2d6c8efaf56d5ac3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga8c6333752656beac2d6c8efaf56d5ac3">ksceIdStorageFormat</a> (void)</td></tr>
+<tr class="memdesc:ga8c6333752656beac2d6c8efaf56d5ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a new IdStorage mapping table.  <br /></td></tr>
+<tr class="separator:ga8c6333752656beac2d6c8efaf56d5ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8eba52c5b63db420a48a270c9af026b6" id="r_ga8eba52c5b63db420a48a270c9af026b6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga8eba52c5b63db420a48a270c9af026b6">ksceIdStorageGetFreeLeaves</a> (void)</td></tr>
+<tr class="memdesc:ga8eba52c5b63db420a48a270c9af026b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count unallocated mapping entries, which contain 0xFFFF.  <br /></td></tr>
+<tr class="separator:ga8eba52c5b63db420a48a270c9af026b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d804c006262da69d6b671080b915028" id="r_ga9d804c006262da69d6b671080b915028"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga9d804c006262da69d6b671080b915028">ksceIdStorageGetLeafSize</a> (void)</td></tr>
+<tr class="memdesc:ga9d804c006262da69d6b671080b915028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the fixed IdStorage leaf size.  <br /></td></tr>
+<tr class="separator:ga9d804c006262da69d6b671080b915028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga39958bec88e2a36e3dd9c08db97fdfb1" id="r_ga39958bec88e2a36e3dd9c08db97fdfb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga39958bec88e2a36e3dd9c08db97fdfb1">ksceIdStorageIsDirty</a> (void)</td></tr>
+<tr class="memdesc:ga39958bec88e2a36e3dd9c08db97fdfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether changes still need to be written to storage.  <br /></td></tr>
+<tr class="separator:ga39958bec88e2a36e3dd9c08db97fdfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbd4c8a81352c62eafee7b16e30c500b" id="r_gabbd4c8a81352c62eafee7b16e30c500b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gabbd4c8a81352c62eafee7b16e30c500b">ksceIdStorageIsFormatted</a> (void)</td></tr>
+<tr class="memdesc:gabbd4c8a81352c62eafee7b16e30c500b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the mapping table was loaded or formatted successfully.  <br /></td></tr>
+<tr class="separator:gabbd4c8a81352c62eafee7b16e30c500b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2567e8fc13fa38a87f392fe5e1df4821" id="r_ga2567e8fc13fa38a87f392fe5e1df4821"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga2567e8fc13fa38a87f392fe5e1df4821">ksceIdStorageIsReadOnly</a> (void)</td></tr>
+<tr class="memdesc:ga2567e8fc13fa38a87f392fe5e1df4821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the cached read-only flag.  <br /></td></tr>
+<tr class="separator:ga2567e8fc13fa38a87f392fe5e1df4821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe6a940420209eab326da0d8de6361a7" id="r_gabe6a940420209eab326da0d8de6361a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gabe6a940420209eab326da0d8de6361a7">ksceIdStorageLookup</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> offset, void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memdesc:gabe6a940420209eab326da0d8de6361a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a range from an existing leaf.  <br /></td></tr>
+<tr class="separator:gabe6a940420209eab326da0d8de6361a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga19f919194726723394adbe5f93426176" id="r_ga19f919194726723394adbe5f93426176"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga19f919194726723394adbe5f93426176">ksceIdStorageRestart</a> (<a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> flush)</td></tr>
+<tr class="memdesc:ga19f919194726723394adbe5f93426176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy and reinitialize the IdStorage state on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga19f919194726723394adbe5f93426176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f357d30a0c6a6ff95b6dbb2013c620c" id="r_ga3f357d30a0c6a6ff95b6dbb2013c620c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#ga3f357d30a0c6a6ff95b6dbb2013c620c">ksceIdStorageUnformat</a> (void)</td></tr>
+<tr class="memdesc:ga3f357d30a0c6a6ff95b6dbb2013c620c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the IdStorage partition unformatted.  <br /></td></tr>
+<tr class="separator:ga3f357d30a0c6a6ff95b6dbb2013c620c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5a022a3faae24af4da37b6b5c864c99" id="r_gaf5a022a3faae24af4da37b6b5c864c99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIdStorageKernel.html#gaf5a022a3faae24af4da37b6b5c864c99">ksceIdStorageUpdate</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> <a class="el" href="group__SceLsdbUser.html#gaff8ab93e707aa485de489c2d844d02da">key</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> offset, const void *buf, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> <a class="el" href="group__SceLsdbUser.html#ga318cc63d979387c711a064d4e56f1132">size</a>)</td></tr>
+<tr class="memdesc:gaf5a022a3faae24af4da37b6b5c864c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a range in an existing leaf through a cached read-modify-write.  <br /></td></tr>
+<tr class="separator:gaf5a022a3faae24af4da37b6b5c864c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

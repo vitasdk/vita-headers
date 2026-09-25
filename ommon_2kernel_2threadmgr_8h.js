@@ -47,6 +47,10 @@ var ommon_2kernel_2threadmgr_8h =
       [ "SCE_KERNEL_THREAD_EVENT_TYPE_START", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55a6601fa3a1029c6f80bd747873a18c3cf", null ],
       [ "SCE_KERNEL_THREAD_EVENT_TYPE_EXIT", "group__SceThreadMgrUser.html#gga984b629b9742acac0f95348696f37e55ab5eb4ddba6f11bbe6c1fcf22ec35e3e6", null ]
     ] ],
+    [ "SceKernelTimerType", "group__SceThreadMgrUser.html#gabca26d3e9e2a87daa84296b5ddf15c6a", [
+      [ "SCE_KERNEL_TIMER_TYPE_SET_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa041aeae16de531a90110807f338873f8", null ],
+      [ "SCE_KERNEL_TIMER_TYPE_PULSE_EVENT", "group__SceThreadMgrUser.html#ggabca26d3e9e2a87daa84296b5ddf15c6aa545bf7d116988a1644115209668b677f", null ]
+    ] ],
     [ "SceKernelWaitableAttribute", "group__SceThreadMgrUser.html#gaad5c93e9ef85b6e5a13b726df820d8ca", [
       [ "SCE_KERNEL_ATTR_THREAD_FIFO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa207a3e91fa76ab906f4405640e0fd47a", null ],
       [ "SCE_KERNEL_ATTR_THREAD_PRIO", "group__SceThreadMgrUser.html#ggaad5c93e9ef85b6e5a13b726df820d8caa012546501ff6a8e454a3b7bf8fb34f4b", null ],
@@ -69,6 +73,7 @@ var ommon_2kernel_2threadmgr_8h =
       [ "SCE_KERNEL_MUTEX_ATTR_RECURSIVE", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242aafbfa4c4af35e4dbbe54d4f5b531dabe", null ],
       [ "SCE_KERNEL_MUTEX_ATTR_CEILING", "group__SceThreadMgrUser.html#ggacaf974d94877969095678f463230d242adfdcf54229dff8a001a403c3802e614b", null ]
     ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gae481a63937a557a210d377290e3a2f75", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gabad12e90a6c274821cd5f202ff3c7897", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#ga97149af01bfb79f07b3a5d794a59199f", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceThreadMgrUser.html#gaa74ad12a10bc8cfb5ef3469331569863", null ],

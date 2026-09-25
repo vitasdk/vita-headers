@@ -4,6 +4,8 @@ var group__SystemStatus =
     [ "Application Utilities Library", "group__SceAppUtil.html", "group__SceAppUtil" ],
     [ "Audio-Video Configuration Library", "group__SceAVConfig.html", "group__SceAVConfig" ],
     [ "Background Application Utilities Library", "group__SceBgAppUtil.html", "group__SceBgAppUtil" ],
+    [ "LiveArea Utilities Library", "group__SceLiveAreaUtil.html", "group__SceLiveAreaUtil" ],
+    [ "Livespace (= LiveArea) Database Library", "group__SceLsdb.html", "group__SceLsdb" ],
     [ "Notification Utilities library", "group__SceNotificationUtil.html", "group__SceNotificationUtil" ],
     [ "Power Library", "group__ScePower.html", "group__ScePower" ],
     [ "Real-time Clock Library", "group__SceRtc.html", "group__SceRtc" ],
@@ -12,5 +14,6 @@ var group__SystemStatus =
     [ "Sbl Auth Manager", "group__SceSblAuthMgr.html", "group__SceSblAuthMgr" ],
     [ "Shell Utils Library", "group__SceShellSvc.html", "group__SceShellSvc" ],
     [ "Events Library", "group__SceTriggerUtil.html", "group__SceTriggerUtil" ],
+    [ "DRM Bridge Library", "group__SceDrmBridge.html", "group__SceDrmBridge" ],
     [ "VSH Bridge Library", "group__SceVshBridge.html", "group__SceVshBridge" ]
 ];

@@ -111,6 +111,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga595ed5216c24074df65c2ac79c844b1d" id="r_ga595ed5216c24074df65c2ac79c844b1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d">ksceRtcConvertDateTimeToUnixTime</a> (const <a class="el" href="group__SceTypesKernel.html#structSceDateTime">SceDateTime</a> *src, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *dst)</td></tr>
 <tr class="memdesc:ga595ed5216c24074df65c2ac79c844b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert date time to unix time.  <br /></td></tr>
 <tr class="separator:ga595ed5216c24074df65c2ac79c844b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21820a7b1618e1f8e4f0fce431ecc09c" id="r_ga21820a7b1618e1f8e4f0fce431ecc09c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#ga21820a7b1618e1f8e4f0fce431ecc09c">ksceRtcFormatRFC3339</a> (char *date_time, const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *utc, int time_zone_minutes)</td></tr>
+<tr class="memdesc:ga21820a7b1618e1f8e4f0fce431ecc09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format an RTC tick as an RFC 3339 timestamp.  <br /></td></tr>
+<tr class="separator:ga21820a7b1618e1f8e4f0fce431ecc09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf13ddcdc350f9bd64ab48ab6078fe889" id="r_gaf13ddcdc350f9bd64ab48ab6078fe889"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceRtcKernel.html#gaf13ddcdc350f9bd64ab48ab6078fe889">ksceRtcGetAccumulativeTime</a> (void)</td></tr>
+<tr class="memdesc:gaf13ddcdc350f9bd64ab48ab6078fe889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the accumulated system-time counter in microseconds.  <br /></td></tr>
+<tr class="separator:gaf13ddcdc350f9bd64ab48ab6078fe889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -407,6 +413,73 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga21820a7b1618e1f8e4f0fce431ecc09c" name="ga21820a7b1618e1f8e4f0fce431ecc09c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21820a7b1618e1f8e4f0fce431ecc09c">&#9670;&#160;</a></span>ksceRtcFormatRFC3339()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceRtcFormatRFC3339 </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>date_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td>
+          <td class="paramname"><em>utc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>time_zone_minutes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Format an RTC tick as an RFC 3339 timestamp. </p>
+<p>FW 3.60 writes <code>YYYY-MM-DDThh:mm:ss.ffZ</code> for UTC, or <code>YYYY-MM-DDThh:mm:ss.ff+hh:mm</code> / <code>-hh:mm</code> for a nonzero offset. The fractional field contains hundredths of a second, truncated from the tick's microseconds. The output buffer must hold at least 29 bytes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">date_time</td><td>- Output string buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">utc</td><td>- UTC tick to format, or NULL to use the current tick. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time_zone_minutes</td><td>- Signed UTC offset in minutes, from -1439 through 1439.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba70d011c5cc511d6a5a1434969631e9c4">SCE_RTC_ERROR_INVALID_POINTER</a> when <em>date_time</em> is NULL, or <a class="el" href="group__SceRtcUser.html#gga9b9bca602e59800218435c06d5db161ba3dcc8aed359aeed23d41b5d3398ddebb">SCE_RTC_ERROR_INVALID_VALUE</a> for an invalid offset or adjusted tick. </dd></dl>
+
+</div>
+</div>
+<a id="gaf13ddcdc350f9bd64ab48ab6078fe889" name="gaf13ddcdc350f9bd64ab48ab6078fe889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf13ddcdc350f9bd64ab48ab6078fe889">&#9670;&#160;</a></span>ksceRtcGetAccumulativeTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gaf47723b332a4cf70bd27c027e1e65c16">SceULong64</a> ksceRtcGetAccumulativeTime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the accumulated system-time counter in microseconds. </p>
+<p>FW 3.60 combines the current kernel system time with RTC/Syscon baselines so wall-clock adjustments and system-time rebasing do not reset this counter. The function has no error return. Before RTC initialization, it returns the current kernel system time. </p>
 
 </div>
 </div>

@@ -42,5 +42,7 @@ var compat_8h =
     [ "sceCompatWriteSharedCtrl", "group__SceCompatUser.html#gac6a0a5d6f6af05f136bee53026a9db53", null ],
     [ "sceCompatGetTitleList", "group__SceCompatUser.html#gacea36d5ee9b1ec184bb19c9876b86953", null ],
     [ "sceCompatGetDevInf", "group__SceCompatUser.html#gaf8dd62a11db364ba0accf5f513b85435", null ],
-    [ "sceCompatGetCurrentSecureTick", "group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d", null ]
+    [ "sceCompatGetCurrentSecureTick", "group__SceCompatUser.html#ga233fc42e19338dbb1166ac71b1b2e39d", null ],
+    [ "sceCompatDatRead", "group__SceCompatUser.html#gacaec8200d67cd9b1b2f97baad3d71f69", null ],
+    [ "sceCompatIdStorageLookup", "group__SceCompatUser.html#ga9012cceb376adc42b35b8a0a1bf72f05", null ]
 ];

@@ -15,5 +15,15 @@ var kernel_2processmgr_8h =
     [ "sceKernelGetProcessParam", "group__SceProcessmgrUser.html#gace18679986df83eff860e2e7f6cb44b5", null ],
     [ "sceKernelLibcClock", "group__SceProcessmgrUser.html#gaa06b7d896c6611f1250b60711ed065fd", null ],
     [ "sceKernelLibcTime", "group__SceProcessmgrUser.html#ga2ce94ab54870f46ed95bbb2917be4477", null ],
-    [ "sceKernelLibcGettimeofday", "group__SceProcessmgrUser.html#gac268657dfbfea56250ac6438f24ad149", null ]
+    [ "sceKernelLibcGettimeofday", "group__SceProcessmgrUser.html#gac268657dfbfea56250ac6438f24ad149", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceProcessmgrUser.html#ga601ac7a64a11af1787db601a9526a977", null ],
+    [ "__attribute__", "group__SceProcessmgrUser.html#gaeea46dd654927ad44f366ffb352956c0", null ],
+    [ "_sceKernelRegisterLibkernelAddresses", "group__SceProcessmgrUser.html#gac12224ccd529fef1f23be7aa924f0578", null ],
+    [ "sceKernelGetProcessTimeCore", "group__SceProcessmgrUser.html#gacf5f9da46c152edee0cdd3a248626477", null ],
+    [ "sceKernelGetProcessTimeLowCore", "group__SceProcessmgrUser.html#ga60c09c2d4ef315c69d0ff65ab2f63134", null ],
+    [ "sceKernelGetProcessTimeWideCore", "group__SceProcessmgrUser.html#ga09be6a50673132c5ddce9fe66ff7ceaf", null ],
+    [ "sceKernelIsCDialogAvailable", "group__SceProcessmgrUser.html#ga47cd21af6fba901ef84d4dd3bbeefc81", null ],
+    [ "sceKernelIsGameBudget", "group__SceProcessmgrUser.html#ga40ed3361a59c48c9f7382f80206c63b0", null ],
+    [ "sceKernelRegisterProcessTerminationCallback", "group__SceProcessmgrUser.html#gabe08133db2a41ab522a28367c7660bdf", null ],
+    [ "sceKernelUnregisterProcessTerminationCallback", "group__SceProcessmgrUser.html#gab17c6bd9c067150d165412e81864d8e3", null ]
 ];

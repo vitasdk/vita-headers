@@ -26,5 +26,6 @@ var group__SceDsiKernel =
     [ "ksceDsiGenericShortWrite", "group__SceDsiKernel.html#gaca40aa28cbcee8b0db7d25f43b947944", null ],
     [ "ksceDsiGenericReadRequest", "group__SceDsiKernel.html#gad9eb8a4c69851163c9df138a711ce4bd", null ],
     [ "ksceDsiDcsShortWrite", "group__SceDsiKernel.html#ga60d2da12a2b6c0be8466bb085107090d", null ],
-    [ "ksceDsiDcsRead", "group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535", null ]
+    [ "ksceDsiDcsRead", "group__SceDsiKernel.html#gabca434b2eb2c6e5f9d05c19a513d7535", null ],
+    [ "ksceDsiStartDisplay", "group__SceDsiKernel.html#ga8a8248a4150843166f28be39befec74d", null ]
 ];

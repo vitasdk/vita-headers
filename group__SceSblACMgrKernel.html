@@ -73,8 +73,12 @@ $(document).ready(function(){initNavTree('group__SceSblACMgrKernel.html',''); in
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#enumval-members">Enumerator</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__SystemStatus.html">System Status</a> &raquo; <a class="el" href="group__SceSblACMgr.html">Sbl AC Manager</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -82,12 +86,97 @@ $(document).ready(function(){initNavTree('group__SceSblACMgrKernel.html',''); in
 <p>Exports for Kernel.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceSblACMgrFsAttrInfo" id="r_structSceSblACMgrFsAttrInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a></td></tr>
+<tr class="memdesc:structSceSblACMgrFsAttrInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filesystem-attribute conversion request.  <a href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceSblACMgrFsAttrInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gabd9122a6bfed828d831a211d2b47a9a0" id="r_gabd9122a6bfed828d831a211d2b47a9a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gabd9122a6bfed828d831a211d2b47a9a0">ksceSblACMgrIsSystem</a>(<a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga677becdc3e8c565cb32e79f3ff1baf42">ksceSblACMgrIsRootProgram</a>(<a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="separator:gabd9122a6bfed828d831a211d2b47a9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9fceb129afd49763d7bb74137d44bc80" id="r_ga9fceb129afd49763d7bb74137d44bc80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga9fceb129afd49763d7bb74137d44bc80">ksceSblACMgrIsShell</a>(<a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga9d19efac3211c36666ea9060aa57c35f">ksceSblACMgrIsSystemProgram</a>(<a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
 <tr class="separator:ga9fceb129afd49763d7bb74137d44bc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4dc12cb5153efd5e1da06b5119ab40b" id="r_gae4dc12cb5153efd5e1da06b5119ab40b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gae4dc12cb5153efd5e1da06b5119ab40b">kscePfsACSetFSAttrByMode</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae7b3a148aa0ed5401b8278efd1e84fec">ksceSblACMgrConvertModeToFsAttribute2</a></td></tr>
+<tr class="separator:gae4dc12cb5153efd5e1da06b5119ab40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61fa234619f0e1bf36bb9f92265d1022" id="r_ga61fa234619f0e1bf36bb9f92265d1022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga61fa234619f0e1bf36bb9f92265d1022">ksceSblACIsSystemProgram</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga0e041ac226646197dfcb71037ea13ee7">ksceSblACMgrIsSystemProgram2</a></td></tr>
+<tr class="separator:ga61fa234619f0e1bf36bb9f92265d1022"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4177af41a0b4ae4571b6185746cb6b7c" id="r_ga4177af41a0b4ae4571b6185746cb6b7c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga4177af41a0b4ae4571b6185746cb6b7c">ksceSblACMgrSetFSAttributeByMode</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga7513da21b079aef6f41c710a84f6869e">ksceSblACMgrConvertModeToFsAttribute</a></td></tr>
+<tr class="separator:ga4177af41a0b4ae4571b6185746cb6b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6e9de9eec3f555efa7a51c87d211ba6" id="r_gae6e9de9eec3f555efa7a51c87d211ba6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gae6e9de9eec3f555efa7a51c87d211ba6">ksceSblACMgrSetFSAttributeByMode2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae7b3a148aa0ed5401b8278efd1e84fec">ksceSblACMgrConvertModeToFsAttribute2</a></td></tr>
+<tr class="separator:gae6e9de9eec3f555efa7a51c87d211ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75007b39f5d2ecff9bd8e2b3024e30a6" id="r_ga75007b39f5d2ecff9bd8e2b3024e30a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga75007b39f5d2ecff9bd8e2b3024e30a6">ksceSblACMgrGetProcessProgramAuthId2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga8aedc9e05d3de46085c10c767142a2da">ksceSblACMgrGetPaid2</a></td></tr>
+<tr class="separator:ga75007b39f5d2ecff9bd8e2b3024e30a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f9c9d72472f90f94670da2edd04b462" id="r_ga1f9c9d72472f90f94670da2edd04b462"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga1f9c9d72472f90f94670da2edd04b462">ksceSblACMgrIsAllowedExtendedMemory</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga1176a174a95a317ae1e46b87e385cd9c">ksceSblACMgrIsAllowLoopBackMount</a></td></tr>
+<tr class="separator:ga1f9c9d72472f90f94670da2edd04b462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90eb06757d443dcf9acda442490d17c5" id="r_ga90eb06757d443dcf9acda442490d17c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga90eb06757d443dcf9acda442490d17c5">ksceSblACMgrIsAllowedExtendedMemory2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gaae9c9bf4f699cc7cefbc8184111f64d0">ksceSblACMgrIsAllowLoopBackMount2</a></td></tr>
+<tr class="separator:ga90eb06757d443dcf9acda442490d17c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64e883be8760fb522ac70b450827d5b4" id="r_ga64e883be8760fb522ac70b450827d5b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga64e883be8760fb522ac70b450827d5b4">ksceSblACMgrIsAllowedUsbSerial</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gac823da2d3bf0506f44b1fa96048d37da">ksceSblACMgrIsAllowUsbSerial</a></td></tr>
+<tr class="separator:ga64e883be8760fb522ac70b450827d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac600cc5fd4868073d4db709ab95d1b79" id="r_gac600cc5fd4868073d4db709ab95d1b79"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gac600cc5fd4868073d4db709ab95d1b79">ksceSblACMgrIsAllowedVirtualMachine</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga52dcb464ecf29837a8eb4db70ee5b507">ksceSblACMgrIsAllowVirtualMachine</a></td></tr>
+<tr class="separator:gac600cc5fd4868073d4db709ab95d1b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c2940298454168ff21d63adac8d6230" id="r_ga9c2940298454168ff21d63adac8d6230"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga9c2940298454168ff21d63adac8d6230">ksceSblACMgrIsAllowedVirtualMachine2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga24324d84cb2a148878225ed05f22c42c">ksceSblACMgrIsAllowVirtualMachine2</a></td></tr>
+<tr class="separator:ga9c2940298454168ff21d63adac8d6230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2f94b7c86ccee273ae4f1f1ceae63403" id="r_ga2f94b7c86ccee273ae4f1f1ceae63403"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga2f94b7c86ccee273ae4f1f1ceae63403">ksceSblACMgrIsMiniSettingsForQA</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga252c93ca3fabc5a5ac3fb15d4757cd29">ksceSblACMgrIsAllowUdcd</a></td></tr>
+<tr class="separator:ga2f94b7c86ccee273ae4f1f1ceae63403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga66b332877bec059be0e1f357ddccac35" id="r_ga66b332877bec059be0e1f357ddccac35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga66b332877bec059be0e1f357ddccac35">ksceSblACMgrIsMiniSettingsForQA2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga8fb0e1b3dd4069e8a0a216f1d585caeb">ksceSblACMgrIsAllowUdcd2</a></td></tr>
+<tr class="separator:ga66b332877bec059be0e1f357ddccac35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gace118cc56d48e79e62567758ef55e4cf" id="r_gace118cc56d48e79e62567758ef55e4cf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gace118cc56d48e79e62567758ef55e4cf">ksceSblACMgrIsNotSandboxed</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gaa1e9759a389ca2ee1e6d5e4d7d26eb94">ksceSblACMgrIsAllowMsMount</a></td></tr>
+<tr class="separator:gace118cc56d48e79e62567758ef55e4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4018532a70d4a15bbf01b8ae339428e3" id="r_ga4018532a70d4a15bbf01b8ae339428e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga4018532a70d4a15bbf01b8ae339428e3">ksceSblACMgrIsNotSandboxed2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga62a8d9c6010389f10d43e743bba0115a">ksceSblACMgrIsAllowMsMount2</a></td></tr>
+<tr class="separator:ga4018532a70d4a15bbf01b8ae339428e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a947bc8f94b814f4d2bae360069ae5a" id="r_ga6a947bc8f94b814f4d2bae360069ae5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga6a947bc8f94b814f4d2bae360069ae5a">ksceSblACMgrIsPSMDevAssistant</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae9aad54695f82448d8c1e0f4a7547b5a">ksceSblACMgrIsPSMProgram</a></td></tr>
+<tr class="separator:ga6a947bc8f94b814f4d2bae360069ae5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafdf0eaf8ac45036cd9788c8339de270e" id="r_gafdf0eaf8ac45036cd9788c8339de270e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gafdf0eaf8ac45036cd9788c8339de270e">ksceSblACMgrIsPSMDevAssistant2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga4d11280aade5fabaec44fffd6054c072">ksceSblACMgrIsPSMProgram2</a></td></tr>
+<tr class="separator:gafdf0eaf8ac45036cd9788c8339de270e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73bc8817f7274a459fbddcb68be33cc9" id="r_ga73bc8817f7274a459fbddcb68be33cc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga73bc8817f7274a459fbddcb68be33cc9">ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2d97e12368a3be1c643a55f0b6654b45">ksceSblACMgrIsUpdaterProgram</a></td></tr>
+<tr class="separator:ga73bc8817f7274a459fbddcb68be33cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac475aa4d9ad93f8dff1c1587369b5de" id="r_gaac475aa4d9ad93f8dff1c1587369b5de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaac475aa4d9ad93f8dff1c1587369b5de">ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga5e4801f33ee0d62b97f9ab94ce57289a">ksceSblACMgrIsUpdaterProgram2</a></td></tr>
+<tr class="separator:gaac475aa4d9ad93f8dff1c1587369b5de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacafeede91ac4bd6401158310ecedcc82" id="r_gacafeede91ac4bd6401158310ecedcc82"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gacafeede91ac4bd6401158310ecedcc82">ksceSblACMgrIsRootProgram2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga0b746b87df633241c11f1c54fa27d7f1">ksceSblACMgrIsKernelProgram2</a></td></tr>
+<tr class="separator:gacafeede91ac4bd6401158310ecedcc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f7a19d8ca5c959792c896f5f82d5803" id="r_ga3f7a19d8ca5c959792c896f5f82d5803"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga3f7a19d8ca5c959792c896f5f82d5803">ksceSblACMgrIsSIEApp</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2e2846bf36d00f585fb3380bd273c2d0">ksceSblACMgrIsPSMDevAssistantApp</a></td></tr>
+<tr class="separator:ga3f7a19d8ca5c959792c896f5f82d5803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccb18f7306b168e6ddf1068ca07635ae" id="r_gaccb18f7306b168e6ddf1068ca07635ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaccb18f7306b168e6ddf1068ca07635ae">ksceSblACMgrIsSIEApp2</a>&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2edd95598c6f75adbc94cb3db20b11af">ksceSblACMgrIsPSMDevAssistantApp2</a></td></tr>
+<tr class="separator:gaccb18f7306b168e6ddf1068ca07635ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ga3aa96d486fa001a95599fffb3fc6df45" id="r_ga3aa96d486fa001a95599fffb3fc6df45"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga3aa96d486fa001a95599fffb3fc6df45">SceSblACMgrMediaType</a> { <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a9b5f1fc865101a27340e9b2facb191ba">SCE_SBL_ACMGR_MEDIA_TYPE_UX_USER</a> = 0
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ad09f22181d66b5aef046a00e879d3089">SCE_SBL_ACMGR_MEDIA_TYPE_SD</a> = 1
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a840ec53b80fa643a0740979930f80e74">SCE_SBL_ACMGR_MEDIA_TYPE_OS</a> = 2
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a8b1744afbbb27a79ece9622d1fd410b1">SCE_SBL_ACMGR_MEDIA_TYPE_VS</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a175155823c914501bb02df1921e938dc">SCE_SBL_ACMGR_MEDIA_TYPE_VD</a> = 4
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a3782109a2dd9835dc0f2c4400115ae4f">SCE_SBL_ACMGR_MEDIA_TYPE_TM</a> = 5
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a4e4ecb918d15f2c72fa9b88c2c1d284f">SCE_SBL_ACMGR_MEDIA_TYPE_UR</a> = 6
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a9f30a74912676266d44317597afcaaf1">SCE_SBL_ACMGR_MEDIA_TYPE_HOST</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a14e2948cc1dca8ca86027117a46e8211">SCE_SBL_ACMGR_MEDIA_TYPE_UD</a> = 11
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a8b54d1f71653cfa7f5cbb851ebf64202">SCE_SBL_ACMGR_MEDIA_TYPE_UX</a> = 12
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ab5b39efd767db808c598b2605b2a5939">SCE_SBL_ACMGR_MEDIA_TYPE_GRO_APP</a> = 13
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a952c5a1f986d2e7b274e8ba0914700e6">SCE_SBL_ACMGR_MEDIA_TYPE_GRW_PATCH</a> = 14
+, <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a115ac2b4873edc01bac5045c0c298aca">SCE_SBL_ACMGR_MEDIA_TYPE_SA</a> = 15
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a57b5b7ea454577c7987c62f862caaf9b">SCE_SBL_ACMGR_MEDIA_TYPE_MFA</a> = 16
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ae8bb5892e6ea857d40bb042a827d903d">SCE_SBL_ACMGR_MEDIA_TYPE_MFB</a> = 17
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45aad6b2ae2f41ba7dde5b40318f11ec487">SCE_SBL_ACMGR_MEDIA_TYPE_LMA</a> = 18
+, <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45abdcba9762b88cc49b1df615d281acae2">SCE_SBL_ACMGR_MEDIA_TYPE_LMB</a> = 19
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a548dd2b9da0562e019c65c8fcf2b1df6">SCE_SBL_ACMGR_MEDIA_TYPE_LMC</a> = 20
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a7482c0684b3b3cc0e210a85e7918b999">SCE_SBL_ACMGR_MEDIA_TYPE_LMD</a> = 21
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ac685dad8bd03172eedc8ee5f8597b93a">SCE_SBL_ACMGR_MEDIA_TYPE_PD</a> = 22
+, <br />
+&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ab5a4df337529dccf65a47a8924393af3">SCE_SBL_ACMGR_MEDIA_TYPE_UX_APP</a> = 23
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ad522a473f3c254d5eaa9d225d731d27b">SCE_SBL_ACMGR_MEDIA_TYPE_UX_PATCH</a> = 24
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45ab4a1d2e490763c2954f09f421b007d29">SCE_SBL_ACMGR_MEDIA_TYPE_UX_DATA</a> = 25
+, <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a470228c9a780a565ef1eaaa37afd1afe">SCE_SBL_ACMGR_MEDIA_TYPE_UMA</a> = 27
+<br />
+ }</td></tr>
+<tr class="memdesc:ga3aa96d486fa001a95599fffb3fc6df45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Media types produced by the FW 3.60 path classifier.  <a href="group__SceSblACMgrKernel.html#ga3aa96d486fa001a95599fffb3fc6df45">More...</a><br /></td></tr>
+<tr class="separator:ga3aa96d486fa001a95599fffb3fc6df45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -121,6 +210,115 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9731aeaeff29c8e605b891046e6c5d78" id="r_ga9731aeaeff29c8e605b891046e6c5d78"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga9731aeaeff29c8e605b891046e6c5d78">ksceSblACMgrIsDevelopmentMode</a> (void)</td></tr>
 <tr class="memdesc:ga9731aeaeff29c8e605b891046e6c5d78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get development mode state.  <br /></td></tr>
 <tr class="separator:ga9731aeaeff29c8e605b891046e6c5d78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae82b3a9ece1df263e0c54e71e700fb4" id="r_gaae82b3a9ece1df263e0c54e71e700fb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaae82b3a9ece1df263e0c54e71e700fb4">VITASDK_BUILD_ASSERT_EQ</a> (0xC, <a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a>)</td></tr>
+<tr class="separator:gaae82b3a9ece1df263e0c54e71e700fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7513da21b079aef6f41c710a84f6869e" id="r_ga7513da21b079aef6f41c710a84f6869e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga7513da21b079aef6f41c710a84f6869e">ksceSblACMgrConvertModeToFsAttribute</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a> *info, int mode)</td></tr>
+<tr class="memdesc:ga7513da21b079aef6f41c710a84f6869e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a file mode to an access-controlled filesystem attribute.  <br /></td></tr>
+<tr class="separator:ga7513da21b079aef6f41c710a84f6869e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae7b3a148aa0ed5401b8278efd1e84fec" id="r_gae7b3a148aa0ed5401b8278efd1e84fec"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gae7b3a148aa0ed5401b8278efd1e84fec">ksceSblACMgrConvertModeToFsAttribute2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a> *info, int mode)</td></tr>
+<tr class="separator:gae7b3a148aa0ed5401b8278efd1e84fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0e041ac226646197dfcb71037ea13ee7" id="r_ga0e041ac226646197dfcb71037ea13ee7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga0e041ac226646197dfcb71037ea13ee7">ksceSblACMgrIsSystemProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga0e041ac226646197dfcb71037ea13ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check capability bit 1 (system-program privilege).  <br /></td></tr>
+<tr class="separator:ga0e041ac226646197dfcb71037ea13ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bbb8ed70b1434f72f9611abe150273d" id="r_ga3bbb8ed70b1434f72f9611abe150273d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga3bbb8ed70b1434f72f9611abe150273d">ksceSblACMgrGetMediaType2</a> (const char *path, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *media_type)</td></tr>
+<tr class="memdesc:ga3bbb8ed70b1434f72f9611abe150273d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the media type selected by a path's device and path-class prefix.  <br /></td></tr>
+<tr class="separator:ga3bbb8ed70b1434f72f9611abe150273d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aedc9e05d3de46085c10c767142a2da" id="r_ga8aedc9e05d3de46085c10c767142a2da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga8aedc9e05d3de46085c10c767142a2da">ksceSblACMgrGetPaid2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *paid)</td></tr>
+<tr class="memdesc:ga8aedc9e05d3de46085c10c767142a2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the program authority ID from the process self-authentication information.  <br /></td></tr>
+<tr class="separator:ga8aedc9e05d3de46085c10c767142a2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb07454abf7b853981c887916607215e" id="r_gaeb07454abf7b853981c887916607215e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaeb07454abf7b853981c887916607215e">ksceSblACMgrHasCapability</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int capability_bit)</td></tr>
+<tr class="memdesc:gaeb07454abf7b853981c887916607215e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test a process capability bit.  <br /></td></tr>
+<tr class="separator:gaeb07454abf7b853981c887916607215e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdf5f948f9d0601fcdd39714568bb07e" id="r_gacdf5f948f9d0601fcdd39714568bb07e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gacdf5f948f9d0601fcdd39714568bb07e">ksceSblACMgrHasCapability2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int capability_bit)</td></tr>
+<tr class="separator:gacdf5f948f9d0601fcdd39714568bb07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1176a174a95a317ae1e46b87e385cd9c" id="r_ga1176a174a95a317ae1e46b87e385cd9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga1176a174a95a317ae1e46b87e385cd9c">ksceSblACMgrIsAllowLoopBackMount</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga1176a174a95a317ae1e46b87e385cd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process may create a loopback mount.  <br /></td></tr>
+<tr class="separator:ga1176a174a95a317ae1e46b87e385cd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae9c9bf4f699cc7cefbc8184111f64d0" id="r_gaae9c9bf4f699cc7cefbc8184111f64d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaae9c9bf4f699cc7cefbc8184111f64d0">ksceSblACMgrIsAllowLoopBackMount2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:gaae9c9bf4f699cc7cefbc8184111f64d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac823da2d3bf0506f44b1fa96048d37da" id="r_gac823da2d3bf0506f44b1fa96048d37da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gac823da2d3bf0506f44b1fa96048d37da">ksceSblACMgrIsAllowUsbSerial</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gac823da2d3bf0506f44b1fa96048d37da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process may use the USB serial interface.  <br /></td></tr>
+<tr class="separator:gac823da2d3bf0506f44b1fa96048d37da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9f1306b56e3caa694ef31faaf11a9947" id="r_ga9f1306b56e3caa694ef31faaf11a9947"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga9f1306b56e3caa694ef31faaf11a9947">ksceSblACMgrIsAllowUsbSerial2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga9f1306b56e3caa694ef31faaf11a9947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52dcb464ecf29837a8eb4db70ee5b507" id="r_ga52dcb464ecf29837a8eb4db70ee5b507"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga52dcb464ecf29837a8eb4db70ee5b507">ksceSblACMgrIsAllowVirtualMachine</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga52dcb464ecf29837a8eb4db70ee5b507"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process may use the virtual-machine facility.  <br /></td></tr>
+<tr class="separator:ga52dcb464ecf29837a8eb4db70ee5b507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga24324d84cb2a148878225ed05f22c42c" id="r_ga24324d84cb2a148878225ed05f22c42c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga24324d84cb2a148878225ed05f22c42c">ksceSblACMgrIsAllowVirtualMachine2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga24324d84cb2a148878225ed05f22c42c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf7c567ff1dc18a0f6fd0b412545fd127" id="r_gaf7c567ff1dc18a0f6fd0b412545fd127"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaf7c567ff1dc18a0f6fd0b412545fd127">ksceSblACMgrIsDevelopmentMode2</a> (void)</td></tr>
+<tr class="memdesc:gaf7c567ff1dc18a0f6fd0b412545fd127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether development DIP switch 159 is enabled.  <br /></td></tr>
+<tr class="separator:gaf7c567ff1dc18a0f6fd0b412545fd127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga397ae2fe66f5e81b8af600622183025e" id="r_ga397ae2fe66f5e81b8af600622183025e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga397ae2fe66f5e81b8af600622183025e">ksceSblACMgrIsFself2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga397ae2fe66f5e81b8af600622183025e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID belongs to the 0x2F0 fSELF family.  <br /></td></tr>
+<tr class="separator:ga397ae2fe66f5e81b8af600622183025e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa5d7ae97ac565d97664479dbc2b37b0c" id="r_gaa5d7ae97ac565d97664479dbc2b37b0c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaa5d7ae97ac565d97664479dbc2b37b0c">ksceSblACMgrIsGameProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gaa5d7ae97ac565d97664479dbc2b37b0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID belongs to the 0x210 game family or is the fSELF game PAID 0x2F00000000000001.  <br /></td></tr>
+<tr class="separator:gaa5d7ae97ac565d97664479dbc2b37b0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga252c93ca3fabc5a5ac3fb15d4757cd29" id="r_ga252c93ca3fabc5a5ac3fb15d4757cd29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga252c93ca3fabc5a5ac3fb15d4757cd29">ksceSblACMgrIsAllowUdcd</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga252c93ca3fabc5a5ac3fb15d4757cd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process may use the USB device controller.  <br /></td></tr>
+<tr class="separator:ga252c93ca3fabc5a5ac3fb15d4757cd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fb0e1b3dd4069e8a0a216f1d585caeb" id="r_ga8fb0e1b3dd4069e8a0a216f1d585caeb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga8fb0e1b3dd4069e8a0a216f1d585caeb">ksceSblACMgrIsAllowUdcd2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga8fb0e1b3dd4069e8a0a216f1d585caeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8aa96700794d9e5646bf3c2b393ee17b" id="r_ga8aa96700794d9e5646bf3c2b393ee17b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga8aa96700794d9e5646bf3c2b393ee17b">ksceSblACMgrIsNonGameOrGameProgram</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga8aa96700794d9e5646bf3c2b393ee17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether capability bit 2 or capability bit 3 is present.  <br /></td></tr>
+<tr class="separator:ga8aa96700794d9e5646bf3c2b393ee17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76f79814b967f0d6dc5ab5dd4c8a7d31" id="r_ga76f79814b967f0d6dc5ab5dd4c8a7d31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga76f79814b967f0d6dc5ab5dd4c8a7d31">ksceSblACMgrIsNonGameOrGameProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga76f79814b967f0d6dc5ab5dd4c8a7d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b3a8721e8ffcf846bd6cfbd1f96eae0" id="r_ga4b3a8721e8ffcf846bd6cfbd1f96eae0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga4b3a8721e8ffcf846bd6cfbd1f96eae0">ksceSblACMgrIsNonGameProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga4b3a8721e8ffcf846bd6cfbd1f96eae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether capability bit 3 is present.  <br /></td></tr>
+<tr class="separator:ga4b3a8721e8ffcf846bd6cfbd1f96eae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa1e9759a389ca2ee1e6d5e4d7d26eb94" id="r_gaa1e9759a389ca2ee1e6d5e4d7d26eb94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaa1e9759a389ca2ee1e6d5e4d7d26eb94">ksceSblACMgrIsAllowMsMount</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gaa1e9759a389ca2ee1e6d5e4d7d26eb94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process may create a memory-stick work-directory mount.  <br /></td></tr>
+<tr class="separator:gaa1e9759a389ca2ee1e6d5e4d7d26eb94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62a8d9c6010389f10d43e743bba0115a" id="r_ga62a8d9c6010389f10d43e743bba0115a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga62a8d9c6010389f10d43e743bba0115a">ksceSblACMgrIsAllowMsMount2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga62a8d9c6010389f10d43e743bba0115a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9aad54695f82448d8c1e0f4a7547b5a" id="r_gae9aad54695f82448d8c1e0f4a7547b5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gae9aad54695f82448d8c1e0f4a7547b5a">ksceSblACMgrIsPSMProgram</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gae9aad54695f82448d8c1e0f4a7547b5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a process belongs to the PlayStation Mobile program family.  <br /></td></tr>
+<tr class="separator:gae9aad54695f82448d8c1e0f4a7547b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d11280aade5fabaec44fffd6054c072" id="r_ga4d11280aade5fabaec44fffd6054c072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga4d11280aade5fabaec44fffd6054c072">ksceSblACMgrIsPSMProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga4d11280aade5fabaec44fffd6054c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e2846bf36d00f585fb3380bd273c2d0" id="r_ga2e2846bf36d00f585fb3380bd273c2d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga2e2846bf36d00f585fb3380bd273c2d0">ksceSblACMgrIsPSMDevAssistantApp</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga2e2846bf36d00f585fb3380bd273c2d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is in the PSM development-assistant range 0x210000101CD20007-0x210000101CD20009.  <br /></td></tr>
+<tr class="separator:ga2e2846bf36d00f585fb3380bd273c2d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2edd95598c6f75adbc94cb3db20b11af" id="r_ga2edd95598c6f75adbc94cb3db20b11af"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga2edd95598c6f75adbc94cb3db20b11af">ksceSblACMgrIsPSMDevAssistantApp2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga2edd95598c6f75adbc94cb3db20b11af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabaef855930f235ac73447369d047c982" id="r_gabaef855930f235ac73447369d047c982"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gabaef855930f235ac73447369d047c982">ksceSblACMgrIsPSMRuntime</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gabaef855930f235ac73447369d047c982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is 0x210000101CD2000A or 0x2800C0101CD2000B, the two FW 3.60 PSM runtime identities.  <br /></td></tr>
+<tr class="separator:gabaef855930f235ac73447369d047c982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c7553425936ac598ee1f9d41b75b131" id="r_ga6c7553425936ac598ee1f9d41b75b131"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga6c7553425936ac598ee1f9d41b75b131">ksceSblACMgrIsPSMRuntime2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga6c7553425936ac598ee1f9d41b75b131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed08c41183091214630afbeff6820506" id="r_gaed08c41183091214630afbeff6820506"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaed08c41183091214630afbeff6820506">ksceSblACMgrIsPspEmu2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gaed08c41183091214630afbeff6820506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is 0x2800000000007009 or 0x2800000000000013.  <br /></td></tr>
+<tr class="separator:gaed08c41183091214630afbeff6820506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b746b87df633241c11f1c54fa27d7f1" id="r_ga0b746b87df633241c11f1c54fa27d7f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga0b746b87df633241c11f1c54fa27d7f1">ksceSblACMgrIsKernelProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga0b746b87df633241c11f1c54fa27d7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether capability bit 0 is present.  <br /></td></tr>
+<tr class="separator:ga0b746b87df633241c11f1c54fa27d7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabd49b13d3a6f548accb62e70d3646bb" id="r_gaabd49b13d3a6f548accb62e70d3646bb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#gaabd49b13d3a6f548accb62e70d3646bb">ksceSblACMgrIsSceShell2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:gaabd49b13d3a6f548accb62e70d3646bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is the SceShell PAID 0x2800000000000001.  <br /></td></tr>
+<tr class="separator:gaabd49b13d3a6f548accb62e70d3646bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d97e12368a3be1c643a55f0b6654b45" id="r_ga2d97e12368a3be1c643a55f0b6654b45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga2d97e12368a3be1c643a55f0b6654b45">ksceSblACMgrIsUpdaterProgram</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga2d97e12368a3be1c643a55f0b6654b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is in the updater-program range 0x2800800000000000-0x280080000000000F.  <br /></td></tr>
+<tr class="separator:ga2d97e12368a3be1c643a55f0b6654b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e4801f33ee0d62b97f9ab94ce57289a" id="r_ga5e4801f33ee0d62b97f9ab94ce57289a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga5e4801f33ee0d62b97f9ab94ce57289a">ksceSblACMgrIsUpdaterProgram2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga5e4801f33ee0d62b97f9ab94ce57289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a1636ced68ad1202367116c784db8cd" id="r_ga8a1636ced68ad1202367116c784db8cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga8a1636ced68ad1202367116c784db8cd">ksceSblACMgrIsWebCoreOrWebKitProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="memdesc:ga8a1636ced68ad1202367116c784db8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the PAID is 0x2800000000008003 or 0x2800000000008005, the WebCore/WebKit process identities on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga8a1636ced68ad1202367116c784db8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b61e28c0432111a9bc8cada30dd13ce" id="r_ga9b61e28c0432111a9bc8cada30dd13ce"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga9b61e28c0432111a9bc8cada30dd13ce">ksceSblACMgrIsWebCoreOrWebKitProcess2</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>)</td></tr>
+<tr class="separator:ga9b61e28c0432111a9bc8cada30dd13ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga75a4ce0f299dd38dc3e5e12023fc6883" id="r_ga75a4ce0f299dd38dc3e5e12023fc6883"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga75a4ce0f299dd38dc3e5e12023fc6883">SceSblACMgrFsAttrInfo::operation</a></td></tr>
+<tr class="memdesc:ga75a4ce0f299dd38dc3e5e12023fc6883"><td class="mdescLeft">&#160;</td><td class="mdescRight">Values 1-5 select ordinary filesystem attributes; 6 selects a PFS attribute; 7-8 are unsupported by the mode-conversion functions.  <br /></td></tr>
+<tr class="separator:ga75a4ce0f299dd38dc3e5e12023fc6883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga351e6447acca1f24580aded81a6133ae" id="r_ga351e6447acca1f24580aded81a6133ae"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga351e6447acca1f24580aded81a6133ae">SceSblACMgrFsAttrInfo::attribute</a></td></tr>
+<tr class="memdesc:ga351e6447acca1f24580aded81a6133ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caller-owned pointer to a <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> or <a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> value, selected by <a class="el" href="group__SceSblACMgrKernel.html#ga42881c38dcde8fe586a85c66402a9593" title="Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing any...">SceSblACMgrFsAttrInfo::attribute_size</a>.  <br /></td></tr>
+<tr class="separator:ga351e6447acca1f24580aded81a6133ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga42881c38dcde8fe586a85c66402a9593" id="r_ga42881c38dcde8fe586a85c66402a9593"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrKernel.html#ga42881c38dcde8fe586a85c66402a9593">SceSblACMgrFsAttrInfo::attribute_size</a></td></tr>
+<tr class="memdesc:ga42881c38dcde8fe586a85c66402a9593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing anything.  <br /></td></tr>
+<tr class="separator:ga42881c38dcde8fe586a85c66402a9593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -131,10 +329,48 @@ Functions</h2></td></tr>
 <div class="ttc" id="aacmgr_8h_html"><div class="ttname"><a href="acmgr_8h.html">acmgr.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceSblACMgrForDriver_stub </div>
+</p><div class="fragment"><div class="line">SceSblACMgrForDriver_stub SceSblACMgrForKernel_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <h2 class="groupheader">Macro Definition Documentation</h2>
+<p>Unless documented otherwise, a process ID of zero selects the current process on FW 3.60. </p>
+<hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceSblACMgrFsAttrInfo" id="structSceSblACMgrFsAttrInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceSblACMgrFsAttrInfo">&#9670;&#160;</a></span>SceSblACMgrFsAttrInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceSblACMgrFsAttrInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Filesystem-attribute conversion request. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga75a4ce0f299dd38dc3e5e12023fc6883" name="ga75a4ce0f299dd38dc3e5e12023fc6883"></a>int</td>
+<td class="fieldname">
+operation</td>
+<td class="fielddoc">
+Values 1-5 select ordinary filesystem attributes; 6 selects a PFS attribute; 7-8 are unsupported by the mode-conversion functions. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga351e6447acca1f24580aded81a6133ae" name="ga351e6447acca1f24580aded81a6133ae"></a>void *</td>
+<td class="fieldname">
+attribute</td>
+<td class="fielddoc">
+Caller-owned pointer to a <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> or <a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> value, selected by <a class="el" href="group__SceSblACMgrKernel.html#ga42881c38dcde8fe586a85c66402a9593" title="Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing any...">SceSblACMgrFsAttrInfo::attribute_size</a>. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga42881c38dcde8fe586a85c66402a9593" name="ga42881c38dcde8fe586a85c66402a9593"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+attribute_size</td>
+<td class="fielddoc">
+Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing anything. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gabd9122a6bfed828d831a211d2b47a9a0" name="gabd9122a6bfed828d831a211d2b47a9a0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabd9122a6bfed828d831a211d2b47a9a0">&#9670;&#160;</a></span>ksceSblACMgrIsSystem</h2>
 
@@ -168,6 +404,368 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae4dc12cb5153efd5e1da06b5119ab40b" name="gae4dc12cb5153efd5e1da06b5119ab40b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4dc12cb5153efd5e1da06b5119ab40b">&#9670;&#160;</a></span>kscePfsACSetFSAttrByMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define kscePfsACSetFSAttrByMode&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae7b3a148aa0ed5401b8278efd1e84fec">ksceSblACMgrConvertModeToFsAttribute2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga61fa234619f0e1bf36bb9f92265d1022" name="ga61fa234619f0e1bf36bb9f92265d1022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61fa234619f0e1bf36bb9f92265d1022">&#9670;&#160;</a></span>ksceSblACIsSystemProgram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACIsSystemProgram&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga0e041ac226646197dfcb71037ea13ee7">ksceSblACMgrIsSystemProgram2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4177af41a0b4ae4571b6185746cb6b7c" name="ga4177af41a0b4ae4571b6185746cb6b7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4177af41a0b4ae4571b6185746cb6b7c">&#9670;&#160;</a></span>ksceSblACMgrSetFSAttributeByMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrSetFSAttributeByMode&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga7513da21b079aef6f41c710a84f6869e">ksceSblACMgrConvertModeToFsAttribute</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae6e9de9eec3f555efa7a51c87d211ba6" name="gae6e9de9eec3f555efa7a51c87d211ba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6e9de9eec3f555efa7a51c87d211ba6">&#9670;&#160;</a></span>ksceSblACMgrSetFSAttributeByMode2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrSetFSAttributeByMode2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae7b3a148aa0ed5401b8278efd1e84fec">ksceSblACMgrConvertModeToFsAttribute2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga75007b39f5d2ecff9bd8e2b3024e30a6" name="ga75007b39f5d2ecff9bd8e2b3024e30a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75007b39f5d2ecff9bd8e2b3024e30a6">&#9670;&#160;</a></span>ksceSblACMgrGetProcessProgramAuthId2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrGetProcessProgramAuthId2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga8aedc9e05d3de46085c10c767142a2da">ksceSblACMgrGetPaid2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1f9c9d72472f90f94670da2edd04b462" name="ga1f9c9d72472f90f94670da2edd04b462"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f9c9d72472f90f94670da2edd04b462">&#9670;&#160;</a></span>ksceSblACMgrIsAllowedExtendedMemory</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsAllowedExtendedMemory&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga1176a174a95a317ae1e46b87e385cd9c">ksceSblACMgrIsAllowLoopBackMount</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga90eb06757d443dcf9acda442490d17c5" name="ga90eb06757d443dcf9acda442490d17c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90eb06757d443dcf9acda442490d17c5">&#9670;&#160;</a></span>ksceSblACMgrIsAllowedExtendedMemory2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsAllowedExtendedMemory2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gaae9c9bf4f699cc7cefbc8184111f64d0">ksceSblACMgrIsAllowLoopBackMount2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga64e883be8760fb522ac70b450827d5b4" name="ga64e883be8760fb522ac70b450827d5b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64e883be8760fb522ac70b450827d5b4">&#9670;&#160;</a></span>ksceSblACMgrIsAllowedUsbSerial</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsAllowedUsbSerial&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gac823da2d3bf0506f44b1fa96048d37da">ksceSblACMgrIsAllowUsbSerial</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac600cc5fd4868073d4db709ab95d1b79" name="gac600cc5fd4868073d4db709ab95d1b79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac600cc5fd4868073d4db709ab95d1b79">&#9670;&#160;</a></span>ksceSblACMgrIsAllowedVirtualMachine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsAllowedVirtualMachine&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga52dcb464ecf29837a8eb4db70ee5b507">ksceSblACMgrIsAllowVirtualMachine</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga9c2940298454168ff21d63adac8d6230" name="ga9c2940298454168ff21d63adac8d6230"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c2940298454168ff21d63adac8d6230">&#9670;&#160;</a></span>ksceSblACMgrIsAllowedVirtualMachine2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsAllowedVirtualMachine2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga24324d84cb2a148878225ed05f22c42c">ksceSblACMgrIsAllowVirtualMachine2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2f94b7c86ccee273ae4f1f1ceae63403" name="ga2f94b7c86ccee273ae4f1f1ceae63403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2f94b7c86ccee273ae4f1f1ceae63403">&#9670;&#160;</a></span>ksceSblACMgrIsMiniSettingsForQA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsMiniSettingsForQA&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga252c93ca3fabc5a5ac3fb15d4757cd29">ksceSblACMgrIsAllowUdcd</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga66b332877bec059be0e1f357ddccac35" name="ga66b332877bec059be0e1f357ddccac35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga66b332877bec059be0e1f357ddccac35">&#9670;&#160;</a></span>ksceSblACMgrIsMiniSettingsForQA2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsMiniSettingsForQA2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga8fb0e1b3dd4069e8a0a216f1d585caeb">ksceSblACMgrIsAllowUdcd2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gace118cc56d48e79e62567758ef55e4cf" name="gace118cc56d48e79e62567758ef55e4cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gace118cc56d48e79e62567758ef55e4cf">&#9670;&#160;</a></span>ksceSblACMgrIsNotSandboxed</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsNotSandboxed&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gaa1e9759a389ca2ee1e6d5e4d7d26eb94">ksceSblACMgrIsAllowMsMount</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4018532a70d4a15bbf01b8ae339428e3" name="ga4018532a70d4a15bbf01b8ae339428e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4018532a70d4a15bbf01b8ae339428e3">&#9670;&#160;</a></span>ksceSblACMgrIsNotSandboxed2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsNotSandboxed2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga62a8d9c6010389f10d43e743bba0115a">ksceSblACMgrIsAllowMsMount2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga6a947bc8f94b814f4d2bae360069ae5a" name="ga6a947bc8f94b814f4d2bae360069ae5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a947bc8f94b814f4d2bae360069ae5a">&#9670;&#160;</a></span>ksceSblACMgrIsPSMDevAssistant</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsPSMDevAssistant&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#gae9aad54695f82448d8c1e0f4a7547b5a">ksceSblACMgrIsPSMProgram</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gafdf0eaf8ac45036cd9788c8339de270e" name="gafdf0eaf8ac45036cd9788c8339de270e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafdf0eaf8ac45036cd9788c8339de270e">&#9670;&#160;</a></span>ksceSblACMgrIsPSMDevAssistant2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsPSMDevAssistant2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga4d11280aade5fabaec44fffd6054c072">ksceSblACMgrIsPSMProgram2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga73bc8817f7274a459fbddcb68be33cc9" name="ga73bc8817f7274a459fbddcb68be33cc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73bc8817f7274a459fbddcb68be33cc9">&#9670;&#160;</a></span>ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2d97e12368a3be1c643a55f0b6654b45">ksceSblACMgrIsUpdaterProgram</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaac475aa4d9ad93f8dff1c1587369b5de" name="gaac475aa4d9ad93f8dff1c1587369b5de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac475aa4d9ad93f8dff1c1587369b5de">&#9670;&#160;</a></span>ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga5e4801f33ee0d62b97f9ab94ce57289a">ksceSblACMgrIsUpdaterProgram2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gacafeede91ac4bd6401158310ecedcc82" name="gacafeede91ac4bd6401158310ecedcc82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacafeede91ac4bd6401158310ecedcc82">&#9670;&#160;</a></span>ksceSblACMgrIsRootProgram2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsRootProgram2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga0b746b87df633241c11f1c54fa27d7f1">ksceSblACMgrIsKernelProgram2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga3f7a19d8ca5c959792c896f5f82d5803" name="ga3f7a19d8ca5c959792c896f5f82d5803"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f7a19d8ca5c959792c896f5f82d5803">&#9670;&#160;</a></span>ksceSblACMgrIsSIEApp</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsSIEApp&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2e2846bf36d00f585fb3380bd273c2d0">ksceSblACMgrIsPSMDevAssistantApp</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaccb18f7306b168e6ddf1068ca07635ae" name="gaccb18f7306b168e6ddf1068ca07635ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaccb18f7306b168e6ddf1068ca07635ae">&#9670;&#160;</a></span>ksceSblACMgrIsSIEApp2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ksceSblACMgrIsSIEApp2&#160;&#160;&#160;<a class="el" href="group__SceSblACMgrKernel.html#ga2edd95598c6f75adbc94cb3db20b11af">ksceSblACMgrIsPSMDevAssistantApp2</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ga3aa96d486fa001a95599fffb3fc6df45" name="ga3aa96d486fa001a95599fffb3fc6df45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3aa96d486fa001a95599fffb3fc6df45">&#9670;&#160;</a></span>SceSblACMgrMediaType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceSblACMgrKernel.html#ga3aa96d486fa001a95599fffb3fc6df45">SceSblACMgrMediaType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Media types produced by the FW 3.60 path classifier. </p>
+<p>In the path patterns below, <code>[n]</code> means zero or more decimal unit digits. For example, both <code>os:</code> and the normal <code>os0:</code> form are accepted. The path table does not produce media types 8, 9, 10, or 26. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a9b5f1fc865101a27340e9b2facb191ba" name="gga3aa96d486fa001a95599fffb3fc6df45a9b5f1fc865101a27340e9b2facb191ba"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UX_USER&#160;</td><td class="fielddoc"><p><code>ux[n]:user</code> or <code>ux[n]:/user</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ad09f22181d66b5aef046a00e879d3089" name="gga3aa96d486fa001a95599fffb3fc6df45ad09f22181d66b5aef046a00e879d3089"></a>SCE_SBL_ACMGR_MEDIA_TYPE_SD&#160;</td><td class="fielddoc"><p><code>sd[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a840ec53b80fa643a0740979930f80e74" name="gga3aa96d486fa001a95599fffb3fc6df45a840ec53b80fa643a0740979930f80e74"></a>SCE_SBL_ACMGR_MEDIA_TYPE_OS&#160;</td><td class="fielddoc"><p><code>os[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a8b1744afbbb27a79ece9622d1fd410b1" name="gga3aa96d486fa001a95599fffb3fc6df45a8b1744afbbb27a79ece9622d1fd410b1"></a>SCE_SBL_ACMGR_MEDIA_TYPE_VS&#160;</td><td class="fielddoc"><p><code>vs[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a175155823c914501bb02df1921e938dc" name="gga3aa96d486fa001a95599fffb3fc6df45a175155823c914501bb02df1921e938dc"></a>SCE_SBL_ACMGR_MEDIA_TYPE_VD&#160;</td><td class="fielddoc"><p><code>vd[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a3782109a2dd9835dc0f2c4400115ae4f" name="gga3aa96d486fa001a95599fffb3fc6df45a3782109a2dd9835dc0f2c4400115ae4f"></a>SCE_SBL_ACMGR_MEDIA_TYPE_TM&#160;</td><td class="fielddoc"><p><code>tm[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a4e4ecb918d15f2c72fa9b88c2c1d284f" name="gga3aa96d486fa001a95599fffb3fc6df45a4e4ecb918d15f2c72fa9b88c2c1d284f"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UR&#160;</td><td class="fielddoc"><p><code>ur[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a9f30a74912676266d44317597afcaaf1" name="gga3aa96d486fa001a95599fffb3fc6df45a9f30a74912676266d44317597afcaaf1"></a>SCE_SBL_ACMGR_MEDIA_TYPE_HOST&#160;</td><td class="fielddoc"><p><code>host[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a14e2948cc1dca8ca86027117a46e8211" name="gga3aa96d486fa001a95599fffb3fc6df45a14e2948cc1dca8ca86027117a46e8211"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UD&#160;</td><td class="fielddoc"><p><code>ud[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a8b54d1f71653cfa7f5cbb851ebf64202" name="gga3aa96d486fa001a95599fffb3fc6df45a8b54d1f71653cfa7f5cbb851ebf64202"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UX&#160;</td><td class="fielddoc"><p>Other paths beginning with <code>ux[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ab5b39efd767db808c598b2605b2a5939" name="gga3aa96d486fa001a95599fffb3fc6df45ab5b39efd767db808c598b2605b2a5939"></a>SCE_SBL_ACMGR_MEDIA_TYPE_GRO_APP&#160;</td><td class="fielddoc"><p><code>gro[n]:app</code> or <code>gro[n]:/app</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a952c5a1f986d2e7b274e8ba0914700e6" name="gga3aa96d486fa001a95599fffb3fc6df45a952c5a1f986d2e7b274e8ba0914700e6"></a>SCE_SBL_ACMGR_MEDIA_TYPE_GRW_PATCH&#160;</td><td class="fielddoc"><p><code>grw[n]:patch</code> or <code>grw[n]:/patch</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a115ac2b4873edc01bac5045c0c298aca" name="gga3aa96d486fa001a95599fffb3fc6df45a115ac2b4873edc01bac5045c0c298aca"></a>SCE_SBL_ACMGR_MEDIA_TYPE_SA&#160;</td><td class="fielddoc"><p><code>sa[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a57b5b7ea454577c7987c62f862caaf9b" name="gga3aa96d486fa001a95599fffb3fc6df45a57b5b7ea454577c7987c62f862caaf9b"></a>SCE_SBL_ACMGR_MEDIA_TYPE_MFA&#160;</td><td class="fielddoc"><p><code>mfa[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ae8bb5892e6ea857d40bb042a827d903d" name="gga3aa96d486fa001a95599fffb3fc6df45ae8bb5892e6ea857d40bb042a827d903d"></a>SCE_SBL_ACMGR_MEDIA_TYPE_MFB&#160;</td><td class="fielddoc"><p><code>mfb[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45aad6b2ae2f41ba7dde5b40318f11ec487" name="gga3aa96d486fa001a95599fffb3fc6df45aad6b2ae2f41ba7dde5b40318f11ec487"></a>SCE_SBL_ACMGR_MEDIA_TYPE_LMA&#160;</td><td class="fielddoc"><p><code>lma[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45abdcba9762b88cc49b1df615d281acae2" name="gga3aa96d486fa001a95599fffb3fc6df45abdcba9762b88cc49b1df615d281acae2"></a>SCE_SBL_ACMGR_MEDIA_TYPE_LMB&#160;</td><td class="fielddoc"><p><code>lmb[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a548dd2b9da0562e019c65c8fcf2b1df6" name="gga3aa96d486fa001a95599fffb3fc6df45a548dd2b9da0562e019c65c8fcf2b1df6"></a>SCE_SBL_ACMGR_MEDIA_TYPE_LMC&#160;</td><td class="fielddoc"><p><code>lmc[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a7482c0684b3b3cc0e210a85e7918b999" name="gga3aa96d486fa001a95599fffb3fc6df45a7482c0684b3b3cc0e210a85e7918b999"></a>SCE_SBL_ACMGR_MEDIA_TYPE_LMD&#160;</td><td class="fielddoc"><p><code>lmd[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ac685dad8bd03172eedc8ee5f8597b93a" name="gga3aa96d486fa001a95599fffb3fc6df45ac685dad8bd03172eedc8ee5f8597b93a"></a>SCE_SBL_ACMGR_MEDIA_TYPE_PD&#160;</td><td class="fielddoc"><p><code>pd[n]:</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ab5a4df337529dccf65a47a8924393af3" name="gga3aa96d486fa001a95599fffb3fc6df45ab5a4df337529dccf65a47a8924393af3"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UX_APP&#160;</td><td class="fielddoc"><p><code>ux[n]:app</code> or <code>ux[n]:/app</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ad522a473f3c254d5eaa9d225d731d27b" name="gga3aa96d486fa001a95599fffb3fc6df45ad522a473f3c254d5eaa9d225d731d27b"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UX_PATCH&#160;</td><td class="fielddoc"><p><code>ux[n]:patch</code> or <code>ux[n]:/patch</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45ab4a1d2e490763c2954f09f421b007d29" name="gga3aa96d486fa001a95599fffb3fc6df45ab4a1d2e490763c2954f09f421b007d29"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UX_DATA&#160;</td><td class="fielddoc"><p><code>ux[n]:data</code> or <code>ux[n]:/data</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga3aa96d486fa001a95599fffb3fc6df45a470228c9a780a565ef1eaaa37afd1afe" name="gga3aa96d486fa001a95599fffb3fc6df45a470228c9a780a565ef1eaaa37afd1afe"></a>SCE_SBL_ACMGR_MEDIA_TYPE_UMA&#160;</td><td class="fielddoc"><p><code>uma[n]:</code>. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
@@ -395,7 +993,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, or 0x800F0916 if <em>authid</em> is NULL or the authentication information is unavailable. </dd></dl>
 
 </div>
 </div>
@@ -426,14 +1024,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get media type for input path. </p>
+<p>FW 3.60 matches a recognized prefix, skips any following decimal device number, and then matches the path-class suffix when one is required. The comparison is case-sensitive and does not inspect characters after the matched suffix.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- The target path </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">media_type</td><td>- The media type output pointer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- NUL-terminated path to classify. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">media_type</td><td>- Receives one of <a class="el" href="group__SceSblACMgrKernel.html#ga3aa96d486fa001a95599fffb3fc6df45" title="Media types produced by the FW 3.60 path classifier.">SceSblACMgrMediaType</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, 0x800F090E for a NULL argument, or 0x800F0903 when no rule matches. On the no-match error, <em>media_type</em> receives <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a9b5f1fc865101a27340e9b2facb191ba" title="ux[n]:user or ux[n]:/user.">SCE_SBL_ACMGR_MEDIA_TYPE_UX_USER</a>. </dd></dl>
 
 </div>
 </div>
@@ -455,6 +1054,1019 @@ Functions</h2></td></tr>
 
 <p>Get development mode state. </p>
 <dl class="section return"><dt>Returns</dt><dd>If development mode, 1. else 0. </dd></dl>
+
+</div>
+</div>
+<a id="gaae82b3a9ece1df263e0c54e71e700fb4" name="gaae82b3a9ece1df263e0c54e71e700fb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae82b3a9ece1df263e0c54e71e700fb4">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0xC&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7513da21b079aef6f41c710a84f6869e" name="ga7513da21b079aef6f41c710a84f6869e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7513da21b079aef6f41c710a84f6869e">&#9670;&#160;</a></span>ksceSblACMgrConvertModeToFsAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrConvertModeToFsAttribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert a file mode to an access-controlled filesystem attribute. </p>
+<p>Operations 1-5 replace the low three bits of the existing output value. For operations 1-5, mode 0x01000000 writes the value 0xF directly. Other modes are mapped according to the calling thread's access level; privileged attribute bit 2 is rejected outside access levels 0x40/0x80.</p>
+<p>Operation 6 writes a PFS attribute. It selects the restricted mapping for target processes whose first capability word is 0x10 or 0x20, and the privileged mapping for 0x40 or 0x80. Modes 0x00100000 and 0x00200000 are accepted only by the privileged mapping and produce PFS attribute bits 0x4000 and 0x2000 respectively. Use a two-byte value to preserve those high PFS bits. Operations 7 and 8 return 0x800F0925.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91" title="Process ID.">ScePID</a>). </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">info</td><td>- Attribute operation and output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- File mode (<a class="el" href="group__SceTypesKernel.html#gad563fb9897e927ac60a231ba16859629" title="Mode for I/O functions.">SceMode</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success; 0x800F0902 when an operation-6 mode has no mapping; 0x800F0903 if process authentication information is unavailable; 0x800F0916 for a NULL/invalid request; 0x800F0925 for operations 7-8; 0x800F0928 for an unsupported operation-6 process class; 0x8001000D when the selected attribute is forbidden; or 0x80010016 when a mode/access-level mapping is invalid. </dd></dl>
+
+</div>
+</div>
+<a id="gae7b3a148aa0ed5401b8278efd1e84fec" name="gae7b3a148aa0ed5401b8278efd1e84fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae7b3a148aa0ed5401b8278efd1e84fec">&#9670;&#160;</a></span>ksceSblACMgrConvertModeToFsAttribute2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrConvertModeToFsAttribute2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceSblACMgrKernel.html#structSceSblACMgrFsAttrInfo">SceSblACMgrFsAttrInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga0e041ac226646197dfcb71037ea13ee7" name="ga0e041ac226646197dfcb71037ea13ee7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0e041ac226646197dfcb71037ea13ee7">&#9670;&#160;</a></span>ksceSblACMgrIsSystemProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsSystemProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check capability bit 1 (system-program privilege). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91" title="Process ID.">ScePID</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the capability is present, otherwise 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga3bbb8ed70b1434f72f9611abe150273d" name="ga3bbb8ed70b1434f72f9611abe150273d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bbb8ed70b1434f72f9611abe150273d">&#9670;&#160;</a></span>ksceSblACMgrGetMediaType2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrGetMediaType2 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td>
+          <td class="paramname"><em>media_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the media type selected by a path's device and path-class prefix. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>- NUL-terminated path to classify. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">media_type</td><td>- Receives one of <a class="el" href="group__SceSblACMgrKernel.html#ga3aa96d486fa001a95599fffb3fc6df45" title="Media types produced by the FW 3.60 path classifier.">SceSblACMgrMediaType</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, 0x800F090E for a NULL argument, or 0x800F0903 when no rule matches. On the no-match error, <em>media_type</em> receives <a class="el" href="group__SceSblACMgrKernel.html#gga3aa96d486fa001a95599fffb3fc6df45a9b5f1fc865101a27340e9b2facb191ba" title="ux[n]:user or ux[n]:/user.">SCE_SBL_ACMGR_MEDIA_TYPE_UX_USER</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga8aedc9e05d3de46085c10c767142a2da" name="ga8aedc9e05d3de46085c10c767142a2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aedc9e05d3de46085c10c767142a2da">&#9670;&#160;</a></span>ksceSblACMgrGetPaid2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrGetPaid2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>paid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the program authority ID from the process self-authentication information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91" title="Process ID.">ScePID</a>). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">paid</td><td>- Program authority ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, or 0x800F0916 if <em>paid</em> is NULL or the authentication information is unavailable. </dd></dl>
+
+</div>
+</div>
+<a id="gaeb07454abf7b853981c887916607215e" name="gaeb07454abf7b853981c887916607215e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb07454abf7b853981c887916607215e">&#9670;&#160;</a></span>ksceSblACMgrHasCapability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrHasCapability </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capability_bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Test a process capability bit. </p>
+<p>Capability bits are numbered from 0 to 255 and stored most-significant bit first within each byte. FW 3.60 does not bounds-check <em>capability_bit</em>; callers must keep it in this range.</p>
+<p>Known values used by FW 3.60 include 0 (kernel program), 1 (system program), 2 (game program), 3 (non-game program), 128 (Marlin), 129 (MagicGate), 130 (UDCD/loopback mount), 131 (USB serial), 132 (virtual machine), 133 (force-open message pipe), 134 (PlayReady system data), and 135 (system data).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID (<a class="el" href="group__SceTypesKernel.html#ga198945239e12673127404eae56f28a91" title="Process ID.">ScePID</a>). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">capability_bit</td><td>- Capability bit number.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 if the capability is present, otherwise 0. Failure to obtain the process authentication information also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="gacdf5f948f9d0601fcdd39714568bb07e" name="gacdf5f948f9d0601fcdd39714568bb07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdf5f948f9d0601fcdd39714568bb07e">&#9670;&#160;</a></span>ksceSblACMgrHasCapability2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrHasCapability2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capability_bit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1176a174a95a317ae1e46b87e385cd9c" name="ga1176a174a95a317ae1e46b87e385cd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1176a174a95a317ae1e46b87e385cd9c">&#9670;&#160;</a></span>ksceSblACMgrIsAllowLoopBackMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowLoopBackMount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process may create a loopback mount. </p>
+<p>FW 3.60 grants this to capability bit 130 or to PAID 0x220000101CC73883, 0x2800000000000010, 0x280000000000001E, or 0x2800000000000031.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when permitted, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="gaae9c9bf4f699cc7cefbc8184111f64d0" name="gaae9c9bf4f699cc7cefbc8184111f64d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae9c9bf4f699cc7cefbc8184111f64d0">&#9670;&#160;</a></span>ksceSblACMgrIsAllowLoopBackMount2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowLoopBackMount2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gac823da2d3bf0506f44b1fa96048d37da" name="gac823da2d3bf0506f44b1fa96048d37da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac823da2d3bf0506f44b1fa96048d37da">&#9670;&#160;</a></span>ksceSblACMgrIsAllowUsbSerial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsAllowUsbSerial </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process may use the USB serial interface. </p>
+<p>FW 3.60 grants access to capability bit 1, capability bit 131, and fSELF processes when Utoken flag bit 1 is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when permitted, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga9f1306b56e3caa694ef31faaf11a9947" name="ga9f1306b56e3caa694ef31faaf11a9947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f1306b56e3caa694ef31faaf11a9947">&#9670;&#160;</a></span>ksceSblACMgrIsAllowUsbSerial2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsAllowUsbSerial2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga52dcb464ecf29837a8eb4db70ee5b507" name="ga52dcb464ecf29837a8eb4db70ee5b507"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52dcb464ecf29837a8eb4db70ee5b507">&#9670;&#160;</a></span>ksceSblACMgrIsAllowVirtualMachine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsAllowVirtualMachine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process may use the virtual-machine facility. </p>
+<p>FW 3.60 grants access to capability bit 132 and to fSELF processes when Utoken flag bit 1 is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when permitted, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga24324d84cb2a148878225ed05f22c42c" name="ga24324d84cb2a148878225ed05f22c42c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24324d84cb2a148878225ed05f22c42c">&#9670;&#160;</a></span>ksceSblACMgrIsAllowVirtualMachine2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsAllowVirtualMachine2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaf7c567ff1dc18a0f6fd0b412545fd127" name="gaf7c567ff1dc18a0f6fd0b412545fd127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf7c567ff1dc18a0f6fd0b412545fd127">&#9670;&#160;</a></span>ksceSblACMgrIsDevelopmentMode2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsDevelopmentMode2 </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether development DIP switch 159 is enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>The value returned by <a class="el" href="group__SceDipswKernel.html#gae8e772adac10246ef4e57b525218ffaf" title="Check dipsw bit.">ksceKernelCheckDipsw</a> for switch 159. </dd></dl>
+
+</div>
+</div>
+<a id="ga397ae2fe66f5e81b8af600622183025e" name="ga397ae2fe66f5e81b8af600622183025e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga397ae2fe66f5e81b8af600622183025e">&#9670;&#160;</a></span>ksceSblACMgrIsFself2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsFself2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID belongs to the 0x2F0 fSELF family. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when it belongs to the family, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="gaa5d7ae97ac565d97664479dbc2b37b0c" name="gaa5d7ae97ac565d97664479dbc2b37b0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa5d7ae97ac565d97664479dbc2b37b0c">&#9670;&#160;</a></span>ksceSblACMgrIsGameProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsGameProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID belongs to the 0x210 game family or is the fSELF game PAID 0x2F00000000000001. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga252c93ca3fabc5a5ac3fb15d4757cd29" name="ga252c93ca3fabc5a5ac3fb15d4757cd29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga252c93ca3fabc5a5ac3fb15d4757cd29">&#9670;&#160;</a></span>ksceSblACMgrIsAllowUdcd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowUdcd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process may use the USB device controller. </p>
+<p>FW 3.60 grants this to capability bit 130, PAID 0x220000101CC73883, and PAID 0x2800000000000010.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when permitted, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga8fb0e1b3dd4069e8a0a216f1d585caeb" name="ga8fb0e1b3dd4069e8a0a216f1d585caeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fb0e1b3dd4069e8a0a216f1d585caeb">&#9670;&#160;</a></span>ksceSblACMgrIsAllowUdcd2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowUdcd2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8aa96700794d9e5646bf3c2b393ee17b" name="ga8aa96700794d9e5646bf3c2b393ee17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8aa96700794d9e5646bf3c2b393ee17b">&#9670;&#160;</a></span>ksceSblACMgrIsNonGameOrGameProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsNonGameOrGameProgram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether capability bit 2 or capability bit 3 is present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when either bit is present, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga76f79814b967f0d6dc5ab5dd4c8a7d31" name="ga76f79814b967f0d6dc5ab5dd4c8a7d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76f79814b967f0d6dc5ab5dd4c8a7d31">&#9670;&#160;</a></span>ksceSblACMgrIsNonGameOrGameProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsNonGameOrGameProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4b3a8721e8ffcf846bd6cfbd1f96eae0" name="ga4b3a8721e8ffcf846bd6cfbd1f96eae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b3a8721e8ffcf846bd6cfbd1f96eae0">&#9670;&#160;</a></span>ksceSblACMgrIsNonGameProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsNonGameProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether capability bit 3 is present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when the bit is present, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="gaa1e9759a389ca2ee1e6d5e4d7d26eb94" name="gaa1e9759a389ca2ee1e6d5e4d7d26eb94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa1e9759a389ca2ee1e6d5e4d7d26eb94">&#9670;&#160;</a></span>ksceSblACMgrIsAllowMsMount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowMsMount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process may create a memory-stick work-directory mount. </p>
+<p>FW 3.60 grants this only to PAID 0x2800000000000001, 0x2800000000000010, 0x2800000000000013, 0x2800000000000022, 0x280000000000002D, 0x280000000000002E, 0x2800000000000039, or 0x2800000000007009.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when permitted, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga62a8d9c6010389f10d43e743bba0115a" name="ga62a8d9c6010389f10d43e743bba0115a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62a8d9c6010389f10d43e743bba0115a">&#9670;&#160;</a></span>ksceSblACMgrIsAllowMsMount2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceSblACMgrIsAllowMsMount2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae9aad54695f82448d8c1e0f4a7547b5a" name="gae9aad54695f82448d8c1e0f4a7547b5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9aad54695f82448d8c1e0f4a7547b5a">&#9670;&#160;</a></span>ksceSblACMgrIsPSMProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMProgram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether a process belongs to the PlayStation Mobile program family. </p>
+<p>On FW 3.60 this includes PSM-family PAIDs 0x210000101CD20007-0x210000101CD2000A, runtime PAID 0x2800C0101CD2000B, and fSELF processes when Utoken flag bit 1 is enabled.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching process, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga4d11280aade5fabaec44fffd6054c072" name="ga4d11280aade5fabaec44fffd6054c072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d11280aade5fabaec44fffd6054c072">&#9670;&#160;</a></span>ksceSblACMgrIsPSMProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2e2846bf36d00f585fb3380bd273c2d0" name="ga2e2846bf36d00f585fb3380bd273c2d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2e2846bf36d00f585fb3380bd273c2d0">&#9670;&#160;</a></span>ksceSblACMgrIsPSMDevAssistantApp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMDevAssistantApp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is in the PSM development-assistant range 0x210000101CD20007-0x210000101CD20009. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga2edd95598c6f75adbc94cb3db20b11af" name="ga2edd95598c6f75adbc94cb3db20b11af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2edd95598c6f75adbc94cb3db20b11af">&#9670;&#160;</a></span>ksceSblACMgrIsPSMDevAssistantApp2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMDevAssistantApp2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gabaef855930f235ac73447369d047c982" name="gabaef855930f235ac73447369d047c982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabaef855930f235ac73447369d047c982">&#9670;&#160;</a></span>ksceSblACMgrIsPSMRuntime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMRuntime </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is 0x210000101CD2000A or 0x2800C0101CD2000B, the two FW 3.60 PSM runtime identities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga6c7553425936ac598ee1f9d41b75b131" name="ga6c7553425936ac598ee1f9d41b75b131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c7553425936ac598ee1f9d41b75b131">&#9670;&#160;</a></span>ksceSblACMgrIsPSMRuntime2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPSMRuntime2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaed08c41183091214630afbeff6820506" name="gaed08c41183091214630afbeff6820506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed08c41183091214630afbeff6820506">&#9670;&#160;</a></span>ksceSblACMgrIsPspEmu2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsPspEmu2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is 0x2800000000007009 or 0x2800000000000013. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga0b746b87df633241c11f1c54fa27d7f1" name="ga0b746b87df633241c11f1c54fa27d7f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0b746b87df633241c11f1c54fa27d7f1">&#9670;&#160;</a></span>ksceSblACMgrIsKernelProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsKernelProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether capability bit 0 is present. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when the bit is present, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="gaabd49b13d3a6f548accb62e70d3646bb" name="gaabd49b13d3a6f548accb62e70d3646bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabd49b13d3a6f548accb62e70d3646bb">&#9670;&#160;</a></span>ksceSblACMgrIsSceShell2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsSceShell2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is the SceShell PAID 0x2800000000000001. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for SceShell, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga2d97e12368a3be1c643a55f0b6654b45" name="ga2d97e12368a3be1c643a55f0b6654b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d97e12368a3be1c643a55f0b6654b45">&#9670;&#160;</a></span>ksceSblACMgrIsUpdaterProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsUpdaterProgram </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is in the updater-program range 0x2800800000000000-0x280080000000000F. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga5e4801f33ee0d62b97f9ab94ce57289a" name="ga5e4801f33ee0d62b97f9ab94ce57289a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e4801f33ee0d62b97f9ab94ce57289a">&#9670;&#160;</a></span>ksceSblACMgrIsUpdaterProgram2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsUpdaterProgram2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga8a1636ced68ad1202367116c784db8cd" name="ga8a1636ced68ad1202367116c784db8cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a1636ced68ad1202367116c784db8cd">&#9670;&#160;</a></span>ksceSblACMgrIsWebCoreOrWebKitProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsWebCoreOrWebKitProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return whether the PAID is 0x2800000000008003 or 0x2800000000008005, the WebCore/WebKit process identities on FW 3.60. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Target process ID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a matching PAID, otherwise 0. Authentication lookup failure also returns 0. </dd></dl>
+
+</div>
+</div>
+<a id="ga9b61e28c0432111a9bc8cada30dd13ce" name="ga9b61e28c0432111a9bc8cada30dd13ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b61e28c0432111a9bc8cada30dd13ce">&#9670;&#160;</a></span>ksceSblACMgrIsWebCoreOrWebKitProcess2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceSblACMgrIsWebCoreOrWebKitProcess2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ga75a4ce0f299dd38dc3e5e12023fc6883" name="ga75a4ce0f299dd38dc3e5e12023fc6883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75a4ce0f299dd38dc3e5e12023fc6883">&#9670;&#160;</a></span>operation</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SceSblACMgrFsAttrInfo::operation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Values 1-5 select ordinary filesystem attributes; 6 selects a PFS attribute; 7-8 are unsupported by the mode-conversion functions. </p>
+
+</div>
+</div>
+<a id="ga351e6447acca1f24580aded81a6133ae" name="ga351e6447acca1f24580aded81a6133ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga351e6447acca1f24580aded81a6133ae">&#9670;&#160;</a></span>attribute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void* SceSblACMgrFsAttrInfo::attribute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Caller-owned pointer to a <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> or <a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> value, selected by <a class="el" href="group__SceSblACMgrKernel.html#ga42881c38dcde8fe586a85c66402a9593" title="Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing any...">SceSblACMgrFsAttrInfo::attribute_size</a>. </p>
+
+</div>
+</div>
+<a id="ga42881c38dcde8fe586a85c66402a9593" name="ga42881c38dcde8fe586a85c66402a9593"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga42881c38dcde8fe586a85c66402a9593">&#9670;&#160;</a></span>attribute_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceSblACMgrFsAttrInfo::attribute_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Attribute size in bytes. Use 1 or 2; other values can make FW 3.60 return success without writing anything. </p>
 
 </div>
 </div>

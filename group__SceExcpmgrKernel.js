@@ -1,10 +1,42 @@
 var group__SceExcpmgrKernel =
 [
+    [ "SceExcpmgrBreakpointState", "group__SceExcpmgrKernel.html#structSceExcpmgrBreakpointState", [
+      [ "lock", "group__SceExcpmgrKernel.html#gac93452063294539d59964ab61f2846c3", null ],
+      [ "reserved", "group__SceExcpmgrKernel.html#ga6c9e011dc566b91ed032a801fe9c6197", null ],
+      [ "DBGBVR0", "group__SceExcpmgrKernel.html#ga578041c6299ebb89549ac53fc8dce904", null ],
+      [ "DBGBCR0", "group__SceExcpmgrKernel.html#ga86bf308292e058351d1f1320c56d6230", null ],
+      [ "DBGBVR1", "group__SceExcpmgrKernel.html#ga98ce84d9f9ce677345d4d6ba33ebdd83", null ],
+      [ "DBGBCR1", "group__SceExcpmgrKernel.html#ga0f2498a384f6f5c0ae1f7a44973f3dc7", null ],
+      [ "DBGBVR2", "group__SceExcpmgrKernel.html#ga547250fc5fdaf2ad7b0268201771a737", null ],
+      [ "DBGBCR2", "group__SceExcpmgrKernel.html#gaa83d74661247c2d96bd550d2816bb886", null ],
+      [ "DBGBVR3", "group__SceExcpmgrKernel.html#gaf34b02fbd0c4758c976d5031397a8711", null ],
+      [ "DBGBCR3", "group__SceExcpmgrKernel.html#gaa0224e4a65cdbe8786be48eff82522a8", null ],
+      [ "DBGBVR4", "group__SceExcpmgrKernel.html#ga1ed90e51f44029d0b057dd688355774b", null ],
+      [ "DBGBCR4", "group__SceExcpmgrKernel.html#ga644c62633e63ea217e5181681316add9", null ]
+    ] ],
+    [ "SceExcpmgrWatchpointState", "group__SceExcpmgrKernel.html#structSceExcpmgrWatchpointState", [
+      [ "lock", "group__SceExcpmgrKernel.html#gac2cda074a9d6d1d576384b17daf806dc", null ],
+      [ "reserved", "group__SceExcpmgrKernel.html#ga624383e815ae6f1839dbecc1315ea40f", null ],
+      [ "DBGWVR0", "group__SceExcpmgrKernel.html#ga9838ae3f81a8bd3c2c75daaa571876fe", null ],
+      [ "DBGWCR0", "group__SceExcpmgrKernel.html#ga5599a5154d2ac38519d39f502757d825", null ],
+      [ "DBGWVR1", "group__SceExcpmgrKernel.html#ga69948b8892885488476bc1e9eceabf87", null ],
+      [ "DBGWCR1", "group__SceExcpmgrKernel.html#gab98ec36752bb68273778d8bc85f162cc", null ],
+      [ "DBGWVR2", "group__SceExcpmgrKernel.html#ga103282120f9f8a3f4f23a0b471c02bfe", null ],
+      [ "DBGWCR2", "group__SceExcpmgrKernel.html#ga3ac6a0452af5baa476c0648231a85f12", null ],
+      [ "DBGWVR3", "group__SceExcpmgrKernel.html#ga10aca2f97607b3cf0b2c87d356d2a0ab", null ],
+      [ "DBGWCR3", "group__SceExcpmgrKernel.html#ga97b17042da1a7bc0bae9720566d3d428", null ]
+    ] ],
     [ "SceExcpmgrData", "group__SceExcpmgrKernel.html#structSceExcpmgrData", [
       [ "nestedExceptionCount", "group__SceExcpmgrKernel.html#ga9baa3541cbab960021e07640e2c05ede", null ],
       [ "unused", "group__SceExcpmgrKernel.html#ga996a7817fc7ba169bf42d1aa8520921b", null ],
       [ "ExcpStackTop", "group__SceExcpmgrKernel.html#gaa82903a3d5b13e977b94a6b77598e90a", null ],
       [ "ExcpStackBottom", "group__SceExcpmgrKernel.html#gae3c61dbb8fe66949038b6e68cc74c1c1", null ]
+    ] ],
+    [ "SceArmWaypoint", "group__SceExcpmgrKernel.html#structSceArmWaypoint", [
+      [ "raw_data", "group__SceExcpmgrKernel.html#gab5c64e05197ab87f4fa4e7116aababd8", null ],
+      [ "pc", "group__SceExcpmgrKernel.html#ga14b8a81636706cbf5ea984d006f17239", null ],
+      [ "target_pc", "group__SceExcpmgrKernel.html#ga795c96a50eafc0e9a1804120ceef7c22", null ],
+      [ "event", "group__SceExcpmgrKernel.html#gac608f15a5234019ffec489d2b2593173", null ]
     ] ],
     [ "SceExcpmgrExceptionContext", "group__SceExcpmgrKernel.html#structSceExcpmgrExceptionContext", [
       [ "r0", "group__SceExcpmgrKernel.html#ga6730d5ef253853be606221bf9063d48e", null ],
@@ -66,6 +98,10 @@ var group__SceExcpmgrKernel =
       [ "VFP_registers", "group__SceExcpmgrKernel.html#ga952df59c9d3a9fc78f0d6102aca46f4f", null ],
       [ "unk200", "group__SceExcpmgrKernel.html#ga1cca85f0cbf05f2885f949e1fb0e0242", null ]
     ] ],
+    [ "SceExcpmgrExceptionHandlerContext", "group__SceExcpmgrKernel.html#structSceExcpmgrExceptionHandlerContext", [
+      [ "next", "group__SceExcpmgrKernel.html#ga8e605463cd07c3cf01f94957b77cef40", null ],
+      [ "must_be_zero", "group__SceExcpmgrKernel.html#gaf485f14f2db9a774654cb8684f4c636e", null ]
+    ] ],
     [ "SceExcpmgrExceptionHandler", "group__SceExcpmgrKernel.html#ga10137c58f1bf80f35e9cec90612e7164", null ],
     [ "SceExcpKind", "group__SceExcpmgrKernel.html#ga9b3daa6d42c404744d8f43ea28173972", [
       [ "SCE_EXCP_RESET", "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493", null ],
@@ -84,6 +120,16 @@ var group__SceExcpmgrKernel =
       [ "SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec", null ],
       [ "SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422", null ]
     ] ],
+    [ "SceArmWaypointEventType", "group__SceExcpmgrKernel.html#gaa57bf46e4e54de2c9453f0245eb3fc50", [
+      [ "SCE_ARM_WAYPOINT_EVENT_DIRECT_BRANCH", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4cb79d2b1582f0f12d5e0fed40f29e84", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_INDIRECT_BRANCH", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ae93462b2eaee9d82d5474ccee4608ace", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_EXCEPTION", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a9397c58dd50c760c05f723295f701903", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_MEMORY_BARRIER", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ab022a148b77381900864109d7241825a", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_DEBUG_ENTRY", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a1475b079d44da76d657df9b5f748d76b", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_DEBUG_EXIT", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4aa224d6b7e3d144f7e76e3800faf009", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_UNKNOWN_6", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a0aeab9ec99d2c4cd95d2e7c6e98e0e5c", null ],
+      [ "SCE_ARM_WAYPOINT_EVENT_UNKNOWN_7", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50add4f40f994e8bc840ebf6e1663195eb0", null ]
+    ] ],
     [ "SCE_EXCP_RESET", "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972af9cd52d88049f225a069873ed407c493", null ],
     [ "SCE_EXCP_UNDEF_INSTRUCTION", "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972a729a765aed49ca5ad4aa1e499901fca1", null ],
     [ "SCE_EXCP_SVC", "group__SceExcpmgrKernel.html#gga9b3daa6d42c404744d8f43ea28173972abba1ce87f2ad5331545a747c284ab3db", null ],
@@ -97,14 +143,52 @@ var group__SceExcpmgrKernel =
     [ "SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_2", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5ca52cefcab1713963ebcbd462f66c72b86", null ],
     [ "SCE_EXCPMGR_EXCEPTION_NOT_HANDLED_FATAL", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cae4a7696122e57837e8f2606550e077ec", null ],
     [ "SCE_EXCPMGR_EXCEPTION_HANDLING_CODE_4", "group__SceExcpmgrKernel.html#gga66b2162c277738d17f6463c875dbaa5cac6ffd98db18ad5c8892dc6b6bb229422", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_DIRECT_BRANCH", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4cb79d2b1582f0f12d5e0fed40f29e84", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_INDIRECT_BRANCH", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ae93462b2eaee9d82d5474ccee4608ace", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_EXCEPTION", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a9397c58dd50c760c05f723295f701903", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_MEMORY_BARRIER", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50ab022a148b77381900864109d7241825a", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_DEBUG_ENTRY", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a1475b079d44da76d657df9b5f748d76b", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_DEBUG_EXIT", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a4aa224d6b7e3d144f7e76e3800faf009", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_UNKNOWN_6", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50a0aeab9ec99d2c4cd95d2e7c6e98e0e5c", null ],
+    [ "SCE_ARM_WAYPOINT_EVENT_UNKNOWN_7", "group__SceExcpmgrKernel.html#ggaa57bf46e4e54de2c9453f0245eb3fc50add4f40f994e8bc840ebf6e1663195eb0", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#gaa849ec461d111b471f8ac5e0ceee0f1e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#ga97b293b99b3eaafc1098d5e9305cc33a", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#gaab0d8411d117829b670fdf68320d6be0", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#ga43c2da6690a63d0a02da486822088a2e", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#ga0d451515efa9dcf65702ac8e98eb9398", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceExcpmgrKernel.html#gae54d481d205841bbc3ac6cb6045827a7", null ],
     [ "ksceExcpmgrGetData", "group__SceExcpmgrKernel.html#gab3be0c3fbf4a2deb42fdf83773dad596", null ],
     [ "ksceExcpmgrRegisterHandler", "group__SceExcpmgrKernel.html#gad9bbe98307b693818d3d8db4a358b0b5", null ],
+    [ "SceExcpmgrBreakpointState::lock", "group__SceExcpmgrKernel.html#gac93452063294539d59964ab61f2846c3", null ],
+    [ "SceExcpmgrBreakpointState::reserved", "group__SceExcpmgrKernel.html#ga6c9e011dc566b91ed032a801fe9c6197", null ],
+    [ "SceExcpmgrBreakpointState::DBGBVR0", "group__SceExcpmgrKernel.html#ga578041c6299ebb89549ac53fc8dce904", null ],
+    [ "SceExcpmgrBreakpointState::DBGBCR0", "group__SceExcpmgrKernel.html#ga86bf308292e058351d1f1320c56d6230", null ],
+    [ "SceExcpmgrBreakpointState::DBGBVR1", "group__SceExcpmgrKernel.html#ga98ce84d9f9ce677345d4d6ba33ebdd83", null ],
+    [ "SceExcpmgrBreakpointState::DBGBCR1", "group__SceExcpmgrKernel.html#ga0f2498a384f6f5c0ae1f7a44973f3dc7", null ],
+    [ "SceExcpmgrBreakpointState::DBGBVR2", "group__SceExcpmgrKernel.html#ga547250fc5fdaf2ad7b0268201771a737", null ],
+    [ "SceExcpmgrBreakpointState::DBGBCR2", "group__SceExcpmgrKernel.html#gaa83d74661247c2d96bd550d2816bb886", null ],
+    [ "SceExcpmgrBreakpointState::DBGBVR3", "group__SceExcpmgrKernel.html#gaf34b02fbd0c4758c976d5031397a8711", null ],
+    [ "SceExcpmgrBreakpointState::DBGBCR3", "group__SceExcpmgrKernel.html#gaa0224e4a65cdbe8786be48eff82522a8", null ],
+    [ "SceExcpmgrBreakpointState::DBGBVR4", "group__SceExcpmgrKernel.html#ga1ed90e51f44029d0b057dd688355774b", null ],
+    [ "SceExcpmgrBreakpointState::DBGBCR4", "group__SceExcpmgrKernel.html#ga644c62633e63ea217e5181681316add9", null ],
+    [ "SceExcpmgrWatchpointState::lock", "group__SceExcpmgrKernel.html#gac2cda074a9d6d1d576384b17daf806dc", null ],
+    [ "SceExcpmgrWatchpointState::reserved", "group__SceExcpmgrKernel.html#ga624383e815ae6f1839dbecc1315ea40f", null ],
+    [ "SceExcpmgrWatchpointState::DBGWVR0", "group__SceExcpmgrKernel.html#ga9838ae3f81a8bd3c2c75daaa571876fe", null ],
+    [ "SceExcpmgrWatchpointState::DBGWCR0", "group__SceExcpmgrKernel.html#ga5599a5154d2ac38519d39f502757d825", null ],
+    [ "SceExcpmgrWatchpointState::DBGWVR1", "group__SceExcpmgrKernel.html#ga69948b8892885488476bc1e9eceabf87", null ],
+    [ "SceExcpmgrWatchpointState::DBGWCR1", "group__SceExcpmgrKernel.html#gab98ec36752bb68273778d8bc85f162cc", null ],
+    [ "SceExcpmgrWatchpointState::DBGWVR2", "group__SceExcpmgrKernel.html#ga103282120f9f8a3f4f23a0b471c02bfe", null ],
+    [ "SceExcpmgrWatchpointState::DBGWCR2", "group__SceExcpmgrKernel.html#ga3ac6a0452af5baa476c0648231a85f12", null ],
+    [ "SceExcpmgrWatchpointState::DBGWVR3", "group__SceExcpmgrKernel.html#ga10aca2f97607b3cf0b2c87d356d2a0ab", null ],
+    [ "SceExcpmgrWatchpointState::DBGWCR3", "group__SceExcpmgrKernel.html#ga97b17042da1a7bc0bae9720566d3d428", null ],
     [ "SceExcpmgrData::nestedExceptionCount", "group__SceExcpmgrKernel.html#ga9baa3541cbab960021e07640e2c05ede", null ],
     [ "SceExcpmgrData::unused", "group__SceExcpmgrKernel.html#ga996a7817fc7ba169bf42d1aa8520921b", null ],
     [ "SceExcpmgrData::ExcpStackTop", "group__SceExcpmgrKernel.html#gaa82903a3d5b13e977b94a6b77598e90a", null ],
     [ "SceExcpmgrData::ExcpStackBottom", "group__SceExcpmgrKernel.html#gae3c61dbb8fe66949038b6e68cc74c1c1", null ],
+    [ "SceArmWaypoint::raw_data", "group__SceExcpmgrKernel.html#gab5c64e05197ab87f4fa4e7116aababd8", null ],
+    [ "SceArmWaypoint::pc", "group__SceExcpmgrKernel.html#ga14b8a81636706cbf5ea984d006f17239", null ],
+    [ "SceArmWaypoint::target_pc", "group__SceExcpmgrKernel.html#ga795c96a50eafc0e9a1804120ceef7c22", null ],
+    [ "SceArmWaypoint::event", "group__SceExcpmgrKernel.html#gac608f15a5234019ffec489d2b2593173", null ],
     [ "SceExcpmgrExceptionContext::r0", "group__SceExcpmgrKernel.html#ga6730d5ef253853be606221bf9063d48e", null ],
     [ "SceExcpmgrExceptionContext::r1", "group__SceExcpmgrKernel.html#ga84149d1ad1aa2ef5b59ff161b7732794", null ],
     [ "SceExcpmgrExceptionContext::r2", "group__SceExcpmgrKernel.html#gaab1975ab6b3f581fe8aa2e564ac57829", null ],
@@ -162,5 +246,7 @@ var group__SceExcpmgrKernel =
     [ "SceExcpmgrExceptionContext::DBGSCRext", "group__SceExcpmgrKernel.html#ga6478477035488aefbe12209b34142d13", null ],
     [ "SceExcpmgrExceptionContext::unusedDC", "group__SceExcpmgrKernel.html#gadef335f8dc54376e3c55150ee199ea35", null ],
     [ "SceExcpmgrExceptionContext::VFP_registers", "group__SceExcpmgrKernel.html#ga952df59c9d3a9fc78f0d6102aca46f4f", null ],
-    [ "SceExcpmgrExceptionContext::unk200", "group__SceExcpmgrKernel.html#ga1cca85f0cbf05f2885f949e1fb0e0242", null ]
+    [ "SceExcpmgrExceptionContext::unk200", "group__SceExcpmgrKernel.html#ga1cca85f0cbf05f2885f949e1fb0e0242", null ],
+    [ "SceExcpmgrExceptionHandlerContext::next", "group__SceExcpmgrKernel.html#ga8e605463cd07c3cf01f94957b77cef40", null ],
+    [ "SceExcpmgrExceptionHandlerContext::must_be_zero", "group__SceExcpmgrKernel.html#gaf485f14f2db9a774654cb8684f4c636e", null ]
 ];

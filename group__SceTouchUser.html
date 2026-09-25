@@ -154,6 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac0a9020a917d9090b1abb8ae962544be" id="r_gac0a9020a917d9090b1abb8ae962544be"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gac0a9020a917d9090b1abb8ae962544be">sceTouchDisableTouchForce</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port)</td></tr>
 <tr class="memdesc:gac0a9020a917d9090b1abb8ae962544be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable touch force output.  <br /></td></tr>
 <tr class="separator:gac0a9020a917d9090b1abb8ae962544be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9eda3c968d0b604c87e1fdfa9eec81c" id="r_gaf9eda3c968d0b604c87e1fdfa9eec81c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchUser.html#gaf9eda3c968d0b604c87e1fdfa9eec81c">sceTouchGetDeviceInfo</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port_type, <a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a> *info)</td></tr>
+<tr class="memdesc:gaf9eda3c968d0b604c87e1fdfa9eec81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get touch-panel device information.  <br /></td></tr>
+<tr class="separator:gaf9eda3c968d0b604c87e1fdfa9eec81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -853,6 +856,45 @@ Touch reports. </td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gaf9eda3c968d0b604c87e1fdfa9eec81c" name="gaf9eda3c968d0b604c87e1fdfa9eec81c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf9eda3c968d0b604c87e1fdfa9eec81c">&#9670;&#160;</a></span>sceTouchGetDeviceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceTouchGetDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>port_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get touch-panel device information. </p>
+<p>Only system programs can call this function. It retrieves the cached front or back panel identity record. The output is copied only after the kernel getter succeeds.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_type</td><td>- One of <a class="el" href="group__SceTouchUser.html#gacb91e7a44b807be507daf8073f4712a6" title="Port numbers of touch panels.">SceTouchPortType</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Receives the complete 0xC-byte device-information record.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, <a class="el" href="group__SceTouchUser.html#gga3772c556df8f755f345d8f2c09807ae0a794c9c4aae4007e3405876854b994608">SCE_TOUCH_ERROR_INVALID_ARG</a> for an invalid <em>port_type</em>, <a class="el" href="group__SceTouchUser.html#gga3772c556df8f755f345d8f2c09807ae0aa31045e06c4d985966993d5b81fe55f6">SCE_TOUCH_ERROR_PRIV_REQUIRED</a> when the caller is not a system program, or a kernel user-memory-copy error for an invalid <em>info</em>. </dd></dl>
 
 </div>
 </div>

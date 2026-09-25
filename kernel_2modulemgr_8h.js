@@ -22,5 +22,7 @@ var kernel_2modulemgr_8h =
     [ "sceKernelGetLibraryInfoByNID", "group__SceModulemgrUser.html#ga6d577c676901faf794ed58ff30f8653f", null ],
     [ "sceKernelIsCalledFromSysModule", "group__SceModulemgrUser.html#gaa4024c08068b04c9532df0e05e926d54", null ],
     [ "sceKernelGetModuleIdByAddr", "group__SceModulemgrUser.html#ga5644c788f510843d370e26aff8e4ac37", null ],
-    [ "sceKernelGetAllowedSdkVersionOnSystem", "group__SceModulemgrUser.html#ga4ee7eb221c7acd4805f77c7d6ec28682", null ]
+    [ "sceKernelGetAllowedSdkVersionOnSystem", "group__SceModulemgrUser.html#ga4ee7eb221c7acd4805f77c7d6ec28682", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrUser.html#ga4c19c516b653f585457e2b8ac214bbdd", null ],
+    [ "_sceKernelStartModule", "group__SceModulemgrUser.html#ga3e5b72a3a950ce453a7206ef51929eb3", null ]
 ];

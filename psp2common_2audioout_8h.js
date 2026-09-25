@@ -1,0 +1,78 @@
+var psp2common_2audioout_8h =
+[
+    [ "SCE_AUDIO_MIN_LEN", "group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c", null ],
+    [ "SCE_AUDIO_MAX_LEN", "group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a", null ],
+    [ "SCE_AUDIO_OUT_MAX_VOL", "group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da", null ],
+    [ "SCE_AUDIO_VOLUME_0DB", "group__SceAudioUser.html#ga18622208d3fd0c9de3bb47c875feb15b", null ],
+    [ "SceAudioOutErrorCode", "group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c", [
+      [ "SCE_AUDIO_OUT_ERROR_NOT_OPENED", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca2cc1bebbb5ffec7c273f267c4d0abbad", null ],
+      [ "SCE_AUDIO_OUT_ERROR_BUSY", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca3998a6775cf4f48c062b7d104eaf8cd0", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_PORT", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca84d1bde9b60665c330a8d1c418f87fa8", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_POINTER", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7cad43b61089953c7ab276ca9ae6ae4b298", null ],
+      [ "SCE_AUDIO_OUT_ERROR_PORT_FULL", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7cacbd1324d0afd6b92f56250aaa6ed4840", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_SIZE", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca42b3aa7808bb48f8493e6c7091c358df", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_FORMAT", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7cabc34117638c89ffe7368f9e7fc52980a", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_SAMPLE_FREQ", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca97ad305f72d16c32d4303a727d02646c", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_VOLUME", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca0b31d784337434faa9d7680a46805aaf", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_PORT_TYPE", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca6aaa8268209161cc720cb9927fbf6c75", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_FX_TYPE", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca305b89b229ff4e2ddb3787348488091b", null ],
+      [ "SCE_AUDIO_OUT_ERROR_INVALID_CONF_TYPE", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca182fc2335905eda1aa541368ac25eded", null ],
+      [ "SCE_AUDIO_OUT_ERROR_OUT_OF_MEMORY", "group__SceAudioUser.html#gga2ef9feeba48528f0c544523489c84a7ca39531485ae9c9df2f69bb3bd1f4fcdc7", null ]
+    ] ],
+    [ "SceAudioOutParam", "group__SceAudioUser.html#gafe8b67e875fd20e9baef9fcaa8c14dfa", [
+      [ "SCE_AUDIO_OUT_PARAM_FORMAT_S16_MONO", "group__SceAudioUser.html#ggafe8b67e875fd20e9baef9fcaa8c14dfaadb05cd905d821cc69c6d44ca5dfac05d", null ],
+      [ "SCE_AUDIO_OUT_PARAM_FORMAT_S16_STEREO", "group__SceAudioUser.html#ggafe8b67e875fd20e9baef9fcaa8c14dfaa8ca82791a86c5da81dc38a2e17e91e3d", null ]
+    ] ],
+    [ "SceAudioOutPortType", "group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3", [
+      [ "SCE_AUDIO_OUT_PORT_TYPE_MAIN", "group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9", null ],
+      [ "SCE_AUDIO_OUT_PORT_TYPE_BGM", "group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e", null ],
+      [ "SCE_AUDIO_OUT_PORT_TYPE_VOICE", "group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b", null ],
+      [ "SCE_AUDIO_OUT_PORT_TYPE_VOICE_COMPRESSED", "group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a1ee215d198d903f5cd9317c8964e4cbc", null ]
+    ] ],
+    [ "SceAudioOutMode", "group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726", [
+      [ "SCE_AUDIO_OUT_MODE_MONO", "group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726a1b3ea51dacd5fe2247368b408322ffc6", null ],
+      [ "SCE_AUDIO_OUT_MODE_STEREO", "group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726ab332633e3d5a8f1808a2fa47531bfd51", null ]
+    ] ],
+    [ "SceAudioOutEffectType", "group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34", [
+      [ "SCE_AUDIO_OUT_EFFECT_TYPE_OFF", "group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34ab6599c51d1e1b25bca224877944d8f43", null ],
+      [ "SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY", "group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518", null ],
+      [ "SCE_AUDIO_OUT_EFFECT_TYPE_POPS", "group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a18e7f6cfe2de46398f50bf62ad50f932", null ],
+      [ "SCE_AUDIO_OUT_EFFECT_TYPE_JAZZ", "group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34ad1e187778b7bcb4d9c7a150b30fe6dd0", null ],
+      [ "SCE_AUDIO_OUT_EFFECT_TYPE_UNIQUE", "group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a67bf32f8a72847f574aafa76fc51fa9e", null ]
+    ] ],
+    [ "SceAudioOutSampleRate", "group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8", [
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_8000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a59df838e61607e7ebcabfd714313f373", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_11025", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8ad9db5660566b0c8434ab6d6fa0aef03c", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_12000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8ace28e1f5a9399bf228e6e1c0522d28a3", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_16000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8aa8dd68f3942b1e7588ac3b2bbb628fda", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_22050", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8acc1f168e6d982171dade644e5f4e02c4", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_24000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a770decfd0657cfa9b5266d9dee1a0802", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_32000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a5de5b3d877f72a58763cf562c01ac95f", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_44100", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a23850018ceaab5ef6cd334015cca54f4", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_44184", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a88b9a1795f820b2896486ff58f2352cf", null ],
+      [ "SCE_AUDIO_OUT_SAMPLE_RATE_48000", "group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99", null ]
+    ] ],
+    [ "SceAudioOutChannelFlag", "group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc", [
+      [ "SCE_AUDIO_VOLUME_FLAG_L_CH", "group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977", null ],
+      [ "SCE_AUDIO_VOLUME_FLAG_R_CH", "group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a", null ]
+    ] ],
+    [ "SceAudioOutConfigType", "group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da", [
+      [ "SCE_AUDIO_OUT_CONFIG_TYPE_LEN", "group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa17ce85e46f62c6f163df64c678dc2842", null ],
+      [ "SCE_AUDIO_OUT_CONFIG_TYPE_FREQ", "group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa070a97765015c26ea62c5547c4551a6e", null ],
+      [ "SCE_AUDIO_OUT_CONFIG_TYPE_MODE", "group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa98130a243b6483b59c1fd4caa8f15d8f", null ]
+    ] ],
+    [ "SceAudioOutAlcMode", "group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362", [
+      [ "SCE_AUDIO_ALC_OFF", "group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb", null ],
+      [ "SCE_AUDIO_ALC_MODE1", "group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236", null ],
+      [ "SCE_AUDIO_ALC_MODE_MAX", "group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9", null ]
+    ] ],
+    [ "SceAudioOutPortMask", "group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53", [
+      [ "SCE_AUDIO_OUT_PORT_MASK_MAIN", "group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a5c41786dd2eb485291f194d5da1c9b1d", null ],
+      [ "SCE_AUDIO_OUT_PORT_MASK_BGM", "group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a3e47db6b15d40d311485179be906f6d4", null ],
+      [ "SCE_AUDIO_OUT_PORT_MASK_VOICE", "group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a593fa31b1814c7592c71dd464eb71b2f", null ]
+    ] ],
+    [ "SceAudioOutAdoptMode", "group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851", [
+      [ "SCE_AUDIO_OUT_ADOPT_MODE_AUTOMATIC", "group__SceAudioUser.html#gga59779108f58fc01d7136fbf87d1f3851a31523d70270267a7431a91b8d2e1cc6f", null ],
+      [ "SCE_AUDIO_OUT_ADOPT_MODE_MANUAL", "group__SceAudioUser.html#gga59779108f58fc01d7136fbf87d1f3851a0d9be3912339be6a4f64d7724dbd4551", null ]
+    ] ]
+];

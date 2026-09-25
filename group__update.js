@@ -1,4 +1,4 @@
 var group__update =
 [
-    [ "System software update manager", "group__SceUpdateMgr.html", "group__SceUpdateMgr" ]
+    [ "System software update manager", "group__SceSblSsUpdateMgr.html", "group__SceSblSsUpdateMgr" ]
 ];

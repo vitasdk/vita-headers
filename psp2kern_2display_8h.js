@@ -1,5 +1,16 @@
 var psp2kern_2display_8h =
 [
+    [ "SceDisplayDeviceType", "group__SceDisplayKernel.html#ga81198f08536bab262390241bc4de99fe", [
+      [ "SCE_DISPLAY_DEVICE_TYPE_NONE", "group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea8645d74dab06ba23d36f4b3cfde07583", null ],
+      [ "SCE_DISPLAY_DEVICE_TYPE_OLED", "group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea86c5e52011a5fddcf05bdf7df1539315", null ],
+      [ "SCE_DISPLAY_DEVICE_TYPE_LCD", "group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea1286d1c4f924ee409135f91fac9293b6", null ],
+      [ "SCE_DISPLAY_DEVICE_TYPE_HDMI", "group__SceDisplayKernel.html#gga81198f08536bab262390241bc4de99fea33719ef81fe02300f6e0abd10ace17d1", null ]
+    ] ],
+    [ "SceDisplayColorSpaceMode", "group__SceDisplayKernel.html#ga0597fa0cf3000064b5cb0f8ee4ea7d60", [
+      [ "SCE_DISPLAY_COLOR_SPACE_MODE_0", "group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60aebf7ce3f00021ed24e093727d04e11b5", null ],
+      [ "SCE_DISPLAY_COLOR_SPACE_MODE_1", "group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60acf7a495e4f6b784bdd42e85a7b304852", null ],
+      [ "SCE_DISPLAY_COLOR_SPACE_MODE_2", "group__SceDisplayKernel.html#gga0597fa0cf3000064b5cb0f8ee4ea7d60a41f513b6e695be5ce991bfec150a5212", null ]
+    ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#gaf3fe7dec70b834a468a84ef02c25ba2e", null ],
     [ "ksceDisplaySetFrameBuf", "group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8", null ],
     [ "ksceDisplaySetFrameBufInternal", "group__SceDisplayKernel.html#ga167b702166adcc723e120d443c61a200", null ],
@@ -27,5 +38,30 @@ var psp2kern_2display_8h =
     [ "ksceDisplayRegisterFrameBufCallback", "group__SceDisplayKernel.html#gaab3ff65454443a1588267a69656d357e", null ],
     [ "ksceDisplayRegisterFrameBufCallbackInternal", "group__SceDisplayKernel.html#gafd9e3a943ae8d532f6bca093b7f16ae6", null ],
     [ "ksceDisplaySetInvertColors", "group__SceDisplayKernel.html#gaba015ee6bd3e5d4b83efd0151dbb8552", null ],
-    [ "ksceDisplaySetOwner", "group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1", null ]
+    [ "ksceDisplaySetOwner", "group__SceDisplayKernel.html#ga8b2cb118d615ec679b40f8d7367790c1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#gad795370f7eaefb074647ee77565e1fa6", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#ga754aa5467b658c0c0ea3d5e52c9d09cd", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayKernel.html#ga247dad2e91c3fc6ddf2349be0e78ec61", null ],
+    [ "ksceDisplayCaptureFrameBufDMAC", "group__SceDisplayKernel.html#ga70ee433a84fdd1d0452d87594c7fafb4", null ],
+    [ "ksceDisplayCaptureFrameBufDMACInternal", "group__SceDisplayKernel.html#ga9cd5d33ed9219fba1eb3b354c62232a1", null ],
+    [ "ksceDisplayCaptureFrameBufIFTU", "group__SceDisplayKernel.html#gade2843db9e68c4056347f92753dcb9bb", null ],
+    [ "ksceDisplayCaptureFrameBufIFTUInternal", "group__SceDisplayKernel.html#gaf8eda526a3e6da55ce10624426dd0f6f", null ],
+    [ "ksceDisplayDisableHead", "group__SceDisplayKernel.html#gad9d6a53649a16b12b337eaa4fc22a4e0", null ],
+    [ "ksceDisplayEnableHead", "group__SceDisplayKernel.html#ga81877131c1ee017cce3f7154e229e0a3", null ],
+    [ "ksceDisplayGetActualViewportConf", "group__SceDisplayKernel.html#gad055eda01fb8cf93215d9d776db9753e", null ],
+    [ "ksceDisplayGetDeviceType", "group__SceDisplayKernel.html#gaf26cc0829b020405cec73f2c06ea3b9f", null ],
+    [ "ksceDisplayGetFrameBufInternal", "group__SceDisplayKernel.html#ga26b4f27313c89b97de21cb53f6de5a4e", null ],
+    [ "ksceDisplayGetOutputMode", "group__SceDisplayKernel.html#gaf542c2bed8add2989c43d58bada85af5", null ],
+    [ "ksceDisplayGetRefreshRateInternal", "group__SceDisplayKernel.html#gabb13e15259886dba2198d3da8585b270", null ],
+    [ "ksceDisplayGetResolutionInfoInternal", "group__SceDisplayKernel.html#gad712738ff933c90d4ac3bb99474043c4", null ],
+    [ "ksceDisplaySetBrightness", "group__SceDisplayKernel.html#ga487c411e7044f29fe3d7f1259bdd5f21", null ],
+    [ "ksceDisplaySetColorSpaceMode", "group__SceDisplayKernel.html#ga9fb7af02d6861106e35cd5c18f6d50b3", null ],
+    [ "ksceDisplaySetMergeConf", "group__SceDisplayKernel.html#gabf16bc668d8550811e9312ff8aa7c3c7", null ],
+    [ "ksceDisplaySetOutputMode", "group__SceDisplayKernel.html#gad88713b5161811a0d98c8285d17ec97a", null ],
+    [ "ksceDisplaySetScaleConf", "group__SceDisplayKernel.html#gadbda04f3e59b48b49e6078bd1a970137", null ],
+    [ "ksceDisplaySetViewportConf", "group__SceDisplayKernel.html#ga43321765bec493530f1f547e9b14aa38", null ],
+    [ "ksceDisplayWaitSetFrameBufCBInternal", "group__SceDisplayKernel.html#gaf8c8173eb28eab85d46b65b61370db89", null ],
+    [ "ksceDisplayWaitSetFrameBufInternal", "group__SceDisplayKernel.html#ga6af2da2c7606212b3565cee2d2dd528d", null ],
+    [ "ksceDisplayWaitSetFrameBufMultiCBInternal", "group__SceDisplayKernel.html#ga46d8c280917cf21b542331f047484457", null ],
+    [ "ksceDisplayWaitSetFrameBufMultiInternal", "group__SceDisplayKernel.html#ga4095ddf5dca262eccf8897c743cf699b", null ]
 ];

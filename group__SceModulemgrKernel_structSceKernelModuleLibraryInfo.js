@@ -9,7 +9,5 @@ var group__SceModulemgrKernel_structSceKernelModuleLibraryInfo =
     [ "entry_num_variable", "group__SceModulemgrKernel.html#ga3f7397d89096ac313b08780fa5c80388", null ],
     [ "unk_0x14", "group__SceModulemgrKernel.html#ga9a2b4e85cf89aa23c5a312a28743707e", null ],
     [ "unk_0x16", "group__SceModulemgrKernel.html#ga82af56a55224c2c02ff8a311dd58e73a", null ],
-    [ "library_name", "group__SceModulemgrKernel.html#ga2b96226199ff8e269453e03e9ca2a1ad", null ],
-    [ "number_of_imported", "group__SceModulemgrKernel.html#ga3a2ac22a493853fc64b0cb48d44d0e44", null ],
-    [ "modid2", "group__SceModulemgrKernel.html#gac045485a7d7fa73e591256d9273b3b67", null ]
+    [ "library_name", "group__SceModulemgrKernel.html#ga2b96226199ff8e269453e03e9ca2a1ad", null ]
 ];

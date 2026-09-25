@@ -90,6 +90,7 @@ $(document).ready(function(){initNavTree('group__SceFios2KernelKernel.html','');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:structSceFiosOverlay" id="r_structSceFiosOverlay"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a></td></tr>
+<tr class="memdesc:structSceFiosOverlay"><td class="mdescLeft">&#160;</td><td class="mdescRight">File-system overlay configuration and returned state.  <a href="group__SceFios2KernelKernel.html#structSceFiosOverlay">More...</a><br /></td></tr>
 <tr class="separator:structSceFiosOverlay"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
@@ -115,8 +116,6 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga29eb5b029cb16a7e5750bff964738699" id="r_ga29eb5b029cb16a7e5750bff964738699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga29eb5b029cb16a7e5750bff964738699">sceFiosKernelOverlayAddForProcess02</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *overlay, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *outID)</td></tr>
-<tr class="separator:ga29eb5b029cb16a7e5750bff964738699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f857da9d97962e77e397cf804de1360" id="r_ga6f857da9d97962e77e397cf804de1360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga6f857da9d97962e77e397cf804de1360">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>)</td></tr>
 <tr class="separator:ga6f857da9d97962e77e397cf804de1360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2cd96e62ba6f30d249870f4217aa251a" id="r_ga2cd96e62ba6f30d249870f4217aa251a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga2cd96e62ba6f30d249870f4217aa251a">VITASDK_BUILD_ASSERT_EQ</a> (0x258, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a>)</td></tr>
@@ -130,43 +129,71 @@ Functions</h2></td></tr>
 <tr class="memitem:gae8dc6232017173c296da1e11001b3392" id="r_gae8dc6232017173c296da1e11001b3392"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gae8dc6232017173c296da1e11001b3392">ksceFiosKernelOverlayRemoveForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id)</td></tr>
 <tr class="memdesc:gae8dc6232017173c296da1e11001b3392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove process file system overlay.  <br /></td></tr>
 <tr class="separator:gae8dc6232017173c296da1e11001b3392"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaff69dd245c855399c78a1e2f7ac6b524" id="r_gaff69dd245c855399c78a1e2f7ac6b524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gaff69dd245c855399c78a1e2f7ac6b524">ksceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolveFlag, const char *inPath, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> maxPath)</td></tr>
-<tr class="memdesc:gaff69dd245c855399c78a1e2f7ac6b524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve process file system overlay with sync.  <br /></td></tr>
-<tr class="separator:gaff69dd245c855399c78a1e2f7ac6b524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36805735409cada047c030c192e53150" id="r_ga36805735409cada047c030c192e53150"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga36805735409cada047c030c192e53150">ksceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolveForWrite, const char *inPath, char *outPath, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> maxPath)</td></tr>
+<tr class="memdesc:ga36805735409cada047c030c192e53150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a path synchronously through a process's overlays.  <br /></td></tr>
+<tr class="separator:ga36805735409cada047c030c192e53150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga098db686a59513260f18e6fe866793fd" id="r_ga098db686a59513260f18e6fe866793fd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga098db686a59513260f18e6fe866793fd">ksceFiosKernelOverlayGetInfo</a> (<a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *out_overlay)</td></tr>
+<tr class="memdesc:ga098db686a59513260f18e6fe866793fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an overlay from the calling process's table.  <br /></td></tr>
+<tr class="separator:ga098db686a59513260f18e6fe866793fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22f56eb3b147c4880272f9056f0993cf" id="r_ga22f56eb3b147c4880272f9056f0993cf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga22f56eb3b147c4880272f9056f0993cf">ksceFiosKernelOverlayGetInfoForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id, <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *out_overlay)</td></tr>
+<tr class="memdesc:ga22f56eb3b147c4880272f9056f0993cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an overlay from a process's table.  <br /></td></tr>
+<tr class="separator:ga22f56eb3b147c4880272f9056f0993cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaedf33bd887848d85fb47e34dd9803d70" id="r_gaedf33bd887848d85fb47e34dd9803d70"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gaedf33bd887848d85fb47e34dd9803d70">ksceFiosKernelOverlayGetList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> min_order, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> max_order, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *out_ids, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> max_ids, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *actual_ids)</td></tr>
+<tr class="memdesc:gaedf33bd887848d85fb47e34dd9803d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the IDs of overlays whose order is from <code>min_order</code> through <code>max_order</code>, inclusive.  <br /></td></tr>
+<tr class="separator:gaedf33bd887848d85fb47e34dd9803d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf67a9830d9512faf538546d88d4db913" id="r_gaf67a9830d9512faf538546d88d4db913"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gaf67a9830d9512faf538546d88d4db913">ksceFiosKernelOverlayGetRecommendedScheduler</a> (int scheduler_count, const char *partially_resolved_path)</td></tr>
+<tr class="memdesc:gaf67a9830d9512faf538546d88d4db913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the recommended scheduler index for a partially resolved path.  <br /></td></tr>
+<tr class="separator:gaf67a9830d9512faf538546d88d4db913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac06933db10402e94d74000b9e71a30df" id="r_gac06933db10402e94d74000b9e71a30df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#gac06933db10402e94d74000b9e71a30df">ksceFiosKernelOverlayModify</a> (<a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id, const <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *new_value)</td></tr>
+<tr class="memdesc:gac06933db10402e94d74000b9e71a30df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an overlay in the calling process's table.  <br /></td></tr>
+<tr class="separator:gac06933db10402e94d74000b9e71a30df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11afeb0872712b675e459e3c4cbbca33" id="r_ga11afeb0872712b675e459e3c4cbbca33"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga11afeb0872712b675e459e3c4cbbca33">ksceFiosKernelOverlayModifyForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id, const <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *new_value)</td></tr>
+<tr class="memdesc:ga11afeb0872712b675e459e3c4cbbca33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces an overlay in a process's table.  <br /></td></tr>
+<tr class="separator:ga11afeb0872712b675e459e3c4cbbca33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9dd6be1947ba928369bd760fe062e9da" id="r_ga9dd6be1947ba928369bd760fe062e9da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga9dd6be1947ba928369bd760fe062e9da">ksceFiosKernelOverlayRemove</a> (<a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> id)</td></tr>
+<tr class="memdesc:ga9dd6be1947ba928369bd760fe062e9da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an overlay synchronously from the calling process's table.  <br /></td></tr>
+<tr class="separator:ga9dd6be1947ba928369bd760fe062e9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57b8f072b0043a894691350e9840c659" id="r_ga57b8f072b0043a894691350e9840c659"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga57b8f072b0043a894691350e9840c659">ksceFiosKernelOverlayResolveWithRangeSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolve_for_write, const char *in_path, char *out_path, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> max_path, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> min_order, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> max_order)</td></tr>
+<tr class="memdesc:ga57b8f072b0043a894691350e9840c659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a path through overlays whose order is from <code>min_order</code> through <code>max_order</code>, inclusive.  <br /></td></tr>
+<tr class="separator:ga57b8f072b0043a894691350e9840c659"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ec8f543905edbc32d8b0e7f3a3f7e85" id="r_ga7ec8f543905edbc32d8b0e7f3a3f7e85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga7ec8f543905edbc32d8b0e7f3a3f7e85">ksceFiosKernelOverlayThreadIsDisabled</a> (void)</td></tr>
+<tr class="memdesc:ga7ec8f543905edbc32d8b0e7f3a3f7e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether application overlays are disabled for the current thread.  <br /></td></tr>
+<tr class="separator:ga7ec8f543905edbc32d8b0e7f3a3f7e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fe7506bb5b5fdde1b41fa5c69796c4e" id="r_ga1fe7506bb5b5fdde1b41fa5c69796c4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga1fe7506bb5b5fdde1b41fa5c69796c4e">ksceFiosKernelOverlayThreadSetDisabled</a> (int disabled)</td></tr>
+<tr class="memdesc:ga1fe7506bb5b5fdde1b41fa5c69796c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables application overlays for the current thread.  <br /></td></tr>
+<tr class="separator:ga1fe7506bb5b5fdde1b41fa5c69796c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga30ce9c640ddae124be64c4a19a740de5" id="r_ga30ce9c640ddae124be64c4a19a740de5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga30ce9c640ddae124be64c4a19a740de5">SceFiosOverlay::type</a></td></tr>
+<tr class="memdesc:ga30ce9c640ddae124be64c4a19a740de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">One of <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>.  <br /></td></tr>
 <tr class="separator:ga30ce9c640ddae124be64c4a19a740de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga57b3de5d40d266baa3de1a0f12093ef6" id="r_ga57b3de5d40d266baa3de1a0f12093ef6"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga57b3de5d40d266baa3de1a0f12093ef6">SceFiosOverlay::order</a></td></tr>
+<tr class="memdesc:ga57b3de5d40d266baa3de1a0f12093ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolution order. Lower values are evaluated first; 0x00-0x7F are application orders and 0x80-0xFF are reserved for privileged overlays.  <br /></td></tr>
 <tr class="separator:ga57b3de5d40d266baa3de1a0f12093ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c65b16ca3252130934ad4e6dc454377" id="r_ga5c65b16ca3252130934ad4e6dc454377"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga5c65b16ca3252130934ad4e6dc454377">SceFiosOverlay::dst_len</a></td></tr>
+<tr class="memdesc:ga5c65b16ca3252130934ad4e6dc454377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination-path length computed by FIOS2.  <br /></td></tr>
 <tr class="separator:ga5c65b16ca3252130934ad4e6dc454377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c422a3c57b138f1d1367568183e9f96" id="r_ga4c422a3c57b138f1d1367568183e9f96"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga4c422a3c57b138f1d1367568183e9f96">SceFiosOverlay::src_len</a></td></tr>
+<tr class="memdesc:ga4c422a3c57b138f1d1367568183e9f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source-path length computed by FIOS2.  <br /></td></tr>
 <tr class="separator:ga4c422a3c57b138f1d1367568183e9f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39f8adc965b7cbfc44c141f0559d3fd8" id="r_ga39f8adc965b7cbfc44c141f0559d3fd8"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga39f8adc965b7cbfc44c141f0559d3fd8">SceFiosOverlay::unk2</a></td></tr>
 <tr class="separator:ga39f8adc965b7cbfc44c141f0559d3fd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga251409fcdd74e557dbebc0ab0da5eefa" id="r_ga251409fcdd74e557dbebc0ab0da5eefa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga251409fcdd74e557dbebc0ab0da5eefa">SceFiosOverlay::pid</a></td></tr>
+<tr class="memdesc:ga251409fcdd74e557dbebc0ab0da5eefa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target process ID. Used by <a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432" title="Overlay process file system overlay.">ksceFiosKernelOverlayAdd</a> and overwritten by functions that take a process ID argument.  <br /></td></tr>
 <tr class="separator:ga251409fcdd74e557dbebc0ab0da5eefa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3670f391cba14738ef8fb74bcdef18a0" id="r_ga3670f391cba14738ef8fb74bcdef18a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga3670f391cba14738ef8fb74bcdef18a0">SceFiosOverlay::id</a></td></tr>
+<tr class="memdesc:ga3670f391cba14738ef8fb74bcdef18a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overlay ID assigned by FIOS2; ignored when adding an overlay.  <br /></td></tr>
 <tr class="separator:ga3670f391cba14738ef8fb74bcdef18a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cf6cb442ff4d8b8407ab1f04b708c99" id="r_ga5cf6cb442ff4d8b8407ab1f04b708c99"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga5cf6cb442ff4d8b8407ab1f04b708c99">SceFiosOverlay::dst</a> [<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td></tr>
+<tr class="memdesc:ga5cf6cb442ff4d8b8407ab1f04b708c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination-path prefix matched during resolution.  <br /></td></tr>
 <tr class="separator:ga5cf6cb442ff4d8b8407ab1f04b708c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2132d050656cd9d81980d08713614521" id="r_ga2132d050656cd9d81980d08713614521"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelKernel.html#ga2132d050656cd9d81980d08713614521">SceFiosOverlay::src</a> [<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td></tr>
+<tr class="memdesc:ga2132d050656cd9d81980d08713614521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source-path prefix substituted according to <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>.  <br /></td></tr>
 <tr class="separator:ga2132d050656cd9d81980d08713614521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="fios2kernel02_8h.html">psp2/fios2kernel02.h</a>&gt;</span> </div>
-<div class="ttc" id="afios2kernel02_8h_html"><div class="ttname"><a href="fios2kernel02_8h.html">fios2kernel02.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceFios2Kernel </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
@@ -181,7 +208,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="apsp2kern_2fios2_8h_html"><div class="ttname"><a href="psp2kern_2fios2_8h.html">fios2.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceFios2KernelForDriver </div>
+</p><div class="fragment"><div class="line">SceFios2KernelForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <hr/><h2 class="groupheader">Data Structure Documentation</h2>
@@ -196,32 +223,34 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="textblock"></div><table class="fieldtable">
+<div class="textblock"><p>File-system overlay configuration and returned state. </p>
+<p>When adding or modifying an overlay, FIOS2 copies the structure before the function returns. Keep the structure valid until then; you may reuse or free it afterwards. Supply type, order, dst, and src; FIOS2 normalizes the paths and fills in the other fields. A per-process overlay remains installed until it is removed or the process exits. </p>
+</div><table class="fieldtable">
 <tr><th colspan="3">Data Fields</th></tr>
 <tr><td class="fieldtype">
 <a id="ga30ce9c640ddae124be64c4a19a740de5" name="ga30ce9c640ddae124be64c4a19a740de5"></a>uint8_t</td>
 <td class="fieldname">
 type</td>
 <td class="fielddoc">
-</td></tr>
+One of <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga57b3de5d40d266baa3de1a0f12093ef6" name="ga57b3de5d40d266baa3de1a0f12093ef6"></a>uint8_t</td>
 <td class="fieldname">
 order</td>
 <td class="fielddoc">
-</td></tr>
+Resolution order. Lower values are evaluated first; 0x00-0x7F are application orders and 0x80-0xFF are reserved for privileged overlays. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5c65b16ca3252130934ad4e6dc454377" name="ga5c65b16ca3252130934ad4e6dc454377"></a>uint16_t</td>
 <td class="fieldname">
 dst_len</td>
 <td class="fielddoc">
-</td></tr>
+Destination-path length computed by FIOS2. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga4c422a3c57b138f1d1367568183e9f96" name="ga4c422a3c57b138f1d1367568183e9f96"></a>uint16_t</td>
 <td class="fieldname">
 src_len</td>
 <td class="fielddoc">
-</td></tr>
+Source-path length computed by FIOS2. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga39f8adc965b7cbfc44c141f0559d3fd8" name="ga39f8adc965b7cbfc44c141f0559d3fd8"></a>uint16_t</td>
 <td class="fieldname">
@@ -233,25 +262,25 @@ unk2</td>
 <td class="fieldname">
 pid</td>
 <td class="fielddoc">
-</td></tr>
+Target process ID. Used by <a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432" title="Overlay process file system overlay.">ksceFiosKernelOverlayAdd</a> and overwritten by functions that take a process ID argument. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga3670f391cba14738ef8fb74bcdef18a0" name="ga3670f391cba14738ef8fb74bcdef18a0"></a><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a></td>
 <td class="fieldname">
 id</td>
 <td class="fielddoc">
-</td></tr>
+Overlay ID assigned by FIOS2; ignored when adding an overlay. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5cf6cb442ff4d8b8407ab1f04b708c99" name="ga5cf6cb442ff4d8b8407ab1f04b708c99"></a>char</td>
 <td class="fieldname">
 dst[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td>
 <td class="fielddoc">
-</td></tr>
+Destination-path prefix matched during resolution. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga2132d050656cd9d81980d08713614521" name="ga2132d050656cd9d81980d08713614521"></a>char</td>
 <td class="fieldname">
 src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22be9d5b53040">SCE_FIOS2_OVERLAY_PATH_SIZE</a>]</td>
 <td class="fielddoc">
-</td></tr>
+Source-path prefix substituted according to <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>. </td></tr>
 </table>
 
 </div>
@@ -313,49 +342,19 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01aab34262acb1a28145942ef941e6259c1" name="gga4cff87d2582f23b178ded5e6420ddc01aab34262acb1a28145942ef941e6259c1"></a>SCE_FIOS_OVERLAY_TYPE_OPAQUE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c" name="gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c"></a>SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de" name="gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de"></a>SCE_FIOS_OVERLAY_TYPE_NEWER&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f" name="gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f"></a>SCE_FIOS_OVERLAY_TYPE_WRITABLE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01aab34262acb1a28145942ef941e6259c1" name="gga4cff87d2582f23b178ded5e6420ddc01aab34262acb1a28145942ef941e6259c1"></a>SCE_FIOS_OVERLAY_TYPE_OPAQUE&#160;</td><td class="fielddoc"><p>Always replace the matching destination path with the source path. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c" name="gga4cff87d2582f23b178ded5e6420ddc01a07739105114856bc1832bb30b2835e0c"></a>SCE_FIOS_OVERLAY_TYPE_TRANSLUCENT&#160;</td><td class="fielddoc"><p>Use the source path when it exists, otherwise use the destination path. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de" name="gga4cff87d2582f23b178ded5e6420ddc01aa4fc743e143c2565d5aff5708d5683de"></a>SCE_FIOS_OVERLAY_TYPE_NEWER&#160;</td><td class="fielddoc"><p>Use the source path when it is newer or the destination is missing; otherwise use the destination path. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f" name="gga4cff87d2582f23b178ded5e6420ddc01a21dcfa131ef1db368ecc21f8816b6e7f"></a>SCE_FIOS_OVERLAY_TYPE_WRITABLE&#160;</td><td class="fielddoc"><p>Reads prefer an existing source path and writes always use the source path. </p>
+</td></tr>
 </table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga29eb5b029cb16a7e5750bff964738699" name="ga29eb5b029cb16a7e5750bff964738699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga29eb5b029cb16a7e5750bff964738699">&#9670;&#160;</a></span>sceFiosKernelOverlayAddForProcess02()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int sceFiosKernelOverlayAddForProcess02 </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
-          <td class="paramname"><em>pid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
-          <td class="paramname"><em>overlay</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *&#160;</td>
-          <td class="paramname"><em>outID</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ga6f857da9d97962e77e397cf804de1360" name="ga6f857da9d97962e77e397cf804de1360"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6f857da9d97962e77e397cf804de1360">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/2]</span></h2>
 
@@ -533,8 +532,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
 
 </div>
 </div>
-<a id="gaff69dd245c855399c78a1e2f7ac6b524" name="gaff69dd245c855399c78a1e2f7ac6b524"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaff69dd245c855399c78a1e2f7ac6b524">&#9670;&#160;</a></span>ksceFiosKernelOverlayResolveSync()</h2>
+<a id="ga36805735409cada047c030c192e53150" name="ga36805735409cada047c030c192e53150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36805735409cada047c030c192e53150">&#9670;&#160;</a></span>ksceFiosKernelOverlayResolveSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -549,7 +548,7 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resolveFlag</em>, </td>
+          <td class="paramname"><em>resolveForWrite</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -577,18 +576,437 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 
-<p>Resolve process file system overlay with sync. </p>
+<p>Resolves a path synchronously through a process's overlays. </p>
+<p><code>maxPath</code> must be from 1 through 0x400, inclusive. The input's NUL terminator must fall within that many bytes, and <code>outPath</code> must provide at least <code>maxPath</code> bytes. When application overlays are disabled for the current thread, orders below 0x80 are skipped.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process id </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">resolveFlag</td><td>- Some flags </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">inPath</td><td>- Path input </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">outPath</td><td>- Path output </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">maxPath</td><td>- Path output max length</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlays are used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolveForWrite</td><td>- Must be 0 for read resolution or 1 for write resolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">inPath</td><td>- Path to resolve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">outPath</td><td>- Resolved path output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxPath</td><td>- Input and output path limit.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Error code or zero on success </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga098db686a59513260f18e6fe866793fd" name="ga098db686a59513260f18e6fe866793fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga098db686a59513260f18e6fe866793fd">&#9670;&#160;</a></span>ksceFiosKernelOverlayGetInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayGetInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
+          <td class="paramname"><em>out_overlay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an overlay from the calling process's table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Overlay identifier. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_overlay</td><td>- Receives a copy of the complete overlay.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga22f56eb3b147c4880272f9056f0993cf" name="ga22f56eb3b147c4880272f9056f0993cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22f56eb3b147c4880272f9056f0993cf">&#9670;&#160;</a></span>ksceFiosKernelOverlayGetInfoForProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayGetInfoForProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
+          <td class="paramname"><em>out_overlay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets an overlay from a process's table. </p>
+<p>Copies the complete 0x258-byte overlay to <code>out_overlay</code>. The output buffer must remain valid until this function returns; it is not used afterwards. Access to another process's table requires the appropriate privileges.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlay table is queried. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Overlay identifier. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_overlay</td><td>- Receives the overlay information.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaedf33bd887848d85fb47e34dd9803d70" name="gaedf33bd887848d85fb47e34dd9803d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaedf33bd887848d85fb47e34dd9803d70">&#9670;&#160;</a></span>ksceFiosKernelOverlayGetList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayGetList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
+          <td class="paramname"><em>min_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
+          <td class="paramname"><em>max_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a> *&#160;</td>
+          <td class="paramname"><em>out_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>max_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *&#160;</td>
+          <td class="paramname"><em>actual_ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the IDs of overlays whose order is from <code>min_order</code> through <code>max_order</code>, inclusive. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlays are enumerated. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_order</td><td>- Minimum value of an overlay's order field to include. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_order</td><td>- Maximum value of an overlay's order field to include. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_ids</td><td>- Overlay ID output buffer, or NULL when <code>max_ids</code> is zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_ids</td><td>- Maximum number of overlay IDs to write. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">actual_ids</td><td>- Optional pointer receiving the total number of matching overlays, including those beyond <code>max_ids</code>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or an error code. </dd></dl>
+
+</div>
+</div>
+<a id="gaf67a9830d9512faf538546d88d4db913" name="gaf67a9830d9512faf538546d88d4db913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf67a9830d9512faf538546d88d4db913">&#9670;&#160;</a></span>ksceFiosKernelOverlayGetRecommendedScheduler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayGetRecommendedScheduler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scheduler_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>partially_resolved_path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the recommended scheduler index for a partially resolved path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheduler_count</td><td>- Number of available schedulers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partially_resolved_path</td><td>- Optional partially resolved path.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a host[0-9]: path when scheduler_count is greater than 1, otherwise 0. </dd></dl>
+
+</div>
+</div>
+<a id="gac06933db10402e94d74000b9e71a30df" name="gac06933db10402e94d74000b9e71a30df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac06933db10402e94d74000b9e71a30df">&#9670;&#160;</a></span>ksceFiosKernelOverlayModify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayModify </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
+          <td class="paramname"><em>new_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces an overlay in the calling process's table. </p>
+<p>Validates and copies <code>new_value</code> before returning. Keeps the process and overlay IDs and recalculates both path lengths.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Overlay identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_value</td><td>- Replacement overlay configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga11afeb0872712b675e459e3c4cbbca33" name="ga11afeb0872712b675e459e3c4cbbca33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11afeb0872712b675e459e3c4cbbca33">&#9670;&#160;</a></span>ksceFiosKernelOverlayModifyForProcess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayModifyForProcess </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceFios2KernelKernel.html#structSceFiosOverlay">SceFiosOverlay</a> *&#160;</td>
+          <td class="paramname"><em>new_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replaces an overlay in a process's table. </p>
+<p>Copies <code>new_value</code> before returning. Keep it valid until this function returns; it is not used afterwards. Access to another process's table requires the appropriate privileges.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlay is replaced. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>- Overlay identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_value</td><td>- Replacement overlay configuration.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga9dd6be1947ba928369bd760fe062e9da" name="ga9dd6be1947ba928369bd760fe062e9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9dd6be1947ba928369bd760fe062e9da">&#9670;&#160;</a></span>ksceFiosKernelOverlayRemove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayRemove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelKernel.html#ga9ce1e49d24011604564ec4dd73e555b4">SceFiosOverlayID</a>&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Removes an overlay synchronously from the calling process's table. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga57b8f072b0043a894691350e9840c659" name="ga57b8f072b0043a894691350e9840c659"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57b8f072b0043a894691350e9840c659">&#9670;&#160;</a></span>ksceFiosKernelOverlayResolveWithRangeSync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayResolveWithRangeSync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>pid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>resolve_for_write</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>in_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>out_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>max_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
+          <td class="paramname"><em>min_order</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td>
+          <td class="paramname"><em>max_order</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resolves a path through overlays whose order is from <code>min_order</code> through <code>max_order</code>, inclusive. </p>
+<p><code>max_path</code> must be from 1 through 0x400, inclusive. The input's NUL terminator must fall within that many bytes, and <code>out_path</code> must provide at least <code>max_path</code> bytes. If application overlays are disabled for the current thread, the supplied <code>min_order</code> is replaced with 0x80.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlays are used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolve_for_write</td><td>- Must be 0 for read resolution or 1 for write resolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_path</td><td>- Path to resolve. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out_path</td><td>- Resolved path output buffer. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_path</td><td>- Output buffer size. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">min_order</td><td>- Minimum value of an overlay's order field to include. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">max_order</td><td>- Maximum value of an overlay's order field to include.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or an error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga7ec8f543905edbc32d8b0e7f3a3f7e85" name="ga7ec8f543905edbc32d8b0e7f3a3f7e85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ec8f543905edbc32d8b0e7f3a3f7e85">&#9670;&#160;</a></span>ksceFiosKernelOverlayThreadIsDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayThreadIsDisabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether application overlays are disabled for the current thread. </p>
+<p>A nonzero state skips orders 0x00 through 0x7F. Privileged overlays with orders 0x80 through 0xFF remain active.</p>
+<dl class="section return"><dt>Returns</dt><dd>0 or 1. </dd></dl>
+
+</div>
+</div>
+<a id="ga1fe7506bb5b5fdde1b41fa5c69796c4e" name="ga1fe7506bb5b5fdde1b41fa5c69796c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1fe7506bb5b5fdde1b41fa5c69796c4e">&#9670;&#160;</a></span>ksceFiosKernelOverlayThreadSetDisabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceFiosKernelOverlayThreadSetDisabled </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>disabled</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enables or disables application overlays for the current thread. </p>
+<p>Any nonzero value skips orders 0x00 through 0x7F until this function is called with zero or the thread exits. Privileged orders 0x80 through 0xFF remain active.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">disabled</td><td>- Zero to enable application overlays, or any nonzero value to disable them.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or -1 if the thread-local state is unavailable. </dd></dl>
 
 </div>
 </div>
@@ -605,6 +1023,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 
+<p>One of <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>. </p>
+
 </div>
 </div>
 <a id="ga57b3de5d40d266baa3de1a0f12093ef6" name="ga57b3de5d40d266baa3de1a0f12093ef6"></a>
@@ -618,6 +1038,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resolution order. Lower values are evaluated first; 0x00-0x7F are application orders and 0x80-0xFF are reserved for privileged overlays. </p>
 
 </div>
 </div>
@@ -633,6 +1055,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 
+<p>Destination-path length computed by FIOS2. </p>
+
 </div>
 </div>
 <a id="ga4c422a3c57b138f1d1367568183e9f96" name="ga4c422a3c57b138f1d1367568183e9f96"></a>
@@ -646,6 +1070,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Source-path length computed by FIOS2. </p>
 
 </div>
 </div>
@@ -675,6 +1101,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 
+<p>Target process ID. Used by <a class="el" href="group__SceFios2KernelKernel.html#ga045f58dcf924f09a660f9ddf573e9432" title="Overlay process file system overlay.">ksceFiosKernelOverlayAdd</a> and overwritten by functions that take a process ID argument. </p>
+
 </div>
 </div>
 <a id="ga3670f391cba14738ef8fb74bcdef18a0" name="ga3670f391cba14738ef8fb74bcdef18a0"></a>
@@ -688,6 +1116,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Overlay ID assigned by FIOS2; ignored when adding an overlay. </p>
 
 </div>
 </div>
@@ -703,6 +1133,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
       </table>
 </div><div class="memdoc">
 
+<p>Destination-path prefix matched during resolution. </p>
+
 </div>
 </div>
 <a id="ga2132d050656cd9d81980d08713614521" name="ga2132d050656cd9d81980d08713614521"></a>
@@ -716,6 +1148,8 @@ src[<a class="el" href="group__SceFios2KernelKernel.html#ga95411438d511f6a68fc22
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Source-path prefix substituted according to <a class="el" href="group__SceFios2KernelKernel.html#ga4cff87d2582f23b178ded5e6420ddc01">SceFiosOverlayType</a>. </p>
 
 </div>
 </div>

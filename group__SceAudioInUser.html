@@ -105,39 +105,89 @@ Enumerations</h2></td></tr>
 <tr class="separator:ga28abc8ed0115ce4f3c3b19bbac143dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa85902ccecf8f073a69d586a3a554660" id="r_gaa85902ccecf8f073a69d586a3a554660"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> { <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b">SCE_AUDIO_IN_PORT_TYPE_VOICE</a> = 0
 , <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49">SCE_AUDIO_IN_PORT_TYPE_RAW</a> = 2
+, <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e">SCE_AUDIO_IN_PORT_TYPE_DIAG</a> = 14
+, <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f">SCE_AUDIO_IN_PORT_TYPE_CAMERA</a> = 0x20
  }</td></tr>
 <tr class="separator:gaa85902ccecf8f073a69d586a3a554660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga952b9bb4d200c4627dc667b0785ae00d" id="r_ga952b9bb4d200c4627dc667b0785ae00d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a> { <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b">SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO</a> = 0
 , <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f">SCE_AUDIO_IN_GETSTATUS_MUTE</a> = 1
  }</td></tr>
 <tr class="separator:ga952b9bb4d200c4627dc667b0785ae00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0cde19ed00b17978f850efbd3323ae26" id="r_ga0cde19ed00b17978f850efbd3323ae26"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26">SceAudioInMuteCommand</a> { <a class="el" href="group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671">SCE_AUDIO_IN_MUTE</a> = 1
+, <a class="el" href="group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83">SCE_AUDIO_IN_UNMUTE</a> = 2
+ }</td></tr>
+<tr class="memdesc:ga0cde19ed00b17978f850efbd3323ae26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commands accepted by <a class="el" href="group__SceAudioInUser.html#ga595212f30839f3bd4bf077d218ab6cbd" title="Set the system microphone mute state.">sceAudioInSetMute</a>.  <a href="group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26">More...</a><br /></td></tr>
+<tr class="separator:ga0cde19ed00b17978f850efbd3323ae26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf57208dcbd33945a8630a9cd4c58303c" id="r_gaf57208dcbd33945a8630a9cd4c58303c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c">SceAudioInInputMode</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca1cb8ea3315a1c30c2c00a9c9e70a989d">SCE_AUDIO_IN_INPUT_MODE_NONE</a> = -1
+, <a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303caac493ad0b8439187f594c01dd7d1ca31">SCE_AUDIO_IN_INPUT_MODE_BUILTIN_MIC</a> = 0
+, <a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303cabee2db788479077c87f2f096def07696">SCE_AUDIO_IN_INPUT_MODE_HEADSET_MIC</a> = 1
+, <a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca570b16df64c689a9fac11ae01d31dd42">SCE_AUDIO_IN_INPUT_MODE_CODEC_2</a> = 2
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca96eb7de54097f6aa66038d37be1bd8a9">SCE_AUDIO_IN_INPUT_MODE_BLUETOOTH</a> = 0x10
+, <a class="el" href="group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca044fceddf30f25f0b3f9230aa03f845f">SCE_AUDIO_IN_INPUT_MODE_VITA_TV</a> = 0x20
+<br />
+ }</td></tr>
+<tr class="memdesc:gaf57208dcbd33945a8630a9cd4c58303c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio-input routes used by <a class="el" href="group__SceAudioInUser.html#gae11764a9430eed916d8609b21e69ccbc" title="Select the input route.">sceAudioInSelectInput</a> and <a class="el" href="group__SceAudioInKernel.html#gab56377a7dd1e891a3a362fab53113d42" title="Select the input route.">ksceAudioInSelectInput</a>.  <a href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c">More...</a><br /></td></tr>
+<tr class="separator:gaf57208dcbd33945a8630a9cd4c58303c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gafd74510965e47b7194e496808d47458b" id="r_gafd74510965e47b7194e496808d47458b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b">sceAudioInOpenPort</a> (<a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> portType, int grain, int freq, <a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a> param)</td></tr>
-<tr class="memdesc:gafd74510965e47b7194e496808d47458b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open port.  <br /></td></tr>
+<tr class="memdesc:gafd74510965e47b7194e496808d47458b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an audio-input port.  <br /></td></tr>
 <tr class="separator:gafd74510965e47b7194e496808d47458b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6" id="r_ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6">sceAudioInOpenPortForDiag</a> (<a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> port_type, int grain, int freq, <a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a> param)</td></tr>
+<tr class="memdesc:ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an audio-input port using the diagnostic entry point.  <br /></td></tr>
+<tr class="separator:ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1c14f220a4c636c0c69960dc6b5aa9df" id="r_ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga1c14f220a4c636c0c69960dc6b5aa9df">sceAudioInReleasePort</a> (int port)</td></tr>
-<tr class="memdesc:ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close port.  <br /></td></tr>
+<tr class="memdesc:ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an audio-input port owned by the calling process.  <br /></td></tr>
 <tr class="separator:ga1c14f220a4c636c0c69960dc6b5aa9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4f513ba6e4c39b562ecc6cf9439c648a" id="r_ga4f513ba6e4c39b562ecc6cf9439c648a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga4f513ba6e4c39b562ecc6cf9439c648a">sceAudioInInput</a> (int port, void *destPtr)</td></tr>
+<tr class="memdesc:ga4f513ba6e4c39b562ecc6cf9439c648a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the configured number of mono signed 16-bit PCM samples.  <br /></td></tr>
 <tr class="separator:ga4f513ba6e4c39b562ecc6cf9439c648a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80ee214bdf59b61d59dbe4af91599190" id="r_ga80ee214bdf59b61d59dbe4af91599190"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga80ee214bdf59b61d59dbe4af91599190">sceAudioInInputWithInputDeviceState</a> (int port, void *dest_ptr, int *input_device_state)</td></tr>
+<tr class="memdesc:ga80ee214bdf59b61d59dbe4af91599190"><td class="mdescLeft">&#160;</td><td class="mdescRight">Capture the configured number of samples and report an input-route change.  <br /></td></tr>
+<tr class="separator:ga80ee214bdf59b61d59dbe4af91599190"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae05aa5901840b461c396f4ac050843a6" id="r_gae05aa5901840b461c396f4ac050843a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gae05aa5901840b461c396f4ac050843a6">sceAudioInGetAdopt</a> (<a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a> portType)</td></tr>
+<tr class="memdesc:gae05aa5901840b461c396f4ac050843a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the calling process owns the adopted audio-input port.  <br /></td></tr>
 <tr class="separator:gae05aa5901840b461c396f4ac050843a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3156b2e164d368f2c9d20cec93b5dee2" id="r_ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga3156b2e164d368f2c9d20cec93b5dee2">sceAudioInGetStatus</a> (int select)</td></tr>
+<tr class="memdesc:ga3156b2e164d368f2c9d20cec93b5dee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query audio-input state.  <br /></td></tr>
 <tr class="separator:ga3156b2e164d368f2c9d20cec93b5dee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0a2bd77cb80483c12c3e883726c32d2" id="r_gac0a2bd77cb80483c12c3e883726c32d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gac0a2bd77cb80483c12c3e883726c32d2">sceAudioInGetInput</a> (void)</td></tr>
+<tr class="memdesc:gac0a2bd77cb80483c12c3e883726c32d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current input route.  <br /></td></tr>
+<tr class="separator:gac0a2bd77cb80483c12c3e883726c32d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae11764a9430eed916d8609b21e69ccbc" id="r_gae11764a9430eed916d8609b21e69ccbc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gae11764a9430eed916d8609b21e69ccbc">sceAudioInSelectInput</a> (<a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c">SceAudioInInputMode</a> input_mode)</td></tr>
+<tr class="memdesc:gae11764a9430eed916d8609b21e69ccbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the input route.  <br /></td></tr>
+<tr class="separator:gae11764a9430eed916d8609b21e69ccbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga595212f30839f3bd4bf077d218ab6cbd" id="r_ga595212f30839f3bd4bf077d218ab6cbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga595212f30839f3bd4bf077d218ab6cbd">sceAudioInSetMute</a> (<a class="el" href="group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26">SceAudioInMuteCommand</a> command)</td></tr>
+<tr class="memdesc:ga595212f30839f3bd4bf077d218ab6cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the system microphone mute state.  <br /></td></tr>
+<tr class="separator:ga595212f30839f3bd4bf077d218ab6cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c1eeefac01ce56bcdf1ba177b566c8e" id="r_ga4c1eeefac01ce56bcdf1ba177b566c8e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#ga4c1eeefac01ce56bcdf1ba177b566c8e">sceAudioInSetMicGain</a> (int port, int gain)</td></tr>
+<tr class="memdesc:ga4c1eeefac01ce56bcdf1ba177b566c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the microphone-gain value stored for a port.  <br /></td></tr>
+<tr class="separator:ga4c1eeefac01ce56bcdf1ba177b566c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabfa8583621e05fc3600f3547db3dbffd" id="r_gabfa8583621e05fc3600f3547db3dbffd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioInUser.html#gabfa8583621e05fc3600f3547db3dbffd">sceAudioInGetMicGain</a> (int port)</td></tr>
+<tr class="memdesc:gabfa8583621e05fc3600f3547db3dbffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the microphone-gain value stored for a port.  <br /></td></tr>
+<tr class="separator:gabfa8583621e05fc3600f3547db3dbffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="audioin_8h.html">psp2/audioin.h</a>&gt;</span> </div>
-<div class="ttc" id="aaudioin_8h_html"><div class="ttname"><a href="audioin_8h.html">audioin.h</a></div></div>
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2_2audioin_8h.html">psp2/audioin.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2_2audioin_8h_html"><div class="ttname"><a href="psp2_2audioin_8h.html">audioin.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">SceAudioIn_stub </div>
 </div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2audioin_8h.html">psp2common/audioin.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2audioin_8h_html"><div class="ttname"><a href="psp2common_2audioin_8h.html">audioin.h</a></div></div>
+</div><!-- fragment --><p><br  />
  </p><hr  />
  <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga28abc8ed0115ce4f3c3b19bbac143dcc" name="ga28abc8ed0115ce4f3c3b19bbac143dcc"></a>
@@ -152,27 +202,27 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a" name="gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a"></a>SCE_AUDIO_IN_ERROR_FATAL&#160;</td><td class="fielddoc"><p>Undefined error. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a" name="gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a"></a>SCE_AUDIO_IN_ERROR_FATAL&#160;</td><td class="fielddoc"><p>AudioIn is not initialized. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f" name="gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT&#160;</td><td class="fielddoc"><p>Bad value of port number. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f" name="gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT&#160;</td><td class="fielddoc"><p>Defined, but FW 3.60 SceAudioin does not return it directly. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238" name="gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238"></a>SCE_AUDIO_IN_ERROR_INVALID_SIZE&#160;</td><td class="fielddoc"><p>Invalid sample length. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238" name="gga28abc8ed0115ce4f3c3b19bbac143dcca35bdf669ddfbf4d998046fbf6de95238"></a>SCE_AUDIO_IN_ERROR_INVALID_SIZE&#160;</td><td class="fielddoc"><p>Invalid grain size. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca304714f75da98e79d1dcca568c93aa68" name="gga28abc8ed0115ce4f3c3b19bbac143dcca304714f75da98e79d1dcca568c93aa68"></a>SCE_AUDIO_IN_ERROR_INVALID_SAMPLE_FREQ&#160;</td><td class="fielddoc"><p>Invalid sample frequency. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54" name="gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE&#160;</td><td class="fielddoc"><p>Invalid port type. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9" name="gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9"></a>SCE_AUDIO_IN_ERROR_INVALID_POINTER&#160;</td><td class="fielddoc"><p>Invalid pointer value. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9" name="gga28abc8ed0115ce4f3c3b19bbac143dcca5bf1f3890489da0880e376c3def5f3b9"></a>SCE_AUDIO_IN_ERROR_INVALID_POINTER&#160;</td><td class="fielddoc"><p>Invalid pointer. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910" name="gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM&#160;</td><td class="fielddoc"><p>Invalid port param. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910" name="gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910"></a>SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM&#160;</td><td class="fielddoc"><p>Invalid port parameter. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c" name="gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c"></a>SCE_AUDIO_IN_ERROR_PORT_FULL&#160;</td><td class="fielddoc"><p>Cannot open no ports. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c" name="gga28abc8ed0115ce4f3c3b19bbac143dcca124621b1ade9c8d226e0966077a0876c"></a>SCE_AUDIO_IN_ERROR_PORT_FULL&#160;</td><td class="fielddoc"><p>The process already owns a port on FW 3.60. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94" name="gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94"></a>SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"><p>Not enough memory. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94" name="gga28abc8ed0115ce4f3c3b19bbac143dccae74ee704b2c1df5cf7d6aa883e5d7d94"></a>SCE_AUDIO_IN_ERROR_OUT_OF_MEMORY&#160;</td><td class="fielddoc"><p>All four port slots are in use on FW 3.60. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594" name="gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594"></a>SCE_AUDIO_IN_ERROR_NOT_OPENED&#160;</td><td class="fielddoc"><p>Port is not opened. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594" name="gga28abc8ed0115ce4f3c3b19bbac143dcca82a478e6fe50da6cf1a9a29e0b9f1594"></a>SCE_AUDIO_IN_ERROR_NOT_OPENED&#160;</td><td class="fielddoc"><p>The port is not open. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885" name="gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885"></a>SCE_AUDIO_IN_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Tried to input while busy. </p>
+<tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885" name="gga28abc8ed0115ce4f3c3b19bbac143dccaaf35bb52dc924ad77e10a8c0fc7f4885"></a>SCE_AUDIO_IN_ERROR_BUSY&#160;</td><td class="fielddoc"><p>Defined, but FW 3.60 SceAudioin does not return it directly. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a" name="gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a"></a>SCE_AUDIO_IN_ERROR_INVALID_PARAMETER&#160;</td><td class="fielddoc"><p>Invalid parameter. </p>
 </td></tr>
@@ -192,8 +242,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b" name="ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b"></a>SCE_AUDIO_IN_PORT_TYPE_VOICE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49" name="ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49"></a>SCE_AUDIO_IN_PORT_TYPE_RAW&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b" name="ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b"></a>SCE_AUDIO_IN_PORT_TYPE_VOICE&#160;</td><td class="fielddoc"><p>Voice capture profile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49" name="ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49"></a>SCE_AUDIO_IN_PORT_TYPE_RAW&#160;</td><td class="fielddoc"><p>Raw capture profile. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e" name="ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e"></a>SCE_AUDIO_IN_PORT_TYPE_DIAG&#160;</td><td class="fielddoc"><p>Diagnostic profile accepted only by <a class="el" href="group__SceAudioInUser.html#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6" title="Open an audio-input port using the diagnostic entry point.">sceAudioInOpenPortForDiag</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f" name="ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f"></a>SCE_AUDIO_IN_PORT_TYPE_CAMERA&#160;</td><td class="fielddoc"><p>PhotoCam capture profile with temporary route-change reporting. </p>
+</td></tr>
 </table>
 
 </div>
@@ -210,8 +266,63 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b" name="gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b"></a>SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f" name="gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f"></a>SCE_AUDIO_IN_GETSTATUS_MUTE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b" name="gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b"></a>SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO&#160;</td><td class="fielddoc"><p>Mono signed 16-bit PCM; the only port format accepted on FW 3.60. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f" name="gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f"></a>SCE_AUDIO_IN_GETSTATUS_MUTE&#160;</td><td class="fielddoc"><p>System microphone-mute selector for <a class="el" href="group__SceAudioInUser.html#ga3156b2e164d368f2c9d20cec93b5dee2" title="Query audio-input state.">sceAudioInGetStatus</a>. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga0cde19ed00b17978f850efbd3323ae26" name="ga0cde19ed00b17978f850efbd3323ae26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0cde19ed00b17978f850efbd3323ae26">&#9670;&#160;</a></span>SceAudioInMuteCommand</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26">SceAudioInMuteCommand</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Commands accepted by <a class="el" href="group__SceAudioInUser.html#ga595212f30839f3bd4bf077d218ab6cbd" title="Set the system microphone mute state.">sceAudioInSetMute</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671" name="gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671"></a>SCE_AUDIO_IN_MUTE&#160;</td><td class="fielddoc"><p>Set the system microphone-mute flag. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83" name="gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83"></a>SCE_AUDIO_IN_UNMUTE&#160;</td><td class="fielddoc"><p>Clear the system microphone-mute flag. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gaf57208dcbd33945a8630a9cd4c58303c" name="gaf57208dcbd33945a8630a9cd4c58303c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf57208dcbd33945a8630a9cd4c58303c">&#9670;&#160;</a></span>SceAudioInInputMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c">SceAudioInInputMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Audio-input routes used by <a class="el" href="group__SceAudioInUser.html#gae11764a9430eed916d8609b21e69ccbc" title="Select the input route.">sceAudioInSelectInput</a> and <a class="el" href="group__SceAudioInKernel.html#gab56377a7dd1e891a3a362fab53113d42" title="Select the input route.">ksceAudioInSelectInput</a>. </p>
+<p>FW 3.60 has explicit input-source selection code for values 0, 1, 2, 0x10, and 0x20. The value -1 is used after initialization and suspend; selecting it through the API does not disable the previously active input source. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303ca1cb8ea3315a1c30c2c00a9c9e70a989d" name="ggaf57208dcbd33945a8630a9cd4c58303ca1cb8ea3315a1c30c2c00a9c9e70a989d"></a>SCE_AUDIO_IN_INPUT_MODE_NONE&#160;</td><td class="fielddoc"><p>No current route is recorded internally. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303caac493ad0b8439187f594c01dd7d1ca31" name="ggaf57208dcbd33945a8630a9cd4c58303caac493ad0b8439187f594c01dd7d1ca31"></a>SCE_AUDIO_IN_INPUT_MODE_BUILTIN_MIC&#160;</td><td class="fielddoc"><p>Handheld built-in microphone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303cabee2db788479077c87f2f096def07696" name="ggaf57208dcbd33945a8630a9cd4c58303cabee2db788479077c87f2f096def07696"></a>SCE_AUDIO_IN_INPUT_MODE_HEADSET_MIC&#160;</td><td class="fielddoc"><p>Wired headset microphone. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303ca570b16df64c689a9fac11ae01d31dd42" name="ggaf57208dcbd33945a8630a9cd4c58303ca570b16df64c689a9fac11ae01d31dd42"></a>SCE_AUDIO_IN_INPUT_MODE_CODEC_2&#160;</td><td class="fielddoc"><p>Codec interface profile 2; its physical input source is unknown. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303ca96eb7de54097f6aa66038d37be1bd8a9" name="ggaf57208dcbd33945a8630a9cd4c58303ca96eb7de54097f6aa66038d37be1bd8a9"></a>SCE_AUDIO_IN_INPUT_MODE_BLUETOOTH&#160;</td><td class="fielddoc"><p>Bluetooth microphone PCM supplied by <a class="el" href="group__SceAudioInKernel.html#ga89b17b67d14a24acfb58e60eb4f8bf08" title="Submit Bluetooth microphone PCM to AudioIn.">ksceAudioInSubmitBluetoothPcm</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggaf57208dcbd33945a8630a9cd4c58303ca044fceddf30f25f0b3f9230aa03f845f" name="ggaf57208dcbd33945a8630a9cd4c58303ca044fceddf30f25f0b3f9230aa03f845f"></a>SCE_AUDIO_IN_INPUT_MODE_VITA_TV&#160;</td><td class="fielddoc"><p>Vita TV input profile. </p>
+</td></tr>
 </table>
 
 </div>
@@ -255,7 +366,72 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Open port. </p>
+<p>Open an audio-input port. </p>
+<p>FW 3.60 supports at most four ports globally and one port per process. <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b" title="Voice capture profile.">SCE_AUDIO_IN_PORT_TYPE_VOICE</a> accepts 256 or 512 samples at 16000 Hz. <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49" title="Raw capture profile.">SCE_AUDIO_IN_PORT_TYPE_RAW</a> accepts 256 samples at 16000 Hz or 768 samples at 48000 Hz. <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f" title="PhotoCam capture profile with temporary route-change reporting.">SCE_AUDIO_IN_PORT_TYPE_CAMERA</a> accepts 256 or 512 samples at 16000 Hz.</p>
+<p>On FW 3.60, successful handles range from 0x80 through 0xFF. In addition to the named profiles above, any other nonnegative port type below 0x400 whose low four bits are zero is accepted, as are 0x12 and 0x1F. The purpose of these additional values is unknown, and they have no confirmed first-party uses.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_type</td><td>- Capture profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grain</td><td>- Number of mono samples returned by each input call. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- Sample frequency in Hz. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- Must be <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b" title="Mono signed 16-bit PCM; the only port format accepted on FW 3.60.">SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO</a> on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A port handle on success, or a negative error code. Most validation failures use <a class="el" href="group__SceAudioInUser.html#ga28abc8ed0115ce4f3c3b19bbac143dcc">SceAudioInErrorCode</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6" name="ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6">&#9670;&#160;</a></span>sceAudioInOpenPortForDiag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInOpenPortForDiag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660">SceAudioInPortType</a>&#160;</td>
+          <td class="paramname"><em>port_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>freq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d">SceAudioInParam</a>&#160;</td>
+          <td class="paramname"><em>param</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open an audio-input port using the diagnostic entry point. </p>
+<p>This performs the same work as <a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b" title="Open an audio-input port.">sceAudioInOpenPort</a>. On FW 3.60 it also accepts <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e" title="Diagnostic profile accepted only by sceAudioInOpenPortForDiag.">SCE_AUDIO_IN_PORT_TYPE_DIAG</a> without validating <em>grain</em> or <em>freq</em>; both values are still stored in the resulting port configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_type</td><td>- Capture profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">grain</td><td>- Number of mono samples returned by each input call. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- Sample frequency in Hz. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">param</td><td>- Must be <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b" title="Mono signed 16-bit PCM; the only port format accepted on FW 3.60.">SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO</a> on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A port handle on success, or a negative error code. Most validation failures use <a class="el" href="group__SceAudioInUser.html#ga28abc8ed0115ce4f3c3b19bbac143dcc">SceAudioInErrorCode</a>. </dd></dl>
 
 </div>
 </div>
@@ -275,7 +451,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Close port. </p>
+<p>Release an audio-input port owned by the calling process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle returned by <a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b" title="Open an audio-input port.">sceAudioInOpenPort</a> or <a class="el" href="group__SceAudioInUser.html#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6" title="Open an audio-input port using the diagnostic entry point.">sceAudioInOpenPortForDiag</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
 
 </div>
 </div>
@@ -305,6 +488,63 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Capture the configured number of mono signed 16-bit PCM samples. </p>
+<p>This function blocks until the configured number of samples is available.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle returned by <a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b" title="Open an audio-input port.">sceAudioInOpenPort</a> or <a class="el" href="group__SceAudioInUser.html#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6" title="Open an audio-input port using the diagnostic entry point.">sceAudioInOpenPortForDiag</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest_ptr</td><td>- Buffer for the captured samples. Its size must be at least <code>grain * sizeof(SceInt16)</code> bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
+</div>
+</div>
+<a id="ga80ee214bdf59b61d59dbe4af91599190" name="ga80ee214bdf59b61d59dbe4af91599190"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80ee214bdf59b61d59dbe4af91599190">&#9670;&#160;</a></span>sceAudioInInputWithInputDeviceState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInInputWithInputDeviceState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>dest_ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>input_device_state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Capture the configured number of samples and report an input-route change. </p>
+<p>For a port with device-state reporting enabled, such as the camera profile, FW 3.60 writes 1 for the first two successful captures after the input route changes and writes 0 afterward. This value does not indicate whether the input device is still connected. For other profiles FW 3.60 does not write <em>input_device_state</em>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle returned by <a class="el" href="group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b" title="Open an audio-input port.">sceAudioInOpenPort</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest_ptr</td><td>- Buffer for the captured samples. Its size must be at least <code>grain * sizeof(SceInt16)</code> bytes. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">input_device_state</td><td>- Receives the temporary route-change state when reporting is enabled for the port. Otherwise FW 3.60 does not access this pointer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
 </div>
 </div>
 <a id="gae05aa5901840b461c396f4ac050843a6" name="gae05aa5901840b461c396f4ac050843a6"></a>
@@ -323,6 +563,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check whether the calling process owns the adopted audio-input port. </p>
+<p>FW 3.60 accepts only <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b" title="Voice capture profile.">SCE_AUDIO_IN_PORT_TYPE_VOICE</a> and <a class="el" href="group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49" title="Raw capture profile.">SCE_AUDIO_IN_PORT_TYPE_RAW</a>. The selected type is validated but does not otherwise affect the result.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_type</td><td>- Port type to validate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when the calling process owns a port and is the adopted input process, 0 otherwise, or a negative <a class="el" href="group__SceAudioInUser.html#ga28abc8ed0115ce4f3c3b19bbac143dcc">SceAudioInErrorCode</a> value. </dd></dl>
+
 </div>
 </div>
 <a id="ga3156b2e164d368f2c9d20cec93b5dee2" name="ga3156b2e164d368f2c9d20cec93b5dee2"></a>
@@ -340,6 +590,159 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Query audio-input state. </p>
+<p>On Vita TV, FW 3.60 also reports the microphone as muted while the Bluetooth input is inactive.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">select</td><td>- <a class="el" href="group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f" title="System microphone-mute selector for sceAudioInGetStatus.">SCE_AUDIO_IN_GETSTATUS_MUTE</a> on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when the system microphone is muted, 0 when it is not muted, or a negative error code for an unsupported selector. FW 3.60 returns <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca331c76dcdf481f0fde08d4fb3fe11910" title="Invalid port parameter.">SCE_AUDIO_IN_ERROR_INVALID_PORT_PARAM</a> to processes built for an SDK older than 1.80, and <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a" title="Invalid parameter.">SCE_AUDIO_IN_ERROR_INVALID_PARAMETER</a> to processes built for SDK 1.80 or later. </dd></dl>
+
+</div>
+</div>
+<a id="gac0a2bd77cb80483c12c3e883726c32d2" name="gac0a2bd77cb80483c12c3e883726c32d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0a2bd77cb80483c12c3e883726c32d2">&#9670;&#160;</a></span>sceAudioInGetInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInGetInput </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current input route. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current route, normally one of <a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c" title="Audio-input routes used by sceAudioInSelectInput and ksceAudioInSelectInput.">SceAudioInInputMode</a>. </dd></dl>
+
+</div>
+</div>
+<a id="gae11764a9430eed916d8609b21e69ccbc" name="gae11764a9430eed916d8609b21e69ccbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae11764a9430eed916d8609b21e69ccbc">&#9670;&#160;</a></span>sceAudioInSelectInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInSelectInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c">SceAudioInInputMode</a>&#160;</td>
+          <td class="paramname"><em>input_mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select the input route. </p>
+<p>The request is applied asynchronously by the input worker. FW 3.60 does not reject values outside <a class="el" href="group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c" title="Audio-input routes used by sceAudioInSelectInput and ksceAudioInSelectInput.">SceAudioInInputMode</a>: the worker records the requested value as the current route but does not explicitly select an input source for it.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_mode</td><td>- Input route.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 when the route is already selected, otherwise the result of the FW 3.60 input-worker notification. </dd></dl>
+
+</div>
+</div>
+<a id="ga595212f30839f3bd4bf077d218ab6cbd" name="ga595212f30839f3bd4bf077d218ab6cbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga595212f30839f3bd4bf077d218ab6cbd">&#9670;&#160;</a></span>sceAudioInSetMute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInSetMute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26">SceAudioInMuteCommand</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the system microphone mute state. </p>
+<p>FW 3.60 ignores values other than <a class="el" href="group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671" title="Set the system microphone-mute flag.">SCE_AUDIO_IN_MUTE</a> and <a class="el" href="group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83" title="Clear the system microphone-mute flag.">SCE_AUDIO_IN_UNMUTE</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">command</td><td>- Mute command.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The updated internal AudioIn flags for a recognized command. An unrecognized command is returned unchanged. </dd></dl>
+
+</div>
+</div>
+<a id="ga4c1eeefac01ce56bcdf1ba177b566c8e" name="ga4c1eeefac01ce56bcdf1ba177b566c8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c1eeefac01ce56bcdf1ba177b566c8e">&#9670;&#160;</a></span>sceAudioInSetMicGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInSetMicGain </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gain</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the microphone-gain value stored for a port. </p>
+<p>FW 3.60 initializes this field to 0x1060 and stores the low 16 bits of <em>gain</em>. SceAudioin does not otherwise read it, so its units and purpose are unknown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle owned by the calling process. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">gain</td><td>- Value to store.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. An invalid handle or one not owned by the calling process returns <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54" title="Invalid port type.">SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE</a> on FW 3.60. </dd></dl>
+
+</div>
+</div>
+<a id="gabfa8583621e05fc3600f3547db3dbffd" name="gabfa8583621e05fc3600f3547db3dbffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabfa8583621e05fc3600f3547db3dbffd">&#9670;&#160;</a></span>sceAudioInGetMicGain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioInGetMicGain </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the microphone-gain value stored for a port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle owned by the calling process.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The sign-extended 16-bit value on success, or a negative error code. An invalid handle or one not owned by the calling process returns <a class="el" href="group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca3c576051078ad8374a033b1a081d8c54" title="Invalid port type.">SCE_AUDIO_IN_ERROR_INVALID_PORT_TYPE</a> on FW 3.60. </dd></dl>
 
 </div>
 </div>

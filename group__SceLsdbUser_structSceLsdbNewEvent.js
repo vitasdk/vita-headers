@@ -1,0 +1,25 @@
+var group__SceLsdbUser_structSceLsdbNewEvent =
+[
+    [ "title_id", "group__SceLsdbUser.html#ga9b5cf4590ae462adb3390b648ee04b81", null ],
+    [ "item_id", "group__SceLsdbUser.html#gaeb8c032d1889a3eec74fc26359396a0c", null ],
+    [ "row_id", "group__SceLsdbUser.html#ga4193c5d8ba8f43ddc64aed93a5a4f6cf", null ],
+    [ "message_type", "group__SceLsdbUser.html#gabd783ed836098da666f16ba096b0e5a2", null ],
+    [ "action_type_low", "group__SceLsdbUser.html#ga0d6bc899890742aa99a88abc429959f0", null ],
+    [ "new_flag", "group__SceLsdbUser.html#gab0e6496ddd7ed76c97cb636254a1df00", null ],
+    [ "popup_flag", "group__SceLsdbUser.html#ga499a6abbefeaff3113de64cd51428169", null ],
+    [ "padding", "group__SceLsdbUser.html#gac4335219fb5c3b592a611869f677c445", null ],
+    [ "icon_path", "group__SceLsdbUser.html#ga03f1f75244e4f727788666723485b719", null ],
+    [ "icon_data", "group__SceLsdbUser.html#ga38407ee69313819a0456d4818ce2304c", null ],
+    [ "icon_data_size", "group__SceLsdbUser.html#ga1d439c28110557961c260149b3c551c0", null ],
+    [ "message_args", "group__SceLsdbUser.html#gac42122c2795e81b9cf2b7f590f626010", null ],
+    [ "title", "group__SceLsdbUser.html#ga2ac565aaf12d2b2b87033ef069cbb67c", null ],
+    [ "description", "group__SceLsdbUser.html#gac1599f26abd2dd7092d96cae7f9d22bd", null ],
+    [ "exec_mode", "group__SceLsdbUser.html#ga894491881923e47883e4f9813220cf49", null ],
+    [ "exec_title_id", "group__SceLsdbUser.html#ga28b1931bc2d4200498bd3f4eab817406", null ],
+    [ "exec_argument", "group__SceLsdbUser.html#ga8da28e57d769dc4b85d42ce995adc1d9", null ],
+    [ "update_time", "group__SceLsdbUser.html#gacf15b0ebf75c0269c854eea8cd9da555", null ],
+    [ "sound_id", "group__SceLsdbUser.html#ga885e86537985ef7bec31ceed03d6cbda", null ],
+    [ "sound_volume", "group__SceLsdbUser.html#gad7a29c71309ce0a9da0d4e28d68ce827", null ],
+    [ "hash", "group__SceLsdbUser.html#gac291ae530c02ac4ba39b73b6a557b2e7", null ],
+    [ "action_type_high", "group__SceLsdbUser.html#ga3ca92659395db453de193ef12ac1bd36", null ]
+];

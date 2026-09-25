@@ -1,5 +1,31 @@
 var group__SceVshBridgeUser =
 [
+    [ "SceVshNpDrmEbootSigOpt", "group__SceVshBridgeUser.html#structSceVshNpDrmEbootSigOpt", [
+      [ "reserved", "group__SceVshBridgeUser.html#ga1006168e9902ae12557caa5e5f2ed5c7", null ]
+    ] ],
+    [ "SceVshAppMgrCheckPfsMountedOpt", "group__SceVshBridgeUser.html#structSceVshAppMgrCheckPfsMountedOpt", [
+      [ "reserved", "group__SceVshBridgeUser.html#ga853b1219f735bc25e56fa68975886e97", null ]
+    ] ],
+    [ "SceVshAppMgrBgdlQueueStatusEntry", "group__SceVshBridgeUser.html#structSceVshAppMgrBgdlQueueStatusEntry", [
+      [ "download_status", "group__SceVshBridgeUser.html#ga2cf4ad7a3946a134a61e3b3e6e72f684", null ],
+      [ "unknown_boolean", "group__SceVshBridgeUser.html#gaf6d145550df07049e9a37b8941cb183b", null ],
+      [ "identifier", "group__SceVshBridgeUser.html#ga54f44eb8d48250f5129d57f9165891cf", null ]
+    ] ],
+    [ "SceVshAppMgrBgdlQueueStatus", "group__SceVshBridgeUser.html#structSceVshAppMgrBgdlQueueStatus", [
+      [ "entries", "group__SceVshBridgeUser.html#ga6fa68151ac1cc3e9a8d51b32717c8cf8", null ]
+    ] ],
+    [ "SceVshSblAuthMgrVerifySpsfoOpt", "group__SceVshBridgeUser.html#structSceVshSblAuthMgrVerifySpsfoOpt", [
+      [ "reserved", "group__SceVshBridgeUser.html#ga0df55d07b179b7c87510ec42a3163ff1", null ]
+    ] ],
+    [ "SceVshNpDrmGetLegacyDocKeyOpt", "group__SceVshBridgeUser.html#structSceVshNpDrmGetLegacyDocKeyOpt", [
+      [ "document_key", "group__SceVshBridgeUser.html#ga47e2126c1edbd5c145806602cc8c551b", null ],
+      [ "document_data_size", "group__SceVshBridgeUser.html#ga54ab64dfb5fc69f10e87e53d61cd1648", null ],
+      [ "reserved", "group__SceVshBridgeUser.html#gaccddc4cf7145e311d2ad31fff05807d6", null ]
+    ] ],
+    [ "SceVshSblSsCreatePassPhraseOpt", "group__SceVshBridgeUser.html#structSceVshSblSsCreatePassPhraseOpt", [
+      [ "pass_phrase_size", "group__SceVshBridgeUser.html#gab56ad47d8e1315cd43b268fac9b7ea3a", null ],
+      [ "reserved", "group__SceVshBridgeUser.html#gaf320fbf9d291b4cf0d04f1307a42ca52", null ]
+    ] ],
     [ "SceVshMountId", "group__SceVshBridgeUser.html#ga6bf5bd36446fb4500f6b3247d1d4d1dd", [
       [ "SCE_VSH_MOUNT_SD0", "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda2119c5ac15f325971aaa78ba0596148c", null ],
       [ "SCE_VSH_MOUNT_OS0", "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda0e7318f26563d8261c74984c12b648f3", null ],
@@ -42,7 +68,7 @@ var group__SceVshBridgeUser =
     [ "SCE_VSH_MOUNT_MFB0", "group__SceVshBridgeUser.html#gga6bf5bd36446fb4500f6b3247d1d4d1dda170553e3dc8f58a9e6d0ac59c71fef6d", null ],
     [ "_vshSblGetSystemSwVersion", "group__SceVshBridgeUser.html#ga252fa5f8c9e461bd50d634937608f762", null ],
     [ "_vshSblAimgrGetSMI", "group__SceVshBridgeUser.html#ga429c34807cb7c462d4c0121302a924c0", null ],
-    [ "_vshSblAimgrGetConsoleId", "group__SceVshBridgeUser.html#ga7973656329d62086b3191ed3df872441", null ],
+    [ "_vshSblAimgrGetConsoleId", "group__SceVshBridgeUser.html#gaa7cf731c09ce94db4e105be704f42731", null ],
     [ "_vshKernelSearchModuleByName", "group__SceVshBridgeUser.html#ga97081fbc3a387b72a036236f579dc780", null ],
     [ "_vshIoMount", "group__SceVshBridgeUser.html#ga7d654c39bfa1976ed56518031cc50bfe", null ],
     [ "vshIoUmount", "group__SceVshBridgeUser.html#ga0e0a2f0a7c705c565d39227015223191", null ],
@@ -53,6 +79,7 @@ var group__SceVshBridgeUser =
     [ "vshIdStorageWriteLeaf", "group__SceVshBridgeUser.html#ga15598bde9c8257ee4a81e1b44255d875", null ],
     [ "_vshNpDrmEbootSigVerify", "group__SceVshBridgeUser.html#ga386587669a219bfb09e13ecffbdbdb25", null ],
     [ "_vshNpDrmPspEbootVerify", "group__SceVshBridgeUser.html#ga12ac22e99e9bdee3c3607ea0c9ad8bbb", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#gacf008674feb3e2e6b8e6443520e713d8", null ],
     [ "_vshNpDrmPspEbootSigGen", "group__SceVshBridgeUser.html#gaf4b574fa09efb2b34c1892e9651187b6", null ],
     [ "_vshNpDrmEbootSigConvert", "group__SceVshBridgeUser.html#ga33d00587a71c490bc4cc71611394be90", null ],
     [ "_vshNpDrmEbootSigGenPsp", "group__SceVshBridgeUser.html#ga43834d261b3ceb7e4d443a9e0e3497bc", null ],
@@ -78,5 +105,43 @@ var group__SceVshBridgeUser =
     [ "vshSysconShowModeClear", "group__SceVshBridgeUser.html#ga7dcb9fb6b15e0b397a4315ffe3d67244", null ],
     [ "vshMemoryCardGetCardInsertState", "group__SceVshBridgeUser.html#gacf890d7df39a06ea7fc605843e2f249a", null ],
     [ "vshRemovableMemoryGetCardInsertState", "group__SceVshBridgeUser.html#ga121a576126f3dff4688cdba0fbdfcc69", null ],
-    [ "vshMsifGetMsInfo", "group__SceVshBridgeUser.html#gaa02b3f58a73b07b38474f2a6e6d7f3f2", null ]
+    [ "vshMsifGetMsInfo", "group__SceVshBridgeUser.html#gaa02b3f58a73b07b38474f2a6e6d7f3f2", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#gab513cd38ba1b8dea0d59b63bcb15d66e", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#gaa680f5fe5c0f1806fd76d5f6f68b89be", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#gae50944145a27e579bcf3ea842014824c", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#ga049ea4f4b2c387e5f5177d11d741d0a8", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#ga27aec3e4f6d5754a43b93c8220c02682", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceVshBridgeUser.html#gad1eea9dd6b7821c4181d751817f9f2a3", null ],
+    [ "_vshAppMgrAcInstGetAcdirParam", "group__SceVshBridgeUser.html#ga652503e2d203e5650768b784bee3d8d8", null ],
+    [ "_vshAppMgrBgdlSetQueueStatus", "group__SceVshBridgeUser.html#gaf097688289eefaf38f828a23749355de", null ],
+    [ "_vshAppMgrCheckPfsMounted", "group__SceVshBridgeUser.html#ga7548daca2af0e0bb7a4106249210fb6f", null ],
+    [ "_vshAppMgrCloudDataCreateHeader", "group__SceVshBridgeUser.html#ga6c97700866935fa6c81df4f360c2ee8b", null ],
+    [ "_vshIoChstat", "group__SceVshBridgeUser.html#gade2c360affbf2326c34c7f7dc9d674a0", null ],
+    [ "_vshIoDread", "group__SceVshBridgeUser.html#ga4380439a8ce24785ae26878115e41a46", null ],
+    [ "_vshIoGetstat", "group__SceVshBridgeUser.html#ga490f654fedc6d4644516680fb11bf0f6", null ],
+    [ "_vshKernelGetCompiledSdkVersionByPid", "group__SceVshBridgeUser.html#ga2001c78b7eebdc470609f40770b27532", null ],
+    [ "_vshNpDrmGetLegacyDocKey", "group__SceVshBridgeUser.html#gaf8116d260a8061ba2349734e59d8b6b1", null ],
+    [ "_vshSblAimgrGetPscode", "group__SceVshBridgeUser.html#ga03dc45ae8ce5a574bef5fba967099145", null ],
+    [ "_vshSblAimgrGetPscode2", "group__SceVshBridgeUser.html#ga9205496ac3c33463c01a17c27054ae2e", null ],
+    [ "_vshSblAimgrGetVisibleId", "group__SceVshBridgeUser.html#ga9e144ee3c774517a4b15a0cec66d0c93", null ],
+    [ "_vshSblAuthMgrVerifySpsfo", "group__SceVshBridgeUser.html#gaa4c364051f2e66a32cd2a9a58574924c", null ],
+    [ "_vshSblSsCreatePassPhrase", "group__SceVshBridgeUser.html#gab4b6acd6406ed91ab39c167efe2cc688", null ],
+    [ "_vshSysconGetManufacturesStatus", "group__SceVshBridgeUser.html#gad37363ef5f8768cd006bd0fb5c80b510", null ],
+    [ "vshIoCreateMountEvent", "group__SceVshBridgeUser.html#ga4c4389c7bfef82a0c9ddb46cb2faaf85", null ],
+    [ "vshKernelSendSysEvent", "group__SceVshBridgeUser.html#ga9149ea1f30c4302a0fa085912358abdb", null ],
+    [ "vshSblUtMgrHasComTestFlag", "group__SceVshBridgeUser.html#ga4a66165b8269da0d9fd6475498ac4a93", null ],
+    [ "vshSblUtMgrHasNpTestFlag", "group__SceVshBridgeUser.html#ga386f4fbfc62194b1018e997229a07946", null ],
+    [ "vshSblUtMgrHasStoreFlag", "group__SceVshBridgeUser.html#ga4cfeefc9633a8cd9cc63e441d184d33c", null ],
+    [ "SceVshNpDrmEbootSigOpt::reserved", "group__SceVshBridgeUser.html#ga1006168e9902ae12557caa5e5f2ed5c7", null ],
+    [ "SceVshAppMgrCheckPfsMountedOpt::reserved", "group__SceVshBridgeUser.html#ga853b1219f735bc25e56fa68975886e97", null ],
+    [ "SceVshAppMgrBgdlQueueStatusEntry::download_status", "group__SceVshBridgeUser.html#ga2cf4ad7a3946a134a61e3b3e6e72f684", null ],
+    [ "SceVshAppMgrBgdlQueueStatusEntry::unknown_boolean", "group__SceVshBridgeUser.html#gaf6d145550df07049e9a37b8941cb183b", null ],
+    [ "SceVshAppMgrBgdlQueueStatusEntry::identifier", "group__SceVshBridgeUser.html#ga54f44eb8d48250f5129d57f9165891cf", null ],
+    [ "SceVshAppMgrBgdlQueueStatus::entries", "group__SceVshBridgeUser.html#ga6fa68151ac1cc3e9a8d51b32717c8cf8", null ],
+    [ "SceVshSblAuthMgrVerifySpsfoOpt::reserved", "group__SceVshBridgeUser.html#ga0df55d07b179b7c87510ec42a3163ff1", null ],
+    [ "SceVshNpDrmGetLegacyDocKeyOpt::document_key", "group__SceVshBridgeUser.html#ga47e2126c1edbd5c145806602cc8c551b", null ],
+    [ "SceVshNpDrmGetLegacyDocKeyOpt::document_data_size", "group__SceVshBridgeUser.html#ga54ab64dfb5fc69f10e87e53d61cd1648", null ],
+    [ "SceVshNpDrmGetLegacyDocKeyOpt::reserved", "group__SceVshBridgeUser.html#gaccddc4cf7145e311d2ad31fff05807d6", null ],
+    [ "SceVshSblSsCreatePassPhraseOpt::pass_phrase_size", "group__SceVshBridgeUser.html#gab56ad47d8e1315cd43b268fac9b7ea3a", null ],
+    [ "SceVshSblSsCreatePassPhraseOpt::reserved", "group__SceVshBridgeUser.html#gaf320fbf9d291b4cf0d04f1307a42ca52", null ]
 ];

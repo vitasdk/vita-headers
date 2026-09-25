@@ -6,6 +6,8 @@ var psp2kern_2kernel_2utils_8h =
     [ "SCE_SHA224_DIGEST_SIZE", "group__SceUtilsKernel.html#gaad8d7dd4e81b0acb3849c67d748b0a7c", null ],
     [ "SCE_SHA256_BLOCK_SIZE", "group__SceUtilsKernel.html#ga2ec7be2d5470710f1152a3d4b379947a", null ],
     [ "SCE_SHA256_DIGEST_SIZE", "group__SceUtilsKernel.html#ga60ad9d95e6552be03c862e2f028e1699", null ],
+    [ "ksceMt19937GlobalUninit", "group__SceUtilsKernel.html#gadcd96c8b9404a3420f2d165f8e074313", null ],
+    [ "ksceMt19937GlobalUIntInRange", "group__SceUtilsKernel.html#gaf216c7769b997ae4ecb3df14ea7ded77", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUtilsKernel.html#ga1f526cd86341ed0352e94e9c65bbffa0", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUtilsKernel.html#gaa190912fb98f85109b9525f886554692", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceUtilsKernel.html#ga7de89702b9eda68c311bd83cde9af704", null ],
@@ -43,5 +45,7 @@ var psp2kern_2kernel_2utils_8h =
     [ "ksceAesDecrypt1", "group__SceUtilsKernel.html#gaaf9ec46c902258472fdc5eec6d7c1097", null ],
     [ "ksceAesDecrypt2", "group__SceUtilsKernel.html#gaefa001b717d2d03d845eb3875c68536b", null ],
     [ "ksceAesEncrypt1", "group__SceUtilsKernel.html#ga1875aac4d1426e7e3a1db5268510de26", null ],
-    [ "ksceAesEncrypt2", "group__SceUtilsKernel.html#ga36ccc6490b838eb5f932fdda76dff670", null ]
+    [ "ksceAesEncrypt2", "group__SceUtilsKernel.html#ga36ccc6490b838eb5f932fdda76dff670", null ],
+    [ "ksceMt19937GlobalInit", "group__SceUtilsKernel.html#ga40819b82cd7d6b15c71aaf406ab0234f", null ],
+    [ "ksceMt19937GlobalFillArray32", "group__SceUtilsKernel.html#ga71e1147335ab1f5522f119d8b9e13578", null ]
 ];

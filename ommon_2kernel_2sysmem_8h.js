@@ -22,18 +22,41 @@ var ommon_2kernel_2sysmem_8h =
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_RW", "group__SceSysmemKernel.html#ga67bb0fa1dc7426a6aad0bf0bb41697b2", null ],
     [ "SCE_KERNEL_MEMBLOCK_TYPE_USER_TOOL_NC_RW", "group__SceSysmemKernel.html#gabfbcc49487dfca84ec33e8752a0bdbf6", null ],
     [ "SceKernelMemBlockType", "group__SceSysmemKernel.html#ga0242f3f1da7d12abda782f8f1a0b4571", null ],
+    [ "SceKernelMemoryType", "group__SceSysmemKernel.html#gad5653766a0ced763eb2301a5d698697d", [
+      [ "SCE_KERNEL_MEMORY_TYPE_NORMAL_NC", "group__SceSysmemKernel.html#ggad5653766a0ced763eb2301a5d698697da467a3b95bff3406789e5c5a01b0a2e48", null ],
+      [ "SCE_KERNEL_MEMORY_TYPE_NORMAL", "group__SceSysmemKernel.html#ggad5653766a0ced763eb2301a5d698697da298498bb570db5602f7d4217807adade", null ]
+    ] ],
     [ "SceKernelAllocMemBlockAttr", "group__SceSysmemKernel.html#ga3e4b4287824bdc72a51b05c7ef583076", [
-      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_VBASE", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6bb39e8e3834e4a9eda33737da3cd335", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PBASE", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a693b01e35e9695df7979991a24b4cf2e", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ALIGNMENT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a75195eb6248c02c4dac4bdce6a46c01d", null ],
-      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_EXTRA_LOW", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a44e4a75020e04f5e0b6d89e58cb5cd30", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_EXTRA_HIGH", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a7fd5fddbb735a96aed6b109ef360b11e", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_OPEN_RESTRICTIONS", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076af05b985526e70b9a36351b0b16abdcd0", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASE", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a11fa1903ad7261cae129b8059ffdfb64", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a3cdf51026d8268f0d3ba4cb21aae1208", null ],
-      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASENAME", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a1cc4ed5b5510fd1cc49b102ea2b4e871", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PPAV", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a743df39ce33c3a5f5fce25e6c4a26f71", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ROUNDUP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a873f4f840bd2cf0e4ae9d2153ed101b3", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ENABLE_OPEN", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ae26626678637719012b82de99612f212", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_DOMAIN", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a00d25a08b20c5912596111572dd5ef06", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_DONT_MAP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a08dfd74161a6745db7b4baed7705bae4", null ],
       [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_PHYCONT", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a4e867b2dc04b7d8dcde7eb9c20e56505", null ],
-      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0", null ]
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SKIP_ZERO_FILL", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a32695b009dfdc30fe38f5c082f06612c", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SHARE_VBASE", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ab8180809a1e66c1e99e906321d13524e", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_SHARE_PHYPAGE", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a2a93a6b13b531bdffd9689720141f22c", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ALLOW_PARTIAL_OP", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076ad7b8b0462af6739aa27c94ed9893d9f0", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_0x20", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076adb1585735c75fcdc3f36f2e5cfc3af16", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_0x4000", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6ca6fadc6caad2b6529a243e902f4d64", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076afc628388452a0adce7e17aab096e7dae", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_MIRROR_BLOCKID", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a6c7ae925e378ae35864a1fc2f4a68de8", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_PADDR_LIST", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a127a4dea5b5f73b170a95f6c01b013df", null ],
+      [ "SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_UNK", "group__SceSysmemKernel.html#gga3e4b4287824bdc72a51b05c7ef583076a2a2102fd53b4835955580e470e639591", null ]
     ] ],
     [ "SceKernelModel", "group__SceSysmemKernel.html#ga64cb269fa7d3cb6fdbd3cc5b1252217c", [
       [ "SCE_KERNEL_MODEL_VITA", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca1ad4fed7d3f96d44faabf855dffb6ce4", null ],
       [ "SCE_KERNEL_MODEL_VITATV", "group__SceSysmemKernel.html#gga64cb269fa7d3cb6fdbd3cc5b1252217ca51f314666577cd457f17f4777f3d4667", null ]
     ] ],
-    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga90111a4cc51bf80d0b13b30440591546", null ]
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga90111a4cc51bf80d0b13b30440591546", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceSysmemKernel.html#ga87c97be9b21bbe2838c2b1a71d75c493", null ]
 ];

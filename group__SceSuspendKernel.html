@@ -84,17 +84,24 @@ $(document).ready(function(){initNavTree('group__SceSuspendKernel.html',''); ini
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gab4b3d9582f3d8e17aa5ff9ade6eee8e8" id="r_gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a>) (int resume, int eventid, void *args, void *opt)</td></tr>
-<tr class="separator:gab4b3d9582f3d8e17aa5ff9ade6eee8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68b6c7969f038bf6c0ef9c2b7fb135c6" id="r_ga68b6c7969f038bf6c0ef9c2b7fb135c6"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga68b6c7969f038bf6c0ef9c2b7fb135c6">SceSysEventHandler</a>) (int resume, int event_id, void *event_param, void *args)</td></tr>
+<tr class="memdesc:ga68b6c7969f038bf6c0ef9c2b7fb135c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">System suspend/resume event handler.  <br /></td></tr>
+<tr class="separator:ga68b6c7969f038bf6c0ef9c2b7fb135c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga317448d654802c962fe786d5cf8c7c52" id="r_ga317448d654802c962fe786d5cf8c7c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">ksceKernelPowerTick</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
+<tr class="memitem:ga317448d654802c962fe786d5cf8c7c52" id="r_ga317448d654802c962fe786d5cf8c7c52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga317448d654802c962fe786d5cf8c7c52">ksceKernelPowerTick</a> (<a class="el" href="group__SceProcessmgrKernel.html#ga1b448620c7525b730a2b94164e34d77f">SceKernelPowerTickType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>)</td></tr>
 <tr class="memdesc:ga317448d654802c962fe786d5cf8c7c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel specified idle timers to prevent entering in power save processing.  <br /></td></tr>
 <tr class="separator:ga317448d654802c962fe786d5cf8c7c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f" id="r_gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a> handler, void *args)</td></tr>
+<tr class="memitem:gaa7f1736fd9b7b9d3473d81573a3e875f" id="r_gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f">ksceKernelRegisterSysEventHandler</a> (const char *name, <a class="el" href="group__SceSuspendKernel.html#ga68b6c7969f038bf6c0ef9c2b7fb135c6">SceSysEventHandler</a> handler, void *args)</td></tr>
 <tr class="memdesc:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register system event handler.  <br /></td></tr>
 <tr class="separator:gaa7f1736fd9b7b9d3473d81573a3e875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a511901c19913d3746f956bd1bd5a64" id="r_ga6a511901c19913d3746f956bd1bd5a64"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga6a511901c19913d3746f956bd1bd5a64">ksceKernelSysEventDispatch</a> (<a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> resume, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> event_id, void *event_param, <a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *failed_handler_id)</td></tr>
+<tr class="memdesc:ga6a511901c19913d3746f956bd1bd5a64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call registered handlers for a suspend or resume event.  <br /></td></tr>
+<tr class="separator:ga6a511901c19913d3746f956bd1bd5a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga328a12bbb2175e0a8c30532a9c6acba7" id="r_ga328a12bbb2175e0a8c30532a9c6acba7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSuspendKernel.html#ga328a12bbb2175e0a8c30532a9c6acba7">ksceKernelUnregisterSysEventHandler</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> handler_id)</td></tr>
+<tr class="memdesc:ga328a12bbb2175e0a8c30532a9c6acba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a system event handler.  <br /></td></tr>
+<tr class="separator:ga328a12bbb2175e0a8c30532a9c6acba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
@@ -109,17 +116,29 @@ Functions</h2></td></tr>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
  <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gab4b3d9582f3d8e17aa5ff9ade6eee8e8" name="gab4b3d9582f3d8e17aa5ff9ade6eee8e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">&#9670;&#160;</a></span>SceSysEventHandler</h2>
+<a id="ga68b6c7969f038bf6c0ef9c2b7fb135c6" name="ga68b6c7969f038bf6c0ef9c2b7fb135c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga68b6c7969f038bf6c0ef9c2b7fb135c6">&#9670;&#160;</a></span>SceSysEventHandler</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef int(* SceSysEventHandler) (int resume, int eventid, void *args, void *opt)</td>
+          <td class="memname">typedef int(* SceSysEventHandler) (int resume, int event_id, void *event_param, void *args)</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>System suspend/resume event handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resume</td><td>- Zero while suspending, or one while resuming. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_id</td><td>- Event identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>- Event data supplied to <a class="el" href="group__SceSuspendKernel.html#ga6a511901c19913d3746f956bd1bd5a64" title="Call registered handlers for a suspend or resume event.">ksceKernelSysEventDispatch</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>- Private argument supplied when registering the handler.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>
@@ -166,7 +185,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceSuspendKernel.html#gab4b3d9582f3d8e17aa5ff9ade6eee8e8">SceSysEventHandler</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceSuspendKernel.html#ga68b6c7969f038bf6c0ef9c2b7fb135c6">SceSysEventHandler</a>&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
@@ -189,6 +208,86 @@ Functions</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>- Name of handler </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">handler</td><td>- The handler </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>- Handler arguments</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6a511901c19913d3746f956bd1bd5a64" name="ga6a511901c19913d3746f956bd1bd5a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a511901c19913d3746f956bd1bd5a64">&#9670;&#160;</a></span>ksceKernelSysEventDispatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSysEventDispatch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>resume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>event_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>event_param</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> *&#160;</td>
+          <td class="paramname"><em>failed_handler_id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call registered handlers for a suspend or resume event. </p>
+<p>If a handler fails and <code>failed_handler_id</code> is non-NULL, stop calling handlers and write the failing handler's UID to *failed_handler_id. If <code>failed_handler_id</code> is NULL, continue calling handlers after failures and return the last handler's result.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">resume</td><td>- Zero while suspending, or one while resuming. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_id</td><td>- Event identifier. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">event_param</td><td>- Event data passed to each handler that is called. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">failed_handler_id</td><td>- Optional output for the first failing handler UID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result from the last handler called, or 0 when no handler is registered. </dd></dl>
+
+</div>
+</div>
+<a id="ga328a12bbb2175e0a8c30532a9c6acba7" name="ga328a12bbb2175e0a8c30532a9c6acba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga328a12bbb2175e0a8c30532a9c6acba7">&#9670;&#160;</a></span>ksceKernelUnregisterSysEventHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelUnregisterSysEventHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td>
+          <td class="paramname"><em>handler_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a system event handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handler_id</td><td>- UID returned by <a class="el" href="group__SceSuspendKernel.html#gaa7f1736fd9b7b9d3473d81573a3e875f" title="Register system event handler.">ksceKernelRegisterSysEventHandler</a>.</td></tr>
   </table>
   </dd>
 </dl>

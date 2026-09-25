@@ -6,6 +6,7 @@ var intrmgr_8h =
     [ "ksceKernelGetIntrMasked", "group__SceIntrMgrKernel.html#ga76ba30a6025f97a6eab757d33a22f0f1", null ],
     [ "SceKernelIntrHandler", "group__SceIntrMgrKernel.html#gab955de2ad0a9bca928a895f57fb9782f", null ],
     [ "SceKernelSubIntrHandler", "group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff", null ],
+    [ "SceKernelIntrHookHandler", "group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d", null ],
     [ "SceKernelIntrOptHandlersCb1", "group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e", null ],
     [ "SceKernelIntrOptHandlersCb2", "group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646", null ],
     [ "SceKernelIntrOptHandlersCb3", "group__SceIntrMgrKernel.html#ga7000acd192bdb3060d2b66dd0f5509d8", null ],
@@ -30,5 +31,10 @@ var intrmgr_8h =
     [ "ksceKernelTriggerSubIntr", "group__SceIntrMgrKernel.html#ga8e5d582562933d4201126b6b87fa2723", null ],
     [ "ksceKernelEnableSubIntr", "group__SceIntrMgrKernel.html#gace0fad25a5f0df833ef837798a549fc7", null ],
     [ "ksceKernelDisableSubIntr", "group__SceIntrMgrKernel.html#gaa63e24698a4059a1e1ef2c9de5892b56", null ],
-    [ "ksceKernelQueryIntrHandlerInfo", "group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8", null ]
+    [ "ksceKernelQueryIntrHandlerInfo", "group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8", null ],
+    [ "ksceKernelIsSubInterruptOccurred", "group__SceIntrMgrKernel.html#gae167aee3da1cacdd5c316f9c32ab6110", null ],
+    [ "ksceKernelRegisterIntrHookHandler", "group__SceIntrMgrKernel.html#ga5e2563bb7a4764b28be32230f1b39c1c", null ],
+    [ "ksceKernelReleaseIntrHookHandler", "group__SceIntrMgrKernel.html#gac59d8caac830fb0299b99f113c38e78f", null ],
+    [ "ksceKernelResumeSubIntr", "group__SceIntrMgrKernel.html#ga38648a1613bc234b757bdc156fe11704", null ],
+    [ "ksceKernelSuspendSubIntr", "group__SceIntrMgrKernel.html#gae337ef8f042fafc383ae7e479d6f9dea", null ]
 ];

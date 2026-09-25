@@ -87,16 +87,16 @@ $(document).ready(function(){initNavTree('group__SceAudioUser.html',''); initRes
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga8c9ffea109d29fe27afb49bfd1bf802c" id="r_ga8c9ffea109d29fe27afb49bfd1bf802c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c">SCE_AUDIO_MIN_LEN</a>&#160;&#160;&#160;64</td></tr>
-<tr class="memdesc:ga8c9ffea109d29fe27afb49bfd1bf802c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum granularity.  <br /></td></tr>
+<tr class="memdesc:ga8c9ffea109d29fe27afb49bfd1bf802c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum frame-count granularity.  <br /></td></tr>
 <tr class="separator:ga8c9ffea109d29fe27afb49bfd1bf802c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad3ef67ce3a4849804a3730727e30fc6a" id="r_gad3ef67ce3a4849804a3730727e30fc6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a">SCE_AUDIO_MAX_LEN</a>&#160;&#160;&#160;65472</td></tr>
-<tr class="memdesc:gad3ef67ce3a4849804a3730727e30fc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum granularity.  <br /></td></tr>
+<tr class="memdesc:gad3ef67ce3a4849804a3730727e30fc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum frame count.  <br /></td></tr>
 <tr class="separator:gad3ef67ce3a4849804a3730727e30fc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5596f3b7a5a3b6a76cfe84e259e887da" id="r_ga5596f3b7a5a3b6a76cfe84e259e887da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da">SCE_AUDIO_OUT_MAX_VOL</a>&#160;&#160;&#160;32768</td></tr>
-<tr class="memdesc:ga5596f3b7a5a3b6a76cfe84e259e887da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum output port volume.  <br /></td></tr>
+<tr class="memdesc:ga5596f3b7a5a3b6a76cfe84e259e887da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum Q15 output-port volume for game processes on FW 3.60.  <br /></td></tr>
 <tr class="separator:ga5596f3b7a5a3b6a76cfe84e259e887da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga18622208d3fd0c9de3bb47c875feb15b" id="r_ga18622208d3fd0c9de3bb47c875feb15b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga18622208d3fd0c9de3bb47c875feb15b">SCE_AUDIO_VOLUME_0DB</a>&#160;&#160;&#160;<a class="el" href="group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da">SCE_AUDIO_OUT_MAX_VOL</a></td></tr>
-<tr class="memdesc:ga18622208d3fd0c9de3bb47c875feb15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum output port volume.  <br /></td></tr>
+<tr class="memdesc:ga18622208d3fd0c9de3bb47c875feb15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Q15 unity-gain output-port volume.  <br /></td></tr>
 <tr class="separator:ga18622208d3fd0c9de3bb47c875feb15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
@@ -124,62 +124,124 @@ Enumerations</h2></td></tr>
 <tr class="memitem:gafe8b67e875fd20e9baef9fcaa8c14dfa" id="r_gafe8b67e875fd20e9baef9fcaa8c14dfa"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gafe8b67e875fd20e9baef9fcaa8c14dfa">SceAudioOutParam</a> { <a class="el" href="group__SceAudioUser.html#ggafe8b67e875fd20e9baef9fcaa8c14dfaadb05cd905d821cc69c6d44ca5dfac05d">SCE_AUDIO_OUT_PARAM_FORMAT_S16_MONO</a> = 0
 , <a class="el" href="group__SceAudioUser.html#ggafe8b67e875fd20e9baef9fcaa8c14dfaa8ca82791a86c5da81dc38a2e17e91e3d">SCE_AUDIO_OUT_PARAM_FORMAT_S16_STEREO</a> = 1
  }</td></tr>
+<tr class="memdesc:gafe8b67e875fd20e9baef9fcaa8c14dfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy signed 16-bit PCM format names.  <a href="group__SceAudioUser.html#gafe8b67e875fd20e9baef9fcaa8c14dfa">More...</a><br /></td></tr>
 <tr class="separator:gafe8b67e875fd20e9baef9fcaa8c14dfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga03469bd2584503b5935e6c37e52c10b3" id="r_ga03469bd2584503b5935e6c37e52c10b3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> { <a class="el" href="group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9">SCE_AUDIO_OUT_PORT_TYPE_MAIN</a> = 0
 , <a class="el" href="group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e">SCE_AUDIO_OUT_PORT_TYPE_BGM</a> = 1
 , <a class="el" href="group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b">SCE_AUDIO_OUT_PORT_TYPE_VOICE</a> = 2
+, <a class="el" href="group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a1ee215d198d903f5cd9317c8964e4cbc">SCE_AUDIO_OUT_PORT_TYPE_VOICE_COMPRESSED</a> = 3
  }</td></tr>
 <tr class="separator:ga03469bd2584503b5935e6c37e52c10b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad87ff8a5b2fa0ee65166afff10a26726" id="r_gad87ff8a5b2fa0ee65166afff10a26726"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> { <a class="el" href="group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726a1b3ea51dacd5fe2247368b408322ffc6">SCE_AUDIO_OUT_MODE_MONO</a> = 0
 , <a class="el" href="group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726ab332633e3d5a8f1808a2fa47531bfd51">SCE_AUDIO_OUT_MODE_STEREO</a> = 1
  }</td></tr>
 <tr class="separator:gad87ff8a5b2fa0ee65166afff10a26726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f9470a156132a8bf824e5763e20bb34" id="r_ga6f9470a156132a8bf824e5763e20bb34"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34">SceAudioOutEffectType</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34ab6599c51d1e1b25bca224877944d8f43">SCE_AUDIO_OUT_EFFECT_TYPE_OFF</a> = 0
+, <a class="el" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518">SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY</a> = 1
+, <a class="el" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a18e7f6cfe2de46398f50bf62ad50f932">SCE_AUDIO_OUT_EFFECT_TYPE_POPS</a> = 2
+, <a class="el" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34ad1e187778b7bcb4d9c7a150b30fe6dd0">SCE_AUDIO_OUT_EFFECT_TYPE_JAZZ</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a67bf32f8a72847f574aafa76fc51fa9e">SCE_AUDIO_OUT_EFFECT_TYPE_UNIQUE</a> = 4
+<br />
+ }</td></tr>
+<tr class="memdesc:ga6f9470a156132a8bf824e5763e20bb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">BGM seven-band graphic-equalizer presets.  <a href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34">More...</a><br /></td></tr>
+<tr class="separator:ga6f9470a156132a8bf824e5763e20bb34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga075c5a51201c5405c3dd99aaafa833d8" id="r_ga075c5a51201c5405c3dd99aaafa833d8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8">SceAudioOutSampleRate</a> { <br />
+&#160;&#160;<a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a59df838e61607e7ebcabfd714313f373">SCE_AUDIO_OUT_SAMPLE_RATE_8000</a> = 8000
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8ad9db5660566b0c8434ab6d6fa0aef03c">SCE_AUDIO_OUT_SAMPLE_RATE_11025</a> = 11025
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8ace28e1f5a9399bf228e6e1c0522d28a3">SCE_AUDIO_OUT_SAMPLE_RATE_12000</a> = 12000
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8aa8dd68f3942b1e7588ac3b2bbb628fda">SCE_AUDIO_OUT_SAMPLE_RATE_16000</a> = 16000
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8acc1f168e6d982171dade644e5f4e02c4">SCE_AUDIO_OUT_SAMPLE_RATE_22050</a> = 22050
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a770decfd0657cfa9b5266d9dee1a0802">SCE_AUDIO_OUT_SAMPLE_RATE_24000</a> = 24000
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a5de5b3d877f72a58763cf562c01ac95f">SCE_AUDIO_OUT_SAMPLE_RATE_32000</a> = 32000
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a23850018ceaab5ef6cd334015cca54f4">SCE_AUDIO_OUT_SAMPLE_RATE_44100</a> = 44100
+, <br />
+&#160;&#160;<a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a88b9a1795f820b2896486ff58f2352cf">SCE_AUDIO_OUT_SAMPLE_RATE_44184</a> = 44184
+, <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99">SCE_AUDIO_OUT_SAMPLE_RATE_48000</a> = 48000
+<br />
+ }</td></tr>
+<tr class="memdesc:ga075c5a51201c5405c3dd99aaafa833d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Audio-output sample rates.  <a href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8">More...</a><br /></td></tr>
+<tr class="separator:ga075c5a51201c5405c3dd99aaafa833d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6df1c85402046fb23237b66d31facdc" id="r_gae6df1c85402046fb23237b66d31facdc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc">SceAudioOutChannelFlag</a> { <a class="el" href="group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977">SCE_AUDIO_VOLUME_FLAG_L_CH</a> = 1
 , <a class="el" href="group__SceAudioUser.html#ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a">SCE_AUDIO_VOLUME_FLAG_R_CH</a> = 2
  }</td></tr>
-<tr class="memdesc:gae6df1c85402046fb23237b66d31facdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags to use as 'ch' argument for <a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00" title="Set volume of specified output audio port.">sceAudioOutSetVolume</a>.  <a href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc">More...</a><br /></td></tr>
+<tr class="memdesc:gae6df1c85402046fb23237b66d31facdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel-flag bits accepted by <a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00" title="Set an output port&#39;s channel volume.">sceAudioOutSetVolume</a>.  <a href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc">More...</a><br /></td></tr>
 <tr class="separator:gae6df1c85402046fb23237b66d31facdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3046a577c61a8f6ef087c7b2f51730da" id="r_ga3046a577c61a8f6ef087c7b2f51730da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da">SceAudioOutConfigType</a> { <a class="el" href="group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa17ce85e46f62c6f163df64c678dc2842">SCE_AUDIO_OUT_CONFIG_TYPE_LEN</a> = 0
 , <a class="el" href="group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa070a97765015c26ea62c5547c4551a6e">SCE_AUDIO_OUT_CONFIG_TYPE_FREQ</a> = 1
 , <a class="el" href="group__SceAudioUser.html#gga3046a577c61a8f6ef087c7b2f51730daa98130a243b6483b59c1fd4caa8f15d8f">SCE_AUDIO_OUT_CONFIG_TYPE_MODE</a> = 2
  }</td></tr>
-<tr class="memdesc:ga3046a577c61a8f6ef087c7b2f51730da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Config type values to specify to <a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd" title="Get a parameter value of specified output port.">sceAudioOutGetConfig</a>.  <a href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da">More...</a><br /></td></tr>
+<tr class="memdesc:ga3046a577c61a8f6ef087c7b2f51730da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration selectors accepted by <a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd" title="Get one property of an output port.">sceAudioOutGetConfig</a>.  <a href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da">More...</a><br /></td></tr>
 <tr class="separator:ga3046a577c61a8f6ef087c7b2f51730da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b01e448a5766cd5b4a747d500b61362" id="r_ga9b01e448a5766cd5b4a747d500b61362"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362">SceAudioOutAlcMode</a> { <a class="el" href="group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb">SCE_AUDIO_ALC_OFF</a> = 0
 , <a class="el" href="group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236">SCE_AUDIO_ALC_MODE1</a> = 1
 , <a class="el" href="group__SceAudioUser.html#gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9">SCE_AUDIO_ALC_MODE_MAX</a> = 2
  }</td></tr>
-<tr class="memdesc:ga9b01e448a5766cd5b4a747d500b61362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Argument 'mode' to specify to <a class="el" href="group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1" title="Set &#39;Automatic Level Control&#39; mode on the BGM port ALC is also known as &#39;Dynamic Normalizer&#39;.">sceAudioOutSetAlcMode</a>.  <a href="group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362">More...</a><br /></td></tr>
+<tr class="memdesc:ga9b01e448a5766cd5b4a747d500b61362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Automatic-level-control modes for <a class="el" href="group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1" title="Set automatic level control for the calling process&#39;s BGM port.">sceAudioOutSetAlcMode</a>.  <a href="group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362">More...</a><br /></td></tr>
 <tr class="separator:ga9b01e448a5766cd5b4a747d500b61362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac53e738bc2b80d4cd83df38dfa256f53" id="r_gac53e738bc2b80d4cd83df38dfa256f53"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53">SceAudioOutPortMask</a> { <a class="el" href="group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a5c41786dd2eb485291f194d5da1c9b1d">SCE_AUDIO_OUT_PORT_MASK_MAIN</a> = 2
+, <a class="el" href="group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a3e47db6b15d40d311485179be906f6d4">SCE_AUDIO_OUT_PORT_MASK_BGM</a> = 4
+, <a class="el" href="group__SceAudioUser.html#ggac53e738bc2b80d4cd83df38dfa256f53a593fa31b1814c7592c71dd464eb71b2f">SCE_AUDIO_OUT_PORT_MASK_VOICE</a> = 8
+ }</td></tr>
+<tr class="memdesc:gac53e738bc2b80d4cd83df38dfa256f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port-selection bits used by the private port-volume APIs.  <a href="group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53">More...</a><br /></td></tr>
+<tr class="separator:gac53e738bc2b80d4cd83df38dfa256f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59779108f58fc01d7136fbf87d1f3851" id="r_ga59779108f58fc01d7136fbf87d1f3851"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851">SceAudioOutAdoptMode</a> { <a class="el" href="group__SceAudioUser.html#gga59779108f58fc01d7136fbf87d1f3851a31523d70270267a7431a91b8d2e1cc6f">SCE_AUDIO_OUT_ADOPT_MODE_AUTOMATIC</a> = 0
+, <a class="el" href="group__SceAudioUser.html#gga59779108f58fc01d7136fbf87d1f3851a0d9be3912339be6a4f64d7724dbd4551">SCE_AUDIO_OUT_ADOPT_MODE_MANUAL</a> = 1
+ }</td></tr>
+<tr class="memdesc:ga59779108f58fc01d7136fbf87d1f3851"><td class="mdescLeft">&#160;</td><td class="mdescRight">New-port adoption behavior selected by <a class="el" href="group__SceAudioUser.html#gadb34ebb329ae359f8afad96f1529117f" title="Select whether newly opened BGM and voice-profile ports are adopted automatically.">sceAudioOutSetAdoptMode</a>.  <a href="group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851">More...</a><br /></td></tr>
+<tr class="separator:ga59779108f58fc01d7136fbf87d1f3851"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaaf446885b6a2777fe8fc5b0ee095d353" id="r_gaaf446885b6a2777fe8fc5b0ee095d353"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353">sceAudioOutOpenPort</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>, int len, int freq, <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> mode)</td></tr>
-<tr class="memdesc:gaaf446885b6a2777fe8fc5b0ee095d353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize audio port.  <br /></td></tr>
+<tr class="memitem:gaaf446885b6a2777fe8fc5b0ee095d353" id="r_gaaf446885b6a2777fe8fc5b0ee095d353"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353">sceAudioOutOpenPort</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, int len, int freq, <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> mode)</td></tr>
+<tr class="memdesc:gaaf446885b6a2777fe8fc5b0ee095d353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open an audio-output port.  <br /></td></tr>
 <tr class="separator:gaaf446885b6a2777fe8fc5b0ee095d353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99352e1f6c4a1a4798768cc998889850" id="r_ga99352e1f6c4a1a4798768cc998889850"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga99352e1f6c4a1a4798768cc998889850">sceAudioOutOpenExtPort</a> (int len, <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> mode)</td></tr>
+<tr class="memdesc:ga99352e1f6c4a1a4798768cc998889850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the calling process's dedicated extended MAIN port.  <br /></td></tr>
+<tr class="separator:ga99352e1f6c4a1a4798768cc998889850"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga174204e79d6fa8cfbf34def88bfe2183" id="r_ga174204e79d6fa8cfbf34def88bfe2183"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga174204e79d6fa8cfbf34def88bfe2183">sceAudioOutReleasePort</a> (int port)</td></tr>
-<tr class="memdesc:ga174204e79d6fa8cfbf34def88bfe2183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an audio port.  <br /></td></tr>
+<tr class="memdesc:ga174204e79d6fa8cfbf34def88bfe2183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release an audio-output port.  <br /></td></tr>
 <tr class="separator:ga174204e79d6fa8cfbf34def88bfe2183"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga37a23b4e2640209777eda91c17930114" id="r_ga37a23b4e2640209777eda91c17930114"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga37a23b4e2640209777eda91c17930114">sceAudioOutOutput</a> (int port, const void *buf)</td></tr>
-<tr class="memdesc:ga37a23b4e2640209777eda91c17930114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output audio (blocking function)  <br /></td></tr>
+<tr class="memdesc:ga37a23b4e2640209777eda91c17930114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output one configured PCM buffer.  <br /></td></tr>
 <tr class="separator:ga37a23b4e2640209777eda91c17930114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga90e0413f19a6faade1eddf3ff6eadb00" id="r_ga90e0413f19a6faade1eddf3ff6eadb00"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00">sceAudioOutSetVolume</a> (int port, <a class="el" href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc">SceAudioOutChannelFlag</a> ch, int *vol)</td></tr>
-<tr class="memdesc:ga90e0413f19a6faade1eddf3ff6eadb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set volume of specified output audio port.  <br /></td></tr>
+<tr class="memdesc:ga90e0413f19a6faade1eddf3ff6eadb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an output port's channel volume.  <br /></td></tr>
 <tr class="separator:ga90e0413f19a6faade1eddf3ff6eadb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga11a4df4d66bfaaf4a50f15d1d4d74a2a" id="r_ga11a4df4d66bfaaf4a50f15d1d4d74a2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga11a4df4d66bfaaf4a50f15d1d4d74a2a">sceAudioOutSetConfig</a> (int port, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> len, int freq, <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> mode)</td></tr>
-<tr class="memdesc:ga11a4df4d66bfaaf4a50f15d1d4d74a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change configuration of specified output port.  <br /></td></tr>
+<tr class="memdesc:ga11a4df4d66bfaaf4a50f15d1d4d74a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change an output port's configuration.  <br /></td></tr>
 <tr class="separator:ga11a4df4d66bfaaf4a50f15d1d4d74a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadfae507c89fda662493734dcb8b51bbd" id="r_gadfae507c89fda662493734dcb8b51bbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd">sceAudioOutGetConfig</a> (int port, <a class="el" href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da">SceAudioOutConfigType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:gadfae507c89fda662493734dcb8b51bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a parameter value of specified output port.  <br /></td></tr>
+<tr class="memitem:gadfae507c89fda662493734dcb8b51bbd" id="r_gadfae507c89fda662493734dcb8b51bbd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd">sceAudioOutGetConfig</a> (int port, <a class="el" href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da">SceAudioOutConfigType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>)</td></tr>
+<tr class="memdesc:gadfae507c89fda662493734dcb8b51bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one property of an output port.  <br /></td></tr>
 <tr class="separator:gadfae507c89fda662493734dcb8b51bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0cb07afb5f34ff623a25e13f91a0b1f1" id="r_ga0cb07afb5f34ff623a25e13f91a0b1f1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1">sceAudioOutSetAlcMode</a> (<a class="el" href="group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362">SceAudioOutAlcMode</a> mode)</td></tr>
-<tr class="memdesc:ga0cb07afb5f34ff623a25e13f91a0b1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set 'Automatic Level Control' mode on the BGM port ALC is also known as 'Dynamic Normalizer'.  <br /></td></tr>
+<tr class="memdesc:ga0cb07afb5f34ff623a25e13f91a0b1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set automatic level control for the calling process's BGM port.  <br /></td></tr>
 <tr class="separator:ga0cb07afb5f34ff623a25e13f91a0b1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6598e54482bd326b18fbd4272c77df52" id="r_ga6598e54482bd326b18fbd4272c77df52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga6598e54482bd326b18fbd4272c77df52">sceAudioOutSetCompress</a> (int port, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> enable)</td></tr>
+<tr class="memdesc:ga6598e54482bd326b18fbd4272c77df52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the compressed-audio profile of an open BGM or voice port.  <br /></td></tr>
+<tr class="separator:ga6598e54482bd326b18fbd4272c77df52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a5d7784215c0239e8f608d1bbc14876" id="r_ga2a5d7784215c0239e8f608d1bbc14876"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga2a5d7784215c0239e8f608d1bbc14876">sceAudioOutSetEffectType</a> (<a class="el" href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34">SceAudioOutEffectType</a> effect_type)</td></tr>
+<tr class="memdesc:ga2a5d7784215c0239e8f608d1bbc14876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select the BGM seven-band graphic-equalizer preset for the calling process.  <br /></td></tr>
+<tr class="separator:ga2a5d7784215c0239e8f608d1bbc14876"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadb34ebb329ae359f8afad96f1529117f" id="r_gadb34ebb329ae359f8afad96f1529117f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gadb34ebb329ae359f8afad96f1529117f">sceAudioOutSetAdoptMode</a> (<a class="el" href="group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851">SceAudioOutAdoptMode</a> mode)</td></tr>
+<tr class="memdesc:gadb34ebb329ae359f8afad96f1529117f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select whether newly opened BGM and voice-profile ports are adopted automatically.  <br /></td></tr>
+<tr class="separator:gadb34ebb329ae359f8afad96f1529117f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9b7d120b14621de9ab6561454936b65" id="r_gaa9b7d120b14621de9ab6561454936b65"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaa9b7d120b14621de9ab6561454936b65">sceAudioOutSetAdopt_forUser</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> adopt, int ramp_length, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> wait_for_completion)</td></tr>
+<tr class="memdesc:gaa9b7d120b14621de9ab6561454936b65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the calling process's adoption state for one output profile.  <br /></td></tr>
+<tr class="separator:gaa9b7d120b14621de9ab6561454936b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ead5c3ddc3dbd1ae80e9370b58ab237" id="r_ga1ead5c3ddc3dbd1ae80e9370b58ab237"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#ga1ead5c3ddc3dbd1ae80e9370b58ab237">sceAudioOutSetPortVolume_forUser</a> (int port_mask, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> volume, int ramp_length)</td></tr>
+<tr class="memdesc:ga1ead5c3ddc3dbd1ae80e9370b58ab237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply a private gain ramp to selected output profiles of the calling process.  <br /></td></tr>
+<tr class="separator:ga1ead5c3ddc3dbd1ae80e9370b58ab237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf686a59ee08a5c03fc21fd414f1049d5" id="r_gaf686a59ee08a5c03fc21fd414f1049d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaf686a59ee08a5c03fc21fd414f1049d5">sceAudioOutGetPortVolume_forUser</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>)</td></tr>
+<tr class="memdesc:gaf686a59ee08a5c03fc21fd414f1049d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a private output-profile gain for the calling process.  <br /></td></tr>
+<tr class="separator:gaf686a59ee08a5c03fc21fd414f1049d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd2a5a9a2138b5e430726f7f20c7a82e" id="r_gadd2a5a9a2138b5e430726f7f20c7a82e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gadd2a5a9a2138b5e430726f7f20c7a82e">sceAudioOutGetRestSample</a> (int port)</td></tr>
-<tr class="memdesc:gadd2a5a9a2138b5e430726f7f20c7a82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of remaining samples to be output on the specified port.  <br /></td></tr>
+<tr class="memdesc:gadd2a5a9a2138b5e430726f7f20c7a82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of frames remaining on an output port.  <br /></td></tr>
 <tr class="separator:gadd2a5a9a2138b5e430726f7f20c7a82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafe5afd1437bf825c0a85f002adad59f" id="r_gaafe5afd1437bf825c0a85f002adad59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaafe5afd1437bf825c0a85f002adad59f">sceAudioOutGetAdopt</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceBtKernel.html#ga1d127017fb298b889f4ba24752d08b8e">type</a>)</td></tr>
-<tr class="memdesc:gaafe5afd1437bf825c0a85f002adad59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get status of port type Return different value on whether the port type is used for sound generation or not.  <br /></td></tr>
+<tr class="memitem:gaafe5afd1437bf825c0a85f002adad59f" id="r_gaafe5afd1437bf825c0a85f002adad59f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceAudioUser.html#gaafe5afd1437bf825c0a85f002adad59f">sceAudioOutGetAdopt</a> (<a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> <a class="el" href="group__SceLsdbUser.html#ga3e8525b66a7c328b40204cef9af21852">type</a>)</td></tr>
+<tr class="memdesc:gaafe5afd1437bf825c0a85f002adad59f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the calling process currently adopts an output profile.  <br /></td></tr>
 <tr class="separator:gaafe5afd1437bf825c0a85f002adad59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -187,12 +249,19 @@ Functions</h2></td></tr>
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="audioout_8h.html">psp2/audioout.h</a>&gt;</span> </div>
-<div class="ttc" id="aaudioout_8h_html"><div class="ttname"><a href="audioout_8h.html">audioout.h</a></div></div>
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2_2audioout_8h.html">psp2/audioout.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2_2audioout_8h_html"><div class="ttname"><a href="psp2_2audioout_8h.html">audioout.h</a></div></div>
 </div><!-- fragment --><p><br  />
  Link the library to the executable:<br  />
 </p><div class="fragment"><div class="line">SceAudio_stub </div>
 </div><!-- fragment --><p> <br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2audioout_8h.html">psp2common/audioout.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2audioout_8h_html"><div class="ttname"><a href="psp2common_2audioout_8h.html">audioout.h</a></div></div>
+</div><!-- fragment --><p><br  />
  </p><hr  />
  <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga8c9ffea109d29fe27afb49bfd1bf802c" name="ga8c9ffea109d29fe27afb49bfd1bf802c"></a>
@@ -207,7 +276,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Minimum granularity. </p>
+<p>Minimum frame-count granularity. </p>
 
 </div>
 </div>
@@ -223,7 +292,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum granularity. </p>
+<p>Maximum frame count. </p>
 
 </div>
 </div>
@@ -239,7 +308,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum output port volume. </p>
+<p>Maximum Q15 output-port volume for game processes on FW 3.60. </p>
 
 </div>
 </div>
@@ -255,7 +324,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum output port volume. </p>
+<p>Q15 unity-gain output-port volume. </p>
 
 </div>
 </div>
@@ -300,6 +369,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Legacy signed 16-bit PCM format names. </p>
+<p>Prefer <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a> for new declarations. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggafe8b67e875fd20e9baef9fcaa8c14dfaadb05cd905d821cc69c6d44ca5dfac05d" name="ggafe8b67e875fd20e9baef9fcaa8c14dfaadb05cd905d821cc69c6d44ca5dfac05d"></a>SCE_AUDIO_OUT_PARAM_FORMAT_S16_MONO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ggafe8b67e875fd20e9baef9fcaa8c14dfaa8ca82791a86c5da81dc38a2e17e91e3d" name="ggafe8b67e875fd20e9baef9fcaa8c14dfaa8ca82791a86c5da81dc38a2e17e91e3d"></a>SCE_AUDIO_OUT_PARAM_FORMAT_S16_STEREO&#160;</td><td class="fielddoc"></td></tr>
@@ -319,11 +391,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9" name="gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9"></a>SCE_AUDIO_OUT_PORT_TYPE_MAIN&#160;</td><td class="fielddoc"><p>Used for main audio output, freq must be set to 48000 Hz. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9" name="gga03469bd2584503b5935e6c37e52c10b3af1bc265c1abb3b335cee7d708587a7b9"></a>SCE_AUDIO_OUT_PORT_TYPE_MAIN&#160;</td><td class="fielddoc"><p>Main output; use <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99">SCE_AUDIO_OUT_SAMPLE_RATE_48000</a>. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e" name="gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e"></a>SCE_AUDIO_OUT_PORT_TYPE_BGM&#160;</td><td class="fielddoc"><p>Used for Background Music port. </p>
+<tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e" name="gga03469bd2584503b5935e6c37e52c10b3a68ad4478038185f27b56785afe15b35e"></a>SCE_AUDIO_OUT_PORT_TYPE_BGM&#160;</td><td class="fielddoc"><p>Background-music output. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b" name="gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b"></a>SCE_AUDIO_OUT_PORT_TYPE_VOICE&#160;</td><td class="fielddoc"><p>Used for voice chat port. </p>
+<tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b" name="gga03469bd2584503b5935e6c37e52c10b3a5ed8982155dc1abdaa8cbfd15042e20b"></a>SCE_AUDIO_OUT_PORT_TYPE_VOICE&#160;</td><td class="fielddoc"><p>Voice-chat output. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga03469bd2584503b5935e6c37e52c10b3a1ee215d198d903f5cd9317c8964e4cbc" name="gga03469bd2584503b5935e6c37e52c10b3a1ee215d198d903f5cd9317c8964e4cbc"></a>SCE_AUDIO_OUT_PORT_TYPE_VOICE_COMPRESSED&#160;</td><td class="fielddoc"><p>Compressed voice; non-game processes only on FW 3.60. </p>
 </td></tr>
 </table>
 
@@ -347,6 +421,65 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga6f9470a156132a8bf824e5763e20bb34" name="ga6f9470a156132a8bf824e5763e20bb34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f9470a156132a8bf824e5763e20bb34">&#9670;&#160;</a></span>SceAudioOutEffectType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34">SceAudioOutEffectType</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BGM seven-band graphic-equalizer presets. </p>
+<p>The gains below apply to the 63 Hz, 160 Hz, 400 Hz, 1 kHz, 2.5 kHz, 6.3 kHz, and 16 kHz bands, in that order. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga6f9470a156132a8bf824e5763e20bb34ab6599c51d1e1b25bca224877944d8f43" name="gga6f9470a156132a8bf824e5763e20bb34ab6599c51d1e1b25bca224877944d8f43"></a>SCE_AUDIO_OUT_EFFECT_TYPE_OFF&#160;</td><td class="fielddoc"><p>Bypasses the equalizer; the stored preset uses 0 dB for every band. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518" name="gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518"></a>SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY&#160;</td><td class="fielddoc"><p>+3, +3, 0, -3, +3, +3, 0 dB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6f9470a156132a8bf824e5763e20bb34a18e7f6cfe2de46398f50bf62ad50f932" name="gga6f9470a156132a8bf824e5763e20bb34a18e7f6cfe2de46398f50bf62ad50f932"></a>SCE_AUDIO_OUT_EFFECT_TYPE_POPS&#160;</td><td class="fielddoc"><p>-3, 0, +3, +3, 0, 0, -3 dB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6f9470a156132a8bf824e5763e20bb34ad1e187778b7bcb4d9c7a150b30fe6dd0" name="gga6f9470a156132a8bf824e5763e20bb34ad1e187778b7bcb4d9c7a150b30fe6dd0"></a>SCE_AUDIO_OUT_EFFECT_TYPE_JAZZ&#160;</td><td class="fielddoc"><p>0, +6, 0, 0, -3, 0, +3 dB. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga6f9470a156132a8bf824e5763e20bb34a67bf32f8a72847f574aafa76fc51fa9e" name="gga6f9470a156132a8bf824e5763e20bb34a67bf32f8a72847f574aafa76fc51fa9e"></a>SCE_AUDIO_OUT_EFFECT_TYPE_UNIQUE&#160;</td><td class="fielddoc"><p>+6, 0, 0, +3, 0, -3, +6 dB. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga075c5a51201c5405c3dd99aaafa833d8" name="ga075c5a51201c5405c3dd99aaafa833d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga075c5a51201c5405c3dd99aaafa833d8">&#9670;&#160;</a></span>SceAudioOutSampleRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8">SceAudioOutSampleRate</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Audio-output sample rates. </p>
+<p>Each AudioOut function accepts only the rates documented for that function. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a59df838e61607e7ebcabfd714313f373" name="gga075c5a51201c5405c3dd99aaafa833d8a59df838e61607e7ebcabfd714313f373"></a>SCE_AUDIO_OUT_SAMPLE_RATE_8000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8ad9db5660566b0c8434ab6d6fa0aef03c" name="gga075c5a51201c5405c3dd99aaafa833d8ad9db5660566b0c8434ab6d6fa0aef03c"></a>SCE_AUDIO_OUT_SAMPLE_RATE_11025&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8ace28e1f5a9399bf228e6e1c0522d28a3" name="gga075c5a51201c5405c3dd99aaafa833d8ace28e1f5a9399bf228e6e1c0522d28a3"></a>SCE_AUDIO_OUT_SAMPLE_RATE_12000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8aa8dd68f3942b1e7588ac3b2bbb628fda" name="gga075c5a51201c5405c3dd99aaafa833d8aa8dd68f3942b1e7588ac3b2bbb628fda"></a>SCE_AUDIO_OUT_SAMPLE_RATE_16000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8acc1f168e6d982171dade644e5f4e02c4" name="gga075c5a51201c5405c3dd99aaafa833d8acc1f168e6d982171dade644e5f4e02c4"></a>SCE_AUDIO_OUT_SAMPLE_RATE_22050&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a770decfd0657cfa9b5266d9dee1a0802" name="gga075c5a51201c5405c3dd99aaafa833d8a770decfd0657cfa9b5266d9dee1a0802"></a>SCE_AUDIO_OUT_SAMPLE_RATE_24000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a5de5b3d877f72a58763cf562c01ac95f" name="gga075c5a51201c5405c3dd99aaafa833d8a5de5b3d877f72a58763cf562c01ac95f"></a>SCE_AUDIO_OUT_SAMPLE_RATE_32000&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a23850018ceaab5ef6cd334015cca54f4" name="gga075c5a51201c5405c3dd99aaafa833d8a23850018ceaab5ef6cd334015cca54f4"></a>SCE_AUDIO_OUT_SAMPLE_RATE_44100&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a88b9a1795f820b2896486ff58f2352cf" name="gga075c5a51201c5405c3dd99aaafa833d8a88b9a1795f820b2896486ff58f2352cf"></a>SCE_AUDIO_OUT_SAMPLE_RATE_44184&#160;</td><td class="fielddoc"><p>Accepted by SrcMix inputs and PSPemu output ports on FW 3.60. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99" name="gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99"></a>SCE_AUDIO_OUT_SAMPLE_RATE_48000&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="gae6df1c85402046fb23237b66d31facdc" name="gae6df1c85402046fb23237b66d31facdc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae6df1c85402046fb23237b66d31facdc">&#9670;&#160;</a></span>SceAudioOutChannelFlag</h2>
 
@@ -359,11 +492,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Flags to use as 'ch' argument for <a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00" title="Set volume of specified output audio port.">sceAudioOutSetVolume</a>. </p>
+<p>Channel-flag bits accepted by <a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00" title="Set an output port&#39;s channel volume.">sceAudioOutSetVolume</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977" name="ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977"></a>SCE_AUDIO_VOLUME_FLAG_L_CH&#160;</td><td class="fielddoc"><p>Left Channel. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977" name="ggae6df1c85402046fb23237b66d31facdcaa8afd4252788fe4509cdfe75269d3977"></a>SCE_AUDIO_VOLUME_FLAG_L_CH&#160;</td><td class="fielddoc"><p>Left channel. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a" name="ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a"></a>SCE_AUDIO_VOLUME_FLAG_R_CH&#160;</td><td class="fielddoc"><p>Right Channel. </p>
+<tr><td class="fieldname"><a id="ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a" name="ggae6df1c85402046fb23237b66d31facdca209c008db2d7aecf4a7d74b1619cf10a"></a>SCE_AUDIO_VOLUME_FLAG_R_CH&#160;</td><td class="fielddoc"><p>Right channel. </p>
 </td></tr>
 </table>
 
@@ -381,7 +514,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Config type values to specify to <a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd" title="Get a parameter value of specified output port.">sceAudioOutGetConfig</a>. </p>
+<p>Configuration selectors accepted by <a class="el" href="group__SceAudioUser.html#gadfae507c89fda662493734dcb8b51bbd" title="Get one property of an output port.">sceAudioOutGetConfig</a>. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga3046a577c61a8f6ef087c7b2f51730daa17ce85e46f62c6f163df64c678dc2842" name="gga3046a577c61a8f6ef087c7b2f51730daa17ce85e46f62c6f163df64c678dc2842"></a>SCE_AUDIO_OUT_CONFIG_TYPE_LEN&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga3046a577c61a8f6ef087c7b2f51730daa070a97765015c26ea62c5547c4551a6e" name="gga3046a577c61a8f6ef087c7b2f51730daa070a97765015c26ea62c5547c4551a6e"></a>SCE_AUDIO_OUT_CONFIG_TYPE_FREQ&#160;</td><td class="fielddoc"></td></tr>
@@ -402,11 +535,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Argument 'mode' to specify to <a class="el" href="group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1" title="Set &#39;Automatic Level Control&#39; mode on the BGM port ALC is also known as &#39;Dynamic Normalizer&#39;.">sceAudioOutSetAlcMode</a>. </p>
+<p>Automatic-level-control modes for <a class="el" href="group__SceAudioUser.html#ga0cb07afb5f34ff623a25e13f91a0b1f1" title="Set automatic level control for the calling process&#39;s BGM port.">sceAudioOutSetAlcMode</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb" name="gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb"></a>SCE_AUDIO_ALC_OFF&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236" name="gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236"></a>SCE_AUDIO_ALC_MODE1&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9" name="gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9"></a>SCE_AUDIO_ALC_MODE_MAX&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb" name="gga9b01e448a5766cd5b4a747d500b61362a74464480f17414defc603727d5a45ccb"></a>SCE_AUDIO_ALC_OFF&#160;</td><td class="fielddoc"><p>Disable the BGM dynamic normalizer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236" name="gga9b01e448a5766cd5b4a747d500b61362a03f416f08c4ded89333247454140b236"></a>SCE_AUDIO_ALC_MODE1&#160;</td><td class="fielddoc"><p>Enable the BGM dynamic normalizer. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9" name="gga9b01e448a5766cd5b4a747d500b61362a160eebbe5a1185e6ed3bb803594b20d9"></a>SCE_AUDIO_ALC_MODE_MAX&#160;</td><td class="fielddoc"><p>Number of ALC modes; not a valid mode. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="gac53e738bc2b80d4cd83df38dfa256f53" name="gac53e738bc2b80d4cd83df38dfa256f53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac53e738bc2b80d4cd83df38dfa256f53">&#9670;&#160;</a></span>SceAudioOutPortMask</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53">SceAudioOutPortMask</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port-selection bits used by the private port-volume APIs. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggac53e738bc2b80d4cd83df38dfa256f53a5c41786dd2eb485291f194d5da1c9b1d" name="ggac53e738bc2b80d4cd83df38dfa256f53a5c41786dd2eb485291f194d5da1c9b1d"></a>SCE_AUDIO_OUT_PORT_MASK_MAIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac53e738bc2b80d4cd83df38dfa256f53a3e47db6b15d40d311485179be906f6d4" name="ggac53e738bc2b80d4cd83df38dfa256f53a3e47db6b15d40d311485179be906f6d4"></a>SCE_AUDIO_OUT_PORT_MASK_BGM&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ggac53e738bc2b80d4cd83df38dfa256f53a593fa31b1814c7592c71dd464eb71b2f" name="ggac53e738bc2b80d4cd83df38dfa256f53a593fa31b1814c7592c71dd464eb71b2f"></a>SCE_AUDIO_OUT_PORT_MASK_VOICE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ga59779108f58fc01d7136fbf87d1f3851" name="ga59779108f58fc01d7136fbf87d1f3851"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59779108f58fc01d7136fbf87d1f3851">&#9670;&#160;</a></span>SceAudioOutAdoptMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851">SceAudioOutAdoptMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>New-port adoption behavior selected by <a class="el" href="group__SceAudioUser.html#gadb34ebb329ae359f8afad96f1529117f" title="Select whether newly opened BGM and voice-profile ports are adopted automatically.">sceAudioOutSetAdoptMode</a>. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga59779108f58fc01d7136fbf87d1f3851a31523d70270267a7431a91b8d2e1cc6f" name="gga59779108f58fc01d7136fbf87d1f3851a31523d70270267a7431a91b8d2e1cc6f"></a>SCE_AUDIO_OUT_ADOPT_MODE_AUTOMATIC&#160;</td><td class="fielddoc"><p>Automatically adopt newly opened BGM and voice-profile ports. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="gga59779108f58fc01d7136fbf87d1f3851a0d9be3912339be6a4f64d7724dbd4551" name="gga59779108f58fc01d7136fbf87d1f3851a0d9be3912339be6a4f64d7724dbd4551"></a>SCE_AUDIO_OUT_ADOPT_MODE_MANUAL&#160;</td><td class="fielddoc"><p>Do not automatically adopt newly opened BGM and voice-profile ports. </p>
+</td></tr>
 </table>
 
 </div>
@@ -450,18 +629,57 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize audio port. </p>
+<p>Open an audio-output port. </p>
+<p>FW 3.60 supports one BGM port and one voice port per process, eight regular MAIN ports, and the dedicated extended MAIN port opened by <a class="el" href="group__SceAudioUser.html#ga99352e1f6c4a1a4798768cc998889850" title="Open the calling process&#39;s dedicated extended MAIN port.">sceAudioOutOpenExtPort</a>. The MAIN profile requires <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99">SCE_AUDIO_OUT_SAMPLE_RATE_48000</a>. BGM and voice accept every <a class="el" href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8" title="Audio-output sample rates.">SceAudioOutSampleRate</a> value except <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a88b9a1795f820b2896486ff58f2352cf" title="Accepted by SrcMix inputs and PSPemu output ports on FW 3.60.">SCE_AUDIO_OUT_SAMPLE_RATE_44184</a>; PSPemu may additionally use that rate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Number of samples, between <a class="el" href="group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c" title="Minimum granularity.">SCE_AUDIO_MIN_LEN</a> and <a class="el" href="group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a" title="Maximum granularity.">SCE_AUDIO_MAX_LEN</a> (multiple of 64) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- Sampling frequency (in Hz), one of the followings : 8000, 11025, 12000, 16000, 22050, 24000, 32000, 44100, 48000 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- One of <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Output profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Number of PCM frames. Must be a multiple of <a class="el" href="group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c" title="Minimum frame-count granularity.">SCE_AUDIO_MIN_LEN</a> and no greater than <a class="el" href="group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a" title="Maximum frame count.">SCE_AUDIO_MAX_LEN</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- One of the <a class="el" href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8" title="Audio-output sample rates.">SceAudioOutSampleRate</a> values accepted by the selected output profile. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Mono or stereo signed 16-bit PCM.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>port number, &lt; 0 on error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- The volume is initially set to its max value (<a class="el" href="group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da" title="Maximum output port volume.">SCE_AUDIO_OUT_MAX_VOL</a>) </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A port handle on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
+
+</div>
+</div>
+<a id="ga99352e1f6c4a1a4798768cc998889850" name="ga99352e1f6c4a1a4798768cc998889850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99352e1f6c4a1a4798768cc998889850">&#9670;&#160;</a></span>sceAudioOutOpenExtPort()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutOpenExtPort </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open the calling process's dedicated extended MAIN port. </p>
+<p>The port uses handle 8 and <a class="el" href="group__SceAudioUser.html#gga075c5a51201c5405c3dd99aaafa833d8a3b7299d76645d668e36af0351f6c1b99">SCE_AUDIO_OUT_SAMPLE_RATE_48000</a> on FW 3.60.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- Number of PCM frames. Must be a multiple of <a class="el" href="group__SceAudioUser.html#ga8c9ffea109d29fe27afb49bfd1bf802c" title="Minimum frame-count granularity.">SCE_AUDIO_MIN_LEN</a> and no greater than <a class="el" href="group__SceAudioUser.html#gad3ef67ce3a4849804a3730727e30fc6a" title="Maximum frame count.">SCE_AUDIO_MAX_LEN</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Mono or stereo signed 16-bit PCM.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Port handle 8 on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -481,14 +699,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Release an audio port. </p>
+<p>Release an audio-output port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port handle returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Open an audio-output port.">sceAudioOutOpenPort</a> or <a class="el" href="group__SceAudioUser.html#ga99352e1f6c4a1a4798768cc998889850" title="Open the calling process&#39;s dedicated extended MAIN port.">sceAudioOutOpenExtPort</a>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -518,16 +736,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Output audio (blocking function) </p>
+<p>Output one configured PCM buffer. </p>
+<p>The call blocks until the supplied buffer has been accepted. Passing NULL waits until the port's previously queued audio has finished playing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*buf</td><td>: Pointer to audio data buffer</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open port handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>- Interleaved signed 16-bit PCM, or NULL to wait for queued audio to finish playing.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- if NULL is specified for *buf, the function will not return until the last output audio data has been output. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -563,16 +781,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set volume of specified output audio port. </p>
+<p>Set an output port's channel volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>- Channel numbers as flags (see <a class="el" href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc" title="Flags to use as &#39;ch&#39; argument for sceAudioOutSetVolume.">SceAudioOutChannelFlag</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">*vol</td><td>- Array to int specifying volume for each channel (Left channel first for stereo)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open port handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ch</td><td>- Bitwise OR of <a class="el" href="group__SceAudioUser.html#gae6df1c85402046fb23237b66d31facdc" title="Channel-flag bits accepted by sceAudioOutSetVolume.">SceAudioOutChannelFlag</a> values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">vol</td><td>- Read-only array containing the left- and right-channel Q15 volume values, in that order. FW 3.60 reads both values, including for a mono port. Game processes may use values from 0 through <a class="el" href="group__SceAudioUser.html#ga5596f3b7a5a3b6a76cfe84e259e887da" title="Maximum Q15 output-port volume for game processes on FW 3.60.">SCE_AUDIO_OUT_MAX_VOL</a>; system and other non-game processes may use values through 0xFFFF. Channel-mask bits other than left and right are ignored.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -614,18 +832,26 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Change configuration of specified output port. </p>
+<p>Change an output port's configuration. </p>
+<p>A negative value for <code>len</code>, <code>freq</code>, or <code>mode</code> leaves that setting unchanged.</p>
+<p>For a BGM port, the low byte of <code>mode</code> contains one of <a class="el" href="group__SceAudioUser.html#gad87ff8a5b2fa0ee65166afff10a26726">SceAudioOutMode</a>, while its high byte contains one of <a class="el" href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34" title="BGM seven-band graphic-equalizer presets.">SceAudioOutEffectType</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- see <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort()</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- see <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort()</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- see <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort()</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open port handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>- New frame count, or a negative value to leave it unchanged. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">freq</td><td>- New <a class="el" href="group__SceAudioUser.html#ga075c5a51201c5405c3dd99aaafa833d8" title="Audio-output sample rates.">SceAudioOutSampleRate</a> value accepted by the output profile, or a negative value to leave it unchanged. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- New channel mode and optional BGM effect preset, or a negative value to leave them unchanged.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>- If (-1) is specified for any argument (excepted for port), current configuration is used instead. </dd></dl>
+<dl class="section user"><dt>Example:</dt><dd>Configure stereo output with the Heavy equalizer preset without changing the frame count or sample rate: <div class="fragment"><div class="line"><span class="keywordtype">int</span> mode = <a class="code hl_enumvalue" href="group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726ab332633e3d5a8f1808a2fa47531bfd51">SCE_AUDIO_OUT_MODE_STEREO</a> |</div>
+<div class="line">           (<a class="code hl_enumvalue" href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518">SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY</a> &lt;&lt; 8);</div>
+<div class="line"><a class="code hl_function" href="group__SceAudioUser.html#ga11a4df4d66bfaaf4a50f15d1d4d74a2a">sceAudioOutSetConfig</a>(port, -1, -1, mode);</div>
+<div class="ttc" id="agroup__SceAudioUser_html_ga11a4df4d66bfaaf4a50f15d1d4d74a2a"><div class="ttname"><a href="group__SceAudioUser.html#ga11a4df4d66bfaaf4a50f15d1d4d74a2a">sceAudioOutSetConfig</a></div><div class="ttdeci">int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode)</div><div class="ttdoc">Change an output port's configuration.</div></div>
+<div class="ttc" id="agroup__SceAudioUser_html_gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518"><div class="ttname"><a href="group__SceAudioUser.html#gga6f9470a156132a8bf824e5763e20bb34a21a0fdc8d7f052473e3e81bd1d7dc518">SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY</a></div><div class="ttdeci">@ SCE_AUDIO_OUT_EFFECT_TYPE_HEAVY</div><div class="ttdoc">+3, +3, 0, -3, +3, +3, 0 dB.</div><div class="ttdef"><b>Definition</b> audioout.h:61</div></div>
+<div class="ttc" id="agroup__SceAudioUser_html_ggad87ff8a5b2fa0ee65166afff10a26726ab332633e3d5a8f1808a2fa47531bfd51"><div class="ttname"><a href="group__SceAudioUser.html#ggad87ff8a5b2fa0ee65166afff10a26726ab332633e3d5a8f1808a2fa47531bfd51">SCE_AUDIO_OUT_MODE_STEREO</a></div><div class="ttdeci">@ SCE_AUDIO_OUT_MODE_STEREO</div><div class="ttdef"><b>Definition</b> audioout.h:50</div></div>
+</div><!-- fragment --></dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -655,15 +881,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get a parameter value of specified output port. </p>
+<p>Get one property of an output port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceAudioUser.html#ga3046a577c61a8f6ef087c7b2f51730da" title="Config type values to specify to sceAudioOutGetConfig.">SceAudioOutConfigType</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open port handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Property to query.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The selected frame count, sample rate, or channel mode on success; otherwise a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -683,14 +909,232 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set 'Automatic Level Control' mode on the BGM port ALC is also known as 'Dynamic Normalizer'. </p>
+<p>Set automatic level control for the calling process's BGM port. </p>
+<p>Mode 1 enables the FW 3.60 dynamic normalizer; mode 0 bypasses it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- One of <a class="el" href="group__SceAudioUser.html#ga9b01e448a5766cd5b4a747d500b61362" title="Argument &#39;mode&#39; to specify to sceAudioOutSetAlcMode.">SceAudioOutAlcMode</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Automatic-level-control mode.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error. </dd></dl>
+
+</div>
+</div>
+<a id="ga6598e54482bd326b18fbd4272c77df52" name="ga6598e54482bd326b18fbd4272c77df52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6598e54482bd326b18fbd4272c77df52">&#9670;&#160;</a></span>sceAudioOutSetCompress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutSetCompress </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the compressed-audio profile of an open BGM or voice port. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open BGM or voice port handle. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>- <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> to select the compressed external-codec profile, or <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a905def7c2528ee21e546716ec3ea247b">SCE_FALSE</a> for the normal profile.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error. </dd></dl>
+
+</div>
+</div>
+<a id="ga2a5d7784215c0239e8f608d1bbc14876" name="ga2a5d7784215c0239e8f608d1bbc14876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a5d7784215c0239e8f608d1bbc14876">&#9670;&#160;</a></span>sceAudioOutSetEffectType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutSetEffectType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioUser.html#ga6f9470a156132a8bf824e5763e20bb34">SceAudioOutEffectType</a>&#160;</td>
+          <td class="paramname"><em>effect_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select the BGM seven-band graphic-equalizer preset for the calling process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">effect_type</td><td>- Equalizer preset.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error. </dd></dl>
+
+</div>
+</div>
+<a id="gadb34ebb329ae359f8afad96f1529117f" name="gadb34ebb329ae359f8afad96f1529117f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadb34ebb329ae359f8afad96f1529117f">&#9670;&#160;</a></span>sceAudioOutSetAdoptMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutSetAdoptMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioUser.html#ga59779108f58fc01d7136fbf87d1f3851">SceAudioOutAdoptMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select whether newly opened BGM and voice-profile ports are adopted automatically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>- Adoption mode. Any nonzero value behaves as manual mode on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
+
+</div>
+</div>
+<a id="gaa9b7d120b14621de9ab6561454936b65" name="gaa9b7d120b14621de9ab6561454936b65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9b7d120b14621de9ab6561454936b65">&#9670;&#160;</a></span>sceAudioOutSetAdopt_forUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutSetAdopt_forUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>adopt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ramp_length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>wait_for_completion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the calling process's adoption state for one output profile. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- MAIN, BGM, or voice port selector. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">adopt</td><td>- <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> to adopt the port, or <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a905def7c2528ee21e546716ec3ea247b">SCE_FALSE</a> to release it. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ramp_length</td><td>- Gain-transition duration in milliseconds, clamped to 1..4096 on FW 3.60. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wait_for_completion</td><td>- When releasing adoption, wait for the transition to finish if nonzero.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1ead5c3ddc3dbd1ae80e9370b58ab237" name="ga1ead5c3ddc3dbd1ae80e9370b58ab237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1ead5c3ddc3dbd1ae80e9370b58ab237">&#9670;&#160;</a></span>sceAudioOutSetPortVolume_forUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutSetPortVolume_forUser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>port_mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ramp_length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply a private gain ramp to selected output profiles of the calling process. </p>
+<p>This 0..256 gain is separate from the Q15 per-channel volume configured by <a class="el" href="group__SceAudioUser.html#ga90e0413f19a6faade1eddf3ff6eadb00" title="Set an output port&#39;s channel volume.">sceAudioOutSetVolume</a>. A zero mask does nothing, and FW 3.60 ignores mask bits not defined by <a class="el" href="group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53" title="Port-selection bits used by the private port-volume APIs.">SceAudioOutPortMask</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port_mask</td><td>- Bitwise OR of <a class="el" href="group__SceAudioUser.html#gac53e738bc2b80d4cd83df38dfa256f53" title="Port-selection bits used by the private port-volume APIs.">SceAudioOutPortMask</a> values. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">volume</td><td>- Target gain from 0 through 256. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ramp_length</td><td>- Gain-transition duration in milliseconds, clamped to 1..4096 on FW 3.60.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf686a59ee08a5c03fc21fd414f1049d5" name="gaf686a59ee08a5c03fc21fd414f1049d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf686a59ee08a5c03fc21fd414f1049d5">&#9670;&#160;</a></span>sceAudioOutGetPortVolume_forUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sceAudioOutGetPortVolume_forUser </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a>&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a private output-profile gain for the calling process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- MAIN, BGM, or voice port selector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The private target gain, normally from 0 through 256, on success; or a negative error. </dd></dl>
 
 </div>
 </div>
@@ -710,14 +1154,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the number of remaining samples to be output on the specified port. </p>
+<p>Get the number of frames remaining on an output port. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Port number returned by <a class="el" href="group__SceAudioUser.html#gaaf446885b6a2777fe8fc5b0ee095d353" title="Initialize audio port.">sceAudioOutOpenPort</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>- Open port handle.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of samples on success, &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The queued frame count on success, or a negative <a class="el" href="group__SceAudioUser.html#ga2ef9feeba48528f0c544523489c84a7c">SceAudioOutErrorCode</a> value. </dd></dl>
 
 </div>
 </div>
@@ -737,14 +1181,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get status of port type Return different value on whether the port type is used for sound generation or not. </p>
+<p>Check whether the calling process currently adopts an output profile. </p>
+<p>FW 3.60 also accepts <a class="el" href="group__SceAudioUser.html#gga03469bd2584503b5935e6c37e52c10b3a1ee215d198d903f5cd9317c8964e4cbc" title="Compressed voice; non-game processes only on FW 3.60.">SCE_AUDIO_OUT_PORT_TYPE_VOICE_COMPRESSED</a> for a non-game process and queries the same adoption state as the voice profile. For the MAIN selector, this function returns 1 when the process's MAIN adoption flag is set or when the process has no selected MAIN port.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- One of <a class="el" href="group__SceAudioUser.html#ga03469bd2584503b5935e6c37e52c10b3">SceAudioOutPortType</a></td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>- Output profile selector.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>(1) if port is in use, (0) otherwise. &lt; 0 on error. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>1 when adopted, 0 otherwise, or a negative error. </dd></dl>
 
 </div>
 </div>

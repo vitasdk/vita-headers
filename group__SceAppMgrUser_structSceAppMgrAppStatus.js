@@ -1,0 +1,26 @@
+var group__SceAppMgrUser_structSceAppMgrAppStatus =
+[
+    [ "parent_process_id", "group__SceAppMgrUser.html#gae0560bc74d90ba139041b9fef5bbcb6f", null ],
+    [ "launch_flags", "group__SceAppMgrUser.html#ga84a4aa6792b400c3be9646e6a1800fb1", null ],
+    [ "app_protection_mode_on_memory_shortage", "group__SceAppMgrUser.html#gaf1f3f2217bb51b339e867bba3bbb93a5", null ],
+    [ "app_name", "group__SceAppMgrUser.html#ga9a4bd0e3224151863bf3e6d0df23310e", null ],
+    [ "has_launch_param", "group__SceAppMgrUser.html#gae66f6881df78ee3ea999b156fd3cb5fe", null ],
+    [ "app_id", "group__SceAppMgrUser.html#ga57b72a4a30cc8152f57cac3785f334a7", null ],
+    [ "process_id", "group__SceAppMgrUser.html#ga4fb37b76d61bd217416d7683333214da", null ],
+    [ "is_active", "group__SceAppMgrUser.html#ga636e6a76dfe9d9a1807506f108f63afa", null ],
+    [ "is_running", "group__SceAppMgrUser.html#ga5dc6ad21c02db11b5f87fcc270b7f09b", null ],
+    [ "network_disconnection_warning_dialog_enabled", "group__SceAppMgrUser.html#gad9ca45dde6646c171ff651d9fe8e65c8", null ],
+    [ "parent_app_id", "group__SceAppMgrUser.html#ga24c91f02f9467d03d6f676713a7ea89f", null ],
+    [ "info_bar_visibility", "group__SceAppMgrUser.html#gaf0e46d8ba86539eb22d43a95aae6f0c8", null ],
+    [ "info_bar_color", "group__SceAppMgrUser.html#gaa46e5ef2bbf21311c3184f4baebd5592", null ],
+    [ "info_bar_transparency", "group__SceAppMgrUser.html#ga242757a20b8fc433a445b887396c9928", null ],
+    [ "reserved_4B", "group__SceAppMgrUser.html#ga24003988c74586768842a8803d40e3cc", null ],
+    [ "reserved_4C", "group__SceAppMgrUser.html#gab313d9a8d1d48eee513e3fc21d8181c4", null ],
+    [ "bgm_proxy_app_name", "group__SceAppMgrUser.html#ga08ac2b573f4a8d5618cd65cfa833f0a8", null ],
+    [ "process_launch_type", "group__SceAppMgrUser.html#ga8e478fb144d6120a1db27a8b1f178397", null ],
+    [ "application_type", "group__SceAppMgrUser.html#ga28fa69074f968be0fa030317a1cb2a01", null ],
+    [ "reserved72", "group__SceAppMgrUser.html#ga7b36e8ef032a658cb759fda2af35f3a2", null ],
+    [ "app_flags", "group__SceAppMgrUser.html#ga668cfcb7ac0dec6e146e29c17f58c6ee", null ],
+    [ "recommended_screen_orientation", "group__SceAppMgrUser.html#gab45a05c2484dced5a56b72516ac5757c", null ],
+    [ "recommended_screen_orientation_activated", "group__SceAppMgrUser.html#gafaf09ec34fa6fe97a9b33f5aed8588b9", null ]
+];

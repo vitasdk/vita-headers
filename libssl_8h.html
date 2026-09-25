@@ -88,6 +88,9 @@ $(document).ready(function(){initNavTree('libssl_8h.html',''); initResizable(); 
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:structSceSslCertificateAuthorityEntry" id="r_structSceSslCertificateAuthorityEntry"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a></td></tr>
+<tr class="memdesc:structSceSslCertificateAuthorityEntry"><td class="mdescLeft">&#160;</td><td class="mdescRight">Certificate list node stored inside the caller's output buffer.  <a href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">More...</a><br /></td></tr>
+<tr class="separator:structSceSslCertificateAuthorityEntry"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceSslMemoryPoolStats" id="r_structSceSslMemoryPoolStats"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#structSceSslMemoryPoolStats">SceSslMemoryPoolStats</a></td></tr>
 <tr class="separator:structSceSslMemoryPoolStats"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -117,9 +120,35 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:gaa87d604f7d09c5bf42fe99ac57ac81fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga91e1f3ed158b551d44c11d24725388e8" id="r_ga91e1f3ed158b551d44c11d24725388e8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a> { <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c">SCE_SSLCERT_ISSUER_ALL</a> = 0
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a34e710c520924bed9475876ec578e690">SCE_SSLCERT_ISSUER_SCE</a> = 1
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a15d71abeda3f826e0430ec5a35c89a7d">SCE_SSLCERT_ISSUER_VERISIGN</a> = 2
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a03e861a545e99d4d9d636f87ea732513">SCE_SSLCERT_ISSUER_GEOTRUST</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9ee8d8f9b2c2c89244d8b6f9ec1fab0c">SCE_SSLCERT_ISSUER_THAWTE</a> = 4
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3d761279d863f4253984cbd902b32c5d">SCE_SSLCERT_ISSUER_COMODO</a> = 5
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a5b537e9505c3be07d18f25a26d99bf87">SCE_SSLCERT_ISSUER_GLOBALSIGN</a> = 6
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a061cbc1bcbd07ab7ff1d41c1f57277d7">SCE_SSLCERT_ISSUER_CYBERTRUST</a> = 7
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aa5f7b6964882beeedd931b9b36cb82de">SCE_SSLCERT_ISSUER_ENTRUST</a> = 8
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3a0bebbfe97d6bf310dcf4bbb1bd76da">SCE_SSLCERT_ISSUER_DIGICERT</a> = 9
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3c20518fcc1ea30b6506b243bdc9da26">SCE_SSLCERT_ISSUER_GODADDY</a> = 10
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ac53a39a15e6d3119e22d51d143b0dfbd">SCE_SSLCERT_ISSUER_RSA</a> = 11
+, <br />
+&#160;&#160;<a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aec206658756d511e4a6f19e2c139f020">SCE_SSLCERT_ISSUER_STARTCOM</a> = 12
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ae2dc082bf0cdf2516ca3dea4f8f6579c">SCE_SSLCERT_ISSUER_SECOM</a> = 13
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a264878a14b4a738927f28e52298a0293">SCE_SSLCERT_ISSUER_TRUSTWAVE</a> = 14
+, <a class="el" href="group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9a8d0461cc1218da2f4c6d732839dbd9">SCE_SSLCERT_ISSUER_AFFIRMTRUST</a> = 15
+<br />
+ }</td></tr>
+<tr class="memdesc:ga91e1f3ed158b551d44c11d24725388e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Built-in certificate-authority issuer groups.  <a href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">More...</a><br /></td></tr>
+<tr class="separator:ga91e1f3ed158b551d44c11d24725388e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga394be5880b7f2a98b08ce543fc712a0d" id="r_ga394be5880b7f2a98b08ce543fc712a0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga394be5880b7f2a98b08ce543fc712a0d">VITASDK_BUILD_ASSERT_EQ</a> (0x8, <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a>)</td></tr>
+<tr class="separator:ga394be5880b7f2a98b08ce543fc712a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac2da5d3ede9857a64763911f270d2b7" id="r_gaac2da5d3ede9857a64763911f270d2b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#gaac2da5d3ede9857a64763911f270d2b7">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceLibSslUser.html#structSceSslMemoryPoolStats">SceSslMemoryPoolStats</a>)</td></tr>
 <tr class="separator:gaac2da5d3ede9857a64763911f270d2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga13926687f23c60d45340f013b1382f75" id="r_ga13926687f23c60d45340f013b1382f75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga13926687f23c60d45340f013b1382f75">sceSslInit</a> (unsigned poolSize)</td></tr>
@@ -144,6 +173,9 @@ Functions</h2></td></tr>
 <tr class="separator:gab11f8d374a759e2e582db418dbbab95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52861a9bb6eee66901b8393dc50b152b" id="r_ga52861a9bb6eee66901b8393dc50b152b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga52861a9bb6eee66901b8393dc50b152b">sceSslFreeSslCertName</a> (<a class="el" href="group__SceLibSslUser.html#gae981fc6a227fee69c4492d1dd76f9a97">SceSslCertName</a> *certName)</td></tr>
 <tr class="separator:ga52861a9bb6eee66901b8393dc50b152b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga248c82261a899afa8a637675c50738b5" id="r_ga248c82261a899afa8a637675c50738b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceLibSslUser.html#ga248c82261a899afa8a637675c50738b5">sceSslInternalGetCertificateAuthority</a> (<a class="el" href="group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8">SceSslCertIssuer</a> issuer_id, int certificate_mask, <a class="el" href="group__SceLibSslUser.html#structSceSslCertificateAuthorityEntry">SceSslCertificateAuthorityEntry</a> **certificate_list, char *<a class="el" href="group__SceBtKernel.html#ga368f7094dc38acca20612bbb392552f4">buffer</a>, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> buffer_size, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> *result_size)</td></tr>
+<tr class="memdesc:ga248c82261a899afa8a637675c50738b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get built-in certificate-authority certificates.  <br /></td></tr>
+<tr class="separator:ga248c82261a899afa8a637675c50738b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -11,5 +11,7 @@ var psp2kern_2kernel_2rtc_8h =
     [ "ksceRtcSetCurrentDebugNetworkTick", "group__SceRtcKernel.html#gaeffdd673eac631e5ec9cccefc1dbf6be", null ],
     [ "ksceRtcGetCurrentDebugNetworkTick", "group__SceRtcKernel.html#ga95bcbf150c4012a1794f86568894b285", null ],
     [ "ksceRtcConvertTickToDateTime", "group__SceRtcKernel.html#ga8a4458cf86b7768004d9ee655c82cda9", null ],
-    [ "ksceRtcConvertDateTimeToUnixTime", "group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d", null ]
+    [ "ksceRtcConvertDateTimeToUnixTime", "group__SceRtcKernel.html#ga595ed5216c24074df65c2ac79c844b1d", null ],
+    [ "ksceRtcFormatRFC3339", "group__SceRtcKernel.html#ga21820a7b1618e1f8e4f0fce431ecc09c", null ],
+    [ "ksceRtcGetAccumulativeTime", "group__SceRtcKernel.html#gaf13ddcdc350f9bd64ab48ab6078fe889", null ]
 ];

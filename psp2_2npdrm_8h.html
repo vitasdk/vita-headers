@@ -73,16 +73,29 @@ $(document).ready(function(){initNavTree('psp2_2npdrm_8h.html',''); initResizabl
 <div id="doc-content">
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">npdrm.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="psp2_2types_8h_source.html">psp2/types.h</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="build__utils_8h_source.html">vitasdk/build_utils.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2_2types_8h_source.html">psp2/types.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="psp2_2psmdrm_8h_source.html">psp2/psmdrm.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="psp2common_2npdrm_8h_source.html">psp2common/npdrm.h</a>&gt;</code><br />
 <code>#include &lt;stdint.h&gt;</code><br />
 </div>
 <p><a href="psp2_2npdrm_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceNpDrmCheckActDataOpt" id="r_structSceNpDrmCheckActDataOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a></td></tr>
+<tr class="separator:structSceNpDrmCheckActDataOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNpDrmCheckDrmResetOpt" id="r_structSceNpDrmCheckDrmResetOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a></td></tr>
+<tr class="separator:structSceNpDrmCheckDrmResetOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNpDrmGetRifInfoOpt" id="r_structSceNpDrmGetRifInfoOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a></td></tr>
+<tr class="memdesc:structSceNpDrmGetRifInfoOpt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional outputs for <a class="el" href="group__SceNpDrmUser.html#ga58d6e081b6fbfb7d18b263b275d5df0e" title="Get RIF information.">_sceNpDrmGetRifInfo</a>.  <a href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">More...</a><br /></td></tr>
+<tr class="separator:structSceNpDrmGetRifInfoOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab78d2af5626a9b65752bdb6bb255ed36" id="r_gab78d2af5626a9b65752bdb6bb255ed36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gab78d2af5626a9b65752bdb6bb255ed36">_sceNpDrmGetRifName</a> (char *rif_name, uint64_t aid)</td></tr>
@@ -91,15 +104,30 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa0cc6989033f95dcaae0693c06d38cde" id="r_gaa0cc6989033f95dcaae0693c06d38cde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa0cc6989033f95dcaae0693c06d38cde">_sceNpDrmGetFixedRifName</a> (char *rif_name, uint64_t aid)</td></tr>
 <tr class="memdesc:gaa0cc6989033f95dcaae0693c06d38cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fixed rif name.  <br /></td></tr>
 <tr class="separator:gaa0cc6989033f95dcaae0693c06d38cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga911763a8324716d0c0041f2615a73f39" id="r_ga911763a8324716d0c0041f2615a73f39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga911763a8324716d0c0041f2615a73f39">_sceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> act_exp_time[2])</td></tr>
-<tr class="memdesc:ga911763a8324716d0c0041f2615a73f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
-<tr class="separator:ga911763a8324716d0c0041f2615a73f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf23e12f95b904f4b57139af8bbc630f" id="r_gacf23e12f95b904f4b57139af8bbc630f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gacf23e12f95b904f4b57139af8bbc630f">_sceNpDrmGetRifNameForInstall</a> (char *rif_name, const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *rif_data, int unk)</td></tr>
-<tr class="memdesc:gacf23e12f95b904f4b57139af8bbc630f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rif name for install.  <br /></td></tr>
-<tr class="separator:gacf23e12f95b904f4b57139af8bbc630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca02b6ccf1ca08ea067c589118078830" id="r_gaca02b6ccf1ca08ea067c589118078830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaca02b6ccf1ca08ea067c589118078830">scePsmDrmGetRifKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *license_buf, <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmKeySet">ScePsmDrmKeySet</a> *keydata, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmExpireTime">ScePsmDrmExpireTime</a> *exp_time)</td></tr>
-<tr class="memdesc:gaca02b6ccf1ca08ea067c589118078830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get PSM rif key.  <br /></td></tr>
-<tr class="separator:gaca02b6ccf1ca08ea067c589118078830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08e20fb160dfd81bf7531604a7bf1be5" id="r_ga08e20fb160dfd81bf7531604a7bf1be5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga08e20fb160dfd81bf7531604a7bf1be5">_sceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> opt[2])</td></tr>
+<tr class="memdesc:ga08e20fb160dfd81bf7531604a7bf1be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
+<tr class="separator:ga08e20fb160dfd81bf7531604a7bf1be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9da12922b32648cbbc8fb03ab26b522a" id="r_ga9da12922b32648cbbc8fb03ab26b522a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga9da12922b32648cbbc8fb03ab26b522a">_sceNpDrmGetRifNameForInstall</a> (char *rif_name, const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *rif_data, int is_fixed)</td></tr>
+<tr class="memdesc:ga9da12922b32648cbbc8fb03ab26b522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rif name for install.  <br /></td></tr>
+<tr class="separator:ga9da12922b32648cbbc8fb03ab26b522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae26fd4cf96d8028bc405131aeb77ec24" id="r_gae26fd4cf96d8028bc405131aeb77ec24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gae26fd4cf96d8028bc405131aeb77ec24">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a>)</td></tr>
+<tr class="separator:gae26fd4cf96d8028bc405131aeb77ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf65481aa06ff9fa84e0e2457232d05a0" id="r_gaf65481aa06ff9fa84e0e2457232d05a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaf65481aa06ff9fa84e0e2457232d05a0">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a>)</td></tr>
+<tr class="separator:gaf65481aa06ff9fa84e0e2457232d05a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3345e290921cbf373538e164f7ffac" id="r_ga6f3345e290921cbf373538e164f7ffac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga6f3345e290921cbf373538e164f7ffac">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a>)</td></tr>
+<tr class="separator:ga6f3345e290921cbf373538e164f7ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bfb7788e5e0106cc55958c7f08bdef9" id="r_ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga1bfb7788e5e0106cc55958c7f08bdef9">_sceNpDrmCheckDrmReset</a> (const void *input, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> input_size, const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a> *opt)</td></tr>
+<tr class="memdesc:ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether activation data must be reset.  <br /></td></tr>
+<tr class="separator:ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58d6e081b6fbfb7d18b263b275d5df0e" id="r_ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga58d6e081b6fbfb7d18b263b275d5df0e">_sceNpDrmGetRifInfo</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> check_sign, const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a> *opt)</td></tr>
+<tr class="memdesc:ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RIF information.  <br /></td></tr>
+<tr class="separator:ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52e394ab12cd1e41f7c2ffe9e562a75b" id="r_ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga52e394ab12cd1e41f7c2ffe9e562a75b">_sceNpDrmPresetRifProvisionalFlag</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license)</td></tr>
+<tr class="memdesc:ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the provisional flag in a RIF.  <br /></td></tr>
+<tr class="separator:ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf91adfa0c3d3ac9c74b9a4fcab8bf900" id="r_gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaf91adfa0c3d3ac9c74b9a4fcab8bf900">_sceNpDrmRemoveActData</a> (<a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id)</td></tr>
+<tr class="memdesc:gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove tm0:/npdrm/act.dat and clear the cached activation data.  <br /></td></tr>
+<tr class="separator:gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

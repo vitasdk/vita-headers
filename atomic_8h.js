@@ -80,5 +80,8 @@ var atomic_8h =
     [ "ksceKernelAtomicDecIfPositive8", "group__SceCpuKernel.html#ga8f12986b95a24739299b06406fdcfe89", null ],
     [ "ksceKernelAtomicDecIfPositive16", "group__SceCpuKernel.html#ga1453feb34330aa45b8c217b4f544aa72", null ],
     [ "ksceKernelAtomicDecIfPositive32", "group__SceCpuKernel.html#ga0c60c97df283089c27ce2a3e822341f2", null ],
-    [ "ksceKernelAtomicDecIfPositive64", "group__SceCpuKernel.html#gacf87151eae0676a79b6a21e5f6bd1e48", null ]
+    [ "ksceKernelAtomicDecIfPositive64", "group__SceCpuKernel.html#gacf87151eae0676a79b6a21e5f6bd1e48", null ],
+    [ "ksceKernelAtomicSetIfGreaterGet16", "group__SceCpuKernel.html#ga4bcfe6df991e98d7a0bb3bf15fe27a4a", null ],
+    [ "ksceKernelAtomicSetIfGreaterGet32", "group__SceCpuKernel.html#gabef2e61e385006f4caa8352d3671712d", null ],
+    [ "ksceKernelAtomicSetIfGreaterGet8", "group__SceCpuKernel.html#ga6ef4c02e382dcf717144489e238315dd", null ]
 ];

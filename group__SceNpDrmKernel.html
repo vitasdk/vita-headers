@@ -108,6 +108,83 @@ Functions</h2></td></tr>
 <tr class="separator:ga319bbc04215f2facbb1f2508cb195e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66f88e455f1020171851cc7596b13b04" id="r_ga66f88e455f1020171851cc7596b13b04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga66f88e455f1020171851cc7596b13b04">VITASDK_BUILD_ASSERT_EQ</a> (0x400, <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a>)</td></tr>
 <tr class="separator:ga66f88e455f1020171851cc7596b13b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad30e0e81da89df4e6d9fb5c746bcd6b7" id="r_gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gad30e0e81da89df4e6d9fb5c746bcd6b7">ksceNpDrmGetRifName</a> (char *name, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> aid)</td></tr>
+<tr class="memdesc:gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license file name.  <br /></td></tr>
+<tr class="separator:gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac640d16ebaf6d5c6f7277199a97f29da" id="r_gac640d16ebaf6d5c6f7277199a97f29da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gac640d16ebaf6d5c6f7277199a97f29da">ksceNpDrmGetFixedRifName</a> (char *name, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> aid)</td></tr>
+<tr class="memdesc:gac640d16ebaf6d5c6f7277199a97f29da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license file name with fixed.  <br /></td></tr>
+<tr class="separator:gac640d16ebaf6d5c6f7277199a97f29da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd56fdfcd93696aaa149c41d93c6b7b4" id="r_gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gafd56fdfcd93696aaa149c41d93c6b7b4">ksceNpDrmReadActData</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a> *act_data)</td></tr>
+<tr class="memdesc:gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current activation data.  <br /></td></tr>
+<tr class="separator:gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3340fb03a5407338ca63d643c150700d" id="r_ga3340fb03a5407338ca63d643c150700d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga3340fb03a5407338ca63d643c150700d">ksceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *act_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *act_end_time)</td></tr>
+<tr class="memdesc:ga3340fb03a5407338ca63d643c150700d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
+<tr class="separator:ga3340fb03a5407338ca63d643c150700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga008d9755b05a4668d77072d956af40a7" id="r_ga008d9755b05a4668d77072d956af40a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga008d9755b05a4668d77072d956af40a7">ksceNpDrmGetRifVitaKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, void *klicense, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, int *sku_flags, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_exp_time)</td></tr>
+<tr class="memdesc:ga008d9755b05a4668d77072d956af40a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license key info.  <br /></td></tr>
+<tr class="separator:ga008d9755b05a4668d77072d956af40a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b4f1919048d9dd4ba03ecff81056b83" id="r_ga9b4f1919048d9dd4ba03ecff81056b83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga9b4f1919048d9dd4ba03ecff81056b83">ksceNpDrmGetRifPspKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, void *klicense, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_exp_time)</td></tr>
+<tr class="memdesc:ga9b4f1919048d9dd4ba03ecff81056b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license key info for a PSP game.  <br /></td></tr>
+<tr class="separator:ga9b4f1919048d9dd4ba03ecff81056b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9a98e88a5accd4ec3c0660db3089fb0" id="r_gad9a98e88a5accd4ec3c0660db3089fb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gad9a98e88a5accd4ec3c0660db3089fb0">ksceNpDrmGetRifInfo</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size, int check_sign, char *content_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, int *license_version, int *drm_type, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, int *sku_flags, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_exp_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *rif_data_0x98)</td></tr>
+<tr class="memdesc:gad9a98e88a5accd4ec3c0660db3089fb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license info.  <br /></td></tr>
+<tr class="separator:gad9a98e88a5accd4ec3c0660db3089fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8607d04a82ec60ee499600b7ba46bb43" id="r_ga8607d04a82ec60ee499600b7ba46bb43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga8607d04a82ec60ee499600b7ba46bb43">ksceNpDrmEbootSigVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
+<tr class="memdesc:ga8607d04a82ec60ee499600b7ba46bb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a eboot.pbp signature "__sce_ebootpbp".  <br /></td></tr>
+<tr class="separator:ga8607d04a82ec60ee499600b7ba46bb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3e6b267a07852c39ec849b502514c391" id="r_ga3e6b267a07852c39ec849b502514c391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga3e6b267a07852c39ec849b502514c391">ksceNpDrmPspEbootVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
+<tr class="memdesc:ga3e6b267a07852c39ec849b502514c391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00.  <br /></td></tr>
+<tr class="separator:ga3e6b267a07852c39ec849b502514c391"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga795831c7db8e903fe0f5b34f21caef8b" id="r_ga795831c7db8e903fe0f5b34f21caef8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga795831c7db8e903fe0f5b34f21caef8b">ksceNpDrmPspEbootSigGen</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature)</td></tr>
+<tr class="memdesc:ga795831c7db8e903fe0f5b34f21caef8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00.  <br /></td></tr>
+<tr class="separator:ga795831c7db8e903fe0f5b34f21caef8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53ac7effac4a0c35e4da5c722d4c3d56" id="r_ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga53ac7effac4a0c35e4da5c722d4c3d56">ksceNpDrmEbootSigConvert</a> (const char *eboot_pbp_path, const void *old_eboot_signature, void *new_eboot_signature)</td></tr>
+<tr class="memdesc:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00.  <br /></td></tr>
+<tr class="separator:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7eb961eb8f13520c08cf7abef288158" id="r_gad7eb961eb8f13520c08cf7abef288158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gad7eb961eb8f13520c08cf7abef288158">ksceNpDrmEbootSigGenPsp</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
+<tr class="memdesc:gad7eb961eb8f13520c08cf7abef288158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game.  <br /></td></tr>
+<tr class="separator:gad7eb961eb8f13520c08cf7abef288158"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9337d12a493884eaee967b227486ca13" id="r_ga9337d12a493884eaee967b227486ca13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga9337d12a493884eaee967b227486ca13">ksceNpDrmEbootSigGenPs1</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
+<tr class="memdesc:ga9337d12a493884eaee967b227486ca13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game.  <br /></td></tr>
+<tr class="separator:ga9337d12a493884eaee967b227486ca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga67be6a70af0add5dd2fb2556b19230a5" id="r_ga67be6a70af0add5dd2fb2556b19230a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga67be6a70af0add5dd2fb2556b19230a5">ksceNpDrmEbootSigGenMultiDisc</a> (const char *eboot_pbp_path, const void *sce_discinfo, void *eboot_signature, int sw_version)</td></tr>
+<tr class="memdesc:ga67be6a70af0add5dd2fb2556b19230a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game.  <br /></td></tr>
+<tr class="separator:ga67be6a70af0add5dd2fb2556b19230a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74fe5ad167023686cd64c671aeae1938" id="r_ga74fe5ad167023686cd64c671aeae1938"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga74fe5ad167023686cd64c671aeae1938">ksceNpDrmGetLegacyDocKey</a> (const void *rif, const void *doc_edat, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> doc_edat_size, void *legacy_doc_key)</td></tr>
+<tr class="memdesc:ga74fe5ad167023686cd64c671aeae1938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a legacy PSP document key.  <br /></td></tr>
+<tr class="separator:ga74fe5ad167023686cd64c671aeae1938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga717e78bd51672762bf37145416d12316" id="r_ga717e78bd51672762bf37145416d12316"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga717e78bd51672762bf37145416d12316">ksceNpDrmGetRifNameForInstall</a> (char *rif_name, const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> is_fixed)</td></tr>
+<tr class="memdesc:ga717e78bd51672762bf37145416d12316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a RIF name for installation.  <br /></td></tr>
+<tr class="separator:ga717e78bd51672762bf37145416d12316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c3f4fbb71a65569759e7f162facbe29" id="r_ga1c3f4fbb71a65569759e7f162facbe29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga1c3f4fbb71a65569759e7f162facbe29">ksceNpDrmIsLooseAccountBind</a> (void)</td></tr>
+<tr class="separator:ga1c3f4fbb71a65569759e7f162facbe29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga575456c576650290be393a299c4cbad3" id="r_ga575456c576650290be393a299c4cbad3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga575456c576650290be393a299c4cbad3">ksceNpDrmPackageSetGameExist</a> (<a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> game_exists)</td></tr>
+<tr class="memdesc:ga575456c576650290be393a299c4cbad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether package game content exists.  <br /></td></tr>
+<tr class="separator:ga575456c576650290be393a299c4cbad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga61f6a1cfff39a992d85904ad7246068c" id="r_ga61f6a1cfff39a992d85904ad7246068c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga61f6a1cfff39a992d85904ad7246068c">ksceNpDrmPresetRifProvisionalFlag</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> enable)</td></tr>
+<tr class="memdesc:ga61f6a1cfff39a992d85904ad7246068c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or clear a RIF's provisional flag.  <br /></td></tr>
+<tr class="separator:ga61f6a1cfff39a992d85904ad7246068c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaa96fdbdba38e02720c6187442041355" id="r_gaaa96fdbdba38e02720c6187442041355"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gaaa96fdbdba38e02720c6187442041355">ksceNpDrmRemoveActData</a> (<a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id)</td></tr>
+<tr class="memdesc:gaaa96fdbdba38e02720c6187442041355"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove tm0:/npdrm/act.dat and clear the cached activation data.  <br /></td></tr>
+<tr class="separator:gaaa96fdbdba38e02720c6187442041355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa6b14849c7ac884975a8e88e9f165b2" id="r_gafa6b14849c7ac884975a8e88e9f165b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gafa6b14849c7ac884975a8e88e9f165b2">ksceNpDrmUpdateAccountId</a> (<a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> account_id)</td></tr>
+<tr class="memdesc:gafa6b14849c7ac884975a8e88e9f165b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the cached NP account ID.  <br /></td></tr>
+<tr class="separator:gafa6b14849c7ac884975a8e88e9f165b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5fb96da3cdfe1291d75df0772cf6721b" id="r_ga5fb96da3cdfe1291d75df0772cf6721b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga5fb96da3cdfe1291d75df0772cf6721b">ksceNpDrmUpdateActData</a> (void)</td></tr>
+<tr class="memdesc:ga5fb96da3cdfe1291d75df0772cf6721b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload and validate tm0:/npdrm/act.dat and refresh the cached activation keys.  <br /></td></tr>
+<tr class="separator:ga5fb96da3cdfe1291d75df0772cf6721b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa207e8b2e9dd3f327160c3a4a16eaed7" id="r_gaa207e8b2e9dd3f327160c3a4a16eaed7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gaa207e8b2e9dd3f327160c3a4a16eaed7">ksceNpDrmUpdateDebugSettings</a> (void)</td></tr>
+<tr class="memdesc:gaa207e8b2e9dd3f327160c3a4a16eaed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh the cached NPDRM debug and loose-account-binding settings.  <br /></td></tr>
+<tr class="separator:gaa207e8b2e9dd3f327160c3a4a16eaed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga46269dcf0d5ae1f76d39d185d54511a7" id="r_ga46269dcf0d5ae1f76d39d185d54511a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga46269dcf0d5ae1f76d39d185d54511a7">ksceNpDrmVerifyRif</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size)</td></tr>
+<tr class="memdesc:ga46269dcf0d5ae1f76d39d185d54511a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a RIF signature.  <br /></td></tr>
+<tr class="separator:ga46269dcf0d5ae1f76d39d185d54511a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc4da35b44f97e973c05780034ec866a" id="r_gacc4da35b44f97e973c05780034ec866a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#gacc4da35b44f97e973c05780034ec866a">ksceNpDrmVerifyRifFull</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license)</td></tr>
+<tr class="memdesc:gacc4da35b44f97e973c05780034ec866a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fully validate a RIF and update it in place.  <br /></td></tr>
+<tr class="separator:gacc4da35b44f97e973c05780034ec866a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga221cd268054facd2ec50c8d6f1fa3541" id="r_ga221cd268054facd2ec50c8d6f1fa3541"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmKernel.html#ga221cd268054facd2ec50c8d6f1fa3541">ksceNpDrmWriteActData</a> (const void *npdrm_act_data, const void *aes_dec_key)</td></tr>
+<tr class="memdesc:ga221cd268054facd2ec50c8d6f1fa3541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate and install NPDRM activation data.  <br /></td></tr>
+<tr class="separator:ga221cd268054facd2ec50c8d6f1fa3541"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -226,6 +303,16 @@ Variables</h2></td></tr>
 </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2npdrm_8h.html">psp2common/npdrm.h</a>&gt;</span> </div>
 <div class="ttc" id="apsp2common_2npdrm_8h_html"><div class="ttname"><a href="psp2common_2npdrm_8h.html">npdrm.h</a></div></div>
 </div><!-- fragment --><p><br  />
+ </p><hr  />
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2npdrm_8h.html">psp2kern/npdrm.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2kern_2npdrm_8h_html"><div class="ttname"><a href="psp2kern_2npdrm_8h.html">npdrm.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ Link the library to the executable:<br  />
+</p><div class="fragment"><div class="line">SceNpDrmForDriver_stub </div>
+</div><!-- fragment --><p> <br  />
  </p><hr  />
  <hr/><h2 class="groupheader">Data Structure Documentation</h2>
 <a name="structScePsmDrmKeySet" id="structScePsmDrmKeySet"></a>
@@ -769,6 +856,1107 @@ rsa_signature[0x100]</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad30e0e81da89df4e6d9fb5c746bcd6b7" name="gad30e0e81da89df4e6d9fb5c746bcd6b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad30e0e81da89df4e6d9fb5c746bcd6b7">&#9670;&#160;</a></span>ksceNpDrmGetRifName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetRifName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
+          <td class="paramname"><em>aid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get license file name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- The pointer of license file name output buffer. size is 0x30. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- The license account id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gac640d16ebaf6d5c6f7277199a97f29da" name="gac640d16ebaf6d5c6f7277199a97f29da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac640d16ebaf6d5c6f7277199a97f29da">&#9670;&#160;</a></span>ksceNpDrmGetFixedRifName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetFixedRifName </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
+          <td class="paramname"><em>aid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get license file name with fixed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- The pointer of license file name output buffer. size is 0x30. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- The license account id</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gafd56fdfcd93696aaa149c41d93c6b7b4" name="gafd56fdfcd93696aaa149c41d93c6b7b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafd56fdfcd93696aaa149c41d93c6b7b4">&#9670;&#160;</a></span>ksceNpDrmReadActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmReadActData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a> *&#160;</td>
+          <td class="paramname"><em>act_data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get current activation data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">act_data</td><td>- The pointer of output activation data see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a>. if ecdsa or rsa verify fail, will be all 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga3340fb03a5407338ca63d643c150700d" name="ga3340fb03a5407338ca63d643c150700d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3340fb03a5407338ca63d643c150700d">&#9670;&#160;</a></span>ksceNpDrmCheckActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmCheckActData </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>act_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>version_flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>account_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>act_start_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>act_end_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check you have npdrm activation data, and get information from it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">act_type</td><td>- The pointer of activation type output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">version_flag</td><td>- The pointer of version flag output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- The pointer of activated account id output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">act_start_time</td><td>- The pointer of activation data start time output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">act_end_time</td><td>- Activation data expiration time output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga008d9755b05a4668d77072d956af40a7" name="ga008d9755b05a4668d77072d956af40a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga008d9755b05a4668d77072d956af40a7">&#9670;&#160;</a></span>ksceNpDrmGetRifVitaKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetRifVitaKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>klicense</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sku_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_start_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_exp_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get license key info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">klicense</td><td>- The pointer of klicense output buffer. size is 0x10. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sku_flags</td><td>- The pointer of sku flags output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- The pointer of license start time output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- The pointer of license exp time output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga9b4f1919048d9dd4ba03ecff81056b83" name="ga9b4f1919048d9dd4ba03ecff81056b83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b4f1919048d9dd4ba03ecff81056b83">&#9670;&#160;</a></span>ksceNpDrmGetRifPspKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetRifPspKey </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>klicense</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_start_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_exp_time</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get license key info for a PSP game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">klicense</td><td>- The pointer of klicense output buffer. size is 0x10. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- The pointer of license start time output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- The pointer of license exp time output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gad9a98e88a5accd4ec3c0660db3089fb0" name="gad9a98e88a5accd4ec3c0660db3089fb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad9a98e88a5accd4ec3c0660db3089fb0">&#9670;&#160;</a></span>ksceNpDrmGetRifInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetRifInfo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>license_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>check_sign</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>content_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>account_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>license_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>drm_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>sku_flags</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_start_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *&#160;</td>
+          <td class="paramname"><em>lic_exp_time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>rif_data_0x98</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get license info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- Required <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> structure. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license_size</td><td>- Set to 0x200. FW 3.60 still reads the complete RIF when a smaller value is supplied. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">check_sign</td><td>- Set to 1 to check the RIF signature. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">content_id</td><td>- Optional 0x30-byte content ID output buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- Optional license account ID output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">license_version</td><td>- Optional license version output; receives a <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">drm_type</td><td>- Optional DRM type output; receives a <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- Optional derived license flags output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sku_flags</td><td>- Optional SKU flags output. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- Optional license start time output; receives a <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- Optional license expiration time output; receives a <a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> value. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_data_0x98</td><td>- Optional raw 8-byte RIF field output.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga8607d04a82ec60ee499600b7ba46bb43" name="ga8607d04a82ec60ee499600b7ba46bb43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8607d04a82ec60ee499600b7ba46bb43">&#9670;&#160;</a></span>ksceNpDrmEbootSigVerify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigVerify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify a eboot.pbp signature "__sce_ebootpbp". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x200</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga3e6b267a07852c39ec849b502514c391" name="ga3e6b267a07852c39ec849b502514c391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3e6b267a07852c39ec849b502514c391">&#9670;&#160;</a></span>ksceNpDrmPspEbootVerify()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPspEbootVerify </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x100</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga795831c7db8e903fe0f5b34f21caef8b" name="ga795831c7db8e903fe0f5b34f21caef8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga795831c7db8e903fe0f5b34f21caef8b">&#9670;&#160;</a></span>ksceNpDrmPspEbootSigGen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPspEbootSigGen </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga53ac7effac4a0c35e4da5c722d4c3d56" name="ga53ac7effac4a0c35e4da5c722d4c3d56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga53ac7effac4a0c35e4da5c722d4c3d56">&#9670;&#160;</a></span>ksceNpDrmEbootSigConvert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigConvert </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>old_eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>new_eboot_signature</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">old_eboot_signature</td><td>- The pointer of old eboot signature data. size is 0x100 </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">new_eboot_signature</td><td>- The pointer of new eboot signature data. size is 0x200</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gad7eb961eb8f13520c08cf7abef288158" name="gad7eb961eb8f13520c08cf7abef288158"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad7eb961eb8f13520c08cf7abef288158">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenPsp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigGenPsp </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga9337d12a493884eaee967b227486ca13" name="ga9337d12a493884eaee967b227486ca13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9337d12a493884eaee967b227486ca13">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenPs1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigGenPs1 </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>eboot_sha256</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga67be6a70af0add5dd2fb2556b19230a5" name="ga67be6a70af0add5dd2fb2556b19230a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga67be6a70af0add5dd2fb2556b19230a5">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenMultiDisc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmEbootSigGenMultiDisc </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>eboot_pbp_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>sce_discinfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>eboot_signature</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sw_version</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sce_discinfo</td><td>- The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga74fe5ad167023686cd64c671aeae1938" name="ga74fe5ad167023686cd64c671aeae1938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga74fe5ad167023686cd64c671aeae1938">&#9670;&#160;</a></span>ksceNpDrmGetLegacyDocKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetLegacyDocKey </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>rif</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>doc_edat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>doc_edat_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>legacy_doc_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a legacy PSP document key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rif</td><td>- RIF data. This is only read when required by the document header. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doc_edat</td><td>- Required document EDAT data with a PSPEDAT header; at least 0x90 bytes </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">doc_edat_size</td><td>- Size of the document EDAT data </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">legacy_doc_key</td><td>- Required legacy document key output buffer (0x10 bytes)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga717e78bd51672762bf37145416d12316" name="ga717e78bd51672762bf37145416d12316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga717e78bd51672762bf37145416d12316">&#9670;&#160;</a></span>ksceNpDrmGetRifNameForInstall()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmGetRifNameForInstall </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>rif_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>is_fixed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a RIF name for installation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- Required RIF name buffer (0x30 bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- Required <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> structure </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_fixed</td><td>- Set to 0 to derive the name from the RIF content ID, or 1 to request the fixed account-based name</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga1c3f4fbb71a65569759e7f162facbe29" name="ga1c3f4fbb71a65569759e7f162facbe29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c3f4fbb71a65569759e7f162facbe29">&#9670;&#160;</a></span>ksceNpDrmIsLooseAccountBind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> ksceNpDrmIsLooseAccountBind </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> when loose account binding is enabled, otherwise <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a905def7c2528ee21e546716ec3ea247b">SCE_FALSE</a>. </dd></dl>
+
+</div>
+</div>
+<a id="ga575456c576650290be393a299c4cbad3" name="ga575456c576650290be393a299c4cbad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga575456c576650290be393a299c4cbad3">&#9670;&#160;</a></span>ksceNpDrmPackageSetGameExist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPackageSetGameExist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>game_exists</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether package game content exists. </p>
+<p>FW 3.60 stores the value unchanged. Observed AppMgr callers use 0 or 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">game_exists</td><td>- Value indicating whether package game content exists</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0. </dd></dl>
+
+</div>
+</div>
+<a id="ga61f6a1cfff39a992d85904ad7246068c" name="ga61f6a1cfff39a992d85904ad7246068c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga61f6a1cfff39a992d85904ad7246068c">&#9670;&#160;</a></span>ksceNpDrmPresetRifProvisionalFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmPresetRifProvisionalFlag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
+          <td class="paramname"><em>enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set or clear a RIF's provisional flag. </p>
+<p>The existing signature is validated with the provisional bit normalized.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">license</td><td>- RIF to update </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>- <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> to set the provisional flag, or <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a905def7c2528ee21e546716ec3ea247b">SCE_FALSE</a> to clear it</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaaa96fdbdba38e02720c6187442041355" name="gaaa96fdbdba38e02720c6187442041355"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa96fdbdba38e02720c6187442041355">&#9670;&#160;</a></span>ksceNpDrmRemoveActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmRemoveActData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
+          <td class="paramname"><em>account_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove tm0:/npdrm/act.dat and clear the cached activation data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- Optional account ID from the removed activation data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gafa6b14849c7ac884975a8e88e9f165b2" name="gafa6b14849c7ac884975a8e88e9f165b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa6b14849c7ac884975a8e88e9f165b2">&#9670;&#160;</a></span>ksceNpDrmUpdateAccountId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmUpdateAccountId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
+          <td class="paramname"><em>account_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the cached NP account ID. </p>
+<p>A zero value reloads the account ID from the registry.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">account_id</td><td>- Account ID to cache, or 0 to reload it from the registry</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga5fb96da3cdfe1291d75df0772cf6721b" name="ga5fb96da3cdfe1291d75df0772cf6721b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5fb96da3cdfe1291d75df0772cf6721b">&#9670;&#160;</a></span>ksceNpDrmUpdateActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmUpdateActData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reload and validate tm0:/npdrm/act.dat and refresh the cached activation keys. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaa207e8b2e9dd3f327160c3a4a16eaed7" name="gaa207e8b2e9dd3f327160c3a4a16eaed7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa207e8b2e9dd3f327160c3a4a16eaed7">&#9670;&#160;</a></span>ksceNpDrmUpdateDebugSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmUpdateDebugSettings </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refresh the cached NPDRM debug and loose-account-binding settings. </p>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga46269dcf0d5ae1f76d39d185d54511a7" name="ga46269dcf0d5ae1f76d39d185d54511a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46269dcf0d5ae1f76d39d185d54511a7">&#9670;&#160;</a></span>ksceNpDrmVerifyRif()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmVerifyRif </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>license_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify a RIF signature. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- Required RIF data (0x200 bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license_size</td><td>- Set to 0x200. FW 3.60 still reads the complete RIF when a smaller value is supplied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gacc4da35b44f97e973c05780034ec866a" name="gacc4da35b44f97e973c05780034ec866a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc4da35b44f97e973c05780034ec866a">&#9670;&#160;</a></span>ksceNpDrmVerifyRifFull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmVerifyRifFull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fully validate a RIF and update it in place. </p>
+<p>On FW 3.60, the function may decrypt and move the RIF key and clear the trailing RIF fields on success.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">license</td><td>- Required RIF data (0x200 bytes)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga221cd268054facd2ec50c8d6f1fa3541" name="ga221cd268054facd2ec50c8d6f1fa3541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga221cd268054facd2ec50c8d6f1fa3541">&#9670;&#160;</a></span>ksceNpDrmWriteActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceNpDrmWriteActData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>npdrm_act_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>aes_dec_key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate and install NPDRM activation data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">npdrm_act_data</td><td>- Activation data (0x1040 bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">aes_dec_key</td><td>- Optional 0x10-byte AES key used to decrypt the activation data before validation</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
 
 </div>
 </div>

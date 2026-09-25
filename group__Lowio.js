@@ -1,6 +1,7 @@
 var group__Lowio =
 [
     [ "GPIO Library", "group__SceGpio.html", "group__SceGpio" ],
+    [ "Grab Library", "group__SceGrab.html", "group__SceGrab" ],
     [ "I2C Library", "group__SceI2c.html", "group__SceI2c" ],
     [ "Pervasive Library", "group__ScePervasive.html", "group__ScePervasive" ],
     [ "Syscon communication Library", "group__SceSyscon.html", "group__SceSyscon" ],

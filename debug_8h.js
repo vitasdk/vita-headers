@@ -20,6 +20,8 @@ var debug_8h =
     [ "ksceDebugGetPutcharHandler", "group__SceKernelDebugKernel.html#gaa79f1d60a20c2b04c06b79bdaddace3f", null ],
     [ "ksceDebugDisableInfoDump", "group__SceKernelDebugKernel.html#ga82b654c40e5d1382a1d3b3e472effc10", null ],
     [ "ksceKernelSetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#gad895a9ab0e5f0cfa50076e9a97f6b7a0", null ],
+    [ "k_sceEventLogPut", "group__SceKernelDebugKernel.html#gacf19268541781f5b4209c1baf1c22fa5", null ],
+    [ "_ksceEventLogPut", "group__SceKernelDebugKernel.html#ga01cedeb785109fb21dc447bd3cbae47b", null ],
     [ "SceKernelDebugMessageContext", "group__SceKernelDebugKernel.html#gaab14753e5eabbb0f629bb801f6bd122d", null ],
     [ "SceKernelDebugInfoFlags", "group__SceKernelDebugKernel.html#gabc469e837a77bbb42a745ee946d86b5a", [
       [ "SCE_KERNEL_DEBUG_INFO_FLAG_NONE", "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2", null ],
@@ -63,6 +65,8 @@ var debug_8h =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga58aa337c03028c09e96f3222bf2be27c", null ],
     [ "ksceEventLogGetInfo", "group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec", null ],
     [ "ksceKernelGetTtyInfo", "group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa", null ],
+    [ "ksceEventLogPutForCurrentThread", "group__SceKernelDebugKernel.html#gafc9594c6b4a4cc87e0744e642415dbeb", null ],
+    [ "ksceEventLogPut", "group__SceKernelDebugKernel.html#ga932763831b9cf169967d2cbf88ac1189", null ],
     [ "lr", "group__SceKernelDebugKernel.html#gadeabf200deeba6699379f4d9133e635f", null ],
     [ "fmt", "group__SceKernelDebugKernel.html#gaf8f6d9099e91549db0d2a95a3e92ce34", null ],
     [ "data_0x40", "group__SceKernelDebugKernel.html#ga3599c491def66b17f07270abb729fd86", null ],

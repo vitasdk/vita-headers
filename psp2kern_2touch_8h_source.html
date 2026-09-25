@@ -84,22 +84,31 @@ $(document).ready(function(){initNavTree('psp2kern_2touch_8h_source.html',''); i
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#ifndef _PSP2KERN_TOUCH_H_</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#define _PSP2KERN_TOUCH_H_</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2types_8h.html">psp2kern/types.h</a>&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">   24</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">ksceTouchSetEnableFlag</a>(<a class="code hl_typedef" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="code hl_typedef" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> enable);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif </span><span class="comment">/* _PSP2KERN_TOUCH_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2touch_8h.html">psp2common/touch.h</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2types_8h.html">psp2kern/types.h</a>&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">   25</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">ksceTouchSetEnableFlag</a>(<a class="code hl_typedef" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="code hl_typedef" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> enable);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="group__SceTouchKernel.html#ga4d2d4c850d52c106e8e56f8729cd2784">   41</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__SceTouchKernel.html#ga4d2d4c850d52c106e8e56f8729cd2784">ksceTouchGetDeviceInfo</a>(<a class="code hl_typedef" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> panel, <a class="code hl_struct" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a> *info);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__SceTouchKernel.html#ga0c8c89e2f36ea129f8042da38efeb676">   56</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="group__SceTouchKernel.html#ga0c8c89e2f36ea129f8042da38efeb676">ksceTouchSetTouchEmulationData</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *front_data, <span class="keyword">const</span> <span class="keywordtype">void</span> *back_data);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#endif </span><span class="comment">/* _PSP2KERN_TOUCH_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="agroup__SceTouchKernel_html_ga0c8c89e2f36ea129f8042da38efeb676"><div class="ttname"><a href="group__SceTouchKernel.html#ga0c8c89e2f36ea129f8042da38efeb676">ksceTouchSetTouchEmulationData</a></div><div class="ttdeci">int ksceTouchSetTouchEmulationData(const void *front_data, const void *back_data)</div><div class="ttdoc">Set front and back touch-emulation data.</div></div>
+<div class="ttc" id="agroup__SceTouchKernel_html_ga4d2d4c850d52c106e8e56f8729cd2784"><div class="ttname"><a href="group__SceTouchKernel.html#ga4d2d4c850d52c106e8e56f8729cd2784">ksceTouchGetDeviceInfo</a></div><div class="ttdeci">int ksceTouchGetDeviceInfo(SceUInt32 panel, SceTouchDeviceInfo *info)</div><div class="ttdoc">Get touch-panel device information.</div></div>
 <div class="ttc" id="agroup__SceTouchKernel_html_gaa839f0f3bd629e27ccc170d76389d06e"><div class="ttname"><a href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">ksceTouchSetEnableFlag</a></div><div class="ttdeci">int ksceTouchSetEnableFlag(SceUInt32 port, SceBool enable)</div><div class="ttdoc">Set touch enable flag.</div></div>
+<div class="ttc" id="agroup__SceTouchKernel_html_structSceTouchDeviceInfo"><div class="ttname"><a href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a></div><div class="ttdoc">Cached touch-panel identity and firmware information.</div><div class="ttdef"><b>Definition</b> touch.h:25</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_ga492e1dc38bbe2713a4c93c64ec127d13"><div class="ttname"><a href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a></div><div class="ttdeci">int SceBool</div><div class="ttdef"><b>Definition</b> types.h:59</div></div>
 <div class="ttc" id="agroup__SceTypesKernel_html_gab5754ec0168b4b65a5334d9ddada460a"><div class="ttname"><a href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></div><div class="ttdeci">uint32_t SceUInt32</div><div class="ttdef"><b>Definition</b> types.h:45</div></div>
+<div class="ttc" id="apsp2common_2touch_8h_html"><div class="ttname"><a href="psp2common_2touch_8h.html">touch.h</a></div></div>
 <div class="ttc" id="apsp2kern_2types_8h_html"><div class="ttname"><a href="psp2kern_2types_8h.html">types.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

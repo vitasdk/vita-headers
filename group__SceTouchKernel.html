@@ -73,7 +73,9 @@ $(document).ready(function(){initNavTree('group__SceTouchKernel.html',''); initR
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Kernel<div class="ingroups"><a class="el" href="group__Input.html">Input</a> &raquo; <a class="el" href="group__SceTouch.html">Touch Library</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -81,14 +83,56 @@ $(document).ready(function(){initNavTree('group__SceTouchKernel.html',''); initR
 <p>Exports for Kernel.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceTouchDeviceInfo" id="r_structSceTouchDeviceInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a></td></tr>
+<tr class="memdesc:structSceTouchDeviceInfo"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached touch-panel identity and firmware information.  <a href="group__SceTouchKernel.html#structSceTouchDeviceInfo">More...</a><br /></td></tr>
+<tr class="separator:structSceTouchDeviceInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga029a7743f86d87d83da34d70d4b3271c" id="r_ga029a7743f86d87d83da34d70d4b3271c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga029a7743f86d87d83da34d70d4b3271c">VITASDK_BUILD_ASSERT_EQ</a> (0xC, <a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a>)</td></tr>
+<tr class="separator:ga029a7743f86d87d83da34d70d4b3271c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa839f0f3bd629e27ccc170d76389d06e" id="r_gaa839f0f3bd629e27ccc170d76389d06e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#gaa839f0f3bd629e27ccc170d76389d06e">ksceTouchSetEnableFlag</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> port, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> enable)</td></tr>
 <tr class="memdesc:gaa839f0f3bd629e27ccc170d76389d06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set touch enable flag.  <br /></td></tr>
 <tr class="separator:gaa839f0f3bd629e27ccc170d76389d06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d2d4c850d52c106e8e56f8729cd2784" id="r_ga4d2d4c850d52c106e8e56f8729cd2784"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga4d2d4c850d52c106e8e56f8729cd2784">ksceTouchGetDeviceInfo</a> (<a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> panel, <a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a> *info)</td></tr>
+<tr class="memdesc:ga4d2d4c850d52c106e8e56f8729cd2784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get touch-panel device information.  <br /></td></tr>
+<tr class="separator:ga4d2d4c850d52c106e8e56f8729cd2784"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c8c89e2f36ea129f8042da38efeb676" id="r_ga0c8c89e2f36ea129f8042da38efeb676"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga0c8c89e2f36ea129f8042da38efeb676">ksceTouchSetTouchEmulationData</a> (const void *front_data, const void *back_data)</td></tr>
+<tr class="memdesc:ga0c8c89e2f36ea129f8042da38efeb676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set front and back touch-emulation data.  <br /></td></tr>
+<tr class="separator:ga0c8c89e2f36ea129f8042da38efeb676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gaf42555ea0568a5e77f59c29f1c93514e" id="r_gaf42555ea0568a5e77f59c29f1c93514e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#gaf42555ea0568a5e77f59c29f1c93514e">SceTouchDeviceInfo::vendor_id</a></td></tr>
+<tr class="memdesc:gaf42555ea0568a5e77f59c29f1c93514e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Touch-controller vendor ID.  <br /></td></tr>
+<tr class="separator:gaf42555ea0568a5e77f59c29f1c93514e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c4083da6c95aff088d8b682ef189cf4" id="r_ga4c4083da6c95aff088d8b682ef189cf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga4c4083da6c95aff088d8b682ef189cf4">SceTouchDeviceInfo::firmware_rev</a></td></tr>
+<tr class="memdesc:ga4c4083da6c95aff088d8b682ef189cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller firmware revision.  <br /></td></tr>
+<tr class="separator:ga4c4083da6c95aff088d8b682ef189cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga790f7092cf0d14fc7373d25764bd37f9" id="r_ga790f7092cf0d14fc7373d25764bd37f9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga790f7092cf0d14fc7373d25764bd37f9">SceTouchDeviceInfo::config_rev</a></td></tr>
+<tr class="memdesc:ga790f7092cf0d14fc7373d25764bd37f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Controller configuration revision.  <br /></td></tr>
+<tr class="separator:ga790f7092cf0d14fc7373d25764bd37f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7a130b4bbc2cd5a4e2fc809e54d1112b" id="r_ga7a130b4bbc2cd5a4e2fc809e54d1112b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga7a130b4bbc2cd5a4e2fc809e54d1112b">SceTouchDeviceInfo::hw_version</a></td></tr>
+<tr class="memdesc:ga7a130b4bbc2cd5a4e2fc809e54d1112b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hardware version used for firmware compatibility.  <br /></td></tr>
+<tr class="separator:ga7a130b4bbc2cd5a4e2fc809e54d1112b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e36886c79ee3e9fba0f90c783af7c8a" id="r_ga5e36886c79ee3e9fba0f90c783af7c8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga5e36886c79ee3e9fba0f90c783af7c8a">SceTouchDeviceInfo::vendor_info</a></td></tr>
+<tr class="memdesc:ga5e36886c79ee3e9fba0f90c783af7c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vendor-specific value used for firmware compatibility.  <br /></td></tr>
+<tr class="separator:ga5e36886c79ee3e9fba0f90c783af7c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga066b14f89b5a7f403318d46b5456283f" id="r_ga066b14f89b5a7f403318d46b5456283f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceTouchKernel.html#ga066b14f89b5a7f403318d46b5456283f">SceTouchDeviceInfo::reserved</a> [4]</td></tr>
+<tr class="memdesc:ga066b14f89b5a7f403318d46b5456283f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set to zero on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga066b14f89b5a7f403318d46b5456283f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for Kernel. </p>
+<hr  />
+<h3>Using this library in your project </h3>
+<p>Include the header file in your project:<br  />
+</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2common_2touch_8h.html">psp2common/touch.h</a>&gt;</span> </div>
+<div class="ttc" id="apsp2common_2touch_8h_html"><div class="ttname"><a href="psp2common_2touch_8h.html">touch.h</a></div></div>
+</div><!-- fragment --><p><br  />
+ </p><hr  />
 <hr  />
 <h3>Using this library in your project </h3>
 <p>Include the header file in your project:<br  />
@@ -99,7 +143,91 @@ Functions</h2></td></tr>
 </p><div class="fragment"><div class="line">SceTouchForDriver_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
- <h2 class="groupheader">Function Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceTouchDeviceInfo" id="structSceTouchDeviceInfo"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceTouchDeviceInfo">&#9670;&#160;</a></span>SceTouchDeviceInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceTouchDeviceInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Cached touch-panel identity and firmware information. </p>
+<p>On FW 3.60, the extended Syscon record supplies the first eight bytes. The legacy path supplies the vendor and firmware revisions, obtains the configuration revision separately when supported, and leaves the hardware version and vendor information at zero. The public and kernel getters always set <a class="el" href="group__SceTouchKernel.html#ga066b14f89b5a7f403318d46b5456283f" title="Set to zero on FW 3.60.">SceTouchDeviceInfo::reserved</a> to zero. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaf42555ea0568a5e77f59c29f1c93514e" name="gaf42555ea0568a5e77f59c29f1c93514e"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
+<td class="fieldname">
+vendor_id</td>
+<td class="fielddoc">
+Touch-controller vendor ID. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga4c4083da6c95aff088d8b682ef189cf4" name="ga4c4083da6c95aff088d8b682ef189cf4"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
+<td class="fieldname">
+firmware_rev</td>
+<td class="fielddoc">
+Controller firmware revision. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga790f7092cf0d14fc7373d25764bd37f9" name="ga790f7092cf0d14fc7373d25764bd37f9"></a><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a></td>
+<td class="fieldname">
+config_rev</td>
+<td class="fielddoc">
+Controller configuration revision. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7a130b4bbc2cd5a4e2fc809e54d1112b" name="ga7a130b4bbc2cd5a4e2fc809e54d1112b"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
+<td class="fieldname">
+hw_version</td>
+<td class="fielddoc">
+Hardware version used for firmware compatibility. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga5e36886c79ee3e9fba0f90c783af7c8a" name="ga5e36886c79ee3e9fba0f90c783af7c8a"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
+<td class="fieldname">
+vendor_info</td>
+<td class="fielddoc">
+Vendor-specific value used for firmware compatibility. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga066b14f89b5a7f403318d46b5456283f" name="ga066b14f89b5a7f403318d46b5456283f"></a><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a></td>
+<td class="fieldname">
+reserved[4]</td>
+<td class="fielddoc">
+Set to zero on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga029a7743f86d87d83da34d70d4b3271c" name="ga029a7743f86d87d83da34d70d4b3271c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga029a7743f86d87d83da34d70d4b3271c">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0xC&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaa839f0f3bd629e27ccc170d76389d06e" name="gaa839f0f3bd629e27ccc170d76389d06e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa839f0f3bd629e27ccc170d76389d06e">&#9670;&#160;</a></span>ksceTouchSetEnableFlag()</h2>
 
@@ -135,6 +263,181 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 on success. &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga4d2d4c850d52c106e8e56f8729cd2784" name="ga4d2d4c850d52c106e8e56f8729cd2784"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4d2d4c850d52c106e8e56f8729cd2784">&#9670;&#160;</a></span>ksceTouchGetDeviceInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceTouchGetDeviceInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td>
+          <td class="paramname"><em>panel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceTouchKernel.html#structSceTouchDeviceInfo">SceTouchDeviceInfo</a> *&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get touch-panel device information. </p>
+<p>The complete output is cleared to zero, then filled from the selected panel's cached information while CPU interrupts are suspended and the Touch state spinlock is held. The panel does not need to be actively sampling.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">panel</td><td>- One of <a class="el" href="group__SceTouchUser.html#gacb91e7a44b807be507daf8073f4712a6" title="Port numbers of touch panels.">SceTouchPortType</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">info</td><td>- Receives the complete 0xC-byte device-information record.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or <a class="el" href="group__SceTouchUser.html#gga3772c556df8f755f345d8f2c09807ae0a794c9c4aae4007e3405876854b994608">SCE_TOUCH_ERROR_INVALID_ARG</a> if <em>panel</em> is not <a class="el" href="group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a0d2580e55567d3c921b1031a4684f6a7" title="Front touch panel id.">SCE_TOUCH_PORT_FRONT</a> or <a class="el" href="group__SceTouchUser.html#ggacb91e7a44b807be507daf8073f4712a6a2e861439acd3722f5c25f1a13e0b8758" title="Back touch panel id.">SCE_TOUCH_PORT_BACK</a>, or if <em>info</em> is NULL. </dd></dl>
+
+</div>
+</div>
+<a id="ga0c8c89e2f36ea129f8042da38efeb676" name="ga0c8c89e2f36ea129f8042da38efeb676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0c8c89e2f36ea129f8042da38efeb676">&#9670;&#160;</a></span>ksceTouchSetTouchEmulationData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceTouchSetTouchEmulationData </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>front_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>back_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set front and back touch-emulation data. </p>
+<p>Each argument may be NULL. A non-NULL argument points to one 0x90-byte <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a> structure for the corresponding panel. On FW 3.60, this function ignores both arguments: it does not read, retain, or modify either structure.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">front_data</td><td>- Optional pointer to a front-panel <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">back_data</td><td>- Optional pointer to a back-panel <a class="el" href="group__SceTouchUser.html#structSceTouchData">SceTouchData</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Always 0 on FW 3.60, including when both pointers are NULL. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gaf42555ea0568a5e77f59c29f1c93514e" name="gaf42555ea0568a5e77f59c29f1c93514e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf42555ea0568a5e77f59c29f1c93514e">&#9670;&#160;</a></span>vendor_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceTouchDeviceInfo::vendor_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Touch-controller vendor ID. </p>
+
+</div>
+</div>
+<a id="ga4c4083da6c95aff088d8b682ef189cf4" name="ga4c4083da6c95aff088d8b682ef189cf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4c4083da6c95aff088d8b682ef189cf4">&#9670;&#160;</a></span>firmware_rev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceTouchDeviceInfo::firmware_rev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controller firmware revision. </p>
+
+</div>
+</div>
+<a id="ga790f7092cf0d14fc7373d25764bd37f9" name="ga790f7092cf0d14fc7373d25764bd37f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga790f7092cf0d14fc7373d25764bd37f9">&#9670;&#160;</a></span>config_rev</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga9ba3444bf1f90ebc7ae89612c0d1de6a">SceUInt16</a> SceTouchDeviceInfo::config_rev</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Controller configuration revision. </p>
+
+</div>
+</div>
+<a id="ga7a130b4bbc2cd5a4e2fc809e54d1112b" name="ga7a130b4bbc2cd5a4e2fc809e54d1112b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7a130b4bbc2cd5a4e2fc809e54d1112b">&#9670;&#160;</a></span>hw_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceTouchDeviceInfo::hw_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hardware version used for firmware compatibility. </p>
+
+</div>
+</div>
+<a id="ga5e36886c79ee3e9fba0f90c783af7c8a" name="ga5e36886c79ee3e9fba0f90c783af7c8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e36886c79ee3e9fba0f90c783af7c8a">&#9670;&#160;</a></span>vendor_info</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceTouchDeviceInfo::vendor_info</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vendor-specific value used for firmware compatibility. </p>
+
+</div>
+</div>
+<a id="ga066b14f89b5a7f403318d46b5456283f" name="ga066b14f89b5a7f403318d46b5456283f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga066b14f89b5a7f403318d46b5456283f">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> SceTouchDeviceInfo::reserved[4]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set to zero on FW 3.60. </p>
 
 </div>
 </div>

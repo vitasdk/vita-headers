@@ -32,5 +32,11 @@ var aimgr_8h =
     [ "ksceSblAimgrIsVITA", "group__SceSblAIMgrKernel.html#ga01f8a4b3e401c4166741af847d4004c6", null ],
     [ "ksceSblAimgrIsDolce", "group__SceSblAIMgrKernel.html#ga84044504ce4d497b3a491635101f7d47", null ],
     [ "ksceSblAimgrIsGenuineVITA", "group__SceSblAIMgrKernel.html#ga42bea7d6eab1d6bda41b9d4f772b1c01", null ],
-    [ "ksceSblAimgrIsGenuineDolce", "group__SceSblAIMgrKernel.html#gaf500c657107e066484753880936075f5", null ]
+    [ "ksceSblAimgrIsGenuineDolce", "group__SceSblAIMgrKernel.html#gaf500c657107e066484753880936075f5", null ],
+    [ "ksceSblAimgrIsJapaneseFat", "group__SceSblAIMgrKernel.html#gace65ca665782db24e6434fe3dedb0c36", null ],
+    [ "ksceSblAimgrIsPrototypeRev2", "group__SceSblAIMgrKernel.html#gaaa6fcee77b14d8080cc7195f1b7d96a9", null ],
+    [ "ksceSblAimgrIsPrototypeRev7", "group__SceSblAIMgrKernel.html#ga0ba8c973715e675a7f67f7f45e5ec5f2", null ],
+    [ "ksceSblAimgrIsToolRev3", "group__SceSblAIMgrKernel.html#gae80e5ac0bc8f78fe56f1e4e6b30e903c", null ],
+    [ "ksceSblAimgrIsToolRev4", "group__SceSblAIMgrKernel.html#ga378baf928e09bcf10a47d468f1f9efb2", null ],
+    [ "ksceSblAimgrIsToolRev5", "group__SceSblAIMgrKernel.html#ga7b17a6404626f499f4cf07a8274ffb30", null ]
 ];

@@ -8,9 +8,10 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "acmgr.h", "acmgr_8h.html", "acmgr_8h" ],
     [ "aimgr.h", "aimgr_8h.html", "aimgr_8h" ],
     [ "authmgr.h", "authmgr_8h.html", "authmgr_8h" ],
+    [ "backtrace.h", "ern_2kernel_2backtrace_8h.html", "ern_2kernel_2backtrace_8h" ],
     [ "cpu.h", "ern_2kernel_2cpu_8h.html", "ern_2kernel_2cpu_8h" ],
     [ "debug.h", "debug_8h.html", "debug_8h" ],
-    [ "debugled.h", "debugled_8h.html", "debugled_8h" ],
+    [ "debugled.h", "ern_2kernel_2debugled_8h.html", "ern_2kernel_2debugled_8h" ],
     [ "dipsw.h", "dipsw_8h.html", "dipsw_8h" ],
     [ "dmac.h", "ern_2kernel_2dmac_8h.html", "ern_2kernel_2dmac_8h" ],
     [ "excpmgr.h", "excpmgr_8h.html", "excpmgr_8h" ],
@@ -25,6 +26,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "rtc.h", "psp2kern_2kernel_2rtc_8h.html", "psp2kern_2kernel_2rtc_8h" ],
     [ "sdif.h", "sdif_8h.html", "sdif_8h" ],
     [ "sm_comm.h", "sm__comm_8h.html", "sm__comm_8h" ],
+    [ "sm_sched.h", "sm__sched_8h.html", "sm__sched_8h" ],
     [ "ssmgr.h", "ssmgr_8h.html", "ssmgr_8h" ],
     [ "suspend.h", "suspend_8h.html", "suspend_8h" ],
     [ "sysclib.h", "sysclib_8h.html", "sysclib_8h" ],
@@ -32,7 +34,7 @@ var dir_ec7ce0decaf119d3f3f03563c1567600 =
     [ "sysmem.h", "ern_2kernel_2sysmem_8h.html", "ern_2kernel_2sysmem_8h" ],
     [ "sysroot.h", "sysroot_8h.html", "sysroot_8h" ],
     [ "systimer.h", "systimer_8h.html", "systimer_8h" ],
-    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", null ],
+    [ "threadmgr.h", "ern_2kernel_2threadmgr_8h.html", "ern_2kernel_2threadmgr_8h" ],
     [ "uart.h", "uart_8h.html", "uart_8h" ],
     [ "utils.h", "psp2kern_2kernel_2utils_8h.html", "psp2kern_2kernel_2utils_8h" ]
 ];

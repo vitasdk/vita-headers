@@ -37,5 +37,10 @@ var sysclib_8h =
     [ "__memmove_chk", "group__SceSysclibKernel.html#gae41e3dec6064546b0af29cbde6624ba3", null ],
     [ "__strncpy_chk", "group__SceSysclibKernel.html#ga6a95c6d7471a2ca47ebe68f40e10d6f7", null ],
     [ "__prnt", "group__SceSysclibKernel.html#gabf0a78e093596d371dac997469b2447f", null ],
-    [ "__attribute__", "group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b", null ]
+    [ "__attribute__", "group__SceSysclibKernel.html#ga9531929ae9e77d46d7083973175ce72b", null ],
+    [ "__aeabi_uldivmod", "group__SceSysclibKernel.html#gad7cfeb4f8ee916b12174327a073678c8", null ],
+    [ "__strncat_chk2", "group__SceSysclibKernel.html#gac70a1a3751cb3da12eef1d84e1c23ac6", null ],
+    [ "__strncpy_chk2", "group__SceSysclibKernel.html#ga29cad3799a6ab0e763e6c9fcb8bc1686", null ],
+    [ "strncat", "group__SceSysclibKernel.html#ga2eea7c484e65da0cc742cb1139a1a6c0", null ],
+    [ "strncpy_s", "group__SceSysclibKernel.html#ga906253444e7d0cbee071e6f0637b60aa", null ]
 ];

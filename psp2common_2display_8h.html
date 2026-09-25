@@ -74,6 +74,7 @@ $(document).ready(function(){initNavTree('psp2common_2display_8h.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">display.h File Reference</div></div>
@@ -89,6 +90,20 @@ Data Structures</h2></td></tr>
 <tr class="memitem:structSceDisplayFrameBuf" id="r_structSceDisplayFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a></td></tr>
 <tr class="memdesc:structSceDisplayFrameBuf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure used with <a class="el" href="group__SceDisplayKernel.html#gadcd65e70dc1ca74899fef49010f7c5a8" title="Set/Update framebuffer parameters.">ksceDisplaySetFrameBuf</a> to set/update framebuffer.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">More...</a><br /></td></tr>
 <tr class="separator:structSceDisplayFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayFrameBufExt" id="r_structSceDisplayFrameBufExt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a></td></tr>
+<tr class="memdesc:structSceDisplayFrameBufExt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extended framebuffer descriptor accepted by FW 3.60.  <a href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayFrameBufExt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayCaptureFrameBuf" id="r_structSceDisplayCaptureFrameBuf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a></td></tr>
+<tr class="memdesc:structSceDisplayCaptureFrameBuf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framebuffer capture destination.  <a href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">More...</a><br /></td></tr>
+<tr class="separator:structSceDisplayCaptureFrameBuf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceDisplayResolutionInfo" id="r_structSceDisplayResolutionInfo"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a></td></tr>
+<tr class="separator:structSceDisplayResolutionInfo"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga1cb3ba1f04b954b20022777b6f7b9444" id="r_ga1cb3ba1f04b954b20022777b6f7b9444"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a></td></tr>
+<tr class="memdesc:ga1cb3ba1f04b954b20022777b6f7b9444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Storage type for one of <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc" title="Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.">SceDisplayScreenModeId</a>.  <br /></td></tr>
+<tr class="separator:ga1cb3ba1f04b954b20022777b6f7b9444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -118,6 +133,47 @@ Enumerations</h2></td></tr>
 , <a class="el" href="group__SceDisplayKernel.html#gga1cccbd19bead1c902688ec8409ff0c55a0933dc4d6c641d5d8df41b92dc0be658">__SCE_DISPLAY_SETBUF</a> = 0xFFFFFFFF
  }</td></tr>
 <tr class="separator:ga1cccbd19bead1c902688ec8409ff0c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92951e53ee58da50cedb09a337ae1420" id="r_ga92951e53ee58da50cedb09a337ae1420"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a> { <a class="el" href="group__SceDisplayKernel.html#gga92951e53ee58da50cedb09a337ae1420a90f3be7158dfae614476e265ac33f4dd">SCE_DISPLAY_FRAMEBUF_FLAG_SHARED</a> = 0x00040000
+, <a class="el" href="group__SceDisplayKernel.html#gga92951e53ee58da50cedb09a337ae1420ab54f11ba4d143df85ee0a4408e79c7dc">SCE_DISPLAY_FRAMEBUF_FLAG_BILINEAR</a> = 0x00100000
+ }</td></tr>
+<tr class="memdesc:ga92951e53ee58da50cedb09a337ae1420"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags stored in <a class="el" href="group__SceDisplayKernel.html#gad2afaee8cb943d88177f96a7c55ea7b6" title="Bitwise OR of SceDisplayFrameBufFlag values and other firmware-defined bits.">SceDisplayFrameBufExt::flags</a>.  <a href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">More...</a><br /></td></tr>
+<tr class="separator:ga92951e53ee58da50cedb09a337ae1420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab50ca792050497d4b8f8c1ab7956f02b" id="r_gab50ca792050497d4b8f8c1ab7956f02b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a> { <a class="el" href="group__SceDisplayKernel.html#ggab50ca792050497d4b8f8c1ab7956f02baf198894e75c035435df39083e1496d8d">SCE_DISPLAY_FRAMEBUF_GAME_APP</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#ggab50ca792050497d4b8f8c1ab7956f02ba30893a629004926fcdeb7d884c4970d4">SCE_DISPLAY_FRAMEBUF_LIVEAREA</a> = 1
+ }</td></tr>
+<tr class="separator:gab50ca792050497d4b8f8c1ab7956f02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga82c14f2afc9da714ea569de19f0ea118" id="r_ga82c14f2afc9da714ea569de19f0ea118"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a> { <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118af64b1573863371d27ddc58653781c526">SCE_DISPLAY_HEAD_MAIN_LCD_OLED</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118a5481a0301e3fec965ae0b530eabdd6be">SCE_DISPLAY_HEAD_HDMI</a> = 1
+, <a class="el" href="group__SceDisplayKernel.html#gga82c14f2afc9da714ea569de19f0ea118aed0adebec629a8eb1cd258fb7d26e57e">SCE_DISPLAY_HEAD_SUB_LCD</a> = 2
+ }</td></tr>
+<tr class="separator:ga82c14f2afc9da714ea569de19f0ea118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1543e4e73601e4e58f9cf26c7627b4dc" id="r_ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a> { <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad9790ce2c7ec0949d1b5e6b2590b255e">SCE_DISPLAY_SCREENMODE_INTERNAL_960X544</a> = 0x0000
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad36f9be75af13cb1285298527ccdff5c">SCE_DISPLAY_SCREENMODE_INTERNAL_960X544_1375X567</a> = 0x0020
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcad4ca50e57464b72945b846edce0c6a3c">SCE_DISPLAY_SCREENMODE_INTERNAL_960X540</a> = 0x0080
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca89d99ed23e045111f4cdcae5d5971fce">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X525</a> = 0x8300
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcab729715dd8309221c7ea48d82e851d9a">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X480_858X526</a> = 0x8370
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcae06feb1e4fd859bae1fd90677a4e0be1">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X576_864X625</a> = 0x8480
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca3419cbfa274cb48de5ccbbc9cf1be8b1">SCE_DISPLAY_SCREENMODE_EXTERNAL_720X575_864X626</a> = 0x84F0
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca059fff3acd5ff7296341549ecb2e96a1">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_60HZ</a> = 0x8500
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca86ce750750ce4888eec978ed2852e1c5">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080I_50HZ</a> = 0x8580
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcab5b21ef7c95f3007cf230907c0f1f0d5">SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_60HZ</a> = 0x8600
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca11be8fac9e52871baa8d7f68b23a4fee">SCE_DISPLAY_SCREENMODE_EXTERNAL_720P_50HZ</a> = 0x8680
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca45a04860bf547b0c6bc1da3f76069e9e">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_60HZ</a> = 0x8710
+, <br />
+&#160;&#160;<a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcaa78d18547140e4c989c45aa15b3bc5e5">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_24HZ</a> = 0x8730
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dca1a388abc80e9ec2c0723160328dece66">SCE_DISPLAY_SCREENMODE_EXTERNAL_1080P_50HZ</a> = 0x8790
+, <a class="el" href="group__SceDisplayKernel.html#gga1543e4e73601e4e58f9cf26c7627b4dcae9f6cefff5464e015aa16893f5c22aec">SCE_DISPLAY_SCREENMODE_1280X720_1428X775</a> = 0x8900
+<br />
+ }</td></tr>
+<tr class="memdesc:ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Complete screen-mode identifiers accepted by the FW 3.60 DSI driver.  <a href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">More...</a><br /></td></tr>
+<tr class="separator:ga1543e4e73601e4e58f9cf26c7627b4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4cf61f6213d27134bc2537323f50a58" id="r_gaf4cf61f6213d27134bc2537323f50a58"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a> { <a class="el" href="group__SceDisplayKernel.html#ggaf4cf61f6213d27134bc2537323f50a58a2f9e61915449954211681af4d4e796f5">SCE_DISPLAY_SCANMODE_PROGRESSIVE</a> = 0
+, <a class="el" href="group__SceDisplayKernel.html#ggaf4cf61f6213d27134bc2537323f50a58a131eef4d583945fda91c6981c2067348">SCE_DISPLAY_SCANMODE_INTERLACED</a> = 1
+ }</td></tr>
+<tr class="separator:gaf4cf61f6213d27134bc2537323f50a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -129,6 +185,24 @@ Functions</h2></td></tr>
 <tr class="separator:gad3dc61b743f3e02b789a2c7761c4f2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga746511d8227c31c611becb919a907707" id="r_ga746511d8227c31c611becb919a907707"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga746511d8227c31c611becb919a907707">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBuf">SceDisplayFrameBuf</a>)</td></tr>
 <tr class="separator:ga746511d8227c31c611becb919a907707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99b62ca44f2a3a57f16677a55c4d7dd" id="r_gae99b62ca44f2a3a57f16677a55c4d7dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gae99b62ca44f2a3a57f16677a55c4d7dd">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceDisplayKernel.html#ga92951e53ee58da50cedb09a337ae1420">SceDisplayFrameBufFlag</a>)</td></tr>
+<tr class="separator:gae99b62ca44f2a3a57f16677a55c4d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga250879168163107e7874fe98024c24cb" id="r_ga250879168163107e7874fe98024c24cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga250879168163107e7874fe98024c24cb">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayFrameBufExt">SceDisplayFrameBufExt</a>)</td></tr>
+<tr class="separator:ga250879168163107e7874fe98024c24cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0282184183224108af7e10321db90849" id="r_ga0282184183224108af7e10321db90849"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0282184183224108af7e10321db90849">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#gab50ca792050497d4b8f8c1ab7956f02b">SceDisplayFrameBufType</a>)</td></tr>
+<tr class="separator:ga0282184183224108af7e10321db90849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1e322c63d61b145683a49b98140efeeb" id="r_ga1e322c63d61b145683a49b98140efeeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga1e322c63d61b145683a49b98140efeeb">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#ga82c14f2afc9da714ea569de19f0ea118">SceDisplayHead</a>)</td></tr>
+<tr class="separator:ga1e322c63d61b145683a49b98140efeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ce7a6031140e7cff4222bc364707c67" id="r_ga0ce7a6031140e7cff4222bc364707c67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga0ce7a6031140e7cff4222bc364707c67">VITASDK_BUILD_ASSERT_EQ</a> (2, <a class="el" href="group__SceDisplayKernel.html#ga1543e4e73601e4e58f9cf26c7627b4dc">SceDisplayScreenModeId</a>)</td></tr>
+<tr class="separator:ga0ce7a6031140e7cff4222bc364707c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5103b2af2a6efc561a0d325fd2e28cd5" id="r_ga5103b2af2a6efc561a0d325fd2e28cd5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga5103b2af2a6efc561a0d325fd2e28cd5">VITASDK_BUILD_ASSERT_EQ</a> (4, <a class="el" href="group__SceDisplayKernel.html#ga1cb3ba1f04b954b20022777b6f7b9444">SceDisplayScreenMode</a>)</td></tr>
+<tr class="separator:ga5103b2af2a6efc561a0d325fd2e28cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac857ea9888aff0a41d91b66f86cb350b" id="r_gac857ea9888aff0a41d91b66f86cb350b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gac857ea9888aff0a41d91b66f86cb350b">VITASDK_BUILD_ASSERT_EQ</a> (1, <a class="el" href="group__SceDisplayKernel.html#gaf4cf61f6213d27134bc2537323f50a58">SceDisplayScanMode</a>)</td></tr>
+<tr class="separator:gac857ea9888aff0a41d91b66f86cb350b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab27827460309b17623cd2b0110663bc2" id="r_gab27827460309b17623cd2b0110663bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#gab27827460309b17623cd2b0110663bc2">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayCaptureFrameBuf">SceDisplayCaptureFrameBuf</a>)</td></tr>
+<tr class="separator:gab27827460309b17623cd2b0110663bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga335ea14172fc3c5c6dca21cbddb0fe61" id="r_ga335ea14172fc3c5c6dca21cbddb0fe61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceDisplayKernel.html#ga335ea14172fc3c5c6dca21cbddb0fe61">VITASDK_BUILD_ASSERT_EQ</a> (0x1C, <a class="el" href="group__SceDisplayKernel.html#structSceDisplayResolutionInfo">SceDisplayResolutionInfo</a>)</td></tr>
+<tr class="separator:ga335ea14172fc3c5c6dca21cbddb0fe61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

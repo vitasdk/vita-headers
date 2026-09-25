@@ -109,6 +109,9 @@ Typedefs</h2></td></tr>
 <tr class="separator:gab955de2ad0a9bca928a895f57fb9782f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8091ffcd1bd34918ac5517e79b5f0dff" id="r_ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga8091ffcd1bd34918ac5517e79b5f0dff">SceKernelSubIntrHandler</a>) (void *subintr_arg, void *register_arg, unsigned char intr_priority)</td></tr>
 <tr class="separator:ga8091ffcd1bd34918ac5517e79b5f0dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1403e7e05bdd219b1461f0c2ad5e4d6d" id="r_ga1403e7e05bdd219b1461f0c2ad5e4d6d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d">SceKernelIntrHookHandler</a>) (int intr_code, void *user_ctx, int intr_priority)</td></tr>
+<tr class="memdesc:ga1403e7e05bdd219b1461f0c2ad5e4d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Primary interrupt-hook handler installed by <a class="el" href="group__SceIntrMgrKernel.html#ga5e2563bb7a4764b28be32230f1b39c1c" title="Replace a registered primary interrupt handler with a hook.">ksceKernelRegisterIntrHookHandler</a>.  <br /></td></tr>
+<tr class="separator:ga1403e7e05bdd219b1461f0c2ad5e4d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae4ab184e3330d0a3d091e7d07a6c73e" id="r_gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gaae4ab184e3330d0a3d091e7d07a6c73e">SceKernelIntrOptHandlersCb1</a>) (int intr_code, int subintr_code)</td></tr>
 <tr class="separator:gaae4ab184e3330d0a3d091e7d07a6c73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95eea41a243da0f511481213b9260646" id="r_ga95eea41a243da0f511481213b9260646"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga95eea41a243da0f511481213b9260646">SceKernelIntrOptHandlersCb2</a>) (int intr_code, int subintr_code, void *arg)</td></tr>
@@ -162,6 +165,21 @@ Functions</h2></td></tr>
 <tr class="separator:gaa63e24698a4059a1e1ef2c9de5892b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52391ac61fccf0326d6e679531e146e8" id="r_ga52391ac61fccf0326d6e679531e146e8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga52391ac61fccf0326d6e679531e146e8">ksceKernelQueryIntrHandlerInfo</a> (unsigned int intr_code, unsigned int a2, int a3)</td></tr>
 <tr class="separator:ga52391ac61fccf0326d6e679531e146e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae167aee3da1cacdd5c316f9c32ab6110" id="r_gae167aee3da1cacdd5c316f9c32ab6110"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gae167aee3da1cacdd5c316f9c32ab6110">ksceKernelIsSubInterruptOccurred</a> (int intr_code, int subintr_code)</td></tr>
+<tr class="memdesc:gae167aee3da1cacdd5c316f9c32ab6110"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query a subinterrupt controller's occurrence state.  <br /></td></tr>
+<tr class="separator:gae167aee3da1cacdd5c316f9c32ab6110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e2563bb7a4764b28be32230f1b39c1c" id="r_ga5e2563bb7a4764b28be32230f1b39c1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga5e2563bb7a4764b28be32230f1b39c1c">ksceKernelRegisterIntrHookHandler</a> (int intr_code, <a class="el" href="group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d">SceKernelIntrHookHandler</a> new_handler, <a class="el" href="group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d">SceKernelIntrHookHandler</a> *old_handler)</td></tr>
+<tr class="memdesc:ga5e2563bb7a4764b28be32230f1b39c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a registered primary interrupt handler with a hook.  <br /></td></tr>
+<tr class="separator:ga5e2563bb7a4764b28be32230f1b39c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac59d8caac830fb0299b99f113c38e78f" id="r_gac59d8caac830fb0299b99f113c38e78f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gac59d8caac830fb0299b99f113c38e78f">ksceKernelReleaseIntrHookHandler</a> (int intr_code)</td></tr>
+<tr class="memdesc:gac59d8caac830fb0299b99f113c38e78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an interrupt hook and restore the internally saved primary handler.  <br /></td></tr>
+<tr class="separator:gac59d8caac830fb0299b99f113c38e78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38648a1613bc234b757bdc156fe11704" id="r_ga38648a1613bc234b757bdc156fe11704"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#ga38648a1613bc234b757bdc156fe11704">ksceKernelResumeSubIntr</a> (int intr_code, int subintr_code, int state)</td></tr>
+<tr class="memdesc:ga38648a1613bc234b757bdc156fe11704"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a subinterrupt controller's resume operation.  <br /></td></tr>
+<tr class="separator:ga38648a1613bc234b757bdc156fe11704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae337ef8f042fafc383ae7e479d6f9dea" id="r_gae337ef8f042fafc383ae7e479d6f9dea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceIntrMgrKernel.html#gae337ef8f042fafc383ae7e479d6f9dea">ksceKernelSuspendSubIntr</a> (int intr_code, int subintr_code, void *arg)</td></tr>
+<tr class="memdesc:gae337ef8f042fafc383ae7e479d6f9dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call a subinterrupt controller's suspend operation.  <br /></td></tr>
+<tr class="separator:gae337ef8f042fafc383ae7e479d6f9dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -438,6 +456,31 @@ unk_10</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1403e7e05bdd219b1461f0c2ad5e4d6d" name="ga1403e7e05bdd219b1461f0c2ad5e4d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1403e7e05bdd219b1461f0c2ad5e4d6d">&#9670;&#160;</a></span>SceKernelIntrHookHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef int(* SceKernelIntrHookHandler) (int intr_code, void *user_ctx, int intr_priority)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Primary interrupt-hook handler installed by <a class="el" href="group__SceIntrMgrKernel.html#ga5e2563bb7a4764b28be32230f1b39c1c" title="Replace a registered primary interrupt handler with a hook.">ksceKernelRegisterIntrHookHandler</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Registered interrupt code. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_ctx</td><td>- Context supplied to <a class="el" href="group__SceIntrMgrKernel.html#ga6164deaf45e605aa8e34ce32784f35fb">ksceKernelRegisterIntrHandler</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_priority</td><td>- Registered interrupt priority.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Interrupt-handler result. </dd></dl>
 
 </div>
 </div>
@@ -1109,6 +1152,210 @@ unk_10</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="gae167aee3da1cacdd5c316f9c32ab6110" name="gae167aee3da1cacdd5c316f9c32ab6110"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae167aee3da1cacdd5c316f9c32ab6110">&#9670;&#160;</a></span>ksceKernelIsSubInterruptOccurred()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelIsSubInterruptOccurred </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>subintr_code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query a subinterrupt controller's occurrence state. </p>
+<p>The controller-specific callback registered for <em>intr_code</em> supplies the result. IntrMgr calls it while holding the parent interrupt's spinlock.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Parent interrupt code, from 0 through 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subintr_code</td><td>- Subinterrupt index registered for the parent.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The controller-specific result, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4877534c827f39c08a77a462e3ee191d">SCE_KERNEL_ERROR_ILLEGAL_INTRCODE</a> for an invalid parent or subinterrupt index, or <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a18736325e045a2a8d11ea00882fc0c33">SCE_KERNEL_ERROR_NOTFOUND_HANDLER</a> when the parent, operation table, or occurrence callback is not registered. </dd></dl>
+
+</div>
+</div>
+<a id="ga5e2563bb7a4764b28be32230f1b39c1c" name="ga5e2563bb7a4764b28be32230f1b39c1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5e2563bb7a4764b28be32230f1b39c1c">&#9670;&#160;</a></span>ksceKernelRegisterIntrHookHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelRegisterIntrHookHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d">SceKernelIntrHookHandler</a>&#160;</td>
+          <td class="paramname"><em>new_handler</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceIntrMgrKernel.html#ga1403e7e05bdd219b1461f0c2ad5e4d6d">SceKernelIntrHookHandler</a> *&#160;</td>
+          <td class="paramname"><em>old_handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace a registered primary interrupt handler with a hook. </p>
+<p>Only one hook can be installed for each interrupt. On success, IntrMgr saves the current handler internally, writes it to <em>old_handler</em>, and atomically installs <em>new_handler</em>. The hook receives the interrupt code, the context supplied when the primary handler was registered, and the registered interrupt priority.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Interrupt code, from 0 through 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_handler</td><td>- Required replacement handler. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">old_handler</td><td>- Required output that receives the replaced handler.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a3a6e19ae3521f54b7d553f657569fd8d">SCE_KERNEL_ERROR_ILLEGAL_CONTEXT</a> when installing a hook is not allowed in the current context, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4877534c827f39c08a77a462e3ee191d">SCE_KERNEL_ERROR_ILLEGAL_INTRCODE</a> for an invalid interrupt code, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a83caec04ca2ab667d3529847f25467bf">SCE_KERNEL_ERROR_ILLEGAL_HANDLER</a> for a NULL <em>new_handler</em>, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a7897bb8629189abe8646fa72e4d2175f">SCE_KERNEL_ERROR_INVALID_ARGUMENT</a> for a NULL <em>old_handler</em>, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136ad866d4841b5f68b2bd40f6d8e0bd8b0d">SCE_KERNEL_ERROR_FOUND_HANDLER</a> when a hook is already installed, or <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a18736325e045a2a8d11ea00882fc0c33">SCE_KERNEL_ERROR_NOTFOUND_HANDLER</a> when no primary handler is registered. </dd></dl>
+
+</div>
+</div>
+<a id="gac59d8caac830fb0299b99f113c38e78f" name="gac59d8caac830fb0299b99f113c38e78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac59d8caac830fb0299b99f113c38e78f">&#9670;&#160;</a></span>ksceKernelReleaseIntrHookHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelReleaseIntrHookHandler </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intr_code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove an interrupt hook and restore the internally saved primary handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Interrupt code, from 0 through 255.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a3a6e19ae3521f54b7d553f657569fd8d">SCE_KERNEL_ERROR_ILLEGAL_CONTEXT</a> when removing a hook is not allowed in the current context, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4877534c827f39c08a77a462e3ee191d">SCE_KERNEL_ERROR_ILLEGAL_INTRCODE</a> for an invalid interrupt code, or <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a18736325e045a2a8d11ea00882fc0c33">SCE_KERNEL_ERROR_NOTFOUND_HANDLER</a> when no hook is installed. </dd></dl>
+
+</div>
+</div>
+<a id="ga38648a1613bc234b757bdc156fe11704" name="ga38648a1613bc234b757bdc156fe11704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38648a1613bc234b757bdc156fe11704">&#9670;&#160;</a></span>ksceKernelResumeSubIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelResumeSubIntr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>subintr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call a subinterrupt controller's resume operation. </p>
+<p>The controller-specific callback defines what <em>state</em> means and which results it returns for success or error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Parent interrupt code, from 0 through 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subintr_code</td><td>- Subinterrupt index registered for the parent. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">state</td><td>- Controller-specific resume state.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The controller-specific result, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4877534c827f39c08a77a462e3ee191d">SCE_KERNEL_ERROR_ILLEGAL_INTRCODE</a> for an invalid parent or subinterrupt index, or <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a18736325e045a2a8d11ea00882fc0c33">SCE_KERNEL_ERROR_NOTFOUND_HANDLER</a> when the parent, operation table, or resume callback is not registered. </dd></dl>
+
+</div>
+</div>
+<a id="gae337ef8f042fafc383ae7e479d6f9dea" name="gae337ef8f042fafc383ae7e479d6f9dea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae337ef8f042fafc383ae7e479d6f9dea">&#9670;&#160;</a></span>ksceKernelSuspendSubIntr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ksceKernelSuspendSubIntr </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>intr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>subintr_code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Call a subinterrupt controller's suspend operation. </p>
+<p>The controller-specific callback defines how <em>arg</em> is used and which results it returns for success or error. <em>arg</em> must be non-NULL. For example, SceSdif's implementation ignores <em>arg</em> and performs the same action as disabling that subinterrupt.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">intr_code</td><td>- Parent interrupt code, from 0 through 255. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">subintr_code</td><td>- Subinterrupt index registered for the parent. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">arg</td><td>- Required controller-specific argument.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The controller-specific result, <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a4877534c827f39c08a77a462e3ee191d">SCE_KERNEL_ERROR_ILLEGAL_INTRCODE</a> for an invalid parent or subinterrupt index, 0x80020001 for a NULL <em>arg</em>, or <a class="el" href="group__SceKernelErrorUser.html#ggabcc4e561f9c1bfe7949f334464718136a18736325e045a2a8d11ea00882fc0c33">SCE_KERNEL_ERROR_NOTFOUND_HANDLER</a> when the parent, operation table, or suspend callback is not registered. </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,8 @@
 var psp2_2display_8h =
 [
+    [ "SceDisplayFrameBufForCompatFlag", "group__SceDisplayUser.html#ga1688a345db8493a967d934abfa9196c4", [
+      [ "SCE_DISPLAY_FRAMEBUF_FOR_COMPAT_FLAG_BILINEAR", "group__SceDisplayUser.html#gga1688a345db8493a967d934abfa9196c4a18fb6f212e9bf2e4f2fae64db78010db", null ]
+    ] ],
     [ "sceDisplaySetFrameBuf", "group__SceDisplayUser.html#gad5b985953c60c63c1981bf4ea5ce717f", null ],
     [ "sceDisplayGetFrameBuf", "group__SceDisplayUser.html#gaf833a23b956140624e23129be886b8be", null ],
     [ "sceDisplayGetPrimaryHead", "group__SceDisplayUser.html#ga68872adf7fde59f52a28208457b912bc", null ],
@@ -16,5 +19,20 @@ var psp2_2display_8h =
     [ "sceDisplayWaitSetFrameBufMulti", "group__SceDisplayUser.html#ga3dfc0d2b58531ce00a3969fa448b9c11", null ],
     [ "sceDisplayWaitSetFrameBufMultiCB", "group__SceDisplayUser.html#ga182cbb8c81bff3b914e1515e9dace575", null ],
     [ "sceDisplayRegisterVblankStartCallback", "group__SceDisplayUser.html#gadc0e756f9b27e8e14ce748e9fbec14d6", null ],
-    [ "sceDisplayUnregisterVblankStartCallback", "group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a", null ]
+    [ "sceDisplayUnregisterVblankStartCallback", "group__SceDisplayUser.html#ga86f33274ad8c58dabe53ec4ec5e7f20a", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#ga2393a4dd7f7234368d9c1cdcb3bab7c7", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#ga25ce524a931ec2a83734cb87cb6b6518", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#ga218ecde5433733975b8e586adb6b7cbf", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#gaddd9a00abd524ad51c6236d272d45456", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#gad0438a8252e2f7a1b5f77a3b41f04496", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#gae7d15dff3dd62a27e9fe88543fd89432", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#ga0dfcb3f4713408a6a1444c051b3881f9", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceDisplayUser.html#gac06a5d258864490e5ec15d78f1a4d0b0", null ],
+    [ "_sceDisplayGetFrameBuf", "group__SceDisplayUser.html#ga4955c912727e961cf6465224b3920030", null ],
+    [ "_sceDisplayGetFrameBufInternal", "group__SceDisplayUser.html#ga80c394b4b90eeb00a4dfe54c5eb80064", null ],
+    [ "_sceDisplayGetMaximumFrameBufResolution", "group__SceDisplayUser.html#ga1734cda6ece9a8bdba244c672db0d537", null ],
+    [ "_sceDisplayGetResolutionInfoInternal", "group__SceDisplayUser.html#gafc77f1a8f51641cf8d57708a96afeeb8", null ],
+    [ "_sceDisplaySetFrameBuf", "group__SceDisplayUser.html#ga5b6860413286c8895ce2f72c87fd4137", null ],
+    [ "_sceDisplaySetFrameBufForCompat", "group__SceDisplayUser.html#ga35d192b1acab5c120bfbb11f9455ef0d", null ],
+    [ "_sceDisplaySetFrameBufInternal", "group__SceDisplayUser.html#ga288b370c449fd2a4e0814ecf425730ed", null ]
 ];

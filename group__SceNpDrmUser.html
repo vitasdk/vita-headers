@@ -73,7 +73,9 @@ $(document).ready(function(){initNavTree('group__SceNpDrmUser.html',''); initRes
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">User<div class="ingroups"><a class="el" href="group__Miscellaneous.html">Miscellaneous</a> &raquo; <a class="el" href="group__SceNpDrm.html">NpDrm utility</a></div></div></div>
 </div><!--header-->
 <div class="contents">
@@ -81,6 +83,16 @@ $(document).ready(function(){initNavTree('group__SceNpDrmUser.html',''); initRes
 <p>Exports for User.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Data Structures</h2></td></tr>
+<tr class="memitem:structSceNpDrmCheckActDataOpt" id="r_structSceNpDrmCheckActDataOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a></td></tr>
+<tr class="separator:structSceNpDrmCheckActDataOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNpDrmCheckDrmResetOpt" id="r_structSceNpDrmCheckDrmResetOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a></td></tr>
+<tr class="separator:structSceNpDrmCheckDrmResetOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceNpDrmGetRifInfoOpt" id="r_structSceNpDrmGetRifInfoOpt"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a></td></tr>
+<tr class="memdesc:structSceNpDrmGetRifInfoOpt"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional outputs for <a class="el" href="group__SceNpDrmUser.html#ga58d6e081b6fbfb7d18b263b275d5df0e" title="Get RIF information.">_sceNpDrmGetRifInfo</a>.  <a href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">More...</a><br /></td></tr>
+<tr class="separator:structSceNpDrmGetRifInfoOpt"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:gab78d2af5626a9b65752bdb6bb255ed36" id="r_gab78d2af5626a9b65752bdb6bb255ed36"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gab78d2af5626a9b65752bdb6bb255ed36">_sceNpDrmGetRifName</a> (char *rif_name, uint64_t aid)</td></tr>
@@ -89,57 +101,84 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa0cc6989033f95dcaae0693c06d38cde" id="r_gaa0cc6989033f95dcaae0693c06d38cde"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa0cc6989033f95dcaae0693c06d38cde">_sceNpDrmGetFixedRifName</a> (char *rif_name, uint64_t aid)</td></tr>
 <tr class="memdesc:gaa0cc6989033f95dcaae0693c06d38cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get fixed rif name.  <br /></td></tr>
 <tr class="separator:gaa0cc6989033f95dcaae0693c06d38cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga911763a8324716d0c0041f2615a73f39" id="r_ga911763a8324716d0c0041f2615a73f39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga911763a8324716d0c0041f2615a73f39">_sceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> act_exp_time[2])</td></tr>
-<tr class="memdesc:ga911763a8324716d0c0041f2615a73f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
-<tr class="separator:ga911763a8324716d0c0041f2615a73f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacf23e12f95b904f4b57139af8bbc630f" id="r_gacf23e12f95b904f4b57139af8bbc630f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gacf23e12f95b904f4b57139af8bbc630f">_sceNpDrmGetRifNameForInstall</a> (char *rif_name, const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *rif_data, int unk)</td></tr>
-<tr class="memdesc:gacf23e12f95b904f4b57139af8bbc630f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rif name for install.  <br /></td></tr>
-<tr class="separator:gacf23e12f95b904f4b57139af8bbc630f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca02b6ccf1ca08ea067c589118078830" id="r_gaca02b6ccf1ca08ea067c589118078830"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaca02b6ccf1ca08ea067c589118078830">scePsmDrmGetRifKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *license_buf, <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmKeySet">ScePsmDrmKeySet</a> *keydata, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmExpireTime">ScePsmDrmExpireTime</a> *exp_time)</td></tr>
-<tr class="memdesc:gaca02b6ccf1ca08ea067c589118078830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get PSM rif key.  <br /></td></tr>
-<tr class="separator:gaca02b6ccf1ca08ea067c589118078830"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad30e0e81da89df4e6d9fb5c746bcd6b7" id="r_gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gad30e0e81da89df4e6d9fb5c746bcd6b7">ksceNpDrmGetRifName</a> (char *name, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> aid)</td></tr>
-<tr class="memdesc:gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license file name.  <br /></td></tr>
-<tr class="separator:gad30e0e81da89df4e6d9fb5c746bcd6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac640d16ebaf6d5c6f7277199a97f29da" id="r_gac640d16ebaf6d5c6f7277199a97f29da"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gac640d16ebaf6d5c6f7277199a97f29da">ksceNpDrmGetFixedRifName</a> (char *name, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> aid)</td></tr>
-<tr class="memdesc:gac640d16ebaf6d5c6f7277199a97f29da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license file name with fixed.  <br /></td></tr>
-<tr class="separator:gac640d16ebaf6d5c6f7277199a97f29da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafd56fdfcd93696aaa149c41d93c6b7b4" id="r_gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gafd56fdfcd93696aaa149c41d93c6b7b4">ksceNpDrmReadActData</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a> *act_data)</td></tr>
-<tr class="memdesc:gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current activation data.  <br /></td></tr>
-<tr class="separator:gafd56fdfcd93696aaa149c41d93c6b7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3340fb03a5407338ca63d643c150700d" id="r_ga3340fb03a5407338ca63d643c150700d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga3340fb03a5407338ca63d643c150700d">ksceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *act_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *act_end_time)</td></tr>
-<tr class="memdesc:ga3340fb03a5407338ca63d643c150700d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
-<tr class="separator:ga3340fb03a5407338ca63d643c150700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga008d9755b05a4668d77072d956af40a7" id="r_ga008d9755b05a4668d77072d956af40a7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga008d9755b05a4668d77072d956af40a7">ksceNpDrmGetRifVitaKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, void *klicense, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, int *sku_flags, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_exp_time)</td></tr>
-<tr class="memdesc:ga008d9755b05a4668d77072d956af40a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license key info.  <br /></td></tr>
-<tr class="separator:ga008d9755b05a4668d77072d956af40a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b4f1919048d9dd4ba03ecff81056b83" id="r_ga9b4f1919048d9dd4ba03ecff81056b83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga9b4f1919048d9dd4ba03ecff81056b83">ksceNpDrmGetRifPspKey</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, void *klicense, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *lic_exp_time)</td></tr>
-<tr class="memdesc:ga9b4f1919048d9dd4ba03ecff81056b83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license key info for a PSP game.  <br /></td></tr>
-<tr class="separator:ga9b4f1919048d9dd4ba03ecff81056b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa55da82e4f29e6b554b986018ba18cb6" id="r_gaa55da82e4f29e6b554b986018ba18cb6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa55da82e4f29e6b554b986018ba18cb6">ksceNpDrmGetRifInfo</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size, int check_sign, char *content_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, int *license_version, int *license_flags, int *<a class="el" href="group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4">flags</a>, int *sku_flags, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_start_time, <a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *lic_exp_time, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *flags2)</td></tr>
-<tr class="memdesc:gaa55da82e4f29e6b554b986018ba18cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get license info.  <br /></td></tr>
-<tr class="separator:gaa55da82e4f29e6b554b986018ba18cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8607d04a82ec60ee499600b7ba46bb43" id="r_ga8607d04a82ec60ee499600b7ba46bb43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga8607d04a82ec60ee499600b7ba46bb43">ksceNpDrmEbootSigVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
-<tr class="memdesc:ga8607d04a82ec60ee499600b7ba46bb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify a eboot.pbp signature "__sce_ebootpbp".  <br /></td></tr>
-<tr class="separator:ga8607d04a82ec60ee499600b7ba46bb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e6b267a07852c39ec849b502514c391" id="r_ga3e6b267a07852c39ec849b502514c391"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga3e6b267a07852c39ec849b502514c391">ksceNpDrmPspEbootVerify</a> (const char *eboot_pbp_path, const void *eboot_signature)</td></tr>
-<tr class="memdesc:ga3e6b267a07852c39ec849b502514c391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00.  <br /></td></tr>
-<tr class="separator:ga3e6b267a07852c39ec849b502514c391"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga795831c7db8e903fe0f5b34f21caef8b" id="r_ga795831c7db8e903fe0f5b34f21caef8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga795831c7db8e903fe0f5b34f21caef8b">ksceNpDrmPspEbootSigGen</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature)</td></tr>
-<tr class="memdesc:ga795831c7db8e903fe0f5b34f21caef8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00.  <br /></td></tr>
-<tr class="separator:ga795831c7db8e903fe0f5b34f21caef8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga53ac7effac4a0c35e4da5c722d4c3d56" id="r_ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga53ac7effac4a0c35e4da5c722d4c3d56">ksceNpDrmEbootSigConvert</a> (const char *eboot_pbp_path, const void *old_eboot_signature, void *new_eboot_signature)</td></tr>
-<tr class="memdesc:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00.  <br /></td></tr>
-<tr class="separator:ga53ac7effac4a0c35e4da5c722d4c3d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad7eb961eb8f13520c08cf7abef288158" id="r_gad7eb961eb8f13520c08cf7abef288158"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gad7eb961eb8f13520c08cf7abef288158">ksceNpDrmEbootSigGenPsp</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
-<tr class="memdesc:gad7eb961eb8f13520c08cf7abef288158"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game.  <br /></td></tr>
-<tr class="separator:gad7eb961eb8f13520c08cf7abef288158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9337d12a493884eaee967b227486ca13" id="r_ga9337d12a493884eaee967b227486ca13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga9337d12a493884eaee967b227486ca13">ksceNpDrmEbootSigGenPs1</a> (const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, int sw_version)</td></tr>
-<tr class="memdesc:ga9337d12a493884eaee967b227486ca13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game.  <br /></td></tr>
-<tr class="separator:ga9337d12a493884eaee967b227486ca13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga67be6a70af0add5dd2fb2556b19230a5" id="r_ga67be6a70af0add5dd2fb2556b19230a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga67be6a70af0add5dd2fb2556b19230a5">ksceNpDrmEbootSigGenMultiDisc</a> (const char *eboot_pbp_path, const void *sce_discinfo, void *eboot_signature, int sw_version)</td></tr>
-<tr class="memdesc:ga67be6a70af0add5dd2fb2556b19230a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game.  <br /></td></tr>
-<tr class="separator:ga67be6a70af0add5dd2fb2556b19230a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08e20fb160dfd81bf7531604a7bf1be5" id="r_ga08e20fb160dfd81bf7531604a7bf1be5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga08e20fb160dfd81bf7531604a7bf1be5">_sceNpDrmCheckActData</a> (int *act_type, int *version_flag, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> opt[2])</td></tr>
+<tr class="memdesc:ga08e20fb160dfd81bf7531604a7bf1be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check you have npdrm activation data, and get information from it.  <br /></td></tr>
+<tr class="separator:ga08e20fb160dfd81bf7531604a7bf1be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9da12922b32648cbbc8fb03ab26b522a" id="r_ga9da12922b32648cbbc8fb03ab26b522a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga9da12922b32648cbbc8fb03ab26b522a">_sceNpDrmGetRifNameForInstall</a> (char *rif_name, const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *rif_data, int is_fixed)</td></tr>
+<tr class="memdesc:ga9da12922b32648cbbc8fb03ab26b522a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get rif name for install.  <br /></td></tr>
+<tr class="separator:ga9da12922b32648cbbc8fb03ab26b522a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae26fd4cf96d8028bc405131aeb77ec24" id="r_gae26fd4cf96d8028bc405131aeb77ec24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gae26fd4cf96d8028bc405131aeb77ec24">VITASDK_BUILD_ASSERT_EQ</a> (0x10, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a>)</td></tr>
+<tr class="separator:gae26fd4cf96d8028bc405131aeb77ec24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf65481aa06ff9fa84e0e2457232d05a0" id="r_gaf65481aa06ff9fa84e0e2457232d05a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaf65481aa06ff9fa84e0e2457232d05a0">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a>)</td></tr>
+<tr class="separator:gaf65481aa06ff9fa84e0e2457232d05a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f3345e290921cbf373538e164f7ffac" id="r_ga6f3345e290921cbf373538e164f7ffac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga6f3345e290921cbf373538e164f7ffac">VITASDK_BUILD_ASSERT_EQ</a> (0x28, <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a>)</td></tr>
+<tr class="separator:ga6f3345e290921cbf373538e164f7ffac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bfb7788e5e0106cc55958c7f08bdef9" id="r_ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga1bfb7788e5e0106cc55958c7f08bdef9">_sceNpDrmCheckDrmReset</a> (const void *input, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> input_size, const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a> *opt)</td></tr>
+<tr class="memdesc:ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether activation data must be reset.  <br /></td></tr>
+<tr class="separator:ga1bfb7788e5e0106cc55958c7f08bdef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58d6e081b6fbfb7d18b263b275d5df0e" id="r_ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga58d6e081b6fbfb7d18b263b275d5df0e">_sceNpDrmGetRifInfo</a> (const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license, <a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> license_size, <a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> check_sign, const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a> *opt)</td></tr>
+<tr class="memdesc:ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get RIF information.  <br /></td></tr>
+<tr class="separator:ga58d6e081b6fbfb7d18b263b275d5df0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52e394ab12cd1e41f7c2ffe9e562a75b" id="r_ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga52e394ab12cd1e41f7c2ffe9e562a75b">_sceNpDrmPresetRifProvisionalFlag</a> (<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *license)</td></tr>
+<tr class="memdesc:ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the provisional flag in a RIF.  <br /></td></tr>
+<tr class="separator:ga52e394ab12cd1e41f7c2ffe9e562a75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf91adfa0c3d3ac9c74b9a4fcab8bf900" id="r_gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaf91adfa0c3d3ac9c74b9a4fcab8bf900">_sceNpDrmRemoveActData</a> (<a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *account_id)</td></tr>
+<tr class="memdesc:gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove tm0:/npdrm/act.dat and clear the cached activation data.  <br /></td></tr>
+<tr class="separator:gaf91adfa0c3d3ac9c74b9a4fcab8bf900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gacf8908403e524b7c08fdccbd1cc034d2" id="r_gacf8908403e524b7c08fdccbd1cc034d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gacf8908403e524b7c08fdccbd1cc034d2">SceNpDrmCheckActDataOpt::act_start_time</a></td></tr>
+<tr class="memdesc:gacf8908403e524b7c08fdccbd1cc034d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional activation start time output.  <br /></td></tr>
+<tr class="separator:gacf8908403e524b7c08fdccbd1cc034d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3" id="r_ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3">SceNpDrmCheckActDataOpt::act_exp_time</a></td></tr>
+<tr class="memdesc:ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional activation expiration time output.  <br /></td></tr>
+<tr class="separator:ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e04abda935dd02f6a790d87f83021a2" id="r_ga7e04abda935dd02f6a790d87f83021a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga7e04abda935dd02f6a790d87f83021a2">SceNpDrmCheckActDataOpt::reserved</a> [2]</td></tr>
+<tr class="memdesc:ga7e04abda935dd02f6a790d87f83021a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga7e04abda935dd02f6a790d87f83021a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a6e939254f3f2ed4ea8acb96bef8535" id="r_ga8a6e939254f3f2ed4ea8acb96bef8535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga8a6e939254f3f2ed4ea8acb96bef8535">SceNpDrmCheckDrmResetOpt::account_id</a></td></tr>
+<tr class="memdesc:ga8a6e939254f3f2ed4ea8acb96bef8535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Account ID to compare with the current activation data.  <br /></td></tr>
+<tr class="separator:ga8a6e939254f3f2ed4ea8acb96bef8535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5d019b843e9649d2fc0b45f041cf5e3" id="r_gac5d019b843e9649d2fc0b45f041cf5e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gac5d019b843e9649d2fc0b45f041cf5e3">SceNpDrmCheckDrmResetOpt::reset</a></td></tr>
+<tr class="memdesc:gac5d019b843e9649d2fc0b45f041cf5e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional output set to <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> if this call reset act.dat.  <br /></td></tr>
+<tr class="separator:gac5d019b843e9649d2fc0b45f041cf5e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38d7ac8963b5c291bb71492a0d0b220b" id="r_ga38d7ac8963b5c291bb71492a0d0b220b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga38d7ac8963b5c291bb71492a0d0b220b">SceNpDrmCheckDrmResetOpt::input_copy_size</a></td></tr>
+<tr class="memdesc:ga38d7ac8963b5c291bb71492a0d0b220b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of input bytes to copy; set to <em>input_size</em> and do not exceed 0x40.  <br /></td></tr>
+<tr class="separator:ga38d7ac8963b5c291bb71492a0d0b220b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga59ff31026f84096d0e878dbdec2808a1" id="r_ga59ff31026f84096d0e878dbdec2808a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga59ff31026f84096d0e878dbdec2808a1">SceNpDrmCheckDrmResetOpt::reserved</a> [2]</td></tr>
+<tr class="memdesc:ga59ff31026f84096d0e878dbdec2808a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:ga59ff31026f84096d0e878dbdec2808a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa318aed166bcff167b5e8f75ef10ba02" id="r_gaa318aed166bcff167b5e8f75ef10ba02"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa318aed166bcff167b5e8f75ef10ba02">SceNpDrmGetRifInfoOpt::content_id</a></td></tr>
+<tr class="memdesc:gaa318aed166bcff167b5e8f75ef10ba02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional 0x30-byte content ID output buffer.  <br /></td></tr>
+<tr class="separator:gaa318aed166bcff167b5e8f75ef10ba02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f988c963f859de3123a197ffaa3f955" id="r_ga0f988c963f859de3123a197ffaa3f955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga0f988c963f859de3123a197ffaa3f955">SceNpDrmGetRifInfoOpt::account_id</a></td></tr>
+<tr class="memdesc:ga0f988c963f859de3123a197ffaa3f955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional license account ID output.  <br /></td></tr>
+<tr class="separator:ga0f988c963f859de3123a197ffaa3f955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d2d98095f8d84ccf22fac501516cf83" id="r_ga6d2d98095f8d84ccf22fac501516cf83"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga6d2d98095f8d84ccf22fac501516cf83">SceNpDrmGetRifInfoOpt::license_version</a></td></tr>
+<tr class="memdesc:ga6d2d98095f8d84ccf22fac501516cf83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional license version output.  <br /></td></tr>
+<tr class="separator:ga6d2d98095f8d84ccf22fac501516cf83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72ea41a31a7814de5081addc9ebb4a01" id="r_ga72ea41a31a7814de5081addc9ebb4a01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga72ea41a31a7814de5081addc9ebb4a01">SceNpDrmGetRifInfoOpt::drm_type</a></td></tr>
+<tr class="memdesc:ga72ea41a31a7814de5081addc9ebb4a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional DRM type output.  <br /></td></tr>
+<tr class="separator:ga72ea41a31a7814de5081addc9ebb4a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6d9c639b1e659b3297126b684fe49a0" id="r_gae6d9c639b1e659b3297126b684fe49a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gae6d9c639b1e659b3297126b684fe49a0">SceNpDrmGetRifInfoOpt::flags</a></td></tr>
+<tr class="memdesc:gae6d9c639b1e659b3297126b684fe49a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional derived license flags output.  <br /></td></tr>
+<tr class="separator:gae6d9c639b1e659b3297126b684fe49a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa42afe8ad65f77bbc99b865bb29160bd" id="r_gaa42afe8ad65f77bbc99b865bb29160bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa42afe8ad65f77bbc99b865bb29160bd">SceNpDrmGetRifInfoOpt::sku_flags</a></td></tr>
+<tr class="memdesc:gaa42afe8ad65f77bbc99b865bb29160bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional SKU flags output.  <br /></td></tr>
+<tr class="separator:gaa42afe8ad65f77bbc99b865bb29160bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a542e170d17bfb13fb6c696c79e48bf" id="r_ga1a542e170d17bfb13fb6c696c79e48bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga1a542e170d17bfb13fb6c696c79e48bf">SceNpDrmGetRifInfoOpt::lic_start_time</a></td></tr>
+<tr class="memdesc:ga1a542e170d17bfb13fb6c696c79e48bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional license start time output.  <br /></td></tr>
+<tr class="separator:ga1a542e170d17bfb13fb6c696c79e48bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga343db2f4904fe5f25c35bd2171039a20" id="r_ga343db2f4904fe5f25c35bd2171039a20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#ga343db2f4904fe5f25c35bd2171039a20">SceNpDrmGetRifInfoOpt::lic_exp_time</a></td></tr>
+<tr class="memdesc:ga343db2f4904fe5f25c35bd2171039a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional license expiration time output.  <br /></td></tr>
+<tr class="separator:ga343db2f4904fe5f25c35bd2171039a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadfec7dbf6f6cea7403bd0b51d149a89c" id="r_gadfec7dbf6f6cea7403bd0b51d149a89c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gadfec7dbf6f6cea7403bd0b51d149a89c">SceNpDrmGetRifInfoOpt::rif_data_0x98</a></td></tr>
+<tr class="memdesc:gadfec7dbf6f6cea7403bd0b51d149a89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional raw 8-byte RIF field output.  <br /></td></tr>
+<tr class="separator:gadfec7dbf6f6cea7403bd0b51d149a89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa02c7ad283ddf1665ad11cf6bdfe1655" id="r_gaa02c7ad283ddf1665ad11cf6bdfe1655"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceNpDrmUser.html#gaa02c7ad283ddf1665ad11cf6bdfe1655">SceNpDrmGetRifInfoOpt::reserved</a></td></tr>
+<tr class="memdesc:gaa02c7ad283ddf1665ad11cf6bdfe1655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
+<tr class="separator:gaa02c7ad283ddf1665ad11cf6bdfe1655"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
@@ -153,17 +192,163 @@ Functions</h2></td></tr>
 </p><div class="fragment"><div class="line">SceNpDrm_stub </div>
 </div><!-- fragment --><p> <br  />
  </p><hr  />
-<hr  />
-<h3>Using this library in your project </h3>
-<p>Include the header file in your project:<br  />
-</p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="psp2kern_2npdrm_8h.html">psp2kern/npdrm.h</a>&gt;</span> </div>
-<div class="ttc" id="apsp2kern_2npdrm_8h_html"><div class="ttname"><a href="psp2kern_2npdrm_8h.html">npdrm.h</a></div></div>
-</div><!-- fragment --><p><br  />
- Link the library to the executable:<br  />
-</p><div class="fragment"><div class="line">SceNpDrmForDriver_stub </div>
-</div><!-- fragment --><p> <br  />
- </p><hr  />
- <h2 class="groupheader">Function Documentation</h2>
+ <hr/><h2 class="groupheader">Data Structure Documentation</h2>
+<a name="structSceNpDrmCheckActDataOpt" id="structSceNpDrmCheckActDataOpt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceNpDrmCheckActDataOpt">&#9670;&#160;</a></span>SceNpDrmCheckActDataOpt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceNpDrmCheckActDataOpt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gacf8908403e524b7c08fdccbd1cc034d2" name="gacf8908403e524b7c08fdccbd1cc034d2"></a><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *</td>
+<td class="fieldname">
+act_start_time</td>
+<td class="fielddoc">
+Optional activation start time output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3" name="ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3"></a><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *</td>
+<td class="fieldname">
+act_exp_time</td>
+<td class="fielddoc">
+Optional activation expiration time output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga7e04abda935dd02f6a790d87f83021a2" name="ga7e04abda935dd02f6a790d87f83021a2"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved[2]</td>
+<td class="fielddoc">
+Ignored on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceNpDrmCheckDrmResetOpt" id="structSceNpDrmCheckDrmResetOpt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceNpDrmCheckDrmResetOpt">&#9670;&#160;</a></span>SceNpDrmCheckDrmResetOpt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceNpDrmCheckDrmResetOpt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="ga8a6e939254f3f2ed4ea8acb96bef8535" name="ga8a6e939254f3f2ed4ea8acb96bef8535"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a></td>
+<td class="fieldname">
+account_id</td>
+<td class="fielddoc">
+Account ID to compare with the current activation data. </td></tr>
+<tr><td class="fieldtype">
+<a id="gac5d019b843e9649d2fc0b45f041cf5e3" name="gac5d019b843e9649d2fc0b45f041cf5e3"></a><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> *</td>
+<td class="fieldname">
+reset</td>
+<td class="fielddoc">
+Optional output set to <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> if this call reset act.dat. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga38d7ac8963b5c291bb71492a0d0b220b" name="ga38d7ac8963b5c291bb71492a0d0b220b"></a><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a></td>
+<td class="fieldname">
+input_copy_size</td>
+<td class="fielddoc">
+Number of input bytes to copy; set to <em>input_size</em> and do not exceed 0x40. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga59ff31026f84096d0e878dbdec2808a1" name="ga59ff31026f84096d0e878dbdec2808a1"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved[2]</td>
+<td class="fielddoc">
+Ignored on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
+<a name="structSceNpDrmGetRifInfoOpt" id="structSceNpDrmGetRifInfoOpt"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceNpDrmGetRifInfoOpt">&#9670;&#160;</a></span>SceNpDrmGetRifInfoOpt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceNpDrmGetRifInfoOpt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"><p>Optional outputs for <a class="el" href="group__SceNpDrmUser.html#ga58d6e081b6fbfb7d18b263b275d5df0e" title="Get RIF information.">_sceNpDrmGetRifInfo</a>. </p>
+<p>On FW 3.60, <em>flags</em> receives a derived bit field: bit 0 is set when the DRM type contains 0x2000 or the SKU flags equal 1, bit 1 mirrors the RIF provisional flag, bit 16 denotes OpenPsId binding, and bit 17 denotes game-card binding. </p>
+</div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gaa318aed166bcff167b5e8f75ef10ba02" name="gaa318aed166bcff167b5e8f75ef10ba02"></a>char *</td>
+<td class="fieldname">
+content_id</td>
+<td class="fielddoc">
+Optional 0x30-byte content ID output buffer. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga0f988c963f859de3123a197ffaa3f955" name="ga0f988c963f859de3123a197ffaa3f955"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *</td>
+<td class="fieldname">
+account_id</td>
+<td class="fielddoc">
+Optional license account ID output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga6d2d98095f8d84ccf22fac501516cf83" name="ga6d2d98095f8d84ccf22fac501516cf83"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *</td>
+<td class="fieldname">
+license_version</td>
+<td class="fielddoc">
+Optional license version output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga72ea41a31a7814de5081addc9ebb4a01" name="ga72ea41a31a7814de5081addc9ebb4a01"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *</td>
+<td class="fieldname">
+drm_type</td>
+<td class="fielddoc">
+Optional DRM type output. </td></tr>
+<tr><td class="fieldtype">
+<a id="gae6d9c639b1e659b3297126b684fe49a0" name="gae6d9c639b1e659b3297126b684fe49a0"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *</td>
+<td class="fieldname">
+flags</td>
+<td class="fielddoc">
+Optional derived license flags output. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa42afe8ad65f77bbc99b865bb29160bd" name="gaa42afe8ad65f77bbc99b865bb29160bd"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *</td>
+<td class="fieldname">
+sku_flags</td>
+<td class="fielddoc">
+Optional SKU flags output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga1a542e170d17bfb13fb6c696c79e48bf" name="ga1a542e170d17bfb13fb6c696c79e48bf"></a><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *</td>
+<td class="fieldname">
+lic_start_time</td>
+<td class="fielddoc">
+Optional license start time output. </td></tr>
+<tr><td class="fieldtype">
+<a id="ga343db2f4904fe5f25c35bd2171039a20" name="ga343db2f4904fe5f25c35bd2171039a20"></a><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a> *</td>
+<td class="fieldname">
+lic_exp_time</td>
+<td class="fielddoc">
+Optional license expiration time output. </td></tr>
+<tr><td class="fieldtype">
+<a id="gadfec7dbf6f6cea7403bd0b51d149a89c" name="gadfec7dbf6f6cea7403bd0b51d149a89c"></a><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *</td>
+<td class="fieldname">
+rif_data_0x98</td>
+<td class="fielddoc">
+Optional raw 8-byte RIF field output. </td></tr>
+<tr><td class="fieldtype">
+<a id="gaa02c7ad283ddf1665ad11cf6bdfe1655" name="gaa02c7ad283ddf1665ad11cf6bdfe1655"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved</td>
+<td class="fielddoc">
+Ignored on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="gab78d2af5626a9b65752bdb6bb255ed36" name="gab78d2af5626a9b65752bdb6bb255ed36"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab78d2af5626a9b65752bdb6bb255ed36">&#9670;&#160;</a></span>_sceNpDrmGetRifName()</h2>
 
@@ -193,7 +378,7 @@ Functions</h2></td></tr>
 <p>Get rif name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- Required RIF name buffer (48 bytes)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- Account ID</td></tr>
   </table>
   </dd>
@@ -231,7 +416,7 @@ Functions</h2></td></tr>
 <p>Get fixed rif name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- Required RIF name buffer (48 bytes)</td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- Account ID</td></tr>
   </table>
   </dd>
@@ -240,8 +425,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga911763a8324716d0c0041f2615a73f39" name="ga911763a8324716d0c0041f2615a73f39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga911763a8324716d0c0041f2615a73f39">&#9670;&#160;</a></span>_sceNpDrmCheckActData()</h2>
+<a id="ga08e20fb160dfd81bf7531604a7bf1be5" name="ga08e20fb160dfd81bf7531604a7bf1be5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga08e20fb160dfd81bf7531604a7bf1be5">&#9670;&#160;</a></span>_sceNpDrmCheckActData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +453,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
-          <td class="paramname"><em>act_exp_time</em>[2]&#160;</td>
+          <td class="paramname"><em>opt</em>[2]&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -281,10 +466,10 @@ Functions</h2></td></tr>
 <p>Check you have npdrm activation data, and get information from it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_type</td><td>- The pointer of activation type output.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">version_flag</td><td>- The pointer of version flag output.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- The pointer of activated account id output.</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_exp_time</td><td>- The pointer of activation expire time output, [0] is start_date, [1] is end_date</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">act_type</td><td>- Optional activation type output.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">version_flag</td><td>- Optional activation version flag output.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- Optional activated account ID output.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- Required pointer to a <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a> structure, passed as a <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> pointer for backwards compatibility. Both pointer types have the same ABI.</td></tr>
   </table>
   </dd>
 </dl>
@@ -292,8 +477,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gacf23e12f95b904f4b57139af8bbc630f" name="gacf23e12f95b904f4b57139af8bbc630f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacf23e12f95b904f4b57139af8bbc630f">&#9670;&#160;</a></span>_sceNpDrmGetRifNameForInstall()</h2>
+<a id="ga9da12922b32648cbbc8fb03ab26b522a" name="ga9da12922b32648cbbc8fb03ab26b522a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9da12922b32648cbbc8fb03ab26b522a">&#9670;&#160;</a></span>_sceNpDrmGetRifNameForInstall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +499,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unk</em>&#160;</td>
+          <td class="paramname"><em>is_fixed</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -327,9 +512,9 @@ Functions</h2></td></tr>
 <p>Get rif name for install. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- RIF name buffer (48 bytes)</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rif_data</td><td>- Data of RIF file (512 bytes)</td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">unk</td><td>- Unknown, use 0</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">rif_name</td><td>- Required RIF name buffer (48 bytes)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rif_data</td><td>- Required RIF data (512 bytes)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_fixed</td><td>- Set to 0 to derive the name from the RIF content ID, or 1 to request the fixed account-based name</td></tr>
   </table>
   </dd>
 </dl>
@@ -337,35 +522,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gaca02b6ccf1ca08ea067c589118078830" name="gaca02b6ccf1ca08ea067c589118078830"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca02b6ccf1ca08ea067c589118078830">&#9670;&#160;</a></span>scePsmDrmGetRifKey()</h2>
+<a id="gae26fd4cf96d8028bc405131aeb77ec24" name="gae26fd4cf96d8028bc405131aeb77ec24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae26fd4cf96d8028bc405131aeb77ec24">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int scePsmDrmGetRifKey </td>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmLicense">ScePsmDrmLicense</a> *&#160;</td>
-          <td class="paramname"><em>license_buf</em>, </td>
+          <td class="paramtype">0x10&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmKeySet">ScePsmDrmKeySet</a> *&#160;</td>
-          <td class="paramname"><em>keydata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structScePsmDrmExpireTime">ScePsmDrmExpireTime</a> *&#160;</td>
-          <td class="paramname"><em>exp_time</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckActDataOpt">SceNpDrmCheckActDataOpt</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -375,37 +548,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get PSM rif key. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license_buf</td><td>- RIF buffer (1024 bytes)</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">keydata</td><td>- Decrypted keyset</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- License flags</td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">exp_time</td><td>- Expire times output</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error </dd></dl>
-
 </div>
 </div>
-<a id="gad30e0e81da89df4e6d9fb5c746bcd6b7" name="gad30e0e81da89df4e6d9fb5c746bcd6b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad30e0e81da89df4e6d9fb5c746bcd6b7">&#9670;&#160;</a></span>ksceNpDrmGetRifName()</h2>
+<a id="gaf65481aa06ff9fa84e0e2457232d05a0" name="gaf65481aa06ff9fa84e0e2457232d05a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf65481aa06ff9fa84e0e2457232d05a0">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmGetRifName </td>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">0x18&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
-          <td class="paramname"><em>aid</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -415,35 +576,25 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get license file name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- The pointer of license file name output buffer. size is 0x30. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- The license account id</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
 </div>
 </div>
-<a id="gac640d16ebaf6d5c6f7277199a97f29da" name="gac640d16ebaf6d5c6f7277199a97f29da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac640d16ebaf6d5c6f7277199a97f29da">&#9670;&#160;</a></span>ksceNpDrmGetFixedRifName()</h2>
+<a id="ga6f3345e290921cbf373538e164f7ffac" name="ga6f3345e290921cbf373538e164f7ffac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f3345e290921cbf373538e164f7ffac">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmGetFixedRifName </td>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
           <td>(</td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramtype">0x28&#160;</td>
+          <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td>
-          <td class="paramname"><em>aid</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a>&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -453,80 +604,31 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get license file name with fixed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">name</td><td>- The pointer of license file name output buffer. size is 0x30. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">aid</td><td>- The license account id</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
 </div>
 </div>
-<a id="gafd56fdfcd93696aaa149c41d93c6b7b4" name="gafd56fdfcd93696aaa149c41d93c6b7b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafd56fdfcd93696aaa149c41d93c6b7b4">&#9670;&#160;</a></span>ksceNpDrmReadActData()</h2>
+<a id="ga1bfb7788e5e0106cc55958c7f08bdef9" name="ga1bfb7788e5e0106cc55958c7f08bdef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1bfb7788e5e0106cc55958c7f08bdef9">&#9670;&#160;</a></span>_sceNpDrmCheckDrmReset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmReadActData </td>
+          <td class="memname">int _sceNpDrmCheckDrmReset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a> *&#160;</td>
-          <td class="paramname"><em>act_data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get current activation data. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_data</td><td>- The pointer of output activation data see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmActivationData">SceNpDrmActivationData</a>. if ecdsa or rsa verify fail, will be all 0.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga3340fb03a5407338ca63d643c150700d" name="ga3340fb03a5407338ca63d643c150700d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3340fb03a5407338ca63d643c150700d">&#9670;&#160;</a></span>ksceNpDrmCheckActData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceNpDrmCheckActData </td>
-          <td>(</td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>act_type</em>, </td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>version_flag</em>, </td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a>&#160;</td>
+          <td class="paramname"><em>input_size</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>account_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>act_start_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>act_end_time</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmCheckDrmResetOpt">SceNpDrmCheckDrmResetOpt</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -536,14 +638,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check you have npdrm activation data, and get information from it. </p>
+<p>Check whether activation data must be reset. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_type</td><td>- The pointer of activation type output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">version_flag</td><td>- The pointer of version flag output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- The pointer of activated account id output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_start_time</td><td>- The pointer of activation data start time output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">act_exp_time</td><td>- The pointer of activation data expire time output</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- Required input data. If its first byte is zero, FW 3.60 returns success without checking or resetting act.dat. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">input_size</td><td>- Size of the input data; must be in the range [2, 0x40] </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- Required structure containing the account ID, optional reset-result pointer, and input copy size. Set <em>input_copy_size</em> to <em>input_size</em>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -551,139 +651,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga008d9755b05a4668d77072d956af40a7" name="ga008d9755b05a4668d77072d956af40a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga008d9755b05a4668d77072d956af40a7">&#9670;&#160;</a></span>ksceNpDrmGetRifVitaKey()</h2>
+<a id="ga58d6e081b6fbfb7d18b263b275d5df0e" name="ga58d6e081b6fbfb7d18b263b275d5df0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58d6e081b6fbfb7d18b263b275d5df0e">&#9670;&#160;</a></span>_sceNpDrmGetRifInfo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmGetRifVitaKey </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
-          <td class="paramname"><em>license</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>klicense</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>sku_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_start_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_exp_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get license key info. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">klicense</td><td>- The pointer of klicense output buffer. size is 0x10. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sku_flags</td><td>- The pointer of sku flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- The pointer of license start time output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- The pointer of license exp time output.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="ga9b4f1919048d9dd4ba03ecff81056b83" name="ga9b4f1919048d9dd4ba03ecff81056b83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9b4f1919048d9dd4ba03ecff81056b83">&#9670;&#160;</a></span>ksceNpDrmGetRifPspKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceNpDrmGetRifPspKey </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
-          <td class="paramname"><em>license</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>klicense</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_start_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_exp_time</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get license key info for a PSP game. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">klicense</td><td>- The pointer of klicense output buffer. size is 0x10. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- The pointer of license start time output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- The pointer of license exp time output.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
-
-</div>
-</div>
-<a id="gaa55da82e4f29e6b554b986018ba18cb6" name="gaa55da82e4f29e6b554b986018ba18cb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa55da82e4f29e6b554b986018ba18cb6">&#9670;&#160;</a></span>ksceNpDrmGetRifInfo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int ksceNpDrmGetRifInfo </td>
+          <td class="memname">int _sceNpDrmGetRifInfo </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
           <td class="paramname"><em>license</em>, </td>
@@ -697,86 +672,85 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>&#160;</td>
           <td class="paramname"><em>check_sign</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>content_id</em>, </td>
+          <td class="paramtype">const <a class="el" href="group__SceNpDrmUser.html#structSceNpDrmGetRifInfoOpt">SceNpDrmGetRifInfoOpt</a> *&#160;</td>
+          <td class="paramname"><em>opt</em>&#160;</td>
         </tr>
         <tr>
-          <td class="paramkey"></td>
           <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get RIF information. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- Required RIF data (0x200 bytes) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">license_size</td><td>- Size of the RIF data </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">check_sign</td><td>- Set to <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> to check the RIF signature </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">opt</td><td>- Required option structure containing optional output pointers</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="ga52e394ab12cd1e41f7c2ffe9e562a75b" name="ga52e394ab12cd1e41f7c2ffe9e562a75b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga52e394ab12cd1e41f7c2ffe9e562a75b">&#9670;&#160;</a></span>_sceNpDrmPresetRifProvisionalFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceNpDrmPresetRifProvisionalFlag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> *&#160;</td>
+          <td class="paramname"><em>license</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the provisional flag in a RIF. </p>
+<p>The 0x200-byte RIF is modified in place. Its existing signature is validated with the provisional bit normalized.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">license</td><td>- RIF to update</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+
+</div>
+</div>
+<a id="gaf91adfa0c3d3ac9c74b9a4fcab8bf900" name="gaf91adfa0c3d3ac9c74b9a4fcab8bf900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf91adfa0c3d3ac9c74b9a4fcab8bf900">&#9670;&#160;</a></span>_sceNpDrmRemoveActData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceNpDrmRemoveActData </td>
+          <td>(</td>
           <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>account_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>account_id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>license_version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>license_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>sku_flags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_start_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gaa705ed0781e372b13b3f964be7e5b161">SceInt64</a> *&#160;</td>
-          <td class="paramname"><em>lic_exp_time</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>flags2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get license info. </p>
+<p>Remove tm0:/npdrm/act.dat and clear the cached activation data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">license</td><td>- The pointer of license data. see:<a class="el" href="group__SceNpDrmKernel.html#structSceNpDrmLicense">SceNpDrmLicense</a> </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">license_size</td><td>- The license data size. 0x200 etc </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">check_sign</td><td>- The license signature check flag. if pass 1, do check. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">content_id</td><td>- The pointer of license content_id output buffer. size is 0x30. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- The pointer of license account_id output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">license_version</td><td>- The pointer of license version output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">license_flags</td><td>- The pointer of license flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">flags</td><td>- The pointer of flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">sku_flags</td><td>- The pointer of sku flags output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_start_time</td><td>- The pointer of license start time output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">lic_exp_time</td><td>- The pointer of license exp time output. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">flags2</td><td>- The pointer of flags2 output.</td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">account_id</td><td>- Optional account ID from the removed act.dat</td></tr>
   </table>
   </dd>
 </dl>
@@ -784,325 +758,276 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8607d04a82ec60ee499600b7ba46bb43" name="ga8607d04a82ec60ee499600b7ba46bb43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8607d04a82ec60ee499600b7ba46bb43">&#9670;&#160;</a></span>ksceNpDrmEbootSigVerify()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="gacf8908403e524b7c08fdccbd1cc034d2" name="gacf8908403e524b7c08fdccbd1cc034d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf8908403e524b7c08fdccbd1cc034d2">&#9670;&#160;</a></span>act_start_time</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmEbootSigVerify </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>* SceNpDrmCheckActDataOpt::act_start_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify a eboot.pbp signature "__sce_ebootpbp". </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x200</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<p>Optional activation start time output. </p>
 
 </div>
 </div>
-<a id="ga3e6b267a07852c39ec849b502514c391" name="ga3e6b267a07852c39ec849b502514c391"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3e6b267a07852c39ec849b502514c391">&#9670;&#160;</a></span>ksceNpDrmPspEbootVerify()</h2>
+<a id="ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3" name="ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36c2f94a6e21e6ac9ad2e8d2c4e5cfc3">&#9670;&#160;</a></span>act_exp_time</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmPspEbootVerify </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>* SceNpDrmCheckActDataOpt::act_exp_time</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Verify an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" from firmware &lt;2.00. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_signature</td><td>- The pointer of data of __sce_ebootpbp signature. size is 0x100</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>0 on success, &lt; 0 on error. </dd></dl>
+<p>Optional activation expiration time output. </p>
 
 </div>
 </div>
-<a id="ga795831c7db8e903fe0f5b34f21caef8b" name="ga795831c7db8e903fe0f5b34f21caef8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga795831c7db8e903fe0f5b34f21caef8b">&#9670;&#160;</a></span>ksceNpDrmPspEbootSigGen()</h2>
+<a id="ga7e04abda935dd02f6a790d87f83021a2" name="ga7e04abda935dd02f6a790d87f83021a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7e04abda935dd02f6a790d87f83021a2">&#9670;&#160;</a></span>reserved <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmPspEbootSigGen </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>eboot_sha256</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceNpDrmCheckActDataOpt::reserved[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" for a PSP game - this is unused in firmware &gt;2.00. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+<p>Ignored on FW 3.60. </p>
 
 </div>
 </div>
-<a id="ga53ac7effac4a0c35e4da5c722d4c3d56" name="ga53ac7effac4a0c35e4da5c722d4c3d56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga53ac7effac4a0c35e4da5c722d4c3d56">&#9670;&#160;</a></span>ksceNpDrmEbootSigConvert()</h2>
+<a id="ga8a6e939254f3f2ed4ea8acb96bef8535" name="ga8a6e939254f3f2ed4ea8acb96bef8535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8a6e939254f3f2ed4ea8acb96bef8535">&#9670;&#160;</a></span>account_id <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmEbootSigConvert </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>old_eboot_signature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>new_eboot_signature</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> SceNpDrmCheckDrmResetOpt::account_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares &gt;2.00. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">old_eboot_signature</td><td>- The pointer of old eboot signature data. size is 0x100 </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">new_eboot_signature</td><td>- The pointer of new eboot signature data. size is 0x200</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+<p>Account ID to compare with the current activation data. </p>
 
 </div>
 </div>
-<a id="gad7eb961eb8f13520c08cf7abef288158" name="gad7eb961eb8f13520c08cf7abef288158"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad7eb961eb8f13520c08cf7abef288158">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenPsp()</h2>
+<a id="gac5d019b843e9649d2fc0b45f041cf5e3" name="gac5d019b843e9649d2fc0b45f041cf5e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5d019b843e9649d2fc0b45f041cf5e3">&#9670;&#160;</a></span>reset</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmEbootSigGenPsp </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>eboot_sha256</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sw_version</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a>* SceNpDrmCheckDrmResetOpt::reset</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate eboot.pbp signature "__sce_ebootpbp" for a PSP game. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+<p>Optional output set to <a class="el" href="group__SceTypesKernel.html#gga39fca1837c5ce7715cbf571669660c13a8b45ff35248ec8024afcb466484107c0">SCE_TRUE</a> if this call reset act.dat. </p>
 
 </div>
 </div>
-<a id="ga9337d12a493884eaee967b227486ca13" name="ga9337d12a493884eaee967b227486ca13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9337d12a493884eaee967b227486ca13">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenPs1()</h2>
+<a id="ga38d7ac8963b5c291bb71492a0d0b220b" name="ga38d7ac8963b5c291bb71492a0d0b220b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38d7ac8963b5c291bb71492a0d0b220b">&#9670;&#160;</a></span>input_copy_size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmEbootSigGenPs1 </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>eboot_sha256</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sw_version</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#ga6f2706740670a84a49050f5327a2bf35">SceSize</a> SceNpDrmCheckDrmResetOpt::input_copy_size</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate eboot.pbp signature "__sce_ebootpbp" for a single-disc PS1 game. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_sha256</td><td>- The pointer of SHA256 hash of first (data.psar offset + 0x1C0000) bytes into the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x200 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+<p>Number of input bytes to copy; set to <em>input_size</em> and do not exceed 0x40. </p>
 
 </div>
 </div>
-<a id="ga67be6a70af0add5dd2fb2556b19230a5" name="ga67be6a70af0add5dd2fb2556b19230a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga67be6a70af0add5dd2fb2556b19230a5">&#9670;&#160;</a></span>ksceNpDrmEbootSigGenMultiDisc()</h2>
+<a id="ga59ff31026f84096d0e878dbdec2808a1" name="ga59ff31026f84096d0e878dbdec2808a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59ff31026f84096d0e878dbdec2808a1">&#9670;&#160;</a></span>reserved <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ksceNpDrmEbootSigGenMultiDisc </td>
-          <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>eboot_pbp_path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>sce_discinfo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>eboot_signature</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sw_version</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceNpDrmCheckDrmResetOpt::reserved[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate eboot.pbp signature "__sce_discinfo" for a multi-disc PS1 game. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">eboot_pbp_path</td><td>- The pointer of the file path of the EBOOT.PBP file </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sce_discinfo</td><td>- The pointer of contents of vs0:/app/NPXS10028/__sce_discinfo </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">eboot_signature</td><td>- The pointer of the output eboot signature data. size is 0x100 </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sw_version</td><td>- The minimum firmware version the signature can be used on. cannot be lower than current firmware</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>eboot_signature size on success, &lt; 0 on error. </dd></dl>
+<p>Ignored on FW 3.60. </p>
+
+</div>
+</div>
+<a id="gaa318aed166bcff167b5e8f75ef10ba02" name="gaa318aed166bcff167b5e8f75ef10ba02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa318aed166bcff167b5e8f75ef10ba02">&#9670;&#160;</a></span>content_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* SceNpDrmGetRifInfoOpt::content_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional 0x30-byte content ID output buffer. </p>
+
+</div>
+</div>
+<a id="ga0f988c963f859de3123a197ffaa3f955" name="ga0f988c963f859de3123a197ffaa3f955"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f988c963f859de3123a197ffaa3f955">&#9670;&#160;</a></span>account_id <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>* SceNpDrmGetRifInfoOpt::account_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional license account ID output. </p>
+
+</div>
+</div>
+<a id="ga6d2d98095f8d84ccf22fac501516cf83" name="ga6d2d98095f8d84ccf22fac501516cf83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d2d98095f8d84ccf22fac501516cf83">&#9670;&#160;</a></span>license_version</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>* SceNpDrmGetRifInfoOpt::license_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional license version output. </p>
+
+</div>
+</div>
+<a id="ga72ea41a31a7814de5081addc9ebb4a01" name="ga72ea41a31a7814de5081addc9ebb4a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72ea41a31a7814de5081addc9ebb4a01">&#9670;&#160;</a></span>drm_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>* SceNpDrmGetRifInfoOpt::drm_type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional DRM type output. </p>
+
+</div>
+</div>
+<a id="gae6d9c639b1e659b3297126b684fe49a0" name="gae6d9c639b1e659b3297126b684fe49a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6d9c639b1e659b3297126b684fe49a0">&#9670;&#160;</a></span>flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>* SceNpDrmGetRifInfoOpt::flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional derived license flags output. </p>
+
+</div>
+</div>
+<a id="gaa42afe8ad65f77bbc99b865bb29160bd" name="gaa42afe8ad65f77bbc99b865bb29160bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa42afe8ad65f77bbc99b865bb29160bd">&#9670;&#160;</a></span>sku_flags</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>* SceNpDrmGetRifInfoOpt::sku_flags</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional SKU flags output. </p>
+
+</div>
+</div>
+<a id="ga1a542e170d17bfb13fb6c696c79e48bf" name="ga1a542e170d17bfb13fb6c696c79e48bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a542e170d17bfb13fb6c696c79e48bf">&#9670;&#160;</a></span>lic_start_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>* SceNpDrmGetRifInfoOpt::lic_start_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional license start time output. </p>
+
+</div>
+</div>
+<a id="ga343db2f4904fe5f25c35bd2171039a20" name="ga343db2f4904fe5f25c35bd2171039a20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga343db2f4904fe5f25c35bd2171039a20">&#9670;&#160;</a></span>lic_exp_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceRtcUser.html#structSceRtcTick">SceRtcTick</a>* SceNpDrmGetRifInfoOpt::lic_exp_time</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional license expiration time output. </p>
+
+</div>
+</div>
+<a id="gadfec7dbf6f6cea7403bd0b51d149a89c" name="gadfec7dbf6f6cea7403bd0b51d149a89c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadfec7dbf6f6cea7403bd0b51d149a89c">&#9670;&#160;</a></span>rif_data_0x98</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>* SceNpDrmGetRifInfoOpt::rif_data_0x98</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Optional raw 8-byte RIF field output. </p>
+
+</div>
+</div>
+<a id="gaa02c7ad283ddf1665ad11cf6bdfe1655" name="gaa02c7ad283ddf1665ad11cf6bdfe1655"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa02c7ad283ddf1665ad11cf6bdfe1655">&#9670;&#160;</a></span>reserved <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceNpDrmGetRifInfoOpt::reserved</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ignored on FW 3.60. </p>
 
 </div>
 </div>

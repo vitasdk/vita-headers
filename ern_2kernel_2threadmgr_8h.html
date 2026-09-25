@@ -72,6 +72,9 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_8h.html',''); i
 </script>
 <div id="doc-content">
 <div class="header">
+  <div class="summary">
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">threadmgr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -91,6 +94,40 @@ $(document).ready(function(){initNavTree('ern_2kernel_2threadmgr_8h.html',''); i
 <code>#include &lt;<a class="el" href="ern_2kernel_2threadmgr_2vfp_8h_source.html">psp2kern/kernel/threadmgr/vfp.h</a>&gt;</code><br />
 </div>
 <p><a href="ern_2kernel_2threadmgr_8h_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:ga299f6925b43404d451c0861ddab288ce" id="r_ga299f6925b43404d451c0861ddab288ce"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga299f6925b43404d451c0861ddab288ce">SceKernelTimerFunction</a>) (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> common)</td></tr>
+<tr class="memdesc:ga299f6925b43404d451c0861ddab288ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kernel timer callback.  <br /></td></tr>
+<tr class="separator:ga299f6925b43404d451c0861ddab288ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac9e195c1a7ce43a22f74a8ffacfd9bbe" id="r_gac9e195c1a7ce43a22f74a8ffacfd9bbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gac9e195c1a7ce43a22f74a8ffacfd9bbe">ksceKernelChangeThreadCpuAffinityMask</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> thread_id, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> cpu_affinity_mask)</td></tr>
+<tr class="memdesc:gac9e195c1a7ce43a22f74a8ffacfd9bbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a thread's CPU affinity mask.  <br /></td></tr>
+<tr class="separator:gac9e195c1a7ce43a22f74a8ffacfd9bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4be8456e059d8ada2eca4eafc6b91efe" id="r_ga4be8456e059d8ada2eca4eafc6b91efe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4be8456e059d8ada2eca4eafc6b91efe">ksceKernelClearEvent</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> event_id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> clear_pattern)</td></tr>
+<tr class="memdesc:ga4be8456e059d8ada2eca4eafc6b91efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears event bits by ANDing the current pattern with the supplied pattern.  <br /></td></tr>
+<tr class="separator:ga4be8456e059d8ada2eca4eafc6b91efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacfc7a05631ec81a6a19e5c63c1d75c9f" id="r_gacfc7a05631ec81a6a19e5c63c1d75c9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gacfc7a05631ec81a6a19e5c63c1d75c9f">ksceKernelGetTimerBaseWide</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> timer_id)</td></tr>
+<tr class="memdesc:gacfc7a05631ec81a6a19e5c63c1d75c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the time from which a timer is measured.  <br /></td></tr>
+<tr class="separator:gacfc7a05631ec81a6a19e5c63c1d75c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga400a79b9a7ac89cce412d11eaf569af6" id="r_ga400a79b9a7ac89cce412d11eaf569af6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga400a79b9a7ac89cce412d11eaf569af6">ksceKernelGetTimerTimeWide</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> timer_id)</td></tr>
+<tr class="memdesc:ga400a79b9a7ac89cce412d11eaf569af6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a timer's current time.  <br /></td></tr>
+<tr class="separator:ga400a79b9a7ac89cce412d11eaf569af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga979681ca078f31b14d76e1b6ac41b577" id="r_ga979681ca078f31b14d76e1b6ac41b577"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga979681ca078f31b14d76e1b6ac41b577">ksceKernelRegisterTimer</a> (const char *name, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> delay, <a class="el" href="group__SceThreadMgrKernel.html#ga299f6925b43404d451c0861ddab288ce">SceKernelTimerFunction</a> function, <a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> common)</td></tr>
+<tr class="memdesc:ga979681ca078f31b14d76e1b6ac41b577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and immediately schedules a kernel alarm callback.  <br /></td></tr>
+<tr class="separator:ga979681ca078f31b14d76e1b6ac41b577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0757102ad1d844a4c81fb7fc65146b1f" id="r_ga0757102ad1d844a4c81fb7fc65146b1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga0757102ad1d844a4c81fb7fc65146b1f">ksceKernelStartTimer</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> timer_id)</td></tr>
+<tr class="memdesc:ga0757102ad1d844a4c81fb7fc65146b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a timer.  <br /></td></tr>
+<tr class="separator:ga0757102ad1d844a4c81fb7fc65146b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddeb3cc78c70aa3726f7f149939758e1" id="r_gaddeb3cc78c70aa3726f7f149939758e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#gaddeb3cc78c70aa3726f7f149939758e1">ksceKernelStopTimer</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> timer_id)</td></tr>
+<tr class="memdesc:gaddeb3cc78c70aa3726f7f149939758e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops a timer.  <br /></td></tr>
+<tr class="separator:gaddeb3cc78c70aa3726f7f149939758e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4f1b26725d72db340ae88eb3f77b451a" id="r_ga4f1b26725d72db340ae88eb3f77b451a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceThreadMgrKernel.html#ga4f1b26725d72db340ae88eb3f77b451a">ksceKernelWaitEvent</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> event_id, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> wait_pattern, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *result_pattern, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *<a class="el" href="group__SceLsdbUser.html#ga0f53d287ac7c064d1a49d4bd93ca1cb9">user_data</a>, <a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> *timeout)</td></tr>
+<tr class="memdesc:ga4f1b26725d72db340ae88eb3f77b451a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for an event pattern without running thread callbacks.  <br /></td></tr>
+<tr class="separator:ga4f1b26725d72db340ae88eb3f77b451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

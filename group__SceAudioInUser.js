@@ -16,11 +16,25 @@ var group__SceAudioInUser =
     ] ],
     [ "SceAudioInPortType", "group__SceAudioInUser.html#gaa85902ccecf8f073a69d586a3a554660", [
       [ "SCE_AUDIO_IN_PORT_TYPE_VOICE", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b", null ],
-      [ "SCE_AUDIO_IN_PORT_TYPE_RAW", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49", null ]
+      [ "SCE_AUDIO_IN_PORT_TYPE_RAW", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49", null ],
+      [ "SCE_AUDIO_IN_PORT_TYPE_DIAG", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e", null ],
+      [ "SCE_AUDIO_IN_PORT_TYPE_CAMERA", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f", null ]
     ] ],
     [ "SceAudioInParam", "group__SceAudioInUser.html#ga952b9bb4d200c4627dc667b0785ae00d", [
       [ "SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO", "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b", null ],
       [ "SCE_AUDIO_IN_GETSTATUS_MUTE", "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f", null ]
+    ] ],
+    [ "SceAudioInMuteCommand", "group__SceAudioInUser.html#ga0cde19ed00b17978f850efbd3323ae26", [
+      [ "SCE_AUDIO_IN_MUTE", "group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671", null ],
+      [ "SCE_AUDIO_IN_UNMUTE", "group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83", null ]
+    ] ],
+    [ "SceAudioInInputMode", "group__SceAudioInUser.html#gaf57208dcbd33945a8630a9cd4c58303c", [
+      [ "SCE_AUDIO_IN_INPUT_MODE_NONE", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca1cb8ea3315a1c30c2c00a9c9e70a989d", null ],
+      [ "SCE_AUDIO_IN_INPUT_MODE_BUILTIN_MIC", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303caac493ad0b8439187f594c01dd7d1ca31", null ],
+      [ "SCE_AUDIO_IN_INPUT_MODE_HEADSET_MIC", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303cabee2db788479077c87f2f096def07696", null ],
+      [ "SCE_AUDIO_IN_INPUT_MODE_CODEC_2", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca570b16df64c689a9fac11ae01d31dd42", null ],
+      [ "SCE_AUDIO_IN_INPUT_MODE_BLUETOOTH", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca96eb7de54097f6aa66038d37be1bd8a9", null ],
+      [ "SCE_AUDIO_IN_INPUT_MODE_VITA_TV", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca044fceddf30f25f0b3f9230aa03f845f", null ]
     ] ],
     [ "SCE_AUDIO_IN_ERROR_FATAL", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca74b0f071efb8647de3441a15a0b96f1a", null ],
     [ "SCE_AUDIO_IN_ERROR_INVALID_PORT", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca0bd19f43d7f1bdfc42e26ca75f35c54f", null ],
@@ -36,11 +50,28 @@ var group__SceAudioInUser =
     [ "SCE_AUDIO_IN_ERROR_INVALID_PARAMETER", "group__SceAudioInUser.html#gga28abc8ed0115ce4f3c3b19bbac143dcca002bd5d82ea6a6b384ce6e1a268cc67a", null ],
     [ "SCE_AUDIO_IN_PORT_TYPE_VOICE", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a504f86ee1dc4077b9c5f9f9acf43672b", null ],
     [ "SCE_AUDIO_IN_PORT_TYPE_RAW", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a4b01e6d350dc516bae750c42e4b83c49", null ],
+    [ "SCE_AUDIO_IN_PORT_TYPE_DIAG", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a8a1508a76d06445865e6e96daa469a5e", null ],
+    [ "SCE_AUDIO_IN_PORT_TYPE_CAMERA", "group__SceAudioInUser.html#ggaa85902ccecf8f073a69d586a3a554660a75cf97c63a2124e82f25f439f415c14f", null ],
     [ "SCE_AUDIO_IN_PARAM_FORMAT_S16_MONO", "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dae14a23f67125c93de9ea6ba1f0ce048b", null ],
     [ "SCE_AUDIO_IN_GETSTATUS_MUTE", "group__SceAudioInUser.html#gga952b9bb4d200c4627dc667b0785ae00dad4ab8e194e092f8970b84980b4abc59f", null ],
+    [ "SCE_AUDIO_IN_MUTE", "group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26a6ae23096279276dd7f86252ac5a4f671", null ],
+    [ "SCE_AUDIO_IN_UNMUTE", "group__SceAudioInUser.html#gga0cde19ed00b17978f850efbd3323ae26abf6c958e1f3ab794c48c2c563766bf83", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_NONE", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca1cb8ea3315a1c30c2c00a9c9e70a989d", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_BUILTIN_MIC", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303caac493ad0b8439187f594c01dd7d1ca31", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_HEADSET_MIC", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303cabee2db788479077c87f2f096def07696", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_CODEC_2", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca570b16df64c689a9fac11ae01d31dd42", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_BLUETOOTH", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca96eb7de54097f6aa66038d37be1bd8a9", null ],
+    [ "SCE_AUDIO_IN_INPUT_MODE_VITA_TV", "group__SceAudioInUser.html#ggaf57208dcbd33945a8630a9cd4c58303ca044fceddf30f25f0b3f9230aa03f845f", null ],
     [ "sceAudioInOpenPort", "group__SceAudioInUser.html#gafd74510965e47b7194e496808d47458b", null ],
+    [ "sceAudioInOpenPortForDiag", "group__SceAudioInUser.html#ga0c0e37c3b83ea0aeaa2e2ffc9525a5e6", null ],
     [ "sceAudioInReleasePort", "group__SceAudioInUser.html#ga1c14f220a4c636c0c69960dc6b5aa9df", null ],
     [ "sceAudioInInput", "group__SceAudioInUser.html#ga4f513ba6e4c39b562ecc6cf9439c648a", null ],
+    [ "sceAudioInInputWithInputDeviceState", "group__SceAudioInUser.html#ga80ee214bdf59b61d59dbe4af91599190", null ],
     [ "sceAudioInGetAdopt", "group__SceAudioInUser.html#gae05aa5901840b461c396f4ac050843a6", null ],
-    [ "sceAudioInGetStatus", "group__SceAudioInUser.html#ga3156b2e164d368f2c9d20cec93b5dee2", null ]
+    [ "sceAudioInGetStatus", "group__SceAudioInUser.html#ga3156b2e164d368f2c9d20cec93b5dee2", null ],
+    [ "sceAudioInGetInput", "group__SceAudioInUser.html#gac0a2bd77cb80483c12c3e883726c32d2", null ],
+    [ "sceAudioInSelectInput", "group__SceAudioInUser.html#gae11764a9430eed916d8609b21e69ccbc", null ],
+    [ "sceAudioInSetMute", "group__SceAudioInUser.html#ga595212f30839f3bd4bf077d218ab6cbd", null ],
+    [ "sceAudioInSetMicGain", "group__SceAudioInUser.html#ga4c1eeefac01ce56bcdf1ba177b566c8e", null ],
+    [ "sceAudioInGetMicGain", "group__SceAudioInUser.html#gabfa8583621e05fc3600f3547db3dbffd", null ]
 ];

@@ -12,6 +12,25 @@ var libssl_8h =
       [ "SCE_SSL_ERROR_INVALID_FORMAT", "group__SceLibSslUser.html#ggaa87d604f7d09c5bf42fe99ac57ac81fda7405cde81cb669009912bba0644bc34e", null ],
       [ "SCE_SSL_ERROR_INVALID_VALUE", "group__SceLibSslUser.html#ggaa87d604f7d09c5bf42fe99ac57ac81fda5ffdb9331b83ef32fa50565050d23ac1", null ]
     ] ],
+    [ "SceSslCertIssuer", "group__SceLibSslUser.html#ga91e1f3ed158b551d44c11d24725388e8", [
+      [ "SCE_SSLCERT_ISSUER_ALL", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8af67c435df265650d4c398b98a778549c", null ],
+      [ "SCE_SSLCERT_ISSUER_SCE", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a34e710c520924bed9475876ec578e690", null ],
+      [ "SCE_SSLCERT_ISSUER_VERISIGN", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a15d71abeda3f826e0430ec5a35c89a7d", null ],
+      [ "SCE_SSLCERT_ISSUER_GEOTRUST", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a03e861a545e99d4d9d636f87ea732513", null ],
+      [ "SCE_SSLCERT_ISSUER_THAWTE", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9ee8d8f9b2c2c89244d8b6f9ec1fab0c", null ],
+      [ "SCE_SSLCERT_ISSUER_COMODO", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3d761279d863f4253984cbd902b32c5d", null ],
+      [ "SCE_SSLCERT_ISSUER_GLOBALSIGN", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a5b537e9505c3be07d18f25a26d99bf87", null ],
+      [ "SCE_SSLCERT_ISSUER_CYBERTRUST", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a061cbc1bcbd07ab7ff1d41c1f57277d7", null ],
+      [ "SCE_SSLCERT_ISSUER_ENTRUST", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aa5f7b6964882beeedd931b9b36cb82de", null ],
+      [ "SCE_SSLCERT_ISSUER_DIGICERT", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3a0bebbfe97d6bf310dcf4bbb1bd76da", null ],
+      [ "SCE_SSLCERT_ISSUER_GODADDY", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a3c20518fcc1ea30b6506b243bdc9da26", null ],
+      [ "SCE_SSLCERT_ISSUER_RSA", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ac53a39a15e6d3119e22d51d143b0dfbd", null ],
+      [ "SCE_SSLCERT_ISSUER_STARTCOM", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8aec206658756d511e4a6f19e2c139f020", null ],
+      [ "SCE_SSLCERT_ISSUER_SECOM", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8ae2dc082bf0cdf2516ca3dea4f8f6579c", null ],
+      [ "SCE_SSLCERT_ISSUER_TRUSTWAVE", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a264878a14b4a738927f28e52298a0293", null ],
+      [ "SCE_SSLCERT_ISSUER_AFFIRMTRUST", "group__SceLibSslUser.html#gga91e1f3ed158b551d44c11d24725388e8a9a8d0461cc1218da2f4c6d732839dbd9", null ]
+    ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLibSslUser.html#ga394be5880b7f2a98b08ce543fc712a0d", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceLibSslUser.html#gaac2da5d3ede9857a64763911f270d2b7", null ],
     [ "sceSslInit", "group__SceLibSslUser.html#ga13926687f23c60d45340f013b1382f75", null ],
     [ "sceSslTerm", "group__SceLibSslUser.html#ga4bc1a9248ba253229a7b3a44727f2ad3", null ],
@@ -23,5 +42,6 @@ var libssl_8h =
     [ "sceSslGetNameEntryInfo", "group__SceLibSslUser.html#gac23339aac973b39e0e74701c1ff4e484", null ],
     [ "sceSslGetSubjectName", "group__SceLibSslUser.html#ga0ae549d4b609ea4919d42d4d66716d0d", null ],
     [ "sceSslGetIssuerName", "group__SceLibSslUser.html#gab11f8d374a759e2e582db418dbbab95e", null ],
-    [ "sceSslFreeSslCertName", "group__SceLibSslUser.html#ga52861a9bb6eee66901b8393dc50b152b", null ]
+    [ "sceSslFreeSslCertName", "group__SceLibSslUser.html#ga52861a9bb6eee66901b8393dc50b152b", null ],
+    [ "sceSslInternalGetCertificateAuthority", "group__SceLibSslUser.html#ga248c82261a899afa8a637675c50738b5", null ]
 ];

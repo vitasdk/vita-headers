@@ -84,7 +84,11 @@ $(document).ready(function(){initNavTree('group__SceSblACMgrUser.html',''); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga8fc88c8e397311c7a2e5ba0be464ba5b" id="r_ga8fc88c8e397311c7a2e5ba0be464ba5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrUser.html#ga8fc88c8e397311c7a2e5ba0be464ba5b">sceSblACMgrIsGameProgram</a> (<a class="el" href="group__SceTypesKernel.html#ga492e1dc38bbe2713a4c93c64ec127d13">SceBool</a> *result)</td></tr>
+<tr class="memdesc:ga8fc88c8e397311c7a2e5ba0be464ba5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the calling process is a game program.  <br /></td></tr>
 <tr class="separator:ga8fc88c8e397311c7a2e5ba0be464ba5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2ee3a014a5de4b6f07d3f7f25742a143" id="r_ga2ee3a014a5de4b6f07d3f7f25742a143"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceSblACMgrUser.html#ga2ee3a014a5de4b6f07d3f7f25742a143">_sceSblACMgrIsGameProgram</a> (int *result)</td></tr>
+<tr class="memdesc:ga2ee3a014a5de4b6f07d3f7f25742a143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the calling process is a game program.  <br /></td></tr>
+<tr class="separator:ga2ee3a014a5de4b6f07d3f7f25742a143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Exports for User. </p>
@@ -114,6 +118,43 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check whether the calling process is a game program. </p>
+<p>This SceLibKernel wrapper calls <a class="el" href="group__SceSblACMgrUser.html#ga2ee3a014a5de4b6f07d3f7f25742a143" title="Check whether the calling process is a game program.">_sceSblACMgrIsGameProgram</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Must be non-NULL. Receives 1 for a game program, or 0 otherwise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, 0x800F0916 if <em>result</em> is NULL, or an error copying the result to user memory. </dd></dl>
+
+</div>
+</div>
+<a id="ga2ee3a014a5de4b6f07d3f7f25742a143" name="ga2ee3a014a5de4b6f07d3f7f25742a143"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ee3a014a5de4b6f07d3f7f25742a143">&#9670;&#160;</a></span>_sceSblACMgrIsGameProgram()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int _sceSblACMgrIsGameProgram </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether the calling process is a game program. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>- Must point to a four-byte value. Receives 1 if the calling process is a game program, otherwise 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>SCE_OK on success, 0x800F0916 if <em>result</em> is NULL, or an error copying the result to user memory. </dd></dl>
 
 </div>
 </div>

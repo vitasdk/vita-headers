@@ -7,6 +7,8 @@ var ommon_2kernel_2modulemgr_8h =
     [ "SCE_KERNEL_STOP_SUCCESS", "group__SceModulemgrKernel.html#gada7508ef86c9c6c4d2be6e86c8d0a12b", null ],
     [ "SCE_KERNEL_STOP_FAIL", "group__SceModulemgrKernel.html#ga79a29e30de9f16315082b33d9df483f8", null ],
     [ "SCE_KERNEL_STOP_CANCEL", "group__SceModulemgrKernel.html#gae09ae07a8901f7f75ed837e3bca6e968", null ],
+    [ "SCE_MODULE_ATTR_NONE", "group__SceModulemgrKernel.html#gac709f707b5e42a4e3642be490d2cfd74", null ],
+    [ "SCE_KERNEL_MODULE_ATTR_NONE", "group__SceModulemgrKernel.html#ga9f1a7c2b85307ea9bbb1d88bae929b81", null ],
     [ "SceKernelFwInfo", "group__SceModulemgrKernel.html#ga10d23e88723f3b2776f3e928dd4f348d", null ],
     [ "SceKernelModuleState", "group__SceModulemgrKernel.html#gaa5e9568f90e268bfc335c3dbfb46edd0", [
       [ "SCE_KERNEL_MODULE_STATE_READY", "group__SceModulemgrKernel.html#ggaa5e9568f90e268bfc335c3dbfb46edd0a7a5d0ae7190799f7f847c2b5e0c33cad", null ],
@@ -26,6 +28,8 @@ var ommon_2kernel_2modulemgr_8h =
       [ "SCE_KERNEL_PRELOAD_INHIBIT_LIBPERF", "group__SceModulemgrKernel.html#ggafb1efc97b0bee8a9bb7179e0bfa05d3da16133dc47733579d2bb86f1a115f4744", null ]
     ] ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga8b04aaef9772687afa9efb3d8379999f", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#gade852f9f3fe1ca7a2515b793f8f998a1", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#gac7138dbc6c0465ddcdc5b310785002e2", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga576fee6ecde265285fce2964eab63f69", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga818023fa50b9f7a82169e23fa5c3a509", null ],
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceModulemgrKernel.html#ga220bd1b331b95501c305a0cdfec7a3bd", null ],

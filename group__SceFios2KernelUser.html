@@ -90,6 +90,8 @@ Data Structures</h2></td></tr>
 <tr class="separator:structSceFiosDHOpenSyncSyscallArgs"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceFiosGetListSyscallArgs" id="r_structSceFiosGetListSyscallArgs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetListSyscallArgs">SceFiosGetListSyscallArgs</a></td></tr>
 <tr class="separator:structSceFiosGetListSyscallArgs"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:structSceFiosGetRecommendedSchedulerSyscallArgs" id="r_structSceFiosGetRecommendedSchedulerSyscallArgs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetRecommendedSchedulerSyscallArgs">SceFiosGetRecommendedSchedulerSyscallArgs</a></td></tr>
+<tr class="separator:structSceFiosGetRecommendedSchedulerSyscallArgs"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceFiosResolveSyncSyscallArgs" id="r_structSceFiosResolveSyncSyscallArgs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveSyncSyscallArgs">SceFiosResolveSyncSyscallArgs</a></td></tr>
 <tr class="separator:structSceFiosResolveSyncSyscallArgs"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:structSceFiosResolveWithRangeSyncSyscallArgs" id="r_structSceFiosResolveWithRangeSyncSyscallArgs"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveWithRangeSyncSyscallArgs">SceFiosResolveWithRangeSyncSyscallArgs</a></td></tr>
@@ -138,8 +140,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga02c651f539444142fddf31fd5bca2301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad07b783ec26851b12365f5160ce9d20d" id="r_gad07b783ec26851b12365f5160ce9d20d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gad07b783ec26851b12365f5160ce9d20d">_sceFiosKernelOverlayGetList</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> min_order, <a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a> max_order, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetListSyscallArgs">SceFiosGetListSyscallArgs</a> *args)</td></tr>
 <tr class="separator:gad07b783ec26851b12365f5160ce9d20d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga54d8744895445cd535049dab1d09666f" id="r_ga54d8744895445cd535049dab1d09666f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga54d8744895445cd535049dab1d09666f">_sceFiosKernelOverlayGetRecommendedScheduler</a> (int avail, const char *partially_resolved_path, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *a3)</td></tr>
-<tr class="separator:ga54d8744895445cd535049dab1d09666f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga11308c679c619569a75ea51b52f05f8f" id="r_ga11308c679c619569a75ea51b52f05f8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga11308c679c619569a75ea51b52f05f8f">VITASDK_BUILD_ASSERT_EQ</a> (0x8, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetRecommendedSchedulerSyscallArgs">SceFiosGetRecommendedSchedulerSyscallArgs</a>)</td></tr>
+<tr class="separator:ga11308c679c619569a75ea51b52f05f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab82d5b357ccaf5a4b36ff4801c6c3dfd" id="r_gab82d5b357ccaf5a4b36ff4801c6c3dfd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gab82d5b357ccaf5a4b36ff4801c6c3dfd">_sceFiosKernelOverlayGetRecommendedScheduler</a> (int scheduler_count, const char *partially_resolved_path, <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *args)</td></tr>
+<tr class="memdesc:gab82d5b357ccaf5a4b36ff4801c6c3dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the recommended scheduler index for a partially resolved path.  <br /></td></tr>
+<tr class="separator:gab82d5b357ccaf5a4b36ff4801c6c3dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98c85bd22e25a0f1194672100d60e254" id="r_ga98c85bd22e25a0f1194672100d60e254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga98c85bd22e25a0f1194672100d60e254">_sceFiosKernelOverlayModify</a> (<a class="el" href="group__SceFios2KernelUser.html#gacd947ac33d2e9a7c8deb20c0db672788">SceFiosKernelOverlayID</a> id, const <a class="el" href="group__SceFios2KernelUser.html#ga0ddba7f2aaef85fbe212bfd703af2f6a">SceFiosKernelOverlay</a> *new_value)</td></tr>
 <tr class="separator:ga98c85bd22e25a0f1194672100d60e254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga88875a2eab6f5ba6942a20815eb02254" id="r_ga88875a2eab6f5ba6942a20815eb02254"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga88875a2eab6f5ba6942a20815eb02254">_sceFiosKernelOverlayModifyForProcess</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> target_process, <a class="el" href="group__SceFios2KernelUser.html#gacd947ac33d2e9a7c8deb20c0db672788">SceFiosKernelOverlayID</a> id, const <a class="el" href="group__SceFios2KernelUser.html#ga0ddba7f2aaef85fbe212bfd703af2f6a">SceFiosKernelOverlay</a> *new_value)</td></tr>
@@ -150,12 +155,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga23cbab0311f42047643c978b4c9147a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga062a7f4e0f6a0974164f2fb1f7244052" id="r_ga062a7f4e0f6a0974164f2fb1f7244052"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga062a7f4e0f6a0974164f2fb1f7244052">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveSyncSyscallArgs">SceFiosResolveSyncSyscallArgs</a>)</td></tr>
 <tr class="separator:ga062a7f4e0f6a0974164f2fb1f7244052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa74350d01b70eba23df20c79fe7465a8" id="r_gaa74350d01b70eba23df20c79fe7465a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gaa74350d01b70eba23df20c79fe7465a8">_sceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolve_flag, const char *in_path, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveSyncSyscallArgs">SceFiosResolveSyncSyscallArgs</a> *args)</td></tr>
-<tr class="separator:gaa74350d01b70eba23df20c79fe7465a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac03998aa94b1b4fd4e469b8b0a779de" id="r_gaac03998aa94b1b4fd4e469b8b0a779de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gaac03998aa94b1b4fd4e469b8b0a779de">_sceFiosKernelOverlayResolveSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolve_for_write, const char *in_path, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveSyncSyscallArgs">SceFiosResolveSyncSyscallArgs</a> *args)</td></tr>
+<tr class="memdesc:gaac03998aa94b1b4fd4e469b8b0a779de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a path synchronously through a process's overlays.  <br /></td></tr>
+<tr class="separator:gaac03998aa94b1b4fd4e469b8b0a779de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab57e002c3103ad75b5a865c5164f4d99" id="r_gab57e002c3103ad75b5a865c5164f4d99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gab57e002c3103ad75b5a865c5164f4d99">VITASDK_BUILD_ASSERT_EQ</a> (0x18, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveWithRangeSyncSyscallArgs">SceFiosResolveWithRangeSyncSyscallArgs</a>)</td></tr>
 <tr class="separator:gab57e002c3103ad75b5a865c5164f4d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d2e14ce988aba3001a3d777212c6250" id="r_ga1d2e14ce988aba3001a3d777212c6250"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga1d2e14ce988aba3001a3d777212c6250">_sceFiosKernelOverlayResolveWithRangeSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolve_flag, const char *in_path, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveWithRangeSyncSyscallArgs">SceFiosResolveWithRangeSyncSyscallArgs</a> *args)</td></tr>
-<tr class="separator:ga1d2e14ce988aba3001a3d777212c6250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga368f3c8fb584e0db37810167c5fedac5" id="r_ga368f3c8fb584e0db37810167c5fedac5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga368f3c8fb584e0db37810167c5fedac5">_sceFiosKernelOverlayResolveWithRangeSync</a> (<a class="el" href="group__SceTypesKernel.html#ga9c036549fd8cfd554ba3aa26a397b663">SceUID</a> <a class="el" href="group__SceKernelDebugKernel.html#gad4f5ab11dcec6ae61aa02043d9c86f4b">pid</a>, int resolve_for_write, const char *in_path, <a class="el" href="group__SceFios2KernelUser.html#structSceFiosResolveWithRangeSyncSyscallArgs">SceFiosResolveWithRangeSyncSyscallArgs</a> *args)</td></tr>
+<tr class="memdesc:ga368f3c8fb584e0db37810167c5fedac5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a path through overlays whose order is between <code>min_order</code> and <code>max_order</code>, inclusive.  <br /></td></tr>
+<tr class="separator:ga368f3c8fb584e0db37810167c5fedac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf7217e6321569f409366ef10f06c4a85" id="r_gaf7217e6321569f409366ef10f06c4a85"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gaf7217e6321569f409366ef10f06c4a85">_sceFiosKernelOverlayThreadIsDisabled</a> (void)</td></tr>
 <tr class="separator:gaf7217e6321569f409366ef10f06c4a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2d799f76bded0b3cb4e6d5f71dc5064" id="r_gac2d799f76bded0b3cb4e6d5f71dc5064"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gac2d799f76bded0b3cb4e6d5f71dc5064">_sceFiosKernelOverlayThreadSetDisabled</a> (<a class="el" href="group__SceTypesKernel.html#ga65a319f178d71bb18ca0a0f47eb36385">SceInt32</a> disabled)</td></tr>
@@ -164,10 +171,13 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga6ab248de615111c64565f51eefdd6709" id="r_ga6ab248de615111c64565f51eefdd6709"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gafcaa32708b1128e7571142909b96a352">SceUInt8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga6ab248de615111c64565f51eefdd6709">SceFiosDHOpenSyncSyscallArgs::to_order</a></td></tr>
+<tr class="memdesc:ga6ab248de615111c64565f51eefdd6709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum overlay order to include. On FW 3.60, the function returns an unsupported-operation error before using this value.  <br /></td></tr>
 <tr class="separator:ga6ab248de615111c64565f51eefdd6709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa14dff74258a307c95672f16190bae9a" id="r_gaa14dff74258a307c95672f16190bae9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gaa14dff74258a307c95672f16190bae9a">SceFiosDHOpenSyncSyscallArgs::padding</a> [2]</td></tr>
+<tr class="memdesc:gaa14dff74258a307c95672f16190bae9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ignored on FW 3.60.  <br /></td></tr>
 <tr class="separator:gaa14dff74258a307c95672f16190bae9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0bf1bb126adfd634d3c898e002eb5dd8" id="r_ga0bf1bb126adfd634d3c898e002eb5dd8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceFios2KernelUser.html#gacd947ac33d2e9a7c8deb20c0db672788">SceFiosKernelOverlayID</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga0bf1bb126adfd634d3c898e002eb5dd8">SceFiosGetListSyscallArgs::out_ids</a></td></tr>
+<tr class="memdesc:ga0bf1bb126adfd634d3c898e002eb5dd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output buffer for overlay IDs; may be NULL only when max_ids is zero.  <br /></td></tr>
 <tr class="separator:ga0bf1bb126adfd634d3c898e002eb5dd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fb524f8e964ce76bc9c11f4f1319f63" id="r_ga5fb524f8e964ce76bc9c11f4f1319f63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga5fb524f8e964ce76bc9c11f4f1319f63">SceFiosGetListSyscallArgs::data_0x04</a></td></tr>
 <tr class="separator:ga5fb524f8e964ce76bc9c11f4f1319f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +189,11 @@ Variables</h2></td></tr>
 <tr class="separator:ga359ce4b612640f3bbe04b70d3f356006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73a4e400b06e4ffc3134f411c60a0c35" id="r_ga73a4e400b06e4ffc3134f411c60a0c35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga73a4e400b06e4ffc3134f411c60a0c35">SceFiosGetListSyscallArgs::data_0x14</a></td></tr>
 <tr class="separator:ga73a4e400b06e4ffc3134f411c60a0c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae409fcf598f2300d14fe495a910ab415" id="r_gae409fcf598f2300d14fe495a910ab415"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gae409fcf598f2300d14fe495a910ab415">SceFiosGetRecommendedSchedulerSyscallArgs::reserved</a> [2]</td></tr>
+<tr class="memdesc:gae409fcf598f2300d14fe495a910ab415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied from user memory but not used on FW 3.60.  <br /></td></tr>
+<tr class="separator:gae409fcf598f2300d14fe495a910ab415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe46ccddbc383c4f2efe72171ffd875a" id="r_gabe46ccddbc383c4f2efe72171ffd875a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gabe46ccddbc383c4f2efe72171ffd875a">SceFiosResolveSyncSyscallArgs::out_path</a></td></tr>
+<tr class="memdesc:gabe46ccddbc383c4f2efe72171ffd875a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved path output buffer.  <br /></td></tr>
 <tr class="separator:gabe46ccddbc383c4f2efe72171ffd875a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga004d52aa6a80feffe60f1dc2f21217dc" id="r_ga004d52aa6a80feffe60f1dc2f21217dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga004d52aa6a80feffe60f1dc2f21217dc">SceFiosResolveSyncSyscallArgs::data_0x04</a></td></tr>
 <tr class="separator:ga004d52aa6a80feffe60f1dc2f21217dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,6 +206,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ga4aeb30835585729eb6966ed47358f425" id="r_ga4aeb30835585729eb6966ed47358f425"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga4aeb30835585729eb6966ed47358f425">SceFiosResolveSyncSyscallArgs::data_0x14</a></td></tr>
 <tr class="separator:ga4aeb30835585729eb6966ed47358f425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d3e0c89d968d4ac18dc3461efba9ebb" id="r_ga0d3e0c89d968d4ac18dc3461efba9ebb"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#ga0d3e0c89d968d4ac18dc3461efba9ebb">SceFiosResolveWithRangeSyncSyscallArgs::out_path</a></td></tr>
+<tr class="memdesc:ga0d3e0c89d968d4ac18dc3461efba9ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolved path output buffer.  <br /></td></tr>
 <tr class="separator:ga0d3e0c89d968d4ac18dc3461efba9ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaac0e8295da83b0327e348f44f8d1b64d" id="r_gaac0e8295da83b0327e348f44f8d1b64d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SceFios2KernelUser.html#gaac0e8295da83b0327e348f44f8d1b64d">SceFiosResolveWithRangeSyncSyscallArgs::data_0x04</a></td></tr>
 <tr class="separator:gaac0e8295da83b0327e348f44f8d1b64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,13 +252,13 @@ Variables</h2></td></tr>
 <td class="fieldname">
 to_order</td>
 <td class="fielddoc">
-</td></tr>
+Maximum overlay order to include. On FW 3.60, the function returns an unsupported-operation error before using this value. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaa14dff74258a307c95672f16190bae9a" name="gaa14dff74258a307c95672f16190bae9a"></a>int</td>
 <td class="fieldname">
 padding[2]</td>
 <td class="fielddoc">
-</td></tr>
+Ignored on FW 3.60. </td></tr>
 </table>
 
 </div>
@@ -266,7 +281,7 @@ padding[2]</td>
 <td class="fieldname">
 out_ids</td>
 <td class="fielddoc">
-</td></tr>
+Output buffer for overlay IDs; may be NULL only when max_ids is zero. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga5fb524f8e964ce76bc9c11f4f1319f63" name="ga5fb524f8e964ce76bc9c11f4f1319f63"></a>int</td>
 <td class="fieldname">
@@ -301,6 +316,29 @@ data_0x14</td>
 
 </div>
 </div>
+<a name="structSceFiosGetRecommendedSchedulerSyscallArgs" id="structSceFiosGetRecommendedSchedulerSyscallArgs"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#structSceFiosGetRecommendedSchedulerSyscallArgs">&#9670;&#160;</a></span>SceFiosGetRecommendedSchedulerSyscallArgs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct SceFiosGetRecommendedSchedulerSyscallArgs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="textblock"></div><table class="fieldtable">
+<tr><th colspan="3">Data Fields</th></tr>
+<tr><td class="fieldtype">
+<a id="gae409fcf598f2300d14fe495a910ab415" name="gae409fcf598f2300d14fe495a910ab415"></a><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a></td>
+<td class="fieldname">
+reserved[2]</td>
+<td class="fielddoc">
+Copied from user memory but not used on FW 3.60. </td></tr>
+</table>
+
+</div>
+</div>
 <a name="structSceFiosResolveSyncSyscallArgs" id="structSceFiosResolveSyncSyscallArgs"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#structSceFiosResolveSyncSyscallArgs">&#9670;&#160;</a></span>SceFiosResolveSyncSyscallArgs</h2>
 
@@ -319,7 +357,7 @@ data_0x14</td>
 <td class="fieldname">
 out_path</td>
 <td class="fielddoc">
-</td></tr>
+Resolved path output buffer. </td></tr>
 <tr><td class="fieldtype">
 <a id="ga004d52aa6a80feffe60f1dc2f21217dc" name="ga004d52aa6a80feffe60f1dc2f21217dc"></a>int</td>
 <td class="fieldname">
@@ -372,7 +410,7 @@ data_0x14</td>
 <td class="fieldname">
 out_path</td>
 <td class="fielddoc">
-</td></tr>
+Resolved path output buffer. </td></tr>
 <tr><td class="fieldtype">
 <a id="gaac0e8295da83b0327e348f44f8d1b64d" name="gaac0e8295da83b0327e348f44f8d1b64d"></a>int</td>
 <td class="fieldname">
@@ -486,7 +524,7 @@ data_0x14</td>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga290041b3dffcb8d2eb70422a229b475b" name="ga290041b3dffcb8d2eb70422a229b475b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga290041b3dffcb8d2eb70422a229b475b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga290041b3dffcb8d2eb70422a229b475b">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[1/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +666,7 @@ data_0x14</td>
 </div>
 </div>
 <a id="ga8dfae761dd7220d91d1a59be713c50fa" name="ga8dfae761dd7220d91d1a59be713c50fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8dfae761dd7220d91d1a59be713c50fa">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8dfae761dd7220d91d1a59be713c50fa">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -842,7 +880,7 @@ data_0x14</td>
 </div>
 </div>
 <a id="ga02c651f539444142fddf31fd5bca2301" name="ga02c651f539444142fddf31fd5bca2301"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga02c651f539444142fddf31fd5bca2301">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga02c651f539444142fddf31fd5bca2301">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[3/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,8 +947,36 @@ data_0x14</td>
 
 </div>
 </div>
-<a id="ga54d8744895445cd535049dab1d09666f" name="ga54d8744895445cd535049dab1d09666f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga54d8744895445cd535049dab1d09666f">&#9670;&#160;</a></span>_sceFiosKernelOverlayGetRecommendedScheduler()</h2>
+<a id="ga11308c679c619569a75ea51b52f05f8f" name="ga11308c679c619569a75ea51b52f05f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga11308c679c619569a75ea51b52f05f8f">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VITASDK_BUILD_ASSERT_EQ </td>
+          <td>(</td>
+          <td class="paramtype">0x8&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetRecommendedSchedulerSyscallArgs">SceFiosGetRecommendedSchedulerSyscallArgs</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab82d5b357ccaf5a4b36ff4801c6c3dfd" name="gab82d5b357ccaf5a4b36ff4801c6c3dfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab82d5b357ccaf5a4b36ff4801c6c3dfd">&#9670;&#160;</a></span>_sceFiosKernelOverlayGetRecommendedScheduler()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -919,7 +985,7 @@ data_0x14</td>
           <td class="memname">int _sceFiosKernelOverlayGetRecommendedScheduler </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>avail</em>, </td>
+          <td class="paramname"><em>scheduler_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -931,7 +997,7 @@ data_0x14</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> *&#160;</td>
-          <td class="paramname"><em>a3</em>&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -940,6 +1006,17 @@ data_0x14</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the recommended scheduler index for a partially resolved path. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scheduler_count</td><td>- Number of available schedulers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">partially_resolved_path</td><td>- Optional partially resolved path. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>- Non-NULL pointer to an 8-byte block. Its contents are unused on FW 3.60. Still declared as a <a class="el" href="group__SceTypesKernel.html#gab1bcf7d8b15df17d3b286f6580ba2492">SceUInt64</a> pointer for backwards compatibility; points to a <a class="el" href="group__SceFios2KernelUser.html#structSceFiosGetRecommendedSchedulerSyscallArgs">SceFiosGetRecommendedSchedulerSyscallArgs</a> structure.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 for a host[0-9]: path when scheduler_count is greater than 1, otherwise 0, or a negative error code when a user-memory copy fails. </dd></dl>
 
 </div>
 </div>
@@ -1052,7 +1129,7 @@ data_0x14</td>
 </div>
 </div>
 <a id="ga062a7f4e0f6a0974164f2fb1f7244052" name="ga062a7f4e0f6a0974164f2fb1f7244052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga062a7f4e0f6a0974164f2fb1f7244052">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga062a7f4e0f6a0974164f2fb1f7244052">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1079,8 +1156,8 @@ data_0x14</td>
 
 </div>
 </div>
-<a id="gaa74350d01b70eba23df20c79fe7465a8" name="gaa74350d01b70eba23df20c79fe7465a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa74350d01b70eba23df20c79fe7465a8">&#9670;&#160;</a></span>_sceFiosKernelOverlayResolveSync()</h2>
+<a id="gaac03998aa94b1b4fd4e469b8b0a779de" name="gaac03998aa94b1b4fd4e469b8b0a779de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac03998aa94b1b4fd4e469b8b0a779de">&#9670;&#160;</a></span>_sceFiosKernelOverlayResolveSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1095,7 +1172,7 @@ data_0x14</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resolve_flag</em>, </td>
+          <td class="paramname"><em>resolve_for_write</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1117,10 +1194,23 @@ data_0x14</td>
       </table>
 </div><div class="memdoc">
 
+<p>Resolves a path synchronously through a process's overlays. </p>
+<p><code>args</code> must be non-NULL. Its max_path field controls input validation and path resolution, while out_path_buffer_size independently controls the final copy to user memory. The reserved fields are ignored on FW 3.60.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlays are used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolve_for_write</td><td>- Must be 0 for read resolution or 1 for write resolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_path</td><td>- Path to resolve. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">args</td><td>- Resolution options and output buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or a negative error code. </dd></dl>
+
 </div>
 </div>
 <a id="gab57e002c3103ad75b5a865c5164f4d99" name="gab57e002c3103ad75b5a865c5164f4d99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab57e002c3103ad75b5a865c5164f4d99">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gab57e002c3103ad75b5a865c5164f4d99">&#9670;&#160;</a></span>VITASDK_BUILD_ASSERT_EQ() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1147,8 +1237,8 @@ data_0x14</td>
 
 </div>
 </div>
-<a id="ga1d2e14ce988aba3001a3d777212c6250" name="ga1d2e14ce988aba3001a3d777212c6250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1d2e14ce988aba3001a3d777212c6250">&#9670;&#160;</a></span>_sceFiosKernelOverlayResolveWithRangeSync()</h2>
+<a id="ga368f3c8fb584e0db37810167c5fedac5" name="ga368f3c8fb584e0db37810167c5fedac5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga368f3c8fb584e0db37810167c5fedac5">&#9670;&#160;</a></span>_sceFiosKernelOverlayResolveWithRangeSync()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1163,7 +1253,7 @@ data_0x14</td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>resolve_flag</em>, </td>
+          <td class="paramname"><em>resolve_for_write</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1184,6 +1274,19 @@ data_0x14</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resolves a path through overlays whose order is between <code>min_order</code> and <code>max_order</code>, inclusive. </p>
+<p><code>args</code> must be non-NULL. min_order and max_order are unsigned, and min_order must not exceed max_order. max_path controls path validation and resolution; out_path_buffer_size independently controls the final copy to user memory. The reserved fields are ignored on FW 3.60. If application overlays are disabled for the current thread, the supplied min_order is replaced with 0x80.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- Process whose overlays are used. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">resolve_for_write</td><td>- Must be 0 for read resolution or 1 for write resolution. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">in_path</td><td>- Path to resolve. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">args</td><td>- Resolution options and output buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or an error code. </dd></dl>
 
 </div>
 </div>
@@ -1236,6 +1339,8 @@ data_0x14</td>
       </table>
 </div><div class="memdoc">
 
+<p>Maximum overlay order to include. On FW 3.60, the function returns an unsupported-operation error before using this value. </p>
+
 </div>
 </div>
 <a id="gaa14dff74258a307c95672f16190bae9a" name="gaa14dff74258a307c95672f16190bae9a"></a>
@@ -1250,6 +1355,8 @@ data_0x14</td>
       </table>
 </div><div class="memdoc">
 
+<p>Ignored on FW 3.60. </p>
+
 </div>
 </div>
 <a id="ga0bf1bb126adfd634d3c898e002eb5dd8" name="ga0bf1bb126adfd634d3c898e002eb5dd8"></a>
@@ -1263,6 +1370,8 @@ data_0x14</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Output buffer for overlay IDs; may be NULL only when max_ids is zero. </p>
 
 </div>
 </div>
@@ -1336,6 +1445,22 @@ data_0x14</td>
 
 </div>
 </div>
+<a id="gae409fcf598f2300d14fe495a910ab415" name="gae409fcf598f2300d14fe495a910ab415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae409fcf598f2300d14fe495a910ab415">&#9670;&#160;</a></span>reserved</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__SceTypesKernel.html#gab5754ec0168b4b65a5334d9ddada460a">SceUInt32</a> SceFiosGetRecommendedSchedulerSyscallArgs::reserved[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copied from user memory but not used on FW 3.60. </p>
+
+</div>
+</div>
 <a id="gabe46ccddbc383c4f2efe72171ffd875a" name="gabe46ccddbc383c4f2efe72171ffd875a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabe46ccddbc383c4f2efe72171ffd875a">&#9670;&#160;</a></span>out_path <span class="overload">[1/2]</span></h2>
 
@@ -1347,6 +1472,8 @@ data_0x14</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resolved path output buffer. </p>
 
 </div>
 </div>
@@ -1431,6 +1558,8 @@ data_0x14</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Resolved path output buffer. </p>
 
 </div>
 </div>

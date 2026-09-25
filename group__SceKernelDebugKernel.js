@@ -1,7 +1,7 @@
 var group__SceKernelDebugKernel =
 [
     [ "SceKernelDebugInfo", "group__SceKernelDebugKernel.html#structSceKernelDebugInfo", [
-      [ "__attribute__", "group__SceKernelDebugKernel.html#ga648499c7786ab3f5fb5922dfcdb6bf33", null ],
+      [ "__attribute__", "group__SceKernelDebugKernel.html#ga88355c5ffaa043e0138459cce88b48f0", null ],
       [ "func", "group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51", null ],
       [ "line", "group__SceKernelDebugKernel.html#ga81b216600699b8281db7623c489217d3", null ],
       [ "file", "group__SceKernelDebugKernel.html#ga5af6041f8d28b76ae29ded5c0b94ad0c", null ]
@@ -37,17 +37,17 @@ var group__SceKernelDebugKernel =
       [ "item_size", "group__SceKernelDebugKernel.html#ga28626dbd1177c2cad1c23815e44efa65", null ]
     ] ],
     [ "SceKernelDebugInfo.__attribute__", "group__SceKernelDebugKernel.html#unionSceKernelDebugInfo_8____attribute____", null ],
-    [ "SceKernelDebugInfo.__attribute__.__unnamed18__", "group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed18____", [
+    [ "SceKernelDebugInfo.__attribute__.__unnamed29__", "group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed29____", [
       [ "fileHash", "group__SceKernelDebugKernel.html#ab90df27c74bb62e4043d4c44e2335467", null ],
       [ "lineHash", "group__SceKernelDebugKernel.html#ae2b1d9fa87f11e50f046bf1f4b0ff21a", null ],
       [ "funcHash", "group__SceKernelDebugKernel.html#a4d034b272b71aa84fad7e07ea83d1c52", null ]
     ] ],
-    [ "SceKernelDebugInfo.__attribute__.__unnamed20__", "group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed20____", [
+    [ "SceKernelDebugInfo.__attribute__.__unnamed31__", "group__SceKernelDebugKernel.html#structSceKernelDebugInfo_8____attribute_____8____unnamed31____", [
       [ "hex_value0_hi", "group__SceKernelDebugKernel.html#abc1ae79b4f3ee17150e279f4bdc313bf", null ],
       [ "hex_value0_lo", "group__SceKernelDebugKernel.html#a9bbf09ac41433f4d9339bfaba248e961", null ],
       [ "hex_value1", "group__SceKernelDebugKernel.html#aabb249b03446b111024aa83dd71fc671", null ]
     ] ],
-    [ "SceKernelDebugEventLog.__unnamed22__", "group__SceKernelDebugKernel.html#unionSceKernelDebugEventLog_8____unnamed22____", [
+    [ "SceKernelDebugEventLog.__unnamed33__", "group__SceKernelDebugKernel.html#unionSceKernelDebugEventLog_8____unnamed33____", [
       [ "type1", "group__SceKernelDebugKernel.html#a3156e42ab24604b8de92a93ed761532d", null ],
       [ "type2", "group__SceKernelDebugKernel.html#a8fe8b170aa076a4233d8eda7d28804d4", null ],
       [ "type3", "group__SceKernelDebugKernel.html#aa9e513b87ac56ff5c69100f536b06805", null ]
@@ -72,6 +72,8 @@ var group__SceKernelDebugKernel =
     [ "ksceDebugGetPutcharHandler", "group__SceKernelDebugKernel.html#gaa79f1d60a20c2b04c06b79bdaddace3f", null ],
     [ "ksceDebugDisableInfoDump", "group__SceKernelDebugKernel.html#ga82b654c40e5d1382a1d3b3e472effc10", null ],
     [ "ksceKernelSetMinimumAssertionLevel", "group__SceKernelDebugKernel.html#gad895a9ab0e5f0cfa50076e9a97f6b7a0", null ],
+    [ "k_sceEventLogPut", "group__SceKernelDebugKernel.html#gacf19268541781f5b4209c1baf1c22fa5", null ],
+    [ "_ksceEventLogPut", "group__SceKernelDebugKernel.html#ga01cedeb785109fb21dc447bd3cbae47b", null ],
     [ "SceKernelDebugMessageContext", "group__SceKernelDebugKernel.html#gaab14753e5eabbb0f629bb801f6bd122d", null ],
     [ "SceKernelDebugInfoFlags", "group__SceKernelDebugKernel.html#gabc469e837a77bbb42a745ee946d86b5a", [
       [ "SCE_KERNEL_DEBUG_INFO_FLAG_NONE", "group__SceKernelDebugKernel.html#ggabc469e837a77bbb42a745ee946d86b5aa212eb7932e00d22251f6320749abd0e2", null ],
@@ -126,13 +128,15 @@ var group__SceKernelDebugKernel =
     [ "VITASDK_BUILD_ASSERT_EQ", "group__SceKernelDebugKernel.html#ga58aa337c03028c09e96f3222bf2be27c", null ],
     [ "ksceEventLogGetInfo", "group__SceKernelDebugKernel.html#gae7d4ebcc204313d68da4eb0836d397ec", null ],
     [ "ksceKernelGetTtyInfo", "group__SceKernelDebugKernel.html#ga6fc86f5be6249a986b161e710bfc69aa", null ],
-    [ "SceKernelDebugInfo::@16::@17::fileHash", "group__SceKernelDebugKernel.html#gaa4de30e964eb05f9cbded66b58ca7e09", null ],
-    [ "SceKernelDebugInfo::@16::@17::lineHash", "group__SceKernelDebugKernel.html#ga8e262849915e76d0f5b8955204e55f45", null ],
-    [ "SceKernelDebugInfo::@16::@17::funcHash", "group__SceKernelDebugKernel.html#ga0ac14856964f09d362df456b039789f3", null ],
-    [ "SceKernelDebugInfo::@16::@19::hex_value0_hi", "group__SceKernelDebugKernel.html#ga8454f16a465ed46e695fd32944762b62", null ],
-    [ "SceKernelDebugInfo::@16::@19::hex_value0_lo", "group__SceKernelDebugKernel.html#ga739afa41224ee458389f0b4a914516a8", null ],
-    [ "SceKernelDebugInfo::@16::@19::hex_value1", "group__SceKernelDebugKernel.html#gae65463cc44d3f46a904644766615f395", null ],
-    [ "SceKernelDebugInfo::__attribute__", "group__SceKernelDebugKernel.html#ga648499c7786ab3f5fb5922dfcdb6bf33", null ],
+    [ "ksceEventLogPutForCurrentThread", "group__SceKernelDebugKernel.html#gafc9594c6b4a4cc87e0744e642415dbeb", null ],
+    [ "ksceEventLogPut", "group__SceKernelDebugKernel.html#ga932763831b9cf169967d2cbf88ac1189", null ],
+    [ "SceKernelDebugInfo::@27::@28::fileHash", "group__SceKernelDebugKernel.html#ga48f80a34e9a2adeccb30b5dbfd496117", null ],
+    [ "SceKernelDebugInfo::@27::@28::lineHash", "group__SceKernelDebugKernel.html#gae73dd08be888027f7d4ee25e5d628fcb", null ],
+    [ "SceKernelDebugInfo::@27::@28::funcHash", "group__SceKernelDebugKernel.html#ga4a6249bb14cca869667d66969898daba", null ],
+    [ "SceKernelDebugInfo::@27::@30::hex_value0_hi", "group__SceKernelDebugKernel.html#gabc78b35de7f5bd65f0e8cdc1384887ba", null ],
+    [ "SceKernelDebugInfo::@27::@30::hex_value0_lo", "group__SceKernelDebugKernel.html#gab17171c361e305b43ddec8c017729f2b", null ],
+    [ "SceKernelDebugInfo::@27::@30::hex_value1", "group__SceKernelDebugKernel.html#ga89f5edd8948a9551ed6f93afe5cd9da7", null ],
+    [ "SceKernelDebugInfo::__attribute__", "group__SceKernelDebugKernel.html#ga88355c5ffaa043e0138459cce88b48f0", null ],
     [ "SceKernelDebugInfo::func", "group__SceKernelDebugKernel.html#gab0ec8ddaa2d064689ee2d9cd467dab51", null ],
     [ "SceKernelDebugInfo::line", "group__SceKernelDebugKernel.html#ga81b216600699b8281db7623c489217d3", null ],
     [ "SceKernelDebugInfo::file", "group__SceKernelDebugKernel.html#ga5af6041f8d28b76ae29ded5c0b94ad0c", null ],
@@ -170,9 +174,9 @@ var group__SceKernelDebugKernel =
     [ "SceKernelDebugEventLog::time", "group__SceKernelDebugKernel.html#ga3b0a5f5f858991b77fcea8b14f6af89f", null ],
     [ "SceKernelDebugEventLog::data_0x38", "group__SceKernelDebugKernel.html#gabc42df82f31b2f8575a0186e768b7b64", null ],
     [ "SceKernelDebugEventLog::item_size", "group__SceKernelDebugKernel.html#ga28626dbd1177c2cad1c23815e44efa65", null ],
-    [ "SceKernelDebugEventLog::@21::type1", "group__SceKernelDebugKernel.html#gaa8c6f7f034f5ca398ec149419b889154", null ],
-    [ "SceKernelDebugEventLog::@21::type2", "group__SceKernelDebugKernel.html#gab385619a9546e3b028a64cc51df74dd5", null ],
-    [ "SceKernelDebugEventLog::@21::type3", "group__SceKernelDebugKernel.html#ga1beadb53845ed10a0507190cbeb564d4", null ],
+    [ "SceKernelDebugEventLog::@32::type1", "group__SceKernelDebugKernel.html#ga3fd2d1605d0704b70fb311151605d049", null ],
+    [ "SceKernelDebugEventLog::@32::type2", "group__SceKernelDebugKernel.html#gafa3472e18a99a63dbdd2942d25d89530", null ],
+    [ "SceKernelDebugEventLog::@32::type3", "group__SceKernelDebugKernel.html#ga846964518321abaaf9d6de37970a380e", null ],
     [ "size", "group__SceKernelDebugKernel.html#ga318cc63d979387c711a064d4e56f1132", null ],
     [ "data_0x04", "group__SceKernelDebugKernel.html#ga85ea3db869ccdb28ac6b023748ebdf5b", null ],
     [ "flags", "group__SceKernelDebugKernel.html#gac8bf36fe0577cba66bccda3a6f7e80a4", null ],
@@ -182,7 +186,7 @@ var group__SceKernelDebugKernel =
     [ "time", "group__SceKernelDebugKernel.html#gae9c48e1047c871aefb9faa2f6d89fd3a", null ],
     [ "data_0x38", "group__SceKernelDebugKernel.html#ga47283af023862852025db2ad6755a1fe", null ],
     [ "item_size", "group__SceKernelDebugKernel.html#ga080663219415d3e589dafbcdf4d7a2df", null ],
-    [ "@23::type1", "group__SceKernelDebugKernel.html#gacaad64857f805aa5cfdd549bd2b29c52", null ],
-    [ "@23::type2", "group__SceKernelDebugKernel.html#ga148a65ed87c2bbf856e96ef3a862084e", null ],
-    [ "@23::type3", "group__SceKernelDebugKernel.html#gab56e20c042069db0fc88e0e08538376f", null ]
+    [ "@34::type1", "group__SceKernelDebugKernel.html#ga43859da54ba0b9dbf356fc3333ad971f", null ],
+    [ "@34::type2", "group__SceKernelDebugKernel.html#gaf6471ac5568b07607bf6e0f725a55e39", null ],
+    [ "@34::type3", "group__SceKernelDebugKernel.html#ga037f13930ef2f1b04009294107c23a38", null ]
 ];

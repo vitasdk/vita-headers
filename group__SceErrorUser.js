@@ -1,4 +1,82 @@
 var group__SceErrorUser =
 [
-    [ "_sceErrorGetExternalString", "group__SceErrorUser.html#ga51c210d172517df3bccda1ec077927fb", null ]
+    [ "SceErrorString", "group__SceErrorUser.html#structSceErrorString", [
+      [ "s", "group__SceErrorUser.html#gab73faf3bab3208d5b18ce1a91107c703", null ]
+    ] ],
+    [ "SceErrorDefaultFormat", "group__SceErrorUser.html#structSceErrorDefaultFormat", [
+      [ "network_status", "group__SceErrorUser.html#ga5bb6ae78a2252464893c5bad9fec3f96", null ],
+      [ "enable", "group__SceErrorUser.html#gaa85f0ce7a6a3e6215b99cd4c79547bd0", null ]
+    ] ],
+    [ "SceErrorHistoryPostInfo", "group__SceErrorUser.html#structSceErrorHistoryPostInfo", [
+      [ "error_message", "group__SceErrorUser.html#ga190b6677d854fff7ed115b1e7bc9e6df", null ],
+      [ "suggested_actions", "group__SceErrorUser.html#gabe8506323ad4cd926c693bcfe8c2927a", null ],
+      [ "reserved0", "group__SceErrorUser.html#gaf5827c7c123f783f0a798abd6cf85ca3", null ],
+      [ "suggested_action_count", "group__SceErrorUser.html#ga0e4ca8c580e3bcb4023953b39a787400", null ],
+      [ "reserved1", "group__SceErrorUser.html#gad145abfc501014b5fe81e6e5080e725d", null ],
+      [ "error_code_hex", "group__SceErrorUser.html#gafd7160aca1307d88dd70a76d52f899c2", null ],
+      [ "application_code", "group__SceErrorUser.html#ga1d8f93fe7050b44c0ed4b32fdbc46fbd", null ],
+      [ "version", "group__SceErrorUser.html#gadb7b2fd20e3d9add100ef20c6c0ec211", null ],
+      [ "network_status", "group__SceErrorUser.html#gab28d5374e8709a5b727ba42b691858ff", null ],
+      [ "titleid", "group__SceErrorUser.html#ga77c568aa99eac1c8dd30c34bfad351a9", null ],
+      [ "system_software_version_unk24", "group__SceErrorUser.html#ga42c10f3959477f8a28957f603274e5f1", null ],
+      [ "reserved2", "group__SceErrorUser.html#gaa089a3df79fb5a676d470b86e05b3016", null ]
+    ] ],
+    [ "SceErrorHistoryInfo", "group__SceErrorUser.html#structSceErrorHistoryInfo", [
+      [ "reserved0", "group__SceErrorUser.html#ga796b0c2ab013fdc3cb1a4392bfbb42fe", null ],
+      [ "flags", "group__SceErrorUser.html#ga5638b2506bbade61e68860f02133bf56", null ],
+      [ "sequence_id", "group__SceErrorUser.html#ga3593ec16ed628c34d538749266b561b5", null ],
+      [ "reserved1", "group__SceErrorUser.html#gaef9f8136f61340a89bfa7462e2788fd2", null ],
+      [ "reserved2", "group__SceErrorUser.html#ga5480cd710f86ea5791e03cbb4d569948", null ],
+      [ "time", "group__SceErrorUser.html#ga11131c5527f279f344359dcef301a979", null ],
+      [ "error_code", "group__SceErrorUser.html#gae79bc21acb7593598e11a508d86555f9", null ],
+      [ "reserved3", "group__SceErrorUser.html#ga28142c974bcb567227f65cbb8bcfab96", null ],
+      [ "post", "group__SceErrorUser.html#ga431b02706e86238fcfaabbe4b3a10901", null ]
+    ] ],
+    [ "SceErrorSequenceInfo", "group__SceErrorUser.html#structSceErrorSequenceInfo", [
+      [ "sequence_id", "group__SceErrorUser.html#ga00a5d9c385fe82dccc2bcfbc31e961df", null ],
+      [ "flags", "group__SceErrorUser.html#ga9f0202bb18fbf62be31326ca1b1d9b2a", null ],
+      [ "reserved0", "group__SceErrorUser.html#ga42470b468901cdc6fbb68623bbdbe948", null ],
+      [ "time", "group__SceErrorUser.html#gae9e147d97d2bff348ff520e46634e657", null ],
+      [ "reserved1", "group__SceErrorUser.html#gaaaee848119488c0890d953b717e0fbba", null ]
+    ] ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceErrorUser.html#ga31a355a2c1cc229dc4f3a808b3940f61", null ],
+    [ "_sceErrorGetExternalString", "group__SceErrorUser.html#ga51c210d172517df3bccda1ec077927fb", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceErrorUser.html#ga86cbac8de0ff50435cdc5434ee6e11e3", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceErrorUser.html#ga826548609e224bc25902ea0610b25117", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceErrorUser.html#ga32aeb8ff499bfa80af32246d6e21b2b7", null ],
+    [ "VITASDK_BUILD_ASSERT_EQ", "group__SceErrorUser.html#ga08fceea71fcfea08e4b19681b6735e91", null ],
+    [ "_sceErrorHistoryClearError", "group__SceErrorUser.html#ga4a21c325fd26f7b06c27f71657293f20", null ],
+    [ "_sceErrorHistoryGetError", "group__SceErrorUser.html#ga5ae74072ffa0fc9932fc9e898950634c", null ],
+    [ "_sceErrorHistoryPostError", "group__SceErrorUser.html#ga8b37bcfbb624e36aef5acc7ccb3636a7", null ],
+    [ "_sceErrorHistorySetDefaultFormat", "group__SceErrorUser.html#ga60c56b1d259f6a2d4c6be169181c64d9", null ],
+    [ "_sceErrorHistoryUpdateSequenceInfo", "group__SceErrorUser.html#gafbf755afa90436febcdf3671dcb87a50", null ],
+    [ "SceErrorString::s", "group__SceErrorUser.html#gab73faf3bab3208d5b18ce1a91107c703", null ],
+    [ "SceErrorDefaultFormat::network_status", "group__SceErrorUser.html#ga5bb6ae78a2252464893c5bad9fec3f96", null ],
+    [ "SceErrorDefaultFormat::enable", "group__SceErrorUser.html#gaa85f0ce7a6a3e6215b99cd4c79547bd0", null ],
+    [ "SceErrorHistoryPostInfo::error_message", "group__SceErrorUser.html#ga190b6677d854fff7ed115b1e7bc9e6df", null ],
+    [ "SceErrorHistoryPostInfo::suggested_actions", "group__SceErrorUser.html#gabe8506323ad4cd926c693bcfe8c2927a", null ],
+    [ "SceErrorHistoryPostInfo::reserved0", "group__SceErrorUser.html#gaf5827c7c123f783f0a798abd6cf85ca3", null ],
+    [ "SceErrorHistoryPostInfo::suggested_action_count", "group__SceErrorUser.html#ga0e4ca8c580e3bcb4023953b39a787400", null ],
+    [ "SceErrorHistoryPostInfo::reserved1", "group__SceErrorUser.html#gad145abfc501014b5fe81e6e5080e725d", null ],
+    [ "SceErrorHistoryPostInfo::error_code_hex", "group__SceErrorUser.html#gafd7160aca1307d88dd70a76d52f899c2", null ],
+    [ "SceErrorHistoryPostInfo::application_code", "group__SceErrorUser.html#ga1d8f93fe7050b44c0ed4b32fdbc46fbd", null ],
+    [ "SceErrorHistoryPostInfo::version", "group__SceErrorUser.html#gadb7b2fd20e3d9add100ef20c6c0ec211", null ],
+    [ "SceErrorHistoryPostInfo::network_status", "group__SceErrorUser.html#gab28d5374e8709a5b727ba42b691858ff", null ],
+    [ "SceErrorHistoryPostInfo::titleid", "group__SceErrorUser.html#ga77c568aa99eac1c8dd30c34bfad351a9", null ],
+    [ "SceErrorHistoryPostInfo::system_software_version_unk24", "group__SceErrorUser.html#ga42c10f3959477f8a28957f603274e5f1", null ],
+    [ "SceErrorHistoryPostInfo::reserved2", "group__SceErrorUser.html#gaa089a3df79fb5a676d470b86e05b3016", null ],
+    [ "SceErrorHistoryInfo::reserved0", "group__SceErrorUser.html#ga796b0c2ab013fdc3cb1a4392bfbb42fe", null ],
+    [ "SceErrorHistoryInfo::flags", "group__SceErrorUser.html#ga5638b2506bbade61e68860f02133bf56", null ],
+    [ "SceErrorHistoryInfo::sequence_id", "group__SceErrorUser.html#ga3593ec16ed628c34d538749266b561b5", null ],
+    [ "SceErrorHistoryInfo::reserved1", "group__SceErrorUser.html#gaef9f8136f61340a89bfa7462e2788fd2", null ],
+    [ "SceErrorHistoryInfo::reserved2", "group__SceErrorUser.html#ga5480cd710f86ea5791e03cbb4d569948", null ],
+    [ "SceErrorHistoryInfo::time", "group__SceErrorUser.html#ga11131c5527f279f344359dcef301a979", null ],
+    [ "SceErrorHistoryInfo::error_code", "group__SceErrorUser.html#gae79bc21acb7593598e11a508d86555f9", null ],
+    [ "SceErrorHistoryInfo::reserved3", "group__SceErrorUser.html#ga28142c974bcb567227f65cbb8bcfab96", null ],
+    [ "SceErrorHistoryInfo::post", "group__SceErrorUser.html#ga431b02706e86238fcfaabbe4b3a10901", null ],
+    [ "SceErrorSequenceInfo::sequence_id", "group__SceErrorUser.html#ga00a5d9c385fe82dccc2bcfbc31e961df", null ],
+    [ "SceErrorSequenceInfo::flags", "group__SceErrorUser.html#ga9f0202bb18fbf62be31326ca1b1d9b2a", null ],
+    [ "SceErrorSequenceInfo::reserved0", "group__SceErrorUser.html#ga42470b468901cdc6fbb68623bbdbe948", null ],
+    [ "SceErrorSequenceInfo::time", "group__SceErrorUser.html#gae9e147d97d2bff348ff520e46634e657", null ],
+    [ "SceErrorSequenceInfo::reserved1", "group__SceErrorUser.html#gaaaee848119488c0890d953b717e0fbba", null ]
 ];
