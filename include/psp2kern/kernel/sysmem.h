@@ -44,14 +44,25 @@ typedef struct SceKernelAllocMemBlockKernelOpt {
 	SceSize alignment;
 	SceSize extraLow;
 	SceSize extraHigh;
-	SceUID baseMemBlock;            //!< Memblock this allocation is based on.
+	SceUID baseMemBlock;            //!< Base memblock UID, used with ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_BASE.
 	SceUID pid;
 	const SceKernelPAVector *paddr_list; //!< Input physical-address vector.
+	/** Round allocation size up to this many bytes when ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_ROUNDUP is set.
+	 * FW 3.60 accepts 0x1000, 0x10000, 0x100000, or 0x1000000; the default is 0x1000.
+	 */
 	SceSize roundupUnitSize;
-	SceUInt8 domain;
+	SceUInt8 domain;                //!< Domain selector used with ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_DOMAIN; FW 3.60 VM allocations use 2.
 	SceUInt8 reservedDomain[3];     //!< Unused padding on FW 3.60.
-	SceUInt32 allowedOpenFlags;     //!< Flags permitted when another process opens the block.
-	SceUInt32 requiredCapabilityMask[8]; //!< Required 256-bit process capability mask.
+	/** Allowed sceKernelOpenMemBlock flags: 0x10 (read) or 0x30 (read/write, where supported).
+	 * ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_OPEN_RESTRICTIONS requires
+	 * ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_ENABLE_OPEN; enabling open alone defaults to 0x30.
+	 */
+	SceUInt32 allowedOpenFlags;
+	/** Bit i requires capability i in the opening process's self-auth information.
+	 * Used with ::SCE_KERNEL_ALLOC_MEMBLOCK_ATTR_HAS_OPEN_RESTRICTIONS.
+	 * FW 3.60's open check accepts only capability bits 1 and 133.
+	 */
+	SceUInt32 requiredCapabilityMask[8];
 } SceKernelAllocMemBlockKernelOpt;
 VITASDK_BUILD_ASSERT_EQ(0x58, SceKernelAllocMemBlockKernelOpt); // size is from FW 3.60
 
