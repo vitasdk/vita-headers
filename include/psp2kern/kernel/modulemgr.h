@@ -283,7 +283,7 @@ int ksceKernelGetSystemSwVersion(SceKernelFwInfo *data);
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelLoadModule(const char *path, int flags, SceKernelLMOption *option);
+SceUID ksceKernelLoadModule(const char *path, int flags, const SceKernelLMOption *option);
 
 /**
  * @brief start module (kernel only)
@@ -297,7 +297,7 @@ SceUID ksceKernelLoadModule(const char *path, int flags, SceKernelLMOption *opti
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int ksceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, const SceKernelStartModuleOpt *option, int *status);
 
 /**
  * @brief load and start module (kernel only)
@@ -311,7 +311,7 @@ int ksceKernelStartModule(SceUID modid, SceSize args, void *argp, int flags, Sce
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int flags, const SceKernelLMOption *option, int *status);
 
 /**
  * @brief stop module (kernel only)
@@ -325,7 +325,7 @@ SceUID ksceKernelLoadStartModule(const char *path, SceSize args, void *argp, int
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, const SceKernelStopModuleOpt *option, int *status);
 
 /**
  * @brief unload module (kernel only)
@@ -336,7 +336,7 @@ int ksceKernelStopModule(SceUID modid, SceSize args, void *argp, int flags, SceK
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
+int ksceKernelUnloadModule(SceUID modid, int flags, const SceKernelULMOption *option);
 
 /**
  * @brief stop and unload module (kernel only)
@@ -350,7 +350,7 @@ int ksceKernelUnloadModule(SceUID modid, int flags, SceKernelULMOption *option);
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags, const SceKernelULMOption *option, int *status);
 
 /**
  * @brief load module
@@ -362,7 +362,7 @@ int ksceKernelStopUnloadModule(SceUID modid, SceSize args, void *argp, int flags
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKernelLMOption *option);
+SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, const SceKernelLMOption *option);
 
 /**
  * @brief start module
@@ -377,7 +377,7 @@ SceUID ksceKernelLoadModuleForPid(SceUID pid, const char *path, int flags, SceKe
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStartModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+int ksceKernelStartModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, const SceKernelStartModuleOpt *option, int *status);
 
 /**
  * @brief load and start module
@@ -392,7 +392,7 @@ int ksceKernelStartModuleForPid(SceUID pid, SceUID modid, SceSize args, void *ar
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, const SceKernelLMOption *option, int *status);
 
 /**
  * @brief stop module
@@ -407,7 +407,7 @@ SceUID ksceKernelLoadStartModuleForPid(SceUID pid, const char *path, SceSize arg
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, const SceKernelStopModuleOpt *option, int *status);
 
 /**
  * @brief unload module
@@ -419,7 +419,7 @@ int ksceKernelStopModuleForPid(SceUID pid, SceUID modid, SceSize args, void *arg
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelULMOption *option);
+int ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, const SceKernelULMOption *option);
 
 /**
  * @brief stop and unload module
@@ -434,7 +434,7 @@ int ksceKernelUnloadModuleForPid(SceUID pid, SceUID modid, int flags, SceKernelU
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, const SceKernelULMOption *option, int *status);
 
 /**
  * @brief load and start module as shared module
@@ -449,7 +449,7 @@ int ksceKernelStopUnloadModuleForPid(SceUID pid, SceUID modid, SceSize args, voi
  *
  * @return modid on success, < 0 on error.
  */
-SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, SceKernelLMOption *option, int *status);
+SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSize args, void *argp, int flags, const SceKernelLMOption *option, int *status);
 
 /**
  * @brief stop and unload module as shared module
@@ -464,7 +464,7 @@ SceUID ksceKernelLoadStartSharedModuleForPid(SceUID pid, const char *path, SceSi
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceKernelStopUnloadSharedModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, SceKernelULMOption *option, int *status);
+int ksceKernelStopUnloadSharedModuleForPid(SceUID pid, SceUID modid, SceSize args, void *argp, int flags, const SceKernelULMOption *option, int *status);
 
 /**
  * @brief mount bootfs (load bootfs module)
@@ -512,7 +512,7 @@ int ksceKernelGetModulePath(SceUID modid, char *path, SceSize pathlen);
 int ksceKernelGetLibraryInfoForDebugger(SceUID pid, SceUID library_id, SceKernelModuleLibraryInfo *info);
 
 
-void ksceKernelFinalizeKbl(void);
+int ksceKernelFinalizeKbl(void);
 int ksceKernelGetExportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
 int ksceKernelGetImportedLibraryListInModule(SceUID pid, SceUID modid, SceUID *library_ids, SceSize *num);
 int ksceKernelGetLibEntCBListForSyslibtrace(void **ppList, SceSize *num);

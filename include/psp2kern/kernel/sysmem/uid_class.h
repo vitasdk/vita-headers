@@ -24,7 +24,7 @@ typedef struct SceClass {
 	unsigned int attributes; //!< The low byte is the class identifier assigned during registration.
 	unsigned short itemsize;
 	unsigned short itemsize_aligned;
-	unsigned int unk1C;
+	unsigned int object_heap_type; //!< Default object-heap allocation type, from 0 through 5.
 	SceClassCallback create_cb; //!< Constructor callback.
 	SceClassCallback destroy_cb; //!< Destructor callback.
 	unsigned int magic; //!< Must be set to 0xABCE9DA5.

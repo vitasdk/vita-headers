@@ -32,7 +32,6 @@ modules:
           ksceSblACMgrIsNonGameOrGameProgram: 0x8A54DF3A
           ksceSblACMgrIsNonGameProgram: 0x6C5AB07F
           ksceSblACMgrIsNotSandboxed: 0x0B6E6CD7
-          ksceSblACMgrIsPSMDevAssistant: 0xC98D82EE
           ksceSblACMgrIsPSMDevAssistantApp: 0xA67E8E5B
           ksceSblACMgrIsPSMProgram: 0xC98D82EE
           ksceSblACMgrIsPSMRuntime: 0x091F7247
@@ -42,14 +41,11 @@ modules:
           ksceSblACMgrIsSceShell: 0x991FDC15
           ksceSblACMgrIsSystemProgram: 0x8612B243
           ksceSblACMgrIsUpdaterProgram: 0x962CD237
-          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn: 0x962CD237
           ksceSblACMgrIsWebCoreOrWebKitProcess: 0x0139FC20
       SceSblACMgrForKernel:
         kernel: true
         nid: 0x11F9B314
         functions:
-          kscePfsACSetFSAttrByMode: 0x2AE6CF27
-          ksceSblACIsSystemProgram: 0x930CD037
           ksceSblACMgrConvertModeToFsAttribute2: 0x2AE6CF27
           ksceSblACMgrGetMediaType2: 0xD442962E
           ksceSblACMgrGetPaid2: 0x7C2AF978
@@ -70,7 +66,6 @@ modules:
           ksceSblACMgrIsNonGameOrGameProgram2: 0x570D6AD3
           ksceSblACMgrIsNonGameProgram2: 0x3F99279F
           ksceSblACMgrIsNotSandboxed2: 0xF5AD56E4
-          ksceSblACMgrIsPSMDevAssistant2: 0xC90A9216
           ksceSblACMgrIsPSMDevAssistantApp2: 0x3388F595
           ksceSblACMgrIsPSMProgram2: 0xC90A9216
           ksceSblACMgrIsPSMRuntime2: 0x966B3738
@@ -80,5 +75,4 @@ modules:
           ksceSblACMgrIsSceShell2: 0xF9FEF5F0
           ksceSblACMgrIsSystemProgram2: 0x930CD037
           ksceSblACMgrIsUpdaterProgram2: 0x98B28671
-          ksceSblACMgrIsUpdaterUISetupperOrPkgInstallerSpawn2: 0x98B28671
           ksceSblACMgrIsWebCoreOrWebKitProcess2: 0xA7C3001D

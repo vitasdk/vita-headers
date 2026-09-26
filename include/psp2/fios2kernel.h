@@ -44,11 +44,10 @@ int _sceFiosKernelOverlayGetInfoForProcess(SceUID target_process, SceFiosKernelO
 
 typedef struct SceFiosGetListSyscallArgs {
 	SceFiosKernelOverlayID *out_ids; //!< Output buffer for overlay IDs; may be NULL only when max_ids is zero.
-	int data_0x04;
-	int data_0x08;
-	SceSize data_0x0C;
-	int data_0x10;
-	int data_0x14;
+	int max_ids; //!< Maximum number of overlay IDs to write. Value of type ::SceSize; must not exceed 128 on FW 3.60.
+	int actual_ids; //!< Optional pointer receiving the total number of matching overlays, including those beyond max_ids. Declared as an int for backwards compatibility; points to a ::SceSize value.
+	SceSize out_ids_buffer_size; //!< Number of bytes copied to out_ids; must not exceed 0x200 on FW 3.60.
+	int reserved[2]; //!< Ignored on FW 3.60.
 } SceFiosGetListSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosGetListSyscallArgs); // size is from FW 3.60
 
@@ -81,11 +80,10 @@ int _sceFiosKernelOverlayRemoveForProcess(SceUID target_process, SceFiosKernelOv
 
 typedef struct SceFiosResolveSyncSyscallArgs {
 	char *out_path; //!< Resolved path output buffer.
-	int data_0x04;
-	int data_0x08;
-	int data_0x0C;
-	int data_0x10;
-	int data_0x14;
+	int max_path; //!< Maximum path length used by the resolver. Value of type ::SceSize; must be from 1 through 0x400, inclusive.
+	int reserved0; //!< Ignored on FW 3.60.
+	int out_path_buffer_size; //!< Number of bytes copied to out_path. Value of type ::SceSize; must not exceed 0x400.
+	int reserved1[2]; //!< Ignored on FW 3.60.
 } SceFiosResolveSyncSyscallArgs;
 VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosResolveSyncSyscallArgs); // size is from FW 3.60
 
@@ -107,14 +105,15 @@ int _sceFiosKernelOverlayResolveSync(SceUID pid, int resolve_for_write, const ch
 
 typedef struct SceFiosResolveWithRangeSyncSyscallArgs {
 	char *out_path; //!< Resolved path output buffer.
-	int data_0x04;
-	SceUInt8 data_0x08;
-	SceUInt8 data_0x09;
-	int data_0x0C;
-	int data_0x10;
-	int data_0x14;
+	int max_path; //!< Maximum path length used by the resolver. Value of type ::SceSize; must be from 1 through 0x400, inclusive.
+	SceUInt8 min_order; //!< Minimum overlay order to include.
+	SceUInt8 max_order; //!< Maximum overlay order to include.
+	SceUInt8 reserved0[2]; //!< Ignored on FW 3.60.
+	int reserved1; //!< Ignored on FW 3.60.
+	int out_path_buffer_size; //!< Number of bytes copied to out_path. Value of type ::SceSize; must not exceed 0x400.
+	int reserved2[2]; //!< Ignored on FW 3.60.
 } SceFiosResolveWithRangeSyncSyscallArgs;
-VITASDK_BUILD_ASSERT_EQ(0x18, SceFiosResolveWithRangeSyncSyscallArgs);
+VITASDK_BUILD_ASSERT_EQ(0x1C, SceFiosResolveWithRangeSyncSyscallArgs); // size is from FW 3.60
 
 /**
  * Resolves a path through overlays whose order is between \c min_order and

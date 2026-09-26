@@ -41,7 +41,7 @@ typedef struct SceFiosOverlay {
 	uint8_t order; //!< Resolution order. Lower values are evaluated first; 0x00-0x7F are application orders and 0x80-0xFF are reserved for privileged overlays.
 	uint16_t dst_len; //!< Destination-path length computed by FIOS2.
 	uint16_t src_len; //!< Source-path length computed by FIOS2.
-  uint16_t unk2;
+	uint16_t reserved; //!< Set to zero by FIOS2.
 	SceUID pid; //!< Target process ID. Used by ::ksceFiosKernelOverlayAdd and overwritten by functions that take a process ID argument.
 	SceFiosOverlayID id; //!< Overlay ID assigned by FIOS2; ignored when adding an overlay.
 	char dst[SCE_FIOS2_OVERLAY_PATH_SIZE]; //!< Destination-path prefix matched during resolution.

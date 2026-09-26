@@ -215,7 +215,7 @@ int sceRegMgrSystemParamGetStr(const int id, char* buf, const int size);
  *
  * @return The packed registry version value on FW 3.60.
  */
-int sceRegMgrGetRegVersion(int version, char* buf);
+int sceRegMgrGetRegVersion(void);
 
 
 /**

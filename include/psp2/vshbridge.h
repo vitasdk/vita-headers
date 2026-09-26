@@ -167,7 +167,7 @@ VITASDK_BUILD_ASSERT_EQ(8, SceVshNpDrmEbootSigOpt);
  *
  * @return eboot_signature size on success, < 0 on error.
 */
-int _vshNpDrmPspEbootSigGen(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature);
+int _vshNpDrmPspEbootSigGen(const char *eboot_pbp_path, const void *eboot_sha256, void *eboot_signature, const SceVshNpDrmEbootSigOpt *opt);
 
 /**
  * Convert an older 0x100 byte eboot.pbp signature "__sce_ebootpbp" to a 0x200 byte one used in firmwares >2.00
@@ -179,7 +179,7 @@ int _vshNpDrmPspEbootSigGen(const char *eboot_pbp_path, const void *eboot_sha256
  *
  * @return eboot_signature size on success, < 0 on error.
 */
-int _vshNpDrmEbootSigConvert(const char *eboot_pbp_path, const void *old_eboot_signature, void *new_eboot_signature);
+int _vshNpDrmEbootSigConvert(const char *eboot_pbp_path, const void *old_eboot_signature, void *new_eboot_signature, const SceVshNpDrmEbootSigOpt *opt);
 
 
 /**
@@ -242,7 +242,7 @@ int vshSysconIduModeClear(void);
 int vshSysconShowModeSet(void);
 int vshSysconShowModeClear(void);
 
-int vshMemoryCardGetCardInsertState(void);
+int vshMemoryCardGetCardInsertState(int device_index);
 int vshRemovableMemoryGetCardInsertState(void);
 
 int vshMsifGetMsInfo(SceMsInfo *info);
