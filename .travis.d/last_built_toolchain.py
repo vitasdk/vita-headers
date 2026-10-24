@@ -59,8 +59,33 @@ def fetch_last_release(branch='master', os='linux', page=1):
         sys.stderr.write(str(e.headers) + "\n")
         return None
 
+def managed_by_package_client(root):
+    return any(os.path.exists(os.path.join(root, client)) for client in (
+        'libexec/vdpm/pacman',
+        'share/vdpm/msys/usr/bin/pacman.exe',
+    ))
+
+
 if __name__ == '__main__':
     import sys
+
+    # Clones of vdpm from before the package client run this from
+    # vitasdk-update and bootstrap-vitasdk.sh, and unpack what it prints over
+    # $VITASDK. Over an SDK that pacman manages that would leave its package
+    # database describing files that are no longer there, and the clone's
+    # install-packages.sh would then unpack 2021 archives over the rest. So it
+    # prints an address that is not an archive: tar refuses it, and the
+    # caller's set -e stops before anything is written. Printing nothing is not
+    # enough, because tar accepts empty input.
+    root = os.environ.get('VITASDK', '')
+    if root and managed_by_package_client(root):
+        sys.stderr.write(
+            '\n%s is managed by vdpm, and this vdpm checkout predates it.\n'
+            'Update the checkout (git pull) and run ./vitasdk-update again,\n'
+            'or update directly with: vdpm refresh "$(vdpm status | '
+            "awk '/^Release/ { print $2 }')\"\n\n" % root)
+        print('https://vitasdk.org/')
+        raise SystemExit(0)
 
     for page in range(1,6):
         url = fetch_last_release(*sys.argv[1:3], page=page)
