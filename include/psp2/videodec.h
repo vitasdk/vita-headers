@@ -32,7 +32,8 @@ typedef enum SceVideodecErrorCode {
 } SceVideodecErrorCode;
 
 typedef enum SceVideodecType {
-	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001
+	SCE_VIDEODEC_TYPE_HW_AVCDEC = 0x1001,
+	SCE_VIDEODEC_TYPE_HW_M4VDEC = 0x1002
 } SceVideodecType;
 
 typedef enum SceAvcdecErrorCode {
@@ -190,6 +191,17 @@ VITASDK_BUILD_ASSERT_EQ(0xC, SceAvcdecArrayPicture);
 int sceVideodecInitLibrary(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
 
 /**
+ * @note Required for M4V decoder initialization because
+ * ::sceVideodecInitLibrary accepts only ::SCE_VIDEODEC_TYPE_HW_AVCDEC.
+ *
+ * @param[in] codec - See ::SceVideodecType
+ * @param[in] initInfo - See ::SceVideodecQueryInitInfoHwAvcdec
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceVideodecInitLibraryInternal(SceVideodecType codec, const SceVideodecQueryInitInfoHwAvcdec *initInfo);
+
+/**
  * @param[in] codec - See ::SceVideodecType
  *
  * @return 0 on success, < 0 on error.
@@ -229,6 +241,56 @@ int sceAvcdecDeleteDecoder(SceAvcdecCtrl *decoder);
  * @return 0 on success, < 0 on error.
  */
 int sceAvcdecDecode(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
+
+/**
+ * @param[in] decoder
+ * @param[in,out] array_picture - Must set numOfElm and pPicture. See ::SceAvcdecArrayPicture
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceAvcdecDecodeStop(const SceAvcdecCtrl *decoder, SceAvcdecArrayPicture *array_picture);
+
+/**
+ * @param[in] type - Must be ::SCE_VIDEODEC_TYPE_HW_M4VDEC.
+ * @param[in] query - Should be copied from ::SceVideodecQueryInitInfoHwAvcdec.
+ * @param[out] decoderInfo - Receives the required frame-buffer size.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceM4vdecQueryDecoderMemSize(SceVideodecType type, const SceAvcdecQueryDecoderInfo *query, SceAvcdecDecoderInfo *decoderInfo);
+
+/**
+ * @param[in] type - Must be ::SCE_VIDEODEC_TYPE_HW_M4VDEC.
+ * @param[in,out] decoder - Must have frameBuf.size and frameBuf.pBuf initialized.
+ * @param[in] query - Should be copied from ::SceVideodecQueryInitInfoHwAvcdec.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceM4vdecCreateDecoder(SceVideodecType type, SceAvcdecCtrl *decoder, const SceAvcdecQueryDecoderInfo *query);
+
+/**
+ * @param[in,out] decoder - A ::SceAvcdecCtrl decoder initialized with ::sceM4vdecCreateDecoder
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceM4vdecDeleteDecoder(SceAvcdecCtrl *decoder);
+
+/**
+ * @param[in] decoder
+ * @param[in] au - Must set buffer information(es) and be initialized timestamps with 0xFFFFFFFF
+ * @param[in,out] array_picture - Must set numOfElm and pPicture. See ::SceAvcdecArrayPicture
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceM4vdecDecode(const SceAvcdecCtrl *decoder, const SceAvcdecAu *au, SceAvcdecArrayPicture *array_picture);
+
+/**
+ * @param[in] decoder
+ * @param[in,out] array_picture - Must set numOfElm and pPicture. See ::SceAvcdecArrayPicture
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceM4vdecDecodeStop(const SceAvcdecCtrl *decoder, SceAvcdecArrayPicture *array_picture);
 
 #ifdef __cplusplus
 }
