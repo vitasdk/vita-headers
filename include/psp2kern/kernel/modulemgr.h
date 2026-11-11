@@ -165,7 +165,7 @@ void ksceKernelRegisterModulesAfterBoot(void);
  * @param[in]    flags1 - unknown, use 0x7FFFFFFF
  * @param[in]    flags2 - unknown, use 1
  * @param[out]   modids - info output pointer
- * @param[inout] num    - in:list max num, out:get modid num
+ * @param[in,out] num   - in:list max num, out:get modid num
  *
  * @return 0 on success, < 0 on error.
  */
@@ -193,9 +193,9 @@ int ksceKernelGetModuleList(SceUID pid, int flags1, int flags2, SceUID *modids, 
  * }
  * @endcode
  *
- * @param[in]    pid       - target pid
- * @param[out]   infolists - infolists output
- * @param[inout] num       - Specify the maximum number of modinfolist to retrieve. If the function returns 0, it returns the number of modules loaded in the target pid in num
+ * @param[in]     pid       - target pid
+ * @param[out]    infolists - infolists output
+ * @param[in,out] num       - Specify the maximum number of modinfolist to retrieve. If the function returns 0, it returns the number of modules loaded in the target pid in num
  *
  * @return 0 on success, < 0 on error.
  */

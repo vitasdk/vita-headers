@@ -8,4 +8,25 @@ modules:
         kernel: true
         nid: 0x7F8593BA
         functions:
+          ksceKernelClearThreadMgrTestMode: 0x5D270A94
+          ksceKernelCpuScanThreadForProcessmgr: 0x01369E06
+          ksceKernelCreateMutexForKernel: 0x1E4FF787
+          ksceKernelCreateSemaForKernel: 0xF9364623
+          ksceKernelDeleteMutexForKernel: 0xCA760728
+          ksceKernelDeleteSemaForKernel: 0xA5ACE750
+          ksceKernelGetDefaultCpuAffinityMask: 0xD9C097DD
           ksceKernelGetThreadContextInfo: 0x6C1F092F
+          ksceKernelLockMutexForKernel: 0x1059CCDD
+          ksceKernelRunWithStackForKernel: 0x4BAA5F3B
+          ksceKernelSetDTraceThreadCBEnable: 0x0AE9C713
+          ksceKernelSetPermissionForKernel: 0x9461FC73
+          ksceKernelSetSyslibtraceThreadCBEnable: 0x4F2B45DC
+          ksceKernelSetThreadMgrTestMode: 0x1394E856
+          ksceKernelSignalSemaForKernel: 0x21B25367
+          ksceKernelThreadMgrProcessCreate: 0xB46502E6
+          ksceKernelThreadMgrProcessDeleteAfterPUIDClose: 0x5A23A1BE
+          ksceKernelThreadMgrProcessDeleteBeforePUIDClose: 0x205506FC
+          ksceKernelUnlockMutexForKernel: 0x59D924C1
+          ksceKernelWaitSemaForKernel: 0xEFD7439D
+          pmonCpuSetEventSelf: 0xFFB9CD24
+          setupNextContext_intr: 0xFEF07EC0

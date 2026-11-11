@@ -128,6 +128,24 @@ int ksceKernelFree(void *ptr);
 int ksceKernelGetHeapInfo(SceUID heapid, SceUInt32 level, void *pInfo);
 int ksceKernelGetHeapInfoByPtr(void *pObject, void *pInfo);
 
+/**
+ * Shrink a heap by releasing unused memory.
+ *
+ * @param[in] heapid - The heap ID
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelShrinkHeap(SceUID heapid);
+
+/**
+ * Verify the integrity of a heap.
+ *
+ * @param[in] heapid - The heap ID
+ * @param[in] ptr    - A optional pointer to memory in the heap to verify
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelVerifyHeap(SceUID heapid, void* ptr);
 
 #ifdef __cplusplus
 }

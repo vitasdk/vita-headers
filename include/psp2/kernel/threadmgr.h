@@ -19,6 +19,7 @@
 #include <psp2/kernel/threadmgr/signal.h>
 #include <psp2/kernel/threadmgr/thread.h>
 #include <psp2/kernel/threadmgr/vfp.h>
+#include <psp2/kernel/threadmgr/timer.h>
 
 #ifdef __cplusplus
 extern "C" {

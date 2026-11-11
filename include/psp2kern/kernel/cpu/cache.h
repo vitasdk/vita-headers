@@ -29,6 +29,14 @@ void ksceKernelDcacheCleanInvalidateRange(void *start, unsigned int size);
 void ksceKernelDcacheCleanInvalidateRangeForL1WBWA(void *start, unsigned int size);
 
 /**
+ * @brief The clean and invalidate a range the L2 dcache
+ *
+ * @param[in] start The pointer for clean and invalidate start. value is should be aligned by 0x40.
+ * @param[in] size  The clean and invalidate size. value is should be aligned by 0x40.
+ */
+void ksceKernelDcacheCleanInvalidateRangeForL2WBWA(void *start, unsigned int size);
+
+/**
  * @brief The clean a range the L1 dcache and L2
  *
  * @param[in] start The pointer for clean start. value is should be aligned by 0x20.
@@ -45,6 +53,14 @@ void ksceKernelDcacheCleanRange(void *start, unsigned int size);
 void ksceKernelDcacheCleanRangeForL1WBWA(void *start, unsigned int size);
 
 /**
+ * @brief The clean a range the L2 dcache
+ *
+ * @param[in] start The pointer for clean start. value is should be aligned by 0x20.
+ * @param[in] size  The clean size. value is should be aligned by 0x20.
+ */
+void ksceKernelDcacheCleanRangeForL2WBWA(void *start, unsigned int size);
+
+/**
  * @brief The invalidate a range the L1 dcache and L2
  *
  * @param[in] start The pointer for invalidate start. value is should be aligned by 0x40.
@@ -59,6 +75,14 @@ void ksceKernelDcacheInvalidateRange(void *start, unsigned int size);
  * @param[in] size  The invalidate size. value is should be aligned by 0x40.
  */
 void ksceKernelDcacheInvalidateRangeForL1WBWA(void *start, unsigned int size);
+
+/**
+ * @brief The invalidate a range the L2 dcache
+ *
+ * @param[in] start The pointer for invalidate start. value is should be aligned by 0x40.
+ * @param[in] size  The invalidate size. value is should be aligned by 0x40.
+ */
+void ksceKernelDcacheInvalidateRangeForL2WBWA(void *start, unsigned int size);
 
 /**
  * @brief The invalidate a range the L1 icache and L2

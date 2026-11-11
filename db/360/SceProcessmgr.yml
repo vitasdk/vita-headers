@@ -47,6 +47,7 @@ modules:
           ksceKernelGetProcessInfo: 0x0AFF3EAE
           ksceKernelGetProcessLocalStorageAddr: 0xEE694840
           ksceKernelGetProcessLocalStorageAddrForPid: 0xAF80F39C
+          ksceKernelGetProcessResourceLimit: 0xB80DBD53
           ksceKernelGetProcessStatus: 0x65B120B8
           ksceKernelGetProcessTimeCore: 0xEC283166
           ksceKernelGetProcessTimeLowCore: 0x02179E12
@@ -58,20 +59,43 @@ modules:
         kernel: true
         nid: 0x7A69DE86
         functions:
+          ksceKernelAllocRemoteToolHeap: 0x3C5E2F08
+          ksceKernelChangeProcessCpuAffinity: 0x0A60B40A
           ksceKernelCreateProcess: 0x71CF71FD
+          ksceKernelDisablePHWP: 0x62D048D2
+          ksceKernelEnablePHWP: 0x20174234
           ksceKernelExitProcess: 0x4CA7DC42
+          ksceKernelFreeRemoteToolHeap: 0x41815DF2
+          ksceKernelGetBudgetInfoForDebugger: 0xF3C4A83B
+          ksceKernelGetPHBP: 0xA9C20202
+          ksceKernelGetPHWP: 0xC55BF6C3
+          ksceKernelGetProcessApp: 0x34FA9645
           ksceKernelGetProcessKernelBuf: 0xB9E68092
           ksceKernelGetProcessMainThread: 0x95F9ED94
           ksceKernelGetProcessModuleInfo: 0xC1C91BB2
+          ksceKernelGetProcessParentId: 0x3C4D2889
           ksceKernelGetProcessSelfAuthInfo: 0xE4C83B0D
+          ksceKernelGetProcessType: 0x2ABFB6C1
           ksceKernelGetUIDProcessClass: 0xC6820972
+          ksceKernelGrowBudget: 0x029378AC
           ksceKernelKillProcess: 0xA1071106
+          ksceKernelKillProcessForDebugger: 0x90C27779
           ksceKernelLibcGettimeofday: 0xDE8B8B5E
           ksceKernelLibcTime: 0x9E38C556
-          ksceKernelResumeProcess: 0x080CDC59
+          ksceKernelProcessAssocApp: 0x76C89783
+          ksceKernelProcessDebugResume: 0x080CDC59
+          ksceKernelProcessDebugSuspend: 0x6AECE4CD
+          ksceKernelResumeProcess: 0xE0A9C9C4
+          ksceKernelResumeProcessForDebugger: 0xB13E3C7B
+          ksceKernelSetPHBP: 0x59FA3216
+          ksceKernelSetPHWP: 0x54D7B16A
+          ksceKernelSetProcessLibdb: 0x7D8D7885
           ksceKernelSpawnProcess: 0x31834C49
           ksceKernelSpawnProcessExt: 0x8F320D2B
           ksceKernelStartProcess: 0x38FB7BCA
           ksceKernelStartProcessExt: 0x36728B16
-          ksceKernelSuspendProcess: 0x6AECE4CD
+          ksceKernelSuspendProcess: 0xCF83C23B
+          ksceKernelSuspendProcessForDebugger: 0x234A80B6
           ksceKernelUIDtoProcess: 0xB9E68092
+          ksceKernelWaitProcessEnd: 0x0EE2658E
+          ksceKernelWaitProcessEventCompletion: 0x6A7FF80A

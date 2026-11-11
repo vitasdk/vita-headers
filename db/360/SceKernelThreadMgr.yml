@@ -101,6 +101,7 @@ modules:
           _sceKernelWaitThreadEndCB: 0xFA3D4491
           sceKernelCancelCallback: 0x30741EF2
           sceKernelChangeActiveCpuMask: 0x001173F8
+          sceKernelChangeCurrentThreadAttr: 0x751C9B7A
           sceKernelChangeThreadCpuAffinityMask: 0x15129174
           sceKernelChangeThreadPriority: 0xBD0139F2
           sceKernelChangeThreadPriority2: 0xC5FFCA61
@@ -135,11 +136,13 @@ modules:
           sceKernelDeleteThread: 0x1BBDE3D9
           sceKernelDeleteTimer: 0xAB1E42C4
           sceKernelExitDeleteThread: 0x1D17DECF
+          sceKernelExitThread: 0x0C8A38E1
           sceKernelGetCallbackCount: 0x038644D5
           sceKernelGetMsgPipeCreatorId: 0x70E2A6D2
           sceKernelGetProcessId: 0x9DCB4B7A
           sceKernelGetSystemTimeWide: 0xF4EE4FA9
           sceKernelGetThreadCpuAffinityMask: 0xF1AE5654
+          sceKernelGetThreadCurrentPriority: 0x01414F0B
           sceKernelGetThreadStackFreeSize: 0x4F8A3DA0
           sceKernelGetThreadTLSAddr: 0xBACA6891
           sceKernelGetThreadmgrUIDClass: 0xC9678F7F
@@ -190,26 +193,40 @@ modules:
         kernel: true
         nid: 0xE2C40624
         functions:
+          ksceKernelCancelAlarm: 0x44CCF310
           ksceKernelCancelCallback: 0xC040EC1C
+          ksceKernelCancelEvent: 0xB6FA8305
+          ksceKernelCancelEventFlag: 0xEA211225
+          ksceKernelCancelEventWithSetPattern: 0xE5CAD3E2
           ksceKernelCancelMsgPipe: 0x9D6A2311
           ksceKernelCancelMutex: 0x7204B846
+          ksceKernelCancelRWLock: 0x7A4EF925
+          ksceKernelCancelSema: 0x8760C8ED
+          ksceKernelCancelTimer: 0xF285C94F
+          ksceKernelChangeActiveCpuMask: 0x001173F8
           ksceKernelChangeCurrentThreadAttr: 0x751C9B7A
           ksceKernelChangeThreadCpuAffinityMask: 0x6D0733A8
-          ksceKernelChangeThreadPriority: 0x63DAB420
+          ksceKernelChangeThreadPriority: 0xDA1544D1
+          ksceKernelChangeThreadPriority2: 0x63DAB420
+          ksceKernelChangeThreadPriorityAndCpuAffinityMask: 0x3857C94E
           ksceKernelChangeThreadSuspendStatus: 0x04C6764B
           ksceKernelChangeThreadVfpException: 0xF4C81683
           ksceKernelCheckCallback: 0xE53E41F6
           ksceKernelCheckWaitableStatus: 0xD9BD74EB
           ksceKernelClearEvent: 0x9C335818
           ksceKernelClearEventFlag: 0x4F1DA3BE
+          ksceKernelCountWaitingThreadsProc: 0x54E1AF04
           ksceKernelCreateCallback: 0x1C41614C
           ksceKernelCreateCond: 0xDB6CD34A
           ksceKernelCreateEventFlag: 0x4336BAA4
           ksceKernelCreateMsgPipe: 0xBF631145
           ksceKernelCreateMutex: 0xFBAA026E
+          ksceKernelCreateRWLock: 0x04150799
           ksceKernelCreateSema: 0x30E93C31
           ksceKernelCreateSimpleEvent: 0x357A8177
           ksceKernelCreateThread: 0xC6674E7D
+          ksceKernelCreateTimer: 0x90656C98
+          ksceKernelCreateWorkQueue: 0x771522C6
           ksceKernelDebugResumeThread: 0xEC8343DF
           ksceKernelDebugSuspendThread: 0xFB3706CB
           ksceKernelDelayThread: 0x4B675D05
@@ -219,28 +236,41 @@ modules:
           ksceKernelDeleteEventFlag: 0x71ECB352
           ksceKernelDeleteMsgPipe: 0xB3453F88
           ksceKernelDeleteMutex: 0x0A912340
+          ksceKernelDeleteRWLock: 0x32452017
           ksceKernelDeleteSema: 0x16A35E58
+          ksceKernelDeleteSimpleEvent: 0x2BDE3B40
           ksceKernelDeleteThread: 0xAC834F3F
+          ksceKernelDeleteTimer: 0x91A8F38B
           ksceKernelEnqueueWorkQueue: 0xE50E1185
+          ksceKernelEventObjectInit: 0x25AB8F6B
           ksceKernelExitDeleteThread: 0x1D17DECF
           ksceKernelExitThread: 0x0C8A38E1
+          ksceKernelExtendKernelStackWide: 0xA2C801A5
           ksceKernelFinalizeFastMutex: 0x11FE84A1
           ksceKernelGetCallbackCount: 0x0892D8DF
+          ksceKernelGetCurrentThreadVfpException: 0x14F8167C
           ksceKernelGetEventFlagInfo: 0x612277C9
+          ksceKernelGetEventPattern: 0x0C6BCB8C
           ksceKernelGetFastMutexInfo: 0xD7AF2E58
           ksceKernelGetLwCondInfo: 0xC2AFFBD0
           ksceKernelGetLwMutexInfo: 0x15287EF6
+          ksceKernelGetLwMutexInfoAllProc: 0x069D8A20
           ksceKernelGetMsgPipeInfo: 0x207E0E18
           ksceKernelGetMutexInfo: 0x69B78A12
+          ksceKernelGetMutexInfoAllProc: 0x2322A2F3
           ksceKernelGetProcessId: 0x9DCB4B7A
           ksceKernelGetProcessIdFromTLS: 0xFA54D49A
+          ksceKernelGetRWLockInfo: 0x374C3267
+          ksceKernelGetRWLockInfoAllProc: 0x6624E612
           ksceKernelGetSemaInfo: 0xC99DCF0D
           ksceKernelGetSystemTimeLow: 0x47F6DE49
           ksceKernelGetSystemTimeWide: 0xF4EE4FA9
+          ksceKernelGetTHBP: 0x453B764A
           ksceKernelGetTLSAddr: 0xE938FB20
           ksceKernelGetThreadCpuAffinityMask: 0x83DC703D
           ksceKernelGetThreadCpuRegisters: 0x5022689D
           ksceKernelGetThreadCurrentPriority: 0x01414F0B
+          ksceKernelGetThreadExitStatus: 0x70131EA5
           ksceKernelGetThreadId: 0x59D06540
           ksceKernelGetThreadIdList: 0xEA7B8AEF
           ksceKernelGetThreadInfo: 0x283807E2
@@ -248,16 +278,23 @@ modules:
           ksceKernelGetThreadStackFreeSize: 0x7B278A0B
           ksceKernelGetThreadTLSAddr: 0x66EEA46A
           ksceKernelGetThreadmgrUIDClass: 0x0A20775A
+          ksceKernelGetTimerBase: 0xD41F53D4
           ksceKernelGetTimerBaseWide: 0xA6D11DD3
+          ksceKernelGetTimerEventRemainingTime: 0x3634FFE6
+          ksceKernelGetTimerTime: 0xCB795E13
           ksceKernelGetTimerTimeWide: 0xC1286004
           ksceKernelGetUserThreadId: 0xF311808F
           ksceKernelGetVfpRegisterForDebugger: 0x5CDE387A
           ksceKernelInitializeFastMutex: 0xAF8E1266
           ksceKernelIsThreadDebugSuspended: 0xA0B1AB21
+          ksceKernelIsUserModeThread: 0x91382762
           ksceKernelLockFastMutex: 0x70627F3A
           ksceKernelLockMutex: 0x16AC80C5
           ksceKernelLockMutexCB_089: 0xD06F2886
           ksceKernelNotifyCallback: 0xC3E00919
+          ksceKernelPMonSetControlRegister: 0x1AAFA818
+          ksceKernelPMonSetUserEnableRegister: 0x5053B005
+          ksceKernelPollEvent: 0xD08C71C6
           ksceKernelPollEventFlag: 0x76C6555B
           ksceKernelPollSema: 0x4FDDFE24
           ksceKernelPulseEvent: 0x2427C81B
@@ -272,6 +309,9 @@ modules:
           ksceKernelSetEventFlag: 0xD4780C3E
           ksceKernelSetPermission: 0x02EEDF17
           ksceKernelSetProcessIdToTLS: 0x0486F239
+          ksceKernelSetTHBP: 0x385831A1
+          ksceKernelSetTimerEvent: 0x92A3DCDD
+          ksceKernelSetTimerTime: 0xD978D16F
           ksceKernelSetTimerTimeWide: 0x85195A16
           ksceKernelSignalCond: 0xAC616150
           ksceKernelSignalCondAll: 0x6EC78CD0
@@ -286,6 +326,7 @@ modules:
           ksceKernelTryLockWriteRWLock: 0xA96F2E5A
           ksceKernelTryReceiveMsgPipeVector: 0xCE09221A
           ksceKernelTrySendMsgPipeVector: 0x4CF1BE58
+          ksceKernelUIDInheritedEventClassInit: 0xDBB77032
           ksceKernelUnlockFastMutex: 0xDB395782
           ksceKernelUnlockMutex: 0x1E82E5D0
           ksceKernelUnlockReadRWLock: 0xDE1B9EEE
@@ -301,8 +342,30 @@ modules:
           ksceKernelWaitSema: 0x3C8B55A9
           ksceKernelWaitThreadEnd: 0x3E20216F
           ksceKernelWaitThreadEndCB: 0x9EF4F62C
+          threadmgrGpuExceptionHandler: 0x37F51E91
       SceThreadmgrForKernel:
         kernel: true
         nid: 0xA8CA0EFD
         functions:
+          ksceKernelClearThreadMgrTestMode: 0xE00333A6
+          ksceKernelCpuScanThreadForProcessmgr: 0x3B4B8293
+          ksceKernelCreateMutexForKernel: 0xFBAA026E
+          ksceKernelCreateSemaForKernel: 0x30E93C31
+          ksceKernelDeleteMutexForKernel: 0x0A912340
+          ksceKernelDeleteSemaForKernel: 0x16A35E58
+          ksceKernelGetDefaultCpuAffinityMask: 0x091322E5
           ksceKernelGetThreadContextInfo: 0xD8B9AC8D
+          ksceKernelLockMutexForKernel: 0x16AC80C5
+          ksceKernelRunWithStackForKernel: 0xE54FD746
+          ksceKernelSetDTraceThreadCBEnable: 0xBE5247A2
+          ksceKernelSetPermissionForKernel: 0x02EEDF17
+          ksceKernelSetSyslibtraceThreadCBEnable: 0x5A410D2B
+          ksceKernelSetThreadMgrTestMode: 0x333B26AD
+          ksceKernelSignalSemaForKernel: 0xD270498B
+          ksceKernelThreadMgrProcessCreate: 0x41BCA03A
+          ksceKernelThreadMgrProcessDeleteAfterPUIDClose: 0xF282AE42
+          ksceKernelThreadMgrProcessDeleteBeforePUIDClose: 0x1928DFBB
+          ksceKernelUnlockMutexForKernel: 0x1E82E5D0
+          ksceKernelWaitSemaForKernel: 0x3C8B55A9
+          pmonCpuSetEventSelf: 0x6ECCDCBD
+          setupNextContext_intr: 0xA4127F82

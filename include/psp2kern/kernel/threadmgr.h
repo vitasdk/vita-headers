@@ -21,6 +21,8 @@
 #include <psp2kern/kernel/threadmgr/workqueues.h>
 #include <psp2kern/kernel/threadmgr/debugger.h>
 #include <psp2kern/kernel/threadmgr/vfp.h>
+#include <psp2kern/kernel/threadmgr/timer.h>
+#include <psp2kern/kernel/threadmgr/rwlock.h>
 
 #ifdef __cplusplus
 extern "C" {

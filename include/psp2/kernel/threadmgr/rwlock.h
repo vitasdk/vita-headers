@@ -8,41 +8,11 @@
 
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
+#include <psp2common/kernel/threadmgr.h>
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-
-/** Additional options used when creating rwlock. */
-typedef struct SceKernelRWLockOptParam {
-	/** Size of the ::SceKernelRWLockOptParam structure */
-	SceSize     size;
-} SceKernelRWLockOptParam;
-VITASDK_BUILD_ASSERT_EQ(4, SceKernelRWLockOptParam);
-
-/** Current state of a rwlock.
- * @see sceKernelGetRWLockInfo
- */
-typedef struct SceKernelRWLockInfo {
-	/** Size of the ::SceKernelRWLockInfo structure */
-	SceSize         size;
-	/** The UID of the rwlock */
-	SceUID          rwLockId;
-	/** NULL-terminated name of the rwlock */
-	char            name[32];
-	/** Attributes */
-  SceUInt32       attr;
-	/** The current lock count */
-	SceInt32        lockCount;
-	/** The UID of the current owner of the rwlock with write access, 0 when locked for reads */
-	SceUID          writeOwnerId;
-	/** The number of threads waiting on the rwlock for read access */
-	SceUInt32       numReadWaitThreads;
-	/** The number of threads waiting on the rwlock for write access */
-	SceUInt32       numWriteWaitThreads;
-} SceKernelRWLockInfo;
-VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelRWLockInfo);
 
 /**
  * Creates a new rwlock

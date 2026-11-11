@@ -696,6 +696,13 @@ int kscePUIDSetName(ScePID pid, SceUID puid, const char *name);
 /** Resolves a process-local UID to its global UID, requiring \p object_class. */
 SceUID kscePUIDtoGUIDWithClass(ScePID pid, SceUID puid, SceClass *object_class);
 
+/**
+ * Gets the current cpu id, only works with interrupts disabled.
+ * 
+ * @return cpu on success, < 0 on error.
+ */
+int ksceKernelCpuId();
+
 #ifdef __cplusplus
 }
 #endif

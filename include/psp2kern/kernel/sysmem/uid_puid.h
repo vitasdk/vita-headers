@@ -12,35 +12,58 @@
 extern "C" {
 #endif
 
-/*
+/**
  * Open Process UID by Global UID (Create PUID)
  *
- * param[in] pid  - The target process id.
- * param[in] guid - The target GUID.
+ * @param[in] pid  - The target process id.
+ * @param[in] guid - The target GUID.
  *
- * return PUID on success, < 0 on error
+ * @return PUID on success, < 0 on error
  */
 SceUID kscePUIDOpenByGUID(SceUID pid, SceUID guid);
 
-/*
+/**
  * Close Process UID (Remove PUID)
  *
- * param[in] pid  - The target process id.
- * param[in] puid - The target PUID.
+ * @param[in] pid  - The target process id.
+ * @param[in] puid - The target PUID.
  *
- * return PUID on success, < 0 on error
+ * @return PUID on success, < 0 on error
  */
 int kscePUIDClose(SceUID pid, SceUID puid);
 
-/*
+/**
  * Get Global UID by Process UID
  *
- * param[in] pid  - The target process id.
- * param[in] puid - The target PUID.
+ * @param[in] pid  - The target process id.
+ * @param[in] puid - The target PUID.
  *
- * return GUID on success, < 0 on error
+ * @return GUID on success, < 0 on error
  */
 SceUID kscePUIDtoGUID(SceUID pid, SceUID puid);
+
+/**
+ * Get PUID Attributes
+ *
+ * @param[in]  pid  - The target process id.
+ * @param[in]  puid - The target PUID.
+ * @param[out] pAttr - the output attribute.
+ *
+ * @return zero on success, < 0 on error
+ */
+int kscePUIDGetAttr(SceUID pid, SceUID puid, SceUInt32 *pAttr);
+
+/**
+ * Releases an object referenced by the PUID.
+ *
+ * This decreases the internal reference count.
+ *
+ * @param[in]  pid    - The target process id.
+ * @param[in]  puid   - The target PUID.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int kscePUIDReleaseObject(SceUID pid, SceUID puid);
 
 #define ksceKernelKernelUidForUserUid(pid, puid) kscePUIDtoGUID(pid, puid)
 #define ksceKernelCreateUserUid(pid, guid) kscePUIDOpenByGUID(pid, guid)

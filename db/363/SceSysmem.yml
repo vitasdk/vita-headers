@@ -8,35 +8,79 @@ modules:
         kernel: true
         nid: 0x02451F0F
         functions:
+          ksceCreatePhyMemPartByPbase: 0x5CC56F87
+          ksceGUIDFindByNameAll: 0xF49C0BE8
+          ksceGUIDFindByObject: 0xEC90AA11
+          ksceGUIDGetEntry: 0xFF464A49
+          ksceGUIDGetEntryInfoClass: 0x71E934DB
           ksceGUIDGetObjectWithClass: 0x0E43E113
+          ksceGUIDGetPID: 0xBD42A0FC
           ksceGUIDGetUIDVectorByClass: 0x52137FA3
+          ksceGUIDGetUIDVectorWeakByClass: 0xE9957329
           ksceGUIDKernelCreateWithAttr: 0x6D26B066
           ksceGUIDKernelCreateWithOpt: 0xFB6390CE
           ksceGUIDOpenByGUID: 0x89D33DF0
+          ksceGUIDSet: 0xBF275C5A
+          ksceGUIDSetPID: 0x46DF8C8A
+          ksceGUIDSetVisibilityLevel: 0xE8CC2166
+          ksceGetMemBlockInfoAll: 0x1D19C864
+          ksceKernelAddressSpaceCtrSetObjectHeap: 0xFA348CB1
           ksceKernelAddressSpaceFreeAllMemBlock: 0x36159CF5
           ksceKernelAddressSpaceSetPhyMemPart: 0x7DF07D60
           ksceKernelAddressSpaceUnmap: 0x73C38695
           ksceKernelAddressSpaceVAtoPA: 0x1BAF8C0B
           ksceKernelAlloc: 0x85571907
+          ksceKernelAllocMemBlockByCommand: 0x455B0A4C
           ksceKernelAllocPartitionMemBlock: 0x6DB46017
+          ksceKernelCheckOpenVMDomain: 0x4E6D8BC3
           ksceKernelCopyToUserDomain: 0x499A9FFF
-          ksceKernelCopyToUserProcTextDomain: 0x2995558D
+          ksceKernelCopyToUserProcTextDomainForDBGP: 0x4345C61F
           ksceKernelCopyToUserTextDomain: 0x5EF1DAAF
           ksceKernelCreateAddressSpace: 0x8EE89D2C
+          ksceKernelCreateObjectHeap: 0x9D8F3BE8
           ksceKernelDeleteAddressSpace: 0x4A2E421D
+          ksceKernelDeletePhyMemPart: 0x3F72B2E7
+          ksceKernelCopyToUserProcTextDomain: 0x2995558D
           ksceKernelFindClassByName: 0x7D87F706
+          ksceKernelFixedHeapSetHook: 0xD4511A52
           ksceKernelFree: 0x4233C16D
           ksceKernelFreeSimpleMemBlock: 0xA4DB88E1
           ksceKernelGetFixedHeapInfoByPointer: 0xA24D2C8D
           ksceKernelGetHeapInfo: 0x17DB1A0A
           ksceKernelGetHeapInfoByPtr: 0x80A75187
           ksceKernelGetMemBlockType: 0xD44FE44B
+          ksceKernelGetPhyMemPartInfoByID: 0x029F5989
+          ksceKernelGetPhyMemPartInfoCore: 0xB9B69700
+          ksceKernelGetPhyMemPartInfoForDebugger: 0x73E03A38
           ksceKernelGetUIDDLinkClass: 0xE4193EB6
           ksceKernelGetUIDHeapClass: 0x7C878E94
           ksceKernelGetUIDMemBlockClass: 0x86681B64
+          ksceKernelGrowPhyMemPartByPbase: 0x36FDA794
           ksceKernelNameHeapGetInfo: 0x01194C2E
+          ksceKernelObjectHeapAlloc: 0xEBFC8E10
+          ksceKernelObjectHeapSetResourceLimit: 0xDFA1EB57
+          ksceKernelObjectHeapSetResourceLimitAll: 0x067F2550
+          ksceKernelPrintHeapSegmentList: 0x82059651
+          ksceKernelResetPhyMemPart: 0x9B7E673F
           ksceKernelReallocHeapMemory: 0x8EE8B917
           ksceKernelUIDEntryHeapGetInfo: 0xCCD47B97
+          ksceKernelShowPhyMemPart: 0x8F0B5536
+          ksceKernelSysmemCleaner: 0x50980298
+          ksceKernelSysmemModuleStartAfterProcessmgr: 0x4E74DA48
+          ksceKernelVSlotMapProcMemory: 0x14D3807B
+          ksceKernelVSlotUnmapProcMemory: 0x4EEF69C7
+          kscePUIDGetAttr: 0x96BD47D1
+          kscePUIDGetEntryInfoAll: 0x3C3005EE
+          kscePUIDGetInfo: 0x857701D4
+          kscePUIDGetPUIDVectorByGUID: 0xCE16AD91
+          kscePUIDGetUIDVectorByClass: 0x08C05493
+          kscePUIDReleaseObject: 0xCE561224
+          ksceUIDEntryHeapCloseAllPUID: 0x133024A5
+      SceSysrootForKernel:
+        kernel: true
+        nid: 0x3691DA45
+        functions:
+          sceKernelSysrootGetProcessId: 0x7385CADE
       SceUartForKernel:
         kernel: true
         nid: 0x1CCD9BA3

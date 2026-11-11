@@ -29,7 +29,7 @@ typedef struct SceGUIDKernelCreateOpt {
 } SceGUIDKernelCreateOpt;
 VITASDK_BUILD_ASSERT_EQ(0x20, SceGUIDKernelCreateOpt);
 
-/*
+/**
  * Create a GUID object that belongs to the target process id
  *
  * @param[in]  sce_class - The target class.
@@ -42,7 +42,7 @@ VITASDK_BUILD_ASSERT_EQ(0x20, SceGUIDKernelCreateOpt);
  */
 SceUID ksceGUIDKernelCreateWithOpt(SceClass *sce_class, const char *name, SceGUIDKernelCreateOpt *opt, SceObjectBase **obj);
 
-/*
+/**
  * Close GUID (Inactive GUID)
  *
  * @param[in] guid - The remove target guid.
@@ -92,7 +92,7 @@ int ksceGUIDReferObjectWithClass(SceUID guid, SceClass *sce_class, SceObjectBase
  *
  * @return 0 on success, < 0 on error.
  */
-int ksceGUIDReferObjectWithClassLevel(SceUID guid, SceClass *pClass, SceUInt32 level, SceObjectBase **entry);
+int ksceGUIDReferObjectWithClassLevel(SceUID guid, SceClass *pClass, SceUInt32 level, SceObjectBase **object);
 
 /**
  * Releases an object referenced by the UID.
@@ -119,9 +119,107 @@ int ksceGUIDReleaseObject(SceUID guid);
 int ksceGUIDGetUIDVectorByClass(SceClass *cls, int vis_level, SceUID *vector, SceSize num, SceSize *ret_num);
 
 
+/**
+ * Gets an object from a UID with the specified class.
+ *
+ * @param[in]  uid    - The target GUID.
+ * @param[in]  pClass - The object class.
+ * @param[out] obj    - The object pointer output pointer.
+ *
+ * @return 0 on success, < 0 on error.
+ */
 int ksceGUIDGetObjectWithClass(SceUID uid, SceClass *pClass, SceObjectBase **obj);
+
+/**
+ * Creates a GUID object with the specified attributes.
+ *
+ * @param[in]  pClass   - The target class.
+ * @param[in]  name     - The GUID name.
+ * @param[in]  attr     - The GUID attributes.
+ * @param[out] ppEntry  - The object pointer output pointer.
+ *
+ * @return GUID on success, < 0 on error.
+ */
 int ksceGUIDKernelCreateWithAttr(SceClass *pClass, const char *name, SceUInt32 attr, SceObjectBase **ppEntry);
+
+/**
+ * Opens a GUID.
+ *
+ * @param[in] guid - The target GUID.
+ *
+ * @return The opened GUID on success, < 0 on error.
+ */
 SceUID ksceGUIDOpenByGUID(SceUID guid);
+
+/**
+ * Gets the process ID associated with a UID.
+ *
+ * @param[in] uid - The target GUID.
+ *
+ * @return The process ID, < 0 on error.
+ */
+ScePID ksceGUIDGetPID(SceUID uid);
+
+/**
+ * Sets a GUID's class, name, and object.
+ *
+ * @param[in] uid    - The target GUID.
+ * @param[in] pClass - The object class.
+ * @param[in] name   - The GUID name.
+ * @param[in] obj    - The object to associate with the GUID.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDSet(SceUID uid, SceClass* pClass, const char* name, SceObjectBase* obj);
+
+/**
+ * Sets a GUID's name.
+ *
+ * @param[in] uid  - The target GUID.
+ * @param[in] name - The new GUID name.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDSetName(SceUID uid, const char* name);
+
+/**
+ * Sets the process ID associated with a GUID.
+ *
+ * @param[in] uid - The target GUID.
+ * @param[in] pid - The process ID to associate with the GUID.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDSetPID(SceUID uid, ScePID pid);
+
+/**
+ * Sets a GUID's visibility level.
+ *
+ * @param[in] uid   - The target GUID.
+ * @param[in] level - The visibility level.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDSetVisibilityLevel(SceUID uid, int level);
+
+/**
+ * Gets a GUID entry.
+ *
+ * @param[in]  uid    - The target GUID.
+ * @param[out] pEntry - The sceUIDEntry.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceGUIDGetEntry(SceUID uid, void** pEntry);
+
+/**
+ * Finds a GUID by name across all classes.
+ *
+ * @param[in] name - The object name to search for.
+ *
+ * @return The matching GUID, or < 0 on error.
+ */
+SceUID ksceGUIDFindByNameAll(const char *name);
 
 
 /* For backwards compatibility */

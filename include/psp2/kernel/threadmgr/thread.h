@@ -225,6 +225,13 @@ int sceKernelGetThreadRunStatus(SceUID thid, SceKernelThreadRunStatus *status);
 int sceKernelGetThreadCpuAffinityMask(SceUID thid);
 
 /**
+ * Retrive the priority of the current thread.
+ *
+ * @return current priority if >= 0, otherwise the error code.
+ */
+int sceKernelGetThreadCurrentPriority();
+
+/**
  * Set the cpu affinity mask of a thread.
  *
  * @param thid - UID of the thread to retrieve affinity mask for.
@@ -321,6 +328,34 @@ void *sceKernelGetTLSAddr(int key);
  * @return The system time
  */
 SceInt64 sceKernelGetSystemTimeWide(void);
+
+int sceKernelResumeThreadForVM(SceUID thid);
+int sceKernelSuspendThreadForVM(SceUID thid);
+
+/**
+ * Sets a hardware breakpoint for a thread.
+ *
+ * @param[in] thid Thread ID.
+ * @param[in] slot Hardware breakpoint slot (always 5).
+ * @param[in] addr Breakpoint address.
+ * @param[in] control Breakpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelSetTHBP(SceUID thid, SceUInt32 slot, void* addr, SceUInt32 control);
+
+/**
+ * Gets a thread's hardware breakpoint configuration.
+ *
+ * @param[in] thid Thread ID.
+ * @param[in] slot Hardware breakpoint slot (always 5).
+ * @param[out] pAddr Receives the breakpoint address.
+ * @param[out] pControl Receives the breakpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelGetTHBP(SceUID thid, SceUInt32 slot, void** pAddr, SceUInt32* pControl);
+
 
 
 #ifdef __cplusplus

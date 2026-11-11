@@ -1092,6 +1092,11 @@ typedef enum SceGxmTransferType {
 	SCE_GXM_TRANSFER_SWIZZLED = 0x00800000U  //!< Swizzled memory layout.
 } SceGxmTransferType;
 
+typedef enum SceGxmContextType {
+    SCE_GXM_CONTEXT_TYPE_IMMEDIATE = 0,
+    SCE_GXM_CONTEXT_TYPE_DEFERRED  = 1
+} SceGxmContextType;
+
 typedef struct SceGxmBlendInfo {
 	uint8_t colorMask;     //!< Color Mask (One of ::SceGxmColorMask).
 	uint8_t colorFunc : 4; //!< Color blend function (One of ::SceGxmBlendFunc).
@@ -1387,7 +1392,7 @@ typedef struct SceGxmRenderTargetParams {
 	uint32_t flags;	                //!< Bitwise combined flags from ::SceGxmRenderTargetFlags.
 	uint16_t width;	                //!< The width of the render target in pixels.
 	uint16_t height;                //!< The height of the render target in pixels.
-	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1,SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
+	uint16_t scenesPerFrame;        //!< The expected number of scenes per frame, in the range [1, SCE_GXM_MAX_SCENES_PER_RENDERTARGET].
 	uint16_t multisampleMode;       //!< Multisample mode to use (One of ::SceGxmMultisampleMode).
 	uint32_t multisampleLocations;  //!< If enabled in the flags, the multisample locations to use.
 	SceUID driverMemBlock;          //!< The uncached LPDDR memblock for the render target GPU data structures or SCE_UID_INVALID_UID to specify memory should be allocated in sceGxm.
@@ -1558,6 +1563,16 @@ int sceGxmCreateDeferredContext(const SceGxmDeferredContextParams *params, SceGx
 int sceGxmDestroyDeferredContext(SceGxmContext *context);
 
 /**
+ * Get the type of a sceGxm context.
+ *
+ * @param[in] context - Pointer to the context whose type to retrieve.
+ * @param[out] contextType - Pointer to receive the context type.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int sceGxmGetContextType(const SceGxmContext* context, SceGxmContextType* contextType);
+
+/**
  * Enables debug validation during execution.
  *
  * @param[in] context - The sceGxm context whether to enable validation.
@@ -1639,8 +1654,11 @@ int sceGxmDrawInstanced(SceGxmContext *context, SceGxmPrimitiveType primType, Sc
 int sceGxmSetVisibilityBuffer(SceGxmContext *context, void *bufferBase, unsigned int stridePerCore);
 
 int sceGxmBeginScene(SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget *renderTarget, const SceGxmValidRegion *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const SceGxmColorSurface *colorSurface, const SceGxmDepthStencilSurface *depthStencil);
+int sceGxmBeginSceneEx(SceGxmContext *context, unsigned int flags, const SceGxmRenderTarget *renderTarget, const SceGxmValidRegion *validRegion, SceGxmSyncObject *vertexSyncObject, SceGxmSyncObject *fragmentSyncObject, const SceGxmColorSurface *colorSurface, const SceGxmDepthStencilSurface *loadDepthStencil, const SceGxmDepthStencilSurface *storeDepthStencil);
 int sceGxmMidSceneFlush(SceGxmContext *context, unsigned int flags, SceGxmSyncObject *vertexSyncObject, const SceGxmNotification *vertexNotification);
 int sceGxmEndScene(SceGxmContext *context, const SceGxmNotification *vertexNotification, const SceGxmNotification *fragmentNotification);
+
+int sceGxmWaitEvent();
 
 /**
  * Init generation of a new command list.

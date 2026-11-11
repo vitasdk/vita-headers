@@ -226,18 +226,27 @@ modules:
           ksceAppMgrDrmOpen: 0xEA75D157
           ksceAppMgrFakeSaveDataCreateMount: 0x12FC3FA8
           ksceAppMgrGameDataMount: 0xCE356B2D
+          ksceAppMgrGetAppIdByNameForDebugger: 0x4FA62A46
           ksceAppMgrGetBootParam: 0xD2541B4A
           ksceAppMgrGetPfsProcessStatus: 0xE72D2A4A
+          ksceAppMgrGetPidByNameForDebugger: 0x21BE167A
+          ksceAppMgrGetShellPidForDriver: 0x2FEACA9F
           ksceAppMgrGetSystemDataFile: 0xAEC49533
           ksceAppMgrIsExclusiveProcessRunning: 0xA888C2DC
+          ksceAppMgrKillAppByNameForDebugger: 0x0C5D65F1
           ksceAppMgrKillProcess: 0xD80566DB
+          ksceAppMgrLaunchAppByNameInternal: 0x1B6C2FED
           ksceAppMgrLaunchAppByPath: 0xB0A37065
+          ksceAppMgrLaunchAppForTest2: 0x504023C8
+          ksceAppMgrLiveAreaOperationByNameForLoadp: 0x3B4F305B
           ksceAppMgrLoadSafeMemory: 0xFAF3DAAA
           ksceAppMgrLocalBackupGetOfflineId: 0x61B13981
           ksceAppMgrLocalBackupVerifyOfflineHeader: 0x62E98C42
           ksceAppMgrMmsMount: 0x13D54107
           ksceAppMgrPhotoMount: 0x43A35729
           ksceAppMgrRegisterPath: 0xB53FB98E
+          ksceAppMgrResumeAppByNameForDebugger: 0xEE6047CA
+          ksceAppMgrResumeAppForDebugger: 0xF9A61E94
           ksceAppMgrSaveDataGetQuota: 0xE104C37E
           ksceAppMgrSaveDataLocalBackupTargetGetList: 0x9B3F7D66
           ksceAppMgrSaveDataLocalBackupTargetRemoveItem: 0xC4EF95BB
@@ -252,6 +261,8 @@ modules:
           ksceAppMgrSaveDataSlotSetStatus: 0x9ADB00FA
           ksceAppMgrSaveDataUmount: 0x2B080268
           ksceAppMgrSaveSafeMemory: 0xD366AA44
+          ksceAppMgrSuspendAppByNameForDebugger: 0xF3B1D42E
+          ksceAppMgrSuspendAppForDebugger: 0x29421DCD
           ksceAppMgrSystemParamDateTimeSetConf: 0xA9AA3A68
           ksceAppMgrTrophyMount: 0xE977A833
           ksceAppMgrUmount: 0xA714BB35

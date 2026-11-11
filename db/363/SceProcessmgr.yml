@@ -8,14 +8,42 @@ modules:
         kernel: true
         nid: 0xEB1F8EF7
         functions:
+          ksceKernelAllocRemoteToolHeap: 0x51AF6FE6
+          ksceKernelChangeProcessCpuAffinity: 0xF013B7F1
           ksceKernelCreateProcess: 0x68068618
+          ksceKernelDisablePHWP: 0xA2EE1B7F
+          ksceKernelEnablePHWP: 0x9DF739C7
           ksceKernelExitProcess: 0x905621F9
+          ksceKernelFreeRemoteToolHeap: 0x2755CEDD
+          ksceKernelGetBudgetInfoForDebugger: 0xCF9EC344
+          ksceKernelGetPHBP: 0x060DA466
+          ksceKernelGetPHWP: 0x6898F7A7
+          ksceKernelGetProcessApp: 0xE5097B4F
+          ksceKernelGetProcessAuthid: 0x324F2B20
           ksceKernelGetProcessKernelBuf: 0xD991C85E
           ksceKernelGetProcessMainThread: 0xD20553C6
           ksceKernelGetProcessModuleInfo: 0x3AF6B088
+          ksceKernelGetProcessParentId: 0xA5E55217
           ksceKernelGetProcessSelfAuthInfo: 0x324F2B20
+          ksceKernelGetProcessType: 0xB631C93B
           ksceKernelGetUIDProcessClass: 0x98AE4BC8
+          ksceKernelGrowBudget: 0x48DD3348
+          ksceKernelKillProcess: 0xF388F05C
+          ksceKernelKillProcessForDebugger: 0x148E23E3
           ksceKernelLibcGettimeofday: 0x014F5113
           ksceKernelLibcTime: 0xB0E076D6
-          ksceKernelResumeProcess: 0x6894499C
-          ksceKernelSuspendProcess: 0x93B8E785
+          ksceKernelProcessAssocApp: 0x00DBA872
+          ksceKernelProcessDebugResume: 0x6894499C
+          ksceKernelProcessDebugSuspend: 0x93B8E785
+          ksceKernelResetGameBudget: 0x56657302
+          ksceKernelResumeProcess: 0xEFBCF15B
+          ksceKernelResumeProcessForDebugger: 0x8FB7FD50
+          ksceKernelSetPHBP: 0x597E6D2C
+          ksceKernelSetPHWP: 0xB2421F93
+          ksceKernelSetProcessLibdb: 0x72F25C14
+          ksceKernelSpawnProcessExt: 0x5A57766C
+          ksceKernelStartProcessExt: 0x026F3E87
+          ksceKernelSuspendProcess: 0x1400A1F8
+          ksceKernelSuspendProcessForDebugger: 0x4232517A
+          ksceKernelWaitProcessEnd: 0x0B9BE51B
+          ksceKernelWaitProcessEventCompletion: 0x0F23A5ED

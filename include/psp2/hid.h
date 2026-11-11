@@ -41,7 +41,7 @@ VITASDK_BUILD_ASSERT_EQ(0x10, SceHidMouseReport);
  * Enumerate hid keyboards.
  *
  * @param[out]	handle	Buffer to receive keyboard hid handles.
- * @param[int]	count   Number of keyboards to enumerate
+ * @param[in]	count   Number of keyboards to enumerate
  */
 int sceHidKeyboardEnumerate(int* handle, int count);
 
@@ -68,7 +68,7 @@ int sceHidKeyboardPeek(SceUInt32 handle, SceHidKeyboardReport *reports[], int nR
  * Enumerate hid mice.
  *
  * @param[out]	handle	Buffer to receive mouse hid handles.
- * @param[int]	count   Number of mice to enumerate
+ * @param[in]	count   Number of mice to enumerate
  */
 int sceHidMouseEnumerate(int* handle, int count);
 

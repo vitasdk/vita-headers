@@ -199,6 +199,20 @@ SceExcpmgrData *ksceExcpmgrGetData(void);
  */
 int ksceExcpmgrRegisterHandler(SceExcpKind kind, int priority, void *handler);
 
+/**
+ * Release a registered exception handler.
+ *
+ * @param[in]     kind    The kind of exception.
+ * @param[in,out] handler A pointer to a ::SceExcpmgrExceptionHandlerContext followed by the handler code.
+ *
+ * @return Error code or zero on success.
+ */
+int sceKernelReleaseExceptionHandler(SceExcpKind kind, void* handler);
+
+void sceKernelInitialHandlerDebugDabtCfunc(const SceExcpmgrExceptionContext* context);
+void sceKernelInitialHandlerDebugPabtCfunc(const SceExcpmgrExceptionContext* context);
+void sceKernelInitialHandlerDebugUndefCfunc(const SceExcpmgrExceptionContext* context);
+
 #ifdef __cplusplus
 }
 #endif

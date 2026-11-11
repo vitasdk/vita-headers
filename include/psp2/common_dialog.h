@@ -131,6 +131,8 @@ void sceCommonDialogConfigParamInit(SceCommonDialogConfigParam *param)
 
 int sceCommonDialogSetConfigParam(const SceCommonDialogConfigParam *configParam);
 int sceCommonDialogUpdate(const SceCommonDialogUpdateParam *updateParam);
+SceUID sceCommonDialogGetWorkerThreadId();
+SceBool sceCommonDialogIsRunning();
 
 #ifdef __cplusplus
 }

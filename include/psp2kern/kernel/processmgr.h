@@ -318,6 +318,174 @@ int ksceKernelStartProcess(ScePID pid, SceUInt32 start_flags, SceSize arg_size, 
  */
 int ksceKernelStartProcessExt(ScePID pid, SceUInt32 start_flags, SceSize arg_size, const void *arg_block, SceUInt32 preload_flags);
 
+/**
+ * Sets a hardware breakpoint for a process.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware breakpoint slot (0-4).
+ * @param[in] addr Breakpoint address.
+ * @param[in] control Breakpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelSetPHBP(ScePID pid, SceUInt32 slot, void* addr, SceUInt32 control);
+
+/**
+ * Gets a process's hardware breakpoint configuration.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware breakpoint slot (0-4).
+ * @param[out] pAddr Receives the breakpoint address.
+ * @param[out] pControl Receives the breakpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelGetPHBP(ScePID pid, SceUInt32 slot, void** pAddr, SceUInt32* pControl);
+
+/**
+ * Sets a hardware watchpoint for a process.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware watchpoint slot (0-3).
+ * @param[in] addr Watchpoint address.
+ * @param[in] control Watchpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelSetPHWP(ScePID pid, SceUInt32 slot, void* addr, SceUInt32 control);
+
+/**
+ * Gets a process's hardware watchpoint configuration.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware watchpoint slot (0-3).
+ * @param[out] pAddr Receives the watchpoint address.
+ * @param[out] pControl Receives the watchpoint control value.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelGetPHWP(ScePID pid, SceUInt32 slot, void** pAddr, SceUInt32* pControl);
+
+/**
+ * Enables a process hardware watchpoint.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware watchpoint slot (0-3).
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelEnablePHWP(ScePID pid, SceUInt32 slot);
+
+/**
+ * Disables a process hardware watchpoint.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] slot Hardware watchpoint slot (0-3).
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelDisablePHWP(ScePID pid, SceUInt32 slot);
+
+/**
+ * Gets the parent process ID of a process.
+ *
+ * @param[in] pid Process ID.
+ *
+ * @return Parent process ID, or < 0 on error.
+ */
+ScePID ksceKernelGetProcessParentId(ScePID pid);
+
+/**
+ * Gets the type of a process.
+ *
+ * @param[in] pid Process ID.
+ *
+ * @return Process type, or < 0 on error.
+ */
+int ksceKernelGetProcessType(ScePID pid);
+
+/**
+ * Gets the application UID associated with the calling process.
+ * 
+ * @return application UID, or < 0 on error.
+ */
+SceUID ksceKernelGetProcessApp();
+
+/**
+ * Tests whether the calling process uses the game budget.
+ *
+ * @return SCE_TRUE if it uses the game budget, SCE_FALSE otherwise.
+ */
+SceBool ksceKernelIsGameBudget();
+
+/**
+ * Grows a budget by the specified size at the given index.
+ *
+ * @param[in] budgetId Budget UID.
+ * @param[in] index Budget entry (index 0 = main, 1 = GameCDialog, 2 = PhyCont).
+ * @param[in] size Amount by which to grow the budget.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelGrowBudget(SceUID budgetId, SceInt32 index, SceSize size);
+
+/**
+ * Resets the game budget.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelResetGameBudget();
+
+/**
+ * Waits for a process to end.
+ *
+ * @param[in] pid Process ID.
+ * @param[out] returnCode Optional output for the process return code.
+ * @param[in,out] timeout Timeout for send in us. use NULL to wait indefinitely
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelWaitProcessEnd(ScePID pid, SceInt32* returnCode, SceUInt32* timeout);
+
+/**
+ * Allocates memory from a process's remote tool heap.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] size Allocation size.
+ *
+ * @return Pointer to the allocated memory, or NULL on error.
+ */
+void* ksceKernelAllocRemoteToolHeap(ScePID pid, SceSize size);
+
+/**
+ * Frees memory allocated from a process's remote tool heap.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] ptr Pointer returned by ::ksceKernelAllocRemoteToolHeap.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelFreeRemoteToolHeap(ScePID pid, void* ptr);
+
+/**
+ * Associates an application with a process.
+ *
+ * @param[in] pid Process ID.
+ * @param[in] app Application UID.
+ *
+ * @return 0 on success, or < 0 on error.
+ */
+int ksceKernelProcessAssocApp(ScePID pid, SceUID app);
+
+/**
+ * Gets the application UID associated with a process.
+ *
+ * @param[in] pid Process ID.
+ *
+ * @return Application UID, or < 0 on error.
+ */
+SceUID ksceKernelGetProcessApp(ScePID pid);
+
 #ifdef __cplusplus
 }
 #endif
