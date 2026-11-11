@@ -348,8 +348,10 @@ typedef struct SceKernelMutexInfo {
 	SceUID          currentOwnerId;
 	/** Number of threads waiting on the mutex, as a ::SceUInt32 value. */
 	int             numWaitThreads;
+	/** Priority ceiling, or zero when unused. */
+	SceInt32        ceilingPriority;
 } SceKernelMutexInfo;
-VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMutexInfo);
+VITASDK_BUILD_ASSERT_EQ(0x40, SceKernelMutexInfo); // size is from FW 3.60
 
 
 

@@ -9,6 +9,10 @@
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct SceErrorString {
 	char s[16]; //!< NUL-terminated formatted external error code, for example "C2-12828-1".
 } SceErrorString;
@@ -28,10 +32,6 @@ VITASDK_BUILD_ASSERT_EQ(0x10, SceErrorString); // size is from FW 3.60
  * @return 0 on success, or a user-memory copy error.
  */
 int _sceErrorGetExternalString(char *error_string, int error_code);
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 typedef struct SceErrorDefaultFormat {
 	SceInt32 network_status; //!< Default network status; not validated. Settings maps 3..5 to NAT types 1..3.

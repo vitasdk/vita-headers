@@ -160,10 +160,10 @@ VITASDK_BUILD_ASSERT_EQ(0x40, SceSharedSecret);
 /** SELF authorization information returned by AuthMgr and stored by Processmgr. */
 typedef struct SceSelfAuthInfo {
 	SceUInt64 program_authority_id; //!< Program authority identifier.
-	uint8_t padding[8];
+	SceUInt64 program_sceversion;   //!< Program SCE version used by the secure-module authorization chain.
 	uint8_t capability[0x20];       //!< 256-bit capability bitset.
 	uint8_t attribute[0x20];        //!< 256-bit authorization attribute bitset.
-	SceSharedSecret secret;
+	SceSharedSecret shared_secret;  //!< Secure-module authorization state, including the process klicensee.
 } SceSelfAuthInfo;
 VITASDK_BUILD_ASSERT_EQ(0x90, SceSelfAuthInfo);
 

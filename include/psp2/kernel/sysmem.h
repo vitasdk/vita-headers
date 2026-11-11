@@ -90,7 +90,7 @@ SceUID sceKernelFindMemBlockByAddr(const void *addr, SceSize size);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelGetMemBlockInfoByAddr(void *base, SceKernelMemBlockInfo *info);
+int sceKernelGetMemBlockInfoByAddr(const void *base, SceKernelMemBlockInfo *info);
 
 /**
  * Gets memory block information given a memory location.
@@ -101,7 +101,7 @@ int sceKernelGetMemBlockInfoByAddr(void *base, SceKernelMemBlockInfo *info);
  *
  * @return 0 on success, < 0 on error.
 */
-int sceKernelGetMemBlockInfoByRange(void *base, SceSize size, SceKernelMemBlockInfo *info);
+int sceKernelGetMemBlockInfoByRange(const void *base, SceSize size, SceKernelMemBlockInfo *info);
 
 /**
  * Allocates a new memory block for Virtual Machine domain.

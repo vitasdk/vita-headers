@@ -26,7 +26,7 @@ int ksceSblDmac5AesCtrDec(const void *src, void *dst, int size, const void *key,
 
 #define ksceSblSsMgrAesCtrDecrypt ksceSblDmac5AesCtrDec
 
-int ksceSblSsDecryptWithPortability(SceUInt32 key_type, void *iv, ScePortabilityData *src, ScePortabilityData *dst);
+int ksceSblSsDecryptWithPortability(SceUInt32 key_type, const void *iv, const ScePortabilityData *src, ScePortabilityData *dst);
 
 /**
  * Retrieve the secondary platform security code from aimgr_sm.

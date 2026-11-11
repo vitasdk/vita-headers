@@ -86,7 +86,7 @@ int sceAudioOutOutput(int port, const void *buf);
  *
  * @return 0 on success, or a negative ::SceAudioOutErrorCode value.
  */
-int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
+int sceAudioOutSetVolume(int port, int ch, const int *vol);
 
 /**
  * Change an output port's configuration.
@@ -115,7 +115,7 @@ int sceAudioOutSetVolume(int port, SceAudioOutChannelFlag ch, int *vol);
  *
  * @return 0 on success, or a negative ::SceAudioOutErrorCode value.
  */
-int sceAudioOutSetConfig(int port, SceSize len, int freq, SceAudioOutMode mode);
+int sceAudioOutSetConfig(int port, int len, int freq, int mode);
 
 /**
  * Get one property of an output port.

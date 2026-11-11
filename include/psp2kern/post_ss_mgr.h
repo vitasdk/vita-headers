@@ -85,10 +85,7 @@ typedef struct SceSblRsaPublicKeyParam {
 VITASDK_BUILD_ASSERT_EQ(8, SceSblRsaPublicKeyParam);
 
 typedef struct SceSblRsaPrivateKeyParam {
-	int unk_0x00;
-	int unk_0x04;
-	int unk_0x08;
-	int unk_0x0C;
+	int reserved[4];      //!< Unused on FW 3.60.
 	void *p;              //!< Pointer to the 0x80-byte RSA prime p.
 	void *q;              //!< Pointer to the 0x80-byte RSA prime q.
 	void *dp;             //!< d mod (p - 1).

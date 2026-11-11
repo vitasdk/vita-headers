@@ -28,20 +28,29 @@ typedef enum SceCoredumpOutputMode {
 	SCE_COREDUMP_OUTPUT_MODE_HOST0_CUSTOM_PATH = 10  //!< Write below a caller-supplied host0 path.
 } SceCoredumpOutputMode;
 
+/**
+ * Options passed to ::ksceKernelSysrootCoredumpTrigger.
+ *
+ * FW 3.60 allows callers to supply only the start of this structure. The
+ * fields read depend on \c size. Sizes from 4 through 7 select the minimal
+ * dump level. Sizes from 8 through 19 also provide \c dump_level. Sizes from
+ * 20 through 51 additionally provide the output mode and custom path. A size
+ * of 0x34 or greater provides every field.
+ */
 typedef struct SceCoredumpTriggerParam {
 	SceSize size; //!< Size supplied from the start of this structure; normally `sizeof(SceCoredumpTriggerParam)`.
-	int data_0x04;
-	int data_0x08;
-	int data_0x0C;
-	int data_0x10;
+	int dump_level; //!< Section-selection bitmask. 0 uses a registry preset; intermediate masks are valid.
+	int output_mode; //!< One of ::SceCoredumpOutputMode.
+	SceSize custom_path_len; //!< Size of \c custom_path including its terminating NUL; maximum 0x400.
+	int custom_path; //!< Pointer to the custom host0 subdirectory, represented as an \c int for backwards compatibility.
 	SceSize titleid_len; //!< Number of bytes to copy from \c titleid; maximum 10.
 	const char *titleid; //!< Title ID; required when \c titleid_len is nonzero.
 	SceSize app_name_len; //!< Number of bytes to copy from \c app_name; maximum 0x80.
 	const char *app_name; //!< Application name; required when \c app_name_len is nonzero.
-	int data_0x24; // ex: 100. maybe progress max number.
-	int data_0x28;
+	int app_version; //!< Decimal application version; for example, 100 is 01.00.
+	int crash_cause; //!< -2 requests a manual dump, 1 identifies a GPU exception, and 3 identifies an AppMgr-detected hang.
 	SceUID crash_thid; //!< Thread whose stop reason is inspected when \c crash_cause does not force a stop reason.
-	int data_0x30;
+	int use_gpu_crash_filename; //!< Nonzero selects a GPUCRASH filename when \c crash_cause is 1.
 } SceCoredumpTriggerParam;
 VITASDK_BUILD_ASSERT_EQ(0x34, SceCoredumpTriggerParam); // size is from FW 3.60
 

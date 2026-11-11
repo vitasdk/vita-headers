@@ -78,20 +78,37 @@ typedef enum SceAppMgrProcessExitSpawnMode {
 	SCE_APPMGR_PROCESS_EXIT_SPAWN_MODE_ENABLED = 1  //!< Consume the prepared replacement for a matching nonzero PID.
 } SceAppMgrProcessExitSpawnMode;
 
+/**
+ * @brief Options for ::ksceAppMgrLaunchAppByPath.
+ *
+ * FW 3.60 ignores \a size, but callers should initialize it to
+ * `sizeof(SceAppMgrLaunchParam)`. The launch function requires a non-NULL
+ * pointer to this structure and reads \a attr before doing other validation.
+ *
+ * Field use depends on the application class selected by the separate
+ * argument block passed to ::ksceAppMgrLaunchAppByPath. Game launches use the
+ * CPU affinity mask, initial priority, stack size, budget ID, and process-
+ * replacement mode/PID pair. For mini-application launches, AppMgr supplies
+ * the other Processmgr values internally and copies only the process-
+ * replacement pair from this structure; \a attr still selects which option
+ * fields Processmgr reads. System-application launches use the initial
+ * priority, stack size, and replacement mode, but force the exiting-process PID
+ * to zero, so they cannot consume a prepared replacement object.
+ * A nonzero CPU affinity mask must use a subset of either bits 0-3 or bits
+ * 16-19; the two encodings cannot be combined.
+ */
 typedef struct SceAppMgrLaunchParam {
 	SceSize size;                       //!< Ignored on FW 3.60; initialize to the size of this structure.
-    unsigned int unk_4; //<! set to 0x80000000 to break on launch
-    unsigned int unk_8;
-    unsigned int unk_C;
-    unsigned int unk_10;
-    unsigned int unk_14;
-    unsigned int unk_18;
-    unsigned int unk_1C;
-    unsigned int unk_20;
-    unsigned int unk_24;
-    unsigned int unk_28;
-    unsigned int unk_2C;
-    unsigned int unk_30;
+	unsigned int attr;                  //!< Bitwise OR of ::SceAppMgrLaunchParamAttr values.
+	unsigned int cpu_affinity_mask;       //!< Game-only CPU affinity mask; zero selects the default.
+	SceInt32 init_priority;               //!< Initial priority for game and system applications.
+	SceSize stack_size;                   //!< Main-thread stack size for game and system applications.
+	unsigned int reserved0;             //!< Copied for game launches but ignored by Processmgr on FW 3.60.
+	SceUID budget_id;                     //!< Game-only process-budget selector or UID.
+	unsigned int reserved1;             //!< Ignored by AppMgr on FW 3.60.
+	unsigned int process_exit_spawn_mode;  //!< One of ::SceAppMgrProcessExitSpawnMode.
+	ScePID process_exit_spawn_pid;          //!< PID prepared using ::ksceKernelKillProcess with option 2.
+	unsigned int reserved2[3];          //!< Ignored by AppMgr on FW 3.60.
 } SceAppMgrLaunchParam;
 VITASDK_BUILD_ASSERT_EQ(0x34, SceAppMgrLaunchParam); // size is from FW 3.60
 
@@ -132,7 +149,7 @@ VITASDK_BUILD_ASSERT_EQ(0x814, SceAppMgrLaunchAppByPathOpt); // size is from FW 
  *
  * @return Process ID on success, or a negative error code.
  */
-int ksceAppMgrLaunchAppByPath(const char *path, const char *args, SceSize arg_size, unsigned int type, const SceAppMgrLaunchParam *launch_param, void *path_mapping_opt);
+int ksceAppMgrLaunchAppByPath(const char *path, const char *args, SceSize arg_size, unsigned int type, const SceAppMgrLaunchParam *launch_param, const SceAppMgrLaunchAppByPathOpt *path_mapping_opt);
 
 typedef struct SceAppMgrDrmOpt {
 	SceSize size; //!< Must be the size of this structure.

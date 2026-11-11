@@ -144,7 +144,7 @@ VITASDK_BUILD_ASSERT_EQ(0x40, SceKernelProcessOpt2); // size is from FW 3.60
  *
  * @return Process ID on success, or < 0 on error.
  */
-ScePID ksceKernelCreateProcess(const char *name, SceKernelProcessType type, const char *path, void *opt);
+ScePID ksceKernelCreateProcess(const char *name, SceKernelProcessType type, const char *path, const SceKernelProcessOpt2 *opt);
 
 /**
  * @brief       Resume a suspended process.

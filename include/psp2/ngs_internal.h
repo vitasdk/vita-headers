@@ -38,7 +38,7 @@ typedef struct SceNgsVoicePreset SceNgsVoicePreset;
 typedef struct SceNgsCallbackInfo SceNgsCallbackInfo;
 typedef struct SceNgsParamsDescriptor SceNgsParamsDescriptor;
 
-typedef void * SceNgsSulphaUpdateCallback;
+typedef void (*SceNgsSulphaUpdateCallback)(const SceNgsBufferInfo *info);
 VITASDK_BUILD_ASSERT_EQ(4, SceNgsSulphaUpdateCallback);
 
 typedef void (*SceNgsCallbackFunc)(const SceNgsCallbackInfo *callback_info);
@@ -63,17 +63,17 @@ SceInt32 sceNgsPatchCreateRoutingInternal(const SceNgsPatchSetupInfo* info, SceN
 SceInt32 sceNgsPatchRemoveRoutingInternal(SceNgsHPatch handle);
 SceInt32 sceNgsRackGetRequiredMemorySizeInternal(SceNgsHSynSystem handle, const SceNgsRackDescription* rack_description, SceUInt32* user_size);
 SceInt32 sceNgsRackGetVoiceHandleInternal(SceNgsHRack rack_handle, const SceUInt32 index, SceNgsHVoice* voice_handle);
-SceInt32 sceNgsRackInitInternal(SceNgsHSynSystem system_handle, SceNgsBufferInfo *rack_buffer, const SceNgsRackDescription *rack_description, SceNgsHRack *rack_handle);
+SceInt32 sceNgsRackInitInternal(SceNgsHSynSystem system_handle, const SceNgsBufferInfo *rack_buffer, const SceNgsRackDescription *rack_description, SceNgsHRack *rack_handle);
 SceInt32 sceNgsRackReleaseInternal(SceNgsHRack handle, const SceNgsRackReleaseCallbackFunc callback);
 SceInt32 sceNgsRackSetParamErrorCallbackInternal(SceNgsHRack rack_handle, const SceNgsParamsErrorCallbackFunc callback);
 SceInt32 sceNgsSulphaGetInfoInternal(const SulphaNgsRegistration* obj_reg, SceNgsBufferInfo* info);
 SceInt32 sceNgsSulphaGetModuleListInternal(SceUInt32* module_ids, SceUInt32 in_array_count, SceUInt32* count);
 SceInt32 sceNgsSulphaGetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback *update_callback, SceNgsBufferInfo *info);
-SceInt32 sceNgsSulphaQueryModuleInternal(SulphaNgsModuleQueryType type, SulphaNgsModuleQuery *query);
-SceInt32 sceNgsSulphaSetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback update_callback, SceNgsBufferInfo *info);
-SceInt32 sceNgsSystemGetCallbackListInternal(SceNgsHSynSystem handle, SceNgsCallbackListInfo **list, SceUInt32 *array_size);
+SceInt32 sceNgsSulphaQueryModuleInternal(SulphaNgsModuleQueryType type, SulphaNgsModuleQuery *query, SceNgsModuleID module_id, SceUInt32 index);
+SceInt32 sceNgsSulphaSetSynthUpdateCallbackInternal(SceNgsHSynSystem handle, SceNgsSulphaUpdateCallback update_callback, const SceNgsBufferInfo *info);
+SceInt32 sceNgsSystemGetCallbackListInternal(SceNgsHSynSystem handle, SceNgsCallbackListInfo **list);
 SceInt32 sceNgsSystemGetRequiredMemorySizeInternal(const SceNgsSystemInitParams* params, SceUInt32* size);
-SceInt32 sceNgsSystemInitInternal(SceNgsBufferInfo *buffer_info, const SceUInt32 compiled_sdk_version, const SceNgsSystemInitParams *params, SceNgsHSynSystem *handle);
+SceInt32 sceNgsSystemInitInternal(const SceNgsBufferInfo *buffer_info, const SceUInt32 compiled_sdk_version, const SceNgsSystemInitParams *params, SceNgsHSynSystem *handle);
 SceInt32 sceNgsSystemLockInternal(SceNgsHSynSystem handle);
 SceInt32 sceNgsSystemPullDataInternal(SceNgsHSynSystem handle, const SceUInt32 dirty_flags_a, const SceUInt32 dirty_flags_b);
 SceInt32 sceNgsSystemPushDataInternal(SceNgsHSynSystem handle);
@@ -83,7 +83,7 @@ SceInt32 sceNgsSystemSetParamErrorCallbackInternal(SceNgsHSynSystem handle, cons
 SceInt32 sceNgsSystemUnlockInternal(SceNgsHSynSystem handle);
 SceInt32 sceNgsSystemUpdateInternal(SceNgsHSynSystem handle);
 SceInt32 sceNgsVoiceBypassModuleInternal(SceNgsHVoice handle, const SceUInt32 module, const SceUInt32 flag);
-SceInt32 sceNgsVoiceClearDirtyFlagInternal(SceNgsHVoice handle, const SceUInt32 param_bit_flag);
+SceInt32 sceNgsVoiceClearDirtyFlagInternal(SceNgsHVoice handle, SceUInt16 param_bit_flag);
 SceInt32 sceNgsVoiceDefinitionGetPresetInternal(const SceNgsVoiceDefinition* definition, const SceUInt32 index, const SceNgsVoicePreset** presets);
 SceInt32 sceNgsVoiceGetModuleBypassInternal(SceNgsHVoice handle, const SceUInt32 module, SceUInt32* flag);
 SceInt32 sceNgsVoiceGetOutputPatchInternal(SceNgsHVoice handle, const SceInt32 nOutputIndex, const SceInt32 nSubIndex, SceNgsHPatch* pPatchHandle);

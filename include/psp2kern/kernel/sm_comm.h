@@ -18,8 +18,8 @@ typedef SceUInt32 SceSmSchedRequestId; //!< Secure-module scheduler request ID.
 typedef int SceSblSmCommId; //!< Signed VitaSDK type for ::SceSmSchedRequestId; -1 means no active request.
 
 typedef struct SceSblSmCommPair {
-	int data_00;
-	int data_04;
+	int result; //!< Result or error returned by the secure module.
+	int status; //!< Secure-module scheduler state; one of ::SceSmStatus.
 } SceSblSmCommPair;
 VITASDK_BUILD_ASSERT_EQ(8, SceSblSmCommPair);
 
@@ -90,7 +90,7 @@ VITASDK_BUILD_ASSERT_EQ(0x130, SceSblSmCommContext130); // size is from FW 0.931
  *         allocation failure, or another negative scheduler, I/O, or kernel
  *         error.
  */
-int ksceSblSmCommStartSmFromFile(SceUInt32 priority, const char *sm_self_path, SceUInt32 invoke_input, SceAuthInfo *ctx_130, SceSblSmCommId *req_id);
+int ksceSblSmCommStartSmFromFile(SceUInt32 priority, const char *sm_self_path, const SceSmInvokeDataBlockInput *invoke_input, SceAuthInfo *ctx_130, SceSblSmCommId *req_id);
 
 /**
  * Starts a secure module from a memory image.

@@ -71,7 +71,7 @@ int ksceKernelGetIntrPriority(int intr_code, int *priority);
 int ksceKernelSetIntrTarget(int intr_code, int cpu_target_list);
 int ksceKernelGetIntrTarget(int intr_code, int *cpu_target_list);
 int ksceKernelTriggerSGI(int intr_code, unsigned int target_list_filter, unsigned int cpu_target_list);
-int ksceKernelIsIntrAllowedInCurrentContext(int intr_code);
+int ksceKernelIsIntrAllowedInCurrentContext(void);
 int ksceKernelRegisterSubIntrHandler(int intr_code, int subintr_code, const char *name,
 	SceKernelSubIntrHandler handler, void *register_arg);
 int ksceKernelReleaseSubIntrHandler(int intr_code, int subintr_code);

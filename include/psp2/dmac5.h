@@ -44,7 +44,7 @@ VITASDK_BUILD_ASSERT_EQ(0x18, SceSblDmac5HashTransformParam);
  *
  * @return 0 on success, else < 0.
  */
-int sceSblDmac5EncDec(SceSblDmac5EncDecParam *param, SceUInt32 command);
+int sceSblDmac5EncDec(const SceSblDmac5EncDecParam *param, SceUInt32 command);
 
 /**
  * Execute a user-mode DMAC5 cipher operation using an AuthMgr-derived key.
@@ -78,7 +78,7 @@ int sceSblDmac5EncDecKeyGen(const SceSblDmac5EncDecParam *param, SceUInt32 key_i
  *
  * @return 0 on success, else < 0.
  */
-int sceSblDmac5HashTransform(SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 flags);
+int sceSblDmac5HashTransform(const SceSblDmac5HashTransformParam *param, SceUInt32 command, SceUInt32 flags);
 
 /**
  * Execute a user-mode keyed DMAC5 hash operation using an AuthMgr-derived key.

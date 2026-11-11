@@ -11,6 +11,10 @@
 #include <vitasdk/build_utils.h>
 #include <psp2/types.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef char SceUpdateMode;
 VITASDK_BUILD_ASSERT_EQ(1, SceUpdateMode);
 
@@ -49,10 +53,6 @@ int sceSblUsSetUpdateMode(SceUpdateMode mode);
  * note - If verify CEX PUP on Devkit system, got error.
  */
 int sceSblUsVerifyPup(const char *path);
-
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 /**
  * Secure-package component types accepted on FW 3.60.
