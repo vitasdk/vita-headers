@@ -32,6 +32,16 @@ int kscePowerRegisterCallback(SceUID cbid);
 int kscePowerUnregisterCallback(SceUID cbid);
 
 /**
+ * Enables or Disables callbacks
+ *
+ * @param enable - -1 for enabled, 0 for disabled.
+ *
+ * @return 0 on success
+ */
+int kscePowerSetCallbackState(SceUInt32 enable);
+
+
+/**
  * Returns battery charging status
  *
  * @return SCE_TRUE if under charge, SCE_FALSE otherwise
