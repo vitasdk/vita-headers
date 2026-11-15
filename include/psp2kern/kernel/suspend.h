@@ -15,7 +15,17 @@ extern "C" {
 #endif
 
 
-typedef int (* SceSysEventHandler)(int resume, int eventid, void *args, void *opt);
+/**
+ * System suspend/resume event handler.
+ *
+ * @param[in] resume - Zero while suspending, or one while resuming.
+ * @param[in] event_id - Event identifier.
+ * @param[in] event_param - Event data supplied to ::ksceKernelSysEventDispatch.
+ * @param[in] args - Private argument supplied when registering the handler.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+typedef int (*SceSysEventHandler)(int resume, int event_id, void *event_param, void *args);
 
 
 /**
@@ -37,6 +47,32 @@ int ksceKernelPowerTick(SceKernelPowerTickType type);
  * @return 0 on success, < 0 on error.
 */
 int ksceKernelRegisterSysEventHandler(const char *name, SceSysEventHandler handler, void *args);
+
+/**
+ * Call registered handlers for a suspend or resume event.
+ *
+ * If a handler fails and \p failed_handler_id is non-NULL, stop calling handlers
+ * and write the failing handler's UID to *failed_handler_id. If \p failed_handler_id
+ * is NULL, continue calling handlers after failures and return the last
+ * handler's result.
+ *
+ * @param[in] resume - Zero while suspending, or one while resuming.
+ * @param[in] event_id - Event identifier.
+ * @param[in] event_param - Event data passed to each handler that is called.
+ * @param[out] failed_handler_id - Optional output for the first failing handler UID.
+ *
+ * @return The result from the last handler called, or 0 when no handler is registered.
+ */
+int ksceKernelSysEventDispatch(SceBool resume, SceUInt32 event_id, void *event_param, SceUID *failed_handler_id);
+
+/**
+ * Unregister a system event handler.
+ *
+ * @param[in] handler_id - UID returned by ::ksceKernelRegisterSysEventHandler.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceKernelUnregisterSysEventHandler(SceUID handler_id);
 
 #ifdef __cplusplus
 }

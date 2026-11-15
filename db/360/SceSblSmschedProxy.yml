@@ -10,14 +10,21 @@ modules:
         functions:
           ksceSblSmSchedCallFunc: 0x723B382F
           ksceSblSmSchedProxyChangeF00DStatus: 0xDE4EAC3C
+          ksceSblSmSchedProxyClearArm2Cry: 0x3CE17233
+          ksceSblSmSchedProxyClearCry2Arm: 0x15B0E4DF
           ksceSblSmSchedProxyDisableCry2ArmInterrupt: 0x85EDA5FC
           ksceSblSmSchedProxyEnableCry2ArmInterrupt: 0x8B84AC2A
           ksceSblSmSchedProxyExecuteF00DCommand: 0x7894B6F0
+          ksceSblSmSchedProxyExecuteSKCommand: 0x7894B6F0
+          ksceSblSmSchedProxyForceStop: 0xDE4EAC3C
           ksceSblSmSchedProxyGetCommandF00DRegister: 0xF70C04EC
           ksceSblSmSchedProxyGetStatus: 0x27EB92F1
           ksceSblSmSchedProxyInitialize: 0xA488D604
           ksceSblSmSchedProxyInvoke: 0x1916509B
+          ksceSblSmSchedProxyReadArm2Cry: 0xF70C04EC
           ksceSblSmSchedProxyReadCry2Arm: 0x973A4A7D
+          ksceSblSmSchedProxyRegisterIntrHandler: 0x8B84AC2A
+          ksceSblSmSchedProxyReleaseIntrHandler: 0x85EDA5FC
           ksceSblSmSchedProxyUninitialize: 0x33A3A1E2
           ksceSblSmSchedProxyWait: 0xF35EFC1A
           ksceSblSmSchedProxyWriteCry2Arm: 0x15B0E4DF

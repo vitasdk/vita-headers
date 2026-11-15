@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - next
   pull_request:
   repository_dispatch:
     types: [run_build]
@@ -15,8 +16,8 @@ jobs:
   check-headers:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
+    - uses: actions/checkout@v7
       with:
         repository: vitasdk/vdpm
         path: vdpm
@@ -25,7 +26,9 @@ jobs:
         bash vdpm/bootstrap-vitasdk.sh
         echo "$VITASDK/bin" >> "$GITHUB_PATH"
     - name: Install packages
-      run: vdpm SDL2 curl openssl soloud taihen zlib zstd
+      run: vdpm install curl openssl sdl2 sdl3 soloud taihen zlib zstd
+      env:
+        VDPM_NONINTERACTIVE: 1
     - name: Check
       run: |
         set -e
@@ -65,7 +68,7 @@ jobs:
         cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=$VITASDK/share/vita.toolchain.cmake
         cmake --build build
       working-directory: check_nid_compat
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
       with:
         repository: vitasdk/samples
         path: samples
@@ -76,7 +79,7 @@ jobs:
       working-directory: samples
     - name: Upload artifacts
       if: ${{ success() }}
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: vitasdk-db-stubs
         path: vitasdk-db-stubs.tar.bz2

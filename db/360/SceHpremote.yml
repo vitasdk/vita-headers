@@ -1,0 +1,21 @@
+version: 2
+firmware: 3.60
+modules:
+  SceHpremote:
+    nid: 0xA2133147
+    libraries:
+      SceHpremoteForDriver:
+        kernel: true
+        nid: 0xFD0B0E27
+        functions:
+          ksceHprmGetHpDetect: 0x71B5FB67
+          ksceHprmGetInternalState: 0x7B038374
+          ksceHprmIsAudioOutDockExist: 0x2229EF51
+          ksceHprmIsHeadphoneExist: 0x7E69EDA4
+          ksceHprmIsMicrophoneExist: 0x219C58F1
+          ksceHprmIsRemoteExist: 0x208DB1BD
+          ksceHprmRegisterCallback: 0xC7154136
+          ksceHprmReset: 0x4D1E622C
+          ksceHprmSetConnectCallback: 0xD22913DB
+          ksceHprmShutdown: 0x7735C403
+          ksceHprmUnregisterCallback: 0x68D64A0F

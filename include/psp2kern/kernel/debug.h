@@ -288,13 +288,13 @@ typedef struct SceKernelDebugEventLog {
 VITASDK_BUILD_ASSERT_EQ(0x54 + 0x40, SceKernelDebugEventLog);
 
 /**
- * @brief Get event log info
+ * @brief Copy event-log records to a buffer.
  *
- * @param[out] buf         - The SceKernelDebugEventLog buffer list
- * @param[in]  buf_size    - The buf size
- * @param[out] read_blocks - The read event log number
+ * @param[out] buf         - Buffer that receives ::SceKernelDebugEventLog records. Must not be NULL.
+ * @param[in]  buf_size    - Size of \p buf.
+ * @param[out] read_blocks - Optional output for the number of event-log records copied.
  *
- * @return < 0 on error.
+ * @return Number of bytes copied on success, < 0 on error.
  */
 int ksceEventLogGetInfo(void *buf, SceSize buf_size, SceSize *read_blocks);
 
@@ -324,7 +324,39 @@ int ksceKernelGetTtyInfo(char *buf, SceSize buf_size);
 #define ksceDebugGetPutcharHandler ksceKernelGetDebugPutcharHandler
 #define ksceDebugDisableInfoDump ksceKernelEnableCrashDump
 #define ksceKernelSetMinimumAssertionLevel ksceKernelSetAssertLevel
+#define k_sceEventLogPut ksceEventLogPutForCurrentThread
+#define _ksceEventLogPut ksceEventLogPutForCurrentThread
 
+
+/**
+ * Write an event-log record for the current kernel thread.
+ *
+ * @param[in] event_id Event identifier. FW 3.60 stores its low 16 bits.
+ * @param[in] index Event index. FW 3.60 stores its low 16 bits.
+ * @param[in] value Event value.
+ * @param[in] buf Payload buffer. May be NULL only when \p buf_size is zero.
+ *                 The function does not modify the buffer.
+ * @param[in] buf_size Payload size, at most 0x80 bytes.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceEventLogPutForCurrentThread(SceUInt16 event_id, SceUInt16 index, SceInt32 value, const void *buf, SceSize buf_size);
+
+/**
+ * Write an event-log record with the given process and thread IDs.
+ *
+ * @param[in] source_pid Process ID; see ::ScePID.
+ * @param[in] thread_id Thread ID; see ::SceUID.
+ * @param[in] event_id Event identifier. FW 3.60 stores its low 16 bits.
+ * @param[in] index Event index. FW 3.60 stores its low 16 bits.
+ * @param[in] value Event value.
+ * @param[in] buf Payload buffer. May be NULL only when \p buf_size is zero.
+ *                 The function does not modify the buffer.
+ * @param[in] buf_size Payload size, at most 0x80 bytes.
+ *
+ * @return 0 on success, < 0 on error.
+ */
+int ksceEventLogPut(ScePID source_pid, SceUID thread_id, SceUInt16 event_id, SceUInt16 index, SceInt32 value, const void *buf, SceSize buf_size);
 
 #ifdef __cplusplus
 }

@@ -1,6 +1,7 @@
 import re
 import json
 import os
+import platform
 import sys
 try:
     import urllib2
@@ -17,7 +18,29 @@ try:
 except KeyError:
     token = None
 
+def get_host_triplet(os_name):
+    architecture = platform.machine().lower()
+    if architecture in ('amd64', 'x86-64'):
+        architecture = 'x86_64'
+    elif architecture == 'arm64' and os_name == 'linux':
+        architecture = 'aarch64'
+
+    if os_name == 'linux':
+        return architecture + '-linux-gnu'
+    if os_name == 'osx':
+        return architecture + '-apple-darwin'
+    if os_name == 'win':
+        return architecture + '-w64-mingw32'
+
+    # Also accept a complete triplet for newer callers.
+    return os_name
+
+
 def fetch_last_release(branch='master', os='linux', page=1):
+    triplet = get_host_triplet(os)
+    asset_pattern = re.compile(
+        r'^vitasdk-' + re.escape(triplet) + r'-.+\.tar\.bz2$'
+    )
     req = urllib2.Request(GITHUB_REL+'&page=' + str(page))
     if token:
         req.add_header('Authorization', 'Bearer ' + token);
@@ -25,14 +48,12 @@ def fetch_last_release(branch='master', os='linux', page=1):
         builds = json.load(urllib2.urlopen(req))
 
         for build in builds:
-            if not build['assets'] or not build['assets'][0]['browser_download_url']:
-                continue
             if build['target_commitish'] != branch:
                 continue
-            if os not in build['tag_name']:
-                continue
 
-            return build['assets'][0]['browser_download_url']
+            for asset in build.get('assets', []):
+                if asset_pattern.match(asset.get('name', '')):
+                    return asset.get('browser_download_url')
     except urllib2.HTTPError as e:
         sys.stderr.write(str(e) + "\n")
         sys.stderr.write(str(e.headers) + "\n")

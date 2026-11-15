@@ -24,3 +24,27 @@ modules:
           sceAudioOutSetEffectType: 0xB41FACCE
           sceAudioOutSetPortVolume_forUser: 0x65840F3D
           sceAudioOutSetVolume: 0x64167F11
+      SceAudioForDriver:
+        kernel: true
+        nid: 0x15D711C1
+        functions:
+          ksceAudioI2s0CaptureTx: 0x37517CC9
+          ksceAudioOutGetPortVolumeForPid: 0xB05D5B28
+          ksceAudioOutMonitorRead: 0x81EB0AE5
+          ksceAudioOutMonitorSetChannelMode: 0xFC375BAC
+          ksceAudioOutMonitorSetPathMode: 0xAC9383D0
+          ksceAudioOutMonitorSetSampleRate: 0x134C96C1
+          ksceAudioOutSetAdoptForPid: 0x3440C1CA
+          ksceAudioOutSetAdoptMode: 0xDB1C4A83
+          ksceAudioOutSetAlcMode: 0x216D8A91
+          ksceAudioOutSetEffectType: 0x8D0AE24F
+          ksceAudioOutSetI2sOutputIndex: 0xA8C38998
+          ksceAudioOutSetMasterGain: 0x15FB30DF
+          ksceAudioOutSetPortOpenCallback: 0xF07D34C2
+          ksceAudioOutSetPortReleaseCallback: 0xE87902DF
+          ksceAudioOutSetPortVolumeForPid: 0x629261CD
+          ksceAudioSrcMix2CaptureOutput: 0x75915003
+          ksceAudioSrcMix2SetInput0SourceMode: 0x85987B88
+          ksceAudioSrcMix2SetInputI2sIndex: 0x7E0E1331
+          ksceAudioSrcMix2SubmitInput0Pcm: 0x6F613D36
+          ksceAudioSrcMixSetSampleRates: 0x28B3AF10

@@ -14,6 +14,17 @@ modules:
           sceLiveAreaGetRevision: 0x833F5D0A
           sceLiveAreaGetStatus: 0x7FE5B83F
           sceLiveAreaReplaceAllAsync: 0x18066BA9
+          sceLiveAreaReplaceAllForTitleAsync: 0xEF2A3C3D
+          sceLiveAreaReplaceAllForTitleSync: 0xB0571F88
           sceLiveAreaReplaceAllSync: 0x29C65C0B
           sceLiveAreaUpdateFrameAsync: 0xD330285D
+          sceLiveAreaUpdateFrameForTitleAsync: 0xC1F7A931
+          sceLiveAreaUpdateFrameForTitleSync: 0x009CD8E2
           sceLiveAreaUpdateFrameSync: 0xCFCEDE95
+          sceLiveAreaUpdateFramesForTitleAsync: 0x876A649B
+          sceLiveAreaUpdateFramesForTitleSync: 0x31A5E6AB
+      SceLiveAreaUtilBgApp:
+        kernel: false
+        nid: 0x6EC49E8F
+        functions:
+          sceLiveAreaEnableBgAppMode: 0x381D11E6

@@ -53,7 +53,7 @@ typedef enum SceNetCtlState {
 
 /* callback */
 
-typedef void *(*SceNetCtlCallback)(
+typedef void (*SceNetCtlCallback)(
 	int event_type,
 	void *arg);
 

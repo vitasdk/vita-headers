@@ -116,6 +116,24 @@ int ksceSblAimgrIsGenuineVITA(void);
  */
 int ksceSblAimgrIsGenuineDolce(void);
 
+/** @return 1 for a Japanese fat retail unit, otherwise 0. */
+int ksceSblAimgrIsJapaneseFat(void);
+
+/** @return 1 for a prototype revision 2 unit, otherwise 0. */
+int ksceSblAimgrIsPrototypeRev2(void);
+
+/** @return 1 for a prototype revision 7 unit, otherwise 0. */
+int ksceSblAimgrIsPrototypeRev7(void);
+
+/** @return 1 for a development-tool revision 3 unit, otherwise 0. */
+int ksceSblAimgrIsToolRev3(void);
+
+/** @return 1 for a development-tool revision 4 unit, otherwise 0. */
+int ksceSblAimgrIsToolRev4(void);
+
+/** @return 1 for a development-tool revision 5 unit, otherwise 0. */
+int ksceSblAimgrIsToolRev5(void);
+
 #ifdef __cplusplus
 }
 #endif

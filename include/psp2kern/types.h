@@ -157,11 +157,12 @@ typedef struct SceSharedSecret { // size is 0x40-bytes
 } SceSharedSecret;
 VITASDK_BUILD_ASSERT_EQ(0x40, SceSharedSecret);
 
-typedef struct SceSelfAuthInfo { // size is 0x90-bytes
-	SceUInt64 program_authority_id;
+/** SELF authorization information returned by AuthMgr and stored by Processmgr. */
+typedef struct SceSelfAuthInfo {
+	SceUInt64 program_authority_id; //!< Program authority identifier.
 	uint8_t padding[8];
-	uint8_t capability[0x20];
-	uint8_t attribute[0x20];
+	uint8_t capability[0x20];       //!< 256-bit capability bitset.
+	uint8_t attribute[0x20];        //!< 256-bit authorization attribute bitset.
 	SceSharedSecret secret;
 } SceSelfAuthInfo;
 VITASDK_BUILD_ASSERT_EQ(0x90, SceSelfAuthInfo);

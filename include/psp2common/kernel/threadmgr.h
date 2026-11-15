@@ -51,13 +51,51 @@ typedef enum SceKernelThreadEventType {
 	SCE_KERNEL_THREAD_EVENT_TYPE_EXIT  = 0x00000008
 } SceKernelThreadEventType;
 
+/** Timer event notification type. */
+typedef enum SceKernelTimerType {
+	SCE_KERNEL_TIMER_TYPE_SET_EVENT   = 0, //!< Set the timer event state when the deadline expires.
+	SCE_KERNEL_TIMER_TYPE_PULSE_EVENT = 1  //!< Wake threads currently waiting without leaving the event set.
+} SceKernelTimerType;
+
+/** Timer state. */
+typedef struct SceKernelTimerInfo {
+	/** Number of bytes available in this structure. */
+	SceSize size;
+	/** Timer identifier. */
+	SceUID timer_id;
+	/** NUL-terminated timer name. */
+	char name[SCE_UID_NAMELEN + 1];
+	/** Timer attributes. */
+	SceUInt32 attr;
+	/** Nonzero while the timer is running. */
+	SceBool active;
+	/** Time from which the timer is measured while running, or the stored timer time while stopped. */
+	SceKernelSysClock base_time;
+	/** Current logical timer time. */
+	SceKernelSysClock current_time;
+	/** Logical timer time at which the armed event will next occur, or zero when
+	 * no event is armed. */
+	SceKernelSysClock schedule;
+	/** Event interval. */
+	SceKernelSysClock interval;
+	/** One of ::SceKernelTimerType. */
+	SceKernelTimerType type;
+	/** Nonzero when the event repeats. */
+	SceBool repeat;
+	/** Number of threads waiting on the timer. */
+	SceUInt32 num_wait_threads;
+	/** Set to 0 on FW 3.60. */
+	SceInt32 reserved[1];
+} SceKernelTimerInfo;
+VITASDK_BUILD_ASSERT_EQ(0x60, SceKernelTimerInfo); // size is from FW 3.60
+
 /** Statistics about a running thread.
  * @see sceKernelGetThreadRunStatus.
  */
 typedef struct SceKernelThreadRunStatus {
 	SceSize        size;
 	struct {
-		SceUID processId;
+		ScePID processId;
 		SceUID threadId;
 		int    priority;
 	} cpuInfo[4];
@@ -100,7 +138,7 @@ typedef struct SceKernelThreadInfo {
 	SceKernelThreadEntry entry;
 	/** Thread stack pointer */
 	void                 *stack;
-	/** Thread stack size */
+	/** Thread stack size, as a ::SceSize value. */
 	SceInt32             stackSize;
 	/** Initial priority */
 	SceInt32             initPriority;
@@ -130,9 +168,9 @@ typedef struct SceKernelThreadInfo {
 	SceUInt32            threadReleaseCount;
 	/** Number of CPUs to which the thread is moved */
 	SceInt32             changeCpuCount;
-	/** Function notify callback UID */
+	/** Nonzero when callback notification is pending. */
 	SceInt32             fNotifyCallback;
-	/** Reserved */
+	/** Set to 0 on FW 3.60. */
 	SceInt32             reserved;
 } SceKernelThreadInfo;
 VITASDK_BUILD_ASSERT_EQ(0x80, SceKernelThreadInfo);
@@ -286,10 +324,15 @@ typedef struct SceKernelMutexOptParam {
 VITASDK_BUILD_ASSERT_EQ(8, SceKernelMutexOptParam);
 
 /** Current state of a mutex.
+ *
+ * The mutex information functions accept buffers of at most 0x40 bytes. They
+ * copy no more than the caller requests. The former 0x3C layout is still
+ * supported, but does not include the final priority-ceiling field.
+ *
  * @see sceKernelGetMutexInfo.
  */
 typedef struct SceKernelMutexInfo {
-	/** Size of the ::SceKernelMutexInfo structure. */
+	/** Number of bytes available in this structure. */
 	SceSize         size;
 	/** The UID of the mutex. */
 	SceUID          mutexId;
@@ -303,7 +346,7 @@ typedef struct SceKernelMutexInfo {
 	int             currentCount;
 	/** The UID of the current owner of the mutex. */
 	SceUID          currentOwnerId;
-	/** The number of threads waiting on the mutex. */
+	/** Number of threads waiting on the mutex, as a ::SceUInt32 value. */
 	int             numWaitThreads;
 } SceKernelMutexInfo;
 VITASDK_BUILD_ASSERT_EQ(0x3C, SceKernelMutexInfo);
